@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Projection | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Projection | mysite ">
+      
+      <meta name="description" content="緯度経度座標から XY 座標への投影を示すクラスです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.CoordinateSystems.Projection">
+
+
+
+  <h1 id="MapQuest_CoordinateSystems_Projection" data-uid="MapQuest.CoordinateSystems.Projection" class="text-break">
+Class Projection  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.CoordinateSystems.html">CoordinateSystems</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.CoordinateSystems.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>緯度経度座標から XY 座標への投影を示すクラスです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Projection : Info, IProjection, IInfo, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.Info.html">Info</a></div>
+      <div><span class="xref">Projection</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.IProjection.html">IProjection</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.IInfo.html">IInfo</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode">Info.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_">Info.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Remarks">Info.Remarks</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">Info.AuthorityCode</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Info.Authority</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Info.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Info.Alias</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Info.Abbreviation</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_WKT">Info.WKT</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_XML">Info.XML</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_Projection__ctor_" data-uid="MapQuest.CoordinateSystems.Projection.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Projection__ctor_MapQuest_CoordinateSystems_Projection_" data-uid="MapQuest.CoordinateSystems.Projection.#ctor(MapQuest.CoordinateSystems.Projection)">
+  Projection(Projection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>コピーコンストラクタ。簡易コピーを提供します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Projection(Projection projection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>projection</code> <a class="xref" href="MapQuest.CoordinateSystems.Projection.html">Projection</a></dt>
+    <dd><p>コピー元の <a class="xref" href="MapQuest.CoordinateSystems.Projection.html">Projection</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Projection__ctor_" data-uid="MapQuest.CoordinateSystems.Projection.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Projection__ctor_System_String_MapQuest_CoordinateSystems_ProjectionParameter___System_String_System_String_System_String_System_String_" data-uid="MapQuest.CoordinateSystems.Projection.#ctor(System.String,MapQuest.CoordinateSystems.ProjectionParameter[],System.String,System.String,System.String,System.String)">
+  Projection(string, ProjectionParameter[], string, string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>必要なパラメータを指定して、新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Projection(string name, ProjectionParameter[] projectionParameters, string classification, string remarks, string authority, string authorityCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>投影の名前。</p>
+</dd>
+    <dt><code>projectionParameters</code> <a class="xref" href="MapQuest.CoordinateSystems.ProjectionParameter.html">ProjectionParameter</a>[]</dt>
+    <dd><p>投影法のパラメータリスト。</p>
+</dd>
+    <dt><code>classification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>WKT で定義されている投影法の名前。
+例えば横メルカトル図法は「Transverse_Mercator」です。</p>
+</dd>
+    <dt><code>remarks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>投影法の説明。</p>
+</dd>
+    <dt><code>authority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>投影法の策定元団体・機関の名称。</p>
+</dd>
+    <dt><code>authorityCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>authority が策定した投影法の ID 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Projection__ctor_" data-uid="MapQuest.CoordinateSystems.Projection.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Projection__ctor_System_String_System_String_MapQuest_CoordinateSystems_ProjectionParameter___" data-uid="MapQuest.CoordinateSystems.Projection.#ctor(System.String,System.String,MapQuest.CoordinateSystems.ProjectionParameter[])">
+  Projection(string, string, ProjectionParameter[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>投影の名前と WKT で定義されている投影法の名前を指定して、
+新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Projection(string name, string wktProjectionClass, ProjectionParameter[] parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>投影の名前。</p>
+</dd>
+    <dt><code>wktProjectionClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>WKT で定義されている投影法の名前。
+例えば横メルカトル図法は「Transverse_Mercator」です。</p>
+</dd>
+    <dt><code>parameters</code> <a class="xref" href="MapQuest.CoordinateSystems.ProjectionParameter.html">ProjectionParameter</a>[]</dt>
+    <dd><p>投影法のパラメータリスト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_Projection_ClassName_" data-uid="MapQuest.CoordinateSystems.Projection.ClassName*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Projection_ClassName" data-uid="MapQuest.CoordinateSystems.Projection.ClassName">
+  ClassName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>投影法の名称を取得します。（例： &quot;Transverse_Mercator&quot;、&quot;横メルカトル図法&quot;）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>投影法の名称。読み取り専用です。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Projection_NumParameters_" data-uid="MapQuest.CoordinateSystems.Projection.NumParameters*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Projection_NumParameters" data-uid="MapQuest.CoordinateSystems.Projection.NumParameters">
+  NumParameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>投影法が持つパラメータの数を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumParameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>投影法が持つパラメータの数。読み取り専用です。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_Projection_Clone_" data-uid="MapQuest.CoordinateSystems.Projection.Clone*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Projection_Clone" data-uid="MapQuest.CoordinateSystems.Projection.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在のインスタンスの詳細コピーを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>複製された <a class="xref" href="MapQuest.CoordinateSystems.Projection.html">Projection</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Projection_GetParameter_" data-uid="MapQuest.CoordinateSystems.Projection.GetParameter*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Projection_GetParameter_System_Int32_" data-uid="MapQuest.CoordinateSystems.Projection.GetParameter(System.Int32)">
+  GetParameter(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定したインデックスの投影法のパラメータを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProjectionParameter GetParameter(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>取得するパラメータの 0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ProjectionParameter.html">ProjectionParameter</a></dt>
+    <dd><p>投影法のパラメータを示す <a class="xref" href="MapQuest.CoordinateSystems.ProjectionParameter.html">ProjectionParameter</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

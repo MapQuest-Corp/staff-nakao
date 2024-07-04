@@ -1,0 +1,1302 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.Ellipsoid
+  commentId: T:MapQuest.CoordinateSystems.Ellipsoid
+  id: Ellipsoid
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.Ellipsoid.#ctor(MapQuest.CoordinateSystems.Ellipsoid)
+  - MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit)
+  - MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit,System.String,System.String,System.String,System.String,System.String,System.String)
+  - MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.String,System.Double,System.Double,MapQuest.CoordinateSystems.ILinearUnit)
+  - MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.String,System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit)
+  - MapQuest.CoordinateSystems.Ellipsoid.AxisUnit
+  - MapQuest.CoordinateSystems.Ellipsoid.Bessel1841
+  - MapQuest.CoordinateSystems.Ellipsoid.Clone
+  - MapQuest.CoordinateSystems.Ellipsoid.Create(System.String,System.Double,System.Double,MapQuest.CoordinateSystems.ILinearUnit)
+  - MapQuest.CoordinateSystems.Ellipsoid.Eccentricity
+  - MapQuest.CoordinateSystems.Ellipsoid.GRS80
+  - MapQuest.CoordinateSystems.Ellipsoid.InverseFlattening
+  - MapQuest.CoordinateSystems.Ellipsoid.IsIvfDefinitive
+  - MapQuest.CoordinateSystems.Ellipsoid.IsSphere
+  - MapQuest.CoordinateSystems.Ellipsoid.OrthodromicDistance(System.Double,System.Double,System.Double,System.Double)
+  - MapQuest.CoordinateSystems.Ellipsoid.SemiMajorAxis
+  - MapQuest.CoordinateSystems.Ellipsoid.SemiMinorAxis
+  - MapQuest.CoordinateSystems.Ellipsoid.WGS84
+  langs:
+  - csharp
+  - vb
+  name: Ellipsoid
+  nameWithType: Ellipsoid
+  fullName: MapQuest.CoordinateSystems.Ellipsoid
+  type: Class
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「楕円体」を表すクラスです。
+  remarks: >-
+    楕円体とは、地球を数学的に表すために、ジオイドに厳密に接近させた、
+
+    測地・測量で使うための図形です。
+
+    <p></p>
+
+    日本では、次の楕円体が一般的によく利用されます。
+
+    <ol><li><span class="term">Bessel 1841</span>
+
+    日本測地系の平面直角座標系で使われる楕円体です。
+
+    </li><li><span class="term">GRS 1980</span>
+
+    測地成果2000 で使用される楕円体です。
+
+    </li></ol>
+  example: []
+  syntax:
+    content: 'public class Ellipsoid : Info, IEllipsoid, IInfo, ICloneable'
+    content.vb: Public Class Ellipsoid Inherits Info Implements IEllipsoid, IInfo, ICloneable
+  inheritance:
+  - System.Object
+  - MapQuest.CoordinateSystems.Info
+  implements:
+  - MapQuest.CoordinateSystems.IEllipsoid
+  - MapQuest.CoordinateSystems.IInfo
+  - System.ICloneable
+  inheritedMembers:
+  - MapQuest.CoordinateSystems.Info.GetHashCode
+  - MapQuest.CoordinateSystems.Info.Equals(System.Object)
+  - MapQuest.CoordinateSystems.Info.Remarks
+  - MapQuest.CoordinateSystems.Info.AuthorityCode
+  - MapQuest.CoordinateSystems.Info.Authority
+  - MapQuest.CoordinateSystems.Info.Name
+  - MapQuest.CoordinateSystems.Info.Alias
+  - MapQuest.CoordinateSystems.Info.Abbreviation
+  - MapQuest.CoordinateSystems.Info.WKT
+  - MapQuest.CoordinateSystems.Info.XML
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit)
+  commentId: M:MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit)
+  id: '#ctor(System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit)'
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: Ellipsoid(double, double, double, bool, ILinearUnit)
+  nameWithType: Ellipsoid.Ellipsoid(double, double, double, bool, ILinearUnit)
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Ellipsoid(double, double, double, bool, MapQuest.CoordinateSystems.ILinearUnit)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 楕円体のパラメータを指定して、新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public Ellipsoid(double semiMajorAxis, double semiMinorAxis, double inverseFlattening, bool isIvfDefinitive, ILinearUnit linearUnit)
+    parameters:
+    - id: semiMajorAxis
+      type: System.Double
+      description: 楕円体の長半径。
+    - id: semiMinorAxis
+      type: System.Double
+      description: 楕円体の短半径。
+    - id: inverseFlattening
+      type: System.Double
+      description: 楕円体の「扁平率の逆数」。
+    - id: isIvfDefinitive
+      type: System.Boolean
+      description: >-
+        inverseFlattening を明示的に設定した場合は true 、
+                    それ以外の場合は false 。
+    - id: linearUnit
+      type: MapQuest.CoordinateSystems.ILinearUnit
+      description: 楕円体の距離の単位。
+    content.vb: Public Sub New(semiMajorAxis As Double, semiMinorAxis As Double, inverseFlattening As Double, isIvfDefinitive As Boolean, linearUnit As ILinearUnit)
+  overload: MapQuest.CoordinateSystems.Ellipsoid.#ctor*
+  nameWithType.vb: Ellipsoid.New(Double, Double, Double, Boolean, ILinearUnit)
+  fullName.vb: MapQuest.CoordinateSystems.Ellipsoid.New(Double, Double, Double, Boolean, MapQuest.CoordinateSystems.ILinearUnit)
+  name.vb: New(Double, Double, Double, Boolean, ILinearUnit)
+- uid: MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit,System.String,System.String,System.String,System.String,System.String,System.String)
+  commentId: M:MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit,System.String,System.String,System.String,System.String,System.String,System.String)
+  id: '#ctor(System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit,System.String,System.String,System.String,System.String,System.String,System.String)'
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: Ellipsoid(double, double, double, bool, ILinearUnit, string, string, string, string, string, string)
+  nameWithType: Ellipsoid.Ellipsoid(double, double, double, bool, ILinearUnit, string, string, string, string, string, string)
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Ellipsoid(double, double, double, bool, MapQuest.CoordinateSystems.ILinearUnit, string, string, string, string, string, string)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    楕円体のパラメータと、名称などの情報を指定して、
+
+    新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public Ellipsoid(double semiMajorAxis, double semiMinorAxis, double inverseFlattening, bool isIvfDefinitive, ILinearUnit linearUnit, string remarks, string authority, string authorityCode, string name, string alias, string abbreviation)
+    parameters:
+    - id: semiMajorAxis
+      type: System.Double
+      description: 楕円体の長半径。
+    - id: semiMinorAxis
+      type: System.Double
+      description: 楕円体の短半径。
+    - id: inverseFlattening
+      type: System.Double
+      description: 楕円体の「扁平率の逆数」。
+    - id: isIvfDefinitive
+      type: System.Boolean
+      description: >-
+        inverseFlattening を明示的に設定した場合は true 、
+                    それ以外の場合は false 。
+    - id: linearUnit
+      type: MapQuest.CoordinateSystems.ILinearUnit
+      description: 楕円体の距離の単位。
+    - id: remarks
+      type: System.String
+      description: 楕円体の説明。
+    - id: authority
+      type: System.String
+      description: この楕円体を策定した機関や団体の名称。
+    - id: authorityCode
+      type: System.String
+      description: authority によって策定されたこの楕円体を識別する ID 。
+    - id: name
+      type: System.String
+      description: 楕円体の名称。
+    - id: alias
+      type: System.String
+      description: 楕円体の名称以外の別名。
+    - id: abbreviation
+      type: System.String
+      description: 楕円体の短縮名。
+    content.vb: Public Sub New(semiMajorAxis As Double, semiMinorAxis As Double, inverseFlattening As Double, isIvfDefinitive As Boolean, linearUnit As ILinearUnit, remarks As String, authority As String, authorityCode As String, name As String, [alias] As String, abbreviation As String)
+  overload: MapQuest.CoordinateSystems.Ellipsoid.#ctor*
+  nameWithType.vb: Ellipsoid.New(Double, Double, Double, Boolean, ILinearUnit, String, String, String, String, String, String)
+  fullName.vb: MapQuest.CoordinateSystems.Ellipsoid.New(Double, Double, Double, Boolean, MapQuest.CoordinateSystems.ILinearUnit, String, String, String, String, String, String)
+  name.vb: New(Double, Double, Double, Boolean, ILinearUnit, String, String, String, String, String, String)
+- uid: MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.String,System.Double,System.Double,MapQuest.CoordinateSystems.ILinearUnit)
+  commentId: M:MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.String,System.Double,System.Double,MapQuest.CoordinateSystems.ILinearUnit)
+  id: '#ctor(System.String,System.Double,System.Double,MapQuest.CoordinateSystems.ILinearUnit)'
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: Ellipsoid(string, double, double, ILinearUnit)
+  nameWithType: Ellipsoid.Ellipsoid(string, double, double, ILinearUnit)
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Ellipsoid(string, double, double, MapQuest.CoordinateSystems.ILinearUnit)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    楕円体の、名前・長半径・短半径・単位を指定して、
+
+    新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public Ellipsoid(string name, double semiMajorAxis, double semiMinorAxis, ILinearUnit linearUnit)
+    parameters:
+    - id: name
+      type: System.String
+      description: 楕円体の名称。
+    - id: semiMajorAxis
+      type: System.Double
+      description: 楕円体の長半径。
+    - id: semiMinorAxis
+      type: System.Double
+      description: 楕円体の短半径。
+    - id: linearUnit
+      type: MapQuest.CoordinateSystems.ILinearUnit
+      description: 楕円体の距離の単位。
+    content.vb: Public Sub New(name As String, semiMajorAxis As Double, semiMinorAxis As Double, linearUnit As ILinearUnit)
+  overload: MapQuest.CoordinateSystems.Ellipsoid.#ctor*
+  nameWithType.vb: Ellipsoid.New(String, Double, Double, ILinearUnit)
+  fullName.vb: MapQuest.CoordinateSystems.Ellipsoid.New(String, Double, Double, MapQuest.CoordinateSystems.ILinearUnit)
+  name.vb: New(String, Double, Double, ILinearUnit)
+- uid: MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.String,System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit)
+  commentId: M:MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.String,System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit)
+  id: '#ctor(System.String,System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit)'
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: Ellipsoid(string, double, double, double, bool, ILinearUnit)
+  nameWithType: Ellipsoid.Ellipsoid(string, double, double, double, bool, ILinearUnit)
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Ellipsoid(string, double, double, double, bool, MapQuest.CoordinateSystems.ILinearUnit)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: Constructs a new ellipsoid using the specified axis length.
+  example: []
+  syntax:
+    content: public Ellipsoid(string name, double semiMajorAxis, double semiMinorAxis, double inverseFlattening, bool isIvfDefinitive, ILinearUnit linearUnit)
+    parameters:
+    - id: name
+      type: System.String
+      description: 楕円体の名称。
+    - id: semiMajorAxis
+      type: System.Double
+      description: 楕円体の長半径。
+    - id: semiMinorAxis
+      type: System.Double
+      description: 楕円体の短半径。
+    - id: inverseFlattening
+      type: System.Double
+      description: 楕円体の「扁平率の逆数」。
+    - id: isIvfDefinitive
+      type: System.Boolean
+      description: >-
+        inverseFlattening を明示的に設定した場合は true 、
+                    それ以外の場合は false 。
+    - id: linearUnit
+      type: MapQuest.CoordinateSystems.ILinearUnit
+      description: 楕円体の距離の単位。
+    content.vb: Public Sub New(name As String, semiMajorAxis As Double, semiMinorAxis As Double, inverseFlattening As Double, isIvfDefinitive As Boolean, linearUnit As ILinearUnit)
+  overload: MapQuest.CoordinateSystems.Ellipsoid.#ctor*
+  nameWithType.vb: Ellipsoid.New(String, Double, Double, Double, Boolean, ILinearUnit)
+  fullName.vb: MapQuest.CoordinateSystems.Ellipsoid.New(String, Double, Double, Double, Boolean, MapQuest.CoordinateSystems.ILinearUnit)
+  name.vb: New(String, Double, Double, Double, Boolean, ILinearUnit)
+- uid: MapQuest.CoordinateSystems.Ellipsoid.#ctor(MapQuest.CoordinateSystems.Ellipsoid)
+  commentId: M:MapQuest.CoordinateSystems.Ellipsoid.#ctor(MapQuest.CoordinateSystems.Ellipsoid)
+  id: '#ctor(MapQuest.CoordinateSystems.Ellipsoid)'
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: Ellipsoid(Ellipsoid)
+  nameWithType: Ellipsoid.Ellipsoid(Ellipsoid)
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Ellipsoid(MapQuest.CoordinateSystems.Ellipsoid)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: コピーコンストラクタ。指定したインスタンスの詳細コピーを提供します。
+  example: []
+  syntax:
+    content: public Ellipsoid(Ellipsoid sourceEllipsoid)
+    parameters:
+    - id: sourceEllipsoid
+      type: MapQuest.CoordinateSystems.Ellipsoid
+      description: コピー元のインスタンス。
+    content.vb: Public Sub New(sourceEllipsoid As Ellipsoid)
+  overload: MapQuest.CoordinateSystems.Ellipsoid.#ctor*
+  nameWithType.vb: Ellipsoid.New(Ellipsoid)
+  fullName.vb: MapQuest.CoordinateSystems.Ellipsoid.New(MapQuest.CoordinateSystems.Ellipsoid)
+  name.vb: New(Ellipsoid)
+- uid: MapQuest.CoordinateSystems.Ellipsoid.OrthodromicDistance(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.CoordinateSystems.Ellipsoid.OrthodromicDistance(System.Double,System.Double,System.Double,System.Double)
+  id: OrthodromicDistance(System.Double,System.Double,System.Double,System.Double)
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: OrthodromicDistance(double, double, double, double)
+  nameWithType: Ellipsoid.OrthodromicDistance(double, double, double, double)
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.OrthodromicDistance(double, double, double, double)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 楕円体上の 2 つの座標間の距離（大圏コースの距離）を計算します。
+  remarks: >-
+    「Orthodromic Distance」とは、楕円体の表面の 2 つの座標間の、最も近い距離の事です。
+
+    この距離で示されるコースを「大圏コース」といいます。
+
+    <p></p>
+
+    大圏コースは、「航程線(loxodromic)」とは異なります。
+
+    航程線は、経線と常に一定の角度で進んでいくため、大圏コースよりも長くなります。
+  example: []
+  syntax:
+    content: public virtual double OrthodromicDistance(double x1, double y1, double x2, double y2)
+    parameters:
+    - id: x1
+      type: System.Double
+      description: 第 1 の経度(度)。
+    - id: y1
+      type: System.Double
+      description: 第 1 の緯度(度)。
+    - id: x2
+      type: System.Double
+      description: 第 2 の経度(度)。
+    - id: y2
+      type: System.Double
+      description: 第 2 の緯度(度)。
+    return:
+      type: System.Double
+      description: >-
+        楕円体上の 2 つの座標間の距離(単位は <xref href="MapQuest.CoordinateSystems.Ellipsoid.AxisUnit" data-throw-if-not-resolved="false"></xref> 。)<p></p>
+
+        計算に失敗した場合は <xref href="System.Double.NaN" data-throw-if-not-resolved="false"></xref> を返します。
+
+        例外は発生しません。
+    content.vb: Public Overridable Function OrthodromicDistance(x1 As Double, y1 As Double, x2 As Double, y2 As Double) As Double
+  overload: MapQuest.CoordinateSystems.Ellipsoid.OrthodromicDistance*
+  nameWithType.vb: Ellipsoid.OrthodromicDistance(Double, Double, Double, Double)
+  fullName.vb: MapQuest.CoordinateSystems.Ellipsoid.OrthodromicDistance(Double, Double, Double, Double)
+  name.vb: OrthodromicDistance(Double, Double, Double, Double)
+- uid: MapQuest.CoordinateSystems.Ellipsoid.Create(System.String,System.Double,System.Double,MapQuest.CoordinateSystems.ILinearUnit)
+  commentId: M:MapQuest.CoordinateSystems.Ellipsoid.Create(System.String,System.Double,System.Double,MapQuest.CoordinateSystems.ILinearUnit)
+  id: Create(System.String,System.Double,System.Double,MapQuest.CoordinateSystems.ILinearUnit)
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: Create(string, double, double, ILinearUnit)
+  nameWithType: Ellipsoid.Create(string, double, double, ILinearUnit)
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Create(string, double, double, MapQuest.CoordinateSystems.ILinearUnit)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 新しい楕円体を生成します。
+  example: []
+  syntax:
+    content: public static Ellipsoid Create(string name, double semiMajorAxis, double inverseFlattening, ILinearUnit linearUnit)
+    parameters:
+    - id: name
+      type: System.String
+      description: 楕円体の名称。
+    - id: semiMajorAxis
+      type: System.Double
+      description: 楕円体の長半径。
+    - id: inverseFlattening
+      type: System.Double
+      description: 扁平率の逆数。
+    - id: linearUnit
+      type: MapQuest.CoordinateSystems.ILinearUnit
+      description: 楕円体の座標の単位。
+    return:
+      type: MapQuest.CoordinateSystems.Ellipsoid
+    content.vb: Public Shared Function Create(name As String, semiMajorAxis As Double, inverseFlattening As Double, linearUnit As ILinearUnit) As Ellipsoid
+  overload: MapQuest.CoordinateSystems.Ellipsoid.Create*
+  nameWithType.vb: Ellipsoid.Create(String, Double, Double, ILinearUnit)
+  fullName.vb: MapQuest.CoordinateSystems.Ellipsoid.Create(String, Double, Double, MapQuest.CoordinateSystems.ILinearUnit)
+  name.vb: Create(String, Double, Double, ILinearUnit)
+- uid: MapQuest.CoordinateSystems.Ellipsoid.Clone
+  commentId: M:MapQuest.CoordinateSystems.Ellipsoid.Clone
+  id: Clone
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: Ellipsoid.Clone()
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在のインスタンスの詳細コピーを提供します。
+  example: []
+  syntax:
+    content: public override object Clone()
+    return:
+      type: System.Object
+      description: 複製された <xref href="MapQuest.CoordinateSystems.Ellipsoid" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Overrides Function Clone() As Object
+  overridden: MapQuest.CoordinateSystems.Info.Clone
+  overload: MapQuest.CoordinateSystems.Ellipsoid.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.CoordinateSystems.Ellipsoid.WGS84
+  commentId: P:MapQuest.CoordinateSystems.Ellipsoid.WGS84
+  id: WGS84
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: WGS84
+  nameWithType: Ellipsoid.WGS84
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.WGS84
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「WGS84 楕円体」を取得します。GPS などで使われる楕円体です。
+  example: []
+  syntax:
+    content: public static Ellipsoid WGS84 { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.Ellipsoid
+      description: 「WGS84 楕円体」を示す <xref href="MapQuest.CoordinateSystems.Ellipsoid" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Shared ReadOnly Property WGS84 As Ellipsoid
+  overload: MapQuest.CoordinateSystems.Ellipsoid.WGS84*
+- uid: MapQuest.CoordinateSystems.Ellipsoid.GRS80
+  commentId: P:MapQuest.CoordinateSystems.Ellipsoid.GRS80
+  id: GRS80
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: GRS80
+  nameWithType: Ellipsoid.GRS80
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.GRS80
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    「GRS80」楕円体を取得します。日本の「測地成果2000(JGD2000)」や
+
+    アメリカの「American datum system (NAD83)」で使用されます。
+  example: []
+  syntax:
+    content: public static Ellipsoid GRS80 { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.Ellipsoid
+      description: 「GRS80」楕円体を示す <xref href="MapQuest.CoordinateSystems.Ellipsoid" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Shared ReadOnly Property GRS80 As Ellipsoid
+  overload: MapQuest.CoordinateSystems.Ellipsoid.GRS80*
+- uid: MapQuest.CoordinateSystems.Ellipsoid.Bessel1841
+  commentId: P:MapQuest.CoordinateSystems.Ellipsoid.Bessel1841
+  id: Bessel1841
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: Bessel1841
+  nameWithType: Ellipsoid.Bessel1841
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Bessel1841
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「Bessel 1841」楕円体を取得します。古い日本測地系で使用されます。
+  example: []
+  syntax:
+    content: public static Ellipsoid Bessel1841 { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.Ellipsoid
+      description: 「Bessel 1841」楕円体を示す <xref href="MapQuest.CoordinateSystems.Ellipsoid" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Shared ReadOnly Property Bessel1841 As Ellipsoid
+  overload: MapQuest.CoordinateSystems.Ellipsoid.Bessel1841*
+- uid: MapQuest.CoordinateSystems.Ellipsoid.IsIvfDefinitive
+  commentId: P:MapQuest.CoordinateSystems.Ellipsoid.IsIvfDefinitive
+  id: IsIvfDefinitive
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: IsIvfDefinitive
+  nameWithType: Ellipsoid.IsIvfDefinitive
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.IsIvfDefinitive
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    「楕円体のつぶれ方」を示す「扁平率の逆数」が、
+
+    明示的にパラメータとして与えられているかどうかを取得します。
+  remarks: >-
+    いくつかの楕円体は定義する値として「扁平率の逆数」を使用します。<p></p>
+
+    他の楕円体は、「扁平率の逆数」を計算するために極半径を使用します。<p></p>
+
+    この区別は浮動小数点での丸め誤差を回避するのに重要になります。<p></p>
+  example: []
+  syntax:
+    content: public bool IsIvfDefinitive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        true の場合、「楕円体のつぶれ方」は、明確に与えられます。
+
+        false の場合は、長半径・短半径から計算されます。
+    content.vb: Public ReadOnly Property IsIvfDefinitive As Boolean
+  overload: MapQuest.CoordinateSystems.Ellipsoid.IsIvfDefinitive*
+  implements:
+  - MapQuest.CoordinateSystems.IEllipsoid.IsIvfDefinitive
+- uid: MapQuest.CoordinateSystems.Ellipsoid.SemiMajorAxis
+  commentId: P:MapQuest.CoordinateSystems.Ellipsoid.SemiMajorAxis
+  id: SemiMajorAxis
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: SemiMajorAxis
+  nameWithType: Ellipsoid.SemiMajorAxis
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.SemiMajorAxis
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 楕円体の長半径を取得します。
+  example: []
+  syntax:
+    content: public double SemiMajorAxis { get; }
+    parameters: []
+    return:
+      type: System.Double
+      description: >-
+        楕円体の長半径。
+                    単位は <xref href="MapQuest.CoordinateSystems.Ellipsoid.AxisUnit" data-throw-if-not-resolved="false"></xref> で定義されます。
+    content.vb: Public ReadOnly Property SemiMajorAxis As Double
+  overload: MapQuest.CoordinateSystems.Ellipsoid.SemiMajorAxis*
+  implements:
+  - MapQuest.CoordinateSystems.IEllipsoid.SemiMajorAxis
+- uid: MapQuest.CoordinateSystems.Ellipsoid.InverseFlattening
+  commentId: P:MapQuest.CoordinateSystems.Ellipsoid.InverseFlattening
+  id: InverseFlattening
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: InverseFlattening
+  nameWithType: Ellipsoid.InverseFlattening
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.InverseFlattening
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 楕円体のつぶれ方を示す「扁平率の逆数」を取得します。
+  example: []
+  syntax:
+    content: public double InverseFlattening { get; }
+    parameters: []
+    return:
+      type: System.Double
+      description: 楕円体の扁平率の逆数。
+    content.vb: Public ReadOnly Property InverseFlattening As Double
+  overload: MapQuest.CoordinateSystems.Ellipsoid.InverseFlattening*
+  implements:
+  - MapQuest.CoordinateSystems.IEllipsoid.InverseFlattening
+- uid: MapQuest.CoordinateSystems.Ellipsoid.AxisUnit
+  commentId: P:MapQuest.CoordinateSystems.Ellipsoid.AxisUnit
+  id: AxisUnit
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: AxisUnit
+  nameWithType: Ellipsoid.AxisUnit
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.AxisUnit
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 楕円体の長半径・短半径の単位を取得します。
+  example: []
+  syntax:
+    content: public ILinearUnit AxisUnit { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.ILinearUnit
+      description: 楕円体の軸の単位を示す <xref href="MapQuest.CoordinateSystems.ILinearUnit" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public ReadOnly Property AxisUnit As ILinearUnit
+  overload: MapQuest.CoordinateSystems.Ellipsoid.AxisUnit*
+  implements:
+  - MapQuest.CoordinateSystems.IEllipsoid.AxisUnit
+- uid: MapQuest.CoordinateSystems.Ellipsoid.SemiMinorAxis
+  commentId: P:MapQuest.CoordinateSystems.Ellipsoid.SemiMinorAxis
+  id: SemiMinorAxis
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: SemiMinorAxis
+  nameWithType: Ellipsoid.SemiMinorAxis
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.SemiMinorAxis
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 楕円体の短半径を取得します。
+  example: []
+  syntax:
+    content: public double SemiMinorAxis { get; }
+    parameters: []
+    return:
+      type: System.Double
+      description: >-
+        楕円体の短半径。
+                    単位は <xref href="MapQuest.CoordinateSystems.Ellipsoid.AxisUnit" data-throw-if-not-resolved="false"></xref> で定義されます。
+    content.vb: Public ReadOnly Property SemiMinorAxis As Double
+  overload: MapQuest.CoordinateSystems.Ellipsoid.SemiMinorAxis*
+  implements:
+  - MapQuest.CoordinateSystems.IEllipsoid.SemiMinorAxis
+- uid: MapQuest.CoordinateSystems.Ellipsoid.Eccentricity
+  commentId: P:MapQuest.CoordinateSystems.Ellipsoid.Eccentricity
+  id: Eccentricity
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: Eccentricity
+  nameWithType: Ellipsoid.Eccentricity
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Eccentricity
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 偏心率を取得します。
+  remarks: >-
+    偏心率は、以下の計算式によって表されます。
+
+    <pre><code class="lang-csharp">a, b, は楕円体の長半径と短半径を示します。
+
+    f, flattening = (a - b)/a.
+
+
+    e = sqrt(2 * f - f * f)</code></pre>
+  example: []
+  syntax:
+    content: public double Eccentricity { get; }
+    parameters: []
+    return:
+      type: System.Double
+      description: この楕円体の偏心率。
+    content.vb: Public ReadOnly Property Eccentricity As Double
+  overload: MapQuest.CoordinateSystems.Ellipsoid.Eccentricity*
+- uid: MapQuest.CoordinateSystems.Ellipsoid.IsSphere
+  commentId: P:MapQuest.CoordinateSystems.Ellipsoid.IsSphere
+  id: IsSphere
+  parent: MapQuest.CoordinateSystems.Ellipsoid
+  langs:
+  - csharp
+  - vb
+  name: IsSphere
+  nameWithType: Ellipsoid.IsSphere
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.IsSphere
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 完全な球体かどうかを取得します。
+  example: []
+  syntax:
+    content: public bool IsSphere { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        true の場合、この楕円体は完全な「球体」である事を示します。
+
+        それ以外の場合は false を返します。
+    content.vb: Public ReadOnly Property IsSphere As Boolean
+  overload: MapQuest.CoordinateSystems.Ellipsoid.IsSphere*
+references:
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.CoordinateSystems.Info
+  commentId: T:MapQuest.CoordinateSystems.Info
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html
+  name: Info
+  nameWithType: Info
+  fullName: MapQuest.CoordinateSystems.Info
+- uid: MapQuest.CoordinateSystems.IEllipsoid
+  commentId: T:MapQuest.CoordinateSystems.IEllipsoid
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IEllipsoid.html
+  name: IEllipsoid
+  nameWithType: IEllipsoid
+  fullName: MapQuest.CoordinateSystems.IEllipsoid
+- uid: MapQuest.CoordinateSystems.IInfo
+  commentId: T:MapQuest.CoordinateSystems.IInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html
+  name: IInfo
+  nameWithType: IInfo
+  fullName: MapQuest.CoordinateSystems.IInfo
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: MapQuest.CoordinateSystems.Info.GetHashCode
+  commentId: M:MapQuest.CoordinateSystems.Info.GetHashCode
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode
+  name: GetHashCode()
+  nameWithType: Info.GetHashCode()
+  fullName: MapQuest.CoordinateSystems.Info.GetHashCode()
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.Info.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.Info.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.Info.Equals(System.Object)
+  commentId: M:MapQuest.CoordinateSystems.Info.Equals(System.Object)
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: Info.Equals(object)
+  fullName: MapQuest.CoordinateSystems.Info.Equals(object)
+  nameWithType.vb: Info.Equals(Object)
+  fullName.vb: MapQuest.CoordinateSystems.Info.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.Info.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.Info.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.CoordinateSystems.Info.Remarks
+  commentId: P:MapQuest.CoordinateSystems.Info.Remarks
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Remarks
+  name: Remarks
+  nameWithType: Info.Remarks
+  fullName: MapQuest.CoordinateSystems.Info.Remarks
+- uid: MapQuest.CoordinateSystems.Info.AuthorityCode
+  commentId: P:MapQuest.CoordinateSystems.Info.AuthorityCode
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode
+  name: AuthorityCode
+  nameWithType: Info.AuthorityCode
+  fullName: MapQuest.CoordinateSystems.Info.AuthorityCode
+- uid: MapQuest.CoordinateSystems.Info.Authority
+  commentId: P:MapQuest.CoordinateSystems.Info.Authority
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority
+  name: Authority
+  nameWithType: Info.Authority
+  fullName: MapQuest.CoordinateSystems.Info.Authority
+- uid: MapQuest.CoordinateSystems.Info.Name
+  commentId: P:MapQuest.CoordinateSystems.Info.Name
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name
+  name: Name
+  nameWithType: Info.Name
+  fullName: MapQuest.CoordinateSystems.Info.Name
+- uid: MapQuest.CoordinateSystems.Info.Alias
+  commentId: P:MapQuest.CoordinateSystems.Info.Alias
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias
+  name: Alias
+  nameWithType: Info.Alias
+  fullName: MapQuest.CoordinateSystems.Info.Alias
+- uid: MapQuest.CoordinateSystems.Info.Abbreviation
+  commentId: P:MapQuest.CoordinateSystems.Info.Abbreviation
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation
+  name: Abbreviation
+  nameWithType: Info.Abbreviation
+  fullName: MapQuest.CoordinateSystems.Info.Abbreviation
+- uid: MapQuest.CoordinateSystems.Info.WKT
+  commentId: P:MapQuest.CoordinateSystems.Info.WKT
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_WKT
+  name: WKT
+  nameWithType: Info.WKT
+  fullName: MapQuest.CoordinateSystems.Info.WKT
+- uid: MapQuest.CoordinateSystems.Info.XML
+  commentId: P:MapQuest.CoordinateSystems.Info.XML
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_XML
+  name: XML
+  nameWithType: Info.XML
+  fullName: MapQuest.CoordinateSystems.Info.XML
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateSystems.Ellipsoid.#ctor*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.#ctor
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid__ctor_System_Double_System_Double_System_Double_System_Boolean_MapQuest_CoordinateSystems_ILinearUnit_
+  name: Ellipsoid
+  nameWithType: Ellipsoid.Ellipsoid
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Ellipsoid
+  nameWithType.vb: Ellipsoid.New
+  fullName.vb: MapQuest.CoordinateSystems.Ellipsoid.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.CoordinateSystems.ILinearUnit
+  commentId: T:MapQuest.CoordinateSystems.ILinearUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ILinearUnit.html
+  name: ILinearUnit
+  nameWithType: ILinearUnit
+  fullName: MapQuest.CoordinateSystems.ILinearUnit
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.CoordinateSystems.Ellipsoid
+  commentId: T:MapQuest.CoordinateSystems.Ellipsoid
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html
+  name: Ellipsoid
+  nameWithType: Ellipsoid
+  fullName: MapQuest.CoordinateSystems.Ellipsoid
+- uid: MapQuest.CoordinateSystems.Ellipsoid.AxisUnit
+  commentId: P:MapQuest.CoordinateSystems.Ellipsoid.AxisUnit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_AxisUnit
+  name: AxisUnit
+  nameWithType: Ellipsoid.AxisUnit
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.AxisUnit
+- uid: System.Double.NaN
+  commentId: F:System.Double.NaN
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double.nan
+  name: NaN
+  nameWithType: double.NaN
+  fullName: double.NaN
+  nameWithType.vb: Double.NaN
+  fullName.vb: Double.NaN
+- uid: MapQuest.CoordinateSystems.Ellipsoid.OrthodromicDistance*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.OrthodromicDistance
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_OrthodromicDistance_System_Double_System_Double_System_Double_System_Double_
+  name: OrthodromicDistance
+  nameWithType: Ellipsoid.OrthodromicDistance
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.OrthodromicDistance
+- uid: MapQuest.CoordinateSystems.Ellipsoid.Create*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.Create
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_Create_System_String_System_Double_System_Double_MapQuest_CoordinateSystems_ILinearUnit_
+  name: Create
+  nameWithType: Ellipsoid.Create
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Create
+- uid: MapQuest.CoordinateSystems.Info.Clone
+  commentId: M:MapQuest.CoordinateSystems.Info.Clone
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Clone
+  name: Clone()
+  nameWithType: Info.Clone()
+  fullName: MapQuest.CoordinateSystems.Info.Clone()
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.Info.Clone
+    name: Clone
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.Info.Clone
+    name: Clone
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.Ellipsoid.Clone*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.Clone
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_Clone
+  name: Clone
+  nameWithType: Ellipsoid.Clone
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.Ellipsoid.WGS84*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.WGS84
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_WGS84
+  name: WGS84
+  nameWithType: Ellipsoid.WGS84
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.WGS84
+- uid: MapQuest.CoordinateSystems.Ellipsoid.GRS80*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.GRS80
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_GRS80
+  name: GRS80
+  nameWithType: Ellipsoid.GRS80
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.GRS80
+- uid: MapQuest.CoordinateSystems.Ellipsoid.Bessel1841*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.Bessel1841
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_Bessel1841
+  name: Bessel1841
+  nameWithType: Ellipsoid.Bessel1841
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Bessel1841
+- uid: MapQuest.CoordinateSystems.Ellipsoid.IsIvfDefinitive*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.IsIvfDefinitive
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_IsIvfDefinitive
+  name: IsIvfDefinitive
+  nameWithType: Ellipsoid.IsIvfDefinitive
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.IsIvfDefinitive
+- uid: MapQuest.CoordinateSystems.IEllipsoid.IsIvfDefinitive
+  commentId: P:MapQuest.CoordinateSystems.IEllipsoid.IsIvfDefinitive
+  parent: MapQuest.CoordinateSystems.IEllipsoid
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IEllipsoid.html#MapQuest_CoordinateSystems_IEllipsoid_IsIvfDefinitive
+  name: IsIvfDefinitive
+  nameWithType: IEllipsoid.IsIvfDefinitive
+  fullName: MapQuest.CoordinateSystems.IEllipsoid.IsIvfDefinitive
+- uid: MapQuest.CoordinateSystems.Ellipsoid.SemiMajorAxis*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.SemiMajorAxis
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_SemiMajorAxis
+  name: SemiMajorAxis
+  nameWithType: Ellipsoid.SemiMajorAxis
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.SemiMajorAxis
+- uid: MapQuest.CoordinateSystems.IEllipsoid.SemiMajorAxis
+  commentId: P:MapQuest.CoordinateSystems.IEllipsoid.SemiMajorAxis
+  parent: MapQuest.CoordinateSystems.IEllipsoid
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IEllipsoid.html#MapQuest_CoordinateSystems_IEllipsoid_SemiMajorAxis
+  name: SemiMajorAxis
+  nameWithType: IEllipsoid.SemiMajorAxis
+  fullName: MapQuest.CoordinateSystems.IEllipsoid.SemiMajorAxis
+- uid: MapQuest.CoordinateSystems.Ellipsoid.InverseFlattening*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.InverseFlattening
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_InverseFlattening
+  name: InverseFlattening
+  nameWithType: Ellipsoid.InverseFlattening
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.InverseFlattening
+- uid: MapQuest.CoordinateSystems.IEllipsoid.InverseFlattening
+  commentId: P:MapQuest.CoordinateSystems.IEllipsoid.InverseFlattening
+  parent: MapQuest.CoordinateSystems.IEllipsoid
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IEllipsoid.html#MapQuest_CoordinateSystems_IEllipsoid_InverseFlattening
+  name: InverseFlattening
+  nameWithType: IEllipsoid.InverseFlattening
+  fullName: MapQuest.CoordinateSystems.IEllipsoid.InverseFlattening
+- uid: MapQuest.CoordinateSystems.Ellipsoid.AxisUnit*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.AxisUnit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_AxisUnit
+  name: AxisUnit
+  nameWithType: Ellipsoid.AxisUnit
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.AxisUnit
+- uid: MapQuest.CoordinateSystems.IEllipsoid.AxisUnit
+  commentId: P:MapQuest.CoordinateSystems.IEllipsoid.AxisUnit
+  parent: MapQuest.CoordinateSystems.IEllipsoid
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IEllipsoid.html#MapQuest_CoordinateSystems_IEllipsoid_AxisUnit
+  name: AxisUnit
+  nameWithType: IEllipsoid.AxisUnit
+  fullName: MapQuest.CoordinateSystems.IEllipsoid.AxisUnit
+- uid: MapQuest.CoordinateSystems.Ellipsoid.SemiMinorAxis*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.SemiMinorAxis
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_SemiMinorAxis
+  name: SemiMinorAxis
+  nameWithType: Ellipsoid.SemiMinorAxis
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.SemiMinorAxis
+- uid: MapQuest.CoordinateSystems.IEllipsoid.SemiMinorAxis
+  commentId: P:MapQuest.CoordinateSystems.IEllipsoid.SemiMinorAxis
+  parent: MapQuest.CoordinateSystems.IEllipsoid
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IEllipsoid.html#MapQuest_CoordinateSystems_IEllipsoid_SemiMinorAxis
+  name: SemiMinorAxis
+  nameWithType: IEllipsoid.SemiMinorAxis
+  fullName: MapQuest.CoordinateSystems.IEllipsoid.SemiMinorAxis
+- uid: MapQuest.CoordinateSystems.Ellipsoid.Eccentricity*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.Eccentricity
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_Eccentricity
+  name: Eccentricity
+  nameWithType: Ellipsoid.Eccentricity
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.Eccentricity
+- uid: MapQuest.CoordinateSystems.Ellipsoid.IsSphere*
+  commentId: Overload:MapQuest.CoordinateSystems.Ellipsoid.IsSphere
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_IsSphere
+  name: IsSphere
+  nameWithType: Ellipsoid.IsSphere
+  fullName: MapQuest.CoordinateSystems.Ellipsoid.IsSphere

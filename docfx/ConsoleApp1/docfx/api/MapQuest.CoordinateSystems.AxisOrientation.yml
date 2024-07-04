@@ -1,0 +1,205 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.AxisOrientation
+  commentId: T:MapQuest.CoordinateSystems.AxisOrientation
+  id: AxisOrientation
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.AxisOrientation.Down
+  - MapQuest.CoordinateSystems.AxisOrientation.East
+  - MapQuest.CoordinateSystems.AxisOrientation.North
+  - MapQuest.CoordinateSystems.AxisOrientation.Other
+  - MapQuest.CoordinateSystems.AxisOrientation.South
+  - MapQuest.CoordinateSystems.AxisOrientation.Up
+  - MapQuest.CoordinateSystems.AxisOrientation.West
+  langs:
+  - csharp
+  - vb
+  name: AxisOrientation
+  nameWithType: AxisOrientation
+  fullName: MapQuest.CoordinateSystems.AxisOrientation
+  type: Enum
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 軸の方向の種類を示す列挙体です。
+  example: []
+  syntax:
+    content: 'public enum AxisOrientation : short'
+    content.vb: Public Enum AxisOrientation As Short
+- uid: MapQuest.CoordinateSystems.AxisOrientation.Other
+  commentId: F:MapQuest.CoordinateSystems.AxisOrientation.Other
+  id: Other
+  parent: MapQuest.CoordinateSystems.AxisOrientation
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: AxisOrientation.Other
+  fullName: MapQuest.CoordinateSystems.AxisOrientation.Other
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 未定義。
+  example: []
+  syntax:
+    content: Other = 0
+    return:
+      type: MapQuest.CoordinateSystems.AxisOrientation
+- uid: MapQuest.CoordinateSystems.AxisOrientation.North
+  commentId: F:MapQuest.CoordinateSystems.AxisOrientation.North
+  id: North
+  parent: MapQuest.CoordinateSystems.AxisOrientation
+  langs:
+  - csharp
+  - vb
+  name: North
+  nameWithType: AxisOrientation.North
+  fullName: MapQuest.CoordinateSystems.AxisOrientation.North
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「北」を示します。Y 座標や緯度が主に相当します。
+  example: []
+  syntax:
+    content: North = 1
+    return:
+      type: MapQuest.CoordinateSystems.AxisOrientation
+- uid: MapQuest.CoordinateSystems.AxisOrientation.South
+  commentId: F:MapQuest.CoordinateSystems.AxisOrientation.South
+  id: South
+  parent: MapQuest.CoordinateSystems.AxisOrientation
+  langs:
+  - csharp
+  - vb
+  name: South
+  nameWithType: AxisOrientation.South
+  fullName: MapQuest.CoordinateSystems.AxisOrientation.South
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「南」を示します。滅多に使用されません。
+  example: []
+  syntax:
+    content: South = 2
+    return:
+      type: MapQuest.CoordinateSystems.AxisOrientation
+- uid: MapQuest.CoordinateSystems.AxisOrientation.East
+  commentId: F:MapQuest.CoordinateSystems.AxisOrientation.East
+  id: East
+  parent: MapQuest.CoordinateSystems.AxisOrientation
+  langs:
+  - csharp
+  - vb
+  name: East
+  nameWithType: AxisOrientation.East
+  fullName: MapQuest.CoordinateSystems.AxisOrientation.East
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「東」を示します。滅多に使用されません。
+  example: []
+  syntax:
+    content: East = 3
+    return:
+      type: MapQuest.CoordinateSystems.AxisOrientation
+- uid: MapQuest.CoordinateSystems.AxisOrientation.West
+  commentId: F:MapQuest.CoordinateSystems.AxisOrientation.West
+  id: West
+  parent: MapQuest.CoordinateSystems.AxisOrientation
+  langs:
+  - csharp
+  - vb
+  name: West
+  nameWithType: AxisOrientation.West
+  fullName: MapQuest.CoordinateSystems.AxisOrientation.West
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「西」を示します。X 座標や経度が主に相当します。
+  example: []
+  syntax:
+    content: West = 4
+    return:
+      type: MapQuest.CoordinateSystems.AxisOrientation
+- uid: MapQuest.CoordinateSystems.AxisOrientation.Up
+  commentId: F:MapQuest.CoordinateSystems.AxisOrientation.Up
+  id: Up
+  parent: MapQuest.CoordinateSystems.AxisOrientation
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: AxisOrientation.Up
+  fullName: MapQuest.CoordinateSystems.AxisOrientation.Up
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「上」を示します。１次元座標系で使用されます。
+  example: []
+  syntax:
+    content: Up = 5
+    return:
+      type: MapQuest.CoordinateSystems.AxisOrientation
+- uid: MapQuest.CoordinateSystems.AxisOrientation.Down
+  commentId: F:MapQuest.CoordinateSystems.AxisOrientation.Down
+  id: Down
+  parent: MapQuest.CoordinateSystems.AxisOrientation
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: AxisOrientation.Down
+  fullName: MapQuest.CoordinateSystems.AxisOrientation.Down
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「下」を示します。１次元座標系で使用されます。
+  example: []
+  syntax:
+    content: Down = 6
+    return:
+      type: MapQuest.CoordinateSystems.AxisOrientation
+references:
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: MapQuest.CoordinateSystems.AxisOrientation
+  commentId: T:MapQuest.CoordinateSystems.AxisOrientation
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisOrientation.html
+  name: AxisOrientation
+  nameWithType: AxisOrientation
+  fullName: MapQuest.CoordinateSystems.AxisOrientation

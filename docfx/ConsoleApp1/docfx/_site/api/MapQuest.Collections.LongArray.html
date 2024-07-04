@@ -1,0 +1,1335 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LongArray | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LongArray | mysite ">
+      
+      <meta name="description" content="タイプセーフである  の配列を定義します。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Collections.LongArray">
+
+
+
+  <h1 id="MapQuest_Collections_LongArray" data-uid="MapQuest.Collections.LongArray" class="text-break">
+Class LongArray  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Collections.html">Collections</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>タイプセーフである <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> の配列を定義します。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LongArray : ICloneable, IEnumerable&lt;long&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LongArray</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Collections_LongArray__ctor_" data-uid="MapQuest.Collections.LongArray.#ctor*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray__ctor" data-uid="MapQuest.Collections.LongArray.#ctor">
+  LongArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>空で、デフォルトの初期量を備えた、 <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LongArray()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray__ctor_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor">System.Collections.ArrayList()</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_LongArray__ctor_" data-uid="MapQuest.Collections.LongArray.#ctor*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray__ctor_MapQuest_Collections_LongArray_" data-uid="MapQuest.Collections.LongArray.#ctor(MapQuest.Collections.LongArray)">
+  LongArray(LongArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> からコピーした <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> を格納し、
+コピーされる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> の数と同じ初期量を備えた、
+<a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LongArray(LongArray c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a></dt>
+    <dd><p>新しい配列に要素が追加された <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray__ctor_MapQuest_Collections_LongArray__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-collections-icollection)">System.Collections.ArrayList(ICollection)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">c</code> が
+null 参照 (Visual Basic では Nothing) です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_LongArray__ctor_" data-uid="MapQuest.Collections.LongArray.#ctor*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray__ctor_System_Int32_" data-uid="MapQuest.Collections.LongArray.#ctor(System.Int32)">
+  LongArray(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>空で、指定した初期量を備えた、 <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LongArray(int capacity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>初期状態の新しい配列に格納できる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray__ctor_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-int32)">System.Collections.ArrayList(Int32)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">capacity</code> が 0 未満です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_LongArray__ctor_" data-uid="MapQuest.Collections.LongArray.#ctor*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray__ctor_System_Int64___" data-uid="MapQuest.Collections.LongArray.#ctor(System.Int64[])">
+  LongArray(long[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> の配列からコピーした <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> を格納し、</p>
+<p>コピーされる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> の数と同じ初期量を備えた、
+<a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LongArray(long[] a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd><p>新しい配列に要素が追加された <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray__ctor_System_Int64____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-collections-icollection)">System.Collections.ArrayList(ICollection)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">c</code> が
+null 参照 (Visual Basic では Nothing) です。</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Collections_LongArray_Capacity_" data-uid="MapQuest.Collections.LongArray.Capacity*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_Capacity" data-uid="MapQuest.Collections.LongArray.Capacity">
+  Capacity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+に格納できる要素の数を取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Capacity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+に格納できる要素の数。</p>
+<pre><code>      0 が指定された場合は規定値を設定します。
+
+     現在設定されている数より小さい場合は例外を発行します。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_Capacity_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.capacity">System.Collections.ArrayList.Capacity</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html#MapQuest_Collections_LongArray_Capacity">Capacity</a> が <a class="xref" href="MapQuest.Collections.LongArray.html#MapQuest_Collections_LongArray_Count">Count</a>
+より小さい値に設定されています。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_LongArray_Count_" data-uid="MapQuest.Collections.LongArray.Count*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_Count" data-uid="MapQuest.Collections.LongArray.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+に格納されている <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> の数を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+に格納されている要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_Count_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.count">System.Collections.ArrayList.Count</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_LongArray_IsFixedSize_" data-uid="MapQuest.Collections.LongArray.IsFixedSize*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_IsFixedSize" data-uid="MapQuest.Collections.LongArray.IsFixedSize">
+  IsFixedSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+が固定サイズかどうかを示す値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFixedSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>現在の実装では必ず false です。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_IsFixedSize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isfixedsize">System.Collections.ArrayList.IsFixedSize</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_LongArray_IsReadOnly_" data-uid="MapQuest.Collections.LongArray.IsReadOnly*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_IsReadOnly" data-uid="MapQuest.Collections.LongArray.IsReadOnly">
+  IsReadOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+が読み取り専用かどうかを示す値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>現在の実装では必ず false です。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_IsReadOnly_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isreadonly">System.Collections.ArrayList.IsReadOnly</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_LongArray_IsSynchronized_" data-uid="MapQuest.Collections.LongArray.IsSynchronized*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_IsSynchronized" data-uid="MapQuest.Collections.LongArray.IsSynchronized">
+  IsSynchronized
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+へのアクセスが同期されている (スレッド セーフである) かどうかを示す値を取得します。</p>
+<pre><code>     &lt;p&gt;&lt;!-- Non Support 2005/01/20 --&gt;
+     	このプロパティは、現在サポートしていません。
+
+     &lt;/p&gt;
+</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSynchronized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+へのアクセスが同期されている (スレッド セーフである) 場合は true 。</p>
+<pre><code>     それ以外の場合は false 。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_IsSynchronized_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.issynchronized">System.Collections.ArrayList.IsSynchronized</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_LongArray_Item_" data-uid="MapQuest.Collections.LongArray.Item*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_Item_System_Int32_" data-uid="MapQuest.Collections.LongArray.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定された <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> を取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>取得または設定する要素の、0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>指定したインデックスにある <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_Item_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">System.Collections.IList.this</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>
+  <code class="paramref">index</code> が 0 未満です。</p>
+<p>または</p>
+<p>
+  <code class="paramref">index</code> が <a class="xref" href="MapQuest.Collections.LongArray.html#MapQuest_Collections_LongArray_Count">Count</a> 以上です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_LongArray_SyncRoot_" data-uid="MapQuest.Collections.LongArray.SyncRoot*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_SyncRoot" data-uid="MapQuest.Collections.LongArray.SyncRoot">
+  SyncRoot
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+へのアクセスを同期するために使用できるオブジェクトを取得します。</p>
+<pre><code>    &lt;p&gt;&lt;!-- Non Support 2005/01/20 --&gt;
+    	このプロパティは、現在サポートしていません。
+
+    &lt;/p&gt;
+</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object SyncRoot { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+へのアクセスを同期するために使用できるオブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_SyncRoot_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.syncroot">System.Collections.ArrayList.SyncRoot</a> を参照してください。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Collections_LongArray_Add_" data-uid="MapQuest.Collections.LongArray.Add*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_Add_System_Int64_" data-uid="MapQuest.Collections.LongArray.Add(System.Int64)">
+  Add(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+の末尾に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Add(long item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> の末尾に追加する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><code class="paramref">item</code> が追加された位置の
+<a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> インデックス。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_Add_System_Int64__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add">System.Collections.ArrayList.Add</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_LongArray_AddRange_" data-uid="MapQuest.Collections.LongArray.AddRange*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_AddRange_MapQuest_Collections_LongArray_" data-uid="MapQuest.Collections.LongArray.AddRange(MapQuest.Collections.LongArray)">
+  AddRange(LongArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> の要素をコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddRange(LongArray x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a></dt>
+    <dd><p>コレクションに追加するオブジェクトを格納する
+<a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> に格納されている要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_AddRange_MapQuest_Collections_LongArray__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange">System.Collections.ArrayList.AddRange</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">x</code> が null 参照 (Visual Basic では Nothing) です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_LongArray_AddRange_" data-uid="MapQuest.Collections.LongArray.AddRange*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_AddRange_System_Int64___" data-uid="MapQuest.Collections.LongArray.AddRange(System.Int64[])">
+  AddRange(long[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> 配列の要素をコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddRange(long[] x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd><p>コレクションに追加するオブジェクトを格納する
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> 型の配列。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> に格納されている要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_AddRange_System_Int64____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange">System.Collections.ArrayList.AddRange</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">x</code> が null 参照 (Visual Basic では Nothing) です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_LongArray_Clear_" data-uid="MapQuest.Collections.LongArray.Clear*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_Clear" data-uid="MapQuest.Collections.LongArray.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+からすべての <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_Clear_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear">System.Collections.ArrayList.Clear</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_LongArray_Clone_" data-uid="MapQuest.Collections.LongArray.Clone*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_Clone" data-uid="MapQuest.Collections.LongArray.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> の簡易コピーを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> の簡易コピーである新しいオブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Collections_LongArray_Contains_" data-uid="MapQuest.Collections.LongArray.Contains*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_Contains_System_Int64_" data-uid="MapQuest.Collections.LongArray.Contains(System.Int64)">
+  Contains(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ある <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> が <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+内に存在するかどうかを判断します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(long item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> 内で検索される
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code class="paramref">item</code> が <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+に存在する場合は true 。それ以外の場合は false 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_Contains_System_Int64__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains">System.Collections.ArrayList.Contains</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_LongArray_CopyTo_" data-uid="MapQuest.Collections.LongArray.CopyTo*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_CopyTo_System_Int64___" data-uid="MapQuest.Collections.LongArray.CopyTo(System.Int64[])">
+  CopyTo(long[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+全体を互換性のある 1 次元の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a>
+にコピーします。コピー操作は、コピー先の配列の先頭から始まります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(long[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+から要素がコピーされる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a>
+の 1 次元配列。この配列には、0 から始まるインデックス番号が必要です。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_CopyTo_System_Int64____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)">System.Collections.ArrayList.CopyTo</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">array</code> が
+null 参照 (Visual Basic では Nothing) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>
+  <code class="paramref">array</code> が多次元です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+<p>または</p>
+<p>
+         コピー元の <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> 
+         の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> 数が、コピー先の <code class="paramref">array</code> に格納できる要素の数を超えています。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_LongArray_CopyTo_" data-uid="MapQuest.Collections.LongArray.CopyTo*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_CopyTo_System_Int64___System_Int32_" data-uid="MapQuest.Collections.LongArray.CopyTo(System.Int64[],System.Int32)">
+  CopyTo(long[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+全体を互換性のある 1 次元の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a>
+にコピーします。コピー操作は、コピー先の配列の指定したインデックスから始まります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(long[] array, int start)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+から要素がコピーされる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a>
+の 1 次元配列。この配列には、0 から始まるインデックス番号が必要です。</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>コピーの開始位置となる、 0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_CopyTo_System_Int64___System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)">System.Collections.ArrayList.CopyTo</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">array</code> が
+null 参照 (Visual Basic では Nothing) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">start</code>
+が 0 未満です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>
+  <code class="paramref">array</code> が多次元です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+<p>または</p>
+<p>
+  <code class="paramref">start</code> が 
+         <code class="paramref">array</code> の長さ以上です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+<p>または</p>
+<p>
+         コピー元の <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> 
+         の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> 数が、 <code class="paramref">start</code> からコピー先の 
+         <code class="paramref">array</code> の末尾までに格納できる数を超えています。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_LongArray_GetEnumerator_" data-uid="MapQuest.Collections.LongArray.GetEnumerator*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_GetEnumerator" data-uid="MapQuest.Collections.LongArray.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;long&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Collections_LongArray_IndexOf_" data-uid="MapQuest.Collections.LongArray.IndexOf*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_IndexOf_System_Int64_" data-uid="MapQuest.Collections.LongArray.IndexOf(System.Int64)">
+  IndexOf(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> を検索し、
+<a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+内で最初に見つかった位置の 0 から始まるインデックスを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(long item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+内で検索される <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> 内で <code class="paramref">item</code>
+が見つかった場合は、最初に見つかった位置の 0 から始まるインデックス番号。</p>
+<pre><code>     それ以外の場合は -1。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_IndexOf_System_Int64__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)">System.Collections.ArrayList.IndexOf</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_LongArray_Insert_" data-uid="MapQuest.Collections.LongArray.Insert*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_Insert_System_Int32_System_Int64_" data-uid="MapQuest.Collections.LongArray.Insert(System.Int32,System.Int64)">
+  Insert(int, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+内の指定したインデックスの位置に要素を挿入します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, long item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><code class="paramref">item</code> を挿入する位置の、0 から始まるインデックス番号。</p>
+</dd>
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>挿入する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_Insert_System_Int32_System_Int64__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert">System.Collections.ArrayList.Insert</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>
+  <code class="paramref">index</code> が 0 未満です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+<p>または</p>
+<p>
+  <code class="paramref">index</code> が <a class="xref" href="MapQuest.Collections.LongArray.html#MapQuest_Collections_LongArray_Count">Count</a> より大きい値です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_LongArray_Remove_" data-uid="MapQuest.Collections.LongArray.Remove*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_Remove_System_Int64_" data-uid="MapQuest.Collections.LongArray.Remove(System.Int64)">
+  Remove(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+内から指定された <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(long item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a> から削除する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_Remove_System_Int64__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove">System.Collections.ArrayList.Remove</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">item</code> が配列内に見つかりません。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_LongArray_RemoveAt_" data-uid="MapQuest.Collections.LongArray.RemoveAt*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_RemoveAt_System_Int32_" data-uid="MapQuest.Collections.LongArray.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+の指定したインデックスにある <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>削除する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> の、0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_RemoveAt_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat">System.Collections.ArrayList.RemoveAt</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>
+  <code class="paramref">index</code> が 0 未満です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+<p>または</p>
+<p>
+  <code class="paramref">index</code> が <a class="xref" href="MapQuest.Collections.LongArray.html#MapQuest_Collections_LongArray_Count">Count</a> 以上です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_LongArray_ToArray_" data-uid="MapQuest.Collections.LongArray.ToArray*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_ToArray" data-uid="MapQuest.Collections.LongArray.ToArray">
+  ToArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.IntArray.html">IntArray</a> の要素を <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> の配列として取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long[] ToArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.IntArray.html">IntArray</a> の要素を格納する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> 配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Collections_LongArray_TrimToSize_" data-uid="MapQuest.Collections.LongArray.TrimToSize*"></a>
+
+  <h3 id="MapQuest_Collections_LongArray_TrimToSize" data-uid="MapQuest.Collections.LongArray.TrimToSize">
+  TrimToSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>容量を <a class="xref" href="MapQuest.Collections.LongArray.html">LongArray</a>
+内にある実際の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">System.Int64</a> 数に設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TrimToSize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_LongArray_TrimToSize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize">System.Collections.ArrayList.TrimToSize</a> を参照してください。</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

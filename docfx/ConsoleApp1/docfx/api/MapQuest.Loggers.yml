@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Loggers
+  commentId: N:MapQuest.Loggers
+  id: MapQuest.Loggers
+  children:
+  - MapQuest.Loggers.ILog
+  - MapQuest.Loggers.LevelTypes
+  - MapQuest.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: MapQuest.Loggers
+  nameWithType: MapQuest.Loggers
+  fullName: MapQuest.Loggers
+  type: Namespace
+  assemblies:
+  - MapQuest.Core
+references:
+- uid: MapQuest.Loggers.ILog
+  commentId: T:MapQuest.Loggers.ILog
+  parent: MapQuest.Loggers
+  isExternal: true
+  href: MapQuest.Loggers.ILog.html
+  name: ILog
+  nameWithType: ILog
+  fullName: MapQuest.Loggers.ILog
+- uid: MapQuest.Loggers.LevelTypes
+  commentId: T:MapQuest.Loggers.LevelTypes
+  parent: MapQuest.Loggers
+  isExternal: true
+  href: MapQuest.Loggers.LevelTypes.html
+  name: LevelTypes
+  nameWithType: LevelTypes
+  fullName: MapQuest.Loggers.LevelTypes
+- uid: MapQuest.Loggers.Logger
+  commentId: T:MapQuest.Loggers.Logger
+  parent: MapQuest.Loggers
+  isExternal: true
+  href: MapQuest.Loggers.Logger.html
+  name: Logger
+  nameWithType: Logger
+  fullName: MapQuest.Loggers.Logger
+- uid: MapQuest.Loggers
+  commentId: N:MapQuest.Loggers
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Loggers
+  nameWithType: MapQuest.Loggers
+  fullName: MapQuest.Loggers
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Loggers
+    name: Loggers
+    isExternal: true
+    href: MapQuest.Loggers.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Loggers
+    name: Loggers
+    isExternal: true
+    href: MapQuest.Loggers.html

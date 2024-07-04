@@ -1,0 +1,2237 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct GeneralMatrix | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct GeneralMatrix | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix">
+
+
+
+  <h1 id="MapQuest_Coordinates_Transforms_GeneralMatrix" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix" class="text-break">
+Struct GeneralMatrix  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Coordinates.html">Coordinates</a>.<a class="xref" href="MapQuest.Coordinates.Transforms.html">Transforms</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Coordinates.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct GeneralMatrix : ICloneable</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix__ctor_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix__ctor_System_Double___System_Int32_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Double[],System.Int32)">
+  GeneralMatrix(double[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct a matrix from a one-dimensional packed array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix(double[] vals, int m)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vals</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>One-dimensional array of doubles, packed by columns (ala Fortran).</p>
+</dd>
+    <dt><code>m</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of rows.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Array length must be a multiple of m.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix__ctor_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix__ctor_System_Double_____" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Double[][])">
+  GeneralMatrix(double[][])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct a matrix from a 2-D array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix(double[][] A)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[][]</dt>
+    <dd><p>Two-dimensional array of doubles.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>All rows must have the same length</p>
+</dd>
+  </dl>
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Create_System_Double_____">Create(double[][])</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix__ctor_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix__ctor_System_Double_____System_Int32_System_Int32_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Double[][],System.Int32,System.Int32)">
+  GeneralMatrix(double[][], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct a matrix quickly without checking arguments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix(double[][] A, int m, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[][]</dt>
+    <dd><p>Two-dimensional array of doubles.</p>
+</dd>
+    <dt><code>m</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of rows.</p>
+</dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of colums.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix__ctor_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix__ctor_System_Int32_System_Int32_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Int32,System.Int32)">
+  GeneralMatrix(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct an m-by-n matrix of zeros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix(int m, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of rows.</p>
+</dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of colums.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix__ctor_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix__ctor_System_Int32_System_Int32_System_Double_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Int32,System.Int32,System.Double)">
+  GeneralMatrix(int, int, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct an m-by-n constant matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix(int m, int n, double s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of rows.</p>
+</dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of colums.</p>
+</dd>
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Fill the matrix with this scalar value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Array_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Array*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Array" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Array">
+  Array
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Access the internal two-dimensional array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[][] Array { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[][]</dt>
+    <dd><p>Pointer to the two-dimensional array of matrix elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayCopy_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayCopy*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayCopy" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayCopy">
+  ArrayCopy
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copy the internal two-dimensional array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[][] ArrayCopy { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[][]</dt>
+    <dd><p>Two-dimensional array copy of matrix elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_ColumnDimension_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnDimension*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_ColumnDimension" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnDimension">
+  ColumnDimension
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get column dimension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ColumnDimension { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of columns.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_ColumnPackedCopy_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnPackedCopy*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_ColumnPackedCopy" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnPackedCopy">
+  ColumnPackedCopy
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Make a one-dimensional column packed copy of the internal array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[] ColumnPackedCopy { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>Matrix elements packed in a one-dimensional array by columns.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_RowDimension_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.RowDimension*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_RowDimension" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.RowDimension">
+  RowDimension
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get row dimension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RowDimension { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of rows.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_RowPackedCopy_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.RowPackedCopy*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_RowPackedCopy" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.RowPackedCopy">
+  RowPackedCopy
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Make a one-dimensional row packed copy of the internal array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[] RowPackedCopy { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>Matrix elements packed in a one-dimensional array by rows.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Add_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Add*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Add_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Add(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  Add(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>C = A + B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix Add(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>another matrix</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A + B</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_AddEquals_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.AddEquals*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_AddEquals_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.AddEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  AddEquals(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A = A + B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix AddEquals(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>another matrix</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A + B</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayLeftDivide_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivide*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayLeftDivide_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivide(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  ArrayLeftDivide(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Element-by-element left division, C = A.\B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix ArrayLeftDivide(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>another matrix</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A.\B</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayLeftDivideEquals_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivideEquals*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayLeftDivideEquals_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivideEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  ArrayLeftDivideEquals(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Element-by-element left division in place, A = A.\B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix ArrayLeftDivideEquals(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>another matrix</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A.\B</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayMultiply_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiply*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayMultiply_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiply(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  ArrayMultiply(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Element-by-element multiplication, C = A.*B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix ArrayMultiply(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>another matrix</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A.*B</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayMultiplyEquals_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiplyEquals*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayMultiplyEquals_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiplyEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  ArrayMultiplyEquals(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Element-by-element multiplication in place, A = A.*B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix ArrayMultiplyEquals(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>another matrix</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A.*B</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayRightDivide_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivide*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayRightDivide_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivide(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  ArrayRightDivide(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Element-by-element right division, C = A./B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix ArrayRightDivide(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>another matrix</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A./B</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayRightDivideEquals_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivideEquals*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayRightDivideEquals_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivideEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  ArrayRightDivideEquals(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Element-by-element right division in place, A = A./B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix ArrayRightDivideEquals(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>another matrix</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A./B</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Clone_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Clone*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Clone" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clone the GeneralMatrix object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Copy_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Copy*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Copy" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Copy">
+  Copy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Make a deep copy of a matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix Copy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Create_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Create*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Create_System_Double_____" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Create(System.Double[][])">
+  Create(double[][])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct a matrix from a copy of a 2-D array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GeneralMatrix Create(double[][] A)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[][]</dt>
+    <dd><p>Two-dimensional array of doubles.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>All rows must have the same length.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Determinant_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Determinant*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Determinant" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Determinant">
+  Determinant()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>GeneralMatrix determinant</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Determinant()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>determinant</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_GetElement_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.GetElement*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_GetElement_System_Int32_System_Int32_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.GetElement(System.Int32,System.Int32)">
+  GetElement(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a single element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetElement(int i, int j)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Row index.</p>
+</dd>
+    <dt><code>j</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Column index.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>A(i,j)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_GetMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_GetMatrix_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32,System.Int32,System.Int32,System.Int32)">
+  GetMatrix(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a submatrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix GetMatrix(int i0, int i1, int j0, int j1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Initial row index</p>
+</dd>
+    <dt><code>i1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Final row index</p>
+</dd>
+    <dt><code>j0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Initial column index</p>
+</dd>
+    <dt><code>j1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Final column index</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A(i0:i1,j0:j1)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>Submatrix indices</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_GetMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_GetMatrix_System_Int32_System_Int32_System_Int32___" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32,System.Int32,System.Int32[])">
+  GetMatrix(int, int, int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a submatrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix GetMatrix(int i0, int i1, int[] c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Initial row index</p>
+</dd>
+    <dt><code>i1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Final row index</p>
+</dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>Array of column indices.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A(i0:i1,c(:))</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>Submatrix indices</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_GetMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_GetMatrix_System_Int32___System_Int32_System_Int32_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32[],System.Int32,System.Int32)">
+  GetMatrix(int[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a submatrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix GetMatrix(int[] r, int j0, int j1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>Array of row indices.</p>
+</dd>
+    <dt><code>j0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Initial column index</p>
+</dd>
+    <dt><code>j1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Final column index</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A(r(:),j0:j1)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>Submatrix indices</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_GetMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_GetMatrix_System_Int32___System_Int32___" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32[],System.Int32[])">
+  GetMatrix(int[], int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a submatrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix GetMatrix(int[] r, int[] c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>Array of row indices.</p>
+</dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>Array of column indices.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A(r(:),c(:))</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>Submatrix indices</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Identity_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Identity*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Identity_System_Int32_System_Int32_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Identity(System.Int32,System.Int32)">
+  Identity(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generate identity matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GeneralMatrix Identity(int m, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of rows.</p>
+</dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of colums.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>An m-by-n matrix with ones on the diagonal and zeros elsewhere.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Inverse_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Inverse*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Inverse" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Inverse">
+  Inverse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Matrix inverse or pseudoinverse</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix Inverse()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>inverse(A) if A is square, pseudoinverse otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Multiply_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Multiply_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  Multiply(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Linear algebraic matrix multiplication, A * B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix Multiply(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>another matrix</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>Matrix product, A * B</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Matrix inner dimensions must agree.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Multiply_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Multiply_System_Double_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply(System.Double)">
+  Multiply(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiply a matrix by a scalar, C = s*A</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix Multiply(double s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>scalar</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>s*A</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_MultiplyEquals_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.MultiplyEquals*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_MultiplyEquals_System_Double_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.MultiplyEquals(System.Double)">
+  MultiplyEquals(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiply a matrix by a scalar in place, A = s*A</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix MultiplyEquals(double s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>scalar</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>replace A by s*A</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Norm1_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Norm1*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Norm1" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Norm1">
+  Norm1()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>One norm</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Norm1()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>maximum column sum.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_NormF_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.NormF*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_NormF" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.NormF">
+  NormF()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Frobenius norm</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double NormF()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>sqrt of sum of squares of all elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_NormInf_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.NormInf*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_NormInf" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.NormInf">
+  NormInf()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Infinity norm</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double NormInf()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>maximum row sum.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Random_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Random*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Random_System_Int32_System_Int32_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Random(System.Int32,System.Int32)">
+  Random(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generate matrix with random elements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GeneralMatrix Random(int m, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of rows.</p>
+</dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of colums.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>An m-by-n matrix with uniformly distributed random elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_SetElement_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SetElement*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_SetElement_System_Int32_System_Int32_System_Double_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SetElement(System.Int32,System.Int32,System.Double)">
+  SetElement(int, int, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set a single element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetElement(int i, int j, double s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Row index.</p>
+</dd>
+    <dt><code>j</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Column index.</p>
+</dd>
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>A(i,j).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_SetMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_SetMatrix_System_Int32_System_Int32_System_Int32_System_Int32_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32,System.Int32,System.Int32,System.Int32,MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  SetMatrix(int, int, int, int, GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set a submatrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrix(int i0, int i1, int j0, int j1, GeneralMatrix X)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Initial row index</p>
+</dd>
+    <dt><code>i1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Final row index</p>
+</dd>
+    <dt><code>j0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Initial column index</p>
+</dd>
+    <dt><code>j1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Final column index</p>
+</dd>
+    <dt><code>X</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A(i0:i1,j0:j1)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>Submatrix indices</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_SetMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_SetMatrix_System_Int32_System_Int32_System_Int32___MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32,System.Int32,System.Int32[],MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  SetMatrix(int, int, int[], GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set a submatrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrix(int i0, int i1, int[] c, GeneralMatrix X)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Initial row index</p>
+</dd>
+    <dt><code>i1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Final row index</p>
+</dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>Array of column indices.</p>
+</dd>
+    <dt><code>X</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A(i0:i1,c(:))</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>Submatrix indices</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_SetMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_SetMatrix_System_Int32___System_Int32_System_Int32_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32[],System.Int32,System.Int32,MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  SetMatrix(int[], int, int, GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set a submatrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrix(int[] r, int j0, int j1, GeneralMatrix X)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>Array of row indices.</p>
+</dd>
+    <dt><code>j0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Initial column index</p>
+</dd>
+    <dt><code>j1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Final column index</p>
+</dd>
+    <dt><code>X</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A(r(:),j0:j1)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>Submatrix indices</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_SetMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_SetMatrix_System_Int32___System_Int32___MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32[],System.Int32[],MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  SetMatrix(int[], int[], GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set a submatrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrix(int[] r, int[] c, GeneralMatrix X)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>Array of row indices.</p>
+</dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>Array of column indices.</p>
+</dd>
+    <dt><code>X</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A(r(:),c(:))</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>Submatrix indices</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Solve_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Solve*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Solve_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Solve(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  Solve(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Solve A*X = B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix Solve(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>right hand side</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>solution if A is square, least squares solution otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_SolveTranspose_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SolveTranspose*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_SolveTranspose_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SolveTranspose(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  SolveTranspose(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Solve X*A = B, which is also A'*X' = B'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix SolveTranspose(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>right hand side</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>solution if A is square, least squares solution otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Subtract_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Subtract*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Subtract_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Subtract(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  Subtract(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>C = A - B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix Subtract(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>another matrix</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A - B</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_SubtractEquals_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SubtractEquals*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_SubtractEquals_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.SubtractEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  SubtractEquals(GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A = A - B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix SubtractEquals(GeneralMatrix B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>B</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>another matrix</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A - B</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Trace_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Trace*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Trace" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Trace">
+  Trace()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Matrix trace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Trace()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>sum of the diagonal elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_Transpose_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Transpose*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_Transpose" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.Transpose">
+  Transpose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Matrix transpose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix Transpose()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>A'</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_UnaryMinus_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.UnaryMinus*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_UnaryMinus" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.UnaryMinus">
+  UnaryMinus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unary minus</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneralMatrix UnaryMinus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd><p>-A</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_op_Addition_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.op_Addition*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_op_Addition_MapQuest_Coordinates_Transforms_GeneralMatrix_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.op_Addition(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  operator +(GeneralMatrix, GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Addition of matrices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GeneralMatrix operator +(GeneralMatrix m1, GeneralMatrix m2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m1</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd></dd>
+    <dt><code>m2</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_op_Multiply_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.op_Multiply*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_op_Multiply_MapQuest_Coordinates_Transforms_GeneralMatrix_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.op_Multiply(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  operator *(GeneralMatrix, GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiplication of matrices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GeneralMatrix operator *(GeneralMatrix m1, GeneralMatrix m2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m1</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd></dd>
+    <dt><code>m2</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Transforms_GeneralMatrix_op_Subtraction_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.op_Subtraction*"></a>
+
+  <h3 id="MapQuest_Coordinates_Transforms_GeneralMatrix_op_Subtraction_MapQuest_Coordinates_Transforms_GeneralMatrix_MapQuest_Coordinates_Transforms_GeneralMatrix_" data-uid="MapQuest.Coordinates.Transforms.GeneralMatrix.op_Subtraction(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)">
+  operator -(GeneralMatrix, GeneralMatrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Subtraction of matrices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GeneralMatrix operator -(GeneralMatrix m1, GeneralMatrix m2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m1</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd></dd>
+    <dt><code>m2</code> <a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Transforms.GeneralMatrix.html">GeneralMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

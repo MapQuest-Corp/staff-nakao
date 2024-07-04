@@ -1,0 +1,1361 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FeatureFactory | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FeatureFactory | mysite ">
+      
+      <meta name="description" content="指定された情報を元に、  オブジェクトを生成するためのクラスです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Features.FeatureFactory">
+
+
+
+  <h1 id="MapQuest_Features_FeatureFactory" data-uid="MapQuest.Features.FeatureFactory" class="text-break">
+Class FeatureFactory  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Features.html">Features</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Features.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>指定された情報を元に、
+<a class="xref" href="MapQuest.Features.Feature.html">Feature</a>
+オブジェクトを生成するためのクラスです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FeatureFactory</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">FeatureFactory</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Features_FeatureFactory__ctor_" data-uid="MapQuest.Features.FeatureFactory.#ctor*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory__ctor" data-uid="MapQuest.Features.FeatureFactory.#ctor">
+  FeatureFactory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Features.FeatureFactory.html">FeatureFactory</a>
+クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FeatureFactory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory__ctor_" data-uid="MapQuest.Features.FeatureFactory.#ctor*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory__ctor_MapQuest_Topology_Geometries_GeometryFactory_System_String_System_String_" data-uid="MapQuest.Features.FeatureFactory.#ctor(MapQuest.Topology.Geometries.GeometryFactory,System.String,System.String)">
+  FeatureFactory(GeometryFactory, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <span class="xref">MapQuest.Topology.Geometries.GeometryFactory</span>
+を備えた、 <a class="xref" href="MapQuest.Features.FeatureFactory.html">FeatureFactory</a>
+クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FeatureFactory(GeometryFactory factory, string source, string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factory</code> <span class="xref">GeometryFactory</span></dt>
+    <dd><p>地物形状を生成する
+<span class="xref">MapQuest.Topology.Geometries.GeometryFactory</span>
+オブジェクト。</p>
+</dd>
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd> <!-- Non Support 2005/01/20 -->
+<p>この引数は、現在サポートしていません。&quot;&quot;(空文字)を指定してください。</p>
+</dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd> <!-- Non Support 2005/01/20 -->
+<p>この引数は、現在サポートしていません。&quot;&quot;(空文字)を指定してください。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory__ctor_" data-uid="MapQuest.Features.FeatureFactory.#ctor*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory__ctor_System_String_System_String_" data-uid="MapQuest.Features.FeatureFactory.#ctor(System.String,System.String)">
+  FeatureFactory(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Features.FeatureFactory.html">FeatureFactory</a>
+クラスの新しいインスタンスを初期化します。</p>
+<p><!-- Non Support 2005/01/20 -->
+	このコンストラクタは、現在サポートしていません。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FeatureFactory(string source, string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd> <!-- Non Support 2005/01/20 -->
+<p>この引数は、現在サポートしていません。&quot;&quot;(空文字)を指定してください。</p>
+</dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd> <!-- Non Support 2005/01/20 -->
+<p>この引数は、現在サポートしていません。&quot;&quot;(空文字)を指定してください。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Features_FeatureFactory_FeatureType_" data-uid="MapQuest.Features.FeatureFactory.FeatureType*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_FeatureType" data-uid="MapQuest.Features.FeatureFactory.FeatureType">
+  FeatureType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IFeatureType FeatureType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_GeometryFactory_" data-uid="MapQuest.Features.FeatureFactory.GeometryFactory*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_GeometryFactory" data-uid="MapQuest.Features.FeatureFactory.GeometryFactory">
+  GeometryFactory
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>各種 <span class="xref">MapQuest.Topology.Geometries.Geometry</span> を生成するための <a class="xref" href="MapQuest.Features.FeatureFactory.html#MapQuest_Features_FeatureFactory_GeometryFactory">GeometryFactory</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeometryFactory GeometryFactory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GeometryFactory</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_Path_" data-uid="MapQuest.Features.FeatureFactory.Path*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_Path" data-uid="MapQuest.Features.FeatureFactory.Path">
+  Path
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Path { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_Source_" data-uid="MapQuest.Features.FeatureFactory.Source*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_Source" data-uid="MapQuest.Features.FeatureFactory.Source">
+  Source
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Source { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Features_FeatureFactory_Create_" data-uid="MapQuest.Features.FeatureFactory.Create*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_Create_System_Int32_MapQuest_Features_IFeatureType_" data-uid="MapQuest.Features.FeatureFactory.Create(System.Int32,MapQuest.Features.IFeatureType)">
+  Create(int, IFeatureType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した識別子（数値）と <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の種類を示す <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a> を備えた <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> インスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Feature Create(int id, IFeatureType featureType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を区別するための識別番号。</p>
+</dd>
+    <dt><code>featureType</code> <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の種類を示す <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_Create_" data-uid="MapQuest.Features.FeatureFactory.Create*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_Create_System_Int32_MapQuest_Features_IFeatureType_MapQuest_Features_IFeatureProperty___" data-uid="MapQuest.Features.FeatureFactory.Create(System.Int32,MapQuest.Features.IFeatureType,MapQuest.Features.IFeatureProperty[])">
+  Create(int, IFeatureType, IFeatureProperty[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した識別子（数値）と <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の種類を示す <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a> を備えた <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> インスタンスを生成します。
+また、指定した <a class="xref" href="MapQuest.Features.IFeatureProperty.html">IFeatureProperty</a> の配列は、<a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の Propertiesに設定されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Feature Create(int id, IFeatureType featureType, IFeatureProperty[] properties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を区別するための識別番号。</p>
+</dd>
+    <dt><code>featureType</code> <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の種類を示す <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a> オブジェクト。</p>
+</dd>
+    <dt><code>properties</code> <a class="xref" href="MapQuest.Features.IFeatureProperty.html">IFeatureProperty</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の付加情報を示す <a class="xref" href="MapQuest.Features.IFeatureProperty.html">IFeatureProperty</a> の配列。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_Create_" data-uid="MapQuest.Features.FeatureFactory.Create*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_Create_System_Int32_MapQuest_Topology_Geometries_Geometry_" data-uid="MapQuest.Features.FeatureFactory.Create(System.Int32,MapQuest.Topology.Geometries.Geometry)">
+  Create(int, Geometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した識別子（数値）と地物形状を備えた <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> インスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Feature Create(int id, Geometry geometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を区別するための識別番号。</p>
+</dd>
+    <dt><code>geometry</code> <span class="xref">Geometry</span></dt>
+    <dd><p>地物形状として登録する <span class="xref">MapQuest.Topology.Geometries.Geometry</span> オブジェクト。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_Create_" data-uid="MapQuest.Features.FeatureFactory.Create*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_Create_System_Int32_System_String_" data-uid="MapQuest.Features.FeatureFactory.Create(System.Int32,System.String)">
+  Create(int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した識別子（数値）と地物形状を備えた <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> インスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Feature Create(int id, string wktGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を区別するための識別番号。</p>
+</dd>
+    <dt><code>wktGeometry</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>地物形状を表す Well-known Text ( WKT ) 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_Create_" data-uid="MapQuest.Features.FeatureFactory.Create*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_Create_System_String_MapQuest_Features_IFeatureType_" data-uid="MapQuest.Features.FeatureFactory.Create(System.String,MapQuest.Features.IFeatureType)">
+  Create(string, IFeatureType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した識別子（文字）と <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の種類を示す <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a> を備えた <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> インスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Feature Create(string id, IFeatureType featureType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を区別するための識別文字列。</p>
+</dd>
+    <dt><code>featureType</code> <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の種類を示す <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_Create_" data-uid="MapQuest.Features.FeatureFactory.Create*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_Create_System_String_MapQuest_Features_IFeatureType_MapQuest_Features_IFeatureProperty___" data-uid="MapQuest.Features.FeatureFactory.Create(System.String,MapQuest.Features.IFeatureType,MapQuest.Features.IFeatureProperty[])">
+  Create(string, IFeatureType, IFeatureProperty[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した識別子（文字）と <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の種類を示す <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a> を備えた <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> インスタンスを生成します。
+また、指定した <a class="xref" href="MapQuest.Features.IFeatureProperty.html">IFeatureProperty</a> の配列は、<a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の Propertiesに設定されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Feature Create(string id, IFeatureType featureType, IFeatureProperty[] properties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を区別するための識別文字列。</p>
+</dd>
+    <dt><code>featureType</code> <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の種類を示す <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a> オブジェクト。</p>
+</dd>
+    <dt><code>properties</code> <a class="xref" href="MapQuest.Features.IFeatureProperty.html">IFeatureProperty</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の付加情報を示す <a class="xref" href="MapQuest.Features.IFeatureProperty.html">IFeatureProperty</a> の配列。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_Create_" data-uid="MapQuest.Features.FeatureFactory.Create*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_Create_System_String_MapQuest_Topology_Geometries_Geometry_" data-uid="MapQuest.Features.FeatureFactory.Create(System.String,MapQuest.Topology.Geometries.Geometry)">
+  Create(string, Geometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した識別子（文字）と地物形状を備えた <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> インスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Feature Create(string id, Geometry geometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を区別するための識別文字列。</p>
+</dd>
+    <dt><code>geometry</code> <span class="xref">Geometry</span></dt>
+    <dd><p>地物形状として登録する <span class="xref">MapQuest.Topology.Geometries.Geometry</span> オブジェクト。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_Create_" data-uid="MapQuest.Features.FeatureFactory.Create*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_Create_System_String_System_Byte___" data-uid="MapQuest.Features.FeatureFactory.Create(System.String,System.Byte[])">
+  Create(string, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した識別子（文字）と地物形状を備えた <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> インスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Feature Create(string id, byte[] wkbGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を区別するための識別文字列。</p>
+</dd>
+    <dt><code>wkbGeometry</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>地物形状を表す WKB(Well-known binary)形式で表したバイト列。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_Create_" data-uid="MapQuest.Features.FeatureFactory.Create*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_Create_System_String_System_IO_Stream_" data-uid="MapQuest.Features.FeatureFactory.Create(System.String,System.IO.Stream)">
+  Create(string, Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した識別子（文字）と地物形状を備えた <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> インスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Feature Create(string id, Stream wkbStream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を区別するための識別文字列。</p>
+</dd>
+    <dt><code>wkbStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>WKB(Well-known binary)形式のストリーム</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_Create_" data-uid="MapQuest.Features.FeatureFactory.Create*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_Create_System_String_System_String_" data-uid="MapQuest.Features.FeatureFactory.Create(System.String,System.String)">
+  Create(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した識別子（文字）と地物形状を備えた <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> インスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Feature Create(string id, string wktGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を区別するための識別文字列。</p>
+</dd>
+    <dt><code>wktGeometry</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>地物形状を表す Well-known Text ( WKT ) 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_CreateFeatureID_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureID*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_CreateFeatureID_MapQuest_Topology_Geometries_Geometry_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureID(MapQuest.Topology.Geometries.Geometry)">
+  CreateFeatureID(Geometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>新しい <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> に付与する ID を生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string CreateFeatureID(Geometry geometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>geometry</code> <span class="xref">Geometry</span></dt>
+    <dd><p>付与する ID 生成のための情報となる <span class="xref">MapQuest.Topology.Geometries.Geometry</span> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>新しい <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> に付与する ID 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Features_FeatureFactory_CreateFeatureID_MapQuest_Topology_Geometries_Geometry__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このメソッドは、Feature の新規追加などで、生成した新しい
+<a class="xref" href="MapQuest.Features.Feature.html">Feature</a> に付ける ID を提供します。<p></p>
+引数 <code class="paramref">geometry</code> は、ID 生成の
+アルゴリズムに使われる場合があります。
+<p></p>
+例えば、派生クラスである 
+MqxFeatureFactory.CreateFeatureID 
+では、<code class="paramref">geometry</code> の中心位置を ID とするルールがあります。
+<p></p>
+しかし、既定の実装では <code class="paramref">geometry</code> は使用していません。
+既定の実装では ID には、新しい GUID(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid.newguid">Guid.NewGuid</a>) 
+が使用されます。
+</div>
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_CreateFeatureProperty_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureProperty*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_CreateFeatureProperty_System_String_System_Object_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureProperty(System.String,System.Object)">
+  CreateFeatureProperty(string, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> インスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FeatureProperty CreateFeatureProperty(string name, object value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を区別するための識別文字列。</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>地物形状として登録する
+<span class="xref">MapQuest.Topology.Geometries.Geometry</span> オブジェクト。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.FeatureProperty.html">FeatureProperty</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.Features.FeatureProperty.html">FeatureProperty</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_CreateFeatureType_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_CreateFeatureType_MapQuest_Database_AttributesSchemaList_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType(MapQuest.Database.AttributesSchemaList)">
+  CreateFeatureType(AttributesSchemaList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FeatureType CreateFeatureType(AttributesSchemaList schema)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>schema</code> <span class="xref">AttributesSchemaList</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.FeatureType.html">FeatureType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_CreateFeatureType_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_CreateFeatureType_MapQuest_Database_AttributesSchemaList_MapQuest_Features_IFeatureType___MapQuest_Features_IFeatureType___" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType(MapQuest.Database.AttributesSchemaList,MapQuest.Features.IFeatureType[],MapQuest.Features.IFeatureType[])">
+  CreateFeatureType(AttributesSchemaList, IFeatureType[], IFeatureType[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FeatureType CreateFeatureType(AttributesSchemaList schema, IFeatureType[] parents, IFeatureType[] children)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>schema</code> <span class="xref">AttributesSchemaList</span></dt>
+    <dd></dd>
+    <dt><code>parents</code> <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a>[]</dt>
+    <dd></dd>
+    <dt><code>children</code> <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.FeatureType.html">FeatureType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_CreateFeatureType_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_CreateFeatureType_System_Data_DataTable_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType(System.Data.DataTable)">
+  CreateFeatureType(DataTable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FeatureType CreateFeatureType(DataTable table)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.datatable">DataTable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.FeatureType.html">FeatureType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_CreateFeatureType_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_CreateFeatureType_System_Data_DataTable_MapQuest_Features_IFeatureType___MapQuest_Features_IFeatureType___" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType(System.Data.DataTable,MapQuest.Features.IFeatureType[],MapQuest.Features.IFeatureType[])">
+  CreateFeatureType(DataTable, IFeatureType[], IFeatureType[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FeatureType CreateFeatureType(DataTable table, IFeatureType[] parents, IFeatureType[] children)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.datatable">DataTable</a></dt>
+    <dd></dd>
+    <dt><code>parents</code> <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a>[]</dt>
+    <dd></dd>
+    <dt><code>children</code> <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.FeatureType.html">FeatureType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_CreateFeatureType_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_CreateFeatureType_System_Data_IDbConnection_System_String_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType(System.Data.IDbConnection,System.String)">
+  CreateFeatureType(IDbConnection, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>creates an instance of a IFeatureType from an array of FeatureTypeProperties,
+its parents and childs and its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FeatureType CreateFeatureType(IDbConnection connection, string tableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.idbconnection">IDbConnection</a></dt>
+    <dd></dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.FeatureType.html">FeatureType</a></dt>
+    <dd><p>instance of a IFeatureType</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_CreateFeatureType_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_CreateFeatureType_System_Data_IDbConnection_System_String_MapQuest_Features_IFeatureType___MapQuest_Features_IFeatureType___" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType(System.Data.IDbConnection,System.String,MapQuest.Features.IFeatureType[],MapQuest.Features.IFeatureType[])">
+  CreateFeatureType(IDbConnection, string, IFeatureType[], IFeatureType[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>creates an instance of a IFeatureType from an array of FeatureTypeProperties,
+its parents and childs and its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FeatureType CreateFeatureType(IDbConnection connection, string tableName, IFeatureType[] parents, IFeatureType[] children)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.idbconnection">IDbConnection</a></dt>
+    <dd></dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parents</code> <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a>[]</dt>
+    <dd><p>parents of the IFeatureType</p>
+</dd>
+    <dt><code>children</code> <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a>[]</dt>
+    <dd><p>known children of the IFeatureType</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.FeatureType.html">FeatureType</a></dt>
+    <dd><p>instance of a IFeatureType</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_CreateFeatureType_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_CreateFeatureType_System_String_MapQuest_Features_IFeatureType___MapQuest_Features_IFeatureType___MapQuest_Features_IFeatureTypeProperty___" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureType(System.String,MapQuest.Features.IFeatureType[],MapQuest.Features.IFeatureType[],MapQuest.Features.IFeatureTypeProperty[])">
+  CreateFeatureType(string, IFeatureType[], IFeatureType[], IFeatureTypeProperty[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>creates an instance of a IFeatureType from an array of FeatureTypeProperties,
+its parents and childs and its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FeatureType CreateFeatureType(string name, IFeatureType[] parents, IFeatureType[] children, IFeatureTypeProperty[] properties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>name of the IFeatureType</p>
+</dd>
+    <dt><code>parents</code> <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a>[]</dt>
+    <dd><p>parents of the IFeatureType</p>
+</dd>
+    <dt><code>children</code> <a class="xref" href="MapQuest.Features.IFeatureType.html">IFeatureType</a>[]</dt>
+    <dd><p>known children of the IFeatureType</p>
+</dd>
+    <dt><code>properties</code> <a class="xref" href="MapQuest.Features.IFeatureTypeProperty.html">IFeatureTypeProperty</a>[]</dt>
+    <dd><p>properties containing the IFeatureTypes content</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.FeatureType.html">FeatureType</a></dt>
+    <dd><p>instance of a IFeatureType</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_CreateFeatureTypeProperty_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureTypeProperty*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_CreateFeatureTypeProperty_System_String_System_String_System_Boolean_" data-uid="MapQuest.Features.FeatureFactory.CreateFeatureTypeProperty(System.String,System.String,System.Boolean)">
+  CreateFeatureTypeProperty(string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>creates an instance of a IFeatureTypeProperty from its name and the data
+type it describes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FeatureTypeProperty CreateFeatureTypeProperty(string name, string type, bool nullable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>name of the feature type property</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>type represented by the feature type property</p>
+</dd>
+    <dt><code>nullable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the feature type property is allowed to be null</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.FeatureTypeProperty.html">FeatureTypeProperty</a></dt>
+    <dd><p>instance of a IFeatureTypeProperty</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_CreateFromWKT_" data-uid="MapQuest.Features.FeatureFactory.CreateFromWKT*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_CreateFromWKT_System_String_" data-uid="MapQuest.Features.FeatureFactory.CreateFromWKT(System.String)">
+  CreateFromWKT(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Feature CreateFromWKT(string featureWKT)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>featureWKT</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureFactory_CreateFromXML_" data-uid="MapQuest.Features.FeatureFactory.CreateFromXML*"></a>
+
+  <h3 id="MapQuest_Features_FeatureFactory_CreateFromXML_System_String_" data-uid="MapQuest.Features.FeatureFactory.CreateFromXML(System.String)">
+  CreateFromXML(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Feature CreateFromXML(string featureXML)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>featureXML</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

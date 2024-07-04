@@ -1,0 +1,170 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Collections.PropertyChangeActionType
+  commentId: T:MapQuest.Collections.PropertyChangeActionType
+  id: PropertyChangeActionType
+  parent: MapQuest.Collections
+  children:
+  - MapQuest.Collections.PropertyChangeActionType.Add
+  - MapQuest.Collections.PropertyChangeActionType.Refresh
+  - MapQuest.Collections.PropertyChangeActionType.Remove
+  langs:
+  - csharp
+  - vb
+  name: PropertyChangeActionType
+  nameWithType: PropertyChangeActionType
+  fullName: MapQuest.Collections.PropertyChangeActionType
+  type: Enum
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.IPropertyChange.PropertyChanged" data-throw-if-not-resolved="false"></xref> イベントで定義される状態変化の種類を定義します。
+  example: []
+  syntax:
+    content: public enum PropertyChangeActionType
+    content.vb: Public Enum PropertyChangeActionType
+  seealso:
+  - linkId: MapQuest.Collections.PropertyObjects
+    commentId: T:MapQuest.Collections.PropertyObjects
+  - linkId: MapQuest.Collections.PropertyStrings
+    commentId: T:MapQuest.Collections.PropertyStrings
+- uid: MapQuest.Collections.PropertyChangeActionType.Add
+  commentId: F:MapQuest.Collections.PropertyChangeActionType.Add
+  id: Add
+  parent: MapQuest.Collections.PropertyChangeActionType
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: PropertyChangeActionType.Add
+  fullName: MapQuest.Collections.PropertyChangeActionType.Add
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    コレクションに要素が追加されたことを表します。
+
+
+    <!-- Specifies that an element was added to the property list. -->
+  example: []
+  syntax:
+    content: Add = 1
+    return:
+      type: MapQuest.Collections.PropertyChangeActionType
+- uid: MapQuest.Collections.PropertyChangeActionType.Refresh
+  commentId: F:MapQuest.Collections.PropertyChangeActionType.Refresh
+  id: Refresh
+  parent: MapQuest.Collections.PropertyChangeActionType
+  langs:
+  - csharp
+  - vb
+  name: Refresh
+  nameWithType: PropertyChangeActionType.Refresh
+  fullName: MapQuest.Collections.PropertyChangeActionType.Refresh
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    コレクションが変更されたことを表します。
+
+
+    これは、<b>Clear</b> メソッドなどを使用することによって発生します。
+
+
+    <!--
+
+    Specifies that the entire property list has changed. This is caused by 
+
+    using methods that manipulate the entire collection, such as Clear.
+
+    -->
+  example: []
+  syntax:
+    content: Refresh = 2
+    return:
+      type: MapQuest.Collections.PropertyChangeActionType
+- uid: MapQuest.Collections.PropertyChangeActionType.Remove
+  commentId: F:MapQuest.Collections.PropertyChangeActionType.Remove
+  id: Remove
+  parent: MapQuest.Collections.PropertyChangeActionType
+  langs:
+  - csharp
+  - vb
+  name: Remove
+  nameWithType: PropertyChangeActionType.Remove
+  fullName: MapQuest.Collections.PropertyChangeActionType.Remove
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    コレクションから要素が削除されたことを表します。
+
+
+    <!-- Specifies that an element was removed from the list. -->
+  example: []
+  syntax:
+    content: Remove = 3
+    return:
+      type: MapQuest.Collections.PropertyChangeActionType
+references:
+- uid: MapQuest.Collections.PropertyObjects
+  commentId: T:MapQuest.Collections.PropertyObjects
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html
+  name: PropertyObjects
+  nameWithType: PropertyObjects
+  fullName: MapQuest.Collections.PropertyObjects
+- uid: MapQuest.Collections.PropertyStrings
+  commentId: T:MapQuest.Collections.PropertyStrings
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.PropertyStrings.html
+  name: PropertyStrings
+  nameWithType: PropertyStrings
+  fullName: MapQuest.Collections.PropertyStrings
+- uid: MapQuest.Collections.IPropertyChange.PropertyChanged
+  commentId: E:MapQuest.Collections.IPropertyChange.PropertyChanged
+  isExternal: true
+  href: MapQuest.Collections.IPropertyChange.html#MapQuest_Collections_IPropertyChange_PropertyChanged
+  name: PropertyChanged
+  nameWithType: IPropertyChange.PropertyChanged
+  fullName: MapQuest.Collections.IPropertyChange.PropertyChanged
+- uid: MapQuest.Collections
+  commentId: N:MapQuest.Collections
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Collections
+  nameWithType: MapQuest.Collections
+  fullName: MapQuest.Collections
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+- uid: MapQuest.Collections.PropertyChangeActionType
+  commentId: T:MapQuest.Collections.PropertyChangeActionType
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.PropertyChangeActionType.html
+  name: PropertyChangeActionType
+  nameWithType: PropertyChangeActionType
+  fullName: MapQuest.Collections.PropertyChangeActionType

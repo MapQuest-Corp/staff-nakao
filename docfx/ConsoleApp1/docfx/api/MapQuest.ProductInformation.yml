@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.ProductInformation
+  commentId: T:MapQuest.ProductInformation
+  id: ProductInformation
+  parent: MapQuest
+  children:
+  - MapQuest.ProductInformation.#ctor
+  - MapQuest.ProductInformation.Company
+  - MapQuest.ProductInformation.Copyright
+  - MapQuest.ProductInformation.Culture
+  - MapQuest.ProductInformation.KeyFile
+  - MapQuest.ProductInformation.Product
+  - MapQuest.ProductInformation.Trademark
+  - MapQuest.ProductInformation.Version
+  langs:
+  - csharp
+  - vb
+  name: ProductInformation
+  nameWithType: ProductInformation
+  fullName: MapQuest.ProductInformation
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest
+  summary: 製品情報を示すクラスです。
+  example: []
+  syntax:
+    content: public class ProductInformation
+    content.vb: Public Class ProductInformation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.ProductInformation.Company
+  commentId: F:MapQuest.ProductInformation.Company
+  id: Company
+  parent: MapQuest.ProductInformation
+  langs:
+  - csharp
+  - vb
+  name: Company
+  nameWithType: ProductInformation.Company
+  fullName: MapQuest.ProductInformation.Company
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest
+  summary: 会社名。
+  example: []
+  syntax:
+    content: public const string Company = "MapQuest Corp., Japan"
+    return:
+      type: System.String
+    content.vb: Public Const Company As String = "MapQuest Corp., Japan"
+- uid: MapQuest.ProductInformation.Product
+  commentId: F:MapQuest.ProductInformation.Product
+  id: Product
+  parent: MapQuest.ProductInformation
+  langs:
+  - csharp
+  - vb
+  name: Product
+  nameWithType: ProductInformation.Product
+  fullName: MapQuest.ProductInformation.Product
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest
+  summary: 製品名。
+  example: []
+  syntax:
+    content: public const string Product = "MapQuest.NET GIS System"
+    return:
+      type: System.String
+    content.vb: Public Const Product As String = "MapQuest.NET GIS System"
+- uid: MapQuest.ProductInformation.Copyright
+  commentId: F:MapQuest.ProductInformation.Copyright
+  id: Copyright
+  parent: MapQuest.ProductInformation
+  langs:
+  - csharp
+  - vb
+  name: Copyright
+  nameWithType: ProductInformation.Copyright
+  fullName: MapQuest.ProductInformation.Copyright
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest
+  summary: コピーライト。
+  example: []
+  syntax:
+    content: public const string Copyright = "Copyright (C) 1992 - 2024 MapQuest Corp, Japan. All Rights Reserved."
+    return:
+      type: System.String
+    content.vb: Public Const Copyright As String = "Copyright (C) 1992 - 2024 MapQuest Corp, Japan. All Rights Reserved."
+- uid: MapQuest.ProductInformation.Trademark
+  commentId: F:MapQuest.ProductInformation.Trademark
+  id: Trademark
+  parent: MapQuest.ProductInformation
+  langs:
+  - csharp
+  - vb
+  name: Trademark
+  nameWithType: ProductInformation.Trademark
+  fullName: MapQuest.ProductInformation.Trademark
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest
+  summary: トレードマーク。
+  example: []
+  syntax:
+    content: public const string Trademark = ""
+    return:
+      type: System.String
+    content.vb: Public Const Trademark As String = ""
+- uid: MapQuest.ProductInformation.Culture
+  commentId: F:MapQuest.ProductInformation.Culture
+  id: Culture
+  parent: MapQuest.ProductInformation
+  langs:
+  - csharp
+  - vb
+  name: Culture
+  nameWithType: ProductInformation.Culture
+  fullName: MapQuest.ProductInformation.Culture
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest
+  summary: 言語。空文字にする必要があります。
+  example: []
+  syntax:
+    content: public const string Culture = ""
+    return:
+      type: System.String
+    content.vb: Public Const Culture As String = ""
+- uid: MapQuest.ProductInformation.Version
+  commentId: F:MapQuest.ProductInformation.Version
+  id: Version
+  parent: MapQuest.ProductInformation
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: ProductInformation.Version
+  fullName: MapQuest.ProductInformation.Version
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest
+  summary: リリースバージョン。
+  example: []
+  syntax:
+    content: public const string Version = "5.0.0.0"
+    return:
+      type: System.String
+    content.vb: Public Const Version As String = "5.0.0.0"
+- uid: MapQuest.ProductInformation.KeyFile
+  commentId: F:MapQuest.ProductInformation.KeyFile
+  id: KeyFile
+  parent: MapQuest.ProductInformation
+  langs:
+  - csharp
+  - vb
+  name: KeyFile
+  nameWithType: ProductInformation.KeyFile
+  fullName: MapQuest.ProductInformation.KeyFile
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest
+  summary: キーファイルの位置。
+  example: []
+  syntax:
+    content: public const string KeyFile = "..\\..\\..\\MapQuest.snk"
+    return:
+      type: System.String
+    content.vb: Public Const KeyFile As String = "..\..\..\MapQuest.snk"
+- uid: MapQuest.ProductInformation.#ctor
+  commentId: M:MapQuest.ProductInformation.#ctor
+  id: '#ctor'
+  parent: MapQuest.ProductInformation
+  langs:
+  - csharp
+  - vb
+  name: ProductInformation()
+  nameWithType: ProductInformation.ProductInformation()
+  fullName: MapQuest.ProductInformation.ProductInformation()
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest
+  syntax:
+    content: public ProductInformation()
+    content.vb: Public Sub New()
+  overload: MapQuest.ProductInformation.#ctor*
+  nameWithType.vb: ProductInformation.New()
+  fullName.vb: MapQuest.ProductInformation.New()
+  name.vb: New()
+references:
+- uid: MapQuest
+  commentId: N:MapQuest
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest
+  nameWithType: MapQuest
+  fullName: MapQuest
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.ProductInformation.#ctor*
+  commentId: Overload:MapQuest.ProductInformation.#ctor
+  isExternal: true
+  href: MapQuest.ProductInformation.html#MapQuest_ProductInformation__ctor
+  name: ProductInformation
+  nameWithType: ProductInformation.ProductInformation
+  fullName: MapQuest.ProductInformation.ProductInformation
+  nameWithType.vb: ProductInformation.New
+  fullName.vb: MapQuest.ProductInformation.New
+  name.vb: New

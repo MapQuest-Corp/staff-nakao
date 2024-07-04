@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Utilities
+  commentId: N:MapQuest.Utilities
+  id: MapQuest.Utilities
+  children:
+  - MapQuest.Utilities.CoreUtilitiesException
+  - MapQuest.Utilities.MathUtil
+  - MapQuest.Utilities.ObjectConverter
+  - MapQuest.Utilities.StringUtil
+  - MapQuest.Utilities.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: MapQuest.Utilities
+  nameWithType: MapQuest.Utilities
+  fullName: MapQuest.Utilities
+  type: Namespace
+  assemblies:
+  - MapQuest.Core
+references:
+- uid: MapQuest.Utilities.CoreUtilitiesException
+  commentId: T:MapQuest.Utilities.CoreUtilitiesException
+  isExternal: true
+  href: MapQuest.Utilities.CoreUtilitiesException.html
+  name: CoreUtilitiesException
+  nameWithType: CoreUtilitiesException
+  fullName: MapQuest.Utilities.CoreUtilitiesException
+- uid: MapQuest.Utilities.MathUtil
+  commentId: T:MapQuest.Utilities.MathUtil
+  isExternal: true
+  href: MapQuest.Utilities.MathUtil.html
+  name: MathUtil
+  nameWithType: MathUtil
+  fullName: MapQuest.Utilities.MathUtil
+- uid: MapQuest.Utilities.ObjectConverter
+  commentId: T:MapQuest.Utilities.ObjectConverter
+  isExternal: true
+  href: MapQuest.Utilities.ObjectConverter.html
+  name: ObjectConverter
+  nameWithType: ObjectConverter
+  fullName: MapQuest.Utilities.ObjectConverter
+- uid: MapQuest.Utilities.StringUtil
+  commentId: T:MapQuest.Utilities.StringUtil
+  isExternal: true
+  href: MapQuest.Utilities.StringUtil.html
+  name: StringUtil
+  nameWithType: StringUtil
+  fullName: MapQuest.Utilities.StringUtil
+- uid: MapQuest.Utilities.UnitConverter
+  commentId: T:MapQuest.Utilities.UnitConverter
+  isExternal: true
+  href: MapQuest.Utilities.UnitConverter.html
+  name: UnitConverter
+  nameWithType: UnitConverter
+  fullName: MapQuest.Utilities.UnitConverter

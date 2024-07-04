@@ -1,0 +1,850 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.AxisInfo
+  commentId: T:MapQuest.CoordinateSystems.AxisInfo
+  id: AxisInfo
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.AxisInfo.#ctor
+  - MapQuest.CoordinateSystems.AxisInfo.#ctor(System.String,MapQuest.CoordinateSystems.AxisOrientation)
+  - MapQuest.CoordinateSystems.AxisInfo.Altitude
+  - MapQuest.CoordinateSystems.AxisInfo.Clone
+  - MapQuest.CoordinateSystems.AxisInfo.Equals(MapQuest.CoordinateSystems.AxisInfo)
+  - MapQuest.CoordinateSystems.AxisInfo.Equals(MapQuest.CoordinateSystems.IAxisInfo)
+  - MapQuest.CoordinateSystems.AxisInfo.Latitude
+  - MapQuest.CoordinateSystems.AxisInfo.Longitude
+  - MapQuest.CoordinateSystems.AxisInfo.Name
+  - MapQuest.CoordinateSystems.AxisInfo.Orientation
+  - MapQuest.CoordinateSystems.AxisInfo.ToString
+  - MapQuest.CoordinateSystems.AxisInfo.X
+  - MapQuest.CoordinateSystems.AxisInfo.Y
+  langs:
+  - csharp
+  - vb
+  name: AxisInfo
+  nameWithType: AxisInfo
+  fullName: MapQuest.CoordinateSystems.AxisInfo
+  type: Class
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    「軸」に関する情報を示すクラスです。
+
+    この情報は、軸に関する情報を表示したり、軸の方向を指し示すのに使用されます。
+  remarks: >-
+    このクラスは２つの情報しか持っていません。<p></p>
+
+    一つは軸の名称(<xref href="MapQuest.CoordinateSystems.AxisInfo.Name" data-throw-if-not-resolved="false"></xref>)、もう一つは軸の方向(<xref href="MapQuest.CoordinateSystems.AxisOrientation" data-throw-if-not-resolved="false"></xref>)です。
+  example: []
+  syntax:
+    content: 'public class AxisInfo : IAxisInfo, ICloneable'
+    content.vb: Public Class AxisInfo Implements IAxisInfo, ICloneable
+  inheritance:
+  - System.Object
+  implements:
+  - MapQuest.CoordinateSystems.IAxisInfo
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.CoordinateSystems.AxisInfo.#ctor
+  commentId: M:MapQuest.CoordinateSystems.AxisInfo.#ctor
+  id: '#ctor'
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: AxisInfo()
+  nameWithType: AxisInfo.AxisInfo()
+  fullName: MapQuest.CoordinateSystems.AxisInfo.AxisInfo()
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: パラメータを指定して、新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public AxisInfo()
+    content.vb: Public Sub New()
+  overload: MapQuest.CoordinateSystems.AxisInfo.#ctor*
+  nameWithType.vb: AxisInfo.New()
+  fullName.vb: MapQuest.CoordinateSystems.AxisInfo.New()
+  name.vb: New()
+- uid: MapQuest.CoordinateSystems.AxisInfo.#ctor(System.String,MapQuest.CoordinateSystems.AxisOrientation)
+  commentId: M:MapQuest.CoordinateSystems.AxisInfo.#ctor(System.String,MapQuest.CoordinateSystems.AxisOrientation)
+  id: '#ctor(System.String,MapQuest.CoordinateSystems.AxisOrientation)'
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: AxisInfo(string, AxisOrientation)
+  nameWithType: AxisInfo.AxisInfo(string, AxisOrientation)
+  fullName: MapQuest.CoordinateSystems.AxisInfo.AxisInfo(string, MapQuest.CoordinateSystems.AxisOrientation)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 軸の名称と方向を指定して、新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public AxisInfo(string name, AxisOrientation orientation)
+    parameters:
+    - id: name
+      type: System.String
+      description: 軸の名称。
+    - id: orientation
+      type: MapQuest.CoordinateSystems.AxisOrientation
+      description: 軸の方向。
+    content.vb: Public Sub New(name As String, orientation As AxisOrientation)
+  overload: MapQuest.CoordinateSystems.AxisInfo.#ctor*
+  nameWithType.vb: AxisInfo.New(String, AxisOrientation)
+  fullName.vb: MapQuest.CoordinateSystems.AxisInfo.New(String, MapQuest.CoordinateSystems.AxisOrientation)
+  name.vb: New(String, AxisOrientation)
+- uid: MapQuest.CoordinateSystems.AxisInfo.Equals(MapQuest.CoordinateSystems.IAxisInfo)
+  commentId: M:MapQuest.CoordinateSystems.AxisInfo.Equals(MapQuest.CoordinateSystems.IAxisInfo)
+  id: Equals(MapQuest.CoordinateSystems.IAxisInfo)
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Equals(IAxisInfo)
+  nameWithType: AxisInfo.Equals(IAxisInfo)
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Equals(MapQuest.CoordinateSystems.IAxisInfo)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 指定した <xref href="MapQuest.CoordinateSystems.IAxisInfo" data-throw-if-not-resolved="false"></xref> が、このインスタンスと同じかどうかを返します。
+  example: []
+  syntax:
+    content: public bool Equals(IAxisInfo obj)
+    parameters:
+    - id: obj
+      type: MapQuest.CoordinateSystems.IAxisInfo
+      description: 比較する <xref href="MapQuest.CoordinateSystems.IAxisInfo" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: 同じであれば true 、異なっていたら false 。
+    content.vb: Public Function Equals(obj As IAxisInfo) As Boolean
+  overload: MapQuest.CoordinateSystems.AxisInfo.Equals*
+- uid: MapQuest.CoordinateSystems.AxisInfo.Equals(MapQuest.CoordinateSystems.AxisInfo)
+  commentId: M:MapQuest.CoordinateSystems.AxisInfo.Equals(MapQuest.CoordinateSystems.AxisInfo)
+  id: Equals(MapQuest.CoordinateSystems.AxisInfo)
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Equals(AxisInfo)
+  nameWithType: AxisInfo.Equals(AxisInfo)
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Equals(MapQuest.CoordinateSystems.AxisInfo)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 指定した <xref href="MapQuest.CoordinateSystems.AxisInfo" data-throw-if-not-resolved="false"></xref> が、このインスタンスと同じかどうかを返します。
+  example: []
+  syntax:
+    content: public bool Equals(AxisInfo obj)
+    parameters:
+    - id: obj
+      type: MapQuest.CoordinateSystems.AxisInfo
+      description: 比較する <xref href="MapQuest.CoordinateSystems.AxisInfo" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: 同じであれば true 、異なっていたら false 。
+    content.vb: Public Function Equals(obj As AxisInfo) As Boolean
+  overload: MapQuest.CoordinateSystems.AxisInfo.Equals*
+- uid: MapQuest.CoordinateSystems.AxisInfo.ToString
+  commentId: M:MapQuest.CoordinateSystems.AxisInfo.ToString
+  id: ToString
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AxisInfo.ToString()
+  fullName: MapQuest.CoordinateSystems.AxisInfo.ToString()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    この <xref href="MapQuest.CoordinateSystems.AxisInfo" data-throw-if-not-resolved="false"></xref> を
+
+    Well-Known Text (WKT) 形式で表します。
+  remarks: >-
+    WKT は OpenGIS' により策定されている、下記のような形式です。
+
+    <pre><code class="lang-csharp">AXIS["name",NORTH]</code></pre>.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: MapQuest.CoordinateSystems.AxisInfo.ToString*
+- uid: MapQuest.CoordinateSystems.AxisInfo.Clone
+  commentId: M:MapQuest.CoordinateSystems.AxisInfo.Clone
+  id: Clone
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: AxisInfo.Clone()
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在のインスタンスの詳細コピーを提供します。
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+      description: コピーされた <xref href="MapQuest.CoordinateSystems.AxisInfo" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function Clone() As Object
+  overload: MapQuest.CoordinateSystems.AxisInfo.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.CoordinateSystems.AxisInfo.Name
+  commentId: P:MapQuest.CoordinateSystems.AxisInfo.Name
+  id: Name
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: AxisInfo.Name
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Name
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 軸の名称を取得します。
+  remarks: 推奨される値は、「x,y,Lat,Long」などの簡単な名称です。
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: 軸の名称。
+    content.vb: Public ReadOnly Property Name As String
+  overload: MapQuest.CoordinateSystems.AxisInfo.Name*
+  implements:
+  - MapQuest.CoordinateSystems.IAxisInfo.Name
+- uid: MapQuest.CoordinateSystems.AxisInfo.Orientation
+  commentId: P:MapQuest.CoordinateSystems.AxisInfo.Orientation
+  id: Orientation
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Orientation
+  nameWithType: AxisInfo.Orientation
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Orientation
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 軸の方向を取得します。
+  example: []
+  syntax:
+    content: public AxisOrientation Orientation { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.AxisOrientation
+      description: 軸の方向を示す <xref href="MapQuest.CoordinateSystems.AxisOrientation" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public ReadOnly Property Orientation As AxisOrientation
+  overload: MapQuest.CoordinateSystems.AxisInfo.Orientation*
+  implements:
+  - MapQuest.CoordinateSystems.IAxisInfo.Orientation
+- uid: MapQuest.CoordinateSystems.AxisInfo.X
+  commentId: P:MapQuest.CoordinateSystems.AxisInfo.X
+  id: X
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: AxisInfo.X
+  fullName: MapQuest.CoordinateSystems.AxisInfo.X
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「x」軸を示す軸情報を生成して取得します。
+  remarks: >-
+    座標値が増加すると、東の方向に進行します。<p></p>
+
+    これは、通常「Projected Coordinate System」にて使用されます。
+  example: []
+  syntax:
+    content: public static AxisInfo X { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.AxisInfo
+      description: 「x」軸を示す軸情報。
+    content.vb: Public Shared ReadOnly Property X As AxisInfo
+  overload: MapQuest.CoordinateSystems.AxisInfo.X*
+- uid: MapQuest.CoordinateSystems.AxisInfo.Y
+  commentId: P:MapQuest.CoordinateSystems.AxisInfo.Y
+  id: Y
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: AxisInfo.Y
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Y
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「y」軸を示す軸情報を生成して取得します。
+  remarks: >-
+    座標値が増加すると、北の方向に進行します。<p></p>
+
+    これは、通常「Projected Coordinate System」にて使用されます。
+  example: []
+  syntax:
+    content: public static AxisInfo Y { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.AxisInfo
+      description: 「y」軸を示す軸情報。
+    content.vb: Public Shared ReadOnly Property Y As AxisInfo
+  overload: MapQuest.CoordinateSystems.AxisInfo.Y*
+- uid: MapQuest.CoordinateSystems.AxisInfo.Longitude
+  commentId: P:MapQuest.CoordinateSystems.AxisInfo.Longitude
+  id: Longitude
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Longitude
+  nameWithType: AxisInfo.Longitude
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Longitude
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「経度」軸を示す軸情報を生成して取得します。
+  remarks: >-
+    座標値が増加すると、東の方向に進行します。<p></p>
+
+    これは、通常「Geographic Coordinate System」にて使用されます。
+  example: []
+  syntax:
+    content: public static AxisInfo Longitude { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.AxisInfo
+      description: 「経度」軸を示す軸情報。
+    content.vb: Public Shared ReadOnly Property Longitude As AxisInfo
+  overload: MapQuest.CoordinateSystems.AxisInfo.Longitude*
+- uid: MapQuest.CoordinateSystems.AxisInfo.Latitude
+  commentId: P:MapQuest.CoordinateSystems.AxisInfo.Latitude
+  id: Latitude
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Latitude
+  nameWithType: AxisInfo.Latitude
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Latitude
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「緯度」軸を示す軸情報を生成して取得します。
+  remarks: >-
+    座標値が増加すると、北の方向に進行します。<p></p>
+
+    これは、通常「Geographic Coordinate System」にて使用されます。
+  example: []
+  syntax:
+    content: public static AxisInfo Latitude { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.AxisInfo
+      description: 「緯度」軸を示す軸情報。
+    content.vb: Public Shared ReadOnly Property Latitude As AxisInfo
+  overload: MapQuest.CoordinateSystems.AxisInfo.Latitude*
+- uid: MapQuest.CoordinateSystems.AxisInfo.Altitude
+  commentId: P:MapQuest.CoordinateSystems.AxisInfo.Altitude
+  id: Altitude
+  parent: MapQuest.CoordinateSystems.AxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Altitude
+  nameWithType: AxisInfo.Altitude
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Altitude
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「標高・高さ」軸を示す軸情報を生成して取得します。
+  remarks: 座標値が増加すると、上の方向に進行します。
+  example: []
+  syntax:
+    content: public static AxisInfo Altitude { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.AxisInfo
+      description: 「標高・高さ」軸を示す軸情報。
+    content.vb: Public Shared ReadOnly Property Altitude As AxisInfo
+  overload: MapQuest.CoordinateSystems.AxisInfo.Altitude*
+references:
+- uid: MapQuest.CoordinateSystems.AxisInfo.Name
+  commentId: P:MapQuest.CoordinateSystems.AxisInfo.Name
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html#MapQuest_CoordinateSystems_AxisInfo_Name
+  name: Name
+  nameWithType: AxisInfo.Name
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Name
+- uid: MapQuest.CoordinateSystems.AxisOrientation
+  commentId: T:MapQuest.CoordinateSystems.AxisOrientation
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisOrientation.html
+  name: AxisOrientation
+  nameWithType: AxisOrientation
+  fullName: MapQuest.CoordinateSystems.AxisOrientation
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.CoordinateSystems.IAxisInfo
+  commentId: T:MapQuest.CoordinateSystems.IAxisInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAxisInfo.html
+  name: IAxisInfo
+  nameWithType: IAxisInfo
+  fullName: MapQuest.CoordinateSystems.IAxisInfo
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateSystems.AxisInfo.#ctor*
+  commentId: Overload:MapQuest.CoordinateSystems.AxisInfo.#ctor
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html#MapQuest_CoordinateSystems_AxisInfo__ctor
+  name: AxisInfo
+  nameWithType: AxisInfo.AxisInfo
+  fullName: MapQuest.CoordinateSystems.AxisInfo.AxisInfo
+  nameWithType.vb: AxisInfo.New
+  fullName.vb: MapQuest.CoordinateSystems.AxisInfo.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.CoordinateSystems.AxisInfo.Equals*
+  commentId: Overload:MapQuest.CoordinateSystems.AxisInfo.Equals
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html#MapQuest_CoordinateSystems_AxisInfo_Equals_MapQuest_CoordinateSystems_IAxisInfo_
+  name: Equals
+  nameWithType: AxisInfo.Equals
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.CoordinateSystems.AxisInfo
+  commentId: T:MapQuest.CoordinateSystems.AxisInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html
+  name: AxisInfo
+  nameWithType: AxisInfo
+  fullName: MapQuest.CoordinateSystems.AxisInfo
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.AxisInfo.ToString*
+  commentId: Overload:MapQuest.CoordinateSystems.AxisInfo.ToString
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html#MapQuest_CoordinateSystems_AxisInfo_ToString
+  name: ToString
+  nameWithType: AxisInfo.ToString
+  fullName: MapQuest.CoordinateSystems.AxisInfo.ToString
+- uid: MapQuest.CoordinateSystems.AxisInfo.Clone*
+  commentId: Overload:MapQuest.CoordinateSystems.AxisInfo.Clone
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html#MapQuest_CoordinateSystems_AxisInfo_Clone
+  name: Clone
+  nameWithType: AxisInfo.Clone
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.AxisInfo.Name*
+  commentId: Overload:MapQuest.CoordinateSystems.AxisInfo.Name
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html#MapQuest_CoordinateSystems_AxisInfo_Name
+  name: Name
+  nameWithType: AxisInfo.Name
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Name
+- uid: MapQuest.CoordinateSystems.IAxisInfo.Name
+  commentId: P:MapQuest.CoordinateSystems.IAxisInfo.Name
+  parent: MapQuest.CoordinateSystems.IAxisInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAxisInfo.html#MapQuest_CoordinateSystems_IAxisInfo_Name
+  name: Name
+  nameWithType: IAxisInfo.Name
+  fullName: MapQuest.CoordinateSystems.IAxisInfo.Name
+- uid: MapQuest.CoordinateSystems.AxisInfo.Orientation*
+  commentId: Overload:MapQuest.CoordinateSystems.AxisInfo.Orientation
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html#MapQuest_CoordinateSystems_AxisInfo_Orientation
+  name: Orientation
+  nameWithType: AxisInfo.Orientation
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Orientation
+- uid: MapQuest.CoordinateSystems.IAxisInfo.Orientation
+  commentId: P:MapQuest.CoordinateSystems.IAxisInfo.Orientation
+  parent: MapQuest.CoordinateSystems.IAxisInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAxisInfo.html#MapQuest_CoordinateSystems_IAxisInfo_Orientation
+  name: Orientation
+  nameWithType: IAxisInfo.Orientation
+  fullName: MapQuest.CoordinateSystems.IAxisInfo.Orientation
+- uid: MapQuest.CoordinateSystems.AxisInfo.X*
+  commentId: Overload:MapQuest.CoordinateSystems.AxisInfo.X
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html#MapQuest_CoordinateSystems_AxisInfo_X
+  name: X
+  nameWithType: AxisInfo.X
+  fullName: MapQuest.CoordinateSystems.AxisInfo.X
+- uid: MapQuest.CoordinateSystems.AxisInfo.Y*
+  commentId: Overload:MapQuest.CoordinateSystems.AxisInfo.Y
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html#MapQuest_CoordinateSystems_AxisInfo_Y
+  name: Y
+  nameWithType: AxisInfo.Y
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Y
+- uid: MapQuest.CoordinateSystems.AxisInfo.Longitude*
+  commentId: Overload:MapQuest.CoordinateSystems.AxisInfo.Longitude
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html#MapQuest_CoordinateSystems_AxisInfo_Longitude
+  name: Longitude
+  nameWithType: AxisInfo.Longitude
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Longitude
+- uid: MapQuest.CoordinateSystems.AxisInfo.Latitude*
+  commentId: Overload:MapQuest.CoordinateSystems.AxisInfo.Latitude
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html#MapQuest_CoordinateSystems_AxisInfo_Latitude
+  name: Latitude
+  nameWithType: AxisInfo.Latitude
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Latitude
+- uid: MapQuest.CoordinateSystems.AxisInfo.Altitude*
+  commentId: Overload:MapQuest.CoordinateSystems.AxisInfo.Altitude
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AxisInfo.html#MapQuest_CoordinateSystems_AxisInfo_Altitude
+  name: Altitude
+  nameWithType: AxisInfo.Altitude
+  fullName: MapQuest.CoordinateSystems.AxisInfo.Altitude

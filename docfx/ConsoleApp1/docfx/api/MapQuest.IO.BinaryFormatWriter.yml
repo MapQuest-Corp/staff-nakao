@@ -1,0 +1,1945 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.IO.BinaryFormatWriter
+  commentId: T:MapQuest.IO.BinaryFormatWriter
+  id: BinaryFormatWriter
+  parent: MapQuest.IO
+  children:
+  - MapQuest.IO.BinaryFormatWriter.#ctor
+  - MapQuest.IO.BinaryFormatWriter.#ctor(System.IO.Stream)
+  - MapQuest.IO.BinaryFormatWriter.#ctor(System.IO.Stream,System.Text.Encoding)
+  - MapQuest.IO.BinaryFormatWriter.BaseStream
+  - MapQuest.IO.BinaryFormatWriter.Close
+  - MapQuest.IO.BinaryFormatWriter.Dispose(System.Boolean)
+  - MapQuest.IO.BinaryFormatWriter.Flush
+  - MapQuest.IO.BinaryFormatWriter.InternalBuffer
+  - MapQuest.IO.BinaryFormatWriter.InternalEncoding
+  - MapQuest.IO.BinaryFormatWriter.IsLittleEndian
+  - MapQuest.IO.BinaryFormatWriter.Null
+  - MapQuest.IO.BinaryFormatWriter.Seek(System.Int32,System.IO.SeekOrigin)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Boolean)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Byte)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Byte[])
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Byte[],System.Int32,System.Int32)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Char)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Char[])
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Char[],System.Int32,System.Int32)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Decimal)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Double)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Int16)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Int32)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Int64)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.SByte)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.Single)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.String)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.UInt16)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.UInt32)
+  - MapQuest.IO.BinaryFormatWriter.Write(System.UInt64)
+  - MapQuest.IO.BinaryFormatWriter.Write7BitEncodedInt(System.Int32)
+  - MapQuest.IO.BinaryFormatWriter.m_objStream
+  langs:
+  - csharp
+  - vb
+  name: BinaryFormatWriter
+  nameWithType: BinaryFormatWriter
+  fullName: MapQuest.IO.BinaryFormatWriter
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    プリミティブ型をバイナリでストリームに書き込みます。
+
+    特定のエンコーディングの文字列の書き込みをサポートします。
+  remarks: >-
+    <xref href="MapQuest.IO.BinaryFormatWriter" data-throw-if-not-resolved="false"></xref> は、リトルエンディアン／ビッグエンディアン両方に対応した 
+            <xref href="System.IO.BinaryWriter" data-throw-if-not-resolved="false"></xref> です。
+  example: []
+  syntax:
+    content: 'public class BinaryFormatWriter : IDisposable'
+    content.vb: Public Class BinaryFormatWriter Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.IO.BinaryFormatWriter.Null
+  commentId: F:MapQuest.IO.BinaryFormatWriter.Null
+  id: "Null"
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: "Null"
+  nameWithType: BinaryFormatWriter.Null
+  fullName: MapQuest.IO.BinaryFormatWriter.Null
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            バッキング ストアを持たない <xref href="MapQuest.IO.BinaryFormatWriter" data-throw-if-not-resolved="false"></xref> を指定します。
+            </p>
+  example: []
+  syntax:
+    content: public static readonly BinaryFormatWriter Null
+    return:
+      type: MapQuest.IO.BinaryFormatWriter
+    content.vb: Public Shared ReadOnly Null As BinaryFormatWriter
+- uid: MapQuest.IO.BinaryFormatWriter.m_objStream
+  commentId: F:MapQuest.IO.BinaryFormatWriter.m_objStream
+  id: m_objStream
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: m_objStream
+  nameWithType: BinaryFormatWriter.m_objStream
+  fullName: MapQuest.IO.BinaryFormatWriter.m_objStream
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: ベースとなる <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> です。
+  example: []
+  syntax:
+    content: protected Stream m_objStream
+    return:
+      type: System.IO.Stream
+    content.vb: Protected m_objStream As Stream
+- uid: MapQuest.IO.BinaryFormatWriter.#ctor
+  commentId: M:MapQuest.IO.BinaryFormatWriter.#ctor
+  id: '#ctor'
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: BinaryFormatWriter()
+  nameWithType: BinaryFormatWriter.BinaryFormatWriter()
+  fullName: MapQuest.IO.BinaryFormatWriter.BinaryFormatWriter()
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            ストリームへの書き込みを行う <xref href="MapQuest.IO.BinaryFormatWriter" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+            </p>
+  remarks: >-
+    Protected default constructor that sets the output stream
+
+    to a null stream (a bit bucket).
+  example: []
+  syntax:
+    content: protected BinaryFormatWriter()
+    content.vb: Protected Sub New()
+  overload: MapQuest.IO.BinaryFormatWriter.#ctor*
+  nameWithType.vb: BinaryFormatWriter.New()
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.New()
+  name.vb: New()
+- uid: MapQuest.IO.BinaryFormatWriter.#ctor(System.IO.Stream)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.#ctor(System.IO.Stream)
+  id: '#ctor(System.IO.Stream)'
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: BinaryFormatWriter(Stream)
+  nameWithType: BinaryFormatWriter.BinaryFormatWriter(Stream)
+  fullName: MapQuest.IO.BinaryFormatWriter.BinaryFormatWriter(System.IO.Stream)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            供給されたストリームに基づき、文字列のエンコードとして UTF-8 を使用して、<xref href="MapQuest.IO.BinaryFormatWriter" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+            </p>
+  example: []
+  syntax:
+    content: public BinaryFormatWriter(Stream output)
+    parameters:
+    - id: output
+      type: System.IO.Stream
+      description: 出力ストリーム。
+    content.vb: Public Sub New(output As Stream)
+  overload: MapQuest.IO.BinaryFormatWriter.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ストリームが書き込みをサポートしていないか、既に閉じています。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">output</code> が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  nameWithType.vb: BinaryFormatWriter.New(Stream)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.New(System.IO.Stream)
+  name.vb: New(Stream)
+- uid: MapQuest.IO.BinaryFormatWriter.#ctor(System.IO.Stream,System.Text.Encoding)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.#ctor(System.IO.Stream,System.Text.Encoding)
+  id: '#ctor(System.IO.Stream,System.Text.Encoding)'
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: BinaryFormatWriter(Stream, Encoding)
+  nameWithType: BinaryFormatWriter.BinaryFormatWriter(Stream, Encoding)
+  fullName: MapQuest.IO.BinaryFormatWriter.BinaryFormatWriter(System.IO.Stream, System.Text.Encoding)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            供給されたストリームと特定の文字エンコーディングに基づいて、<xref href="MapQuest.IO.BinaryFormatWriter" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+            </p>
+  example: []
+  syntax:
+    content: public BinaryFormatWriter(Stream output, Encoding encoding)
+    parameters:
+    - id: output
+      type: System.IO.Stream
+      description: 供給するストリーム。
+    - id: encoding
+      type: System.Text.Encoding
+    content.vb: Public Sub New(output As Stream, encoding As Encoding)
+  overload: MapQuest.IO.BinaryFormatWriter.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ストリームが書き込みをサポートしていないか、既に閉じています。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">output</code>または <code class="paramref">encoding</code> が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  nameWithType.vb: BinaryFormatWriter.New(Stream, Encoding)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.New(System.IO.Stream, System.Text.Encoding)
+  name.vb: New(Stream, Encoding)
+- uid: MapQuest.IO.BinaryFormatWriter.Close
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Close
+  id: Close
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: BinaryFormatWriter.Close()
+  fullName: MapQuest.IO.BinaryFormatWriter.Close()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在の <xref href="MapQuest.IO.BinaryFormatWriter" data-throw-if-not-resolved="false"></xref> と基になるストリームを閉じます。
+            </p>
+  remarks: >-
+    Closes this writer and releases any system resources associated with the
+
+    writer. Following a call to Close, any operations on the writer
+
+    may raise exceptions.
+  example: []
+  syntax:
+    content: public virtual void Close()
+    content.vb: Public Overridable Sub Close()
+  overload: MapQuest.IO.BinaryFormatWriter.Close*
+- uid: MapQuest.IO.BinaryFormatWriter.Flush
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Flush
+  id: Flush
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: BinaryFormatWriter.Flush()
+  fullName: MapQuest.IO.BinaryFormatWriter.Flush()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のライタのすべてのバッファをクリアし、バッファ内のデータを基になるデバイスに書き込みます。
+            </p>
+  remarks: >-
+    Clears all buffers for this writer and causes any buffered data to be
+
+    written to the underlying device.
+  example: []
+  syntax:
+    content: public virtual void Flush()
+    content.vb: Public Overridable Sub Flush()
+  overload: MapQuest.IO.BinaryFormatWriter.Flush*
+- uid: MapQuest.IO.BinaryFormatWriter.Seek(System.Int32,System.IO.SeekOrigin)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Seek(System.Int32,System.IO.SeekOrigin)
+  id: Seek(System.Int32,System.IO.SeekOrigin)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Seek(int, SeekOrigin)
+  nameWithType: BinaryFormatWriter.Seek(int, SeekOrigin)
+  fullName: MapQuest.IO.BinaryFormatWriter.Seek(int, System.IO.SeekOrigin)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリーム内の位置を設定します。
+            </p>
+  example: []
+  syntax:
+    content: public virtual long Seek(int offset, SeekOrigin origin)
+    parameters:
+    - id: offset
+      type: System.Int32
+      description: <code class="paramref">origin</code> からのバイト オフセット。
+    - id: origin
+      type: System.IO.SeekOrigin
+    return:
+      type: System.Int64
+      description: >-
+        <p>
+                現在のストリームの位置。
+                </p>
+    content.vb: Public Overridable Function Seek(offset As Integer, origin As SeekOrigin) As Long
+  overload: MapQuest.IO.BinaryFormatWriter.Seek*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: ファイル ポインタが無効な位置に移動しました。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <xref href="System.IO.SeekOrigin" data-throw-if-not-resolved="false"></xref> 値が無効です。
+  nameWithType.vb: BinaryFormatWriter.Seek(Integer, SeekOrigin)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Seek(Integer, System.IO.SeekOrigin)
+  name.vb: Seek(Integer, SeekOrigin)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Boolean)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Boolean)
+  id: Write(System.Boolean)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(bool)
+  nameWithType: BinaryFormatWriter.Write(bool)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(bool)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに 1 バイト <code>Boolean</code> 値を書き込みます。値 0 は <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> を表し、値 1 は <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> を表します。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+      description: 書き込む <code>Boolean</code> 値 (0 または 1)。
+    content.vb: Public Overridable Sub Write(value As Boolean)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write(Boolean)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Boolean)
+  name.vb: Write(Boolean)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Byte)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Byte)
+  id: Write(System.Byte)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(byte)
+  nameWithType: BinaryFormatWriter.Write(byte)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(byte)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに符号なしバイトを書き込み、ストリームの位置を 1 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(byte value)
+    parameters:
+    - id: value
+      type: System.Byte
+      description: 書き込む符号なしバイト。
+    content.vb: Public Overridable Sub Write(value As Byte)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write(Byte)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Byte)
+  name.vb: Write(Byte)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.SByte)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.SByte)
+  id: Write(System.SByte)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(sbyte)
+  nameWithType: BinaryFormatWriter.Write(sbyte)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(sbyte)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに符号付きバイトを書き込み、ストリームの位置を 1 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public virtual void Write(sbyte value)
+    parameters:
+    - id: value
+      type: System.SByte
+      description: 書き込む符号付きバイト。
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Overridable Sub Write(value As SByte)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: BinaryFormatWriter.Write(SByte)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(SByte)
+  name.vb: Write(SByte)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Byte[])
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Byte[])
+  id: Write(System.Byte[])
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(byte[])
+  nameWithType: BinaryFormatWriter.Write(byte[])
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(byte[])
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            基になるストリームにバイト配列を書き込みます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(byte[] buffer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: 書き込むデータが格納されているバイト配列。
+    content.vb: Public Overridable Sub Write(buffer As Byte())
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">buffer</code> が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  nameWithType.vb: BinaryFormatWriter.Write(Byte())
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Byte())
+  name.vb: Write(Byte())
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(byte[], int, int)
+  nameWithType: BinaryFormatWriter.Write(byte[], int, int)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(byte[], int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームにバイト配列の特定の領域を書き込みます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(byte[] buffer, int index, int count)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: 書き込むデータが格納されているバイト配列。
+    - id: index
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    content.vb: Public Overridable Sub Write(buffer As Byte(), index As Integer, count As Integer)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: バッファ長から <code class="paramref">index</code> を差し引いた値が <code class="paramref">count</code> より小さい値です。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">buffer</code> が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> または <code class="paramref">count</code> が負の値です。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write(Byte(), Integer, Integer)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Byte(), Integer, Integer)
+  name.vb: Write(Byte(), Integer, Integer)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Char)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Char)
+  id: Write(System.Char)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(char)
+  nameWithType: BinaryFormatWriter.Write(char)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(char)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに Unicode 文字を書き込み、使用した <code>Encoding</code> とストリームに書き込んだ特定の文字に従ってストリームの現在位置を進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(char ch)
+    parameters:
+    - id: ch
+      type: System.Char
+      description: 書き込む文字。
+    content.vb: Public Overridable Sub Write(ch As Char)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write(Char)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Char)
+  name.vb: Write(Char)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Char[])
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Char[])
+  id: Write(System.Char[])
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(char[])
+  nameWithType: BinaryFormatWriter.Write(char[])
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(char[])
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに文字配列を書き込み、使用した <code>Encoding</code> とストリームに書き込んだ特定の文字に従ってストリームの現在位置を進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(char[] chars)
+    parameters:
+    - id: chars
+      type: System.Char[]
+      description: 書き込むデータを格納する文字配列。
+    content.vb: Public Overridable Sub Write(chars As Char())
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">chars</code> が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  nameWithType.vb: BinaryFormatWriter.Write(Char())
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Char())
+  name.vb: Write(Char())
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Char[],System.Int32,System.Int32)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Char[],System.Int32,System.Int32)
+  id: Write(System.Char[],System.Int32,System.Int32)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(char[], int, int)
+  nameWithType: BinaryFormatWriter.Write(char[], int, int)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(char[], int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに文字配列の特定の領域を書き込み、使用した <code>Encoding</code> とストリームに書き込んだ特定の文字に従ってストリームの現在位置を進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(char[] chars, int index, int count)
+    parameters:
+    - id: chars
+      type: System.Char[]
+      description: 書き込むデータを格納する文字配列。
+    - id: index
+      type: System.Int32
+      description: <code class="paramref">buffer</code> 内の書き込み開始点。
+    - id: count
+      type: System.Int32
+      description: 書き込む文字の数。
+    content.vb: Public Overridable Sub Write(chars As Char(), index As Integer, count As Integer)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: バッファ長から <code class="paramref">index</code> を差し引いた値が <code class="paramref">count</code> より小さい値です。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">chars</code> が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> または <code class="paramref">count</code> が負の値です。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write(Char(), Integer, Integer)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Char(), Integer, Integer)
+  name.vb: Write(Char(), Integer, Integer)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Double)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Double)
+  id: Write(System.Double)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(double)
+  nameWithType: BinaryFormatWriter.Write(double)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(double)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに 8 バイト浮動小数点値を書き込み、ストリームの位置を 8 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(double value)
+    parameters:
+    - id: value
+      type: System.Double
+      description: 書き込む 8 バイト浮動小数点値。
+    content.vb: Public Overridable Sub Write(value As Double)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write(Double)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Double)
+  name.vb: Write(Double)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Decimal)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Decimal)
+  id: Write(System.Decimal)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(decimal)
+  nameWithType: BinaryFormatWriter.Write(decimal)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(decimal)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに 10 進数値を書き込み、ストリームの位置を 8 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(decimal value)
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: 書き込む 10 進値。
+    content.vb: Public Overridable Sub Write(value As Decimal)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write(Decimal)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Decimal)
+  name.vb: Write(Decimal)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Int16)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Int16)
+  id: Write(System.Int16)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(short)
+  nameWithType: BinaryFormatWriter.Write(short)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(short)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに 2 バイト符号付き整数を書き込み、ストリームの位置を 2 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(short value)
+    parameters:
+    - id: value
+      type: System.Int16
+      description: 書き込む 2 バイト符号付き整数。
+    content.vb: Public Overridable Sub Write(value As Short)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write(Short)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Short)
+  name.vb: Write(Short)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.UInt16)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.UInt16)
+  id: Write(System.UInt16)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(ushort)
+  nameWithType: BinaryFormatWriter.Write(ushort)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(ushort)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに 2 バイト符号なし整数を書き込み、ストリームの位置を 2 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public virtual void Write(ushort value)
+    parameters:
+    - id: value
+      type: System.UInt16
+      description: 書き込む 2 バイト符号なし整数。
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Overridable Sub Write(value As UShort)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: BinaryFormatWriter.Write(UShort)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(UShort)
+  name.vb: Write(UShort)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Int32)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Int32)
+  id: Write(System.Int32)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(int)
+  nameWithType: BinaryFormatWriter.Write(int)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに 4 バイト符号付き整数を書き込み、ストリームの位置を 4 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: 書き込む 4 バイト符号付き整数。
+    content.vb: Public Overridable Sub Write(value As Integer)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write(Integer)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Integer)
+  name.vb: Write(Integer)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.UInt32)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.UInt32)
+  id: Write(System.UInt32)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(uint)
+  nameWithType: BinaryFormatWriter.Write(uint)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(uint)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに 4 バイト符号なし整数を書き込み、ストリームの位置を 4 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public virtual void Write(uint value)
+    parameters:
+    - id: value
+      type: System.UInt32
+      description: 書き込む 4 バイト符号なし整数。
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Overridable Sub Write(value As UInteger)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: BinaryFormatWriter.Write(UInteger)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(UInteger)
+  name.vb: Write(UInteger)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Int64)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Int64)
+  id: Write(System.Int64)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(long)
+  nameWithType: BinaryFormatWriter.Write(long)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(long)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに 8 バイト符号付き整数を書き込み、ストリームの位置を 8 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(long value)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: 書き込む 8 バイト符号付き整数。
+    content.vb: Public Overridable Sub Write(value As Long)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write(Long)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Long)
+  name.vb: Write(Long)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.UInt64)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.UInt64)
+  id: Write(System.UInt64)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(ulong)
+  nameWithType: BinaryFormatWriter.Write(ulong)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(ulong)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに 8 バイト符号なし整数を書き込み、ストリームの位置を 8 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public virtual void Write(ulong value)
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: 書き込む 8 バイト符号なし整数。
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Overridable Sub Write(value As ULong)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: BinaryFormatWriter.Write(ULong)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(ULong)
+  name.vb: Write(ULong)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.Single)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.Single)
+  id: Write(System.Single)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(float)
+  nameWithType: BinaryFormatWriter.Write(float)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(float)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームに 4 バイト浮動小数点値を書き込み、ストリームの位置を 4 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(float value)
+    parameters:
+    - id: value
+      type: System.Single
+      description: 書き込む 4 バイト浮動小数点値。
+    content.vb: Public Overridable Sub Write(value As Single)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write(Single)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(Single)
+  name.vb: Write(Single)
+- uid: MapQuest.IO.BinaryFormatWriter.Write(System.String)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write(System.String)
+  id: Write(System.String)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(string)
+  nameWithType: BinaryFormatWriter.Write(string)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            文字長プリフィックスを持つ文字列を、<xref href="MapQuest.IO.BinaryFormatWriter" data-throw-if-not-resolved="false"></xref> の現在のエンコーディングでこのストリームに書き込み、使用したエンコーディングとストリームに書き込んだ特定の文字に従ってストリームの現在位置を進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual void Write(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: 書き込む値。
+    content.vb: Public Overridable Sub Write(value As String)
+  overload: MapQuest.IO.BinaryFormatWriter.Write*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: value が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write(String)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write(String)
+  name.vb: Write(String)
+- uid: MapQuest.IO.BinaryFormatWriter.Write7BitEncodedInt(System.Int32)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Write7BitEncodedInt(System.Int32)
+  id: Write7BitEncodedInt(System.Int32)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Write7BitEncodedInt(int)
+  nameWithType: BinaryFormatWriter.Write7BitEncodedInt(int)
+  fullName: MapQuest.IO.BinaryFormatWriter.Write7BitEncodedInt(int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            32 ビット整数を圧縮形式で書き込みます。
+            </p>
+  example: []
+  syntax:
+    content: protected void Write7BitEncodedInt(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: 書き込む 32 ビット整数。
+    content.vb: Protected Sub Write7BitEncodedInt(value As Integer)
+  overload: MapQuest.IO.BinaryFormatWriter.Write7BitEncodedInt*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: ストリームが閉じています。
+  nameWithType.vb: BinaryFormatWriter.Write7BitEncodedInt(Integer)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Write7BitEncodedInt(Integer)
+  name.vb: Write7BitEncodedInt(Integer)
+- uid: MapQuest.IO.BinaryFormatWriter.Dispose(System.Boolean)
+  commentId: M:MapQuest.IO.BinaryFormatWriter.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: BinaryFormatWriter.Dispose(bool)
+  fullName: MapQuest.IO.BinaryFormatWriter.Dispose(bool)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+      <xref href="MapQuest.IO.BinaryFormatWriter" data-throw-if-not-resolved="false"></xref> によって使用されているアンマネージ リソースを解放し、オプションでマネージ リソースも解放します。
+            </p>
+  example: []
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: マネージ リソースとアンマネージ リソースの両方を解放する場合は <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。アンマネージ リソースだけを解放する場合は <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: MapQuest.IO.BinaryFormatWriter.Dispose*
+  nameWithType.vb: BinaryFormatWriter.Dispose(Boolean)
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: MapQuest.IO.BinaryFormatWriter.BaseStream
+  commentId: P:MapQuest.IO.BinaryFormatWriter.BaseStream
+  id: BaseStream
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: BaseStream
+  nameWithType: BinaryFormatWriter.BaseStream
+  fullName: MapQuest.IO.BinaryFormatWriter.BaseStream
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            基になるストリームを保持します。
+            </p>
+  remarks: >-
+    Returns the stream associate with the writer. It flushes all pending
+
+    writes before returning. All subclasses should override Flush to
+
+    ensure that all buffered data is sent to the stream.
+  example: []
+  syntax:
+    content: public virtual Stream BaseStream { get; }
+    parameters: []
+    return:
+      type: System.IO.Stream
+    content.vb: Public Overridable ReadOnly Property BaseStream As Stream
+  overload: MapQuest.IO.BinaryFormatWriter.BaseStream*
+- uid: MapQuest.IO.BinaryFormatWriter.IsLittleEndian
+  commentId: P:MapQuest.IO.BinaryFormatWriter.IsLittleEndian
+  id: IsLittleEndian
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: IsLittleEndian
+  nameWithType: BinaryFormatWriter.IsLittleEndian
+  fullName: MapQuest.IO.BinaryFormatWriter.IsLittleEndian
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 読み取る <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> がリトルエンディアンかどうかを取得します。
+  example: []
+  syntax:
+    content: public bool IsLittleEndian { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> がリトルエンディアンである場合は true 、
+                ビッグエンディアンである場合は false を返します。
+                既定値は <xref href="System.BitConverter.IsLittleEndian?text=BitConverter.IsLittleEndian" data-throw-if-not-resolved="false"></xref> に依存します。
+    content.vb: Public Property IsLittleEndian As Boolean
+  overload: MapQuest.IO.BinaryFormatWriter.IsLittleEndian*
+- uid: MapQuest.IO.BinaryFormatWriter.InternalBuffer
+  commentId: P:MapQuest.IO.BinaryFormatWriter.InternalBuffer
+  id: InternalBuffer
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: InternalBuffer
+  nameWithType: BinaryFormatWriter.InternalBuffer
+  fullName: MapQuest.IO.BinaryFormatWriter.InternalBuffer
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 内部で使用しているバッファを取得します。
+  example: []
+  syntax:
+    content: protected virtual byte[] InternalBuffer { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Protected Overridable ReadOnly Property InternalBuffer As Byte()
+  overload: MapQuest.IO.BinaryFormatWriter.InternalBuffer*
+- uid: MapQuest.IO.BinaryFormatWriter.InternalEncoding
+  commentId: P:MapQuest.IO.BinaryFormatWriter.InternalEncoding
+  id: InternalEncoding
+  parent: MapQuest.IO.BinaryFormatWriter
+  langs:
+  - csharp
+  - vb
+  name: InternalEncoding
+  nameWithType: BinaryFormatWriter.InternalEncoding
+  fullName: MapQuest.IO.BinaryFormatWriter.InternalEncoding
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 内部で使用している <xref href="System.Text.Encoding" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: protected Encoding InternalEncoding { get; }
+    parameters: []
+    return:
+      type: System.Text.Encoding
+    content.vb: Protected ReadOnly Property InternalEncoding As Encoding
+  overload: MapQuest.IO.BinaryFormatWriter.InternalEncoding*
+references:
+- uid: MapQuest.IO.BinaryFormatWriter
+  commentId: T:MapQuest.IO.BinaryFormatWriter
+  parent: MapQuest.IO
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatWriter.html
+  name: BinaryFormatWriter
+  nameWithType: BinaryFormatWriter
+  fullName: MapQuest.IO.BinaryFormatWriter
+- uid: System.IO.BinaryWriter
+  commentId: T:System.IO.BinaryWriter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.binarywriter
+  name: BinaryWriter
+  nameWithType: BinaryWriter
+  fullName: System.IO.BinaryWriter
+- uid: MapQuest.IO
+  commentId: N:MapQuest.IO
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.IO
+  nameWithType: MapQuest.IO
+  fullName: MapQuest.IO
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: MapQuest.IO.BinaryFormatWriter.#ctor*
+  commentId: Overload:MapQuest.IO.BinaryFormatWriter.#ctor
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatWriter.html#MapQuest_IO_BinaryFormatWriter__ctor
+  name: BinaryFormatWriter
+  nameWithType: BinaryFormatWriter.BinaryFormatWriter
+  fullName: MapQuest.IO.BinaryFormatWriter.BinaryFormatWriter
+  nameWithType.vb: BinaryFormatWriter.New
+  fullName.vb: MapQuest.IO.BinaryFormatWriter.New
+  name.vb: New
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.encoding
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: MapQuest.IO.BinaryFormatWriter.Close*
+  commentId: Overload:MapQuest.IO.BinaryFormatWriter.Close
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatWriter.html#MapQuest_IO_BinaryFormatWriter_Close
+  name: Close
+  nameWithType: BinaryFormatWriter.Close
+  fullName: MapQuest.IO.BinaryFormatWriter.Close
+- uid: MapQuest.IO.BinaryFormatWriter.Flush*
+  commentId: Overload:MapQuest.IO.BinaryFormatWriter.Flush
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatWriter.html#MapQuest_IO_BinaryFormatWriter_Flush
+  name: Flush
+  nameWithType: BinaryFormatWriter.Flush
+  fullName: MapQuest.IO.BinaryFormatWriter.Flush
+- uid: System.IO.SeekOrigin
+  commentId: T:System.IO.SeekOrigin
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.seekorigin
+  name: SeekOrigin
+  nameWithType: SeekOrigin
+  fullName: System.IO.SeekOrigin
+- uid: System.IO.IOException
+  commentId: T:System.IO.IOException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.ioexception
+  name: IOException
+  nameWithType: IOException
+  fullName: System.IO.IOException
+- uid: MapQuest.IO.BinaryFormatWriter.Seek*
+  commentId: Overload:MapQuest.IO.BinaryFormatWriter.Seek
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatWriter.html#MapQuest_IO_BinaryFormatWriter_Seek_System_Int32_System_IO_SeekOrigin_
+  name: Seek
+  nameWithType: BinaryFormatWriter.Seek
+  fullName: MapQuest.IO.BinaryFormatWriter.Seek
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.objectdisposedexception
+  name: ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+- uid: MapQuest.IO.BinaryFormatWriter.Write*
+  commentId: Overload:MapQuest.IO.BinaryFormatWriter.Write
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatWriter.html#MapQuest_IO_BinaryFormatWriter_Write_System_Boolean_
+  name: Write
+  nameWithType: BinaryFormatWriter.Write
+  fullName: MapQuest.IO.BinaryFormatWriter.Write
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: System.Char[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char[]
+  nameWithType: char[]
+  fullName: char[]
+  nameWithType.vb: Char()
+  fullName.vb: Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: (
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.EndOfStreamException
+  commentId: T:System.IO.EndOfStreamException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception
+  name: EndOfStreamException
+  nameWithType: EndOfStreamException
+  fullName: System.IO.EndOfStreamException
+- uid: MapQuest.IO.BinaryFormatWriter.Write7BitEncodedInt*
+  commentId: Overload:MapQuest.IO.BinaryFormatWriter.Write7BitEncodedInt
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatWriter.html#MapQuest_IO_BinaryFormatWriter_Write7BitEncodedInt_System_Int32_
+  name: Write7BitEncodedInt
+  nameWithType: BinaryFormatWriter.Write7BitEncodedInt
+  fullName: MapQuest.IO.BinaryFormatWriter.Write7BitEncodedInt
+- uid: MapQuest.IO.BinaryFormatWriter.Dispose*
+  commentId: Overload:MapQuest.IO.BinaryFormatWriter.Dispose
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatWriter.html#MapQuest_IO_BinaryFormatWriter_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: BinaryFormatWriter.Dispose
+  fullName: MapQuest.IO.BinaryFormatWriter.Dispose
+- uid: MapQuest.IO.BinaryFormatWriter.BaseStream*
+  commentId: Overload:MapQuest.IO.BinaryFormatWriter.BaseStream
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatWriter.html#MapQuest_IO_BinaryFormatWriter_BaseStream
+  name: BaseStream
+  nameWithType: BinaryFormatWriter.BaseStream
+  fullName: MapQuest.IO.BinaryFormatWriter.BaseStream
+- uid: System.BitConverter.IsLittleEndian
+  commentId: F:System.BitConverter.IsLittleEndian
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.bitconverter.islittleendian
+  name: IsLittleEndian
+  nameWithType: BitConverter.IsLittleEndian
+  fullName: System.BitConverter.IsLittleEndian
+- uid: MapQuest.IO.BinaryFormatWriter.IsLittleEndian*
+  commentId: Overload:MapQuest.IO.BinaryFormatWriter.IsLittleEndian
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatWriter.html#MapQuest_IO_BinaryFormatWriter_IsLittleEndian
+  name: IsLittleEndian
+  nameWithType: BinaryFormatWriter.IsLittleEndian
+  fullName: MapQuest.IO.BinaryFormatWriter.IsLittleEndian
+- uid: MapQuest.IO.BinaryFormatWriter.InternalBuffer*
+  commentId: Overload:MapQuest.IO.BinaryFormatWriter.InternalBuffer
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatWriter.html#MapQuest_IO_BinaryFormatWriter_InternalBuffer
+  name: InternalBuffer
+  nameWithType: BinaryFormatWriter.InternalBuffer
+  fullName: MapQuest.IO.BinaryFormatWriter.InternalBuffer
+- uid: MapQuest.IO.BinaryFormatWriter.InternalEncoding*
+  commentId: Overload:MapQuest.IO.BinaryFormatWriter.InternalEncoding
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatWriter.html#MapQuest_IO_BinaryFormatWriter_InternalEncoding
+  name: InternalEncoding
+  nameWithType: BinaryFormatWriter.InternalEncoding
+  fullName: MapQuest.IO.BinaryFormatWriter.InternalEncoding

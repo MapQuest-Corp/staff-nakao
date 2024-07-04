@@ -1,0 +1,339 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Collections.IStringEnumerator
+  commentId: T:MapQuest.Collections.IStringEnumerator
+  id: IStringEnumerator
+  parent: MapQuest.Collections
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IStringEnumerator
+  nameWithType: IStringEnumerator
+  fullName: MapQuest.Collections.IStringEnumerator
+  type: Interface
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> に対する単純な反復処理をサポートします。
+            <xref href="MapQuest.Collections.IStringCollection" data-throw-if-not-resolved="false"></xref><xref href="MapQuest.Collections.IStringList" data-throw-if-not-resolved="false"></xref><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref>
+  remarks: >-
+    <xref href="MapQuest.Collections.IStringEnumerator" data-throw-if-not-resolved="false"></xref> 
+            は、 <xref href="System.String" data-throw-if-not-resolved="false"></xref> 用に最適化された 
+            <xref href="System.Collections.IEnumerator" data-throw-if-not-resolved="false"></xref> を提供します。
+  example: []
+  syntax:
+    content: 'public interface IStringEnumerator : IEnumerator<string>, IDisposable, IEnumerator'
+    content.vb: Public Interface IStringEnumerator Inherits IEnumerator(Of String), IDisposable, IEnumerator
+  inheritedMembers:
+  - System.Collections.Generic.IEnumerator{System.String}.Current
+  - System.IDisposable.Dispose
+  - System.Collections.IEnumerator.MoveNext
+  - System.Collections.IEnumerator.Reset
+references:
+- uid: MapQuest.Collections.IStringCollection
+  commentId: T:MapQuest.Collections.IStringCollection
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.IStringCollection.html
+  name: IStringCollection
+  nameWithType: IStringCollection
+  fullName: MapQuest.Collections.IStringCollection
+- uid: MapQuest.Collections.IStringList
+  commentId: T:MapQuest.Collections.IStringList
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.IStringList.html
+  name: IStringList
+  nameWithType: IStringList
+  fullName: MapQuest.Collections.IStringList
+- uid: MapQuest.Collections.StringList
+  commentId: T:MapQuest.Collections.StringList
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.StringList.html
+  name: StringList
+  nameWithType: StringList
+  fullName: MapQuest.Collections.StringList
+- uid: MapQuest.Collections.IStringEnumerator
+  commentId: T:MapQuest.Collections.IStringEnumerator
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.IStringEnumerator.html
+  name: IStringEnumerator
+  nameWithType: IStringEnumerator
+  fullName: MapQuest.Collections.IStringEnumerator
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: MapQuest.Collections
+  commentId: N:MapQuest.Collections
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Collections
+  nameWithType: MapQuest.Collections
+  fullName: MapQuest.Collections
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+- uid: System.Collections.Generic.IEnumerator{System.String}.Current
+  commentId: P:System.Collections.Generic.IEnumerator{System.String}.Current
+  parent: System.Collections.Generic.IEnumerator{System.String}
+  definition: System.Collections.Generic.IEnumerator`1.Current
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1.current
+  name: Current
+  nameWithType: IEnumerator<string>.Current
+  fullName: System.Collections.Generic.IEnumerator<string>.Current
+  nameWithType.vb: IEnumerator(Of String).Current
+  fullName.vb: System.Collections.Generic.IEnumerator(Of String).Current
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Collections.IEnumerator.MoveNext
+  commentId: M:System.Collections.IEnumerator.MoveNext
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.movenext
+  name: MoveNext()
+  nameWithType: IEnumerator.MoveNext()
+  fullName: System.Collections.IEnumerator.MoveNext()
+  spec.csharp:
+  - uid: System.Collections.IEnumerator.MoveNext
+    name: MoveNext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.movenext
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IEnumerator.MoveNext
+    name: MoveNext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.movenext
+  - name: (
+  - name: )
+- uid: System.Collections.IEnumerator.Reset
+  commentId: M:System.Collections.IEnumerator.Reset
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.reset
+  name: Reset()
+  nameWithType: IEnumerator.Reset()
+  fullName: System.Collections.IEnumerator.Reset()
+  spec.csharp:
+  - uid: System.Collections.IEnumerator.Reset
+    name: Reset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IEnumerator.Reset
+    name: Reset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.reset
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Collections.Generic.IEnumerator`1.Current
+  commentId: P:System.Collections.Generic.IEnumerator`1.Current
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1.current
+  name: Current
+  nameWithType: IEnumerator<T>.Current
+  fullName: System.Collections.Generic.IEnumerator<T>.Current
+  nameWithType.vb: IEnumerator(Of T).Current
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T).Current
+- uid: System.Collections.Generic.IEnumerator{System.String}
+  commentId: T:System.Collections.Generic.IEnumerator{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<string>
+  nameWithType: IEnumerator<string>
+  fullName: System.Collections.Generic.IEnumerator<string>
+  nameWithType.vb: IEnumerator(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of String)
+  name.vb: IEnumerator(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

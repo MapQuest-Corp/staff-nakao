@@ -1,0 +1,32 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Serialization
+  commentId: N:MapQuest.Serialization
+  id: MapQuest.Serialization
+  children:
+  - MapQuest.Serialization.SerializationBinderFactory
+  - MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: MapQuest.Serialization
+  nameWithType: MapQuest.Serialization
+  fullName: MapQuest.Serialization
+  type: Namespace
+  assemblies:
+  - MapQuest.Core
+references:
+- uid: MapQuest.Serialization.SerializationBinderFactory
+  commentId: T:MapQuest.Serialization.SerializationBinderFactory
+  isExternal: true
+  href: MapQuest.Serialization.SerializationBinderFactory.html
+  name: SerializationBinderFactory
+  nameWithType: SerializationBinderFactory
+  fullName: MapQuest.Serialization.SerializationBinderFactory
+- uid: MapQuest.Serialization.SerializationInfoHelper
+  commentId: T:MapQuest.Serialization.SerializationInfoHelper
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html
+  name: SerializationInfoHelper
+  nameWithType: SerializationInfoHelper
+  fullName: MapQuest.Serialization.SerializationInfoHelper

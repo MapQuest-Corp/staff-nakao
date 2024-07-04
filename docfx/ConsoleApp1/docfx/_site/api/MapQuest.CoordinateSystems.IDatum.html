@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IDatum | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IDatum | mysite ">
+      
+      <meta name="description" content="ある座標を地球上の実際の位置として定義するための「測地系」を表すクラスです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.CoordinateSystems.IDatum">
+
+
+
+  <h1 id="MapQuest_CoordinateSystems_IDatum" data-uid="MapQuest.CoordinateSystems.IDatum" class="text-break">
+Interface IDatum  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.CoordinateSystems.html">CoordinateSystems</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.CoordinateSystems.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>ある座標を地球上の実際の位置として定義するための「測地系」を表すクラスです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDatum : IInfo, ICloneable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Abbreviation">IInfo.Abbreviation</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Alias">IInfo.Alias</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Authority">IInfo.Authority</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_AuthorityCode">IInfo.AuthorityCode</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Name">IInfo.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Remarks">IInfo.Remarks</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_WKT">IInfo.WKT</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_XML">IInfo.XML</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable.clone">ICloneable.Clone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MapQuest_CoordinateSystems_IDatum_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>測地系(Datum) は、ある座標を地球上の実際の位置として定義するためのものです。</p>
+<p></p>
+座標系の、地球に対しての位置および方向を定義するパラメーターとも言えます。
+<p></p>
+ここでは、あらかじめ定められた物理的な位置、
+また、物理的な指示(回転の軸など)と、
+座標系との関係について記述するパラメーター群を指します。
+<p></p>
+測地系の定義はさらに、一時的な振る舞い
+(軸の方向の変化率など)を含んでいる場合もあります。
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_IDatum_DatumType_" data-uid="MapQuest.CoordinateSystems.IDatum.DatumType*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_IDatum_DatumType" data-uid="MapQuest.CoordinateSystems.IDatum.DatumType">
+  DatumType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>測地系の種類を取得します。
+<a class="xref" href="MapQuest.CoordinateSystems.IDatum.html#MapQuest_CoordinateSystems_IDatum_DatumType">DatumType</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DatumType DatumType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.DatumType.html">DatumType</a></dt>
+    <dd><p>座標系の種類を示す <a class="xref" href="MapQuest.CoordinateSystems.IDatum.html#MapQuest_CoordinateSystems_IDatum_DatumType">DatumType</a> 値。
+読み取り専用です。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="MapQuest.CoordinateSystems.Datum.html">Datum</a></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

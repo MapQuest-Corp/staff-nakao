@@ -1,0 +1,971 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.Dimension
+  commentId: T:MapQuest.Coordinates.Dimension
+  id: Dimension
+  parent: MapQuest.Coordinates
+  children:
+  - MapQuest.Coordinates.Dimension.#ctor(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Dimension.#ctor(MapQuest.Coordinates.Dimension)
+  - MapQuest.Coordinates.Dimension.#ctor(System.Double,System.Double)
+  - MapQuest.Coordinates.Dimension.#ctor(System.Single,System.Single)
+  - MapQuest.Coordinates.Dimension.Empty
+  - MapQuest.Coordinates.Dimension.Equals(System.Object)
+  - MapQuest.Coordinates.Dimension.GetHashCode
+  - MapQuest.Coordinates.Dimension.Height
+  - MapQuest.Coordinates.Dimension.IsEmpty
+  - MapQuest.Coordinates.Dimension.ToCoordinate
+  - MapQuest.Coordinates.Dimension.ToString
+  - MapQuest.Coordinates.Dimension.Width
+  - MapQuest.Coordinates.Dimension.op_Addition(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  - MapQuest.Coordinates.Dimension.op_Equality(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  - MapQuest.Coordinates.Dimension.op_Explicit(MapQuest.Coordinates.Dimension)~MapQuest.Coordinates.Coordinate
+  - MapQuest.Coordinates.Dimension.op_Inequality(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  - MapQuest.Coordinates.Dimension.op_Subtraction(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  langs:
+  - csharp
+  - vb
+  name: Dimension
+  nameWithType: Dimension
+  fullName: MapQuest.Coordinates.Dimension
+  type: Struct
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 寸法を扱う構造体を示します。
+  example: []
+  syntax:
+    content: public struct Dimension
+    content.vb: Public Structure Dimension
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: MapQuest.Coordinates.Dimension.Empty
+  commentId: F:MapQuest.Coordinates.Dimension.Empty
+  id: Empty
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: Dimension.Empty
+  fullName: MapQuest.Coordinates.Dimension.Empty
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 空の <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> 構造体を表します。
+  example: []
+  syntax:
+    content: public static readonly Dimension Empty
+    return:
+      type: MapQuest.Coordinates.Dimension
+    content.vb: Public Shared ReadOnly Empty As Dimension
+- uid: MapQuest.Coordinates.Dimension.#ctor(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Dimension.#ctor(MapQuest.Coordinates.Coordinate)
+  id: '#ctor(MapQuest.Coordinates.Coordinate)'
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: Dimension(Coordinate)
+  nameWithType: Dimension.Dimension(Coordinate)
+  fullName: MapQuest.Coordinates.Dimension.Dimension(MapQuest.Coordinates.Coordinate)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> を指定して <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref>  クラスの新しいインスタンスを作成します。
+  example: []
+  syntax:
+    content: public Dimension(Coordinate pt)
+    parameters:
+    - id: pt
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> を生成する <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub New(pt As Coordinate)
+  overload: MapQuest.Coordinates.Dimension.#ctor*
+  nameWithType.vb: Dimension.New(Coordinate)
+  fullName.vb: MapQuest.Coordinates.Dimension.New(MapQuest.Coordinates.Coordinate)
+  name.vb: New(Coordinate)
+- uid: MapQuest.Coordinates.Dimension.#ctor(MapQuest.Coordinates.Dimension)
+  commentId: M:MapQuest.Coordinates.Dimension.#ctor(MapQuest.Coordinates.Dimension)
+  id: '#ctor(MapQuest.Coordinates.Dimension)'
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: Dimension(Dimension)
+  nameWithType: Dimension.Dimension(Dimension)
+  fullName: MapQuest.Coordinates.Dimension.Dimension(MapQuest.Coordinates.Dimension)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> を指定して <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref>  クラスの新しいインスタンスを作成します。
+  example: []
+  syntax:
+    content: public Dimension(Dimension size)
+    parameters:
+    - id: size
+      type: MapQuest.Coordinates.Dimension
+      description: 生成する <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> の大きさを指定する <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub New(size As Dimension)
+  overload: MapQuest.Coordinates.Dimension.#ctor*
+  nameWithType.vb: Dimension.New(Dimension)
+  fullName.vb: MapQuest.Coordinates.Dimension.New(MapQuest.Coordinates.Dimension)
+  name.vb: New(Dimension)
+- uid: MapQuest.Coordinates.Dimension.#ctor(System.Single,System.Single)
+  commentId: M:MapQuest.Coordinates.Dimension.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: Dimension(float, float)
+  nameWithType: Dimension.Dimension(float, float)
+  fullName: MapQuest.Coordinates.Dimension.Dimension(float, float)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 縦幅と横幅を指定して <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref>  クラスの新しいインスタンスを作成します。
+  example: []
+  syntax:
+    content: public Dimension(float width, float height)
+    parameters:
+    - id: width
+      type: System.Single
+      description: 生成する <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> の横幅
+    - id: height
+      type: System.Single
+      description: 生成する <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> の縦幅
+    content.vb: Public Sub New(width As Single, height As Single)
+  overload: MapQuest.Coordinates.Dimension.#ctor*
+  nameWithType.vb: Dimension.New(Single, Single)
+  fullName.vb: MapQuest.Coordinates.Dimension.New(Single, Single)
+  name.vb: New(Single, Single)
+- uid: MapQuest.Coordinates.Dimension.#ctor(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Dimension.#ctor(System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double)'
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: Dimension(double, double)
+  nameWithType: Dimension.Dimension(double, double)
+  fullName: MapQuest.Coordinates.Dimension.Dimension(double, double)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 縦幅と横幅を指定してを指定して <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref>  クラスの新しいインスタンスを作成します。
+  example: []
+  syntax:
+    content: public Dimension(double width, double height)
+    parameters:
+    - id: width
+      type: System.Double
+      description: 生成する <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> の横幅
+    - id: height
+      type: System.Double
+      description: 生成する <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> の縦幅
+    content.vb: Public Sub New(width As Double, height As Double)
+  overload: MapQuest.Coordinates.Dimension.#ctor*
+  nameWithType.vb: Dimension.New(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Dimension.New(Double, Double)
+  name.vb: New(Double, Double)
+- uid: MapQuest.Coordinates.Dimension.ToCoordinate
+  commentId: M:MapQuest.Coordinates.Dimension.ToCoordinate
+  id: ToCoordinate
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: ToCoordinate()
+  nameWithType: Dimension.ToCoordinate()
+  fullName: MapQuest.Coordinates.Dimension.ToCoordinate()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> を <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> に変換します。
+  example: []
+  syntax:
+    content: public Coordinate ToCoordinate()
+    return:
+      type: MapQuest.Coordinates.Coordinate
+      description: 変換した <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function ToCoordinate() As Coordinate
+  overload: MapQuest.Coordinates.Dimension.ToCoordinate*
+- uid: MapQuest.Coordinates.Dimension.Equals(System.Object)
+  commentId: M:MapQuest.Coordinates.Dimension.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Dimension.Equals(object)
+  fullName: MapQuest.Coordinates.Dimension.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数のオブジェクトとこの <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> のサイズを比較します。
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: 比較する対象のオブジェクト
+    return:
+      type: System.Boolean
+      description: 比較した結果が等しかった場合<code>true</code>を、そうでなければ<code>false</code>を返します。
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: MapQuest.Coordinates.Dimension.Equals*
+  nameWithType.vb: Dimension.Equals(Object)
+  fullName.vb: MapQuest.Coordinates.Dimension.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.Coordinates.Dimension.GetHashCode
+  commentId: M:MapQuest.Coordinates.Dimension.GetHashCode
+  id: GetHashCode
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Dimension.GetHashCode()
+  fullName: MapQuest.Coordinates.Dimension.GetHashCode()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: このインスタンスのハッシュコードを返します。
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: このインスタンスのハッシュコードを返します。
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: MapQuest.Coordinates.Dimension.GetHashCode*
+- uid: MapQuest.Coordinates.Dimension.ToString
+  commentId: M:MapQuest.Coordinates.Dimension.ToString
+  id: ToString
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Dimension.ToString()
+  fullName: MapQuest.Coordinates.Dimension.ToString()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> の文字列表現を返します。
+  remarks: 文字列は"{Width= , Height= }"の形式で表現されます。
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: この <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> の文字列表現を返します。
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: MapQuest.Coordinates.Dimension.ToString*
+- uid: MapQuest.Coordinates.Dimension.op_Addition(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  commentId: M:MapQuest.Coordinates.Dimension.op_Addition(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  id: op_Addition(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: operator +(Dimension, Dimension)
+  nameWithType: Dimension.operator +(Dimension, Dimension)
+  fullName: MapQuest.Coordinates.Dimension.operator +(MapQuest.Coordinates.Dimension, MapQuest.Coordinates.Dimension)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定した二つの <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクトの値を加算します。
+  example: []
+  syntax:
+    content: public static Dimension operator +(Dimension sz1, Dimension sz2)
+    parameters:
+    - id: sz1
+      type: MapQuest.Coordinates.Dimension
+      description: <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクト
+    - id: sz2
+      type: MapQuest.Coordinates.Dimension
+      description: <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクト
+    return:
+      type: MapQuest.Coordinates.Dimension
+      description: 加算した結果の <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクト
+    content.vb: Public Shared Operator +(sz1 As Dimension, sz2 As Dimension) As Dimension
+  overload: MapQuest.Coordinates.Dimension.op_Addition*
+  nameWithType.vb: Dimension.+(Dimension, Dimension)
+  fullName.vb: MapQuest.Coordinates.Dimension.+(MapQuest.Coordinates.Dimension, MapQuest.Coordinates.Dimension)
+  name.vb: +(Dimension, Dimension)
+- uid: MapQuest.Coordinates.Dimension.op_Subtraction(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  commentId: M:MapQuest.Coordinates.Dimension.op_Subtraction(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  id: op_Subtraction(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: operator -(Dimension, Dimension)
+  nameWithType: Dimension.operator -(Dimension, Dimension)
+  fullName: MapQuest.Coordinates.Dimension.operator -(MapQuest.Coordinates.Dimension, MapQuest.Coordinates.Dimension)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定した二つの <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクトの値を減算します。
+  example: []
+  syntax:
+    content: public static Dimension operator -(Dimension sz1, Dimension sz2)
+    parameters:
+    - id: sz1
+      type: MapQuest.Coordinates.Dimension
+      description: <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクト
+    - id: sz2
+      type: MapQuest.Coordinates.Dimension
+      description: <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクト
+    return:
+      type: MapQuest.Coordinates.Dimension
+      description: 減算した結果の <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクト
+    content.vb: Public Shared Operator -(sz1 As Dimension, sz2 As Dimension) As Dimension
+  overload: MapQuest.Coordinates.Dimension.op_Subtraction*
+  nameWithType.vb: Dimension.-(Dimension, Dimension)
+  fullName.vb: MapQuest.Coordinates.Dimension.-(MapQuest.Coordinates.Dimension, MapQuest.Coordinates.Dimension)
+  name.vb: -(Dimension, Dimension)
+- uid: MapQuest.Coordinates.Dimension.op_Equality(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  commentId: M:MapQuest.Coordinates.Dimension.op_Equality(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  id: op_Equality(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Dimension, Dimension)
+  nameWithType: Dimension.operator ==(Dimension, Dimension)
+  fullName: MapQuest.Coordinates.Dimension.operator ==(MapQuest.Coordinates.Dimension, MapQuest.Coordinates.Dimension)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定した二つの <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクトの値が等しいかどうかを示す値を返します。
+  example: []
+  syntax:
+    content: public static bool operator ==(Dimension left, Dimension right)
+    parameters:
+    - id: left
+      type: MapQuest.Coordinates.Dimension
+      description: <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクト
+    - id: right
+      type: MapQuest.Coordinates.Dimension
+      description: <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクト
+    return:
+      type: System.Boolean
+      description: leftとrightが等しければ<code>true</code>，そうでなければ<code>false</code>を返します。
+    content.vb: Public Shared Operator =(left As Dimension, right As Dimension) As Boolean
+  overload: MapQuest.Coordinates.Dimension.op_Equality*
+  nameWithType.vb: Dimension.=(Dimension, Dimension)
+  fullName.vb: MapQuest.Coordinates.Dimension.=(MapQuest.Coordinates.Dimension, MapQuest.Coordinates.Dimension)
+  name.vb: =(Dimension, Dimension)
+- uid: MapQuest.Coordinates.Dimension.op_Inequality(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  commentId: M:MapQuest.Coordinates.Dimension.op_Inequality(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  id: op_Inequality(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Dimension, Dimension)
+  nameWithType: Dimension.operator !=(Dimension, Dimension)
+  fullName: MapQuest.Coordinates.Dimension.operator !=(MapQuest.Coordinates.Dimension, MapQuest.Coordinates.Dimension)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定した二つの <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクトの値が異なっているかどうかを示す値を返します。
+  example: []
+  syntax:
+    content: public static bool operator !=(Dimension left, Dimension right)
+    parameters:
+    - id: left
+      type: MapQuest.Coordinates.Dimension
+      description: <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクト
+    - id: right
+      type: MapQuest.Coordinates.Dimension
+      description: <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクト
+    return:
+      type: System.Boolean
+      description: leftとrightが異なっていれば<code>true</code>，そうでなければ<code>false</code>を返します。
+    content.vb: Public Shared Operator <>(left As Dimension, right As Dimension) As Boolean
+  overload: MapQuest.Coordinates.Dimension.op_Inequality*
+  nameWithType.vb: Dimension.<>(Dimension, Dimension)
+  fullName.vb: MapQuest.Coordinates.Dimension.<>(MapQuest.Coordinates.Dimension, MapQuest.Coordinates.Dimension)
+  name.vb: <>(Dimension, Dimension)
+- uid: MapQuest.Coordinates.Dimension.op_Explicit(MapQuest.Coordinates.Dimension)~MapQuest.Coordinates.Coordinate
+  commentId: M:MapQuest.Coordinates.Dimension.op_Explicit(MapQuest.Coordinates.Dimension)~MapQuest.Coordinates.Coordinate
+  id: op_Explicit(MapQuest.Coordinates.Dimension)~MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Coordinate(Dimension)
+  nameWithType: Dimension.explicit operator Coordinate(Dimension)
+  fullName: MapQuest.Coordinates.Dimension.explicit operator MapQuest.Coordinates.Coordinate(MapQuest.Coordinates.Dimension)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定した <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> を <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> に変換します。
+  example: []
+  syntax:
+    content: public static explicit operator Coordinate(Dimension size)
+    parameters:
+    - id: size
+      type: MapQuest.Coordinates.Dimension
+      description: <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクト
+    return:
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> が変換された結果の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Shared Narrowing Operator CType(size As Dimension) As Coordinate
+  overload: MapQuest.Coordinates.Dimension.op_Explicit*
+  nameWithType.vb: Dimension.CType(Dimension)
+  fullName.vb: MapQuest.Coordinates.Dimension.CType(MapQuest.Coordinates.Dimension)
+  name.vb: CType(Dimension)
+- uid: MapQuest.Coordinates.Dimension.IsEmpty
+  commentId: P:MapQuest.Coordinates.Dimension.IsEmpty
+  id: IsEmpty
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: Dimension.IsEmpty
+  fullName: MapQuest.Coordinates.Dimension.IsEmpty
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクトが空であるかどうかを取得します。
+  remarks: この <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクトが空ならば<code>true</code>を、そうでなければ<code>false</code>を返します。
+  example: []
+  syntax:
+    content: public bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: この <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクトが空であるかどうかの値
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+  overload: MapQuest.Coordinates.Dimension.IsEmpty*
+- uid: MapQuest.Coordinates.Dimension.Width
+  commentId: P:MapQuest.Coordinates.Dimension.Width
+  id: Width
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: Dimension.Width
+  fullName: MapQuest.Coordinates.Dimension.Width
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクトの横幅を取得、設定します。
+  example: []
+  syntax:
+    content: public double Width { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: この <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクトの横幅
+    content.vb: Public Property Width As Double
+  overload: MapQuest.Coordinates.Dimension.Width*
+- uid: MapQuest.Coordinates.Dimension.Height
+  commentId: P:MapQuest.Coordinates.Dimension.Height
+  id: Height
+  parent: MapQuest.Coordinates.Dimension
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: Dimension.Height
+  fullName: MapQuest.Coordinates.Dimension.Height
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクトの縦幅を取得、設定します。
+  example: []
+  syntax:
+    content: public double Height { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: この <xref href="MapQuest.Coordinates.Dimension" data-throw-if-not-resolved="false"></xref> オブジェクトの縦幅
+    content.vb: Public Property Height As Double
+  overload: MapQuest.Coordinates.Dimension.Height*
+references:
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Coordinates.Dimension
+  commentId: T:MapQuest.Coordinates.Dimension
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html
+  name: Dimension
+  nameWithType: Dimension
+  fullName: MapQuest.Coordinates.Dimension
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: MapQuest.Coordinates.Dimension.#ctor*
+  commentId: Overload:MapQuest.Coordinates.Dimension.#ctor
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension__ctor_MapQuest_Coordinates_Coordinate_
+  name: Dimension
+  nameWithType: Dimension.Dimension
+  fullName: MapQuest.Coordinates.Dimension.Dimension
+  nameWithType.vb: Dimension.New
+  fullName.vb: MapQuest.Coordinates.Dimension.New
+  name.vb: New
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.Coordinates.Dimension.ToCoordinate*
+  commentId: Overload:MapQuest.Coordinates.Dimension.ToCoordinate
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_ToCoordinate
+  name: ToCoordinate
+  nameWithType: Dimension.ToCoordinate
+  fullName: MapQuest.Coordinates.Dimension.ToCoordinate
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Coordinates.Dimension.Equals*
+  commentId: Overload:MapQuest.Coordinates.Dimension.Equals
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_Equals_System_Object_
+  name: Equals
+  nameWithType: Dimension.Equals
+  fullName: MapQuest.Coordinates.Dimension.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Dimension.GetHashCode*
+  commentId: Overload:MapQuest.Coordinates.Dimension.GetHashCode
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_GetHashCode
+  name: GetHashCode
+  nameWithType: Dimension.GetHashCode
+  fullName: MapQuest.Coordinates.Dimension.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Dimension.ToString*
+  commentId: Overload:MapQuest.Coordinates.Dimension.ToString
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_ToString
+  name: ToString
+  nameWithType: Dimension.ToString
+  fullName: MapQuest.Coordinates.Dimension.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.Coordinates.Dimension.op_Addition*
+  commentId: Overload:MapQuest.Coordinates.Dimension.op_Addition
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_op_Addition_MapQuest_Coordinates_Dimension_MapQuest_Coordinates_Dimension_
+  name: operator +
+  nameWithType: Dimension.operator +
+  fullName: MapQuest.Coordinates.Dimension.operator +
+  nameWithType.vb: Dimension.+
+  fullName.vb: MapQuest.Coordinates.Dimension.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.Coordinates.Dimension.op_Addition*
+    name: +
+    isExternal: true
+    href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_op_Addition_MapQuest_Coordinates_Dimension_MapQuest_Coordinates_Dimension_
+- uid: MapQuest.Coordinates.Dimension.op_Subtraction*
+  commentId: Overload:MapQuest.Coordinates.Dimension.op_Subtraction
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_op_Subtraction_MapQuest_Coordinates_Dimension_MapQuest_Coordinates_Dimension_
+  name: operator -
+  nameWithType: Dimension.operator -
+  fullName: MapQuest.Coordinates.Dimension.operator -
+  nameWithType.vb: Dimension.-
+  fullName.vb: MapQuest.Coordinates.Dimension.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.Coordinates.Dimension.op_Subtraction*
+    name: '-'
+    isExternal: true
+    href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_op_Subtraction_MapQuest_Coordinates_Dimension_MapQuest_Coordinates_Dimension_
+- uid: MapQuest.Coordinates.Dimension.op_Equality*
+  commentId: Overload:MapQuest.Coordinates.Dimension.op_Equality
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_op_Equality_MapQuest_Coordinates_Dimension_MapQuest_Coordinates_Dimension_
+  name: operator ==
+  nameWithType: Dimension.operator ==
+  fullName: MapQuest.Coordinates.Dimension.operator ==
+  nameWithType.vb: Dimension.=
+  fullName.vb: MapQuest.Coordinates.Dimension.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.Coordinates.Dimension.op_Equality*
+    name: ==
+    isExternal: true
+    href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_op_Equality_MapQuest_Coordinates_Dimension_MapQuest_Coordinates_Dimension_
+- uid: MapQuest.Coordinates.Dimension.op_Inequality*
+  commentId: Overload:MapQuest.Coordinates.Dimension.op_Inequality
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_op_Inequality_MapQuest_Coordinates_Dimension_MapQuest_Coordinates_Dimension_
+  name: operator !=
+  nameWithType: Dimension.operator !=
+  fullName: MapQuest.Coordinates.Dimension.operator !=
+  nameWithType.vb: Dimension.<>
+  fullName.vb: MapQuest.Coordinates.Dimension.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.Coordinates.Dimension.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_op_Inequality_MapQuest_Coordinates_Dimension_MapQuest_Coordinates_Dimension_
+- uid: MapQuest.Coordinates.Dimension.op_Explicit*
+  commentId: Overload:MapQuest.Coordinates.Dimension.op_Explicit
+  name: explicit operator
+  nameWithType: Dimension.explicit operator
+  fullName: MapQuest.Coordinates.Dimension.explicit operator
+  nameWithType.vb: Dimension.CType
+  fullName.vb: MapQuest.Coordinates.Dimension.CType
+  name.vb: CType
+  spec.csharp:
+  - name: explicit
+  - name: " "
+  - name: operator
+- uid: MapQuest.Coordinates.Dimension.IsEmpty*
+  commentId: Overload:MapQuest.Coordinates.Dimension.IsEmpty
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_IsEmpty
+  name: IsEmpty
+  nameWithType: Dimension.IsEmpty
+  fullName: MapQuest.Coordinates.Dimension.IsEmpty
+- uid: MapQuest.Coordinates.Dimension.Width*
+  commentId: Overload:MapQuest.Coordinates.Dimension.Width
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_Width
+  name: Width
+  nameWithType: Dimension.Width
+  fullName: MapQuest.Coordinates.Dimension.Width
+- uid: MapQuest.Coordinates.Dimension.Height*
+  commentId: Overload:MapQuest.Coordinates.Dimension.Height
+  isExternal: true
+  href: MapQuest.Coordinates.Dimension.html#MapQuest_Coordinates_Dimension_Height
+  name: Height
+  nameWithType: Dimension.Height
+  fullName: MapQuest.Coordinates.Dimension.Height

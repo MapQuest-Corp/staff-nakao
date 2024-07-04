@@ -1,0 +1,577 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.FeatureException
+  commentId: T:MapQuest.Features.FeatureException
+  id: FeatureException
+  parent: MapQuest.Features
+  children:
+  - MapQuest.Features.FeatureException.#ctor
+  - MapQuest.Features.FeatureException.#ctor(System.Int32,System.Exception,System.Object[])
+  - MapQuest.Features.FeatureException.#ctor(System.Int32,System.Object[])
+  - MapQuest.Features.FeatureException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Features.FeatureException.#ctor(System.String)
+  - MapQuest.Features.FeatureException.#ctor(System.String,System.Exception)
+  - MapQuest.Features.FeatureException.#ctor(System.String,System.Int32)
+  - MapQuest.Features.FeatureException.#ctor(System.String,System.Int32,System.Exception)
+  - MapQuest.Features.FeatureException.#ctor(System.String,System.Int32,System.Exception,System.Object[])
+  - MapQuest.Features.FeatureException.#ctor(System.String,System.Int32,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: FeatureException
+  nameWithType: FeatureException
+  fullName: MapQuest.Features.FeatureException
+  type: Class
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: MapQuest.Features パッケージ内で実行中に発生した場合にスローされる例外。
+  remarks: >-
+    詳細については 
+
+    <xref href="MapQuest.ExceptionManagement.DefaultException" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: 'public class FeatureException : DefaultException'
+    content.vb: Public Class FeatureException Inherits DefaultException
+  inheritance:
+  - System.Object
+- uid: MapQuest.Features.FeatureException.#ctor
+  commentId: M:MapQuest.Features.FeatureException.#ctor
+  id: '#ctor'
+  parent: MapQuest.Features.FeatureException
+  langs:
+  - csharp
+  - vb
+  name: FeatureException()
+  nameWithType: FeatureException.FeatureException()
+  fullName: MapQuest.Features.FeatureException.FeatureException()
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: " <xref href=\"MapQuest.Features.FeatureException\" data-throw-if-not-resolved=\"false\"></xref> \r\nクラスの新しいインスタンスを初期化します。"
+  example: []
+  syntax:
+    content: public FeatureException()
+    content.vb: Public Sub New()
+  overload: MapQuest.Features.FeatureException.#ctor*
+  nameWithType.vb: FeatureException.New()
+  fullName.vb: MapQuest.Features.FeatureException.New()
+  name.vb: New()
+- uid: MapQuest.Features.FeatureException.#ctor(System.String)
+  commentId: M:MapQuest.Features.FeatureException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: MapQuest.Features.FeatureException
+  langs:
+  - csharp
+  - vb
+  name: FeatureException(string)
+  nameWithType: FeatureException.FeatureException(string)
+  fullName: MapQuest.Features.FeatureException.FeatureException(string)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    指定したエラー メッセージを使用して、 
+
+    <xref href="MapQuest.Features.FeatureException" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  remarks: >-
+    詳細については 
+
+    <xref href="MapQuest.ExceptionManagement.DefaultException" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: public FeatureException(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: エラーを説明するメッセージ。
+    content.vb: Public Sub New(message As String)
+  overload: MapQuest.Features.FeatureException.#ctor*
+  nameWithType.vb: FeatureException.New(String)
+  fullName.vb: MapQuest.Features.FeatureException.New(String)
+  name.vb: New(String)
+- uid: MapQuest.Features.FeatureException.#ctor(System.String,System.Exception)
+  commentId: M:MapQuest.Features.FeatureException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: MapQuest.Features.FeatureException
+  langs:
+  - csharp
+  - vb
+  name: FeatureException(string, Exception)
+  nameWithType: FeatureException.FeatureException(string, Exception)
+  fullName: MapQuest.Features.FeatureException.FeatureException(string, System.Exception)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    エラー メッセージ、およびこの例外の原因である内部例外への参照を指定して、 
+
+    <xref href="MapQuest.Features.FeatureException" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  remarks: >-
+    詳細については 
+
+    <xref href="MapQuest.ExceptionManagement.DefaultException" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: public FeatureException(string message, Exception inner)
+    parameters:
+    - id: message
+      type: System.String
+      description: 例外の原因を説明するエラー メッセージ。
+    - id: inner
+      type: System.Exception
+      description: >-
+        現在の例外の原因である例外。 
+
+        <code class="paramref">inner</code> 
+
+        パラメータが null 参照でない場合は、内部例外を処理する catch 
+
+        ブロックで現在の例外が発生します。
+    content.vb: Public Sub New(message As String, inner As Exception)
+  overload: MapQuest.Features.FeatureException.#ctor*
+  nameWithType.vb: FeatureException.New(String, Exception)
+  fullName.vb: MapQuest.Features.FeatureException.New(String, System.Exception)
+  name.vb: New(String, Exception)
+- uid: MapQuest.Features.FeatureException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Features.FeatureException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: MapQuest.Features.FeatureException
+  langs:
+  - csharp
+  - vb
+  name: FeatureException(SerializationInfo, StreamingContext)
+  nameWithType: FeatureException.FeatureException(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Features.FeatureException.FeatureException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: Protected constructor to de-serialize data.
+  example: []
+  syntax:
+    content: protected FeatureException(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Features.FeatureException.#ctor*
+  nameWithType.vb: FeatureException.New(SerializationInfo, StreamingContext)
+  fullName.vb: MapQuest.Features.FeatureException.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name.vb: New(SerializationInfo, StreamingContext)
+- uid: MapQuest.Features.FeatureException.#ctor(System.Int32,System.Object[])
+  commentId: M:MapQuest.Features.FeatureException.#ctor(System.Int32,System.Object[])
+  id: '#ctor(System.Int32,System.Object[])'
+  parent: MapQuest.Features.FeatureException
+  langs:
+  - csharp
+  - vb
+  name: FeatureException(int, params object[])
+  nameWithType: FeatureException.FeatureException(int, params object[])
+  fullName: MapQuest.Features.FeatureException.FeatureException(int, params object[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    エラー番号、および{}を指定して、 
+
+    <xref href="MapQuest.Features.FeatureException" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  remarks: >-
+    詳細については 
+
+    <xref href="MapQuest.ExceptionManagement.DefaultException" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: public FeatureException(int exceptionID, params object[] args)
+    parameters:
+    - id: exceptionID
+      type: System.Int32
+      description: エラー メッセージを識別するエラー番号。
+    - id: args
+      type: System.Object[]
+      description: " <!-- Non Support 2005/02/07 -->\r\nこのパラメータは、現在サポートしていません。"
+    content.vb: Public Sub New(exceptionID As Integer, ParamArray args As Object())
+  overload: MapQuest.Features.FeatureException.#ctor*
+  nameWithType.vb: FeatureException.New(Integer, ParamArray Object())
+  fullName.vb: MapQuest.Features.FeatureException.New(Integer, ParamArray Object())
+  name.vb: New(Integer, ParamArray Object())
+- uid: MapQuest.Features.FeatureException.#ctor(System.Int32,System.Exception,System.Object[])
+  commentId: M:MapQuest.Features.FeatureException.#ctor(System.Int32,System.Exception,System.Object[])
+  id: '#ctor(System.Int32,System.Exception,System.Object[])'
+  parent: MapQuest.Features.FeatureException
+  langs:
+  - csharp
+  - vb
+  name: FeatureException(int, Exception, params object[])
+  nameWithType: FeatureException.FeatureException(int, Exception, params object[])
+  fullName: MapQuest.Features.FeatureException.FeatureException(int, System.Exception, params object[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    エラー番号、およびこの例外の原因である内部例外への参照を指定して、 
+
+    <xref href="MapQuest.Features.FeatureException" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  remarks: >-
+    詳細については 
+
+    <xref href="MapQuest.ExceptionManagement.DefaultException" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: public FeatureException(int exceptionID, Exception inner, params object[] args)
+    parameters:
+    - id: exceptionID
+      type: System.Int32
+      description: エラー メッセージを識別するエラー番号。
+    - id: inner
+      type: System.Exception
+      description: >-
+        現在の例外の原因である例外。 
+
+        <code class="paramref">inner</code> 
+
+        パラメータが null 参照でない場合は、内部例外を処理する catch 
+
+        ブロックで現在の例外が発生します。
+    - id: args
+      type: System.Object[]
+      description: " <!-- Non Support 2005/02/07 -->\r\nこのパラメータは、現在サポートしていません。"
+    content.vb: Public Sub New(exceptionID As Integer, inner As Exception, ParamArray args As Object())
+  overload: MapQuest.Features.FeatureException.#ctor*
+  nameWithType.vb: FeatureException.New(Integer, Exception, ParamArray Object())
+  fullName.vb: MapQuest.Features.FeatureException.New(Integer, System.Exception, ParamArray Object())
+  name.vb: New(Integer, Exception, ParamArray Object())
+- uid: MapQuest.Features.FeatureException.#ctor(System.String,System.Int32)
+  commentId: M:MapQuest.Features.FeatureException.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: MapQuest.Features.FeatureException
+  langs:
+  - csharp
+  - vb
+  name: FeatureException(string, int)
+  nameWithType: FeatureException.FeatureException(string, int)
+  fullName: MapQuest.Features.FeatureException.FeatureException(string, int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: Constructor allowing the Message property to be set through the exception ID.
+  example: []
+  syntax:
+    content: protected FeatureException(string prefix, int exceptionID)
+    parameters:
+    - id: prefix
+      type: System.String
+    - id: exceptionID
+      type: System.Int32
+      description: A number identifying the message of the exception in resource file.
+    content.vb: Protected Sub New(prefix As String, exceptionID As Integer)
+  overload: MapQuest.Features.FeatureException.#ctor*
+  nameWithType.vb: FeatureException.New(String, Integer)
+  fullName.vb: MapQuest.Features.FeatureException.New(String, Integer)
+  name.vb: New(String, Integer)
+- uid: MapQuest.Features.FeatureException.#ctor(System.String,System.Int32,System.Exception)
+  commentId: M:MapQuest.Features.FeatureException.#ctor(System.String,System.Int32,System.Exception)
+  id: '#ctor(System.String,System.Int32,System.Exception)'
+  parent: MapQuest.Features.FeatureException
+  langs:
+  - csharp
+  - vb
+  name: FeatureException(string, int, Exception)
+  nameWithType: FeatureException.FeatureException(string, int, Exception)
+  fullName: MapQuest.Features.FeatureException.FeatureException(string, int, System.Exception)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    Constructor allowing the Message resource ID and InnerException 
+
+    property to be set.
+  example: []
+  syntax:
+    content: protected FeatureException(string prefix, int exceptionID, Exception inner)
+    parameters:
+    - id: prefix
+      type: System.String
+    - id: exceptionID
+      type: System.Int32
+      description: A number identifying the message of the exception in resource file.
+    - id: inner
+      type: System.Exception
+      description: Sets a reference to the InnerException.
+    content.vb: Protected Sub New(prefix As String, exceptionID As Integer, inner As Exception)
+  overload: MapQuest.Features.FeatureException.#ctor*
+  nameWithType.vb: FeatureException.New(String, Integer, Exception)
+  fullName.vb: MapQuest.Features.FeatureException.New(String, Integer, System.Exception)
+  name.vb: New(String, Integer, Exception)
+- uid: MapQuest.Features.FeatureException.#ctor(System.String,System.Int32,System.Object[])
+  commentId: M:MapQuest.Features.FeatureException.#ctor(System.String,System.Int32,System.Object[])
+  id: '#ctor(System.String,System.Int32,System.Object[])'
+  parent: MapQuest.Features.FeatureException
+  langs:
+  - csharp
+  - vb
+  name: FeatureException(string, int, params object[])
+  nameWithType: FeatureException.FeatureException(string, int, params object[])
+  fullName: MapQuest.Features.FeatureException.FeatureException(string, int, params object[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: Constructor allowing the Message property to be set through the exception ID.
+  example: []
+  syntax:
+    content: protected FeatureException(string prefix, int exceptionID, params object[] args)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: ''
+    - id: exceptionID
+      type: System.Int32
+      description: A number identifying the message of the exception in resource file.
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Protected Sub New(prefix As String, exceptionID As Integer, ParamArray args As Object())
+  overload: MapQuest.Features.FeatureException.#ctor*
+  nameWithType.vb: FeatureException.New(String, Integer, ParamArray Object())
+  fullName.vb: MapQuest.Features.FeatureException.New(String, Integer, ParamArray Object())
+  name.vb: New(String, Integer, ParamArray Object())
+- uid: MapQuest.Features.FeatureException.#ctor(System.String,System.Int32,System.Exception,System.Object[])
+  commentId: M:MapQuest.Features.FeatureException.#ctor(System.String,System.Int32,System.Exception,System.Object[])
+  id: '#ctor(System.String,System.Int32,System.Exception,System.Object[])'
+  parent: MapQuest.Features.FeatureException
+  langs:
+  - csharp
+  - vb
+  name: FeatureException(string, int, Exception, params object[])
+  nameWithType: FeatureException.FeatureException(string, int, Exception, params object[])
+  fullName: MapQuest.Features.FeatureException.FeatureException(string, int, System.Exception, params object[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    Constructor allowing the Message resource ID and InnerException 
+
+    property to be set.
+  example: []
+  syntax:
+    content: protected FeatureException(string prefix, int exceptionID, Exception inner, params object[] args)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: ''
+    - id: exceptionID
+      type: System.Int32
+      description: A number identifying the message of the exception in resource file.
+    - id: inner
+      type: System.Exception
+      description: Sets a reference to the InnerException.
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Protected Sub New(prefix As String, exceptionID As Integer, inner As Exception, ParamArray args As Object())
+  overload: MapQuest.Features.FeatureException.#ctor*
+  nameWithType.vb: FeatureException.New(String, Integer, Exception, ParamArray Object())
+  fullName.vb: MapQuest.Features.FeatureException.New(String, Integer, System.Exception, ParamArray Object())
+  name.vb: New(String, Integer, Exception, ParamArray Object())
+references:
+- uid: MapQuest.ExceptionManagement.DefaultException
+  commentId: T:MapQuest.ExceptionManagement.DefaultException
+  isExternal: true
+- uid: MapQuest.Features
+  commentId: N:MapQuest.Features
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features
+  nameWithType: MapQuest.Features
+  fullName: MapQuest.Features
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Features.FeatureException
+  commentId: T:MapQuest.Features.FeatureException
+  isExternal: true
+  href: MapQuest.Features.FeatureException.html
+  name: FeatureException
+  nameWithType: FeatureException
+  fullName: MapQuest.Features.FeatureException
+- uid: MapQuest.Features.FeatureException.#ctor*
+  commentId: Overload:MapQuest.Features.FeatureException.#ctor
+  isExternal: true
+  href: MapQuest.Features.FeatureException.html#MapQuest_Features_FeatureException__ctor
+  name: FeatureException
+  nameWithType: FeatureException.FeatureException
+  fullName: MapQuest.Features.FeatureException.FeatureException
+  nameWithType.vb: FeatureException.New
+  fullName.vb: MapQuest.Features.FeatureException.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )

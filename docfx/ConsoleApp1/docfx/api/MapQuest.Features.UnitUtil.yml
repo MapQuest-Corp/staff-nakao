@@ -1,0 +1,558 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.UnitUtil
+  commentId: T:MapQuest.Features.UnitUtil
+  id: UnitUtil
+  parent: MapQuest.Features
+  children:
+  - MapQuest.Features.UnitUtil.#ctor
+  - MapQuest.Features.UnitUtil.ConvertFeatureSizeToTarget(MapQuest.Features.Feature,MapQuest.CoordinateSystems.ICoordinateSystem,MapQuest.CoordinateSystems.ICoordinateSystem)
+  - MapQuest.Features.UnitUtil.GetStyleUnitType(MapQuest.CoordinateSystems.ICoordinateSystem)
+  - MapQuest.Features.UnitUtil.GetStyleUnitType(System.Double)
+  - MapQuest.Features.UnitUtil.StyleUnitTypeToUnit(MapQuest.Styles.StyleUnitType)
+  langs:
+  - csharp
+  - vb
+  name: UnitUtil
+  nameWithType: UnitUtil
+  fullName: MapQuest.Features.UnitUtil
+  type: Class
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    単位に関する汎用的な関数を格納するクラスです。
+
+    メンバは、すべて static なメソッドで構成されます。
+  example: []
+  syntax:
+    content: public class UnitUtil
+    content.vb: Public Class UnitUtil
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Features.UnitUtil.StyleUnitTypeToUnit(MapQuest.Styles.StyleUnitType)
+  commentId: M:MapQuest.Features.UnitUtil.StyleUnitTypeToUnit(MapQuest.Styles.StyleUnitType)
+  id: StyleUnitTypeToUnit(MapQuest.Styles.StyleUnitType)
+  parent: MapQuest.Features.UnitUtil
+  langs:
+  - csharp
+  - vb
+  name: StyleUnitTypeToUnit(StyleUnitType)
+  nameWithType: UnitUtil.StyleUnitTypeToUnit(StyleUnitType)
+  fullName: MapQuest.Features.UnitUtil.StyleUnitTypeToUnit(MapQuest.Styles.StyleUnitType)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    <xref href="MapQuest.Styles.StyleUnitType" data-throw-if-not-resolved="false"></xref> を <xref href="MapQuest.CoordinateSystems.IUnit" data-throw-if-not-resolved="false"></xref> に変換します。
+            <code class="paramref">unitType</code>がPixelの場合はDPI値を96とした場合の
+            <xref href="MapQuest.CoordinateSystems.LinearUnit" data-throw-if-not-resolved="false"></xref> に変換します。
+  example: []
+  syntax:
+    content: public static IUnit StyleUnitTypeToUnit(StyleUnitType unitType)
+    parameters:
+    - id: unitType
+      type: MapQuest.Styles.StyleUnitType
+      description: 変換する <xref href="MapQuest.Styles.StyleUnitType" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: MapQuest.CoordinateSystems.IUnit
+      description: >-
+        変換された <xref href="MapQuest.CoordinateSystems.IUnit" data-throw-if-not-resolved="false"></xref> 。
+
+        <code class="paramref">unitType</code> に対応する <xref href="MapQuest.CoordinateSystems.IUnit" data-throw-if-not-resolved="false"></xref> 
+
+        が存在しない場合 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> を返します。
+    content.vb: Public Shared Function StyleUnitTypeToUnit(unitType As StyleUnitType) As IUnit
+  overload: MapQuest.Features.UnitUtil.StyleUnitTypeToUnit*
+- uid: MapQuest.Features.UnitUtil.GetStyleUnitType(MapQuest.CoordinateSystems.ICoordinateSystem)
+  commentId: M:MapQuest.Features.UnitUtil.GetStyleUnitType(MapQuest.CoordinateSystems.ICoordinateSystem)
+  id: GetStyleUnitType(MapQuest.CoordinateSystems.ICoordinateSystem)
+  parent: MapQuest.Features.UnitUtil
+  langs:
+  - csharp
+  - vb
+  name: GetStyleUnitType(ICoordinateSystem)
+  nameWithType: UnitUtil.GetStyleUnitType(ICoordinateSystem)
+  fullName: MapQuest.Features.UnitUtil.GetStyleUnitType(MapQuest.CoordinateSystems.ICoordinateSystem)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    座標系の単位を取得
+
+    ※緯度経度系の座標系の場合Noneが返されます
+  example: []
+  syntax:
+    content: public static StyleUnitType GetStyleUnitType(ICoordinateSystem cs)
+    parameters:
+    - id: cs
+      type: MapQuest.CoordinateSystems.ICoordinateSystem
+      description: ''
+    return:
+      type: MapQuest.Styles.StyleUnitType
+      description: ''
+    content.vb: Public Shared Function GetStyleUnitType(cs As ICoordinateSystem) As StyleUnitType
+  overload: MapQuest.Features.UnitUtil.GetStyleUnitType*
+- uid: MapQuest.Features.UnitUtil.GetStyleUnitType(System.Double)
+  commentId: M:MapQuest.Features.UnitUtil.GetStyleUnitType(System.Double)
+  id: GetStyleUnitType(System.Double)
+  parent: MapQuest.Features.UnitUtil
+  langs:
+  - csharp
+  - vb
+  name: GetStyleUnitType(double)
+  nameWithType: UnitUtil.GetStyleUnitType(double)
+  fullName: MapQuest.Features.UnitUtil.GetStyleUnitType(double)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: メートル換算した値から単位を取得
+  example: []
+  syntax:
+    content: public static StyleUnitType GetStyleUnitType(double metersPerUnit)
+    parameters:
+    - id: metersPerUnit
+      type: System.Double
+      description: ''
+    return:
+      type: MapQuest.Styles.StyleUnitType
+      description: ''
+    content.vb: Public Shared Function GetStyleUnitType(metersPerUnit As Double) As StyleUnitType
+  overload: MapQuest.Features.UnitUtil.GetStyleUnitType*
+  nameWithType.vb: UnitUtil.GetStyleUnitType(Double)
+  fullName.vb: MapQuest.Features.UnitUtil.GetStyleUnitType(Double)
+  name.vb: GetStyleUnitType(Double)
+- uid: MapQuest.Features.UnitUtil.ConvertFeatureSizeToTarget(MapQuest.Features.Feature,MapQuest.CoordinateSystems.ICoordinateSystem,MapQuest.CoordinateSystems.ICoordinateSystem)
+  commentId: M:MapQuest.Features.UnitUtil.ConvertFeatureSizeToTarget(MapQuest.Features.Feature,MapQuest.CoordinateSystems.ICoordinateSystem,MapQuest.CoordinateSystems.ICoordinateSystem)
+  id: ConvertFeatureSizeToTarget(MapQuest.Features.Feature,MapQuest.CoordinateSystems.ICoordinateSystem,MapQuest.CoordinateSystems.ICoordinateSystem)
+  parent: MapQuest.Features.UnitUtil
+  langs:
+  - csharp
+  - vb
+  name: ConvertFeatureSizeToTarget(Feature, ICoordinateSystem, ICoordinateSystem)
+  nameWithType: UnitUtil.ConvertFeatureSizeToTarget(Feature, ICoordinateSystem, ICoordinateSystem)
+  fullName: MapQuest.Features.UnitUtil.ConvertFeatureSizeToTarget(MapQuest.Features.Feature, MapQuest.CoordinateSystems.ICoordinateSystem, MapQuest.CoordinateSystems.ICoordinateSystem)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: Featureのジオメトリがテキスト、またはポイントの場合にtargetCSの座標系の単位にサイズを変換する
+  example: []
+  syntax:
+    content: public static void ConvertFeatureSizeToTarget(Feature feature, ICoordinateSystem sourceCS, ICoordinateSystem targetCS)
+    parameters:
+    - id: feature
+      type: MapQuest.Features.Feature
+      description: サイズ変換を行う<xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref>
+    - id: sourceCS
+      type: MapQuest.CoordinateSystems.ICoordinateSystem
+      description: 変換元座標系
+    - id: targetCS
+      type: MapQuest.CoordinateSystems.ICoordinateSystem
+      description: 変換先座標系
+    content.vb: Public Shared Sub ConvertFeatureSizeToTarget(feature As Feature, sourceCS As ICoordinateSystem, targetCS As ICoordinateSystem)
+  overload: MapQuest.Features.UnitUtil.ConvertFeatureSizeToTarget*
+- uid: MapQuest.Features.UnitUtil.#ctor
+  commentId: M:MapQuest.Features.UnitUtil.#ctor
+  id: '#ctor'
+  parent: MapQuest.Features.UnitUtil
+  langs:
+  - csharp
+  - vb
+  name: UnitUtil()
+  nameWithType: UnitUtil.UnitUtil()
+  fullName: MapQuest.Features.UnitUtil.UnitUtil()
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  syntax:
+    content: public UnitUtil()
+    content.vb: Public Sub New()
+  overload: MapQuest.Features.UnitUtil.#ctor*
+  nameWithType.vb: UnitUtil.New()
+  fullName.vb: MapQuest.Features.UnitUtil.New()
+  name.vb: New()
+references:
+- uid: MapQuest.Features
+  commentId: N:MapQuest.Features
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features
+  nameWithType: MapQuest.Features
+  fullName: MapQuest.Features
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Styles.StyleUnitType
+  commentId: T:MapQuest.Styles.StyleUnitType
+  isExternal: true
+  name: StyleUnitType
+  nameWithType: StyleUnitType
+  fullName: MapQuest.Styles.StyleUnitType
+- uid: MapQuest.CoordinateSystems.IUnit
+  commentId: T:MapQuest.CoordinateSystems.IUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnit.html
+  name: IUnit
+  nameWithType: IUnit
+  fullName: MapQuest.CoordinateSystems.IUnit
+- uid: MapQuest.CoordinateSystems.LinearUnit
+  commentId: T:MapQuest.CoordinateSystems.LinearUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.LinearUnit.html
+  name: LinearUnit
+  nameWithType: LinearUnit
+  fullName: MapQuest.CoordinateSystems.LinearUnit
+- uid: MapQuest.Features.UnitUtil.StyleUnitTypeToUnit*
+  commentId: Overload:MapQuest.Features.UnitUtil.StyleUnitTypeToUnit
+  isExternal: true
+  href: MapQuest.Features.UnitUtil.html#MapQuest_Features_UnitUtil_StyleUnitTypeToUnit_MapQuest_Styles_StyleUnitType_
+  name: StyleUnitTypeToUnit
+  nameWithType: UnitUtil.StyleUnitTypeToUnit
+  fullName: MapQuest.Features.UnitUtil.StyleUnitTypeToUnit
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: MapQuest.Features.UnitUtil.GetStyleUnitType*
+  commentId: Overload:MapQuest.Features.UnitUtil.GetStyleUnitType
+  isExternal: true
+  href: MapQuest.Features.UnitUtil.html#MapQuest_Features_UnitUtil_GetStyleUnitType_MapQuest_CoordinateSystems_ICoordinateSystem_
+  name: GetStyleUnitType
+  nameWithType: UnitUtil.GetStyleUnitType
+  fullName: MapQuest.Features.UnitUtil.GetStyleUnitType
+- uid: MapQuest.CoordinateSystems.ICoordinateSystem
+  commentId: T:MapQuest.CoordinateSystems.ICoordinateSystem
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ICoordinateSystem.html
+  name: ICoordinateSystem
+  nameWithType: ICoordinateSystem
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystem
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.Features.Feature
+  commentId: T:MapQuest.Features.Feature
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.Feature.html
+  name: Feature
+  nameWithType: Feature
+  fullName: MapQuest.Features.Feature
+- uid: MapQuest.Features.UnitUtil.ConvertFeatureSizeToTarget*
+  commentId: Overload:MapQuest.Features.UnitUtil.ConvertFeatureSizeToTarget
+  isExternal: true
+  href: MapQuest.Features.UnitUtil.html#MapQuest_Features_UnitUtil_ConvertFeatureSizeToTarget_MapQuest_Features_Feature_MapQuest_CoordinateSystems_ICoordinateSystem_MapQuest_CoordinateSystems_ICoordinateSystem_
+  name: ConvertFeatureSizeToTarget
+  nameWithType: UnitUtil.ConvertFeatureSizeToTarget
+  fullName: MapQuest.Features.UnitUtil.ConvertFeatureSizeToTarget
+- uid: MapQuest.Features.UnitUtil.#ctor*
+  commentId: Overload:MapQuest.Features.UnitUtil.#ctor
+  isExternal: true
+  href: MapQuest.Features.UnitUtil.html#MapQuest_Features_UnitUtil__ctor
+  name: UnitUtil
+  nameWithType: UnitUtil.UnitUtil
+  fullName: MapQuest.Features.UnitUtil.UnitUtil
+  nameWithType.vb: UnitUtil.New
+  fullName.vb: MapQuest.Features.UnitUtil.New
+  name.vb: New

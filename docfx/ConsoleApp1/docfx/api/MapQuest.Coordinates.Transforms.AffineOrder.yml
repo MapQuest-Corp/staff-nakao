@@ -1,0 +1,107 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.Transforms.AffineOrder
+  commentId: T:MapQuest.Coordinates.Transforms.AffineOrder
+  id: AffineOrder
+  parent: MapQuest.Coordinates.Transforms
+  children:
+  - MapQuest.Coordinates.Transforms.AffineOrder.Append
+  - MapQuest.Coordinates.Transforms.AffineOrder.Prepend
+  langs:
+  - csharp
+  - vb
+  name: AffineOrder
+  nameWithType: AffineOrder
+  fullName: MapQuest.Coordinates.Transforms.AffineOrder
+  type: Enum
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: 'public enum AffineOrder : short'
+    content.vb: Public Enum AffineOrder As Short
+- uid: MapQuest.Coordinates.Transforms.AffineOrder.Append
+  commentId: F:MapQuest.Coordinates.Transforms.AffineOrder.Append
+  id: Append
+  parent: MapQuest.Coordinates.Transforms.AffineOrder
+  langs:
+  - csharp
+  - vb
+  name: Append
+  nameWithType: AffineOrder.Append
+  fullName: MapQuest.Coordinates.Transforms.AffineOrder.Append
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: Append = 1
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineOrder
+- uid: MapQuest.Coordinates.Transforms.AffineOrder.Prepend
+  commentId: F:MapQuest.Coordinates.Transforms.AffineOrder.Prepend
+  id: Prepend
+  parent: MapQuest.Coordinates.Transforms.AffineOrder
+  langs:
+  - csharp
+  - vb
+  name: Prepend
+  nameWithType: AffineOrder.Prepend
+  fullName: MapQuest.Coordinates.Transforms.AffineOrder.Prepend
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: Prepend = 2
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineOrder
+references:
+- uid: MapQuest.Coordinates.Transforms
+  commentId: N:MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates.Transforms
+  nameWithType: MapQuest.Coordinates.Transforms
+  fullName: MapQuest.Coordinates.Transforms
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+- uid: MapQuest.Coordinates.Transforms.AffineOrder
+  commentId: T:MapQuest.Coordinates.Transforms.AffineOrder
+  parent: MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineOrder.html
+  name: AffineOrder
+  nameWithType: AffineOrder
+  fullName: MapQuest.Coordinates.Transforms.AffineOrder

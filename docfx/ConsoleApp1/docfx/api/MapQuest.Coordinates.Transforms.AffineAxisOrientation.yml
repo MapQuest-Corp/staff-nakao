@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  commentId: T:MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  id: AffineAxisOrientation
+  parent: MapQuest.Coordinates.Transforms
+  children:
+  - MapQuest.Coordinates.Transforms.AffineAxisOrientation.Down
+  - MapQuest.Coordinates.Transforms.AffineAxisOrientation.Left
+  - MapQuest.Coordinates.Transforms.AffineAxisOrientation.None
+  - MapQuest.Coordinates.Transforms.AffineAxisOrientation.Right
+  - MapQuest.Coordinates.Transforms.AffineAxisOrientation.Up
+  langs:
+  - csharp
+  - vb
+  name: AffineAxisOrientation
+  nameWithType: AffineAxisOrientation
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  type: Enum
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: 'public enum AffineAxisOrientation : short'
+    content.vb: Public Enum AffineAxisOrientation As Short
+- uid: MapQuest.Coordinates.Transforms.AffineAxisOrientation.None
+  commentId: F:MapQuest.Coordinates.Transforms.AffineAxisOrientation.None
+  id: None
+  parent: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: AffineAxisOrientation.None
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisOrientation.None
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+- uid: MapQuest.Coordinates.Transforms.AffineAxisOrientation.Up
+  commentId: F:MapQuest.Coordinates.Transforms.AffineAxisOrientation.Up
+  id: Up
+  parent: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: AffineAxisOrientation.Up
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisOrientation.Up
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: Up = 1
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+- uid: MapQuest.Coordinates.Transforms.AffineAxisOrientation.Down
+  commentId: F:MapQuest.Coordinates.Transforms.AffineAxisOrientation.Down
+  id: Down
+  parent: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: AffineAxisOrientation.Down
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisOrientation.Down
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: Down = 2
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+- uid: MapQuest.Coordinates.Transforms.AffineAxisOrientation.Left
+  commentId: F:MapQuest.Coordinates.Transforms.AffineAxisOrientation.Left
+  id: Left
+  parent: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: AffineAxisOrientation.Left
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisOrientation.Left
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: Left = 3
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+- uid: MapQuest.Coordinates.Transforms.AffineAxisOrientation.Right
+  commentId: F:MapQuest.Coordinates.Transforms.AffineAxisOrientation.Right
+  id: Right
+  parent: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: AffineAxisOrientation.Right
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisOrientation.Right
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: Right = 4
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+references:
+- uid: MapQuest.Coordinates.Transforms
+  commentId: N:MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates.Transforms
+  nameWithType: MapQuest.Coordinates.Transforms
+  fullName: MapQuest.Coordinates.Transforms
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+- uid: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  commentId: T:MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  parent: MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisOrientation.html
+  name: AffineAxisOrientation
+  nameWithType: AffineAxisOrientation
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisOrientation

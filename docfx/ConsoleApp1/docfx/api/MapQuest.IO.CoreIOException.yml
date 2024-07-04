@@ -1,0 +1,526 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.IO.CoreIOException
+  commentId: T:MapQuest.IO.CoreIOException
+  id: CoreIOException
+  parent: MapQuest.IO
+  children:
+  - MapQuest.IO.CoreIOException.#ctor
+  - MapQuest.IO.CoreIOException.#ctor(System.Int32,System.Exception,System.Object[])
+  - MapQuest.IO.CoreIOException.#ctor(System.Int32,System.Object[])
+  - MapQuest.IO.CoreIOException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.IO.CoreIOException.#ctor(System.String)
+  - MapQuest.IO.CoreIOException.#ctor(System.String,System.Exception)
+  - MapQuest.IO.CoreIOException.#ctor(System.String,System.Int32)
+  - MapQuest.IO.CoreIOException.#ctor(System.String,System.Int32,System.Exception)
+  - MapQuest.IO.CoreIOException.#ctor(System.String,System.Int32,System.Exception,System.Object[])
+  - MapQuest.IO.CoreIOException.#ctor(System.String,System.Int32,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: CoreIOException
+  nameWithType: CoreIOException
+  fullName: MapQuest.IO.CoreIOException
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: <xref href="MapQuest.IO" data-throw-if-not-resolved="false"></xref> 名前空間で発生した例外を示すクラスです。
+  example: []
+  syntax:
+    content: 'public class CoreIOException : CoreException'
+    content.vb: Public Class CoreIOException Inherits CoreException
+  inheritance:
+  - System.Object
+  - MapQuest.CoreException
+- uid: MapQuest.IO.CoreIOException.#ctor
+  commentId: M:MapQuest.IO.CoreIOException.#ctor
+  id: '#ctor'
+  parent: MapQuest.IO.CoreIOException
+  langs:
+  - csharp
+  - vb
+  name: CoreIOException()
+  nameWithType: CoreIOException.CoreIOException()
+  fullName: MapQuest.IO.CoreIOException.CoreIOException()
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: パラメータを指定しないでインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public CoreIOException()
+    content.vb: Public Sub New()
+  overload: MapQuest.IO.CoreIOException.#ctor*
+  nameWithType.vb: CoreIOException.New()
+  fullName.vb: MapQuest.IO.CoreIOException.New()
+  name.vb: New()
+- uid: MapQuest.IO.CoreIOException.#ctor(System.String)
+  commentId: M:MapQuest.IO.CoreIOException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: MapQuest.IO.CoreIOException
+  langs:
+  - csharp
+  - vb
+  name: CoreIOException(string)
+  nameWithType: CoreIOException.CoreIOException(string)
+  fullName: MapQuest.IO.CoreIOException.CoreIOException(string)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: エラーメッセージを指定してインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public CoreIOException(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: 例外のメッセージ。
+    content.vb: Public Sub New(message As String)
+  overload: MapQuest.IO.CoreIOException.#ctor*
+  nameWithType.vb: CoreIOException.New(String)
+  fullName.vb: MapQuest.IO.CoreIOException.New(String)
+  name.vb: New(String)
+- uid: MapQuest.IO.CoreIOException.#ctor(System.String,System.Exception)
+  commentId: M:MapQuest.IO.CoreIOException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: MapQuest.IO.CoreIOException
+  langs:
+  - csharp
+  - vb
+  name: CoreIOException(string, Exception)
+  nameWithType: CoreIOException.CoreIOException(string, Exception)
+  fullName: MapQuest.IO.CoreIOException.CoreIOException(string, System.Exception)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: エラーメッセージと「この例外の原因である例外」を指定してインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public CoreIOException(string message, Exception inner)
+    parameters:
+    - id: message
+      type: System.String
+      description: 例外のメッセージ。
+    - id: inner
+      type: System.Exception
+      description: 現在の例外の原因である例外。
+    content.vb: Public Sub New(message As String, inner As Exception)
+  overload: MapQuest.IO.CoreIOException.#ctor*
+  nameWithType.vb: CoreIOException.New(String, Exception)
+  fullName.vb: MapQuest.IO.CoreIOException.New(String, System.Exception)
+  name.vb: New(String, Exception)
+- uid: MapQuest.IO.CoreIOException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.IO.CoreIOException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: MapQuest.IO.CoreIOException
+  langs:
+  - csharp
+  - vb
+  name: CoreIOException(SerializationInfo, StreamingContext)
+  nameWithType: CoreIOException.CoreIOException(SerializationInfo, StreamingContext)
+  fullName: MapQuest.IO.CoreIOException.CoreIOException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: デシリアライズの際に使用されるコンストラクタです。
+  example: []
+  syntax:
+    content: protected CoreIOException(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: 新しいインスタンスをシリアル化するために必要な情報を格納する <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> 。
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: 新しいインスタンスに関連付けられているシリアル化ストリームのソースを格納する <xref href="System.Runtime.Serialization.StreamingContext" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.IO.CoreIOException.#ctor*
+  nameWithType.vb: CoreIOException.New(SerializationInfo, StreamingContext)
+  fullName.vb: MapQuest.IO.CoreIOException.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name.vb: New(SerializationInfo, StreamingContext)
+- uid: MapQuest.IO.CoreIOException.#ctor(System.Int32,System.Object[])
+  commentId: M:MapQuest.IO.CoreIOException.#ctor(System.Int32,System.Object[])
+  id: '#ctor(System.Int32,System.Object[])'
+  parent: MapQuest.IO.CoreIOException
+  langs:
+  - csharp
+  - vb
+  name: CoreIOException(int, params object[])
+  nameWithType: CoreIOException.CoreIOException(int, params object[])
+  fullName: MapQuest.IO.CoreIOException.CoreIOException(int, params object[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    リソースID、例外のパラメータ群
+
+    を指定してインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public CoreIOException(int exceptionID, params object[] args)
+    parameters:
+    - id: exceptionID
+      type: System.Int32
+      description: リソースに格納されているエラーメッセージの ID 。
+    - id: args
+      type: System.Object[]
+      description: 例外のパラメータ群。
+    content.vb: Public Sub New(exceptionID As Integer, ParamArray args As Object())
+  overload: MapQuest.IO.CoreIOException.#ctor*
+  nameWithType.vb: CoreIOException.New(Integer, ParamArray Object())
+  fullName.vb: MapQuest.IO.CoreIOException.New(Integer, ParamArray Object())
+  name.vb: New(Integer, ParamArray Object())
+- uid: MapQuest.IO.CoreIOException.#ctor(System.Int32,System.Exception,System.Object[])
+  commentId: M:MapQuest.IO.CoreIOException.#ctor(System.Int32,System.Exception,System.Object[])
+  id: '#ctor(System.Int32,System.Exception,System.Object[])'
+  parent: MapQuest.IO.CoreIOException
+  langs:
+  - csharp
+  - vb
+  name: CoreIOException(int, Exception, params object[])
+  nameWithType: CoreIOException.CoreIOException(int, Exception, params object[])
+  fullName: MapQuest.IO.CoreIOException.CoreIOException(int, System.Exception, params object[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    リソースID、例外の原因となった例外、例外のパラメータ群
+
+    を指定してインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public CoreIOException(int exceptionID, Exception inner, params object[] args)
+    parameters:
+    - id: exceptionID
+      type: System.Int32
+      description: リソースに格納されているエラーメッセージの ID 。
+    - id: inner
+      type: System.Exception
+      description: 例外の原因となった <xref href="System.Exception" data-throw-if-not-resolved="false"></xref> 。
+    - id: args
+      type: System.Object[]
+      description: 例外のパラメータ群。
+    content.vb: Public Sub New(exceptionID As Integer, inner As Exception, ParamArray args As Object())
+  overload: MapQuest.IO.CoreIOException.#ctor*
+  nameWithType.vb: CoreIOException.New(Integer, Exception, ParamArray Object())
+  fullName.vb: MapQuest.IO.CoreIOException.New(Integer, System.Exception, ParamArray Object())
+  name.vb: New(Integer, Exception, ParamArray Object())
+- uid: MapQuest.IO.CoreIOException.#ctor(System.String,System.Int32)
+  commentId: M:MapQuest.IO.CoreIOException.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: MapQuest.IO.CoreIOException
+  langs:
+  - csharp
+  - vb
+  name: CoreIOException(string, int)
+  nameWithType: CoreIOException.CoreIOException(string, int)
+  fullName: MapQuest.IO.CoreIOException.CoreIOException(string, int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 接頭辞とリソースID を指定してインスタンスを初期化します。
+  example: []
+  syntax:
+    content: protected CoreIOException(string prefix, int exceptionID)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: 例外の接頭辞。
+    - id: exceptionID
+      type: System.Int32
+      description: リソースに格納されているエラーメッセージの ID 。
+    content.vb: Protected Sub New(prefix As String, exceptionID As Integer)
+  overload: MapQuest.IO.CoreIOException.#ctor*
+  nameWithType.vb: CoreIOException.New(String, Integer)
+  fullName.vb: MapQuest.IO.CoreIOException.New(String, Integer)
+  name.vb: New(String, Integer)
+- uid: MapQuest.IO.CoreIOException.#ctor(System.String,System.Int32,System.Exception)
+  commentId: M:MapQuest.IO.CoreIOException.#ctor(System.String,System.Int32,System.Exception)
+  id: '#ctor(System.String,System.Int32,System.Exception)'
+  parent: MapQuest.IO.CoreIOException
+  langs:
+  - csharp
+  - vb
+  name: CoreIOException(string, int, Exception)
+  nameWithType: CoreIOException.CoreIOException(string, int, Exception)
+  fullName: MapQuest.IO.CoreIOException.CoreIOException(string, int, System.Exception)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 接頭辞とリソースID、例外の原因となった例外を指定してインスタンスを初期化します。
+  example: []
+  syntax:
+    content: protected CoreIOException(string prefix, int exceptionID, Exception inner)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: 例外の接頭辞。
+    - id: exceptionID
+      type: System.Int32
+      description: リソースに格納されているエラーメッセージの ID 。
+    - id: inner
+      type: System.Exception
+      description: 例外の原因となった <xref href="System.Exception" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Protected Sub New(prefix As String, exceptionID As Integer, inner As Exception)
+  overload: MapQuest.IO.CoreIOException.#ctor*
+  nameWithType.vb: CoreIOException.New(String, Integer, Exception)
+  fullName.vb: MapQuest.IO.CoreIOException.New(String, Integer, System.Exception)
+  name.vb: New(String, Integer, Exception)
+- uid: MapQuest.IO.CoreIOException.#ctor(System.String,System.Int32,System.Object[])
+  commentId: M:MapQuest.IO.CoreIOException.#ctor(System.String,System.Int32,System.Object[])
+  id: '#ctor(System.String,System.Int32,System.Object[])'
+  parent: MapQuest.IO.CoreIOException
+  langs:
+  - csharp
+  - vb
+  name: CoreIOException(string, int, params object[])
+  nameWithType: CoreIOException.CoreIOException(string, int, params object[])
+  fullName: MapQuest.IO.CoreIOException.CoreIOException(string, int, params object[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 接頭辞とリソースID、例外のパラメータ群を指定してインスタンスを初期化します。
+  example: []
+  syntax:
+    content: protected CoreIOException(string prefix, int exceptionID, params object[] args)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: 例外の接頭辞。
+    - id: exceptionID
+      type: System.Int32
+      description: リソースに格納されているエラーメッセージの ID 。
+    - id: args
+      type: System.Object[]
+      description: 例外のパラメータ群。
+    content.vb: Protected Sub New(prefix As String, exceptionID As Integer, ParamArray args As Object())
+  overload: MapQuest.IO.CoreIOException.#ctor*
+  nameWithType.vb: CoreIOException.New(String, Integer, ParamArray Object())
+  fullName.vb: MapQuest.IO.CoreIOException.New(String, Integer, ParamArray Object())
+  name.vb: New(String, Integer, ParamArray Object())
+- uid: MapQuest.IO.CoreIOException.#ctor(System.String,System.Int32,System.Exception,System.Object[])
+  commentId: M:MapQuest.IO.CoreIOException.#ctor(System.String,System.Int32,System.Exception,System.Object[])
+  id: '#ctor(System.String,System.Int32,System.Exception,System.Object[])'
+  parent: MapQuest.IO.CoreIOException
+  langs:
+  - csharp
+  - vb
+  name: CoreIOException(string, int, Exception, params object[])
+  nameWithType: CoreIOException.CoreIOException(string, int, Exception, params object[])
+  fullName: MapQuest.IO.CoreIOException.CoreIOException(string, int, System.Exception, params object[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    接頭辞とリソースID、例外のパラメータ群、例外の原因となった例外
+
+    を指定してインスタンスを初期化します。
+  example: []
+  syntax:
+    content: protected CoreIOException(string prefix, int exceptionID, Exception inner, params object[] args)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: 例外の接頭辞。
+    - id: exceptionID
+      type: System.Int32
+      description: リソースに格納されているエラーメッセージの ID 。
+    - id: inner
+      type: System.Exception
+      description: 例外の原因となった <xref href="System.Exception" data-throw-if-not-resolved="false"></xref> 。
+    - id: args
+      type: System.Object[]
+      description: 例外のパラメータ群。
+    content.vb: Protected Sub New(prefix As String, exceptionID As Integer, inner As Exception, ParamArray args As Object())
+  overload: MapQuest.IO.CoreIOException.#ctor*
+  nameWithType.vb: CoreIOException.New(String, Integer, Exception, ParamArray Object())
+  fullName.vb: MapQuest.IO.CoreIOException.New(String, Integer, System.Exception, ParamArray Object())
+  name.vb: New(String, Integer, Exception, ParamArray Object())
+references:
+- uid: MapQuest.IO
+  commentId: N:MapQuest.IO
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.IO
+  nameWithType: MapQuest.IO
+  fullName: MapQuest.IO
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.CoreException
+  commentId: T:MapQuest.CoreException
+  parent: MapQuest
+  isExternal: true
+  href: MapQuest.CoreException.html
+  name: CoreException
+  nameWithType: CoreException
+  fullName: MapQuest.CoreException
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest
+  commentId: N:MapQuest
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest
+  nameWithType: MapQuest
+  fullName: MapQuest
+- uid: MapQuest.IO.CoreIOException.#ctor*
+  commentId: Overload:MapQuest.IO.CoreIOException.#ctor
+  isExternal: true
+  href: MapQuest.IO.CoreIOException.html#MapQuest_IO_CoreIOException__ctor
+  name: CoreIOException
+  nameWithType: CoreIOException.CoreIOException
+  fullName: MapQuest.IO.CoreIOException.CoreIOException
+  nameWithType.vb: CoreIOException.New
+  fullName.vb: MapQuest.IO.CoreIOException.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )

@@ -1,0 +1,938 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Unit | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Unit | mysite ">
+      
+      <meta name="description" content="単位を示すクラスの、共通な実装を提供する abstract クラスです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.CoordinateSystems.Unit">
+
+
+
+  <h1 id="MapQuest_CoordinateSystems_Unit" data-uid="MapQuest.CoordinateSystems.Unit" class="text-break">
+Class Unit  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.CoordinateSystems.html">CoordinateSystems</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.CoordinateSystems.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>単位を示すクラスの、共通な実装を提供する <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/abstract">abstract</a> クラスです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Unit : Info, IUnit, IInfo, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.Info.html">Info</a></div>
+      <div><span class="xref">Unit</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.IUnit.html">IUnit</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.IInfo.html">IInfo</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode">Info.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_">Info.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Clone">Info.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Remarks">Info.Remarks</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">Info.AuthorityCode</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Info.Authority</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Info.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Info.Alias</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Info.Abbreviation</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_WKT">Info.WKT</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_XML">Info.XML</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MapQuest_CoordinateSystems_Unit_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>このクラスの現在の拡張クラスは、下記の通りです。</p>
+<ol><li><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> クラスは、「角度」の単位を示すクラスです。
+</li><li><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> クラスは、「直線上の距離」の単位を示すクラスです。
+</li></ol>
+またこのクラスは、「ｍ」、「ｃｍ」、「度」といった、一般的によく使われる
+単位を示すクラスを取得する Static プロパティも提供します。
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_Unit__ctor_" data-uid="MapQuest.CoordinateSystems.Unit.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit__ctor" data-uid="MapQuest.CoordinateSystems.Unit.#ctor">
+  Unit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Unit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit__ctor_" data-uid="MapQuest.CoordinateSystems.Unit.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit__ctor_MapQuest_CoordinateSystems_Unit_" data-uid="MapQuest.CoordinateSystems.Unit.#ctor(MapQuest.CoordinateSystems.Unit)">
+  Unit(Unit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>インスタンスを複製します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Unit(Unit unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="MapQuest.CoordinateSystems.Unit.html">Unit</a></dt>
+    <dd><p>複製元の <a class="xref" href="MapQuest.CoordinateSystems.Unit.html">Unit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit__ctor_MapQuest_CoordinateSystems_Unit__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このコンストラクタは拡張クラスが
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a>
+インターフェースを実装するのを支援します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit__ctor_" data-uid="MapQuest.CoordinateSystems.Unit.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit__ctor_System_String_" data-uid="MapQuest.CoordinateSystems.Unit.#ctor(System.String)">
+  Unit(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>単位の名前を指定して、新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Unit(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>単位の名前。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit__ctor_" data-uid="MapQuest.CoordinateSystems.Unit.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit__ctor_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="MapQuest.CoordinateSystems.Unit.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+  Unit(string, string, string, string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>必要なパラメータを指定して、新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Unit(string remarks, string authority, string authorityCode, string name, string alias, string abbreviation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>remarks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>単位の説明。</p>
+</dd>
+    <dt><code>authority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>単位の策定元機関・団体など。</p>
+</dd>
+    <dt><code>authorityCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>団体により決められた、単位のユニークな ID 。</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>単位の名前。</p>
+</dd>
+    <dt><code>alias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>単位の別名。</p>
+</dd>
+    <dt><code>abbreviation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>単位の省略名。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Centimetre_" data-uid="MapQuest.CoordinateSystems.Unit.Centimetre*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Centimetre" data-uid="MapQuest.CoordinateSystems.Unit.Centimetre">
+  Centimetre
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「センチメートル」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearUnit Centimetre { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a></dt>
+    <dd><p>「センチメートル」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Centimetre_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - centimetre</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - centimeter</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - cm</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Degree_" data-uid="MapQuest.CoordinateSystems.Unit.Degree*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Degree" data-uid="MapQuest.CoordinateSystems.Unit.Degree">
+  Degree
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「度」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AngularUnit Degree { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a></dt>
+    <dd><p>「度」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Degree_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> - EPSG</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">AuthorityCode</a> - 9102</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - degree</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - deg</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - deg</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Gon_" data-uid="MapQuest.CoordinateSystems.Unit.Gon*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Gon" data-uid="MapQuest.CoordinateSystems.Unit.Gon">
+  Gon
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「ゴン(Gon)」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AngularUnit Gon { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a></dt>
+    <dd><p>「ゴン(Gon)」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Gon_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - gon</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - gon</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - gon</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Grad_" data-uid="MapQuest.CoordinateSystems.Unit.Grad*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Grad" data-uid="MapQuest.CoordinateSystems.Unit.Grad">
+  Grad
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「グラッド(Grad)」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AngularUnit Grad { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a></dt>
+    <dd><p>「グラッド(Grad)」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Grad_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> - EPSG</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">AuthorityCode</a> - 9105</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - grad</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - gr</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - gr</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Inch_" data-uid="MapQuest.CoordinateSystems.Unit.Inch*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Inch" data-uid="MapQuest.CoordinateSystems.Unit.Inch">
+  Inch
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「インチ」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearUnit Inch { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a></dt>
+    <dd><p>「インチ」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Inch_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html#MapQuest_CoordinateSystems_LinearUnit_MetersPerUnit">MetersPerUnit</a> - 0.0254</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - inch</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - inch</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - inch</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_IsLinear_" data-uid="MapQuest.CoordinateSystems.Unit.IsLinear*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_IsLinear" data-uid="MapQuest.CoordinateSystems.Unit.IsLinear">
+  IsLinear
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この単位が、<a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> であるかどうかを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsLinear { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>単位が <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> である場合は true を返します。
+単位が 角度 である場合には false を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Kilometre_" data-uid="MapQuest.CoordinateSystems.Unit.Kilometre*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Kilometre" data-uid="MapQuest.CoordinateSystems.Unit.Kilometre">
+  Kilometre
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「キロメートル」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearUnit Kilometre { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a></dt>
+    <dd><p>「キロメートル」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Kilometre_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> - EPSG</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">AuthorityCode</a> - 9036</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - kilometre</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - kilometer</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - km</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Metre_" data-uid="MapQuest.CoordinateSystems.Unit.Metre*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Metre" data-uid="MapQuest.CoordinateSystems.Unit.Metre">
+  Metre
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「メートル」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearUnit Metre { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a></dt>
+    <dd><p>「メートル」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Metre_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> - EPSG</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">AuthorityCode</a> - 9001</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - metre</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - International metre</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - m</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Millimetre_" data-uid="MapQuest.CoordinateSystems.Unit.Millimetre*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Millimetre" data-uid="MapQuest.CoordinateSystems.Unit.Millimetre">
+  Millimetre
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「ミリメートル」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearUnit Millimetre { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a></dt>
+    <dd><p>「ミリメートル」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Millimetre_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - millimetre</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - millimeter</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - mm</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Millisecond_" data-uid="MapQuest.CoordinateSystems.Unit.Millisecond*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Millisecond" data-uid="MapQuest.CoordinateSystems.Unit.Millisecond">
+  Millisecond
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「ミリ秒」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AngularUnit Millisecond { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a></dt>
+    <dd><p>「ミリ秒」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Millisecond_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - millisecond</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - ms</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - ms</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Minute_" data-uid="MapQuest.CoordinateSystems.Unit.Minute*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Minute" data-uid="MapQuest.CoordinateSystems.Unit.Minute">
+  Minute
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「分」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AngularUnit Minute { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a></dt>
+    <dd><p>「分」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Minute_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - minute</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - min</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - min</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Pixel_" data-uid="MapQuest.CoordinateSystems.Unit.Pixel*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Pixel" data-uid="MapQuest.CoordinateSystems.Unit.Pixel">
+  Pixel
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>DPI値を96とした「ピクセル」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearUnit Pixel { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a></dt>
+    <dd><p>「ピクセル」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Pixel_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html#MapQuest_CoordinateSystems_LinearUnit_MetersPerUnit">MetersPerUnit</a> - 0.0002645</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - pixel</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - pixel</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - px</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Point_" data-uid="MapQuest.CoordinateSystems.Unit.Point*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Point" data-uid="MapQuest.CoordinateSystems.Unit.Point">
+  Point
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「ポイント」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearUnit Point { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a></dt>
+    <dd><p>「ポイント」を示す <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Point_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html#MapQuest_CoordinateSystems_LinearUnit_MetersPerUnit">MetersPerUnit</a> - 0.000352777...</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - point</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - point</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - pt</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Radian_" data-uid="MapQuest.CoordinateSystems.Unit.Radian*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Radian" data-uid="MapQuest.CoordinateSystems.Unit.Radian">
+  Radian
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「ラジアン」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AngularUnit Radian { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a></dt>
+    <dd><p>「ラジアン」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Radian_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> - EPSG</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">AuthorityCode</a> - 9101</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - radian</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - rad</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - rad</li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Unit_Second_" data-uid="MapQuest.CoordinateSystems.Unit.Second*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Unit_Second" data-uid="MapQuest.CoordinateSystems.Unit.Second">
+  Second
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「秒」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AngularUnit Second { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a></dt>
+    <dd><p>「秒」を示す <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Unit_Second_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この単位のメタ情報は以下のように設定されます。</p>
+<ul><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> - second</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a> - s</li><li><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a> - s</li></ul>
+</div>
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

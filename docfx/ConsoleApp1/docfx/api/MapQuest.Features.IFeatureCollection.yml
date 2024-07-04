@@ -1,0 +1,947 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.IFeatureCollection
+  commentId: T:MapQuest.Features.IFeatureCollection
+  id: IFeatureCollection
+  parent: MapQuest.Features
+  children:
+  - MapQuest.Features.IFeatureCollection.CopyTo(MapQuest.Features.Feature[],System.Int32)
+  - MapQuest.Features.IFeatureCollection.Count
+  - MapQuest.Features.IFeatureCollection.CreateIterator
+  - MapQuest.Features.IFeatureCollection.Envelope
+  - MapQuest.Features.IFeatureCollection.IsSynchronized
+  - MapQuest.Features.IFeatureCollection.Query(MapQuest.Coordinates.Envelope)
+  - MapQuest.Features.IFeatureCollection.Remove(MapQuest.Coordinates.Envelope)
+  - MapQuest.Features.IFeatureCollection.Schema
+  - MapQuest.Features.IFeatureCollection.Sort
+  - MapQuest.Features.IFeatureCollection.Sort(System.Collections.IComparer)
+  - MapQuest.Features.IFeatureCollection.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  - MapQuest.Features.IFeatureCollection.SyncRoot
+  langs:
+  - csharp
+  - vb
+  name: IFeatureCollection
+  nameWithType: IFeatureCollection
+  fullName: MapQuest.Features.IFeatureCollection
+  type: Interface
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: " <xref href=\"MapQuest.Features.Feature\" data-throw-if-not-resolved=\"false\"></xref> を収集するコレクションについて、\r\n\r\nサイズ、列挙子、および同期メソッドを定義します。"
+  remarks: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nは、地物用に最適化された <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nコレクションを提供します。"
+  example: []
+  syntax:
+    content: 'public interface IFeatureCollection : IEnumerable<Feature>, IEnumerable'
+    content.vb: Public Interface IFeatureCollection Inherits IEnumerable(Of Feature), IEnumerable
+  inheritedMembers:
+  - System.Collections.Generic.IEnumerable{MapQuest.Features.Feature}.GetEnumerator
+- uid: MapQuest.Features.IFeatureCollection.CopyTo(MapQuest.Features.Feature[],System.Int32)
+  commentId: M:MapQuest.Features.IFeatureCollection.CopyTo(MapQuest.Features.Feature[],System.Int32)
+  id: CopyTo(MapQuest.Features.Feature[],System.Int32)
+  parent: MapQuest.Features.IFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Feature[], int)
+  nameWithType: IFeatureCollection.CopyTo(Feature[], int)
+  fullName: MapQuest.Features.IFeatureCollection.CopyTo(MapQuest.Features.Feature[], int)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    指定のインデックスを開始位置として、 
+
+    <xref href="MapQuest.Features.FeatureCollection" data-throw-if-not-resolved="false"></xref> 
+
+    の要素を 
+
+    <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 
+
+    の 1 次元配列にコピーします。
+  remarks: >-
+    詳細については 
+
+    <xref href="System.Collections.ICollection.CopyTo(System.Array%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: void CopyTo(Feature[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: MapQuest.Features.Feature[]
+      description: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nから要素がコピーされる <xref href=\"MapQuest.Features.Feature\" data-throw-if-not-resolved=\"false\"></xref> \r\nの 1 次元配列。この配列には、0 から始まるインデックス番号が必要です。"
+    - id: arrayIndex
+      type: System.Int32
+      description: コピーの開始位置となる、 0 から始まるインデックス番号。
+    content.vb: Sub CopyTo(array As Feature(), arrayIndex As Integer)
+  overload: MapQuest.Features.IFeatureCollection.CopyTo*
+  nameWithType.vb: IFeatureCollection.CopyTo(Feature(), Integer)
+  fullName.vb: MapQuest.Features.IFeatureCollection.CopyTo(MapQuest.Features.Feature(), Integer)
+  name.vb: CopyTo(Feature(), Integer)
+- uid: MapQuest.Features.IFeatureCollection.CreateIterator
+  commentId: M:MapQuest.Features.IFeatureCollection.CreateIterator
+  id: CreateIterator
+  parent: MapQuest.Features.IFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: CreateIterator()
+  nameWithType: IFeatureCollection.CreateIterator()
+  fullName: MapQuest.Features.IFeatureCollection.CreateIterator()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nに格納されている地物を順にアクセスする方法を提供する \r\n<xref href=\"MapQuest.Features.IFeatureIterator\" data-throw-if-not-resolved=\"false\"></xref> \r\nを作成します。"
+  remarks: >-
+    詳細については 
+
+    <xref href="System.Collections.IEnumerable.GetEnumerator" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: IFeatureIterator CreateIterator()
+    return:
+      type: MapQuest.Features.IFeatureIterator
+      description: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nに格納されている地物を順にアクセスする方法を含んだ \r\n<xref href=\"MapQuest.Features.IFeatureIterator\" data-throw-if-not-resolved=\"false\"></xref> \r\nオブジェクト。"
+    content.vb: Function CreateIterator() As IFeatureIterator
+  overload: MapQuest.Features.IFeatureCollection.CreateIterator*
+- uid: MapQuest.Features.IFeatureCollection.Query(MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Features.IFeatureCollection.Query(MapQuest.Coordinates.Envelope)
+  id: Query(MapQuest.Coordinates.Envelope)
+  parent: MapQuest.Features.IFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: Query(Envelope)
+  nameWithType: IFeatureCollection.Query(Envelope)
+  fullName: MapQuest.Features.IFeatureCollection.Query(MapQuest.Coordinates.Envelope)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 指定された範囲の地物を検索します。
+  example: []
+  syntax:
+    content: IFeatureList Query(Envelope area)
+    parameters:
+    - id: area
+      type: MapQuest.Coordinates.Envelope
+      description: 検索したい範囲。
+    return:
+      type: MapQuest.Features.IFeatureList
+      description: >-
+        検索されたインデックスによって個別にアクセスできる 
+
+        <xref href="MapQuest.Features.IFeatureList" data-throw-if-not-resolved="false"></xref> 
+
+        コレクション。
+    content.vb: Function Query(area As Envelope) As IFeatureList
+  overload: MapQuest.Features.IFeatureCollection.Query*
+- uid: MapQuest.Features.IFeatureCollection.Remove(MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Features.IFeatureCollection.Remove(MapQuest.Coordinates.Envelope)
+  id: Remove(MapQuest.Coordinates.Envelope)
+  parent: MapQuest.Features.IFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: Remove(Envelope)
+  nameWithType: IFeatureCollection.Remove(Envelope)
+  fullName: MapQuest.Features.IFeatureCollection.Remove(MapQuest.Coordinates.Envelope)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\n内から指定された範囲に含まれる <xref href=\"MapQuest.Features.Feature\" data-throw-if-not-resolved=\"false\"></xref> \r\nオブジェクトを削除します。"
+  example: []
+  syntax:
+    content: IFeatureList Remove(Envelope area)
+    parameters:
+    - id: area
+      type: MapQuest.Coordinates.Envelope
+      description: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> から削除したい範囲を示す \r\n<xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> 。"
+    return:
+      type: MapQuest.Features.IFeatureList
+      description: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> から削除した \r\n<xref href=\"MapQuest.Features.Feature\" data-throw-if-not-resolved=\"false\"></xref> を持つ \r\n<xref href=\"MapQuest.Features.IFeatureList\" data-throw-if-not-resolved=\"false\"></xref> オブジェクト。"
+    content.vb: Function Remove(area As Envelope) As IFeatureList
+  overload: MapQuest.Features.IFeatureCollection.Remove*
+- uid: MapQuest.Features.IFeatureCollection.Sort
+  commentId: M:MapQuest.Features.IFeatureCollection.Sort
+  id: Sort
+  parent: MapQuest.Features.IFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: Sort()
+  nameWithType: IFeatureCollection.Sort()
+  fullName: MapQuest.Features.IFeatureCollection.Sort()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    各要素の <xref href="System.IComparable" data-throw-if-not-resolved="false"></xref> 実装を使用して、 
+
+    <xref href="MapQuest.Features.IFeatureCollection" data-throw-if-not-resolved="false"></xref> 全体内の要素を並べ替えます。
+  example: []
+  syntax:
+    content: void Sort()
+    content.vb: Sub Sort()
+  overload: MapQuest.Features.IFeatureCollection.Sort*
+- uid: MapQuest.Features.IFeatureCollection.Sort(System.Collections.IComparer)
+  commentId: M:MapQuest.Features.IFeatureCollection.Sort(System.Collections.IComparer)
+  id: Sort(System.Collections.IComparer)
+  parent: MapQuest.Features.IFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: Sort(IComparer)
+  nameWithType: IFeatureCollection.Sort(IComparer)
+  fullName: MapQuest.Features.IFeatureCollection.Sort(System.Collections.IComparer)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    指定した比較演算子を使用して、 
+
+    <xref href="MapQuest.Features.IFeatureCollection" data-throw-if-not-resolved="false"></xref> 全体内の要素を並べ替えます。
+  example: []
+  syntax:
+    content: void Sort(IComparer comparer)
+    parameters:
+    - id: comparer
+      type: System.Collections.IComparer
+      description: 要素を比較する場合に使用する <xref href="System.Collections.IComparer" data-throw-if-not-resolved="false"></xref> 実装。
+    content.vb: Sub Sort(comparer As IComparer)
+  overload: MapQuest.Features.IFeatureCollection.Sort*
+- uid: MapQuest.Features.IFeatureCollection.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  commentId: M:MapQuest.Features.IFeatureCollection.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  id: Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  parent: MapQuest.Features.IFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: Sort(int, int, IComparer)
+  nameWithType: IFeatureCollection.Sort(int, int, IComparer)
+  fullName: MapQuest.Features.IFeatureCollection.Sort(int, int, System.Collections.IComparer)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    指定した比較演算子を使用して、 
+
+    <xref href="MapQuest.Features.IFeatureCollection" data-throw-if-not-resolved="false"></xref> の一部の要素を並べ替えます。
+  example: []
+  syntax:
+    content: void Sort(int index, int count, IComparer comparer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 並べ替える範囲の開始位置を示す 0 から始まるインデックス。
+    - id: count
+      type: System.Int32
+      description: 並べ替える範囲の長さ。
+    - id: comparer
+      type: System.Collections.IComparer
+      description: >-
+        要素を比較する場合に使用する <xref href="System.Collections.IComparer" data-throw-if-not-resolved="false"></xref> 実装。<br />
+                    または <br />
+                    各要素の <xref href="System.IComparable" data-throw-if-not-resolved="false"></xref> 実装を使用する場合は null 。
+    content.vb: Sub Sort(index As Integer, count As Integer, comparer As IComparer)
+  overload: MapQuest.Features.IFeatureCollection.Sort*
+  nameWithType.vb: IFeatureCollection.Sort(Integer, Integer, IComparer)
+  fullName.vb: MapQuest.Features.IFeatureCollection.Sort(Integer, Integer, System.Collections.IComparer)
+  name.vb: Sort(Integer, Integer, IComparer)
+- uid: MapQuest.Features.IFeatureCollection.Count
+  commentId: P:MapQuest.Features.IFeatureCollection.Count
+  id: Count
+  parent: MapQuest.Features.IFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: IFeatureCollection.Count
+  fullName: MapQuest.Features.IFeatureCollection.Count
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nに実際に格納されている地物の数を取得します。"
+  remarks: >-
+    詳細については 
+
+    <xref href="System.Collections.ICollection.Count" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nに実際に格納されている地物の数。"
+    content.vb: ReadOnly Property Count As Integer
+  overload: MapQuest.Features.IFeatureCollection.Count*
+- uid: MapQuest.Features.IFeatureCollection.IsSynchronized
+  commentId: P:MapQuest.Features.IFeatureCollection.IsSynchronized
+  id: IsSynchronized
+  parent: MapQuest.Features.IFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: IsSynchronized
+  nameWithType: IFeatureCollection.IsSynchronized
+  fullName: MapQuest.Features.IFeatureCollection.IsSynchronized
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nへのアクセスが同期されている (スレッド セーフである) かどうかを示す値を取得します。\r\n<p><!-- Non Support 2005/01/20 -->\r\n	このプロパティは、現在サポートしていません。\r\n</p>"
+  remarks: >-
+    詳細については 
+
+    <xref href="System.Collections.ICollection.IsSynchronized" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: bool IsSynchronized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nへのアクセスが同期されている (スレッド セーフである) 場合は <b>true</b> 。\r\n\r\nそれ以外の場合は <b>false</b> 。"
+    content.vb: ReadOnly Property IsSynchronized As Boolean
+  overload: MapQuest.Features.IFeatureCollection.IsSynchronized*
+- uid: MapQuest.Features.IFeatureCollection.SyncRoot
+  commentId: P:MapQuest.Features.IFeatureCollection.SyncRoot
+  id: SyncRoot
+  parent: MapQuest.Features.IFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: SyncRoot
+  nameWithType: IFeatureCollection.SyncRoot
+  fullName: MapQuest.Features.IFeatureCollection.SyncRoot
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nへのアクセスを同期するために使用できるオブジェクトを取得します。\r\n<p><!-- Non Support 2005/01/20 -->\r\n	このプロパティは、現在サポートしていません。\r\n</p>"
+  remarks: >-
+    詳細については 
+
+    <xref href="System.Collections.ICollection.SyncRoot" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: object SyncRoot { get; }
+    parameters: []
+    return:
+      type: System.Object
+      description: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nへのアクセスを同期するために使用できるオブジェクト。"
+    content.vb: ReadOnly Property SyncRoot As Object
+  overload: MapQuest.Features.IFeatureCollection.SyncRoot*
+- uid: MapQuest.Features.IFeatureCollection.Envelope
+  commentId: P:MapQuest.Features.IFeatureCollection.Envelope
+  id: Envelope
+  parent: MapQuest.Features.IFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: Envelope
+  nameWithType: IFeatureCollection.Envelope
+  fullName: MapQuest.Features.IFeatureCollection.Envelope
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nに格納されている地物の範囲を取得します。"
+  example: []
+  syntax:
+    content: Envelope Envelope { get; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Envelope
+      description: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nに格納されている要素全てを包括する範囲。"
+    content.vb: ReadOnly Property Envelope As Envelope
+  overload: MapQuest.Features.IFeatureCollection.Envelope*
+- uid: MapQuest.Features.IFeatureCollection.Schema
+  commentId: P:MapQuest.Features.IFeatureCollection.Schema
+  id: Schema
+  parent: MapQuest.Features.IFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: Schema
+  nameWithType: IFeatureCollection.Schema
+  fullName: MapQuest.Features.IFeatureCollection.Schema
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    この <xref href="MapQuest.Features.FeatureCollection" data-throw-if-not-resolved="false"></xref> 
+
+    についての情報を取得します。
+  remarks: >-
+    Schema は、<xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> が持つ地物に関する定義情報です。
+
+    MapQuest.FeatureProviders.FeatureClass 
+
+    が管理します。
+  example: []
+  syntax:
+    content: FeatureSchema Schema { get; }
+    parameters: []
+    return:
+      type: MapQuest.Features.FeatureSchema
+      description: "  <xref href=\"MapQuest.Features.FeatureCollection\" data-throw-if-not-resolved=\"false\"></xref> \r\nについての情報。"
+    content.vb: ReadOnly Property Schema As FeatureSchema
+  overload: MapQuest.Features.IFeatureCollection.Schema*
+references:
+- uid: MapQuest.Features.Feature
+  commentId: T:MapQuest.Features.Feature
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.Feature.html
+  name: Feature
+  nameWithType: Feature
+  fullName: MapQuest.Features.Feature
+- uid: MapQuest.Features.FeatureCollection
+  commentId: T:MapQuest.Features.FeatureCollection
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html
+  name: FeatureCollection
+  nameWithType: FeatureCollection
+  fullName: MapQuest.Features.FeatureCollection
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: MapQuest.Features
+  commentId: N:MapQuest.Features
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features
+  nameWithType: MapQuest.Features
+  fullName: MapQuest.Features
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+- uid: System.Collections.Generic.IEnumerable{MapQuest.Features.Feature}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{MapQuest.Features.Feature}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{MapQuest.Features.Feature}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<Feature>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<MapQuest.Features.Feature>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of Feature).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of MapQuest.Features.Feature).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{MapQuest.Features.Feature}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{MapQuest.Features.Feature}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{MapQuest.Features.Feature}
+  commentId: T:System.Collections.Generic.IEnumerable{MapQuest.Features.Feature}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Feature>
+  nameWithType: IEnumerable<Feature>
+  fullName: System.Collections.Generic.IEnumerable<MapQuest.Features.Feature>
+  nameWithType.vb: IEnumerable(Of Feature)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of MapQuest.Features.Feature)
+  name.vb: IEnumerable(Of Feature)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.copyto
+  name: CopyTo(Array, int)
+  nameWithType: ICollection.CopyTo(Array, int)
+  fullName: System.Collections.ICollection.CopyTo(System.Array, int)
+  nameWithType.vb: ICollection.CopyTo(Array, Integer)
+  fullName.vb: System.Collections.ICollection.CopyTo(System.Array, Integer)
+  name.vb: CopyTo(Array, Integer)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.copyto
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.copyto
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Features.IFeatureCollection.CopyTo*
+  commentId: Overload:MapQuest.Features.IFeatureCollection.CopyTo
+  isExternal: true
+  href: MapQuest.Features.IFeatureCollection.html#MapQuest_Features_IFeatureCollection_CopyTo_MapQuest_Features_Feature___System_Int32_
+  name: CopyTo
+  nameWithType: IFeatureCollection.CopyTo
+  fullName: MapQuest.Features.IFeatureCollection.CopyTo
+- uid: MapQuest.Features.Feature[]
+  isExternal: true
+  href: MapQuest.Features.Feature.html
+  name: Feature[]
+  nameWithType: Feature[]
+  fullName: MapQuest.Features.Feature[]
+  nameWithType.vb: Feature()
+  fullName.vb: MapQuest.Features.Feature()
+  name.vb: Feature()
+  spec.csharp:
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Features.IFeatureIterator
+  commentId: T:MapQuest.Features.IFeatureIterator
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.IFeatureIterator.html
+  name: IFeatureIterator
+  nameWithType: IFeatureIterator
+  fullName: MapQuest.Features.IFeatureIterator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator
+  - name: (
+  - name: )
+- uid: MapQuest.Features.IFeatureCollection.CreateIterator*
+  commentId: Overload:MapQuest.Features.IFeatureCollection.CreateIterator
+  isExternal: true
+  href: MapQuest.Features.IFeatureCollection.html#MapQuest_Features_IFeatureCollection_CreateIterator
+  name: CreateIterator
+  nameWithType: IFeatureCollection.CreateIterator
+  fullName: MapQuest.Features.IFeatureCollection.CreateIterator
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: MapQuest.Features.IFeatureList
+  commentId: T:MapQuest.Features.IFeatureList
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.IFeatureList.html
+  name: IFeatureList
+  nameWithType: IFeatureList
+  fullName: MapQuest.Features.IFeatureList
+- uid: MapQuest.Features.IFeatureCollection.Query*
+  commentId: Overload:MapQuest.Features.IFeatureCollection.Query
+  isExternal: true
+  href: MapQuest.Features.IFeatureCollection.html#MapQuest_Features_IFeatureCollection_Query_MapQuest_Coordinates_Envelope_
+  name: Query
+  nameWithType: IFeatureCollection.Query
+  fullName: MapQuest.Features.IFeatureCollection.Query
+- uid: MapQuest.Coordinates.Envelope
+  commentId: T:MapQuest.Coordinates.Envelope
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html
+  name: Envelope
+  nameWithType: Envelope
+  fullName: MapQuest.Coordinates.Envelope
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: MapQuest.Features.IFeatureCollection.Remove*
+  commentId: Overload:MapQuest.Features.IFeatureCollection.Remove
+  isExternal: true
+  href: MapQuest.Features.IFeatureCollection.html#MapQuest_Features_IFeatureCollection_Remove_MapQuest_Coordinates_Envelope_
+  name: Remove
+  nameWithType: IFeatureCollection.Remove
+  fullName: MapQuest.Features.IFeatureCollection.Remove
+- uid: MapQuest.Features.IFeatureCollection
+  commentId: T:MapQuest.Features.IFeatureCollection
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.IFeatureCollection.html
+  name: IFeatureCollection
+  nameWithType: IFeatureCollection
+  fullName: MapQuest.Features.IFeatureCollection
+- uid: System.IComparable
+  commentId: T:System.IComparable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable
+  name: IComparable
+  nameWithType: IComparable
+  fullName: System.IComparable
+- uid: MapQuest.Features.IFeatureCollection.Sort*
+  commentId: Overload:MapQuest.Features.IFeatureCollection.Sort
+  isExternal: true
+  href: MapQuest.Features.IFeatureCollection.html#MapQuest_Features_IFeatureCollection_Sort
+  name: Sort
+  nameWithType: IFeatureCollection.Sort
+  fullName: MapQuest.Features.IFeatureCollection.Sort
+- uid: System.Collections.IComparer
+  commentId: T:System.Collections.IComparer
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  name: IComparer
+  nameWithType: IComparer
+  fullName: System.Collections.IComparer
+- uid: System.Collections.ICollection.Count
+  commentId: P:System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.count
+  name: Count
+  nameWithType: ICollection.Count
+  fullName: System.Collections.ICollection.Count
+- uid: MapQuest.Features.IFeatureCollection.Count*
+  commentId: Overload:MapQuest.Features.IFeatureCollection.Count
+  isExternal: true
+  href: MapQuest.Features.IFeatureCollection.html#MapQuest_Features_IFeatureCollection_Count
+  name: Count
+  nameWithType: IFeatureCollection.Count
+  fullName: MapQuest.Features.IFeatureCollection.Count
+- uid: System.Collections.ICollection.IsSynchronized
+  commentId: P:System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.issynchronized
+  name: IsSynchronized
+  nameWithType: ICollection.IsSynchronized
+  fullName: System.Collections.ICollection.IsSynchronized
+- uid: MapQuest.Features.IFeatureCollection.IsSynchronized*
+  commentId: Overload:MapQuest.Features.IFeatureCollection.IsSynchronized
+  isExternal: true
+  href: MapQuest.Features.IFeatureCollection.html#MapQuest_Features_IFeatureCollection_IsSynchronized
+  name: IsSynchronized
+  nameWithType: IFeatureCollection.IsSynchronized
+  fullName: MapQuest.Features.IFeatureCollection.IsSynchronized
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.ICollection.SyncRoot
+  commentId: P:System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.syncroot
+  name: SyncRoot
+  nameWithType: ICollection.SyncRoot
+  fullName: System.Collections.ICollection.SyncRoot
+- uid: MapQuest.Features.IFeatureCollection.SyncRoot*
+  commentId: Overload:MapQuest.Features.IFeatureCollection.SyncRoot
+  isExternal: true
+  href: MapQuest.Features.IFeatureCollection.html#MapQuest_Features_IFeatureCollection_SyncRoot
+  name: SyncRoot
+  nameWithType: IFeatureCollection.SyncRoot
+  fullName: MapQuest.Features.IFeatureCollection.SyncRoot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Features.IFeatureCollection.Envelope*
+  commentId: Overload:MapQuest.Features.IFeatureCollection.Envelope
+  isExternal: true
+  href: MapQuest.Features.IFeatureCollection.html#MapQuest_Features_IFeatureCollection_Envelope
+  name: Envelope
+  nameWithType: IFeatureCollection.Envelope
+  fullName: MapQuest.Features.IFeatureCollection.Envelope
+- uid: MapQuest.Features.IFeatureCollection.Schema*
+  commentId: Overload:MapQuest.Features.IFeatureCollection.Schema
+  isExternal: true
+  href: MapQuest.Features.IFeatureCollection.html#MapQuest_Features_IFeatureCollection_Schema
+  name: Schema
+  nameWithType: IFeatureCollection.Schema
+  fullName: MapQuest.Features.IFeatureCollection.Schema
+- uid: MapQuest.Features.FeatureSchema
+  commentId: T:MapQuest.Features.FeatureSchema
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html
+  name: FeatureSchema
+  nameWithType: FeatureSchema
+  fullName: MapQuest.Features.FeatureSchema

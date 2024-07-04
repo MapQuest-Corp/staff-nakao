@@ -1,0 +1,796 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Dimension | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Dimension | mysite ">
+      
+      <meta name="description" content="寸法を扱う構造体を示します。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Coordinates.Dimension">
+
+
+
+  <h1 id="MapQuest_Coordinates_Dimension" data-uid="MapQuest.Coordinates.Dimension" class="text-break">
+Struct Dimension  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Coordinates.html">Coordinates</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Coordinates.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>寸法を扱う構造体を示します。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Dimension</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Dimension__ctor_" data-uid="MapQuest.Coordinates.Dimension.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension__ctor_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Dimension.#ctor(MapQuest.Coordinates.Coordinate)">
+  Dimension(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を指定して <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a>  クラスの新しいインスタンスを作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dimension(Coordinate pt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> を生成する <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Dimension__ctor_" data-uid="MapQuest.Coordinates.Dimension.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension__ctor_MapQuest_Coordinates_Dimension_" data-uid="MapQuest.Coordinates.Dimension.#ctor(MapQuest.Coordinates.Dimension)">
+  Dimension(Dimension)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> を指定して <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a>  クラスの新しいインスタンスを作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dimension(Dimension size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>size</code> <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd><p>生成する <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> の大きさを指定する <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Dimension__ctor_" data-uid="MapQuest.Coordinates.Dimension.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension__ctor_System_Double_System_Double_" data-uid="MapQuest.Coordinates.Dimension.#ctor(System.Double,System.Double)">
+  Dimension(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>縦幅と横幅を指定してを指定して <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a>  クラスの新しいインスタンスを作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dimension(double width, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>生成する <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> の横幅</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>生成する <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> の縦幅</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Dimension__ctor_" data-uid="MapQuest.Coordinates.Dimension.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension__ctor_System_Single_System_Single_" data-uid="MapQuest.Coordinates.Dimension.#ctor(System.Single,System.Single)">
+  Dimension(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>縦幅と横幅を指定して <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a>  クラスの新しいインスタンスを作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dimension(float width, float height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>生成する <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> の横幅</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>生成する <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> の縦幅</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MapQuest_Coordinates_Dimension_Empty" data-uid="MapQuest.Coordinates.Dimension.Empty">
+  Empty
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>空の <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> 構造体を表します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Dimension Empty</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Dimension_Height_" data-uid="MapQuest.Coordinates.Dimension.Height*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension_Height" data-uid="MapQuest.Coordinates.Dimension.Height">
+  Height
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクトの縦幅を取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Height { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクトの縦幅</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Dimension_IsEmpty_" data-uid="MapQuest.Coordinates.Dimension.IsEmpty*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension_IsEmpty" data-uid="MapQuest.Coordinates.Dimension.IsEmpty">
+  IsEmpty
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクトが空であるかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクトが空であるかどうかの値</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Dimension_IsEmpty_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクトが空ならば<code>true</code>を、そうでなければ<code>false</code>を返します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Dimension_Width_" data-uid="MapQuest.Coordinates.Dimension.Width*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension_Width" data-uid="MapQuest.Coordinates.Dimension.Width">
+  Width
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクトの横幅を取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Width { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクトの横幅</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Dimension_Equals_" data-uid="MapQuest.Coordinates.Dimension.Equals*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension_Equals_System_Object_" data-uid="MapQuest.Coordinates.Dimension.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数のオブジェクトとこの <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> のサイズを比較します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>比較する対象のオブジェクト</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>比較した結果が等しかった場合<code>true</code>を、そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Dimension_GetHashCode_" data-uid="MapQuest.Coordinates.Dimension.GetHashCode*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension_GetHashCode" data-uid="MapQuest.Coordinates.Dimension.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>このインスタンスのハッシュコードを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>このインスタンスのハッシュコードを返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Dimension_ToCoordinate_" data-uid="MapQuest.Coordinates.Dimension.ToCoordinate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension_ToCoordinate" data-uid="MapQuest.Coordinates.Dimension.ToCoordinate">
+  ToCoordinate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> を <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> に変換します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coordinate ToCoordinate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>変換した <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Dimension_ToString_" data-uid="MapQuest.Coordinates.Dimension.ToString*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension_ToString" data-uid="MapQuest.Coordinates.Dimension.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> の文字列表現を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> の文字列表現を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Dimension_ToString_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>文字列は&quot;{Width= , Height= }&quot;の形式で表現されます。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Dimension_op_Addition_" data-uid="MapQuest.Coordinates.Dimension.op_Addition*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension_op_Addition_MapQuest_Coordinates_Dimension_MapQuest_Coordinates_Dimension_" data-uid="MapQuest.Coordinates.Dimension.op_Addition(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)">
+  operator +(Dimension, Dimension)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した二つの <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクトの値を加算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dimension operator +(Dimension sz1, Dimension sz2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sz1</code> <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクト</p>
+</dd>
+    <dt><code>sz2</code> <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクト</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd><p>加算した結果の <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクト</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Dimension_op_Equality_" data-uid="MapQuest.Coordinates.Dimension.op_Equality*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension_op_Equality_MapQuest_Coordinates_Dimension_MapQuest_Coordinates_Dimension_" data-uid="MapQuest.Coordinates.Dimension.op_Equality(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)">
+  operator ==(Dimension, Dimension)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した二つの <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクトの値が等しいかどうかを示す値を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Dimension left, Dimension right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクト</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクト</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>leftとrightが等しければ<code>true</code>，そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Dimension_op_Explicit_" data-uid="MapQuest.Coordinates.Dimension.op_Explicit*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension_op_Explicit_MapQuest_Coordinates_Dimension__MapQuest_Coordinates_Coordinate" data-uid="MapQuest.Coordinates.Dimension.op_Explicit(MapQuest.Coordinates.Dimension)~MapQuest.Coordinates.Coordinate">
+  explicit operator Coordinate(Dimension)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> を <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> に変換します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Coordinate(Dimension size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>size</code> <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクト</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> が変換された結果の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Dimension_op_Inequality_" data-uid="MapQuest.Coordinates.Dimension.op_Inequality*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension_op_Inequality_MapQuest_Coordinates_Dimension_MapQuest_Coordinates_Dimension_" data-uid="MapQuest.Coordinates.Dimension.op_Inequality(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)">
+  operator !=(Dimension, Dimension)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した二つの <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクトの値が異なっているかどうかを示す値を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Dimension left, Dimension right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクト</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクト</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>leftとrightが異なっていれば<code>true</code>，そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Dimension_op_Subtraction_" data-uid="MapQuest.Coordinates.Dimension.op_Subtraction*"></a>
+
+  <h3 id="MapQuest_Coordinates_Dimension_op_Subtraction_MapQuest_Coordinates_Dimension_MapQuest_Coordinates_Dimension_" data-uid="MapQuest.Coordinates.Dimension.op_Subtraction(MapQuest.Coordinates.Dimension,MapQuest.Coordinates.Dimension)">
+  operator -(Dimension, Dimension)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した二つの <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクトの値を減算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dimension operator -(Dimension sz1, Dimension sz2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sz1</code> <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクト</p>
+</dd>
+    <dt><code>sz2</code> <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクト</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a></dt>
+    <dd><p>減算した結果の <a class="xref" href="MapQuest.Coordinates.Dimension.html">Dimension</a> オブジェクト</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

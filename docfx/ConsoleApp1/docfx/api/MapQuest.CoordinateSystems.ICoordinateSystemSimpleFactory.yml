@@ -1,0 +1,204 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory
+  commentId: T:MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory
+  id: ICoordinateSystemSimpleFactory
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create(System.Int32)
+  - MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ICoordinateSystemSimpleFactory
+  nameWithType: ICoordinateSystemSimpleFactory
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory
+  type: Interface
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    指定した ID から <xref href="MapQuest.CoordinateSystems.CoordinateSystem" data-throw-if-not-resolved="false"></xref> を生成するための、
+
+    最もシンプルなインターフェースです。
+  remarks: >-
+    <xref href="MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory" data-throw-if-not-resolved="false"></xref> は、 
+            <b>ICoordinateSystemFactory</b> や 
+            <b>ICoordinateSystemAuthorityFactory</b> 
+            よりも更に簡単に座標系を生成できるインターフェースです。
+            <p></p>
+            Factory により生成されるのは、 <xref href="MapQuest.CoordinateSystems.ICoordinateSystem" data-throw-if-not-resolved="false"></xref> のみであり、
+            また、指定する引数も、数値か文字列による ID だけです。
+            <p></p>
+            その ID に対してどんな <xref href="MapQuest.CoordinateSystems.ICoordinateSystem" data-throw-if-not-resolved="false"></xref> を生成するのかは、
+            このインターフェースの実装クラスにより決定されます。
+            <p></p>
+            例えば、実装クラスの一つである 
+            <xref href="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory" data-throw-if-not-resolved="false"></xref> では、
+            指定する ID は、GridID であり、平面直角座標系(1～19)、UTM座標系 
+            などに対応します。
+  example: []
+  syntax:
+    content: public interface ICoordinateSystemSimpleFactory
+    content.vb: Public Interface ICoordinateSystemSimpleFactory
+- uid: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create(System.Int32)
+  commentId: M:MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create(System.Int32)
+  id: Create(System.Int32)
+  parent: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory
+  langs:
+  - csharp
+  - vb
+  name: Create(int)
+  nameWithType: ICoordinateSystemSimpleFactory.Create(int)
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create(int)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    数値による ID から、
+
+    <xref href="MapQuest.CoordinateSystems.ICoordinateSystem" data-throw-if-not-resolved="false"></xref> を生成します。
+  example: []
+  syntax:
+    content: ICoordinateSystem Create(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: 座標系の ID である数値。
+    return:
+      type: MapQuest.CoordinateSystems.ICoordinateSystem
+      description: 生成された <xref href="MapQuest.CoordinateSystems.ICoordinateSystem" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Function Create(id As Integer) As ICoordinateSystem
+  overload: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create*
+  nameWithType.vb: ICoordinateSystemSimpleFactory.Create(Integer)
+  fullName.vb: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create(Integer)
+  name.vb: Create(Integer)
+- uid: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create(System.String)
+  commentId: M:MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create(System.String)
+  id: Create(System.String)
+  parent: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory
+  langs:
+  - csharp
+  - vb
+  name: Create(string)
+  nameWithType: ICoordinateSystemSimpleFactory.Create(string)
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create(string)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    文字列による ID から、
+
+    <xref href="MapQuest.CoordinateSystems.ICoordinateSystem" data-throw-if-not-resolved="false"></xref> を生成します。
+  example: []
+  syntax:
+    content: ICoordinateSystem Create(string id)
+    parameters:
+    - id: id
+      type: System.String
+      description: 座標系の ID である文字列。
+    return:
+      type: MapQuest.CoordinateSystems.ICoordinateSystem
+      description: 生成された <xref href="MapQuest.CoordinateSystems.ICoordinateSystem" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Function Create(id As String) As ICoordinateSystem
+  overload: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create*
+  nameWithType.vb: ICoordinateSystemSimpleFactory.Create(String)
+  fullName.vb: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create(String)
+  name.vb: Create(String)
+references:
+- uid: MapQuest.CoordinateSystems.CoordinateSystem
+  commentId: T:MapQuest.CoordinateSystems.CoordinateSystem
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html
+  name: CoordinateSystem
+  nameWithType: CoordinateSystem
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem
+- uid: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory
+  commentId: T:MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.html
+  name: ICoordinateSystemSimpleFactory
+  nameWithType: ICoordinateSystemSimpleFactory
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory
+- uid: MapQuest.CoordinateSystems.ICoordinateSystem
+  commentId: T:MapQuest.CoordinateSystems.ICoordinateSystem
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ICoordinateSystem.html
+  name: ICoordinateSystem
+  nameWithType: ICoordinateSystem
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystem
+- uid: MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory
+  commentId: T:MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.html
+  name: CoordinateSystemMapQuestFactory
+  nameWithType: CoordinateSystemMapQuestFactory
+  fullName: MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create*
+  commentId: Overload:MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.html#MapQuest_CoordinateSystems_ICoordinateSystemSimpleFactory_Create_System_Int32_
+  name: Create
+  nameWithType: ICoordinateSystemSimpleFactory.Create
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.Create
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

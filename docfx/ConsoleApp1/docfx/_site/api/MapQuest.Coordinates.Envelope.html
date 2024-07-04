@@ -1,0 +1,2120 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Envelope | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Envelope | mysite ">
+      
+      <meta name="description" content="2 次元平面における長方形を定義します。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Coordinates.Envelope">
+
+
+
+  <h1 id="MapQuest_Coordinates_Envelope" data-uid="MapQuest.Coordinates.Envelope" class="text-break">
+Class Envelope  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Coordinates.html">Coordinates</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Coordinates.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>2 次元平面における長方形を定義します。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Envelope : ICloneable, ISerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Envelope</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MapQuest_Coordinates_Envelope_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>これは幾何学的な(例えば最小および最大の x 座標、y 座標の値を持つような)長方形を表わすために使用されます。
+Double.PositiveInfinity、または Double.NegativeInfinity を使用することにより、 <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> が無限大あるいは負の無限大の範囲をサポートすることに注意してください。
+<a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトが作成、または初期化される場合、その値は正確な順序に自動的にソートされます。</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Envelope__ctor_" data-uid="MapQuest.Coordinates.Envelope.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope__ctor" data-uid="MapQuest.Coordinates.Envelope.#ctor">
+  Envelope()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の指定がない場合、空の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Envelope()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope__ctor_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>MinX, MinY, MaxX, MaxY は 全て 非数（Double.NaN） に設定されます。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope__ctor_" data-uid="MapQuest.Coordinates.Envelope.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope__ctor_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Coordinate)">
+  Envelope(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> により定義された地点の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> クラスの新しいインスタンスを初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Envelope(Coordinate p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を作成する元の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope__ctor_" data-uid="MapQuest.Coordinates.Envelope.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope__ctor_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)">
+  Envelope(Coordinate, Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数の二つの <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> により定義された領域の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> クラスの新しいインスタンスを初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Envelope(Coordinate p1, Coordinate p2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p1</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を作成する元となる、一つ目の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+    <dt><code>p2</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を作成する元となる、もう一つの <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope__ctor_" data-uid="MapQuest.Coordinates.Envelope.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope__ctor_MapQuest_Coordinates_Coordinate_System_Double_" data-uid="MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Coordinate,System.Double)">
+  Envelope(Coordinate, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>中心点と拡幅値を指定して、この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Envelope(Coordinate p, double inflate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>矩形の中心位置。</p>
+</dd>
+    <dt><code>inflate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>p から、上下左右に拡幅する値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope__ctor_MapQuest_Coordinates_Coordinate_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このメソッドは、矩形の中心座標と、そこから上下左右に拡幅する値
+を指定して <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化します。</p>
+<p></p>
+例えば、p が (10, 5) 、inflate が 2 の場合、初期化される矩形の座標値は、
+(minX, minY)-(maxX, maxY) 形式で (8, 3)-(12, 7) となります。
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope__ctor_" data-uid="MapQuest.Coordinates.Envelope.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope__ctor_MapQuest_Coordinates_Envelope_" data-uid="MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Envelope)">
+  Envelope(Envelope)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数の既存の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> から <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> クラスの新しいインスタンスを初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Envelope(Envelope env)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>env</code> <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を作成する元の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope__ctor_" data-uid="MapQuest.Coordinates.Envelope.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope__ctor_System_Double_System_Double_System_Double_System_Double_" data-uid="MapQuest.Coordinates.Envelope.#ctor(System.Double,System.Double,System.Double,System.Double)">
+  Envelope(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数のX座標Y座標の、最小値と最大値により定義された領域の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> クラスの新しいインスタンスを初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Envelope(double x1, double x2, double y1, double y2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を作成する元となるX座標1</p>
+</dd>
+    <dt><code>x2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を作成する元となるX座標2</p>
+</dd>
+    <dt><code>y1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を作成する元となるY座標1</p>
+</dd>
+    <dt><code>y2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を作成する元となるY座標2</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope__ctor_" data-uid="MapQuest.Coordinates.Envelope.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="MapQuest.Coordinates.Envelope.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+  Envelope(SerializationInfo, StreamingContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>シリアル化された情報から<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Envelope(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd><p>シリアル化する情報を格納するオブジェクト</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Envelope_Center_" data-uid="MapQuest.Coordinates.Envelope.Center*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Center" data-uid="MapQuest.Coordinates.Envelope.Center">
+  Center
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの中心座標を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coordinate Center { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの中心座標を示す <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Height_" data-uid="MapQuest.Coordinates.Envelope.Height*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Height" data-uid="MapQuest.Coordinates.Envelope.Height">
+  Height
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大Y座標、最小Y座標間の距離を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Height { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大Y座標、最小Y座標間の距離</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_Height_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大Y座標 - 最小Y座標を返します。もしくは、この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> が空の場合0を返します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_IsNormalized_" data-uid="MapQuest.Coordinates.Envelope.IsNormalized*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_IsNormalized" data-uid="MapQuest.Coordinates.Envelope.IsNormalized">
+  IsNormalized
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトが正規化されているかどうかを取得します。</p>
+<p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトのX座標Y座標の最大値最小値が正規化されている場合、<code>true</code>を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsNormalized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトが正規化されているかどうかの値</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_IsNormalized_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大X座標の方が最小X座標より大きく、かつ最大Y座標の方が最小Y座標より大きい場合、<code>true</code>を返します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_IsNull_" data-uid="MapQuest.Coordinates.Envelope.IsNull*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_IsNull" data-uid="MapQuest.Coordinates.Envelope.IsNull">
+  IsNull
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトがnull(未定義)かどうかを示す値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsNull { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトがnull(未定義)かどうかを示す値。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_IsNull_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトが初期化されていない、
+もしくは空の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> の場合は <see lnagword="true"></see> 、それ以外は <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Max_" data-uid="MapQuest.Coordinates.Envelope.Max*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Max" data-uid="MapQuest.Coordinates.Envelope.Max">
+  Max
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大座標を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Coordinate Max { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大座標を示す <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_Max_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>最大座標の方が最小座標より小さい場合、この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトは空の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> ということを示します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_MaxX_" data-uid="MapQuest.Coordinates.Envelope.MaxX*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_MaxX" data-uid="MapQuest.Coordinates.Envelope.MaxX">
+  MaxX
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大X座標を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double MaxX { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大X座標</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_MaxX_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>最大X座標の方が最小X座標より小さい場合、この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトは空の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> ということを示します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_MaxY_" data-uid="MapQuest.Coordinates.Envelope.MaxY*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_MaxY" data-uid="MapQuest.Coordinates.Envelope.MaxY">
+  MaxY
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大Y座標を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double MaxY { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大Y座標</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_MaxY_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>最大Y座標の方が最小Y座標より小さい場合、この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトは空の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> ということを示します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Min_" data-uid="MapQuest.Coordinates.Envelope.Min*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Min" data-uid="MapQuest.Coordinates.Envelope.Min">
+  Min
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最小座標を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Coordinate Min { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最小座標を示す <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_Min_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>最小座標の方が最大座標より大きい場合、この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトは空の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> ということを示します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_MinX_" data-uid="MapQuest.Coordinates.Envelope.MinX*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_MinX" data-uid="MapQuest.Coordinates.Envelope.MinX">
+  MinX
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最小X座標を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double MinX { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最小X座標</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_MinX_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>最小X座標の方が最大X座標より大きい場合、この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> は空の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> ということを示します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_MinY_" data-uid="MapQuest.Coordinates.Envelope.MinY*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_MinY" data-uid="MapQuest.Coordinates.Envelope.MinY">
+  MinY
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最小Y座標を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double MinY { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最小Y座標</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_MinY_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>最小Y座標の方が最大Y座標より大きい場合、この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトは空の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> ということを示します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Width_" data-uid="MapQuest.Coordinates.Envelope.Width*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Width" data-uid="MapQuest.Coordinates.Envelope.Width">
+  Width
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大X座標、最小X座標間の距離を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Width { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大X座標、最小X座標間の距離</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_Width_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> オブジェクトの最大X座標 - 最小X座標を返します。もしくは、この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> が空の場合0を返します。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Envelope_Clone_" data-uid="MapQuest.Coordinates.Envelope.Clone*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Clone" data-uid="MapQuest.Coordinates.Envelope.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を複製します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>複製された <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Contains_" data-uid="MapQuest.Coordinates.Envelope.Contains*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Contains_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Envelope.Contains(MapQuest.Coordinates.Coordinate)">
+  Contains(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> が引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を内包している場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Contains(Coordinate p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> に含まれているかどうかを検査するポイント</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> が <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> の境界線上、また内側に存在している場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Contains_" data-uid="MapQuest.Coordinates.Envelope.Contains*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Contains_MapQuest_Coordinates_Envelope_" data-uid="MapQuest.Coordinates.Envelope.Contains(MapQuest.Coordinates.Envelope)">
+  Contains(Envelope)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> が引数の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を内包している場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Contains(Envelope other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> に含まれているかどうかを検査したい <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>引数の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> が <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> の境界線上、また内側に存在している場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Contains_" data-uid="MapQuest.Coordinates.Envelope.Contains*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Contains_System_Double_System_Double_" data-uid="MapQuest.Coordinates.Envelope.Contains(System.Double,System.Double)">
+  Contains(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> が引数のX座標Y座標を内包している場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Contains(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> に含まれているかどうかを検査するポイントのX座標</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> に含まれているかどうかを検査するポイントのY座標</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>引数のX座標Y座標が <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> の境界線上、また内側に存在している場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Distance_" data-uid="MapQuest.Coordinates.Envelope.Distance*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Distance_MapQuest_Coordinates_Envelope_" data-uid="MapQuest.Coordinates.Envelope.Distance(MapQuest.Coordinates.Envelope)">
+  Distance(Envelope)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> と引数の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> との最短距離を計算します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Distance(Envelope env)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>env</code> <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> と最短距離を求めたい <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> 間の最短距離を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_Distance_MapQuest_Coordinates_Envelope__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> 同士が重複している場合、距離は0となります。そうでなければ、距離は最も接近しているポイント間のユークリッド距離を示します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Equals_" data-uid="MapQuest.Coordinates.Envelope.Equals*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Equals_System_Object_" data-uid="MapQuest.Coordinates.Envelope.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+   <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> 同士の比較を行います。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>比較する対象の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> の最小X座標、最大X座標、最小Y座標、最大Y座標が、それぞれ全て等しかった場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_ExpandToInclude_" data-uid="MapQuest.Coordinates.Envelope.ExpandToInclude*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_ExpandToInclude_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Envelope.ExpandToInclude(MapQuest.Coordinates.Coordinate)">
+  ExpandToInclude(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> の座標(p.x, p.y)を含むように、 <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> の境界を拡大させます。 <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> の座標(p.x, p.y)が既に境界上、あるいはその境界内にある場合、何も行いません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ExpandToInclude(Coordinate p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>最小座標を減少、最大座標を増加させるX座標、Y座標を持った <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_ExpandToInclude_" data-uid="MapQuest.Coordinates.Envelope.ExpandToInclude*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_ExpandToInclude_MapQuest_Coordinates_Envelope_" data-uid="MapQuest.Coordinates.Envelope.ExpandToInclude(MapQuest.Coordinates.Envelope)">
+  ExpandToInclude(Envelope)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を含むように、 <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> の境界を拡大させます。引数の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> が既に境界上、あるいはその境界内にある場合、何も行いません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ExpandToInclude(Envelope other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></dt>
+    <dd><p>融合する <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_ExpandToInclude_" data-uid="MapQuest.Coordinates.Envelope.ExpandToInclude*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_ExpandToInclude_System_Double_System_Double_" data-uid="MapQuest.Coordinates.Envelope.ExpandToInclude(System.Double,System.Double)">
+  ExpandToInclude(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の(x,y)を含むように、 <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> の境界を拡大させます。(x,y)が既に境界上、あるいはその境界内にある場合、何も行いません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ExpandToInclude(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>最小X座標を減少、最大X座標を増加させる値</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>最小Y座標を減少、最大Y座標を増加させる値</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_GetHashCode_" data-uid="MapQuest.Coordinates.Envelope.GetHashCode*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_GetHashCode" data-uid="MapQuest.Coordinates.Envelope.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> の最小X座標、最大X座標、最小Y座標、最大Y座標を元にハッシュ値を生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>生成されたハッシュ値を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_GetObjectData_" data-uid="MapQuest.Coordinates.Envelope.GetObjectData*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="MapQuest.Coordinates.Envelope.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+  GetObjectData(SerializationInfo, StreamingContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オブジェクトをシリアル化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd><p>シリアル化する情報を格納するオブジェクト</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Inflate_" data-uid="MapQuest.Coordinates.Envelope.Inflate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Inflate_System_Double_" data-uid="MapQuest.Coordinates.Envelope.Inflate(System.Double)">
+  Inflate(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を膨張させます。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Inflate(double cxy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cxy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を膨張させたい値</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_Inflate_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>X座標、Y座標ともに、cxyほど膨張されます。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Inflate_" data-uid="MapQuest.Coordinates.Envelope.Inflate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Inflate_System_Double_System_Double_" data-uid="MapQuest.Coordinates.Envelope.Inflate(System.Double,System.Double)">
+  Inflate(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を引数の(cx,cy)ほど、膨張させます。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Inflate(double cx, double cy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を膨張させたいX値</p>
+</dd>
+    <dt><code>cy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を膨張させたいY値</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_Inflate_System_Double_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>X座標はdx、Y座標はdyほど膨張されます。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Initialize_" data-uid="MapQuest.Coordinates.Envelope.Initialize*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Initialize" data-uid="MapQuest.Coordinates.Envelope.Initialize">
+  Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>null(未定義)の状態として初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_Initialize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>MinX, MinY, MaxX, MaxY は 全て 非数（Double.NaN） に設定されます。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Initialize_" data-uid="MapQuest.Coordinates.Envelope.Initialize*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Initialize_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate)">
+  Initialize(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> により定義されたポイントに <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize(Coordinate p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化する元の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Initialize_" data-uid="MapQuest.Coordinates.Envelope.Initialize*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Initialize_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)">
+  Initialize(Coordinate, Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数の二つの <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> により定義された領域に <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize(Coordinate p1, Coordinate p2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p1</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化する元となる、最初の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+    <dt><code>p2</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化する元となる、もう一つの <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Initialize_" data-uid="MapQuest.Coordinates.Envelope.Initialize*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Initialize_MapQuest_Coordinates_Coordinate_System_Double_" data-uid="MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate,System.Double)">
+  Initialize(Coordinate, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>中心点と拡幅値を指定して、この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize(Coordinate p, double inflate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>矩形の中心位置。</p>
+</dd>
+    <dt><code>inflate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>p から、上下左右に拡幅する値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_Initialize_MapQuest_Coordinates_Coordinate_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このメソッドは、矩形の中心座標と、そこから上下左右に拡幅する値
+を指定して <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化します。</p>
+<p></p>
+例えば、p が (10, 5) 、inflate が 2 の場合、初期化される矩形の座標値は、
+(minX, minY)-(maxX, maxY) 形式で (8, 3)-(12, 7) となります。
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Initialize_" data-uid="MapQuest.Coordinates.Envelope.Initialize*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Initialize_MapQuest_Coordinates_Envelope_" data-uid="MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Envelope)">
+  Initialize(Envelope)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数の既存の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> にこの <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize(Envelope env)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>env</code> <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化する元の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Initialize_" data-uid="MapQuest.Coordinates.Envelope.Initialize*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Initialize_System_Double_System_Double_System_Double_System_Double_" data-uid="MapQuest.Coordinates.Envelope.Initialize(System.Double,System.Double,System.Double,System.Double)">
+  Initialize(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数のX座標Y座標の、最小値と最大値により定義された領域に <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize(double x1, double x2, double y1, double y2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化する元となるX座標1</p>
+</dd>
+    <dt><code>x2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化する元となるX座標2</p>
+</dd>
+    <dt><code>y1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化する元となるY座標1</p>
+</dd>
+    <dt><code>y2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を初期化する元となるY座標2</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Intersection_" data-uid="MapQuest.Coordinates.Envelope.Intersection*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Intersection_MapQuest_Coordinates_Envelope_MapQuest_Coordinates_Envelope_" data-uid="MapQuest.Coordinates.Envelope.Intersection(MapQuest.Coordinates.Envelope,MapQuest.Coordinates.Envelope)">
+  Intersection(Envelope, Envelope)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><code class="paramref">env1</code> と <code class="paramref">env2</code> の交差部分を
+示す <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Envelope Intersection(Envelope env1, Envelope env2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>env1</code> <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></dt>
+    <dd><p>1つ目の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> 。</p>
+</dd>
+    <dt><code>env2</code> <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></dt>
+    <dd><p>2つ目の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></dt>
+    <dd><p><code class="paramref">env1</code> と <code class="paramref">env2</code> の交差部分を
+示す <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> 。交差部分がない場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Intersects_" data-uid="MapQuest.Coordinates.Envelope.Intersects*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Intersects_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate)">
+  Intersects(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> がこの <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> と交差するかどうかを検査します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Intersects(Coordinate p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>交差しているかどうかを検査する <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> 交差する場合<code>true</code>を、そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Intersects_" data-uid="MapQuest.Coordinates.Envelope.Intersects*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Intersects_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)">
+  Intersects(Coordinate, Coordinate, Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> qがp1-p2によって定義された <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> と交差するかどうかを検査します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Intersects(Coordinate p1, Coordinate p2, Coordinate q)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p1</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を定義するある極値ポイント</p>
+</dd>
+    <dt><code>p2</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を定義するp1とは別の極値ポイント</p>
+</dd>
+    <dt><code>q</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>交差しているかどうかを検査するポイント</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>p1-p2から定義された <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> とポイントqが交差する場合<code>true</code>を、そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Intersects_" data-uid="MapQuest.Coordinates.Envelope.Intersects*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Intersects_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)">
+  Intersects(Coordinate, Coordinate, Coordinate, Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数のq1-q2によって定義された <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> Qがp1-p2によって定義された <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> Pと重複、交差するかどうかを検査します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Intersects(Coordinate p1, Coordinate p2, Coordinate q1, Coordinate q2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p1</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> Pを構成するある極値ポイント</p>
+</dd>
+    <dt><code>p2</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> Pを構成するp1とは別の極値ポイント</p>
+</dd>
+    <dt><code>q1</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> Qを構成するある極値ポイント</p>
+</dd>
+    <dt><code>q2</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> Qを構成するq1とは別の極値ポイント</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>p1-p2から構成された <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> Pとq1-q2から定義された <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> Qが重複、交差する場合<code>true</code>を、そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Intersects_" data-uid="MapQuest.Coordinates.Envelope.Intersects*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Intersects_MapQuest_Coordinates_Envelope_" data-uid="MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Envelope)">
+  Intersects(Envelope)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> がこの <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> と重複、または交差するかどうかを検査します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Intersects(Envelope other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></dt>
+    <dd><p>重複、交差しているかどうかを検査する <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> が重複、交差する場合<code>true</code>を、そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Intersects_" data-uid="MapQuest.Coordinates.Envelope.Intersects*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Intersects_System_Double_System_Double_" data-uid="MapQuest.Coordinates.Envelope.Intersects(System.Double,System.Double)">
+  Intersects(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定された座標が交差するかどうかを検査します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Intersects(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>交差するかどうかを検査する x 座標。</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>交差するかどうかを検査する y 座標。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>指定された座標が交差する場合は <b>true</b> 。</p>
+<p>それ以外の場合は <b>false</b> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Normalize_" data-uid="MapQuest.Coordinates.Envelope.Normalize*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Normalize" data-uid="MapQuest.Coordinates.Envelope.Normalize">
+  Normalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> の示す長方形が確実に( lowerLeft, upperRight )の形式となるように正規化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Normalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_Normalize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>最小X座標の方が最大X座標より大きい場合、もしくは最小Y座標の方が最大Y座標より大きい場合には，それぞれ最小座標と最大座標を入れ替えます。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_ReflectOrigin_" data-uid="MapQuest.Coordinates.Envelope.ReflectOrigin*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_ReflectOrigin" data-uid="MapQuest.Coordinates.Envelope.ReflectOrigin">
+  ReflectOrigin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を原点を中心に反転します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReflectOrigin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_ReflectOrigin_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> のX座標、Y座標がそれぞれ反転されます。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_ReflectXAxis_" data-uid="MapQuest.Coordinates.Envelope.ReflectXAxis*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_ReflectXAxis" data-uid="MapQuest.Coordinates.Envelope.ReflectXAxis">
+  ReflectXAxis()
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> をX軸を中心に反転します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReflectXAxis()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_ReflectXAxis_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> のY座標が反転されます。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_ReflectYAxis_" data-uid="MapQuest.Coordinates.Envelope.ReflectYAxis*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_ReflectYAxis" data-uid="MapQuest.Coordinates.Envelope.ReflectYAxis">
+  ReflectYAxis()
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> をY軸を中心に反転します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReflectYAxis()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_ReflectYAxis_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> のX座標が反転されます。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Scale_" data-uid="MapQuest.Coordinates.Envelope.Scale*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Scale_System_Double_System_Double_" data-uid="MapQuest.Coordinates.Envelope.Scale(System.Double,System.Double)">
+  Scale(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	このEnvelopeの縮尺を変更します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Scale(double sx, double sy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> のX座標に掛ける倍率</p>
+</dd>
+    <dt><code>sy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> のY座標に掛ける倍率</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_SetToNull_" data-uid="MapQuest.Coordinates.Envelope.SetToNull*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_SetToNull" data-uid="MapQuest.Coordinates.Envelope.SetToNull">
+  SetToNull()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を null(未定義) の状態にします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetToNull()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Envelope_SetToNull_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>MinX, MinY, MaxX, MaxY は 全て 非数（Double.NaN） に設定されます。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_ToString_" data-uid="MapQuest.Coordinates.Envelope.ToString*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_ToString" data-uid="MapQuest.Coordinates.Envelope.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Env[ 最小X座標 : 最大X座標 , 最小Y座標 : 最大Y座標 ]の形式で文字列を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Env[ 最小X座標 : 最大X座標 , 最小Y座標 : 最大Y座標 ]の形式で文字列を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Translate_" data-uid="MapQuest.Coordinates.Envelope.Translate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Translate_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Envelope.Translate(MapQuest.Coordinates.Coordinate)">
+  Translate(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> の座標ほど、平行移動します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Translate(Coordinate by)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>by</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を平行移動させたい座標の値を持った <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Envelope_Translate_" data-uid="MapQuest.Coordinates.Envelope.Translate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Envelope_Translate_System_Double_System_Double_" data-uid="MapQuest.Coordinates.Envelope.Translate(System.Double,System.Double)">
+  Translate(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	この <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を引数の(dx,dy)ほど、平行移動します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Translate(double dx, double dy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を平行移動させたいXの値</p>
+</dd>
+    <dt><code>dy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> を平行移動させたいYの値</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

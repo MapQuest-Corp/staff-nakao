@@ -1,0 +1,4396 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Collections.StringList
+  commentId: T:MapQuest.Collections.StringList
+  id: StringList
+  parent: MapQuest.Collections
+  children:
+  - MapQuest.Collections.StringList.#ctor
+  - MapQuest.Collections.StringList.#ctor(MapQuest.Collections.StringList)
+  - MapQuest.Collections.StringList.#ctor(System.Int32)
+  - MapQuest.Collections.StringList.#ctor(System.String[])
+  - MapQuest.Collections.StringList.Add(System.String)
+  - MapQuest.Collections.StringList.AddAll(System.Collections.ArrayList)
+  - MapQuest.Collections.StringList.AddAll(System.Collections.ICollection)
+  - MapQuest.Collections.StringList.AddRange(MapQuest.Collections.StringList)
+  - MapQuest.Collections.StringList.AddRange(System.String[])
+  - MapQuest.Collections.StringList.BinarySearch(System.String)
+  - MapQuest.Collections.StringList.Capacity
+  - MapQuest.Collections.StringList.Clear
+  - MapQuest.Collections.StringList.Clone
+  - MapQuest.Collections.StringList.Contains(System.String)
+  - MapQuest.Collections.StringList.Contains(System.String,System.Boolean)
+  - MapQuest.Collections.StringList.CopyTo(System.String[])
+  - MapQuest.Collections.StringList.CopyTo(System.String[],System.Int32)
+  - MapQuest.Collections.StringList.Count
+  - MapQuest.Collections.StringList.GetEnumerator
+  - MapQuest.Collections.StringList.IndexOf(System.String)
+  - MapQuest.Collections.StringList.IndexOf(System.String,System.Boolean)
+  - MapQuest.Collections.StringList.InnerArray
+  - MapQuest.Collections.StringList.Insert(System.Int32,System.String)
+  - MapQuest.Collections.StringList.IsFixedSize
+  - MapQuest.Collections.StringList.IsMovable
+  - MapQuest.Collections.StringList.IsReadOnly
+  - MapQuest.Collections.StringList.IsSynchronized
+  - MapQuest.Collections.StringList.IsUnique
+  - MapQuest.Collections.StringList.Item(System.Int32)
+  - MapQuest.Collections.StringList.MoveDown(System.Int32)
+  - MapQuest.Collections.StringList.MoveTo(System.Int32,System.Int32)
+  - MapQuest.Collections.StringList.MoveToBottom(System.Int32)
+  - MapQuest.Collections.StringList.MoveToTop(System.Int32)
+  - MapQuest.Collections.StringList.MoveUp(System.Int32)
+  - MapQuest.Collections.StringList.OnMove(System.String,System.Int32,System.Int32)
+  - MapQuest.Collections.StringList.ReadOnly(MapQuest.Collections.StringList)
+  - MapQuest.Collections.StringList.Remove(System.String)
+  - MapQuest.Collections.StringList.RemoveAll(System.Collections.ArrayList)
+  - MapQuest.Collections.StringList.RemoveAll(System.Collections.ICollection)
+  - MapQuest.Collections.StringList.RemoveAt(System.Int32)
+  - MapQuest.Collections.StringList.RemoveRange(System.Int32,System.Int32)
+  - MapQuest.Collections.StringList.Reverse
+  - MapQuest.Collections.StringList.Reverse(System.Int32,System.Int32)
+  - MapQuest.Collections.StringList.Sort
+  - MapQuest.Collections.StringList.Sort(System.Collections.IComparer)
+  - MapQuest.Collections.StringList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  - MapQuest.Collections.StringList.SyncRoot
+  - MapQuest.Collections.StringList.Synchronized(MapQuest.Collections.StringList)
+  - MapQuest.Collections.StringList.ToArray
+  - MapQuest.Collections.StringList.TrimToSize
+  - MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)
+  langs:
+  - csharp
+  - vb
+  name: StringList
+  nameWithType: StringList
+  fullName: MapQuest.Collections.StringList
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    必要に応じてサイズが動的に増加する配列を使用して、 
+
+    <xref href="MapQuest.Collections.IStringList" data-throw-if-not-resolved="false"></xref>  インターフェイスを実装します。
+  remarks: >-
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+            は、 <xref href="System.String" data-throw-if-not-resolved="false"></xref> 用に最適化された <xref href="System.Collections.ArrayList" data-throw-if-not-resolved="false"></xref> を提供します。
+  example: []
+  syntax:
+    content: 'public class StringList : IStringList, IStringCollection, IEnumerable<string>, IList, ICollection, IEnumerable, ICloneable'
+    content.vb: Public Class StringList Implements IStringList, IStringCollection, IEnumerable(Of String), IList, ICollection, IEnumerable, ICloneable
+  inheritance:
+  - System.Object
+  implements:
+  - MapQuest.Collections.IStringList
+  - MapQuest.Collections.IStringCollection
+  - System.Collections.Generic.IEnumerable{System.String}
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Collections.StringList.#ctor
+  commentId: M:MapQuest.Collections.StringList.#ctor
+  id: '#ctor'
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: StringList()
+  nameWithType: StringList.StringList()
+  fullName: MapQuest.Collections.StringList.StringList()
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    空で、デフォルトの初期量を備えた、 <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.%23ctor" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public StringList()
+    content.vb: Public Sub New()
+  overload: MapQuest.Collections.StringList.#ctor*
+  nameWithType.vb: StringList.New()
+  fullName.vb: MapQuest.Collections.StringList.New()
+  name.vb: New()
+- uid: MapQuest.Collections.StringList.#ctor(System.Int32)
+  commentId: M:MapQuest.Collections.StringList.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: StringList(int)
+  nameWithType: StringList.StringList(int)
+  fullName: MapQuest.Collections.StringList.StringList(int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    空で、指定した初期量を備えた、 <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.%23ctor(System.Int32)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public StringList(int capacity)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: 初期状態の新しいリストに格納できる要素の数。
+    content.vb: Public Sub New(capacity As Integer)
+  overload: MapQuest.Collections.StringList.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">capacity</code> が 0 未満です。
+  nameWithType.vb: StringList.New(Integer)
+  fullName.vb: MapQuest.Collections.StringList.New(Integer)
+  name.vb: New(Integer)
+- uid: MapQuest.Collections.StringList.#ctor(MapQuest.Collections.StringList)
+  commentId: M:MapQuest.Collections.StringList.#ctor(MapQuest.Collections.StringList)
+  id: '#ctor(MapQuest.Collections.StringList)'
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: StringList(StringList)
+  nameWithType: StringList.StringList(StringList)
+  fullName: MapQuest.Collections.StringList.StringList(MapQuest.Collections.StringList)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定したコレクションからコピーした要素を格納し、
+
+
+    コピーされる要素の数と同じ初期量を備えた、 
+
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.%23ctor(System.Collections.ICollection)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public StringList(StringList collection)
+    parameters:
+    - id: collection
+      type: MapQuest.Collections.StringList
+      description: 新しいリストに要素が追加された <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub New(collection As StringList)
+  overload: MapQuest.Collections.StringList.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">collection</code> が 
+              null 参照 (Visual Basic では <b>Nothing</b>) です。
+  nameWithType.vb: StringList.New(StringList)
+  fullName.vb: MapQuest.Collections.StringList.New(MapQuest.Collections.StringList)
+  name.vb: New(StringList)
+- uid: MapQuest.Collections.StringList.#ctor(System.String[])
+  commentId: M:MapQuest.Collections.StringList.#ctor(System.String[])
+  id: '#ctor(System.String[])'
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: StringList(string[])
+  nameWithType: StringList.StringList(string[])
+  fullName: MapQuest.Collections.StringList.StringList(string[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定した配列からコピーした要素を格納し、
+
+
+    コピーされる要素の数と同じ初期量を備えた、 
+
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.%23ctor(System.Collections.ICollection)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public StringList(string[] array)
+    parameters:
+    - id: array
+      type: System.String[]
+      description: >-
+        コレクションに追加するオブジェクトを格納する
+
+
+        <xref href="System.String" data-throw-if-not-resolved="false"></xref> 型の配列。
+    content.vb: Public Sub New(array As String())
+  overload: MapQuest.Collections.StringList.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">array</code> が 
+              null 参照 (Visual Basic では <b>Nothing</b>) です。
+  nameWithType.vb: StringList.New(String())
+  fullName.vb: MapQuest.Collections.StringList.New(String())
+  name.vb: New(String())
+- uid: MapQuest.Collections.StringList.Add(System.String)
+  commentId: M:MapQuest.Collections.StringList.Add(System.String)
+  id: Add(System.String)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Add(string)
+  nameWithType: StringList.Add(string)
+  fullName: MapQuest.Collections.StringList.Add(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の末尾に <xref href="System.String" data-throw-if-not-resolved="false"></xref> を追加します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Add(System.Object)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual int Add(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の末尾に追加する <xref href="System.String" data-throw-if-not-resolved="false"></xref> 。
+
+                値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+    return:
+      type: System.Int32
+      description: >-
+        <code class="paramref">value</code> が追加された位置の 
+                <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> インデックス。
+    content.vb: Public Overridable Function Add(value As String) As Integer
+  overload: MapQuest.Collections.StringList.Add*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は既に指定された要素を含んでいます。また、
+
+              <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は含まれる要素が全てユニークであることを保障します。
+  implements:
+  - MapQuest.Collections.IStringList.Add(System.String)
+  nameWithType.vb: StringList.Add(String)
+  fullName.vb: MapQuest.Collections.StringList.Add(String)
+  name.vb: Add(String)
+- uid: MapQuest.Collections.StringList.AddRange(MapQuest.Collections.StringList)
+  commentId: M:MapQuest.Collections.StringList.AddRange(MapQuest.Collections.StringList)
+  id: AddRange(MapQuest.Collections.StringList)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: AddRange(StringList)
+  nameWithType: StringList.AddRange(StringList)
+  fullName: MapQuest.Collections.StringList.AddRange(MapQuest.Collections.StringList)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の要素を <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の末尾に追加します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.AddRange(System.Collections.ICollection)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void AddRange(StringList collection)
+    parameters:
+    - id: collection
+      type: MapQuest.Collections.StringList
+      description: コレクションに追加するオブジェクトを格納する <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Overridable Sub AddRange(collection As StringList)
+  overload: MapQuest.Collections.StringList.AddRange*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">collection</code> が 
+               null 参照 (Visual Basic では <b>Nothing</b>) です。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+               <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+
+               <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は既に指定された要素を含んでいます。また、
+
+              <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は含まれる要素が全てユニークであることを保障します。
+- uid: MapQuest.Collections.StringList.AddRange(System.String[])
+  commentId: M:MapQuest.Collections.StringList.AddRange(System.String[])
+  id: AddRange(System.String[])
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: AddRange(string[])
+  nameWithType: StringList.AddRange(string[])
+  fullName: MapQuest.Collections.StringList.AddRange(string[])
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="System.String" data-throw-if-not-resolved="false"></xref> 配列の要素を <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の末尾に追加します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.AddRange(System.Collections.ICollection)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void AddRange(string[] array)
+    parameters:
+    - id: array
+      type: System.String[]
+      description: コレクションに追加するオブジェクトを格納する <xref href="System.String" data-throw-if-not-resolved="false"></xref> 型の配列。
+    content.vb: Public Overridable Sub AddRange(array As String())
+  overload: MapQuest.Collections.StringList.AddRange*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">array</code> が 
+              null 参照 (Visual Basic では <b>Nothing</b>) です。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は既に指定された要素を含んでいます。また、
+
+              <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は含まれる要素が全てユニークであることを保障します。
+  nameWithType.vb: StringList.AddRange(String())
+  fullName.vb: MapQuest.Collections.StringList.AddRange(String())
+  name.vb: AddRange(String())
+- uid: MapQuest.Collections.StringList.BinarySearch(System.String)
+  commentId: M:MapQuest.Collections.StringList.BinarySearch(System.String)
+  id: BinarySearch(System.String)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: BinarySearch(string)
+  nameWithType: StringList.BinarySearch(string)
+  fullName: MapQuest.Collections.StringList.BinarySearch(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    バイナリ サーチ アルゴリズムを使用して、並べ替えられた 
+
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内の特定の要素を検索します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.BinarySearch(System.Int32%2cSystem.Int32%2cSystem.Object%2cSystem.Collections.IComparer)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual int BinarySearch(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: >-
+        検索する <xref href="System.String" data-throw-if-not-resolved="false"></xref> 。
+
+
+        値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+    return:
+      type: System.Int32
+      description: >-
+        0 から始まるインデックス番号。 
+
+        <code class="paramref">value</code> が見つかった場合は、並べ替えられた 
+
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+
+        内の value の 0 から始まるインデックス。
+
+
+        見つからなかった場合は、負の値。これは、 <code class="paramref">value</code> 
+
+        の次に大きい要素のインデックスのビットごとの補数です。
+
+
+        ただし、大きい要素が存在しない場合は、<xref href="MapQuest.Collections.StringList.Count" data-throw-if-not-resolved="false"></xref> 
+
+        のビットごとの補数です。
+    content.vb: Public Overridable Function BinarySearch(value As String) As Integer
+  overload: MapQuest.Collections.StringList.BinarySearch*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: >-
+      value が、 <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の要素と同じ型ではありません。
+
+
+      <p><xref href="System.IComparable" data-throw-if-not-resolved="false"></xref> 
+
+      インターフェースがインプリメントされていません。
+
+
+      </p>
+  nameWithType.vb: StringList.BinarySearch(String)
+  fullName.vb: MapQuest.Collections.StringList.BinarySearch(String)
+  name.vb: BinarySearch(String)
+- uid: MapQuest.Collections.StringList.Clear
+  commentId: M:MapQuest.Collections.StringList.Clear
+  id: Clear
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: StringList.Clear()
+  fullName: MapQuest.Collections.StringList.Clear()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> からすべての要素を削除します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Clear" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear()
+  overload: MapQuest.Collections.StringList.Clear*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+  implements:
+  - MapQuest.Collections.IStringList.Clear
+  - System.Collections.IList.Clear
+- uid: MapQuest.Collections.StringList.Contains(System.String)
+  commentId: M:MapQuest.Collections.StringList.Contains(System.String)
+  id: Contains(System.String)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Contains(string)
+  nameWithType: StringList.Contains(string)
+  fullName: MapQuest.Collections.StringList.Contains(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: ある要素が <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内に存在するかどうかを判断します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Contains(System.Object)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public bool Contains(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内で検索される <xref href="System.String" data-throw-if-not-resolved="false"></xref> 。
+
+                値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+    return:
+      type: System.Boolean
+      description: >-
+        <code class="paramref">value</code> が <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+                に存在する場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+    content.vb: Public Function Contains(value As String) As Boolean
+  overload: MapQuest.Collections.StringList.Contains*
+  implements:
+  - MapQuest.Collections.IStringList.Contains(System.String)
+  nameWithType.vb: StringList.Contains(String)
+  fullName.vb: MapQuest.Collections.StringList.Contains(String)
+  name.vb: Contains(String)
+- uid: MapQuest.Collections.StringList.Contains(System.String,System.Boolean)
+  commentId: M:MapQuest.Collections.StringList.Contains(System.String,System.Boolean)
+  id: Contains(System.String,System.Boolean)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Contains(string, bool)
+  nameWithType: StringList.Contains(string, bool)
+  fullName: MapQuest.Collections.StringList.Contains(string, bool)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: ある要素が <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内に存在するかどうかを判断します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Contains(System.Object)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public bool Contains(string value, bool ignoreCase)
+    parameters:
+    - id: value
+      type: System.String
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内で検索される <xref href="System.String" data-throw-if-not-resolved="false"></xref> 。
+                値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+    - id: ignoreCase
+      type: System.Boolean
+      description: 大文字と小文字を区別して比較するか、区別せずに比較するかを示す値。(true は、大文字と小文字を区別せずに比較することを示します。
+    return:
+      type: System.Boolean
+      description: >-
+        <code class="paramref">value</code> が <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+                に存在する場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+    content.vb: Public Function Contains(value As String, ignoreCase As Boolean) As Boolean
+  overload: MapQuest.Collections.StringList.Contains*
+  nameWithType.vb: StringList.Contains(String, Boolean)
+  fullName.vb: MapQuest.Collections.StringList.Contains(String, Boolean)
+  name.vb: Contains(String, Boolean)
+- uid: MapQuest.Collections.StringList.CopyTo(System.String[])
+  commentId: M:MapQuest.Collections.StringList.CopyTo(System.String[])
+  id: CopyTo(System.String[])
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(string[])
+  nameWithType: StringList.CopyTo(string[])
+  fullName: MapQuest.Collections.StringList.CopyTo(string[])
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+            全体を互換性のある 1 次元の <xref href="System.String" data-throw-if-not-resolved="false"></xref> にコピーします。
+
+            コピー操作は、コピー先の配列の先頭から始まります。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.CopyTo(System.Array)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void CopyTo(string[] array)
+    parameters:
+    - id: array
+      type: System.String[]
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+                から要素がコピーされる <xref href="System.String" data-throw-if-not-resolved="false"></xref> の 1 次元配列。
+
+                この配列には、0 から始まるインデックス番号が必要です。
+    content.vb: Public Overridable Sub CopyTo(array As String())
+  overload: MapQuest.Collections.StringList.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">array</code> が 
+              null 参照 (Visual Basic では <b>Nothing</b>) です。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      <code class="paramref">array</code> が多次元です。
+
+              <p>または</p>
+              コピー元の <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+              の要素数が、コピー先の <code class="paramref">array</code> に格納できる要素の数を超えています。
+  nameWithType.vb: StringList.CopyTo(String())
+  fullName.vb: MapQuest.Collections.StringList.CopyTo(String())
+  name.vb: CopyTo(String())
+- uid: MapQuest.Collections.StringList.CopyTo(System.String[],System.Int32)
+  commentId: M:MapQuest.Collections.StringList.CopyTo(System.String[],System.Int32)
+  id: CopyTo(System.String[],System.Int32)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(string[], int)
+  nameWithType: StringList.CopyTo(string[], int)
+  fullName: MapQuest.Collections.StringList.CopyTo(string[], int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+            全体を互換性のある 1 次元の <xref href="System.String" data-throw-if-not-resolved="false"></xref> にコピーします。
+
+            コピー操作は、コピー先の配列の指定したインデックスから始まります。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.CopyTo(System.Array)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void CopyTo(string[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: System.String[]
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+                から要素がコピーされる <xref href="System.String" data-throw-if-not-resolved="false"></xref> の 1 次元配列。
+
+                この配列には、0 から始まるインデックス番号が必要です。
+    - id: arrayIndex
+      type: System.Int32
+      description: コピーの開始位置となる、 0 から始まるインデックス番号。
+    content.vb: Public Overridable Sub CopyTo(array As String(), arrayIndex As Integer)
+  overload: MapQuest.Collections.StringList.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">array</code> が 
+              null 参照 (Visual Basic では <b>Nothing</b>) です。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">arrayIndex</code> 
+              が 0 未満です。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      <code class="paramref">array</code> が多次元です。
+
+              <p>または</p><code class="paramref">arrayIndex</code> が <code class="paramref">array</code> の長さ以上です。
+
+              <p>または</p>
+              コピー元の <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+              の要素数が、 <code class="paramref">arrayIndex</code> からコピー先の 
+              <code class="paramref">array</code> の末尾までに格納できる数を超えています。
+  implements:
+  - MapQuest.Collections.IStringCollection.CopyTo(System.String[],System.Int32)
+  nameWithType.vb: StringList.CopyTo(String(), Integer)
+  fullName.vb: MapQuest.Collections.StringList.CopyTo(String(), Integer)
+  name.vb: CopyTo(String(), Integer)
+- uid: MapQuest.Collections.StringList.GetEnumerator
+  commentId: M:MapQuest.Collections.StringList.GetEnumerator
+  id: GetEnumerator
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: StringList.GetEnumerator()
+  fullName: MapQuest.Collections.StringList.GetEnumerator()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: この <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の列挙子を返します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.GetEnumerator" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual IStringEnumerator GetEnumerator()
+    return:
+      type: MapQuest.Collections.IStringEnumerator
+      description: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 全体の <xref href="MapQuest.Collections.IStringEnumerator" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Overridable Function GetEnumerator() As IStringEnumerator
+  overload: MapQuest.Collections.StringList.GetEnumerator*
+- uid: MapQuest.Collections.StringList.IndexOf(System.String)
+  commentId: M:MapQuest.Collections.StringList.IndexOf(System.String)
+  id: IndexOf(System.String)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(string)
+  nameWithType: StringList.IndexOf(string)
+  fullName: MapQuest.Collections.StringList.IndexOf(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定した <xref href="System.String" data-throw-if-not-resolved="false"></xref> を検索し、 <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+
+    内で最初に見つかった位置の 0 から始まるインデックスを返します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.IndexOf(System.Object)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual int IndexOf(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内で検索される <xref href="System.String" data-throw-if-not-resolved="false"></xref> 。
+
+                値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+    return:
+      type: System.Int32
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内で <code class="paramref">value</code> 
+                が見つかった場合は、最初に見つかった位置の 0 から始まるインデックス番号。
+
+                それ以外の場合は -1。
+    content.vb: Public Overridable Function IndexOf(value As String) As Integer
+  overload: MapQuest.Collections.StringList.IndexOf*
+  implements:
+  - MapQuest.Collections.IStringList.IndexOf(System.String)
+  nameWithType.vb: StringList.IndexOf(String)
+  fullName.vb: MapQuest.Collections.StringList.IndexOf(String)
+  name.vb: IndexOf(String)
+- uid: MapQuest.Collections.StringList.IndexOf(System.String,System.Boolean)
+  commentId: M:MapQuest.Collections.StringList.IndexOf(System.String,System.Boolean)
+  id: IndexOf(System.String,System.Boolean)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(string, bool)
+  nameWithType: StringList.IndexOf(string, bool)
+  fullName: MapQuest.Collections.StringList.IndexOf(string, bool)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定した <xref href="System.String" data-throw-if-not-resolved="false"></xref> を検索し、 <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+
+    内で最初に見つかった位置の 0 から始まるインデックスを返します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Contains(System.Object)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual int IndexOf(string value, bool ignoreCase)
+    parameters:
+    - id: value
+      type: System.String
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内で検索される <xref href="System.String" data-throw-if-not-resolved="false"></xref> 。
+                値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+    - id: ignoreCase
+      type: System.Boolean
+      description: 大文字と小文字を区別して比較するか、区別せずに比較するかを示す値。(true は、大文字と小文字を区別せずに比較することを示します。
+    return:
+      type: System.Int32
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内で <code class="paramref">value</code> 
+                が見つかった場合は、最初に見つかった位置の 0 から始まるインデックス番号。
+                それ以外の場合は -1。
+    content.vb: Public Overridable Function IndexOf(value As String, ignoreCase As Boolean) As Integer
+  overload: MapQuest.Collections.StringList.IndexOf*
+  nameWithType.vb: StringList.IndexOf(String, Boolean)
+  fullName.vb: MapQuest.Collections.StringList.IndexOf(String, Boolean)
+  name.vb: IndexOf(String, Boolean)
+- uid: MapQuest.Collections.StringList.Insert(System.Int32,System.String)
+  commentId: M:MapQuest.Collections.StringList.Insert(System.Int32,System.String)
+  id: Insert(System.Int32,System.String)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Insert(int, string)
+  nameWithType: StringList.Insert(int, string)
+  fullName: MapQuest.Collections.StringList.Insert(int, string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内の指定したインデックスの位置に要素を挿入します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Insert(System.Int32%2cSystem.Object)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Insert(int index, string value)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: <code class="paramref">value</code> を挿入する位置の、0 から始まるインデックス番号。
+    - id: value
+      type: System.String
+      description: >-
+        挿入する <xref href="System.String" data-throw-if-not-resolved="false"></xref> 。
+
+
+        値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+    content.vb: Public Overridable Sub Insert(index As Integer, value As String)
+  overload: MapQuest.Collections.StringList.Insert*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">index</code> が 0 未満です。
+
+              <p>または</p><code class="paramref">index</code> が <xref href="MapQuest.Collections.StringList.Count" data-throw-if-not-resolved="false"></xref> より大きい値です。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は既に指定された要素を含んでいます。また、
+
+              <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は含まれる要素が全てユニークであることを保障します。
+  implements:
+  - MapQuest.Collections.IStringList.Insert(System.Int32,System.String)
+  nameWithType.vb: StringList.Insert(Integer, String)
+  fullName.vb: MapQuest.Collections.StringList.Insert(Integer, String)
+  name.vb: Insert(Integer, String)
+- uid: MapQuest.Collections.StringList.ReadOnly(MapQuest.Collections.StringList)
+  commentId: M:MapQuest.Collections.StringList.ReadOnly(MapQuest.Collections.StringList)
+  id: ReadOnly(MapQuest.Collections.StringList)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: ReadOnly(StringList)
+  nameWithType: StringList.ReadOnly(StringList)
+  fullName: MapQuest.Collections.StringList.ReadOnly(MapQuest.Collections.StringList)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 読み取り専用にラップした <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> を返します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.ReadOnly(System.Collections.IList)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public static StringList ReadOnly(StringList collection)
+    parameters:
+    - id: collection
+      type: MapQuest.Collections.StringList
+      description: ラップする <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: MapQuest.Collections.StringList
+      description: >-
+        <code class="paramref">collection</code> をラップした読み取り専用の 
+                <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> ラッパー。
+    content.vb: Public Shared Function [ReadOnly](collection As StringList) As StringList
+  overload: MapQuest.Collections.StringList.ReadOnly*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">collection</code> が 
+              null 参照 (Visual Basic では <b>Nothing</b>) です。
+- uid: MapQuest.Collections.StringList.Remove(System.String)
+  commentId: M:MapQuest.Collections.StringList.Remove(System.String)
+  id: Remove(System.String)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Remove(string)
+  nameWithType: StringList.Remove(string)
+  fullName: MapQuest.Collections.StringList.Remove(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内で最初に見つかった特定のオブジェクトを削除します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Remove(System.Object)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Remove(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> から削除する <xref href="System.String" data-throw-if-not-resolved="false"></xref> 。
+
+                値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+    content.vb: Public Overridable Sub Remove(value As String)
+  overload: MapQuest.Collections.StringList.Remove*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+  implements:
+  - MapQuest.Collections.IStringList.Remove(System.String)
+  nameWithType.vb: StringList.Remove(String)
+  fullName.vb: MapQuest.Collections.StringList.Remove(String)
+  name.vb: Remove(String)
+- uid: MapQuest.Collections.StringList.RemoveAt(System.Int32)
+  commentId: M:MapQuest.Collections.StringList.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(int)
+  nameWithType: StringList.RemoveAt(int)
+  fullName: MapQuest.Collections.StringList.RemoveAt(int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+            の指定したインデックスにある要素を削除します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.RemoveAt(System.Int32)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 削除する要素の、0 から始まるインデックス番号。
+    content.vb: Public Overridable Sub RemoveAt(index As Integer)
+  overload: MapQuest.Collections.StringList.RemoveAt*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">index</code> が 0 未満です。
+
+              <p>または</p><code class="paramref">index</code> が <xref href="MapQuest.Collections.StringList.Count" data-throw-if-not-resolved="false"></xref> 以上です。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+  implements:
+  - MapQuest.Collections.IStringList.RemoveAt(System.Int32)
+  - System.Collections.IList.RemoveAt(System.Int32)
+  nameWithType.vb: StringList.RemoveAt(Integer)
+  fullName.vb: MapQuest.Collections.StringList.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+- uid: MapQuest.Collections.StringList.RemoveRange(System.Int32,System.Int32)
+  commentId: M:MapQuest.Collections.StringList.RemoveRange(System.Int32,System.Int32)
+  id: RemoveRange(System.Int32,System.Int32)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: RemoveRange(int, int)
+  nameWithType: StringList.RemoveRange(int, int)
+  fullName: MapQuest.Collections.StringList.RemoveRange(int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> から指定された範囲の要素を削除します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.RemoveRange(System.Int32%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void RemoveRange(int index, int count)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 削除する要素の範囲の開始位置を示す 0 から始まるインデックス。
+    - id: count
+      type: System.Int32
+      description: 削除する要素の数。
+    content.vb: Public Overridable Sub RemoveRange(index As Integer, count As Integer)
+  overload: MapQuest.Collections.StringList.RemoveRange*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">index</code> が 0 未満です。
+
+               <p>または</p><code class="paramref">Count</code> が 0 未満です。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      <code class="paramref">index</code> および <code class="paramref">count</code> が 
+               <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内の有効な範囲を指定していません。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+               <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+  nameWithType.vb: StringList.RemoveRange(Integer, Integer)
+  fullName.vb: MapQuest.Collections.StringList.RemoveRange(Integer, Integer)
+  name.vb: RemoveRange(Integer, Integer)
+- uid: MapQuest.Collections.StringList.Reverse
+  commentId: M:MapQuest.Collections.StringList.Reverse
+  id: Reverse
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Reverse()
+  nameWithType: StringList.Reverse()
+  fullName: MapQuest.Collections.StringList.Reverse()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の全体の要素の順序を反転させます。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Reverse" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Reverse()
+    content.vb: Public Overridable Sub Reverse()
+  overload: MapQuest.Collections.StringList.Reverse*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+- uid: MapQuest.Collections.StringList.Reverse(System.Int32,System.Int32)
+  commentId: M:MapQuest.Collections.StringList.Reverse(System.Int32,System.Int32)
+  id: Reverse(System.Int32,System.Int32)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Reverse(int, int)
+  nameWithType: StringList.Reverse(int, int)
+  fullName: MapQuest.Collections.StringList.Reverse(int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 指定した範囲の要素の順序を反転させます。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Reverse" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Reverse(int index, int count)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 反転させる範囲の開始位置を示す 0 から始まるインデックス。
+    - id: count
+      type: System.Int32
+      description: 反転させる範囲内にある要素の数。
+    content.vb: Public Overridable Sub Reverse(index As Integer, count As Integer)
+  overload: MapQuest.Collections.StringList.Reverse*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">index</code> が 0 未満です。
+
+              <p>または</p><code class="paramref">Count</code> が 0 未満です。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      <code class="paramref">index</code> および <code class="paramref">count</code> が 
+              <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内の有効な範囲を指定していません。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+  nameWithType.vb: StringList.Reverse(Integer, Integer)
+  fullName.vb: MapQuest.Collections.StringList.Reverse(Integer, Integer)
+  name.vb: Reverse(Integer, Integer)
+- uid: MapQuest.Collections.StringList.Sort
+  commentId: M:MapQuest.Collections.StringList.Sort
+  id: Sort
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Sort()
+  nameWithType: StringList.Sort()
+  fullName: MapQuest.Collections.StringList.Sort()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    各要素の <xref href="System.IComparable" data-throw-if-not-resolved="false"></xref> 実装を使用して、 
+
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内の要素を並べ替えます。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Sort" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Sort()
+    content.vb: Public Overridable Sub Sort()
+  overload: MapQuest.Collections.StringList.Sort*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+- uid: MapQuest.Collections.StringList.Sort(System.Collections.IComparer)
+  commentId: M:MapQuest.Collections.StringList.Sort(System.Collections.IComparer)
+  id: Sort(System.Collections.IComparer)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Sort(IComparer)
+  nameWithType: StringList.Sort(IComparer)
+  fullName: MapQuest.Collections.StringList.Sort(System.Collections.IComparer)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定した比較演算子を使用して、 <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+
+    内の要素を並べ替えます。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Sort" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Sort(IComparer comparer)
+    parameters:
+    - id: comparer
+      type: System.Collections.IComparer
+      description: >-
+        要素を比較する場合に使用する <xref href="System.Collections.IComparer" data-throw-if-not-resolved="false"></xref> 実装。 
+
+        <p>または</p>
+
+        各要素の <xref href="System.Collections.IComparer" data-throw-if-not-resolved="false"></xref> 
+
+        実装を使用する場合は null 参照 (Visual Basic では <b>Nothing</b>) 。
+    content.vb: Public Overridable Sub Sort(comparer As IComparer)
+  overload: MapQuest.Collections.StringList.Sort*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+- uid: MapQuest.Collections.StringList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  commentId: M:MapQuest.Collections.StringList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  id: Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Sort(int, int, IComparer)
+  nameWithType: StringList.Sort(int, int, IComparer)
+  fullName: MapQuest.Collections.StringList.Sort(int, int, System.Collections.IComparer)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定した比較演算子を使用して、 <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+
+    のセクション内の要素を並べ替えます。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Sort" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Sort(int index, int count, IComparer comparer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 並べ替える範囲の開始位置を示す 0 から始まるインデックス。
+    - id: count
+      type: System.Int32
+      description: 並べ替える範囲の長さ。
+    - id: comparer
+      type: System.Collections.IComparer
+      description: >-
+        要素を比較する場合に使用する <xref href="System.Collections.IComparer" data-throw-if-not-resolved="false"></xref> 実装。 
+
+        <p>または</p>
+
+        各要素の <xref href="System.Collections.IComparer" data-throw-if-not-resolved="false"></xref> 
+
+        実装を使用する場合は null 参照 (Visual Basic では <b>Nothing</b>) 。
+    content.vb: Public Overridable Sub Sort(index As Integer, count As Integer, comparer As IComparer)
+  overload: MapQuest.Collections.StringList.Sort*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">index</code> が 0 未満です。
+
+              <p>または</p><code class="paramref">Count</code> が 0 未満です。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      <code class="paramref">index</code> および <code class="paramref">count</code> が 
+              <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内の有効な範囲を指定していません。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+  nameWithType.vb: StringList.Sort(Integer, Integer, IComparer)
+  fullName.vb: MapQuest.Collections.StringList.Sort(Integer, Integer, System.Collections.IComparer)
+  name.vb: Sort(Integer, Integer, IComparer)
+- uid: MapQuest.Collections.StringList.Synchronized(MapQuest.Collections.StringList)
+  commentId: M:MapQuest.Collections.StringList.Synchronized(MapQuest.Collections.StringList)
+  id: Synchronized(MapQuest.Collections.StringList)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Synchronized(StringList)
+  nameWithType: StringList.Synchronized(StringList)
+  fullName: MapQuest.Collections.StringList.Synchronized(MapQuest.Collections.StringList)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 用の同期された (スレッド セーフな) ラッパーを返します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Synchronized(System.Collections.IList)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public static StringList Synchronized(StringList collection)
+    parameters:
+    - id: collection
+      type: MapQuest.Collections.StringList
+      description: 同期する <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: MapQuest.Collections.StringList
+      description: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 用の同期された (スレッド セーフな) ラッパー。
+    content.vb: Public Shared Function Synchronized(collection As StringList) As StringList
+  overload: MapQuest.Collections.StringList.Synchronized*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">collection</code> が null 参照 (Visual Basic では <B>Nothing</B>) です。
+- uid: MapQuest.Collections.StringList.ToArray
+  commentId: M:MapQuest.Collections.StringList.ToArray
+  id: ToArray
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: ToArray()
+  nameWithType: StringList.ToArray()
+  fullName: MapQuest.Collections.StringList.ToArray()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の要素を新しい配列にコピーします。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.ToArray" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual string[] ToArray()
+    return:
+      type: System.String[]
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+                の要素のコピーを格納する <xref href="System.String" data-throw-if-not-resolved="false"></xref> 型の配列。
+    content.vb: Public Overridable Function ToArray() As String()
+  overload: MapQuest.Collections.StringList.ToArray*
+- uid: MapQuest.Collections.StringList.TrimToSize
+  commentId: M:MapQuest.Collections.StringList.TrimToSize
+  id: TrimToSize
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: TrimToSize()
+  nameWithType: StringList.TrimToSize()
+  fullName: MapQuest.Collections.StringList.TrimToSize()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 容量を <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内にある実際の要素数に設定します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.TrimToSize" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual void TrimToSize()
+    content.vb: Public Overridable Sub TrimToSize()
+  overload: MapQuest.Collections.StringList.TrimToSize*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+- uid: MapQuest.Collections.StringList.AddAll(System.Collections.ICollection)
+  commentId: M:MapQuest.Collections.StringList.AddAll(System.Collections.ICollection)
+  id: AddAll(System.Collections.ICollection)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: AddAll(ICollection)
+  nameWithType: StringList.AddAll(ICollection)
+  fullName: MapQuest.Collections.StringList.AddAll(System.Collections.ICollection)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="System.Collections.ICollection" data-throw-if-not-resolved="false"></xref> の要素を <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の末尾に追加します。
+
+            <!-- Adds all the elements contained in the specified collection. -->
+  example: []
+  syntax:
+    content: public virtual void AddAll(ICollection collection)
+    parameters:
+    - id: collection
+      type: System.Collections.ICollection
+      description: コレクションに追加するオブジェクトを格納する <xref href="System.Collections.ICollection" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Overridable Sub AddAll(collection As ICollection)
+  overload: MapQuest.Collections.StringList.AddAll*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: 追加する <xref href="System.Collections.ICollection" data-throw-if-not-resolved="false"></xref> の要素が	<xref href="System.String" data-throw-if-not-resolved="false"></xref> と互換性がありません。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">collection</code> が 
+              null 参照 (Visual Basic では <b>Nothing</b>) です。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は既に指定された要素を含んでいます。また、
+
+              <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は含まれる要素が全てユニークであることを保障します。
+- uid: MapQuest.Collections.StringList.AddAll(System.Collections.ArrayList)
+  commentId: M:MapQuest.Collections.StringList.AddAll(System.Collections.ArrayList)
+  id: AddAll(System.Collections.ArrayList)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: AddAll(ArrayList)
+  nameWithType: StringList.AddAll(ArrayList)
+  fullName: MapQuest.Collections.StringList.AddAll(System.Collections.ArrayList)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="System.Collections.ArrayList" data-throw-if-not-resolved="false"></xref> の要素を <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の末尾に追加します。
+
+            <!-- Adds all the elements contained in the specified support class collection. -->
+  example: []
+  syntax:
+    content: public virtual void AddAll(ArrayList collection)
+    parameters:
+    - id: collection
+      type: System.Collections.ArrayList
+      description: コレクションに追加するオブジェクトを格納する <xref href="System.Collections.ArrayList" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Overridable Sub AddAll(collection As ArrayList)
+  overload: MapQuest.Collections.StringList.AddAll*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: 追加する <xref href="System.Collections.ICollection" data-throw-if-not-resolved="false"></xref> の要素が <xref href="System.String" data-throw-if-not-resolved="false"></xref> と互換性がありません。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">collection</code> が 
+              null 参照 (Visual Basic では <b>Nothing</b>) です。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は既に指定された要素を含んでいます。また、
+
+              <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は含まれる要素が全てユニークであることを保障します。
+- uid: MapQuest.Collections.StringList.RemoveAll(System.Collections.ICollection)
+  commentId: M:MapQuest.Collections.StringList.RemoveAll(System.Collections.ICollection)
+  id: RemoveAll(System.Collections.ICollection)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: RemoveAll(ICollection)
+  nameWithType: StringList.RemoveAll(ICollection)
+  fullName: MapQuest.Collections.StringList.RemoveAll(System.Collections.ICollection)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="System.Collections.ICollection" data-throw-if-not-resolved="false"></xref> の要素を <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> から削除します。
+
+            <!-- Removes all the elements contained into the specified collection. -->
+  example: []
+  syntax:
+    content: public virtual bool RemoveAll(ICollection collection)
+    parameters:
+    - id: collection
+      type: System.Collections.ICollection
+      description: >-
+        コレクションから削除するオブジェクトを格納する <xref href="System.Collections.ICollection" data-throw-if-not-resolved="false"></xref> 。
+
+
+        <!-- The collection used to extract the elements that will be removed. -->
+    return:
+      type: System.Boolean
+      description: >-
+        全ての要素を削除できた場合は <b>true</b> 。
+
+
+        それ以外の場合は <b>false</b> 。
+
+
+        <!-- Returns true if all the elements were successfuly removed. Otherwise returns false. -->
+    content.vb: Public Overridable Function RemoveAll(collection As ICollection) As Boolean
+  overload: MapQuest.Collections.StringList.RemoveAll*
+- uid: MapQuest.Collections.StringList.RemoveAll(System.Collections.ArrayList)
+  commentId: M:MapQuest.Collections.StringList.RemoveAll(System.Collections.ArrayList)
+  id: RemoveAll(System.Collections.ArrayList)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: RemoveAll(ArrayList)
+  nameWithType: StringList.RemoveAll(ArrayList)
+  fullName: MapQuest.Collections.StringList.RemoveAll(System.Collections.ArrayList)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="System.Collections.ArrayList" data-throw-if-not-resolved="false"></xref> の要素を <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> から削除します
+
+            <!-- Removes all the elements contained into the specified collection. -->
+  example: []
+  syntax:
+    content: public virtual bool RemoveAll(ArrayList collection)
+    parameters:
+    - id: collection
+      type: System.Collections.ArrayList
+      description: >-
+        コレクションから削除するオブジェクトを格納する <xref href="System.Collections.ArrayList" data-throw-if-not-resolved="false"></xref> 。
+
+
+        <!-- The collection used to extract the elements that will be removed. -->
+    return:
+      type: System.Boolean
+      description: >-
+        全ての要素を削除できた場合は <b>true</b> 。
+
+
+        それ以外の場合は <b>false</b> 。
+
+
+        <!-- Returns true if all the elements were successfuly removed. Otherwise returns false. -->
+    content.vb: Public Overridable Function RemoveAll(collection As ArrayList) As Boolean
+  overload: MapQuest.Collections.StringList.RemoveAll*
+- uid: MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)
+  commentId: M:MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)
+  id: Unique(MapQuest.Collections.StringList)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Unique(StringList)
+  nameWithType: StringList.Unique(StringList)
+  fullName: MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    要素がすべてユニークであることを保証する 
+
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> ラッパーを返します。
+  remarks: >-
+    <xref href="MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)" data-throw-if-not-resolved="false"></xref> は、 
+            <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+            に含まれる要素が全てユニークであることを保障する
+            コレクションのラッパーを提供します。
+
+            <!--
+            The <see cref="StringList.Unique"/> 
+            wrapper provides a set-like collection by ensuring
+            that all elements in the <see cref="StringList"/> are unique.
+            --><p><xref href="MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)" data-throw-if-not-resolved="false"></xref> は、 
+            <code class="paramref">collection</code> の内容が重複している場合 
+            <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> を呼び出します。
+
+            また、<xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> に、既に含まれている要素を追加した場合は、 
+            <xref href="System.NotSupportedException" data-throw-if-not-resolved="false"></xref> を呼び出します。
+
+            <!--
+            <see cref="StringList.Unique"/> raises an 
+            <see cref="ArgumentException"/> if the specified 
+            <paramref name="collection"/> contains any duplicate elements. The returned
+            wrapper raises a <see cref="NotSupportedException"/> whenever the user attempts 
+            to add an element that is already contained in the <see cref="NotSupportedException"/>.
+            --></p><p><strong>Note:</strong> 
+            ラッパーは、重複する要素の生成も含む、
+
+            内部のコレクションへどのような変更も反映します。
+
+            この内部のコレクションが直接編集された場合は、
+
+            すべての要素がユニークであることを保障できません。
+
+            <!--
+            <strong>Note:</strong> 
+            The <see cref="StringList.Unique"/> 
+            wrapper reflects any changes made
+            to the underlying <paramref name="collection"/>, including the possible
+            creation of duplicate elements. The uniqueness of all elements is therefore
+            no longer assured if the underlying collection is manipulated directly.
+            --></p>
+  example: []
+  syntax:
+    content: public static StringList Unique(StringList collection)
+    parameters:
+    - id: collection
+      type: MapQuest.Collections.StringList
+      description: ラップする <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: MapQuest.Collections.StringList
+      description: >-
+        <code class="paramref">collection</code> をラップする要素がすべてユニークであることを保障する 
+                <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> ラッパー。
+    content.vb: Public Shared Function Unique(collection As StringList) As StringList
+  overload: MapQuest.Collections.StringList.Unique*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">collection</code> が重複する要素を含んでいます。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">collection</code> が 
+              null 参照 (Visual Basic では <b>Nothing</b>) です。
+- uid: MapQuest.Collections.StringList.MoveTo(System.Int32,System.Int32)
+  commentId: M:MapQuest.Collections.StringList.MoveTo(System.Int32,System.Int32)
+  id: MoveTo(System.Int32,System.Int32)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: MoveTo(int, int)
+  nameWithType: StringList.MoveTo(int, int)
+  fullName: MapQuest.Collections.StringList.MoveTo(int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内の指定したインデックスの要素を、
+
+            指定したインデックスへ移動します。
+  remarks: 移動元と移動先のインデックスが同じ場合は何もしません。
+  example: []
+  syntax:
+    content: public virtual void MoveTo(int indexFrom, int indexTo)
+    parameters:
+    - id: indexFrom
+      type: System.Int32
+      description: 移動する要素の位置を表す、0 から始まるインデックス番号。
+    - id: indexTo
+      type: System.Int32
+      description: 移動先の位置を表す、0 から始まるインデックス番号。
+    content.vb: Public Overridable Sub MoveTo(indexFrom As Integer, indexTo As Integer)
+  overload: MapQuest.Collections.StringList.MoveTo*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">indexTo</code> が 0 未満です。
+
+              <p>または</p><code class="paramref">indexTo</code> が <xref href="MapQuest.Collections.StringList.Count" data-throw-if-not-resolved="false"></xref> より大きい値です。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+              <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+  nameWithType.vb: StringList.MoveTo(Integer, Integer)
+  fullName.vb: MapQuest.Collections.StringList.MoveTo(Integer, Integer)
+  name.vb: MoveTo(Integer, Integer)
+- uid: MapQuest.Collections.StringList.MoveToTop(System.Int32)
+  commentId: M:MapQuest.Collections.StringList.MoveToTop(System.Int32)
+  id: MoveToTop(System.Int32)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: MoveToTop(int)
+  nameWithType: StringList.MoveToTop(int)
+  fullName: MapQuest.Collections.StringList.MoveToTop(int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内の指定したインデックスの要素を先頭に移動します。
+  remarks: 移動元のインデックスが既に先頭になる場合は何もしません。
+  example: []
+  syntax:
+    content: public virtual void MoveToTop(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 移動する要素の位置を表す、0 から始まるインデックス番号。
+    content.vb: Public Overridable Sub MoveToTop(index As Integer)
+  overload: MapQuest.Collections.StringList.MoveToTop*
+  nameWithType.vb: StringList.MoveToTop(Integer)
+  fullName.vb: MapQuest.Collections.StringList.MoveToTop(Integer)
+  name.vb: MoveToTop(Integer)
+- uid: MapQuest.Collections.StringList.MoveToBottom(System.Int32)
+  commentId: M:MapQuest.Collections.StringList.MoveToBottom(System.Int32)
+  id: MoveToBottom(System.Int32)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: MoveToBottom(int)
+  nameWithType: StringList.MoveToBottom(int)
+  fullName: MapQuest.Collections.StringList.MoveToBottom(int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内の指定したインデックスの要素を末尾に移動します。
+  remarks: 移動元のインデックスが既に末尾になる場合は何もしません。
+  example: []
+  syntax:
+    content: public virtual void MoveToBottom(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 移動する要素の位置を表す、0 から始まるインデックス番号。
+    content.vb: Public Overridable Sub MoveToBottom(index As Integer)
+  overload: MapQuest.Collections.StringList.MoveToBottom*
+  nameWithType.vb: StringList.MoveToBottom(Integer)
+  fullName.vb: MapQuest.Collections.StringList.MoveToBottom(Integer)
+  name.vb: MoveToBottom(Integer)
+- uid: MapQuest.Collections.StringList.MoveUp(System.Int32)
+  commentId: M:MapQuest.Collections.StringList.MoveUp(System.Int32)
+  id: MoveUp(System.Int32)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: MoveUp(int)
+  nameWithType: StringList.MoveUp(int)
+  fullName: MapQuest.Collections.StringList.MoveUp(int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内の指定したインデックスの要素を 1 つ前に移動します。
+  remarks: ''
+  example: []
+  syntax:
+    content: public virtual void MoveUp(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 移動する要素の位置を表す、0 から始まるインデックス番号。
+    content.vb: Public Overridable Sub MoveUp(index As Integer)
+  overload: MapQuest.Collections.StringList.MoveUp*
+  nameWithType.vb: StringList.MoveUp(Integer)
+  fullName.vb: MapQuest.Collections.StringList.MoveUp(Integer)
+  name.vb: MoveUp(Integer)
+- uid: MapQuest.Collections.StringList.MoveDown(System.Int32)
+  commentId: M:MapQuest.Collections.StringList.MoveDown(System.Int32)
+  id: MoveDown(System.Int32)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: MoveDown(int)
+  nameWithType: StringList.MoveDown(int)
+  fullName: MapQuest.Collections.StringList.MoveDown(int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内の指定したインデックスの要素を 1 つ後ろに移動します。
+  remarks: ''
+  example: []
+  syntax:
+    content: public virtual void MoveDown(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 移動する要素の位置を表す、0 から始まるインデックス番号。
+    content.vb: Public Overridable Sub MoveDown(index As Integer)
+  overload: MapQuest.Collections.StringList.MoveDown*
+  nameWithType.vb: StringList.MoveDown(Integer)
+  fullName.vb: MapQuest.Collections.StringList.MoveDown(Integer)
+  name.vb: MoveDown(Integer)
+- uid: MapQuest.Collections.StringList.OnMove(System.String,System.Int32,System.Int32)
+  commentId: M:MapQuest.Collections.StringList.OnMove(System.String,System.Int32,System.Int32)
+  id: OnMove(System.String,System.Int32,System.Int32)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: OnMove(string, int, int)
+  nameWithType: StringList.OnMove(string, int, int)
+  fullName: MapQuest.Collections.StringList.OnMove(string, int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: リスト内の要素が移動された時に実行される内部関数です。
+  example: []
+  syntax:
+    content: protected virtual void OnMove(string item, int indexFrom, int indexTo)
+    parameters:
+    - id: item
+      type: System.String
+      description: 移動した要素。
+    - id: indexFrom
+      type: System.Int32
+      description: 移動元のインデックス。
+    - id: indexTo
+      type: System.Int32
+      description: 移動先のインデックス。
+    content.vb: Protected Overridable Sub OnMove(item As String, indexFrom As Integer, indexTo As Integer)
+  overload: MapQuest.Collections.StringList.OnMove*
+  nameWithType.vb: StringList.OnMove(String, Integer, Integer)
+  fullName.vb: MapQuest.Collections.StringList.OnMove(String, Integer, Integer)
+  name.vb: OnMove(String, Integer, Integer)
+- uid: MapQuest.Collections.StringList.Clone
+  commentId: M:MapQuest.Collections.StringList.Clone
+  id: Clone
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: StringList.Clone()
+  fullName: MapQuest.Collections.StringList.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の簡易コピーを生成します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Clone" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual object Clone()
+    return:
+      type: System.Object
+      description: A shallow copy of the <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Overridable Function Clone() As Object
+  overload: MapQuest.Collections.StringList.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.Collections.StringList.Count
+  commentId: P:MapQuest.Collections.StringList.Count
+  id: Count
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: StringList.Count
+  fullName: MapQuest.Collections.StringList.Count
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> に実際に格納されている要素の数を取得します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Count" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> に実際に格納されている要素の数。
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+  overload: MapQuest.Collections.StringList.Count*
+  implements:
+  - MapQuest.Collections.IStringCollection.Count
+  - System.Collections.ICollection.Count
+- uid: MapQuest.Collections.StringList.Item(System.Int32)
+  commentId: P:MapQuest.Collections.StringList.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: StringList.this[int]
+  fullName: MapQuest.Collections.StringList.this[int]
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 指定されたインデックスの要素を取得または設定します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Item(System.Int32)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual string this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 取得または設定する要素の、0 から始まるインデックス番号。
+    return:
+      type: System.String
+      description: 指定したインデックスにある要素。
+    content.vb: Public Overridable Default Property this[](index As Integer) As String
+  overload: MapQuest.Collections.StringList.Item*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">index</code> が 0 未満です。
+
+               <p>または</p><code class="paramref">index</code> が <xref href="MapQuest.Collections.StringList.Count" data-throw-if-not-resolved="false"></xref> 以上です。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      このプロパティが設定されていますが、 <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+
+      <p>または</p><xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は既に異なるインデックスで指定された要素を含んでいます。また、
+
+
+      <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> は含まれる要素が全てユニークであることを保障します。
+  implements:
+  - MapQuest.Collections.IStringList.Item(System.Int32)
+  nameWithType.vb: StringList.this[](Integer)
+  fullName.vb: MapQuest.Collections.StringList.this[](Integer)
+  name.vb: this[](Integer)
+- uid: MapQuest.Collections.StringList.Capacity
+  commentId: P:MapQuest.Collections.StringList.Capacity
+  id: Capacity
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: Capacity
+  nameWithType: StringList.Capacity
+  fullName: MapQuest.Collections.StringList.Capacity
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+             に格納できる要素の数を取得または設定します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Capacity" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual int Capacity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+                 に格納できる要素の数。
+
+                 0 が指定された場合は規定値を設定します。
+
+                 現在設定されている数より小さい場合は例外を発行します。
+    content.vb: Public Overridable Property Capacity As Integer
+  overload: MapQuest.Collections.StringList.Capacity*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <xref href="MapQuest.Collections.StringList.Capacity" data-throw-if-not-resolved="false"></xref> が <xref href="MapQuest.Collections.StringList.Count" data-throw-if-not-resolved="false"></xref> 
+               より小さい値に設定されています。
+- uid: MapQuest.Collections.StringList.IsFixedSize
+  commentId: P:MapQuest.Collections.StringList.IsFixedSize
+  id: IsFixedSize
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: IsFixedSize
+  nameWithType: StringList.IsFixedSize
+  fullName: MapQuest.Collections.StringList.IsFixedSize
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が固定サイズかどうかを示す値を取得します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.IsFixedSize?text=ArrayList.IsFixedSize" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual bool IsFixedSize { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+                が固定サイズの場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+                既定値は <b>false</b> です。
+    content.vb: Public Overridable ReadOnly Property IsFixedSize As Boolean
+  overload: MapQuest.Collections.StringList.IsFixedSize*
+  implements:
+  - MapQuest.Collections.IStringList.IsFixedSize
+  - System.Collections.IList.IsFixedSize
+- uid: MapQuest.Collections.StringList.IsReadOnly
+  commentId: P:MapQuest.Collections.StringList.IsReadOnly
+  id: IsReadOnly
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: StringList.IsReadOnly
+  fullName: MapQuest.Collections.StringList.IsReadOnly
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が読み取り専用かどうかを示す値を取得します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.IsReadOnly" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+                が読み取り専用の場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+                既定値は <b>false</b> です。
+    content.vb: Public Overridable ReadOnly Property IsReadOnly As Boolean
+  overload: MapQuest.Collections.StringList.IsReadOnly*
+  implements:
+  - MapQuest.Collections.IStringList.IsReadOnly
+  - System.Collections.IList.IsReadOnly
+- uid: MapQuest.Collections.StringList.IsSynchronized
+  commentId: P:MapQuest.Collections.StringList.IsSynchronized
+  id: IsSynchronized
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: IsSynchronized
+  nameWithType: StringList.IsSynchronized
+  fullName: MapQuest.Collections.StringList.IsSynchronized
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+            へのアクセスが同期されている (スレッド セーフである) かどうかを示す値を取得します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.IsSynchronized" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual bool IsSynchronized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        リストへのアクセスが同期されている (スレッド セーフである) 場合は <b>true</b> 。
+
+
+        それ以外の場合は <b>false</b> 。既定値は <b>false</b> です。
+    content.vb: Public Overridable ReadOnly Property IsSynchronized As Boolean
+  overload: MapQuest.Collections.StringList.IsSynchronized*
+  implements:
+  - MapQuest.Collections.IStringCollection.IsSynchronized
+  - System.Collections.ICollection.IsSynchronized
+- uid: MapQuest.Collections.StringList.IsUnique
+  commentId: P:MapQuest.Collections.StringList.IsUnique
+  id: IsUnique
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: IsUnique
+  nameWithType: StringList.IsUnique
+  fullName: MapQuest.Collections.StringList.IsUnique
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+            内の要素が全てユニークであるかどうかを示す値を取得します。
+  remarks: >-
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> が、ユニークなラッパーを使用している場合、 
+            <xref href="MapQuest.Collections.StringList.IsUnique" data-throw-if-not-resolved="false"></xref> は <b>true</b> を返します。
+
+            詳細については <xref href="MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)" data-throw-if-not-resolved="false"></xref> を参照してください。
+
+            <!--
+            IsUnique returns <c>true</c> exactly if the <see cref="StringList"/> 
+            is exposed through a <see cref="Unique"/> wrapper. 
+            Please refer to <see cref="Unique"/> for details.
+            -->
+  example: []
+  syntax:
+    content: public virtual bool IsUnique { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+                内の要素が全てユニークである場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+                既定値は <b>false</b> です。
+    content.vb: Public Overridable ReadOnly Property IsUnique As Boolean
+  overload: MapQuest.Collections.StringList.IsUnique*
+- uid: MapQuest.Collections.StringList.SyncRoot
+  commentId: P:MapQuest.Collections.StringList.SyncRoot
+  id: SyncRoot
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: SyncRoot
+  nameWithType: StringList.SyncRoot
+  fullName: MapQuest.Collections.StringList.SyncRoot
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+            へのアクセスを同期するために使用できるオブジェクトを取得します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.SyncRoot" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public virtual object SyncRoot { get; }
+    parameters: []
+    return:
+      type: System.Object
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+                へのアクセスを同期するために使用できるオブジェクト。
+    content.vb: Public Overridable ReadOnly Property SyncRoot As Object
+  overload: MapQuest.Collections.StringList.SyncRoot*
+  implements:
+  - MapQuest.Collections.IStringCollection.SyncRoot
+  - System.Collections.ICollection.SyncRoot
+- uid: MapQuest.Collections.StringList.InnerArray
+  commentId: P:MapQuest.Collections.StringList.InnerArray
+  id: InnerArray
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: InnerArray
+  nameWithType: StringList.InnerArray
+  fullName: MapQuest.Collections.StringList.InnerArray
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内にある要素のリストを取得します。
+  example: []
+  syntax:
+    content: protected virtual string[] InnerArray { get; }
+    parameters: []
+    return:
+      type: System.String[]
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> の <xref href="System.Array" data-throw-if-not-resolved="false"></xref> 全ての要素を含んだ
+                0 から始まるインデックス番号で始まる <xref href="System.Array" data-throw-if-not-resolved="false"></xref><xref href="System.String" data-throw-if-not-resolved="false"></xref> elements in the <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Protected Overridable ReadOnly Property InnerArray As String()
+  overload: MapQuest.Collections.StringList.InnerArray*
+- uid: MapQuest.Collections.StringList.IsMovable
+  commentId: P:MapQuest.Collections.StringList.IsMovable
+  id: IsMovable
+  parent: MapQuest.Collections.StringList
+  langs:
+  - csharp
+  - vb
+  name: IsMovable
+  nameWithType: StringList.IsMovable
+  fullName: MapQuest.Collections.StringList.IsMovable
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 内の要素が移動可能かどうかを示す値を取得します。
+  example: []
+  syntax:
+    content: public bool IsMovable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        <xref href="MapQuest.Collections.StringList" data-throw-if-not-resolved="false"></xref> 
+                内の要素が移動可能な場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+                既定値は <b>true</b> です。
+    content.vb: Public ReadOnly Property IsMovable As Boolean
+  overload: MapQuest.Collections.StringList.IsMovable*
+  seealso:
+  - linkId: MapQuest.Collections.StringList.MoveTo(System.Int32,System.Int32)
+    commentId: M:MapQuest.Collections.StringList.MoveTo(System.Int32,System.Int32)
+  - linkId: MapQuest.Collections.StringList.MoveToTop(System.Int32)
+    commentId: M:MapQuest.Collections.StringList.MoveToTop(System.Int32)
+  - linkId: MapQuest.Collections.StringList.MoveToBottom(System.Int32)
+    commentId: M:MapQuest.Collections.StringList.MoveToBottom(System.Int32)
+  - linkId: MapQuest.Collections.StringList.MoveUp(System.Int32)
+    commentId: M:MapQuest.Collections.StringList.MoveUp(System.Int32)
+  - linkId: MapQuest.Collections.StringList.MoveDown(System.Int32)
+    commentId: M:MapQuest.Collections.StringList.MoveDown(System.Int32)
+references:
+- uid: MapQuest.Collections.IStringList
+  commentId: T:MapQuest.Collections.IStringList
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.IStringList.html
+  name: IStringList
+  nameWithType: IStringList
+  fullName: MapQuest.Collections.IStringList
+- uid: MapQuest.Collections.StringList
+  commentId: T:MapQuest.Collections.StringList
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.StringList.html
+  name: StringList
+  nameWithType: StringList
+  fullName: MapQuest.Collections.StringList
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.ArrayList
+  commentId: T:System.Collections.ArrayList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist
+  name: ArrayList
+  nameWithType: ArrayList
+  fullName: System.Collections.ArrayList
+- uid: MapQuest.Collections
+  commentId: N:MapQuest.Collections
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Collections
+  nameWithType: MapQuest.Collections
+  fullName: MapQuest.Collections
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Collections.IStringCollection
+  commentId: T:MapQuest.Collections.IStringCollection
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.IStringCollection.html
+  name: IStringCollection
+  nameWithType: IStringCollection
+  fullName: MapQuest.Collections.IStringCollection
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.ArrayList.#ctor
+  commentId: M:System.Collections.ArrayList.#ctor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor
+  name: ArrayList()
+  nameWithType: ArrayList.ArrayList()
+  fullName: System.Collections.ArrayList.ArrayList()
+  nameWithType.vb: ArrayList.New()
+  fullName.vb: System.Collections.ArrayList.New()
+  name.vb: New()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.#ctor
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor
+  - name: (
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.StringList.#ctor*
+  commentId: Overload:MapQuest.Collections.StringList.#ctor
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList__ctor
+  name: StringList
+  nameWithType: StringList.StringList
+  fullName: MapQuest.Collections.StringList.StringList
+  nameWithType.vb: StringList.New
+  fullName.vb: MapQuest.Collections.StringList.New
+  name.vb: New
+- uid: System.Collections.ArrayList.#ctor(System.Int32)
+  commentId: M:System.Collections.ArrayList.#ctor(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-int32)
+  name: ArrayList(int)
+  nameWithType: ArrayList.ArrayList(int)
+  fullName: System.Collections.ArrayList.ArrayList(int)
+  nameWithType.vb: ArrayList.New(Integer)
+  fullName.vb: System.Collections.ArrayList.New(Integer)
+  name.vb: New(Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.#ctor(System.Int32)
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.ArrayList.#ctor(System.Collections.ICollection)
+  commentId: M:System.Collections.ArrayList.#ctor(System.Collections.ICollection)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-collections-icollection)
+  name: ArrayList(ICollection)
+  nameWithType: ArrayList.ArrayList(ICollection)
+  fullName: System.Collections.ArrayList.ArrayList(System.Collections.ICollection)
+  nameWithType.vb: ArrayList.New(ICollection)
+  fullName.vb: System.Collections.ArrayList.New(System.Collections.ICollection)
+  name.vb: New(ICollection)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.#ctor(System.Collections.ICollection)
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-collections-icollection)
+  - name: (
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList.Add(System.Object)
+  commentId: M:System.Collections.ArrayList.Add(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add
+  name: Add(object)
+  nameWithType: ArrayList.Add(object)
+  fullName: System.Collections.ArrayList.Add(object)
+  nameWithType.vb: ArrayList.Add(Object)
+  fullName.vb: System.Collections.ArrayList.Add(Object)
+  name.vb: Add(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Add(System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Add(System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: MapQuest.Collections.StringList.Add*
+  commentId: Overload:MapQuest.Collections.StringList.Add
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Add_System_String_
+  name: Add
+  nameWithType: StringList.Add
+  fullName: MapQuest.Collections.StringList.Add
+- uid: MapQuest.Collections.IStringList.Add(System.String)
+  commentId: M:MapQuest.Collections.IStringList.Add(System.String)
+  parent: MapQuest.Collections.IStringList
+  isExternal: true
+  href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Add_System_String_
+  name: Add(string)
+  nameWithType: IStringList.Add(string)
+  fullName: MapQuest.Collections.IStringList.Add(string)
+  nameWithType.vb: IStringList.Add(String)
+  fullName.vb: MapQuest.Collections.IStringList.Add(String)
+  name.vb: Add(String)
+  spec.csharp:
+  - uid: MapQuest.Collections.IStringList.Add(System.String)
+    name: Add
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Add_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.IStringList.Add(System.String)
+    name: Add
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Add_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  commentId: M:System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange
+  name: AddRange(ICollection)
+  nameWithType: ArrayList.AddRange(ICollection)
+  fullName: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+    name: AddRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange
+  - name: (
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+    name: AddRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange
+  - name: (
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+- uid: MapQuest.Collections.StringList.AddRange*
+  commentId: Overload:MapQuest.Collections.StringList.AddRange
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_AddRange_MapQuest_Collections_StringList_
+  name: AddRange
+  nameWithType: StringList.AddRange
+  fullName: MapQuest.Collections.StringList.AddRange
+- uid: MapQuest.Collections.StringList.Count
+  commentId: P:MapQuest.Collections.StringList.Count
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Count
+  name: Count
+  nameWithType: StringList.Count
+  fullName: MapQuest.Collections.StringList.Count
+- uid: System.IComparable
+  commentId: T:System.IComparable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable
+  name: IComparable
+  nameWithType: IComparable
+  fullName: System.IComparable
+- uid: System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+  commentId: M:System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)
+  name: BinarySearch(int, int, object, IComparer)
+  nameWithType: ArrayList.BinarySearch(int, int, object, IComparer)
+  fullName: System.Collections.ArrayList.BinarySearch(int, int, object, System.Collections.IComparer)
+  nameWithType.vb: ArrayList.BinarySearch(Integer, Integer, Object, IComparer)
+  fullName.vb: System.Collections.ArrayList.BinarySearch(Integer, Integer, Object, System.Collections.IComparer)
+  name.vb: BinarySearch(Integer, Integer, Object, IComparer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+    name: BinarySearch
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+    name: BinarySearch
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: MapQuest.Collections.StringList.BinarySearch*
+  commentId: Overload:MapQuest.Collections.StringList.BinarySearch
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_BinarySearch_System_String_
+  name: BinarySearch
+  nameWithType: StringList.BinarySearch
+  fullName: MapQuest.Collections.StringList.BinarySearch
+- uid: System.Collections.ArrayList.Clear
+  commentId: M:System.Collections.ArrayList.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear
+  name: Clear()
+  nameWithType: ArrayList.Clear()
+  fullName: System.Collections.ArrayList.Clear()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.StringList.Clear*
+  commentId: Overload:MapQuest.Collections.StringList.Clear
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Clear
+  name: Clear
+  nameWithType: StringList.Clear
+  fullName: MapQuest.Collections.StringList.Clear
+- uid: MapQuest.Collections.IStringList.Clear
+  commentId: M:MapQuest.Collections.IStringList.Clear
+  parent: MapQuest.Collections.IStringList
+  isExternal: true
+  href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Clear
+  name: Clear()
+  nameWithType: IStringList.Clear()
+  fullName: MapQuest.Collections.IStringList.Clear()
+  spec.csharp:
+  - uid: MapQuest.Collections.IStringList.Clear
+    name: Clear
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.IStringList.Clear
+    name: Clear
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Clear
+  - name: (
+  - name: )
+- uid: System.Collections.IList.Clear
+  commentId: M:System.Collections.IList.Clear
+  parent: System.Collections.IList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.clear
+  name: Clear()
+  nameWithType: IList.Clear()
+  fullName: System.Collections.IList.Clear()
+  spec.csharp:
+  - uid: System.Collections.IList.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IList.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.clear
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList.Contains(System.Object)
+  commentId: M:System.Collections.ArrayList.Contains(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains
+  name: Contains(object)
+  nameWithType: ArrayList.Contains(object)
+  fullName: System.Collections.ArrayList.Contains(object)
+  nameWithType.vb: ArrayList.Contains(Object)
+  fullName.vb: System.Collections.ArrayList.Contains(Object)
+  name.vb: Contains(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Contains(System.Object)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Contains(System.Object)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Collections.StringList.Contains*
+  commentId: Overload:MapQuest.Collections.StringList.Contains
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Contains_System_String_
+  name: Contains
+  nameWithType: StringList.Contains
+  fullName: MapQuest.Collections.StringList.Contains
+- uid: MapQuest.Collections.IStringList.Contains(System.String)
+  commentId: M:MapQuest.Collections.IStringList.Contains(System.String)
+  parent: MapQuest.Collections.IStringList
+  isExternal: true
+  href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Contains_System_String_
+  name: Contains(string)
+  nameWithType: IStringList.Contains(string)
+  fullName: MapQuest.Collections.IStringList.Contains(string)
+  nameWithType.vb: IStringList.Contains(String)
+  fullName.vb: MapQuest.Collections.IStringList.Contains(String)
+  name.vb: Contains(String)
+  spec.csharp:
+  - uid: MapQuest.Collections.IStringList.Contains(System.String)
+    name: Contains
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Contains_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.IStringList.Contains(System.String)
+    name: Contains
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Contains_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.ArrayList.CopyTo(System.Array)
+  commentId: M:System.Collections.ArrayList.CopyTo(System.Array)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)
+  name: CopyTo(Array)
+  nameWithType: ArrayList.CopyTo(Array)
+  fullName: System.Collections.ArrayList.CopyTo(System.Array)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.CopyTo(System.Array)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.CopyTo(System.Array)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: MapQuest.Collections.StringList.CopyTo*
+  commentId: Overload:MapQuest.Collections.StringList.CopyTo
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_CopyTo_System_String___
+  name: CopyTo
+  nameWithType: StringList.CopyTo
+  fullName: MapQuest.Collections.StringList.CopyTo
+- uid: MapQuest.Collections.IStringCollection.CopyTo(System.String[],System.Int32)
+  commentId: M:MapQuest.Collections.IStringCollection.CopyTo(System.String[],System.Int32)
+  parent: MapQuest.Collections.IStringCollection
+  isExternal: true
+  href: MapQuest.Collections.IStringCollection.html#MapQuest_Collections_IStringCollection_CopyTo_System_String___System_Int32_
+  name: CopyTo(string[], int)
+  nameWithType: IStringCollection.CopyTo(string[], int)
+  fullName: MapQuest.Collections.IStringCollection.CopyTo(string[], int)
+  nameWithType.vb: IStringCollection.CopyTo(String(), Integer)
+  fullName.vb: MapQuest.Collections.IStringCollection.CopyTo(String(), Integer)
+  name.vb: CopyTo(String(), Integer)
+  spec.csharp:
+  - uid: MapQuest.Collections.IStringCollection.CopyTo(System.String[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: MapQuest.Collections.IStringCollection.html#MapQuest_Collections_IStringCollection_CopyTo_System_String___System_Int32_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.IStringCollection.CopyTo(System.String[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: MapQuest.Collections.IStringCollection.html#MapQuest_Collections_IStringCollection_CopyTo_System_String___System_Int32_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.IStringEnumerator
+  commentId: T:MapQuest.Collections.IStringEnumerator
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.IStringEnumerator.html
+  name: IStringEnumerator
+  nameWithType: IStringEnumerator
+  fullName: MapQuest.Collections.IStringEnumerator
+- uid: System.Collections.ArrayList.GetEnumerator
+  commentId: M:System.Collections.ArrayList.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator
+  name: GetEnumerator()
+  nameWithType: ArrayList.GetEnumerator()
+  fullName: System.Collections.ArrayList.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.StringList.GetEnumerator*
+  commentId: Overload:MapQuest.Collections.StringList.GetEnumerator
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_GetEnumerator
+  name: GetEnumerator
+  nameWithType: StringList.GetEnumerator
+  fullName: MapQuest.Collections.StringList.GetEnumerator
+- uid: System.Collections.ArrayList.IndexOf(System.Object)
+  commentId: M:System.Collections.ArrayList.IndexOf(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)
+  name: IndexOf(object)
+  nameWithType: ArrayList.IndexOf(object)
+  fullName: System.Collections.ArrayList.IndexOf(object)
+  nameWithType.vb: ArrayList.IndexOf(Object)
+  fullName.vb: System.Collections.ArrayList.IndexOf(Object)
+  name.vb: IndexOf(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.IndexOf(System.Object)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.IndexOf(System.Object)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Collections.StringList.IndexOf*
+  commentId: Overload:MapQuest.Collections.StringList.IndexOf
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_IndexOf_System_String_
+  name: IndexOf
+  nameWithType: StringList.IndexOf
+  fullName: MapQuest.Collections.StringList.IndexOf
+- uid: MapQuest.Collections.IStringList.IndexOf(System.String)
+  commentId: M:MapQuest.Collections.IStringList.IndexOf(System.String)
+  parent: MapQuest.Collections.IStringList
+  isExternal: true
+  href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_IndexOf_System_String_
+  name: IndexOf(string)
+  nameWithType: IStringList.IndexOf(string)
+  fullName: MapQuest.Collections.IStringList.IndexOf(string)
+  nameWithType.vb: IStringList.IndexOf(String)
+  fullName.vb: MapQuest.Collections.IStringList.IndexOf(String)
+  name.vb: IndexOf(String)
+  spec.csharp:
+  - uid: MapQuest.Collections.IStringList.IndexOf(System.String)
+    name: IndexOf
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_IndexOf_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.IStringList.IndexOf(System.String)
+    name: IndexOf
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_IndexOf_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.ArrayList.Insert(System.Int32,System.Object)
+  commentId: M:System.Collections.ArrayList.Insert(System.Int32,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert
+  name: Insert(int, object)
+  nameWithType: ArrayList.Insert(int, object)
+  fullName: System.Collections.ArrayList.Insert(int, object)
+  nameWithType.vb: ArrayList.Insert(Integer, Object)
+  fullName.vb: System.Collections.ArrayList.Insert(Integer, Object)
+  name.vb: Insert(Integer, Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Insert(System.Int32,System.Object)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Insert(System.Int32,System.Object)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Collections.StringList.Insert*
+  commentId: Overload:MapQuest.Collections.StringList.Insert
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Insert_System_Int32_System_String_
+  name: Insert
+  nameWithType: StringList.Insert
+  fullName: MapQuest.Collections.StringList.Insert
+- uid: MapQuest.Collections.IStringList.Insert(System.Int32,System.String)
+  commentId: M:MapQuest.Collections.IStringList.Insert(System.Int32,System.String)
+  parent: MapQuest.Collections.IStringList
+  isExternal: true
+  href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Insert_System_Int32_System_String_
+  name: Insert(int, string)
+  nameWithType: IStringList.Insert(int, string)
+  fullName: MapQuest.Collections.IStringList.Insert(int, string)
+  nameWithType.vb: IStringList.Insert(Integer, String)
+  fullName.vb: MapQuest.Collections.IStringList.Insert(Integer, String)
+  name.vb: Insert(Integer, String)
+  spec.csharp:
+  - uid: MapQuest.Collections.IStringList.Insert(System.Int32,System.String)
+    name: Insert
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Insert_System_Int32_System_String_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.IStringList.Insert(System.Int32,System.String)
+    name: Insert
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Insert_System_Int32_System_String_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+  commentId: M:System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-ilist)
+  name: ReadOnly(IList)
+  nameWithType: ArrayList.ReadOnly(IList)
+  fullName: System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+    name: ReadOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-ilist)
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+    name: ReadOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-ilist)
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+- uid: MapQuest.Collections.StringList.ReadOnly*
+  commentId: Overload:MapQuest.Collections.StringList.ReadOnly
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_ReadOnly_MapQuest_Collections_StringList_
+  name: ReadOnly
+  nameWithType: StringList.ReadOnly
+  fullName: MapQuest.Collections.StringList.ReadOnly
+- uid: System.Collections.ArrayList.Remove(System.Object)
+  commentId: M:System.Collections.ArrayList.Remove(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove
+  name: Remove(object)
+  nameWithType: ArrayList.Remove(object)
+  fullName: System.Collections.ArrayList.Remove(object)
+  nameWithType.vb: ArrayList.Remove(Object)
+  fullName.vb: System.Collections.ArrayList.Remove(Object)
+  name.vb: Remove(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Collections.StringList.Remove*
+  commentId: Overload:MapQuest.Collections.StringList.Remove
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Remove_System_String_
+  name: Remove
+  nameWithType: StringList.Remove
+  fullName: MapQuest.Collections.StringList.Remove
+- uid: MapQuest.Collections.IStringList.Remove(System.String)
+  commentId: M:MapQuest.Collections.IStringList.Remove(System.String)
+  parent: MapQuest.Collections.IStringList
+  isExternal: true
+  href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Remove_System_String_
+  name: Remove(string)
+  nameWithType: IStringList.Remove(string)
+  fullName: MapQuest.Collections.IStringList.Remove(string)
+  nameWithType.vb: IStringList.Remove(String)
+  fullName.vb: MapQuest.Collections.IStringList.Remove(String)
+  name.vb: Remove(String)
+  spec.csharp:
+  - uid: MapQuest.Collections.IStringList.Remove(System.String)
+    name: Remove
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Remove_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.IStringList.Remove(System.String)
+    name: Remove
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Remove_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.ArrayList.RemoveAt(System.Int32)
+  commentId: M:System.Collections.ArrayList.RemoveAt(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat
+  name: RemoveAt(int)
+  nameWithType: ArrayList.RemoveAt(int)
+  fullName: System.Collections.ArrayList.RemoveAt(int)
+  nameWithType.vb: ArrayList.RemoveAt(Integer)
+  fullName.vb: System.Collections.ArrayList.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.StringList.RemoveAt*
+  commentId: Overload:MapQuest.Collections.StringList.RemoveAt
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_RemoveAt_System_Int32_
+  name: RemoveAt
+  nameWithType: StringList.RemoveAt
+  fullName: MapQuest.Collections.StringList.RemoveAt
+- uid: MapQuest.Collections.IStringList.RemoveAt(System.Int32)
+  commentId: M:MapQuest.Collections.IStringList.RemoveAt(System.Int32)
+  parent: MapQuest.Collections.IStringList
+  isExternal: true
+  href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_RemoveAt_System_Int32_
+  name: RemoveAt(int)
+  nameWithType: IStringList.RemoveAt(int)
+  fullName: MapQuest.Collections.IStringList.RemoveAt(int)
+  nameWithType.vb: IStringList.RemoveAt(Integer)
+  fullName.vb: MapQuest.Collections.IStringList.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: MapQuest.Collections.IStringList.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_RemoveAt_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.IStringList.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_RemoveAt_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.IList.RemoveAt(System.Int32)
+  commentId: M:System.Collections.IList.RemoveAt(System.Int32)
+  parent: System.Collections.IList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.removeat
+  name: RemoveAt(int)
+  nameWithType: IList.RemoveAt(int)
+  fullName: System.Collections.IList.RemoveAt(int)
+  nameWithType.vb: IList.RemoveAt(Integer)
+  fullName.vb: System.Collections.IList.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.IList.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IList.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+  commentId: M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange
+  name: RemoveRange(int, int)
+  nameWithType: ArrayList.RemoveRange(int, int)
+  fullName: System.Collections.ArrayList.RemoveRange(int, int)
+  nameWithType.vb: ArrayList.RemoveRange(Integer, Integer)
+  fullName.vb: System.Collections.ArrayList.RemoveRange(Integer, Integer)
+  name.vb: RemoveRange(Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+    name: RemoveRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+    name: RemoveRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.StringList.RemoveRange*
+  commentId: Overload:MapQuest.Collections.StringList.RemoveRange
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_RemoveRange_System_Int32_System_Int32_
+  name: RemoveRange
+  nameWithType: StringList.RemoveRange
+  fullName: MapQuest.Collections.StringList.RemoveRange
+- uid: System.Collections.ArrayList.Reverse
+  commentId: M:System.Collections.ArrayList.Reverse
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse
+  name: Reverse()
+  nameWithType: ArrayList.Reverse()
+  fullName: System.Collections.ArrayList.Reverse()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Reverse
+    name: Reverse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Reverse
+    name: Reverse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.StringList.Reverse*
+  commentId: Overload:MapQuest.Collections.StringList.Reverse
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Reverse
+  name: Reverse
+  nameWithType: StringList.Reverse
+  fullName: MapQuest.Collections.StringList.Reverse
+- uid: System.Collections.ArrayList.Sort
+  commentId: M:System.Collections.ArrayList.Sort
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort
+  name: Sort()
+  nameWithType: ArrayList.Sort()
+  fullName: System.Collections.ArrayList.Sort()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Sort
+    name: Sort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Sort
+    name: Sort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.StringList.Sort*
+  commentId: Overload:MapQuest.Collections.StringList.Sort
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Sort
+  name: Sort
+  nameWithType: StringList.Sort
+  fullName: MapQuest.Collections.StringList.Sort
+- uid: System.Collections.IComparer
+  commentId: T:System.Collections.IComparer
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  name: IComparer
+  nameWithType: IComparer
+  fullName: System.Collections.IComparer
+- uid: System.Collections.ArrayList.Synchronized(System.Collections.IList)
+  commentId: M:System.Collections.ArrayList.Synchronized(System.Collections.IList)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-ilist)
+  name: Synchronized(IList)
+  nameWithType: ArrayList.Synchronized(IList)
+  fullName: System.Collections.ArrayList.Synchronized(System.Collections.IList)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Synchronized(System.Collections.IList)
+    name: Synchronized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-ilist)
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Synchronized(System.Collections.IList)
+    name: Synchronized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-ilist)
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+- uid: MapQuest.Collections.StringList.Synchronized*
+  commentId: Overload:MapQuest.Collections.StringList.Synchronized
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Synchronized_MapQuest_Collections_StringList_
+  name: Synchronized
+  nameWithType: StringList.Synchronized
+  fullName: MapQuest.Collections.StringList.Synchronized
+- uid: System.Collections.ArrayList.ToArray
+  commentId: M:System.Collections.ArrayList.ToArray
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray
+  name: ToArray()
+  nameWithType: ArrayList.ToArray()
+  fullName: System.Collections.ArrayList.ToArray()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.ToArray
+    name: ToArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.ToArray
+    name: ToArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.StringList.ToArray*
+  commentId: Overload:MapQuest.Collections.StringList.ToArray
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_ToArray
+  name: ToArray
+  nameWithType: StringList.ToArray
+  fullName: MapQuest.Collections.StringList.ToArray
+- uid: System.Collections.ArrayList.TrimToSize
+  commentId: M:System.Collections.ArrayList.TrimToSize
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize
+  name: TrimToSize()
+  nameWithType: ArrayList.TrimToSize()
+  fullName: System.Collections.ArrayList.TrimToSize()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.TrimToSize
+    name: TrimToSize
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.TrimToSize
+    name: TrimToSize
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.StringList.TrimToSize*
+  commentId: Overload:MapQuest.Collections.StringList.TrimToSize
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_TrimToSize
+  name: TrimToSize
+  nameWithType: StringList.TrimToSize
+  fullName: MapQuest.Collections.StringList.TrimToSize
+- uid: System.InvalidCastException
+  commentId: T:System.InvalidCastException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+  name: InvalidCastException
+  nameWithType: InvalidCastException
+  fullName: System.InvalidCastException
+- uid: MapQuest.Collections.StringList.AddAll*
+  commentId: Overload:MapQuest.Collections.StringList.AddAll
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_AddAll_System_Collections_ICollection_
+  name: AddAll
+  nameWithType: StringList.AddAll
+  fullName: MapQuest.Collections.StringList.AddAll
+- uid: MapQuest.Collections.StringList.RemoveAll*
+  commentId: Overload:MapQuest.Collections.StringList.RemoveAll
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_RemoveAll_System_Collections_ICollection_
+  name: RemoveAll
+  nameWithType: StringList.RemoveAll
+  fullName: MapQuest.Collections.StringList.RemoveAll
+- uid: MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)
+  commentId: M:MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Unique_MapQuest_Collections_StringList_
+  name: Unique(StringList)
+  nameWithType: StringList.Unique(StringList)
+  fullName: MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)
+  spec.csharp:
+  - uid: MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)
+    name: Unique
+    isExternal: true
+    href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Unique_MapQuest_Collections_StringList_
+  - name: (
+  - uid: MapQuest.Collections.StringList
+    name: StringList
+    isExternal: true
+    href: MapQuest.Collections.StringList.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)
+    name: Unique
+    isExternal: true
+    href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Unique_MapQuest_Collections_StringList_
+  - name: (
+  - uid: MapQuest.Collections.StringList
+    name: StringList
+    isExternal: true
+    href: MapQuest.Collections.StringList.html
+  - name: )
+- uid: MapQuest.Collections.StringList.Unique*
+  commentId: Overload:MapQuest.Collections.StringList.Unique
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Unique_MapQuest_Collections_StringList_
+  name: Unique
+  nameWithType: StringList.Unique
+  fullName: MapQuest.Collections.StringList.Unique
+- uid: MapQuest.Collections.StringList.MoveTo*
+  commentId: Overload:MapQuest.Collections.StringList.MoveTo
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveTo_System_Int32_System_Int32_
+  name: MoveTo
+  nameWithType: StringList.MoveTo
+  fullName: MapQuest.Collections.StringList.MoveTo
+- uid: MapQuest.Collections.StringList.MoveToTop*
+  commentId: Overload:MapQuest.Collections.StringList.MoveToTop
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveToTop_System_Int32_
+  name: MoveToTop
+  nameWithType: StringList.MoveToTop
+  fullName: MapQuest.Collections.StringList.MoveToTop
+- uid: MapQuest.Collections.StringList.MoveToBottom*
+  commentId: Overload:MapQuest.Collections.StringList.MoveToBottom
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveToBottom_System_Int32_
+  name: MoveToBottom
+  nameWithType: StringList.MoveToBottom
+  fullName: MapQuest.Collections.StringList.MoveToBottom
+- uid: MapQuest.Collections.StringList.MoveUp*
+  commentId: Overload:MapQuest.Collections.StringList.MoveUp
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveUp_System_Int32_
+  name: MoveUp
+  nameWithType: StringList.MoveUp
+  fullName: MapQuest.Collections.StringList.MoveUp
+- uid: MapQuest.Collections.StringList.MoveDown*
+  commentId: Overload:MapQuest.Collections.StringList.MoveDown
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveDown_System_Int32_
+  name: MoveDown
+  nameWithType: StringList.MoveDown
+  fullName: MapQuest.Collections.StringList.MoveDown
+- uid: MapQuest.Collections.StringList.OnMove*
+  commentId: Overload:MapQuest.Collections.StringList.OnMove
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_OnMove_System_String_System_Int32_System_Int32_
+  name: OnMove
+  nameWithType: StringList.OnMove
+  fullName: MapQuest.Collections.StringList.OnMove
+- uid: System.Collections.ArrayList.Clone
+  commentId: M:System.Collections.ArrayList.Clone
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clone
+  name: Clone()
+  nameWithType: ArrayList.Clone()
+  fullName: System.Collections.ArrayList.Clone()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clone
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.StringList.Clone*
+  commentId: Overload:MapQuest.Collections.StringList.Clone
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Clone
+  name: Clone
+  nameWithType: StringList.Clone
+  fullName: MapQuest.Collections.StringList.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList.Count
+  commentId: P:System.Collections.ArrayList.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.count
+  name: Count
+  nameWithType: ArrayList.Count
+  fullName: System.Collections.ArrayList.Count
+- uid: MapQuest.Collections.StringList.Count*
+  commentId: Overload:MapQuest.Collections.StringList.Count
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Count
+  name: Count
+  nameWithType: StringList.Count
+  fullName: MapQuest.Collections.StringList.Count
+- uid: MapQuest.Collections.IStringCollection.Count
+  commentId: P:MapQuest.Collections.IStringCollection.Count
+  parent: MapQuest.Collections.IStringCollection
+  isExternal: true
+  href: MapQuest.Collections.IStringCollection.html#MapQuest_Collections_IStringCollection_Count
+  name: Count
+  nameWithType: IStringCollection.Count
+  fullName: MapQuest.Collections.IStringCollection.Count
+- uid: System.Collections.ICollection.Count
+  commentId: P:System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.count
+  name: Count
+  nameWithType: ICollection.Count
+  fullName: System.Collections.ICollection.Count
+- uid: System.Collections.ArrayList.Item(System.Int32)
+  commentId: P:System.Collections.ArrayList.Item(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: ArrayList.this[int]
+  fullName: System.Collections.ArrayList.this[int]
+  nameWithType.vb: ArrayList.this[](Integer)
+  fullName.vb: System.Collections.ArrayList.this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.ArrayList.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.StringList.Item*
+  commentId: Overload:MapQuest.Collections.StringList.Item
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Item_System_Int32_
+  name: this
+  nameWithType: StringList.this
+  fullName: MapQuest.Collections.StringList.this
+  nameWithType.vb: StringList.this[]
+  fullName.vb: MapQuest.Collections.StringList.this[]
+  name.vb: this[]
+- uid: MapQuest.Collections.IStringList.Item(System.Int32)
+  commentId: P:MapQuest.Collections.IStringList.Item(System.Int32)
+  parent: MapQuest.Collections.IStringList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IStringList.this[int]
+  fullName: MapQuest.Collections.IStringList.this[int]
+  nameWithType.vb: IStringList.this[](Integer)
+  fullName.vb: MapQuest.Collections.IStringList.this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: MapQuest.Collections.IStringList.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_Item_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.StringList.Capacity
+  commentId: P:MapQuest.Collections.StringList.Capacity
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Capacity
+  name: Capacity
+  nameWithType: StringList.Capacity
+  fullName: MapQuest.Collections.StringList.Capacity
+- uid: System.Collections.ArrayList.Capacity
+  commentId: P:System.Collections.ArrayList.Capacity
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.capacity
+  name: Capacity
+  nameWithType: ArrayList.Capacity
+  fullName: System.Collections.ArrayList.Capacity
+- uid: MapQuest.Collections.StringList.Capacity*
+  commentId: Overload:MapQuest.Collections.StringList.Capacity
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Capacity
+  name: Capacity
+  nameWithType: StringList.Capacity
+  fullName: MapQuest.Collections.StringList.Capacity
+- uid: System.Collections.ArrayList.IsFixedSize
+  commentId: P:System.Collections.ArrayList.IsFixedSize
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isfixedsize
+  name: IsFixedSize
+  nameWithType: ArrayList.IsFixedSize
+  fullName: System.Collections.ArrayList.IsFixedSize
+- uid: MapQuest.Collections.StringList.IsFixedSize*
+  commentId: Overload:MapQuest.Collections.StringList.IsFixedSize
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_IsFixedSize
+  name: IsFixedSize
+  nameWithType: StringList.IsFixedSize
+  fullName: MapQuest.Collections.StringList.IsFixedSize
+- uid: MapQuest.Collections.IStringList.IsFixedSize
+  commentId: P:MapQuest.Collections.IStringList.IsFixedSize
+  parent: MapQuest.Collections.IStringList
+  isExternal: true
+  href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_IsFixedSize
+  name: IsFixedSize
+  nameWithType: IStringList.IsFixedSize
+  fullName: MapQuest.Collections.IStringList.IsFixedSize
+- uid: System.Collections.IList.IsFixedSize
+  commentId: P:System.Collections.IList.IsFixedSize
+  parent: System.Collections.IList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.isfixedsize
+  name: IsFixedSize
+  nameWithType: IList.IsFixedSize
+  fullName: System.Collections.IList.IsFixedSize
+- uid: System.Collections.ArrayList.IsReadOnly
+  commentId: P:System.Collections.ArrayList.IsReadOnly
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isreadonly
+  name: IsReadOnly
+  nameWithType: ArrayList.IsReadOnly
+  fullName: System.Collections.ArrayList.IsReadOnly
+- uid: MapQuest.Collections.StringList.IsReadOnly*
+  commentId: Overload:MapQuest.Collections.StringList.IsReadOnly
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_IsReadOnly
+  name: IsReadOnly
+  nameWithType: StringList.IsReadOnly
+  fullName: MapQuest.Collections.StringList.IsReadOnly
+- uid: MapQuest.Collections.IStringList.IsReadOnly
+  commentId: P:MapQuest.Collections.IStringList.IsReadOnly
+  parent: MapQuest.Collections.IStringList
+  isExternal: true
+  href: MapQuest.Collections.IStringList.html#MapQuest_Collections_IStringList_IsReadOnly
+  name: IsReadOnly
+  nameWithType: IStringList.IsReadOnly
+  fullName: MapQuest.Collections.IStringList.IsReadOnly
+- uid: System.Collections.IList.IsReadOnly
+  commentId: P:System.Collections.IList.IsReadOnly
+  parent: System.Collections.IList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.isreadonly
+  name: IsReadOnly
+  nameWithType: IList.IsReadOnly
+  fullName: System.Collections.IList.IsReadOnly
+- uid: System.Collections.ArrayList.IsSynchronized
+  commentId: P:System.Collections.ArrayList.IsSynchronized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.issynchronized
+  name: IsSynchronized
+  nameWithType: ArrayList.IsSynchronized
+  fullName: System.Collections.ArrayList.IsSynchronized
+- uid: MapQuest.Collections.StringList.IsSynchronized*
+  commentId: Overload:MapQuest.Collections.StringList.IsSynchronized
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_IsSynchronized
+  name: IsSynchronized
+  nameWithType: StringList.IsSynchronized
+  fullName: MapQuest.Collections.StringList.IsSynchronized
+- uid: MapQuest.Collections.IStringCollection.IsSynchronized
+  commentId: P:MapQuest.Collections.IStringCollection.IsSynchronized
+  parent: MapQuest.Collections.IStringCollection
+  isExternal: true
+  href: MapQuest.Collections.IStringCollection.html#MapQuest_Collections_IStringCollection_IsSynchronized
+  name: IsSynchronized
+  nameWithType: IStringCollection.IsSynchronized
+  fullName: MapQuest.Collections.IStringCollection.IsSynchronized
+- uid: System.Collections.ICollection.IsSynchronized
+  commentId: P:System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.issynchronized
+  name: IsSynchronized
+  nameWithType: ICollection.IsSynchronized
+  fullName: System.Collections.ICollection.IsSynchronized
+- uid: MapQuest.Collections.StringList.IsUnique
+  commentId: P:MapQuest.Collections.StringList.IsUnique
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_IsUnique
+  name: IsUnique
+  nameWithType: StringList.IsUnique
+  fullName: MapQuest.Collections.StringList.IsUnique
+- uid: MapQuest.Collections.StringList.IsUnique*
+  commentId: Overload:MapQuest.Collections.StringList.IsUnique
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_IsUnique
+  name: IsUnique
+  nameWithType: StringList.IsUnique
+  fullName: MapQuest.Collections.StringList.IsUnique
+- uid: System.Collections.ArrayList.SyncRoot
+  commentId: P:System.Collections.ArrayList.SyncRoot
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.syncroot
+  name: SyncRoot
+  nameWithType: ArrayList.SyncRoot
+  fullName: System.Collections.ArrayList.SyncRoot
+- uid: MapQuest.Collections.StringList.SyncRoot*
+  commentId: Overload:MapQuest.Collections.StringList.SyncRoot
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_SyncRoot
+  name: SyncRoot
+  nameWithType: StringList.SyncRoot
+  fullName: MapQuest.Collections.StringList.SyncRoot
+- uid: MapQuest.Collections.IStringCollection.SyncRoot
+  commentId: P:MapQuest.Collections.IStringCollection.SyncRoot
+  parent: MapQuest.Collections.IStringCollection
+  isExternal: true
+  href: MapQuest.Collections.IStringCollection.html#MapQuest_Collections_IStringCollection_SyncRoot
+  name: SyncRoot
+  nameWithType: IStringCollection.SyncRoot
+  fullName: MapQuest.Collections.IStringCollection.SyncRoot
+- uid: System.Collections.ICollection.SyncRoot
+  commentId: P:System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.syncroot
+  name: SyncRoot
+  nameWithType: ICollection.SyncRoot
+  fullName: System.Collections.ICollection.SyncRoot
+- uid: System.Array
+  commentId: T:System.Array
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.array
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: MapQuest.Collections.StringList.InnerArray*
+  commentId: Overload:MapQuest.Collections.StringList.InnerArray
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_InnerArray
+  name: InnerArray
+  nameWithType: StringList.InnerArray
+  fullName: MapQuest.Collections.StringList.InnerArray
+- uid: MapQuest.Collections.StringList.MoveTo(System.Int32,System.Int32)
+  commentId: M:MapQuest.Collections.StringList.MoveTo(System.Int32,System.Int32)
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveTo_System_Int32_System_Int32_
+  name: MoveTo(int, int)
+  nameWithType: StringList.MoveTo(int, int)
+  fullName: MapQuest.Collections.StringList.MoveTo(int, int)
+  nameWithType.vb: StringList.MoveTo(Integer, Integer)
+  fullName.vb: MapQuest.Collections.StringList.MoveTo(Integer, Integer)
+  name.vb: MoveTo(Integer, Integer)
+  spec.csharp:
+  - uid: MapQuest.Collections.StringList.MoveTo(System.Int32,System.Int32)
+    name: MoveTo
+    isExternal: true
+    href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveTo_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.StringList.MoveTo(System.Int32,System.Int32)
+    name: MoveTo
+    isExternal: true
+    href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveTo_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.StringList.MoveToTop(System.Int32)
+  commentId: M:MapQuest.Collections.StringList.MoveToTop(System.Int32)
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveToTop_System_Int32_
+  name: MoveToTop(int)
+  nameWithType: StringList.MoveToTop(int)
+  fullName: MapQuest.Collections.StringList.MoveToTop(int)
+  nameWithType.vb: StringList.MoveToTop(Integer)
+  fullName.vb: MapQuest.Collections.StringList.MoveToTop(Integer)
+  name.vb: MoveToTop(Integer)
+  spec.csharp:
+  - uid: MapQuest.Collections.StringList.MoveToTop(System.Int32)
+    name: MoveToTop
+    isExternal: true
+    href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveToTop_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.StringList.MoveToTop(System.Int32)
+    name: MoveToTop
+    isExternal: true
+    href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveToTop_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.StringList.MoveToBottom(System.Int32)
+  commentId: M:MapQuest.Collections.StringList.MoveToBottom(System.Int32)
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveToBottom_System_Int32_
+  name: MoveToBottom(int)
+  nameWithType: StringList.MoveToBottom(int)
+  fullName: MapQuest.Collections.StringList.MoveToBottom(int)
+  nameWithType.vb: StringList.MoveToBottom(Integer)
+  fullName.vb: MapQuest.Collections.StringList.MoveToBottom(Integer)
+  name.vb: MoveToBottom(Integer)
+  spec.csharp:
+  - uid: MapQuest.Collections.StringList.MoveToBottom(System.Int32)
+    name: MoveToBottom
+    isExternal: true
+    href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveToBottom_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.StringList.MoveToBottom(System.Int32)
+    name: MoveToBottom
+    isExternal: true
+    href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveToBottom_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.StringList.MoveUp(System.Int32)
+  commentId: M:MapQuest.Collections.StringList.MoveUp(System.Int32)
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveUp_System_Int32_
+  name: MoveUp(int)
+  nameWithType: StringList.MoveUp(int)
+  fullName: MapQuest.Collections.StringList.MoveUp(int)
+  nameWithType.vb: StringList.MoveUp(Integer)
+  fullName.vb: MapQuest.Collections.StringList.MoveUp(Integer)
+  name.vb: MoveUp(Integer)
+  spec.csharp:
+  - uid: MapQuest.Collections.StringList.MoveUp(System.Int32)
+    name: MoveUp
+    isExternal: true
+    href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveUp_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.StringList.MoveUp(System.Int32)
+    name: MoveUp
+    isExternal: true
+    href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveUp_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.StringList.MoveDown(System.Int32)
+  commentId: M:MapQuest.Collections.StringList.MoveDown(System.Int32)
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveDown_System_Int32_
+  name: MoveDown(int)
+  nameWithType: StringList.MoveDown(int)
+  fullName: MapQuest.Collections.StringList.MoveDown(int)
+  nameWithType.vb: StringList.MoveDown(Integer)
+  fullName.vb: MapQuest.Collections.StringList.MoveDown(Integer)
+  name.vb: MoveDown(Integer)
+  spec.csharp:
+  - uid: MapQuest.Collections.StringList.MoveDown(System.Int32)
+    name: MoveDown
+    isExternal: true
+    href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveDown_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.StringList.MoveDown(System.Int32)
+    name: MoveDown
+    isExternal: true
+    href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveDown_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.StringList.IsMovable*
+  commentId: Overload:MapQuest.Collections.StringList.IsMovable
+  isExternal: true
+  href: MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_IsMovable
+  name: IsMovable
+  nameWithType: StringList.IsMovable
+  fullName: MapQuest.Collections.StringList.IsMovable

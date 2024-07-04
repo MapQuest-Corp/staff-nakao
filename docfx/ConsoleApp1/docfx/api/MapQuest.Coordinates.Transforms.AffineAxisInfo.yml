@@ -1,0 +1,737 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  commentId: T:MapQuest.Coordinates.Transforms.AffineAxisInfo
+  id: AffineAxisInfo
+  parent: MapQuest.Coordinates.Transforms
+  children:
+  - MapQuest.Coordinates.Transforms.AffineAxisInfo.#ctor(MapQuest.Coordinates.Transforms.AffineAxisOrientation,MapQuest.Coordinates.Transforms.AffineAxisOrientation)
+  - MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals(MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  - MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals(System.Object)
+  - MapQuest.Coordinates.Transforms.AffineAxisInfo.GetHashCode
+  - MapQuest.Coordinates.Transforms.AffineAxisInfo.Horizontal
+  - MapQuest.Coordinates.Transforms.AffineAxisInfo.Screen
+  - MapQuest.Coordinates.Transforms.AffineAxisInfo.ToString
+  - MapQuest.Coordinates.Transforms.AffineAxisInfo.Vertical
+  - MapQuest.Coordinates.Transforms.AffineAxisInfo.World
+  - MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Equality(MapQuest.Coordinates.Transforms.AffineAxisInfo,MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  - MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Inequality(MapQuest.Coordinates.Transforms.AffineAxisInfo,MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  langs:
+  - csharp
+  - vb
+  name: AffineAxisInfo
+  nameWithType: AffineAxisInfo
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  type: Struct
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public struct AffineAxisInfo
+    content.vb: Public Structure AffineAxisInfo
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.#ctor(MapQuest.Coordinates.Transforms.AffineAxisOrientation,MapQuest.Coordinates.Transforms.AffineAxisOrientation)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineAxisInfo.#ctor(MapQuest.Coordinates.Transforms.AffineAxisOrientation,MapQuest.Coordinates.Transforms.AffineAxisOrientation)
+  id: '#ctor(MapQuest.Coordinates.Transforms.AffineAxisOrientation,MapQuest.Coordinates.Transforms.AffineAxisOrientation)'
+  parent: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  langs:
+  - csharp
+  - vb
+  name: AffineAxisInfo(AffineAxisOrientation, AffineAxisOrientation)
+  nameWithType: AffineAxisInfo.AffineAxisInfo(AffineAxisOrientation, AffineAxisOrientation)
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.AffineAxisInfo(MapQuest.Coordinates.Transforms.AffineAxisOrientation, MapQuest.Coordinates.Transforms.AffineAxisOrientation)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public AffineAxisInfo(AffineAxisOrientation horizontal, AffineAxisOrientation vertical)
+    parameters:
+    - id: horizontal
+      type: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+    - id: vertical
+      type: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+    content.vb: Public Sub New(horizontal As AffineAxisOrientation, vertical As AffineAxisOrientation)
+  overload: MapQuest.Coordinates.Transforms.AffineAxisInfo.#ctor*
+  nameWithType.vb: AffineAxisInfo.New(AffineAxisOrientation, AffineAxisOrientation)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineAxisInfo.New(MapQuest.Coordinates.Transforms.AffineAxisOrientation, MapQuest.Coordinates.Transforms.AffineAxisOrientation)
+  name.vb: New(AffineAxisOrientation, AffineAxisOrientation)
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals(MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals(MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  id: Equals(MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  parent: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Equals(AffineAxisInfo)
+  nameWithType: AffineAxisInfo.Equals(AffineAxisInfo)
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals(MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public bool Equals(AffineAxisInfo obj)
+    parameters:
+    - id: obj
+      type: MapQuest.Coordinates.Transforms.AffineAxisInfo
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(obj As AffineAxisInfo) As Boolean
+  overload: MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals*
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals(System.Object)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: AffineAxisInfo.Equals(object)
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals*
+  nameWithType.vb: AffineAxisInfo.Equals(Object)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.GetHashCode
+  commentId: M:MapQuest.Coordinates.Transforms.AffineAxisInfo.GetHashCode
+  id: GetHashCode
+  parent: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: AffineAxisInfo.GetHashCode()
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.GetHashCode()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: MapQuest.Coordinates.Transforms.AffineAxisInfo.GetHashCode*
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.ToString
+  commentId: M:MapQuest.Coordinates.Transforms.AffineAxisInfo.ToString
+  id: ToString
+  parent: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AffineAxisInfo.ToString()
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.ToString()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: MapQuest.Coordinates.Transforms.AffineAxisInfo.ToString*
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Equality(MapQuest.Coordinates.Transforms.AffineAxisInfo,MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Equality(MapQuest.Coordinates.Transforms.AffineAxisInfo,MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  id: op_Equality(MapQuest.Coordinates.Transforms.AffineAxisInfo,MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  parent: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  langs:
+  - csharp
+  - vb
+  name: operator ==(AffineAxisInfo, AffineAxisInfo)
+  nameWithType: AffineAxisInfo.operator ==(AffineAxisInfo, AffineAxisInfo)
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.operator ==(MapQuest.Coordinates.Transforms.AffineAxisInfo, MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static bool operator ==(AffineAxisInfo axisInfo1, AffineAxisInfo axisInfo2)
+    parameters:
+    - id: axisInfo1
+      type: MapQuest.Coordinates.Transforms.AffineAxisInfo
+    - id: axisInfo2
+      type: MapQuest.Coordinates.Transforms.AffineAxisInfo
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(axisInfo1 As AffineAxisInfo, axisInfo2 As AffineAxisInfo) As Boolean
+  overload: MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Equality*
+  nameWithType.vb: AffineAxisInfo.=(AffineAxisInfo, AffineAxisInfo)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineAxisInfo.=(MapQuest.Coordinates.Transforms.AffineAxisInfo, MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  name.vb: =(AffineAxisInfo, AffineAxisInfo)
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Inequality(MapQuest.Coordinates.Transforms.AffineAxisInfo,MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Inequality(MapQuest.Coordinates.Transforms.AffineAxisInfo,MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  id: op_Inequality(MapQuest.Coordinates.Transforms.AffineAxisInfo,MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  parent: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  langs:
+  - csharp
+  - vb
+  name: operator !=(AffineAxisInfo, AffineAxisInfo)
+  nameWithType: AffineAxisInfo.operator !=(AffineAxisInfo, AffineAxisInfo)
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.operator !=(MapQuest.Coordinates.Transforms.AffineAxisInfo, MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static bool operator !=(AffineAxisInfo axisInfo1, AffineAxisInfo axisInfo2)
+    parameters:
+    - id: axisInfo1
+      type: MapQuest.Coordinates.Transforms.AffineAxisInfo
+    - id: axisInfo2
+      type: MapQuest.Coordinates.Transforms.AffineAxisInfo
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(axisInfo1 As AffineAxisInfo, axisInfo2 As AffineAxisInfo) As Boolean
+  overload: MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Inequality*
+  nameWithType.vb: AffineAxisInfo.<>(AffineAxisInfo, AffineAxisInfo)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineAxisInfo.<>(MapQuest.Coordinates.Transforms.AffineAxisInfo, MapQuest.Coordinates.Transforms.AffineAxisInfo)
+  name.vb: <>(AffineAxisInfo, AffineAxisInfo)
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.Horizontal
+  commentId: P:MapQuest.Coordinates.Transforms.AffineAxisInfo.Horizontal
+  id: Horizontal
+  parent: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Horizontal
+  nameWithType: AffineAxisInfo.Horizontal
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.Horizontal
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public AffineAxisOrientation Horizontal { get; set; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+    content.vb: Public Property Horizontal As AffineAxisOrientation
+  overload: MapQuest.Coordinates.Transforms.AffineAxisInfo.Horizontal*
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.Vertical
+  commentId: P:MapQuest.Coordinates.Transforms.AffineAxisInfo.Vertical
+  id: Vertical
+  parent: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Vertical
+  nameWithType: AffineAxisInfo.Vertical
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.Vertical
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public AffineAxisOrientation Vertical { get; set; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+    content.vb: Public Property Vertical As AffineAxisOrientation
+  overload: MapQuest.Coordinates.Transforms.AffineAxisInfo.Vertical*
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.World
+  commentId: P:MapQuest.Coordinates.Transforms.AffineAxisInfo.World
+  id: World
+  parent: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  langs:
+  - csharp
+  - vb
+  name: World
+  nameWithType: AffineAxisInfo.World
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.World
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static AffineAxisInfo World { get; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineAxisInfo
+    content.vb: Public Shared ReadOnly Property World As AffineAxisInfo
+  overload: MapQuest.Coordinates.Transforms.AffineAxisInfo.World*
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.Screen
+  commentId: P:MapQuest.Coordinates.Transforms.AffineAxisInfo.Screen
+  id: Screen
+  parent: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  langs:
+  - csharp
+  - vb
+  name: Screen
+  nameWithType: AffineAxisInfo.Screen
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.Screen
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static AffineAxisInfo Screen { get; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineAxisInfo
+    content.vb: Public Shared ReadOnly Property Screen As AffineAxisInfo
+  overload: MapQuest.Coordinates.Transforms.AffineAxisInfo.Screen*
+references:
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: MapQuest.Coordinates.Transforms
+  commentId: N:MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates.Transforms
+  nameWithType: MapQuest.Coordinates.Transforms
+  fullName: MapQuest.Coordinates.Transforms
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  commentId: T:MapQuest.Coordinates.Transforms.AffineAxisInfo
+  parent: MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html
+  name: AffineAxisInfo
+  nameWithType: AffineAxisInfo
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.#ctor*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineAxisInfo.#ctor
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html#MapQuest_Coordinates_Transforms_AffineAxisInfo__ctor_MapQuest_Coordinates_Transforms_AffineAxisOrientation_MapQuest_Coordinates_Transforms_AffineAxisOrientation_
+  name: AffineAxisInfo
+  nameWithType: AffineAxisInfo.AffineAxisInfo
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.AffineAxisInfo
+  nameWithType.vb: AffineAxisInfo.New
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineAxisInfo.New
+  name.vb: New
+- uid: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  commentId: T:MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  parent: MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisOrientation.html
+  name: AffineAxisOrientation
+  nameWithType: AffineAxisOrientation
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html#MapQuest_Coordinates_Transforms_AffineAxisInfo_Equals_MapQuest_Coordinates_Transforms_AffineAxisInfo_
+  name: Equals
+  nameWithType: AffineAxisInfo.Equals
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.GetHashCode*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineAxisInfo.GetHashCode
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html#MapQuest_Coordinates_Transforms_AffineAxisInfo_GetHashCode
+  name: GetHashCode
+  nameWithType: AffineAxisInfo.GetHashCode
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.ToString*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineAxisInfo.ToString
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html#MapQuest_Coordinates_Transforms_AffineAxisInfo_ToString
+  name: ToString
+  nameWithType: AffineAxisInfo.ToString
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Equality*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Equality
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html#MapQuest_Coordinates_Transforms_AffineAxisInfo_op_Equality_MapQuest_Coordinates_Transforms_AffineAxisInfo_MapQuest_Coordinates_Transforms_AffineAxisInfo_
+  name: operator ==
+  nameWithType: AffineAxisInfo.operator ==
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.operator ==
+  nameWithType.vb: AffineAxisInfo.=
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineAxisInfo.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Equality*
+    name: ==
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html#MapQuest_Coordinates_Transforms_AffineAxisInfo_op_Equality_MapQuest_Coordinates_Transforms_AffineAxisInfo_MapQuest_Coordinates_Transforms_AffineAxisInfo_
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Inequality*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Inequality
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html#MapQuest_Coordinates_Transforms_AffineAxisInfo_op_Inequality_MapQuest_Coordinates_Transforms_AffineAxisInfo_MapQuest_Coordinates_Transforms_AffineAxisInfo_
+  name: operator !=
+  nameWithType: AffineAxisInfo.operator !=
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.operator !=
+  nameWithType.vb: AffineAxisInfo.<>
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineAxisInfo.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html#MapQuest_Coordinates_Transforms_AffineAxisInfo_op_Inequality_MapQuest_Coordinates_Transforms_AffineAxisInfo_MapQuest_Coordinates_Transforms_AffineAxisInfo_
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.Horizontal*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineAxisInfo.Horizontal
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html#MapQuest_Coordinates_Transforms_AffineAxisInfo_Horizontal
+  name: Horizontal
+  nameWithType: AffineAxisInfo.Horizontal
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.Horizontal
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.Vertical*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineAxisInfo.Vertical
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html#MapQuest_Coordinates_Transforms_AffineAxisInfo_Vertical
+  name: Vertical
+  nameWithType: AffineAxisInfo.Vertical
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.Vertical
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.World*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineAxisInfo.World
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html#MapQuest_Coordinates_Transforms_AffineAxisInfo_World
+  name: World
+  nameWithType: AffineAxisInfo.World
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.World
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo.Screen*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineAxisInfo.Screen
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html#MapQuest_Coordinates_Transforms_AffineAxisInfo_Screen
+  name: Screen
+  nameWithType: AffineAxisInfo.Screen
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo.Screen

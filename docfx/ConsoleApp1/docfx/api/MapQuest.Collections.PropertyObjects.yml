@@ -1,0 +1,2777 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Collections.PropertyObjects
+  commentId: T:MapQuest.Collections.PropertyObjects
+  id: PropertyObjects
+  parent: MapQuest.Collections
+  children:
+  - MapQuest.Collections.PropertyObjects.#ctor
+  - MapQuest.Collections.PropertyObjects.#ctor(MapQuest.Collections.PropertyObjects)
+  - MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IDictionary)
+  - MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IDictionary,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  - MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IDictionary,System.Single)
+  - MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IDictionary,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  - MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  - MapQuest.Collections.PropertyObjects.#ctor(System.Int32)
+  - MapQuest.Collections.PropertyObjects.#ctor(System.Int32,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  - MapQuest.Collections.PropertyObjects.#ctor(System.Int32,System.Int32)
+  - MapQuest.Collections.PropertyObjects.#ctor(System.Int32,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  - MapQuest.Collections.PropertyObjects.Add(System.String,System.Object)
+  - MapQuest.Collections.PropertyObjects.Clear
+  - MapQuest.Collections.PropertyObjects.Clone
+  - MapQuest.Collections.PropertyObjects.Contains(System.String)
+  - MapQuest.Collections.PropertyObjects.ContainsKey(System.String)
+  - MapQuest.Collections.PropertyObjects.ContainsValue(System.Object)
+  - MapQuest.Collections.PropertyObjects.CopyTo(System.Array,System.Int32)
+  - MapQuest.Collections.PropertyObjects.Count
+  - MapQuest.Collections.PropertyObjects.GetEnumerator
+  - MapQuest.Collections.PropertyObjects.IsFixedSize
+  - MapQuest.Collections.PropertyObjects.IsReadOnly
+  - MapQuest.Collections.PropertyObjects.IsSynchronized
+  - MapQuest.Collections.PropertyObjects.Item(System.String)
+  - MapQuest.Collections.PropertyObjects.Keys
+  - MapQuest.Collections.PropertyObjects.Remove(System.String)
+  - MapQuest.Collections.PropertyObjects.SyncRoot
+  - MapQuest.Collections.PropertyObjects.Synchronized(MapQuest.Collections.PropertyObjects)
+  - MapQuest.Collections.PropertyObjects.Values
+  langs:
+  - csharp
+  - vb
+  name: PropertyObjects
+  nameWithType: PropertyObjects
+  fullName: MapQuest.Collections.PropertyObjects
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: キーのハッシュ コードに基づいて編成された、<xref href="System.Object" data-throw-if-not-resolved="false"></xref> 用のキーと値の組み合わせのコレクションを表します。
+  remarks: >-
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+            は、 <xref href="System.Object" data-throw-if-not-resolved="false"></xref> 用に最適化された <xref href="System.Collections.Hashtable" data-throw-if-not-resolved="false"></xref> を提供します。
+
+            <p>
+            詳細については <xref href="System.Collections.Hashtable" data-throw-if-not-resolved="false"></xref> を参照してください。
+
+            </p>
+  example: []
+  syntax:
+    content: 'public class PropertyObjects : IDictionary, ICollection, IEnumerable, ICloneable'
+    content.vb: Public Class PropertyObjects Implements IDictionary, ICollection, IEnumerable, ICloneable
+  seealso:
+  - linkId: System.Collections.Hashtable
+    commentId: T:System.Collections.Hashtable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IDictionary
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Collections.PropertyObjects.#ctor
+  commentId: M:MapQuest.Collections.PropertyObjects.#ctor
+  id: '#ctor'
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: PropertyObjects()
+  nameWithType: PropertyObjects.PropertyObjects()
+  fullName: MapQuest.Collections.PropertyObjects.PropertyObjects()
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    既定の初期量を備え、既定のテーブル占有率、既定のハッシュ コード プロバイダ、
+
+
+    および既定の比較演算子を使用する、空の <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> を作成します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.%23ctor" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public PropertyObjects()
+    content.vb: Public Sub New()
+  overload: MapQuest.Collections.PropertyObjects.#ctor*
+  nameWithType.vb: PropertyObjects.New()
+  fullName.vb: MapQuest.Collections.PropertyObjects.New()
+  name.vb: New()
+- uid: MapQuest.Collections.PropertyObjects.#ctor(MapQuest.Collections.PropertyObjects)
+  commentId: M:MapQuest.Collections.PropertyObjects.#ctor(MapQuest.Collections.PropertyObjects)
+  id: '#ctor(MapQuest.Collections.PropertyObjects)'
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: PropertyObjects(PropertyObjects)
+  nameWithType: PropertyObjects.PropertyObjects(PropertyObjects)
+  fullName: MapQuest.Collections.PropertyObjects.PropertyObjects(MapQuest.Collections.PropertyObjects)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> を指定して、新しいインスタンスを初期化します。
+  remarks: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> をコピーするためのコピー コンストラクタです。
+  example: []
+  syntax:
+    content: public PropertyObjects(PropertyObjects original)
+    parameters:
+    - id: original
+      type: MapQuest.Collections.PropertyObjects
+      description: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> オブジェクト。
+    content.vb: Public Sub New(original As PropertyObjects)
+  overload: MapQuest.Collections.PropertyObjects.#ctor*
+  nameWithType.vb: PropertyObjects.New(PropertyObjects)
+  fullName.vb: MapQuest.Collections.PropertyObjects.New(MapQuest.Collections.PropertyObjects)
+  name.vb: New(PropertyObjects)
+- uid: MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IDictionary)
+  commentId: M:MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IDictionary)
+  id: '#ctor(System.Collections.IDictionary)'
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: PropertyObjects(IDictionary)
+  nameWithType: PropertyObjects.PropertyObjects(IDictionary)
+  fullName: MapQuest.Collections.PropertyObjects.PropertyObjects(System.Collections.IDictionary)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    コピーされる要素の数と同じ初期量を備え、既定のテーブル占有率、
+
+
+    既定のハッシュ コード プロバイダ、および既定の比較演算子を使用する新しい 
+
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> に、指定したディクショナリから要素をコピーします。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.%23ctor(System.Collections.IDictionary)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public PropertyObjects(IDictionary dictionary)
+    parameters:
+    - id: dictionary
+      type: System.Collections.IDictionary
+      description: 新しい <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> にコピーする <xref href="System.Collections.IDictionary" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub New(dictionary As IDictionary)
+  overload: MapQuest.Collections.PropertyObjects.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">dictionary</code> が null 参照 (Visual Basic では <b>Nothing</b>) です。
+  nameWithType.vb: PropertyObjects.New(IDictionary)
+  fullName.vb: MapQuest.Collections.PropertyObjects.New(System.Collections.IDictionary)
+  name.vb: New(IDictionary)
+- uid: MapQuest.Collections.PropertyObjects.#ctor(System.Int32)
+  commentId: M:MapQuest.Collections.PropertyObjects.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: PropertyObjects(int)
+  nameWithType: PropertyObjects.PropertyObjects(int)
+  fullName: MapQuest.Collections.PropertyObjects.PropertyObjects(int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定した初期量を備え、既定のテーブル占有率、既定のハッシュ コード プロバイダ、
+
+
+    および既定の比較演算子を使用する、空の <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> を作成します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.%23ctor(System.Int32)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public PropertyObjects(int capacity)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> が初期状態で格納できる要素の概数。
+    content.vb: Public Sub New(capacity As Integer)
+  overload: MapQuest.Collections.PropertyObjects.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">capacity</code> が 0 未満です。
+  nameWithType.vb: PropertyObjects.New(Integer)
+  fullName.vb: MapQuest.Collections.PropertyObjects.New(Integer)
+  name.vb: New(Integer)
+- uid: MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IDictionary,System.Single)
+  commentId: M:MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IDictionary,System.Single)
+  id: '#ctor(System.Collections.IDictionary,System.Single)'
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: PropertyObjects(IDictionary, float)
+  nameWithType: PropertyObjects.PropertyObjects(IDictionary, float)
+  fullName: MapQuest.Collections.PropertyObjects.PropertyObjects(System.Collections.IDictionary, float)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    コピーされる要素の数と同じ初期量を備え、指定したテーブル占有率、
+
+
+    既定のハッシュ コード プロバイダ、および既定の比較演算子を使用する新しい 
+
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> に、指定したディクショナリから要素をコピーします。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.%23ctor(System.Collections.IDictionary%2cSystem.Single)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public PropertyObjects(IDictionary dictionary, float loadFactor)
+    parameters:
+    - id: dictionary
+      type: System.Collections.IDictionary
+      description: 新しい <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> にコピーする <xref href="System.Collections.IDictionary" data-throw-if-not-resolved="false"></xref> 。
+    - id: loadFactor
+      type: System.Single
+      description: バケット数に対する要素数の最大比率を示す、0.1 から 1.0 までの範囲の数値。
+    content.vb: Public Sub New(dictionary As IDictionary, loadFactor As Single)
+  overload: MapQuest.Collections.PropertyObjects.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">dictionary</code> が null 参照 (Visual Basic では <b>Nothing</b>) です。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">loadFactor</code> が 0.1 未満です。
+
+              <p>または</p><code class="paramref">loadFactor</code> が 1.0 より大きい値です。
+  nameWithType.vb: PropertyObjects.New(IDictionary, Single)
+  fullName.vb: MapQuest.Collections.PropertyObjects.New(System.Collections.IDictionary, Single)
+  name.vb: New(IDictionary, Single)
+- uid: MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  commentId: M:MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  id: '#ctor(System.Collections.IHashCodeProvider,System.Collections.IComparer)'
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: PropertyObjects(IHashCodeProvider, IComparer)
+  nameWithType: PropertyObjects.PropertyObjects(IHashCodeProvider, IComparer)
+  fullName: MapQuest.Collections.PropertyObjects.PropertyObjects(System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    コピーされる要素の数と同じ初期量を備え、指定したテーブル占有率、
+
+
+    既定のハッシュ コード プロバイダ、および既定の比較演算子を使用する新しい 
+
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> に、指定したディクショナリから要素をコピーします。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.%23ctor(System.Collections.IHashCodeProvider%2cSystem.Collections.IComparer)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public PropertyObjects(IHashCodeProvider codeProvider, IComparer comparer)
+    parameters:
+    - id: codeProvider
+      type: System.Collections.IHashCodeProvider
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 内のすべてのキーにハッシュ コードを提供する 
+                <xref href="System.Collections.IHashCodeProvider" data-throw-if-not-resolved="false"></xref> 。 
+                <p>または</p> 
+                各キーの <xref href="System.Object.GetHashCode" data-throw-if-not-resolved="false"></xref> 
+                の実装である既定のハッシュ コード プロバイダを使用する場合は 
+                null 参照 (Visual Basic では <B>Nothing</B>) 。
+    - id: comparer
+      type: System.Collections.IComparer
+      description: >-
+        2 つのキーが等しいかどうかを判断するために使用する <xref href="System.Collections.IComparer" data-throw-if-not-resolved="false"></xref> 。 
+
+        <p>または</p> 
+
+        各キーの <xref href="System.Object.Equals(System.Object)" data-throw-if-not-resolved="false"></xref> の実装である既定の比較演算子を使用する
+
+        場合は null 参照 (Visual Basic では <B>Nothing</B>) 。
+    content.vb: Public Sub New(codeProvider As IHashCodeProvider, comparer As IComparer)
+  overload: MapQuest.Collections.PropertyObjects.#ctor*
+  nameWithType.vb: PropertyObjects.New(IHashCodeProvider, IComparer)
+  fullName.vb: MapQuest.Collections.PropertyObjects.New(System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  name.vb: New(IHashCodeProvider, IComparer)
+- uid: MapQuest.Collections.PropertyObjects.#ctor(System.Int32,System.Int32)
+  commentId: M:MapQuest.Collections.PropertyObjects.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: PropertyObjects(int, int)
+  nameWithType: PropertyObjects.PropertyObjects(int, int)
+  fullName: MapQuest.Collections.PropertyObjects.PropertyObjects(int, int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定した初期量を備え、指定したテーブル占有率、既定のハッシュ コード プロバイダ、
+
+
+    および既定の比較演算子を使用する、空の <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> を作成します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.%23ctor(System.Int32%2cSystem.Single)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public PropertyObjects(int capacity, int loadFactor)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> が初期状態で格納できる要素の概数。
+    - id: loadFactor
+      type: System.Int32
+      description: バケット数に対する要素数の最大比率を示す、0.1 から 1.0 までの範囲の数値。
+    content.vb: Public Sub New(capacity As Integer, loadFactor As Integer)
+  overload: MapQuest.Collections.PropertyObjects.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">capacity</code> が 0 未満です。
+
+              <p>または</p><code class="paramref">loadFactor</code> が 0.1 未満です。
+
+              <p>または</p><code class="paramref">loadFactor</code> が 1.0 より大きい値です。
+  nameWithType.vb: PropertyObjects.New(Integer, Integer)
+  fullName.vb: MapQuest.Collections.PropertyObjects.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IDictionary,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  commentId: M:MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IDictionary,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  id: '#ctor(System.Collections.IDictionary,System.Collections.IHashCodeProvider,System.Collections.IComparer)'
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: PropertyObjects(IDictionary, IHashCodeProvider, IComparer)
+  nameWithType: PropertyObjects.PropertyObjects(IDictionary, IHashCodeProvider, IComparer)
+  fullName: MapQuest.Collections.PropertyObjects.PropertyObjects(System.Collections.IDictionary, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    コピーされる要素の数と同じ初期量を備え、既定のテーブル占有率、
+
+
+    指定したハッシュ コード プロバイダ、および指定した比較演算子を使用する新しい 
+
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> に、指定したディクショナリから要素をコピーします。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.%23ctor(System.Collections.IDictionary%2cSystem.Collections.IHashCodeProvider%2cSystem.Collections.IComparer)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public PropertyObjects(IDictionary dictionary, IHashCodeProvider codeProvider, IComparer comparer)
+    parameters:
+    - id: dictionary
+      type: System.Collections.IDictionary
+      description: 新しい <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> にコピーする <xref href="System.Collections.IDictionary" data-throw-if-not-resolved="false"></xref> 。
+    - id: codeProvider
+      type: System.Collections.IHashCodeProvider
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 内のすべてのキーにハッシュ コードを提供する 
+                <xref href="System.Collections.IHashCodeProvider" data-throw-if-not-resolved="false"></xref> 。 
+                <p>または</p> 
+                各キーの <xref href="System.Object.GetHashCode" data-throw-if-not-resolved="false"></xref> 
+                の実装である既定のハッシュ コード プロバイダを使用する場合は 
+                null 参照 (Visual Basic では <B>Nothing</B>) 。
+    - id: comparer
+      type: System.Collections.IComparer
+      description: >-
+        2 つのキーが等しいかどうかを判断するために使用する <xref href="System.Collections.IComparer" data-throw-if-not-resolved="false"></xref> 。 
+
+        <p>または</p> 
+
+        各キーの <xref href="System.Object.Equals(System.Object)" data-throw-if-not-resolved="false"></xref> の実装である既定の比較演算子を使用する
+
+        場合は null 参照 (Visual Basic では <B>Nothing</B>) 。
+    content.vb: Public Sub New(dictionary As IDictionary, codeProvider As IHashCodeProvider, comparer As IComparer)
+  overload: MapQuest.Collections.PropertyObjects.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">dictionary</code> が null 参照 (Visual Basic では <b>Nothing</b>) です。
+  nameWithType.vb: PropertyObjects.New(IDictionary, IHashCodeProvider, IComparer)
+  fullName.vb: MapQuest.Collections.PropertyObjects.New(System.Collections.IDictionary, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  name.vb: New(IDictionary, IHashCodeProvider, IComparer)
+- uid: MapQuest.Collections.PropertyObjects.#ctor(System.Int32,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  commentId: M:MapQuest.Collections.PropertyObjects.#ctor(System.Int32,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  id: '#ctor(System.Int32,System.Collections.IHashCodeProvider,System.Collections.IComparer)'
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: PropertyObjects(int, IHashCodeProvider, IComparer)
+  nameWithType: PropertyObjects.PropertyObjects(int, IHashCodeProvider, IComparer)
+  fullName: MapQuest.Collections.PropertyObjects.PropertyObjects(int, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    コピーされる要素の数と同じ初期量を備え、既定のテーブル占有率、
+
+
+    指定したハッシュ コード プロバイダ、および指定した比較演算子を使用する新しい 
+
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> に、指定したディクショナリから要素をコピーします。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.%23ctor(System.Int32%2cSystem.Collections.IHashCodeProvider%2cSystem.Collections.IComparer)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public PropertyObjects(int capacity, IHashCodeProvider codeProvider, IComparer comparer)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> が初期状態で格納できる要素の概数。
+    - id: codeProvider
+      type: System.Collections.IHashCodeProvider
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 内のすべてのキーにハッシュ コードを提供する 
+                <xref href="System.Collections.IHashCodeProvider" data-throw-if-not-resolved="false"></xref> 。 
+                <p>または</p> 
+                各キーの <xref href="System.Object.GetHashCode" data-throw-if-not-resolved="false"></xref> 
+                の実装である既定のハッシュ コード プロバイダを使用する場合は 
+                null 参照 (Visual Basic では <B>Nothing</B>) 。
+    - id: comparer
+      type: System.Collections.IComparer
+      description: >-
+        2 つのキーが等しいかどうかを判断するために使用する <xref href="System.Collections.IComparer" data-throw-if-not-resolved="false"></xref> 。 
+
+        <p>または</p> 
+
+        各キーの <xref href="System.Object.Equals(System.Object)" data-throw-if-not-resolved="false"></xref> の実装である既定の比較演算子を使用する
+
+        場合は null 参照 (Visual Basic では <B>Nothing</B>) 。
+    content.vb: Public Sub New(capacity As Integer, codeProvider As IHashCodeProvider, comparer As IComparer)
+  overload: MapQuest.Collections.PropertyObjects.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">capacity</code> が 0 未満です。
+  nameWithType.vb: PropertyObjects.New(Integer, IHashCodeProvider, IComparer)
+  fullName.vb: MapQuest.Collections.PropertyObjects.New(Integer, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  name.vb: New(Integer, IHashCodeProvider, IComparer)
+- uid: MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IDictionary,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  commentId: M:MapQuest.Collections.PropertyObjects.#ctor(System.Collections.IDictionary,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  id: '#ctor(System.Collections.IDictionary,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)'
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: PropertyObjects(IDictionary, float, IHashCodeProvider, IComparer)
+  nameWithType: PropertyObjects.PropertyObjects(IDictionary, float, IHashCodeProvider, IComparer)
+  fullName: MapQuest.Collections.PropertyObjects.PropertyObjects(System.Collections.IDictionary, float, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    コピーされる要素の数と同じ初期量を備え、指定したテーブル占有率、
+
+
+    指定したハッシュ コード プロバイダ、および指定した比較演算子を使用する新しい 
+
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> に、指定したディクショナリから要素をコピーします。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.%23ctor(System.Collections.IDictionary%2cSystem.Single%2cSystem.Collections.IHashCodeProvider%2cSystem.Collections.IComparer)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public PropertyObjects(IDictionary dictionary, float loadFactor, IHashCodeProvider codeProvider, IComparer comparer)
+    parameters:
+    - id: dictionary
+      type: System.Collections.IDictionary
+      description: 新しい <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> にコピーする <xref href="System.Collections.IDictionary" data-throw-if-not-resolved="false"></xref> 。
+    - id: loadFactor
+      type: System.Single
+      description: バケット数に対する要素数の最大比率を示す、0.1 から 1.0 までの範囲の数値。
+    - id: codeProvider
+      type: System.Collections.IHashCodeProvider
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 内のすべてのキーにハッシュ コードを提供する 
+                <xref href="System.Collections.IHashCodeProvider" data-throw-if-not-resolved="false"></xref> 。 
+                <p>または</p> 
+                各キーの <xref href="System.Object.GetHashCode" data-throw-if-not-resolved="false"></xref> 
+                の実装である既定のハッシュ コード プロバイダを使用する場合は 
+                null 参照 (Visual Basic では <B>Nothing</B>) 。
+    - id: comparer
+      type: System.Collections.IComparer
+      description: >-
+        2 つのキーが等しいかどうかを判断するために使用する <xref href="System.Collections.IComparer" data-throw-if-not-resolved="false"></xref> 。 
+
+        <p>または</p> 
+
+        各キーの <xref href="System.Object.Equals(System.Object)" data-throw-if-not-resolved="false"></xref> の実装である既定の比較演算子を使用する
+
+        場合は null 参照 (Visual Basic では <B>Nothing</B>) 。
+    content.vb: Public Sub New(dictionary As IDictionary, loadFactor As Single, codeProvider As IHashCodeProvider, comparer As IComparer)
+  overload: MapQuest.Collections.PropertyObjects.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">dictionary</code> が null 参照 (Visual Basic では <b>Nothing</b>) です。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">loadFactor</code> が 0.1 未満です。
+
+              <p>または</p><code class="paramref">loadFactor</code> が 1.0 より大きい値です。
+  nameWithType.vb: PropertyObjects.New(IDictionary, Single, IHashCodeProvider, IComparer)
+  fullName.vb: MapQuest.Collections.PropertyObjects.New(System.Collections.IDictionary, Single, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  name.vb: New(IDictionary, Single, IHashCodeProvider, IComparer)
+- uid: MapQuest.Collections.PropertyObjects.#ctor(System.Int32,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  commentId: M:MapQuest.Collections.PropertyObjects.#ctor(System.Int32,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  id: '#ctor(System.Int32,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)'
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: PropertyObjects(int, float, IHashCodeProvider, IComparer)
+  nameWithType: PropertyObjects.PropertyObjects(int, float, IHashCodeProvider, IComparer)
+  fullName: MapQuest.Collections.PropertyObjects.PropertyObjects(int, float, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定した初期量を備え、指定したテーブル占有率、指定した
+
+
+    ハッシュ コード プロバイダ、および指定した比較演算子を使用する、
+
+
+    空の <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> を作成します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.%23ctor(System.Int32%2cSystem.Single%2cSystem.Collections.IHashCodeProvider%2cSystem.Collections.IComparer)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public PropertyObjects(int capacity, float loadFactor, IHashCodeProvider codeProvider, IComparer comparer)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> が初期状態で格納できる要素の概数。
+    - id: loadFactor
+      type: System.Single
+      description: バケット数に対する要素数の最大比率を示す、0.1 から 1.0 までの範囲の数値。
+    - id: codeProvider
+      type: System.Collections.IHashCodeProvider
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 内のすべてのキーにハッシュ コードを提供する 
+                <xref href="System.Collections.IHashCodeProvider" data-throw-if-not-resolved="false"></xref> 。 
+                <p>または</p> 
+                各キーの <xref href="System.Object.GetHashCode" data-throw-if-not-resolved="false"></xref> 
+                の実装である既定のハッシュ コード プロバイダを使用する場合は 
+                null 参照 (Visual Basic では <B>Nothing</B>) 。
+    - id: comparer
+      type: System.Collections.IComparer
+      description: >-
+        2 つのキーが等しいかどうかを判断するために使用する <xref href="System.Collections.IComparer" data-throw-if-not-resolved="false"></xref> 。 
+
+        <p>または</p> 
+
+        各キーの <xref href="System.Object.Equals(System.Object)" data-throw-if-not-resolved="false"></xref> の実装である既定の比較演算子を使用する
+
+        場合は null 参照 (Visual Basic では <B>Nothing</B>) 。
+    content.vb: Public Sub New(capacity As Integer, loadFactor As Single, codeProvider As IHashCodeProvider, comparer As IComparer)
+  overload: MapQuest.Collections.PropertyObjects.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">capacity</code> が 0 未満です。
+
+              <p>または</p><code class="paramref">loadFactor</code> が 0.1 未満です。
+
+              <p>または</p><code class="paramref">loadFactor</code> が 1.0 より大きい値です。
+  nameWithType.vb: PropertyObjects.New(Integer, Single, IHashCodeProvider, IComparer)
+  fullName.vb: MapQuest.Collections.PropertyObjects.New(Integer, Single, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  name.vb: New(Integer, Single, IHashCodeProvider, IComparer)
+- uid: MapQuest.Collections.PropertyObjects.GetEnumerator
+  commentId: M:MapQuest.Collections.PropertyObjects.GetEnumerator
+  id: GetEnumerator
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: PropertyObjects.GetEnumerator()
+  fullName: MapQuest.Collections.PropertyObjects.GetEnumerator()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> を反復処理できる列挙子 
+            <xref href="MapQuest.Collections.PropertyObjectsEnumerator" data-throw-if-not-resolved="false"></xref> を作成します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.GetEnumerator" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public PropertyObjectsEnumerator GetEnumerator()
+    return:
+      type: MapQuest.Collections.PropertyObjectsEnumerator
+      description: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> の <xref href="MapQuest.Collections.PropertyObjectsEnumerator" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function GetEnumerator() As PropertyObjectsEnumerator
+  overload: MapQuest.Collections.PropertyObjects.GetEnumerator*
+- uid: MapQuest.Collections.PropertyObjects.Remove(System.String)
+  commentId: M:MapQuest.Collections.PropertyObjects.Remove(System.String)
+  id: Remove(System.String)
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: Remove(string)
+  nameWithType: PropertyObjects.Remove(string)
+  fullName: MapQuest.Collections.PropertyObjects.Remove(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 指定したキーを持つ要素を <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> から削除します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.Remove(System.Object)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public void Remove(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: 削除する要素のキー。
+    content.vb: Public Sub Remove(key As String)
+  overload: MapQuest.Collections.PropertyObjects.Remove*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">key</code> が null 参照 (Visual Basic では <B>Nothing</B>) です。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+              <p>または</p><xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+  nameWithType.vb: PropertyObjects.Remove(String)
+  fullName.vb: MapQuest.Collections.PropertyObjects.Remove(String)
+  name.vb: Remove(String)
+- uid: MapQuest.Collections.PropertyObjects.Contains(System.String)
+  commentId: M:MapQuest.Collections.PropertyObjects.Contains(System.String)
+  id: Contains(System.String)
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: Contains(string)
+  nameWithType: PropertyObjects.Contains(string)
+  fullName: MapQuest.Collections.PropertyObjects.Contains(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> に特定のキーが格納されているかどうかを判断します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.Contains(System.Object)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public bool Contains(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 内で検索されるキー。
+    return:
+      type: System.Boolean
+      description: >-
+        指定したキーを持つ要素が <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+
+        に格納されている場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+    content.vb: Public Function Contains(key As String) As Boolean
+  overload: MapQuest.Collections.PropertyObjects.Contains*
+  nameWithType.vb: PropertyObjects.Contains(String)
+  fullName.vb: MapQuest.Collections.PropertyObjects.Contains(String)
+  name.vb: Contains(String)
+- uid: MapQuest.Collections.PropertyObjects.Clear
+  commentId: M:MapQuest.Collections.PropertyObjects.Clear
+  id: Clear
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: PropertyObjects.Clear()
+  fullName: MapQuest.Collections.PropertyObjects.Clear()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> からすべての要素を削除します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.Clear" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: MapQuest.Collections.PropertyObjects.Clear*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+  implements:
+  - System.Collections.IDictionary.Clear
+- uid: MapQuest.Collections.PropertyObjects.Add(System.String,System.Object)
+  commentId: M:MapQuest.Collections.PropertyObjects.Add(System.String,System.Object)
+  id: Add(System.String,System.Object)
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: Add(string, object)
+  nameWithType: PropertyObjects.Add(string, object)
+  fullName: MapQuest.Collections.PropertyObjects.Add(string, object)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定したキーおよび値を持つ要素を 
+
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> に追加します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.Add(System.Object%2cSystem.Object)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public void Add(string key, object value)
+    parameters:
+    - id: key
+      type: System.String
+      description: 追加する要素のキー。
+    - id: value
+      type: System.Object
+      description: >-
+        追加する要素の値。
+
+
+        値は null 参照 (Visual Basic では <B>Nothing</B>) に設定できます。
+    content.vb: Public Sub Add(key As String, value As Object)
+  overload: MapQuest.Collections.PropertyObjects.Add*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">key</code> が null 参照 (Visual Basic では <B>Nothing</B>) です。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: 同じキーを持つ要素が、 <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> に既に存在します。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+              <p>または</p><xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+  nameWithType.vb: PropertyObjects.Add(String, Object)
+  fullName.vb: MapQuest.Collections.PropertyObjects.Add(String, Object)
+  name.vb: Add(String, Object)
+- uid: MapQuest.Collections.PropertyObjects.CopyTo(System.Array,System.Int32)
+  commentId: M:MapQuest.Collections.PropertyObjects.CopyTo(System.Array,System.Int32)
+  id: CopyTo(System.Array,System.Int32)
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Array, int)
+  nameWithType: PropertyObjects.CopyTo(Array, int)
+  fullName: MapQuest.Collections.PropertyObjects.CopyTo(System.Array, int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    1 次元の <xref href="System.Array" data-throw-if-not-resolved="false"></xref> インスタンスの指定したインデックスに 
+
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> の要素をコピーします。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.CopyTo(System.Array%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public void CopyTo(Array array, int index)
+    parameters:
+    - id: array
+      type: System.Array
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+                 から要素がコピーされる 1 次元の <xref href="System.Array" data-throw-if-not-resolved="false"></xref> 。
+
+                 この配列には、0 から始まるインデックス番号が必要です。
+    - id: index
+      type: System.Int32
+      description: コピーの開始位置となる、<code class="paramref">array</code> の 0 から始まるインデックス番号。
+    content.vb: Public Sub CopyTo(array As Array, index As Integer)
+  overload: MapQuest.Collections.PropertyObjects.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">array</code> が null 参照 (Visual Basic では <b>Nothing</b>) です。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> が 0 未満です。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      <code class="paramref">array</code> が多次元です。
+
+               <p>または</p><code class="paramref">index</code> が <code class="paramref">array</code> の長さ以上です。
+
+               <p>または</p>
+               コピー元の <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+               の <xref href="System.Object" data-throw-if-not-resolved="false"></xref> 数が、コピー先の <code class="paramref">array</code> 
+               に格納できる要素の数を超えています。
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: >-
+      コピー元の <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+
+      の型が、コピー先の <code class="paramref">array</code> の型に自動的にキャストできません。
+  implements:
+  - System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  nameWithType.vb: PropertyObjects.CopyTo(Array, Integer)
+  fullName.vb: MapQuest.Collections.PropertyObjects.CopyTo(System.Array, Integer)
+  name.vb: CopyTo(Array, Integer)
+- uid: MapQuest.Collections.PropertyObjects.Clone
+  commentId: M:MapQuest.Collections.PropertyObjects.Clone
+  id: Clone
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: PropertyObjects.Clone()
+  fullName: MapQuest.Collections.PropertyObjects.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> の簡易コピーを生成します。
+  example: []
+  syntax:
+    content: public PropertyObjects Clone()
+    return:
+      type: MapQuest.Collections.PropertyObjects
+      description: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> の簡易コピーである新しいオブジェクト。
+    content.vb: Public Function Clone() As PropertyObjects
+  overload: MapQuest.Collections.PropertyObjects.Clone*
+- uid: MapQuest.Collections.PropertyObjects.ContainsKey(System.String)
+  commentId: M:MapQuest.Collections.PropertyObjects.ContainsKey(System.String)
+  id: ContainsKey(System.String)
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: ContainsKey(string)
+  nameWithType: PropertyObjects.ContainsKey(string)
+  fullName: MapQuest.Collections.PropertyObjects.ContainsKey(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> に特定のキーが格納されているかどうかを判断します。
+  remarks: >-
+    ほとんどの場合、この実装は O(1) に近くなります。
+
+
+    <p>
+
+    このメソッドは、 <xref href="MapQuest.Collections.PropertyObjects.Contains(System.String)" data-throw-if-not-resolved="false"></xref> とまったく同じ動作をします。
+
+
+    </p>
+  example: []
+  syntax:
+    content: public bool ContainsKey(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 内で検索されるキー。
+    return:
+      type: System.Boolean
+      description: >-
+        指定したキーを持つ要素が <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+
+        に格納されている場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+    content.vb: Public Function ContainsKey(key As String) As Boolean
+  overload: MapQuest.Collections.PropertyObjects.ContainsKey*
+  seealso:
+  - linkId: MapQuest.Collections.PropertyObjects.Contains(System.String)
+    commentId: M:MapQuest.Collections.PropertyObjects.Contains(System.String)
+  nameWithType.vb: PropertyObjects.ContainsKey(String)
+  fullName.vb: MapQuest.Collections.PropertyObjects.ContainsKey(String)
+  name.vb: ContainsKey(String)
+- uid: MapQuest.Collections.PropertyObjects.ContainsValue(System.Object)
+  commentId: M:MapQuest.Collections.PropertyObjects.ContainsValue(System.Object)
+  id: ContainsValue(System.Object)
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: ContainsValue(object)
+  nameWithType: PropertyObjects.ContainsValue(object)
+  fullName: MapQuest.Collections.PropertyObjects.ContainsValue(object)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> に特定の値が格納されているかどうかを判断します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.ContainsValue(System.Object)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public bool ContainsValue(object value)
+    parameters:
+    - id: value
+      type: System.Object
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 内で検索される値。
+
+                値は null 参照 (Visual Basic では <B>Nothing</B>) に設定できます。
+    return:
+      type: System.Boolean
+      description: >-
+        指定した <code class="paramref">value</code> を持つ要素が <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+
+        に格納されている場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+    content.vb: Public Function ContainsValue(value As Object) As Boolean
+  overload: MapQuest.Collections.PropertyObjects.ContainsValue*
+  nameWithType.vb: PropertyObjects.ContainsValue(Object)
+  fullName.vb: MapQuest.Collections.PropertyObjects.ContainsValue(Object)
+  name.vb: ContainsValue(Object)
+- uid: MapQuest.Collections.PropertyObjects.Synchronized(MapQuest.Collections.PropertyObjects)
+  commentId: M:MapQuest.Collections.PropertyObjects.Synchronized(MapQuest.Collections.PropertyObjects)
+  id: Synchronized(MapQuest.Collections.PropertyObjects)
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: Synchronized(PropertyObjects)
+  nameWithType: PropertyObjects.Synchronized(PropertyObjects)
+  fullName: MapQuest.Collections.PropertyObjects.Synchronized(MapQuest.Collections.PropertyObjects)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 用の同期された (スレッド セーフな) ラッパーを返します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public static PropertyObjects Synchronized(PropertyObjects nonSync)
+    parameters:
+    - id: nonSync
+      type: MapQuest.Collections.PropertyObjects
+      description: 同期する <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: MapQuest.Collections.PropertyObjects
+      description: <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 用の同期された (スレッド セーフな) ラッパー。
+    content.vb: Public Shared Function Synchronized(nonSync As PropertyObjects) As PropertyObjects
+  overload: MapQuest.Collections.PropertyObjects.Synchronized*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">nonSync</code> が null 参照 (Visual Basic では <B>Nothing</B>) です。
+- uid: MapQuest.Collections.PropertyObjects.IsReadOnly
+  commentId: P:MapQuest.Collections.PropertyObjects.IsReadOnly
+  id: IsReadOnly
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: PropertyObjects.IsReadOnly
+  fullName: MapQuest.Collections.PropertyObjects.IsReadOnly
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+            が読み取り専用かどうかを示す値を取得します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.IsReadOnly" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+                が読み取り専用の場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+                既定値は <b>false</b> です。
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: MapQuest.Collections.PropertyObjects.IsReadOnly*
+  implements:
+  - System.Collections.IDictionary.IsReadOnly
+- uid: MapQuest.Collections.PropertyObjects.Item(System.String)
+  commentId: P:MapQuest.Collections.PropertyObjects.Item(System.String)
+  id: Item(System.String)
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: this[string]
+  nameWithType: PropertyObjects.this[string]
+  fullName: MapQuest.Collections.PropertyObjects.this[string]
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 指定したキーに関連付けられている値を取得または設定します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.Item(System.Object)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public object this[string key] { get; set; }
+    parameters:
+    - id: key
+      type: System.String
+      description: 値を取得または設定する対象のキー。
+    return:
+      type: System.Object
+      description: >-
+        指定したキーに関連付けられている値。指定したキーが見つからない場合、
+
+
+        そのキーを取得しようとした場合は 
+
+        null 参照 (Visual Basic では <B>Nothing</B>) が返され、
+
+
+        そのキーを設定しようとした場合は、指定したキーを使用して新しい要素が作成されます。
+    content.vb: Public Default Property this[](key As String) As Object
+  overload: MapQuest.Collections.PropertyObjects.Item*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">key</code> が null 参照 (Visual Basic では <B>Nothing</B>) です。
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      このプロパティが設定されていますが、 <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> が読み取り専用です。
+
+
+      <p>または</p>
+
+      このプロパティが設定されていますが、 <code class="paramref">key</code> がコレクション内に存在しません。
+
+
+      また、 <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> が固定サイズです。
+  nameWithType.vb: PropertyObjects.this[](String)
+  fullName.vb: MapQuest.Collections.PropertyObjects.this[](String)
+  name.vb: this[](String)
+- uid: MapQuest.Collections.PropertyObjects.Values
+  commentId: P:MapQuest.Collections.PropertyObjects.Values
+  id: Values
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: Values
+  nameWithType: PropertyObjects.Values
+  fullName: MapQuest.Collections.PropertyObjects.Values
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 内の値を格納している 
+            <xref href="System.Collections.ICollection" data-throw-if-not-resolved="false"></xref> を取得します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.Values" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public ICollection Values { get; }
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 内の値を格納している 
+                <xref href="System.Collections.ICollection" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public ReadOnly Property Values As ICollection
+  overload: MapQuest.Collections.PropertyObjects.Values*
+  implements:
+  - System.Collections.IDictionary.Values
+- uid: MapQuest.Collections.PropertyObjects.Keys
+  commentId: P:MapQuest.Collections.PropertyObjects.Keys
+  id: Keys
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: Keys
+  nameWithType: PropertyObjects.Keys
+  fullName: MapQuest.Collections.PropertyObjects.Keys
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 内のキーを格納している 
+            <xref href="System.Collections.ICollection" data-throw-if-not-resolved="false"></xref> を取得します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.Keys" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public ICollection Keys { get; }
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 内のキーを格納している 
+                <xref href="System.Collections.ICollection" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public ReadOnly Property Keys As ICollection
+  overload: MapQuest.Collections.PropertyObjects.Keys*
+  implements:
+  - System.Collections.IDictionary.Keys
+- uid: MapQuest.Collections.PropertyObjects.IsFixedSize
+  commentId: P:MapQuest.Collections.PropertyObjects.IsFixedSize
+  id: IsFixedSize
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: IsFixedSize
+  nameWithType: PropertyObjects.IsFixedSize
+  fullName: MapQuest.Collections.PropertyObjects.IsFixedSize
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+             が固定サイズかどうかを示す値を取得します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.IsFixedSize" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public bool IsFixedSize { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+                 が固定サイズの場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+                 既定値は <b>false</b> です。
+    content.vb: Public ReadOnly Property IsFixedSize As Boolean
+  overload: MapQuest.Collections.PropertyObjects.IsFixedSize*
+  implements:
+  - System.Collections.IDictionary.IsFixedSize
+- uid: MapQuest.Collections.PropertyObjects.IsSynchronized
+  commentId: P:MapQuest.Collections.PropertyObjects.IsSynchronized
+  id: IsSynchronized
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: IsSynchronized
+  nameWithType: PropertyObjects.IsSynchronized
+  fullName: MapQuest.Collections.PropertyObjects.IsSynchronized
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+            へのアクセスが同期されている (スレッド セーフである) かどうかを示す値を取得します。
+
+            <p><!-- Non Support 2005/01/20 -->
+            このプロパティは、現在サポートしていません。
+
+            </p>
+  remarks: 詳細については <xref href="System.Collections.Hashtable.IsSynchronized" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public bool IsSynchronized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+                へのアクセスが同期されている (スレッド セーフである) 場合は <b>true</b> 。
+
+                それ以外の場合は <b>false</b> 。
+    content.vb: Public ReadOnly Property IsSynchronized As Boolean
+  overload: MapQuest.Collections.PropertyObjects.IsSynchronized*
+  implements:
+  - System.Collections.ICollection.IsSynchronized
+- uid: MapQuest.Collections.PropertyObjects.Count
+  commentId: P:MapQuest.Collections.PropertyObjects.Count
+  id: Count
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: PropertyObjects.Count
+  fullName: MapQuest.Collections.PropertyObjects.Count
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+            に格納されているキーと値の組み合わせの数を取得します。
+  remarks: 詳細については <xref href="System.Collections.Hashtable.Count" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+                に格納されているキーと値の組み合わせの数。
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: MapQuest.Collections.PropertyObjects.Count*
+  implements:
+  - System.Collections.ICollection.Count
+- uid: MapQuest.Collections.PropertyObjects.SyncRoot
+  commentId: P:MapQuest.Collections.PropertyObjects.SyncRoot
+  id: SyncRoot
+  parent: MapQuest.Collections.PropertyObjects
+  langs:
+  - csharp
+  - vb
+  name: SyncRoot
+  nameWithType: PropertyObjects.SyncRoot
+  fullName: MapQuest.Collections.PropertyObjects.SyncRoot
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+            へのアクセスを同期するために使用できるオブジェクトを取得します。
+
+            <p><!-- Non Support 2005/01/20 -->
+            このプロパティは、現在サポートしていません。
+
+            </p>
+  remarks: 詳細については <xref href="System.Collections.Hashtable.SyncRoot" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public object SyncRoot { get; }
+    parameters: []
+    return:
+      type: System.Object
+      description: >-
+        <xref href="MapQuest.Collections.PropertyObjects" data-throw-if-not-resolved="false"></xref> 
+                へのアクセスを同期するために使用できるオブジェクト。
+    content.vb: Public ReadOnly Property SyncRoot As Object
+  overload: MapQuest.Collections.PropertyObjects.SyncRoot*
+  implements:
+  - System.Collections.ICollection.SyncRoot
+references:
+- uid: System.Collections.Hashtable
+  commentId: T:System.Collections.Hashtable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable
+  name: Hashtable
+  nameWithType: Hashtable
+  fullName: System.Collections.Hashtable
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Collections.PropertyObjects
+  commentId: T:MapQuest.Collections.PropertyObjects
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html
+  name: PropertyObjects
+  nameWithType: PropertyObjects
+  fullName: MapQuest.Collections.PropertyObjects
+- uid: MapQuest.Collections
+  commentId: N:MapQuest.Collections
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Collections
+  nameWithType: MapQuest.Collections
+  fullName: MapQuest.Collections
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+- uid: System.Collections.IDictionary
+  commentId: T:System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Hashtable.#ctor
+  commentId: M:System.Collections.Hashtable.#ctor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor
+  name: Hashtable()
+  nameWithType: Hashtable.Hashtable()
+  fullName: System.Collections.Hashtable.Hashtable()
+  nameWithType.vb: Hashtable.New()
+  fullName.vb: System.Collections.Hashtable.New()
+  name.vb: New()
+  spec.csharp:
+  - uid: System.Collections.Hashtable.#ctor
+    name: Hashtable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor
+  - name: (
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.PropertyObjects.#ctor*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.#ctor
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects__ctor
+  name: PropertyObjects
+  nameWithType: PropertyObjects.PropertyObjects
+  fullName: MapQuest.Collections.PropertyObjects.PropertyObjects
+  nameWithType.vb: PropertyObjects.New
+  fullName.vb: MapQuest.Collections.PropertyObjects.New
+  name.vb: New
+- uid: System.Collections.Hashtable.#ctor(System.Collections.IDictionary)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-collections-idictionary)
+  name: Hashtable(IDictionary)
+  nameWithType: Hashtable.Hashtable(IDictionary)
+  fullName: System.Collections.Hashtable.Hashtable(System.Collections.IDictionary)
+  nameWithType.vb: Hashtable.New(IDictionary)
+  fullName.vb: System.Collections.Hashtable.New(System.Collections.IDictionary)
+  name.vb: New(IDictionary)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.#ctor(System.Collections.IDictionary)
+    name: Hashtable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-collections-idictionary)
+  - name: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Collections.Hashtable.#ctor(System.Int32)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-int32)
+  name: Hashtable(int)
+  nameWithType: Hashtable.Hashtable(int)
+  fullName: System.Collections.Hashtable.Hashtable(int)
+  nameWithType.vb: Hashtable.New(Integer)
+  fullName.vb: System.Collections.Hashtable.New(Integer)
+  name.vb: New(Integer)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.#ctor(System.Int32)
+    name: Hashtable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-collections-idictionary-system-single)
+  name: Hashtable(IDictionary, float)
+  nameWithType: Hashtable.Hashtable(IDictionary, float)
+  fullName: System.Collections.Hashtable.Hashtable(System.Collections.IDictionary, float)
+  nameWithType.vb: Hashtable.New(IDictionary, Single)
+  fullName.vb: System.Collections.Hashtable.New(System.Collections.IDictionary, Single)
+  name.vb: New(IDictionary, Single)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single)
+    name: Hashtable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-collections-idictionary-system-single)
+  - name: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Collections.IHashCodeProvider
+  commentId: T:System.Collections.IHashCodeProvider
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ihashcodeprovider
+  name: IHashCodeProvider
+  nameWithType: IHashCodeProvider
+  fullName: System.Collections.IHashCodeProvider
+- uid: System.Collections.IComparer
+  commentId: T:System.Collections.IComparer
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  name: IComparer
+  nameWithType: IComparer
+  fullName: System.Collections.IComparer
+- uid: System.Collections.Hashtable.#ctor(System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-collections-ihashcodeprovider-system-collections-icomparer)
+  name: Hashtable(IHashCodeProvider, IComparer)
+  nameWithType: Hashtable.Hashtable(IHashCodeProvider, IComparer)
+  fullName: System.Collections.Hashtable.Hashtable(System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  nameWithType.vb: Hashtable.New(IHashCodeProvider, IComparer)
+  fullName.vb: System.Collections.Hashtable.New(System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  name.vb: New(IHashCodeProvider, IComparer)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.#ctor(System.Collections.IHashCodeProvider,System.Collections.IComparer)
+    name: Hashtable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-collections-ihashcodeprovider-system-collections-icomparer)
+  - name: (
+  - uid: System.Collections.IHashCodeProvider
+    name: IHashCodeProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ihashcodeprovider
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Collections.IHashCodeProvider
+    name: IHashCodeProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ihashcodeprovider
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: System.Collections.Hashtable.#ctor(System.Int32,System.Single)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Int32,System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-int32-system-single)
+  name: Hashtable(int, float)
+  nameWithType: Hashtable.Hashtable(int, float)
+  fullName: System.Collections.Hashtable.Hashtable(int, float)
+  nameWithType.vb: Hashtable.New(Integer, Single)
+  fullName.vb: System.Collections.Hashtable.New(Integer, Single)
+  name.vb: New(Integer, Single)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.#ctor(System.Int32,System.Single)
+    name: Hashtable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-int32-system-single)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-collections-idictionary-system-collections-ihashcodeprovider-system-collections-icomparer)
+  name: Hashtable(IDictionary, IHashCodeProvider, IComparer)
+  nameWithType: Hashtable.Hashtable(IDictionary, IHashCodeProvider, IComparer)
+  fullName: System.Collections.Hashtable.Hashtable(System.Collections.IDictionary, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  nameWithType.vb: Hashtable.New(IDictionary, IHashCodeProvider, IComparer)
+  fullName.vb: System.Collections.Hashtable.New(System.Collections.IDictionary, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  name.vb: New(IDictionary, IHashCodeProvider, IComparer)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+    name: Hashtable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-collections-idictionary-system-collections-ihashcodeprovider-system-collections-icomparer)
+  - name: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IHashCodeProvider
+    name: IHashCodeProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ihashcodeprovider
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IHashCodeProvider
+    name: IHashCodeProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ihashcodeprovider
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: System.Collections.Hashtable.#ctor(System.Int32,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Int32,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-int32-system-collections-ihashcodeprovider-system-collections-icomparer)
+  name: Hashtable(int, IHashCodeProvider, IComparer)
+  nameWithType: Hashtable.Hashtable(int, IHashCodeProvider, IComparer)
+  fullName: System.Collections.Hashtable.Hashtable(int, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  nameWithType.vb: Hashtable.New(Integer, IHashCodeProvider, IComparer)
+  fullName.vb: System.Collections.Hashtable.New(Integer, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  name.vb: New(Integer, IHashCodeProvider, IComparer)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.#ctor(System.Int32,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+    name: Hashtable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-int32-system-collections-ihashcodeprovider-system-collections-icomparer)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IHashCodeProvider
+    name: IHashCodeProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ihashcodeprovider
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IHashCodeProvider
+    name: IHashCodeProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ihashcodeprovider
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-collections-idictionary-system-single-system-collections-ihashcodeprovider-system-collections-icomparer)
+  name: Hashtable(IDictionary, float, IHashCodeProvider, IComparer)
+  nameWithType: Hashtable.Hashtable(IDictionary, float, IHashCodeProvider, IComparer)
+  fullName: System.Collections.Hashtable.Hashtable(System.Collections.IDictionary, float, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  nameWithType.vb: Hashtable.New(IDictionary, Single, IHashCodeProvider, IComparer)
+  fullName.vb: System.Collections.Hashtable.New(System.Collections.IDictionary, Single, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  name.vb: New(IDictionary, Single, IHashCodeProvider, IComparer)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+    name: Hashtable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-collections-idictionary-system-single-system-collections-ihashcodeprovider-system-collections-icomparer)
+  - name: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IHashCodeProvider
+    name: IHashCodeProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ihashcodeprovider
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IHashCodeProvider
+    name: IHashCodeProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ihashcodeprovider
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: System.Collections.Hashtable.#ctor(System.Int32,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Int32,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-int32-system-single-system-collections-ihashcodeprovider-system-collections-icomparer)
+  name: Hashtable(int, float, IHashCodeProvider, IComparer)
+  nameWithType: Hashtable.Hashtable(int, float, IHashCodeProvider, IComparer)
+  fullName: System.Collections.Hashtable.Hashtable(int, float, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  nameWithType.vb: Hashtable.New(Integer, Single, IHashCodeProvider, IComparer)
+  fullName.vb: System.Collections.Hashtable.New(Integer, Single, System.Collections.IHashCodeProvider, System.Collections.IComparer)
+  name.vb: New(Integer, Single, IHashCodeProvider, IComparer)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.#ctor(System.Int32,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)
+    name: Hashtable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.-ctor#system-collections-hashtable-ctor(system-int32-system-single-system-collections-ihashcodeprovider-system-collections-icomparer)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IHashCodeProvider
+    name: IHashCodeProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ihashcodeprovider
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IHashCodeProvider
+    name: IHashCodeProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ihashcodeprovider
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: MapQuest.Collections.PropertyObjectsEnumerator
+  commentId: T:MapQuest.Collections.PropertyObjectsEnumerator
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjectsEnumerator.html
+  name: PropertyObjectsEnumerator
+  nameWithType: PropertyObjectsEnumerator
+  fullName: MapQuest.Collections.PropertyObjectsEnumerator
+- uid: System.Collections.Hashtable.GetEnumerator
+  commentId: M:System.Collections.Hashtable.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.getenumerator
+  name: GetEnumerator()
+  nameWithType: Hashtable.GetEnumerator()
+  fullName: System.Collections.Hashtable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Hashtable.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Hashtable.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.getenumerator
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.PropertyObjects.GetEnumerator*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.GetEnumerator
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_GetEnumerator
+  name: GetEnumerator
+  nameWithType: PropertyObjects.GetEnumerator
+  fullName: MapQuest.Collections.PropertyObjects.GetEnumerator
+- uid: System.Collections.Hashtable.Remove(System.Object)
+  commentId: M:System.Collections.Hashtable.Remove(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.remove
+  name: Remove(object)
+  nameWithType: Hashtable.Remove(object)
+  fullName: System.Collections.Hashtable.Remove(object)
+  nameWithType.vb: Hashtable.Remove(Object)
+  fullName.vb: System.Collections.Hashtable.Remove(Object)
+  name.vb: Remove(Object)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.remove
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Hashtable.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.remove
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: MapQuest.Collections.PropertyObjects.Remove*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.Remove
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Remove_System_String_
+  name: Remove
+  nameWithType: PropertyObjects.Remove
+  fullName: MapQuest.Collections.PropertyObjects.Remove
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Hashtable.Contains(System.Object)
+  commentId: M:System.Collections.Hashtable.Contains(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.contains
+  name: Contains(object)
+  nameWithType: Hashtable.Contains(object)
+  fullName: System.Collections.Hashtable.Contains(object)
+  nameWithType.vb: Hashtable.Contains(Object)
+  fullName.vb: System.Collections.Hashtable.Contains(Object)
+  name.vb: Contains(Object)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.Contains(System.Object)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.contains
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Hashtable.Contains(System.Object)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.contains
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Collections.PropertyObjects.Contains*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.Contains
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Contains_System_String_
+  name: Contains
+  nameWithType: PropertyObjects.Contains
+  fullName: MapQuest.Collections.PropertyObjects.Contains
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Hashtable.Clear
+  commentId: M:System.Collections.Hashtable.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.clear
+  name: Clear()
+  nameWithType: Hashtable.Clear()
+  fullName: System.Collections.Hashtable.Clear()
+  spec.csharp:
+  - uid: System.Collections.Hashtable.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Hashtable.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.clear
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.PropertyObjects.Clear*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.Clear
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Clear
+  name: Clear
+  nameWithType: PropertyObjects.Clear
+  fullName: MapQuest.Collections.PropertyObjects.Clear
+- uid: System.Collections.IDictionary.Clear
+  commentId: M:System.Collections.IDictionary.Clear
+  parent: System.Collections.IDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.clear
+  name: Clear()
+  nameWithType: IDictionary.Clear()
+  fullName: System.Collections.IDictionary.Clear()
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.clear
+  - name: (
+  - name: )
+- uid: System.Collections.Hashtable.Add(System.Object,System.Object)
+  commentId: M:System.Collections.Hashtable.Add(System.Object,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.add
+  name: Add(object, object)
+  nameWithType: Hashtable.Add(object, object)
+  fullName: System.Collections.Hashtable.Add(object, object)
+  nameWithType.vb: Hashtable.Add(Object, Object)
+  fullName.vb: System.Collections.Hashtable.Add(Object, Object)
+  name.vb: Add(Object, Object)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.Add(System.Object,System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.add
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Hashtable.Add(System.Object,System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.add
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: MapQuest.Collections.PropertyObjects.Add*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.Add
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Add_System_String_System_Object_
+  name: Add
+  nameWithType: PropertyObjects.Add
+  fullName: MapQuest.Collections.PropertyObjects.Add
+- uid: System.Array
+  commentId: T:System.Array
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.array
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: System.Collections.Hashtable.CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.Hashtable.CopyTo(System.Array,System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.copyto
+  name: CopyTo(Array, int)
+  nameWithType: Hashtable.CopyTo(Array, int)
+  fullName: System.Collections.Hashtable.CopyTo(System.Array, int)
+  nameWithType.vb: Hashtable.CopyTo(Array, Integer)
+  fullName.vb: System.Collections.Hashtable.CopyTo(System.Array, Integer)
+  name.vb: CopyTo(Array, Integer)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.copyto
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Hashtable.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.copyto
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.InvalidCastException
+  commentId: T:System.InvalidCastException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+  name: InvalidCastException
+  nameWithType: InvalidCastException
+  fullName: System.InvalidCastException
+- uid: MapQuest.Collections.PropertyObjects.CopyTo*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.CopyTo
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_CopyTo_System_Array_System_Int32_
+  name: CopyTo
+  nameWithType: PropertyObjects.CopyTo
+  fullName: MapQuest.Collections.PropertyObjects.CopyTo
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.copyto
+  name: CopyTo(Array, int)
+  nameWithType: ICollection.CopyTo(Array, int)
+  fullName: System.Collections.ICollection.CopyTo(System.Array, int)
+  nameWithType.vb: ICollection.CopyTo(Array, Integer)
+  fullName.vb: System.Collections.ICollection.CopyTo(System.Array, Integer)
+  name.vb: CopyTo(Array, Integer)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.copyto
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.copyto
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.PropertyObjects.Clone*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.Clone
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Clone
+  name: Clone
+  nameWithType: PropertyObjects.Clone
+  fullName: MapQuest.Collections.PropertyObjects.Clone
+- uid: MapQuest.Collections.PropertyObjects.Contains(System.String)
+  commentId: M:MapQuest.Collections.PropertyObjects.Contains(System.String)
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Contains_System_String_
+  name: Contains(string)
+  nameWithType: PropertyObjects.Contains(string)
+  fullName: MapQuest.Collections.PropertyObjects.Contains(string)
+  nameWithType.vb: PropertyObjects.Contains(String)
+  fullName.vb: MapQuest.Collections.PropertyObjects.Contains(String)
+  name.vb: Contains(String)
+  spec.csharp:
+  - uid: MapQuest.Collections.PropertyObjects.Contains(System.String)
+    name: Contains
+    isExternal: true
+    href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Contains_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Collections.PropertyObjects.Contains(System.String)
+    name: Contains
+    isExternal: true
+    href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Contains_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MapQuest.Collections.PropertyObjects.ContainsKey*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.ContainsKey
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_ContainsKey_System_String_
+  name: ContainsKey
+  nameWithType: PropertyObjects.ContainsKey
+  fullName: MapQuest.Collections.PropertyObjects.ContainsKey
+- uid: System.Collections.Hashtable.ContainsValue(System.Object)
+  commentId: M:System.Collections.Hashtable.ContainsValue(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.containsvalue
+  name: ContainsValue(object)
+  nameWithType: Hashtable.ContainsValue(object)
+  fullName: System.Collections.Hashtable.ContainsValue(object)
+  nameWithType.vb: Hashtable.ContainsValue(Object)
+  fullName.vb: System.Collections.Hashtable.ContainsValue(Object)
+  name.vb: ContainsValue(Object)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.ContainsValue(System.Object)
+    name: ContainsValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.containsvalue
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Hashtable.ContainsValue(System.Object)
+    name: ContainsValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.containsvalue
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Collections.PropertyObjects.ContainsValue*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.ContainsValue
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_ContainsValue_System_Object_
+  name: ContainsValue
+  nameWithType: PropertyObjects.ContainsValue
+  fullName: MapQuest.Collections.PropertyObjects.ContainsValue
+- uid: System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+  commentId: M:System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.synchronized
+  name: Synchronized(Hashtable)
+  nameWithType: Hashtable.Synchronized(Hashtable)
+  fullName: System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+  spec.csharp:
+  - uid: System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+    name: Synchronized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.synchronized
+  - name: (
+  - uid: System.Collections.Hashtable
+    name: Hashtable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+    name: Synchronized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.synchronized
+  - name: (
+  - uid: System.Collections.Hashtable
+    name: Hashtable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable
+  - name: )
+- uid: MapQuest.Collections.PropertyObjects.Synchronized*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.Synchronized
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Synchronized_MapQuest_Collections_PropertyObjects_
+  name: Synchronized
+  nameWithType: PropertyObjects.Synchronized
+  fullName: MapQuest.Collections.PropertyObjects.Synchronized
+- uid: System.Collections.Hashtable.IsReadOnly
+  commentId: P:System.Collections.Hashtable.IsReadOnly
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.isreadonly
+  name: IsReadOnly
+  nameWithType: Hashtable.IsReadOnly
+  fullName: System.Collections.Hashtable.IsReadOnly
+- uid: MapQuest.Collections.PropertyObjects.IsReadOnly*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.IsReadOnly
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_IsReadOnly
+  name: IsReadOnly
+  nameWithType: PropertyObjects.IsReadOnly
+  fullName: MapQuest.Collections.PropertyObjects.IsReadOnly
+- uid: System.Collections.IDictionary.IsReadOnly
+  commentId: P:System.Collections.IDictionary.IsReadOnly
+  parent: System.Collections.IDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.isreadonly
+  name: IsReadOnly
+  nameWithType: IDictionary.IsReadOnly
+  fullName: System.Collections.IDictionary.IsReadOnly
+- uid: System.Collections.Hashtable.Item(System.Object)
+  commentId: P:System.Collections.Hashtable.Item(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: this[object]
+  nameWithType: Hashtable.this[object]
+  fullName: System.Collections.Hashtable.this[object]
+  nameWithType.vb: Hashtable.this[](Object)
+  fullName.vb: System.Collections.Hashtable.this[](Object)
+  name.vb: this[](Object)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Hashtable.Item(System.Object)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.item
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Collections.PropertyObjects.Item*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.Item
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Item_System_String_
+  name: this
+  nameWithType: PropertyObjects.this
+  fullName: MapQuest.Collections.PropertyObjects.this
+  nameWithType.vb: PropertyObjects.this[]
+  fullName.vb: MapQuest.Collections.PropertyObjects.this[]
+  name.vb: this[]
+- uid: System.Collections.Hashtable.Values
+  commentId: P:System.Collections.Hashtable.Values
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.values
+  name: Values
+  nameWithType: Hashtable.Values
+  fullName: System.Collections.Hashtable.Values
+- uid: MapQuest.Collections.PropertyObjects.Values*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.Values
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Values
+  name: Values
+  nameWithType: PropertyObjects.Values
+  fullName: MapQuest.Collections.PropertyObjects.Values
+- uid: System.Collections.IDictionary.Values
+  commentId: P:System.Collections.IDictionary.Values
+  parent: System.Collections.IDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.values
+  name: Values
+  nameWithType: IDictionary.Values
+  fullName: System.Collections.IDictionary.Values
+- uid: System.Collections.Hashtable.Keys
+  commentId: P:System.Collections.Hashtable.Keys
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.keys
+  name: Keys
+  nameWithType: Hashtable.Keys
+  fullName: System.Collections.Hashtable.Keys
+- uid: MapQuest.Collections.PropertyObjects.Keys*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.Keys
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Keys
+  name: Keys
+  nameWithType: PropertyObjects.Keys
+  fullName: MapQuest.Collections.PropertyObjects.Keys
+- uid: System.Collections.IDictionary.Keys
+  commentId: P:System.Collections.IDictionary.Keys
+  parent: System.Collections.IDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.keys
+  name: Keys
+  nameWithType: IDictionary.Keys
+  fullName: System.Collections.IDictionary.Keys
+- uid: System.Collections.Hashtable.IsFixedSize
+  commentId: P:System.Collections.Hashtable.IsFixedSize
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.isfixedsize
+  name: IsFixedSize
+  nameWithType: Hashtable.IsFixedSize
+  fullName: System.Collections.Hashtable.IsFixedSize
+- uid: MapQuest.Collections.PropertyObjects.IsFixedSize*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.IsFixedSize
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_IsFixedSize
+  name: IsFixedSize
+  nameWithType: PropertyObjects.IsFixedSize
+  fullName: MapQuest.Collections.PropertyObjects.IsFixedSize
+- uid: System.Collections.IDictionary.IsFixedSize
+  commentId: P:System.Collections.IDictionary.IsFixedSize
+  parent: System.Collections.IDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.isfixedsize
+  name: IsFixedSize
+  nameWithType: IDictionary.IsFixedSize
+  fullName: System.Collections.IDictionary.IsFixedSize
+- uid: System.Collections.Hashtable.IsSynchronized
+  commentId: P:System.Collections.Hashtable.IsSynchronized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.issynchronized
+  name: IsSynchronized
+  nameWithType: Hashtable.IsSynchronized
+  fullName: System.Collections.Hashtable.IsSynchronized
+- uid: MapQuest.Collections.PropertyObjects.IsSynchronized*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.IsSynchronized
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_IsSynchronized
+  name: IsSynchronized
+  nameWithType: PropertyObjects.IsSynchronized
+  fullName: MapQuest.Collections.PropertyObjects.IsSynchronized
+- uid: System.Collections.ICollection.IsSynchronized
+  commentId: P:System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.issynchronized
+  name: IsSynchronized
+  nameWithType: ICollection.IsSynchronized
+  fullName: System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.Hashtable.Count
+  commentId: P:System.Collections.Hashtable.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.count
+  name: Count
+  nameWithType: Hashtable.Count
+  fullName: System.Collections.Hashtable.Count
+- uid: MapQuest.Collections.PropertyObjects.Count*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.Count
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_Count
+  name: Count
+  nameWithType: PropertyObjects.Count
+  fullName: MapQuest.Collections.PropertyObjects.Count
+- uid: System.Collections.ICollection.Count
+  commentId: P:System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.count
+  name: Count
+  nameWithType: ICollection.Count
+  fullName: System.Collections.ICollection.Count
+- uid: System.Collections.Hashtable.SyncRoot
+  commentId: P:System.Collections.Hashtable.SyncRoot
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.hashtable.syncroot
+  name: SyncRoot
+  nameWithType: Hashtable.SyncRoot
+  fullName: System.Collections.Hashtable.SyncRoot
+- uid: MapQuest.Collections.PropertyObjects.SyncRoot*
+  commentId: Overload:MapQuest.Collections.PropertyObjects.SyncRoot
+  isExternal: true
+  href: MapQuest.Collections.PropertyObjects.html#MapQuest_Collections_PropertyObjects_SyncRoot
+  name: SyncRoot
+  nameWithType: PropertyObjects.SyncRoot
+  fullName: MapQuest.Collections.PropertyObjects.SyncRoot
+- uid: System.Collections.ICollection.SyncRoot
+  commentId: P:System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.syncroot
+  name: SyncRoot
+  nameWithType: ICollection.SyncRoot
+  fullName: System.Collections.ICollection.SyncRoot

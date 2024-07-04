@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.FlaggedPointType
+  commentId: T:MapQuest.Coordinates.FlaggedPointType
+  id: FlaggedPointType
+  parent: MapQuest.Coordinates
+  children:
+  - MapQuest.Coordinates.FlaggedPointType.Hidden
+  - MapQuest.Coordinates.FlaggedPointType.HideToChild
+  - MapQuest.Coordinates.FlaggedPointType.HideToJunior
+  - MapQuest.Coordinates.FlaggedPointType.HideToParent
+  - MapQuest.Coordinates.FlaggedPointType.HideToSenior
+  - MapQuest.Coordinates.FlaggedPointType.JumpToLeft
+  - MapQuest.Coordinates.FlaggedPointType.JumpToRight
+  - MapQuest.Coordinates.FlaggedPointType.Visible
+  langs:
+  - csharp
+  - vb
+  name: FlaggedPointType
+  nameWithType: FlaggedPointType
+  fullName: MapQuest.Coordinates.FlaggedPointType
+  type: Enum
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  syntax:
+    content: 'public enum FlaggedPointType : byte'
+    content.vb: Public Enum FlaggedPointType As Byte
+- uid: MapQuest.Coordinates.FlaggedPointType.Visible
+  commentId: F:MapQuest.Coordinates.FlaggedPointType.Visible
+  id: Visible
+  parent: MapQuest.Coordinates.FlaggedPointType
+  langs:
+  - csharp
+  - vb
+  name: Visible
+  nameWithType: FlaggedPointType.Visible
+  fullName: MapQuest.Coordinates.FlaggedPointType.Visible
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  syntax:
+    content: Visible = 0
+    return:
+      type: MapQuest.Coordinates.FlaggedPointType
+- uid: MapQuest.Coordinates.FlaggedPointType.Hidden
+  commentId: F:MapQuest.Coordinates.FlaggedPointType.Hidden
+  id: Hidden
+  parent: MapQuest.Coordinates.FlaggedPointType
+  langs:
+  - csharp
+  - vb
+  name: Hidden
+  nameWithType: FlaggedPointType.Hidden
+  fullName: MapQuest.Coordinates.FlaggedPointType.Hidden
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  syntax:
+    content: Hidden = 1
+    return:
+      type: MapQuest.Coordinates.FlaggedPointType
+- uid: MapQuest.Coordinates.FlaggedPointType.HideToJunior
+  commentId: F:MapQuest.Coordinates.FlaggedPointType.HideToJunior
+  id: HideToJunior
+  parent: MapQuest.Coordinates.FlaggedPointType
+  langs:
+  - csharp
+  - vb
+  name: HideToJunior
+  nameWithType: FlaggedPointType.HideToJunior
+  fullName: MapQuest.Coordinates.FlaggedPointType.HideToJunior
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 隠線フラグ。現在サポートしていません。
+  example: []
+  syntax:
+    content: HideToJunior = 2
+    return:
+      type: MapQuest.Coordinates.FlaggedPointType
+- uid: MapQuest.Coordinates.FlaggedPointType.HideToSenior
+  commentId: F:MapQuest.Coordinates.FlaggedPointType.HideToSenior
+  id: HideToSenior
+  parent: MapQuest.Coordinates.FlaggedPointType
+  langs:
+  - csharp
+  - vb
+  name: HideToSenior
+  nameWithType: FlaggedPointType.HideToSenior
+  fullName: MapQuest.Coordinates.FlaggedPointType.HideToSenior
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 隠線フラグ。現在サポートしていません。
+  example: []
+  syntax:
+    content: HideToSenior = 3
+    return:
+      type: MapQuest.Coordinates.FlaggedPointType
+- uid: MapQuest.Coordinates.FlaggedPointType.HideToChild
+  commentId: F:MapQuest.Coordinates.FlaggedPointType.HideToChild
+  id: HideToChild
+  parent: MapQuest.Coordinates.FlaggedPointType
+  langs:
+  - csharp
+  - vb
+  name: HideToChild
+  nameWithType: FlaggedPointType.HideToChild
+  fullName: MapQuest.Coordinates.FlaggedPointType.HideToChild
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 隠線フラグ。現在サポートしていません。
+  example: []
+  syntax:
+    content: HideToChild = 4
+    return:
+      type: MapQuest.Coordinates.FlaggedPointType
+- uid: MapQuest.Coordinates.FlaggedPointType.HideToParent
+  commentId: F:MapQuest.Coordinates.FlaggedPointType.HideToParent
+  id: HideToParent
+  parent: MapQuest.Coordinates.FlaggedPointType
+  langs:
+  - csharp
+  - vb
+  name: HideToParent
+  nameWithType: FlaggedPointType.HideToParent
+  fullName: MapQuest.Coordinates.FlaggedPointType.HideToParent
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 隠線フラグ。現在サポートしていません。
+  example: []
+  syntax:
+    content: HideToParent = 5
+    return:
+      type: MapQuest.Coordinates.FlaggedPointType
+- uid: MapQuest.Coordinates.FlaggedPointType.JumpToRight
+  commentId: F:MapQuest.Coordinates.FlaggedPointType.JumpToRight
+  id: JumpToRight
+  parent: MapQuest.Coordinates.FlaggedPointType
+  langs:
+  - csharp
+  - vb
+  name: JumpToRight
+  nameWithType: FlaggedPointType.JumpToRight
+  fullName: MapQuest.Coordinates.FlaggedPointType.JumpToRight
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: ジャンプ線(右)
+  example: []
+  syntax:
+    content: JumpToRight = 6
+    return:
+      type: MapQuest.Coordinates.FlaggedPointType
+- uid: MapQuest.Coordinates.FlaggedPointType.JumpToLeft
+  commentId: F:MapQuest.Coordinates.FlaggedPointType.JumpToLeft
+  id: JumpToLeft
+  parent: MapQuest.Coordinates.FlaggedPointType
+  langs:
+  - csharp
+  - vb
+  name: JumpToLeft
+  nameWithType: FlaggedPointType.JumpToLeft
+  fullName: MapQuest.Coordinates.FlaggedPointType.JumpToLeft
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: ジャンプ線(左)
+  example: []
+  syntax:
+    content: JumpToLeft = 7
+    return:
+      type: MapQuest.Coordinates.FlaggedPointType
+references:
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: MapQuest.Coordinates.FlaggedPointType
+  commentId: T:MapQuest.Coordinates.FlaggedPointType
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.FlaggedPointType.html
+  name: FlaggedPointType
+  nameWithType: FlaggedPointType
+  fullName: MapQuest.Coordinates.FlaggedPointType

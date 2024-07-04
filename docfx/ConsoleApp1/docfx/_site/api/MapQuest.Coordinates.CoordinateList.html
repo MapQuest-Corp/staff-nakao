@@ -1,0 +1,2209 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CoordinateList | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CoordinateList | mysite ">
+      
+      <meta name="description" content="オブジェクトに強く型付けされたコレクションを定義します。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Coordinates.CoordinateList">
+
+
+
+  <h1 id="MapQuest_Coordinates_CoordinateList" data-uid="MapQuest.Coordinates.CoordinateList" class="text-break">
+Class CoordinateList  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Coordinates.html">Coordinates</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Coordinates.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクトに強く型付けされたコレクションを定義します。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CoordinateList : ICoordinateList, ICoordinateCollection, IEnumerable&lt;Coordinate&gt;, IList, ICollection, IEnumerable, ICloneable, ISerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CoordinateList</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.Coordinates.ICoordinateList.html">ICoordinateList</a></div>
+      <div><a class="xref" href="MapQuest.Coordinates.ICoordinateCollection.html">ICoordinateCollection</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Coordinates_CoordinateList__ctor_" data-uid="MapQuest.Coordinates.CoordinateList.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList__ctor" data-uid="MapQuest.Coordinates.CoordinateList.#ctor">
+  CoordinateList()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a>  クラスの新しいインスタンスを初期化します。</p>
+<p>初期状態は空で、初めの容量は初期設定となります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoordinateList()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList__ctor_" data-uid="MapQuest.Coordinates.CoordinateList.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList__ctor_MapQuest_Coordinates_CoordinateList_" data-uid="MapQuest.Coordinates.CoordinateList.#ctor(MapQuest.Coordinates.CoordinateList)">
+  CoordinateList(CoordinateList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a>  クラスの新しいインスタンスを初期化します。</p>
+<p>それは、引数で指定された<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> からコピーされた要素を含みます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoordinateList(CoordinateList c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></dt>
+    <dd><p>新しいコレクションにコピーしたい要素を持った<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList__ctor_" data-uid="MapQuest.Coordinates.CoordinateList.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList__ctor_MapQuest_Coordinates_Coordinate___" data-uid="MapQuest.Coordinates.CoordinateList.#ctor(MapQuest.Coordinates.Coordinate[])">
+  CoordinateList(Coordinate[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a>  クラスの新しいインスタンスを初期化します。</p>
+<p>それは、引数で指定された <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列からコピーされた要素を含みます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoordinateList(Coordinate[] coords)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coords</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>[]</dt>
+    <dd><p>新しいリストにコピーしたい要素を持った <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列にNULLの要素が含まれていた場合</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList__ctor_" data-uid="MapQuest.Coordinates.CoordinateList.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList__ctor_MapQuest_Coordinates_Coordinate___System_Boolean_" data-uid="MapQuest.Coordinates.CoordinateList.#ctor(MapQuest.Coordinates.Coordinate[],System.Boolean)">
+  CoordinateList(Coordinate[], bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列から重複されたポイントが削除されるかどうかを明示することが可能な、新しいリストを構築します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoordinateList(Coordinate[] coords, bool allowRepeated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coords</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>[]</dt>
+    <dd><p>リストに読み込まれる <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列</p>
+</dd>
+    <dt><code>allowRepeated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>false</b> の場合、重複されたポイントは削除されます。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列にNULLの要素が含まれていた場合</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList__ctor_" data-uid="MapQuest.Coordinates.CoordinateList.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList__ctor_System_Int32_" data-uid="MapQuest.Coordinates.CoordinateList.#ctor(System.Int32)">
+  CoordinateList(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a>  クラスの新しいインスタンスを初期化します。</p>
+<p>初期容量は引数で指定された値となります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoordinateList(int capacity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>新しい<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> が最初に格納できる要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList__ctor_" data-uid="MapQuest.Coordinates.CoordinateList.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="MapQuest.Coordinates.CoordinateList.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+  CoordinateList(SerializationInfo, StreamingContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>シリアル化された情報から<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a>を作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoordinateList(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd><p>シリアル化する情報を格納するオブジェクト</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Capacity_" data-uid="MapQuest.Coordinates.CoordinateList.Capacity*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Capacity" data-uid="MapQuest.Coordinates.CoordinateList.Capacity">
+  Capacity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> オブジェクトに含むことのできる要素の数を取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Capacity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>この<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> オブジェクトに含むことのできる要素の数</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Count_" data-uid="MapQuest.Coordinates.CoordinateList.Count*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Count" data-uid="MapQuest.Coordinates.CoordinateList.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 中に実際に含まれている要素の数を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 中に実際に含まれている要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_IsFixedSize_" data-uid="MapQuest.Coordinates.CoordinateList.IsFixedSize*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_IsFixedSize" data-uid="MapQuest.Coordinates.CoordinateList.IsFixedSize">
+  IsFixedSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> が固定のサイズかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsFixedSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>true</b>  もし、<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> が固定のサイズの場合;
+そうでなければ、 <b>false</b> 。既定値は <b>false</b> です。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_IsReadOnly_" data-uid="MapQuest.Coordinates.CoordinateList.IsReadOnly*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_IsReadOnly" data-uid="MapQuest.Coordinates.CoordinateList.IsReadOnly">
+  IsReadOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> が固定のサイズかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>true</b>  もし、<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> が固定のサイズの場合;
+そうでなければ、 <b>false</b> 。既定値は <b>false</b> です。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_IsSynchronized_" data-uid="MapQuest.Coordinates.CoordinateList.IsSynchronized*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_IsSynchronized" data-uid="MapQuest.Coordinates.CoordinateList.IsSynchronized">
+  IsSynchronized
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>コレクションが同期されている (スレッド セーフな)かどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsSynchronized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>true</b> もし、<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a>に対するアクセスがスレッドセーフに同期されている場合; そうでない場合 <b>false</b></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Item_" data-uid="MapQuest.Coordinates.CoordinateList.Item*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Item_System_Int32_" data-uid="MapQuest.Coordinates.CoordinateList.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定されたインデックスの <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Coordinate this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>要素の取得または設定を行いたい0から始まるインデックス</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>指定したインデックスにある <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>
+  <code class="paramref">index</code> が 0 未満です。</p>
+<p>または</p>
+<p>
+  <code class="paramref">index</code> が <a class="xref" href="MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Count">Count</a> 以上です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_SyncRoot_" data-uid="MapQuest.Coordinates.CoordinateList.SyncRoot*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_SyncRoot" data-uid="MapQuest.Coordinates.CoordinateList.SyncRoot">
+  SyncRoot
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>コレクションに対する同期アクセスに使用されるオブジェクトを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object SyncRoot { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>コレクションに対する同期アクセスに使用されるオブジェクト</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Add_" data-uid="MapQuest.Coordinates.CoordinateList.Add*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Add_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate)">
+  Add(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>の要素を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Add(Coordinate item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に追加する <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><code class="paramref">item</code>が追加された<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> のインデックス</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Add_" data-uid="MapQuest.Coordinates.CoordinateList.Add*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Add_MapQuest_Coordinates_Coordinate_System_Boolean_" data-uid="MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate,System.Boolean)">
+  Add(Coordinate, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>の要素を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Add(Coordinate coord, bool allowRepeated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に追加する <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+    <dt><code>allowRepeated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>false</b> の場合、重複されたポイントは削除されます。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Add_" data-uid="MapQuest.Coordinates.CoordinateList.Add*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Add_MapQuest_Coordinates_CoordinateList_System_Boolean_" data-uid="MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.CoordinateList,System.Boolean)">
+  Add(CoordinateList, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に引数の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Add(CoordinateList coord, bool allowRepeated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に追加する<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></p>
+</dd>
+    <dt><code>allowRepeated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>false</b> の場合、重複されたポイントは削除されます。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>true</b></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Add_" data-uid="MapQuest.Coordinates.CoordinateList.Add*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Add_MapQuest_Coordinates_CoordinateList_System_Boolean_System_Boolean_" data-uid="MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.CoordinateList,System.Boolean,System.Boolean)">
+  Add(CoordinateList, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に引数の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Add(CoordinateList coord, bool allowRepeated, bool direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に追加する引数の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></p>
+</dd>
+    <dt><code>allowRepeated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>false</b> の場合、重複されたポイントは削除されます。</p>
+</dd>
+    <dt><code>direction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code class="paramref">coord</code>を追加する際の方向性。 <b>true</b> の場合昇順で、 <b>false</b> の場合降順で追加されます。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>true</b></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Add_" data-uid="MapQuest.Coordinates.CoordinateList.Add*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Add_MapQuest_Coordinates_Coordinate___System_Boolean_" data-uid="MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate[],System.Boolean)">
+  Add(Coordinate[], bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列の要素を昇順で追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Add(Coordinate[] coord, bool allowRepeated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に追加する <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列。</p>
+</dd>
+    <dt><code>allowRepeated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>false</b> の場合、重複されたポイントは削除されます。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>true</b></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Add_" data-uid="MapQuest.Coordinates.CoordinateList.Add*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Add_MapQuest_Coordinates_Coordinate___System_Boolean_System_Boolean_" data-uid="MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate[],System.Boolean,System.Boolean)">
+  Add(Coordinate[], bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列の要素を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Add(Coordinate[] coord, bool allowRepeated, bool direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に追加する <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列。</p>
+</dd>
+    <dt><code>allowRepeated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>false</b> の場合、重複されたポイントは削除されます。</p>
+</dd>
+    <dt><code>direction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code class="paramref">coord</code>を追加する際の方向性。 <b>true</b> の場合昇順で、 <b>false</b> の場合降順で追加されます。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>true</b></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Add_" data-uid="MapQuest.Coordinates.CoordinateList.Add*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Add_System_Object_System_Boolean_" data-uid="MapQuest.Coordinates.CoordinateList.Add(System.Object,System.Boolean)">
+  Add(object, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端にオブジェクトを追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Add(object obj, bool allowRepeated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に追加するオブジェクト</p>
+</dd>
+    <dt><code>allowRepeated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>false</b> の場合、重複されたポイントは削除されます。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>true</b></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_AddAll_" data-uid="MapQuest.Coordinates.CoordinateList.AddAll*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_AddAll_System_Collections_ArrayList_System_Boolean_" data-uid="MapQuest.Coordinates.CoordinateList.AddAll(System.Collections.ArrayList,System.Boolean)">
+  AddAll(ArrayList, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> に引数の<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a>の要素を全て追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AddAll(ArrayList coll, bool allowRepeated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coll</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に追加する <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を含んだ<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a></p>
+</dd>
+    <dt><code>allowRepeated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>false</b> の場合、重複されたポイントは削除されます。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>true</b>  もし、<code class="paramref">index</code>の追加により、<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> が変更された場合;そうでなければ <b>false</b></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_AddRange_" data-uid="MapQuest.Coordinates.CoordinateList.AddRange*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_AddRange_MapQuest_Coordinates_CoordinateList_" data-uid="MapQuest.Coordinates.CoordinateList.AddRange(MapQuest.Coordinates.CoordinateList)">
+  AddRange(CoordinateList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の要素をこの<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int AddRange(CoordinateList x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></dt>
+    <dd><p>この<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に追加したい要素の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>引数の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> を加えた結果の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Count">CoordinateList.Count</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_AddRange_" data-uid="MapQuest.Coordinates.CoordinateList.AddRange*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_AddRange_MapQuest_Coordinates_Coordinate___" data-uid="MapQuest.Coordinates.CoordinateList.AddRange(MapQuest.Coordinates.Coordinate[])">
+  AddRange(Coordinate[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列の要素をこの<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int AddRange(Coordinate[] x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>[]</dt>
+    <dd><p>この<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の終端に追加したい要素の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列を加えた結果の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Count">CoordinateList.Count</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_BinarySearch_" data-uid="MapQuest.Coordinates.CoordinateList.BinarySearch*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_BinarySearch_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.CoordinateList.BinarySearch(MapQuest.Coordinates.Coordinate)">
+  BinarySearch(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>全ての要素がソートされた<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>の要素を初期設定の比較を用いて検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int BinarySearch(Coordinate value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から検索する対象の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクト。この引数にはNULL参照が許可されます。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><code class="paramref">value</code> が見つかった場合は、並べ替えられた <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a>  内の <code class="paramref">value</code> の 0 から始まるインデックス。</p>
+<p>見つからなかった場合は、負の値。</p>
+<p>これは、 <code class="paramref">value</code> の次に大きい要素のインデックスのビットごとの補数です。</p>
+<p>ただし、大きい要素が存在しない場合は、 <a class="xref" href="MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Count">CoordinateList.Count</a> のビットごとの補数です。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_CoordinateList_BinarySearch_MapQuest_Coordinates_Coordinate__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細は<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)">ArrayList.BinarySearch</a>を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p><code class="paramref">value</code>が<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の要素がいずれも<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a>インターフェイスを実装していない場合</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Clear_" data-uid="MapQuest.Coordinates.CoordinateList.Clear*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Clear" data-uid="MapQuest.Coordinates.CoordinateList.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から全ての要素を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Clone_" data-uid="MapQuest.Coordinates.CoordinateList.Clone*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Clone" data-uid="MapQuest.Coordinates.CoordinateList.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の浅いコピーを作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>コピーされた<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_CloseRing_" data-uid="MapQuest.Coordinates.CoordinateList.CloseRing*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_CloseRing" data-uid="MapQuest.Coordinates.CoordinateList.CloseRing">
+  CloseRing()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>スタートポイントを終端に加えることによって<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> をリング状にします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CloseRing()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Contains_" data-uid="MapQuest.Coordinates.CoordinateList.Contains*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Contains_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.CoordinateList.Contains(MapQuest.Coordinates.Coordinate)">
+  Contains(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> に指定された <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>の要素が含まれているかどうかを判断します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Contains(Coordinate item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から、その位置を見つける <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクト。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>true</b>  もし、<code class="paramref">value</code>が<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 内に見つかった場合;
+そうでない場合、 <b>false</b> .</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_CopyTo_" data-uid="MapQuest.Coordinates.CoordinateList.CopyTo*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_CopyTo_MapQuest_Coordinates_Coordinate___" data-uid="MapQuest.Coordinates.CoordinateList.CopyTo(MapQuest.Coordinates.Coordinate[])">
+  CopyTo(Coordinate[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の全ての要素を、 1 次元 <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> 配列にコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyTo(Coordinate[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>[]</dt>
+    <dd><p>コピーする対象の 1 次元 <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> 配列</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">array</code> が
+null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">array</code> が多次元です。</p>
+<p>または</p>
+コピー元の <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 
+の地物数が、コピー先の <code class="paramref">array</code> に格納できる要素の数を超えています。
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>コピー元の <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a>
+の型が、コピー先の <code class="paramref">array</code> の型に自動的にキャストできません。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_CopyTo_" data-uid="MapQuest.Coordinates.CoordinateList.CopyTo*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_CopyTo_MapQuest_Coordinates_Coordinate___System_Int32_" data-uid="MapQuest.Coordinates.CoordinateList.CopyTo(MapQuest.Coordinates.Coordinate[],System.Int32)">
+  CopyTo(Coordinate[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の全ての要素を、コピーを開始するインデックスを指定して 1 次元 <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> 配列にコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyTo(Coordinate[] array, int start)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>[]</dt>
+    <dd><p>コピーする対象の 1 次元 <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> 配列</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>コピーを開始する0から始まるインデックス</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">array</code> が
+null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">start</code>
+が 0 未満です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">array</code> が多次元です。</p>
+<p>または</p><code class="paramref">start</code> が <code class="paramref">array</code> の長さ以上です。
+<p>または</p>
+コピー元の <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 
+の地物数が、 <code class="paramref">start</code> からコピー先の 
+<code class="paramref">array</code> の末尾までに格納できる数を超えています。
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>コピー元の <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a>
+の型が、コピー先の <code class="paramref">array</code> の型に自動的にキャストできません。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_CopyTo_" data-uid="MapQuest.Coordinates.CoordinateList.CopyTo*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_CopyTo_System_Int32_System_Array_System_Int32_System_Int32_" data-uid="MapQuest.Coordinates.CoordinateList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)">
+  CopyTo(int, Array, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>要素の範囲を <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から互換性のある 1 次元の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> にコピーします。</p>
+<p>コピー操作は、コピー先の配列の指定したインデックスから始まります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyTo(int index, Array array, int arrayIndex, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>コピーを開始するコピー元の <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 内の、0 から始まるインデックス番号。</p>
+</dd>
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から要素がコピーされる 1 次元の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> 。
+<b>Coordinate</b> には、0 から始まるインデックス番号が必要です。</p>
+</dd>
+    <dt><code>arrayIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>コピーの開始位置となる、<code class="paramref">array</code> の 0 から始まるインデックス番号。</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>コピーする要素の数</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">array</code> が null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">arrayIndex</code> が 0 未満です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">array</code> が多次元です。</p>
+<p>または</p><code class="paramref">index</code> が 、コピー元の <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の 
+<a class="xref" href="MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Count">Count</a> 以上です。
+<p>または</p><code class="paramref">arrayIndex</code> が <code class="paramref">array</code> の長さ以上です。
+<p>または</p>
+コピー元の <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 
+の要素数が、 <code class="paramref">arrayIndex</code> からコピー先の 
+<code class="paramref">array</code> の末尾までに格納できる数を超えています。
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>コピー元の <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a>
+の型が、コピー先の <code class="paramref">array</code> の型に自動的にキャストできません。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Equals_" data-uid="MapQuest.Coordinates.CoordinateList.Equals*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Equals_System_Object_" data-uid="MapQuest.Coordinates.CoordinateList.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>配列の内容が等しい場合に真を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>比較する<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>等価であるか</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_GetEnumerator_" data-uid="MapQuest.Coordinates.CoordinateList.GetEnumerator*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_GetEnumerator" data-uid="MapQuest.Coordinates.CoordinateList.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の反復可能な列挙子を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ICoordinateEnumerator GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.ICoordinateEnumerator.html">ICoordinateEnumerator</a></dt>
+    <dd><p>全ての<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の<span class="xref">Enumerator</span></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_GetObjectData_" data-uid="MapQuest.Coordinates.CoordinateList.GetObjectData*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="MapQuest.Coordinates.CoordinateList.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+  GetObjectData(SerializationInfo, StreamingContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オブジェクトをシリアル化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd><p>シリアル化する情報を格納するオブジェクト</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_HasNullElements_" data-uid="MapQuest.Coordinates.CoordinateList.HasNullElements*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_HasNullElements_MapQuest_Coordinates_Coordinate___" data-uid="MapQuest.Coordinates.CoordinateList.HasNullElements(MapQuest.Coordinates.Coordinate[])">
+  HasNullElements(Coordinate[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列がNULL要素を含んでいた場合 <b>true</b> を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool HasNullElements(Coordinate[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>[]</dt>
+    <dd><p>値が正しいかどうかを評価する <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><b>true</b>
+<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>配列のいずれかの要素がNULLであった場合;そうでなければ <b>false</b></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_IndexOf_" data-uid="MapQuest.Coordinates.CoordinateList.IndexOf*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_IndexOf_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.CoordinateList.IndexOf(MapQuest.Coordinates.Coordinate)">
+  IndexOf(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から指定された <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を検索し、最初に発見された位置を0から始まるインデックスで返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int IndexOf(Coordinate item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から、その位置を検索する <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクト。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から、<code class="paramref">item</code>が最初に発見された0から始まるインデックス。;見つからなかった場合、 -1.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Insert_" data-uid="MapQuest.Coordinates.CoordinateList.Insert*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Insert_System_Int32_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.CoordinateList.Insert(System.Int32,MapQuest.Coordinates.Coordinate)">
+  Insert(int, Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> に指定された <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>の要素を挿入します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Insert(int index, Coordinate item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><code class="paramref">value</code>を挿入するべき箇所の0から始まるインデックス</p>
+</dd>
+    <dt><code>item</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> に挿入する <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>
+  <code class="paramref">index</code>が0未満</p>
+<p>又は</p>
+<p>
+  <code class="paramref">index</code>が<a class="xref" href="MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Count">CoordinateList.Count</a>と同じか、もしくは大きい場合</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_ReadOnly_" data-uid="MapQuest.Coordinates.CoordinateList.ReadOnly*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_ReadOnly_MapQuest_Coordinates_CoordinateList_" data-uid="MapQuest.Coordinates.CoordinateList.ReadOnly(MapQuest.Coordinates.CoordinateList)">
+  ReadOnly(CoordinateList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> のインスタンスのために、読み取り専用のラッパーを作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoordinateList ReadOnly(CoordinateList list)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></dt>
+    <dd><p>読み取り専用にする<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></dt>
+    <dd><p>読み取り専用の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a>  ラッパー</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>引数の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> がNULLの場合</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Remove_" data-uid="MapQuest.Coordinates.CoordinateList.Remove*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Remove_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.CoordinateList.Remove(MapQuest.Coordinates.Coordinate)">
+  Remove(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から指定された最初に発見された <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>の要素を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Remove(Coordinate item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から削除する <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>指定された <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>が<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> からみつからなかった場合</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_RemoveAt_" data-uid="MapQuest.Coordinates.CoordinateList.RemoveAt*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_RemoveAt_System_Int32_" data-uid="MapQuest.Coordinates.CoordinateList.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から指定されたインデックスの <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>の要素を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>要素を削除する0から始まるインデックス</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>
+  <code class="paramref">index</code>が0未満</p>
+<p>又は</p>
+<p>
+  <code class="paramref">index</code>が<a class="xref" href="MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Count">CoordinateList.Count</a>と同じか、もしくは大きい場合</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_RemoveRange_" data-uid="MapQuest.Coordinates.CoordinateList.RemoveRange*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_RemoveRange_System_Int32_System_Int32_" data-uid="MapQuest.Coordinates.CoordinateList.RemoveRange(System.Int32,System.Int32)">
+  RemoveRange(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> から要素の範囲を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveRange(int index, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>削除する要素の範囲の開始位置を示す 0 から始まるインデックス。</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>削除する要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_CoordinateList_RemoveRange_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細は<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange">ArrayList.RemoveRange</a>を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">index</code> および <code class="paramref">count</code>が<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 内の要素の有効範囲を示していません。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>
+  <code class="paramref">index</code>が0未満</p>
+<p>又は</p>
+<p>
+  <code class="paramref">count</code>が0未満</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>
+  <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> が読み取り専用</p>
+<p>又は</p>
+<p>
+  <b>CoordinateList</b>が固定サイズの場合</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Reverse_" data-uid="MapQuest.Coordinates.CoordinateList.Reverse*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Reverse" data-uid="MapQuest.Coordinates.CoordinateList.Reverse">
+  Reverse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 内およびその一部の要素の順序を反転させます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Reverse()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_CoordinateList_Reverse_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細は<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse">ArrayList.Reverse</a>を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> が読み取り専用</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Reverse_" data-uid="MapQuest.Coordinates.CoordinateList.Reverse*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Reverse_System_Int32_System_Int32_" data-uid="MapQuest.Coordinates.CoordinateList.Reverse(System.Int32,System.Int32)">
+  Reverse(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した範囲の要素の順序を反転させます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Reverse(int index, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>反転させる範囲の開始位置を示す 0 から始まるインデックス。</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>反転させる範囲内にある要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_CoordinateList_Reverse_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細は<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse">ArrayList.Reverse</a>を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">index</code>および<code class="paramref">count</code>が<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 内の要素の有効範囲を示していません。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>
+  <code class="paramref">index</code>が0未満</p>
+<p>又は</p>
+<p>
+  <code class="paramref">count</code>が0未満</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> が読み取り専用</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Scroll_" data-uid="MapQuest.Coordinates.CoordinateList.Scroll*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Scroll_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.CoordinateList.Scroll(MapQuest.Coordinates.Coordinate)">
+  Scroll(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数のfirstCoordinateが最初の位置にくるように要素をシフトします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Scroll(Coordinate firstCoordinate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firstCoordinate</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>最初の位置にくるようにさせたい <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Sort_" data-uid="MapQuest.Coordinates.CoordinateList.Sort*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Sort" data-uid="MapQuest.Coordinates.CoordinateList.Sort">
+  Sort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>各要素の<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a>実装を使用して、<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 全体内の要素を並べ替えます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Sort()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_CoordinateList_Sort_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細は<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort">ArrayList.Sort</a>を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> が読み取り専用</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Sort_" data-uid="MapQuest.Coordinates.CoordinateList.Sort*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Sort_System_Collections_IComparer_" data-uid="MapQuest.Coordinates.CoordinateList.Sort(System.Collections.IComparer)">
+  Sort(IComparer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icomparer">比較演算子</a>を使用して、 <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 全体内の要素を並べ替えます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Sort(IComparer comparer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icomparer">IComparer</a></dt>
+    <dd><p>要素を比較する場合に使用する<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icomparer">IComparer</a>実装 </p>
+<p>又は</p>
+<p>各要素の<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icomparer">IComparer</a>実装を使用する場合は null 参照</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_CoordinateList_Sort_System_Collections_IComparer__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細は<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort">ArrayList.Sort</a>を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> が読み取り専用</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Sort_" data-uid="MapQuest.Coordinates.CoordinateList.Sort*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Sort_System_Int32_System_Int32_System_Collections_IComparer_" data-uid="MapQuest.Coordinates.CoordinateList.Sort(System.Int32,System.Int32,System.Collections.IComparer)">
+  Sort(int, int, IComparer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した比較演算子を使用して、<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> のセクション内の要素を並べ替えます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Sort(int index, int count, IComparer comparer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>並べ替える範囲の開始位置を示す 0 から始まるインデックス。</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>並べ替える範囲の長さ。</p>
+</dd>
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icomparer">IComparer</a></dt>
+    <dd><p>要素を比較する場合に使用する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icomparer">IComparer</a>実装。</p>
+<p>又は</p>
+<p>各要素の<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a>実装を使用する場合は null 参照</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_CoordinateList_Sort_System_Int32_System_Int32_System_Collections_IComparer__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細は<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort">ArrayList.Sort</a>を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">index</code> および <code class="paramref">count</code>が<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> 内の要素の有効範囲を示していません。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>
+  <code class="paramref">index</code>が0未満</p>
+<p>又は</p>
+<p>
+  <code class="paramref">count</code>が0未満</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> が読み取り専用</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_Synchronized_" data-uid="MapQuest.Coordinates.CoordinateList.Synchronized*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_Synchronized_MapQuest_Coordinates_CoordinateList_" data-uid="MapQuest.Coordinates.CoordinateList.Synchronized(MapQuest.Coordinates.CoordinateList)">
+  Synchronized(CoordinateList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> のインスタンスのために、同期されている (スレッド セーフな)ラッパーを作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoordinateList Synchronized(CoordinateList list)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></dt>
+    <dd><p>同期する<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a></dt>
+    <dd><p>同期されている (スレッド セーフな)<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a>  ラッパー</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>引数の<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> がNULLの場合</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_ToString_" data-uid="MapQuest.Coordinates.CoordinateList.ToString*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_ToString" data-uid="MapQuest.Coordinates.CoordinateList.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の要素を文字列表現します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の要素の文字列表現</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_CoordinateList_TrimToSize_" data-uid="MapQuest.Coordinates.CoordinateList.TrimToSize*"></a>
+
+  <h3 id="MapQuest_Coordinates_CoordinateList_TrimToSize" data-uid="MapQuest.Coordinates.CoordinateList.TrimToSize">
+  TrimToSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Capacity">CoordinateList.Capacity</a>をこの<a class="xref" href="MapQuest.Coordinates.CoordinateList.html">CoordinateList</a> の実際の要素の数に設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TrimToSize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

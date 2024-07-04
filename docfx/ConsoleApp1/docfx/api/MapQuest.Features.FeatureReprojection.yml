@@ -1,0 +1,733 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.FeatureReprojection
+  commentId: T:MapQuest.Features.FeatureReprojection
+  id: FeatureReprojection
+  parent: MapQuest.Features
+  children:
+  - MapQuest.Features.FeatureReprojection.#ctor(MapQuest.CoordinateTransformations.ICoordinateTransformation)
+  - MapQuest.Features.FeatureReprojection.Clone
+  - MapQuest.Features.FeatureReprojection.FixAngleByReprojection
+  - MapQuest.Features.FeatureReprojection.GetDistance(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Features.FeatureReprojection.GetLineAngle(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Features.FeatureReprojection.LastException
+  - MapQuest.Features.FeatureReprojection.Reprojected(MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureReprojection.Reprojected(MapQuest.Topology.Geometries.Geometry)
+  - MapQuest.Features.FeatureReprojection.Transformation
+  langs:
+  - csharp
+  - vb
+  name: FeatureReprojection
+  nameWithType: FeatureReprojection
+  fullName: MapQuest.Features.FeatureReprojection
+  type: Class
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> の座標系を変換するためのクラスです。
+  remarks: >-
+    このクラスは、<xref href="MapQuest.Features.Feature.Geometry?text=Feature.Geometry" data-throw-if-not-resolved="false"></xref> 
+
+    の座標系を変換します。
+  example: []
+  syntax:
+    content: 'public sealed class FeatureReprojection : IGeometryComponentVisitor, ICloneable'
+    content.vb: Public NotInheritable Class FeatureReprojection Implements IGeometryComponentVisitor, ICloneable
+  inheritance:
+  - System.Object
+  implements:
+  - MapQuest.Topology.GeometryVisitors.IGeometryComponentVisitor
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: MapQuest.Features.FeatureReprojection.#ctor(MapQuest.CoordinateTransformations.ICoordinateTransformation)
+  commentId: M:MapQuest.Features.FeatureReprojection.#ctor(MapQuest.CoordinateTransformations.ICoordinateTransformation)
+  id: '#ctor(MapQuest.CoordinateTransformations.ICoordinateTransformation)'
+  parent: MapQuest.Features.FeatureReprojection
+  langs:
+  - csharp
+  - vb
+  name: FeatureReprojection(ICoordinateTransformation)
+  nameWithType: FeatureReprojection.FeatureReprojection(ICoordinateTransformation)
+  fullName: MapQuest.Features.FeatureReprojection.FeatureReprojection(MapQuest.CoordinateTransformations.ICoordinateTransformation)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    変換に使用する <xref href="MapQuest.CoordinateTransformations.ICoordinateTransformation" data-throw-if-not-resolved="false"></xref> を指定して、
+
+    新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public FeatureReprojection(ICoordinateTransformation transformation)
+    parameters:
+    - id: transformation
+      type: MapQuest.CoordinateTransformations.ICoordinateTransformation
+      description: >-
+        変換の際に使用する 
+                    <xref href="MapQuest.CoordinateTransformations.ICoordinateTransformation" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub New(transformation As ICoordinateTransformation)
+  overload: MapQuest.Features.FeatureReprojection.#ctor*
+  nameWithType.vb: FeatureReprojection.New(ICoordinateTransformation)
+  fullName.vb: MapQuest.Features.FeatureReprojection.New(MapQuest.CoordinateTransformations.ICoordinateTransformation)
+  name.vb: New(ICoordinateTransformation)
+- uid: MapQuest.Features.FeatureReprojection.Reprojected(MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureReprojection.Reprojected(MapQuest.Features.Feature)
+  id: Reprojected(MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureReprojection
+  langs:
+  - csharp
+  - vb
+  name: Reprojected(Feature)
+  nameWithType: FeatureReprojection.Reprojected(Feature)
+  fullName: MapQuest.Features.FeatureReprojection.Reprojected(MapQuest.Features.Feature)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 指定した <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> の座標を変換します。
+  remarks: <b>Reprojected(feature.Geometry)</b> を呼び出します。
+  example: []
+  syntax:
+    content: public bool Reprojected(Feature feature)
+    parameters:
+    - id: feature
+      type: MapQuest.Features.Feature
+      description: 座標を変換する <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: 変換に成功したら true 、それ以外の場合は false を返します。
+    content.vb: Public Function Reprojected(feature As Feature) As Boolean
+  overload: MapQuest.Features.FeatureReprojection.Reprojected*
+- uid: MapQuest.Features.FeatureReprojection.Reprojected(MapQuest.Topology.Geometries.Geometry)
+  commentId: M:MapQuest.Features.FeatureReprojection.Reprojected(MapQuest.Topology.Geometries.Geometry)
+  id: Reprojected(MapQuest.Topology.Geometries.Geometry)
+  parent: MapQuest.Features.FeatureReprojection
+  langs:
+  - csharp
+  - vb
+  name: Reprojected(Geometry)
+  nameWithType: FeatureReprojection.Reprojected(Geometry)
+  fullName: MapQuest.Features.FeatureReprojection.Reprojected(MapQuest.Topology.Geometries.Geometry)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 指定した <xref href="MapQuest.Topology.Geometries.Geometry" data-throw-if-not-resolved="false"></xref> の座標を変換します。
+  example: []
+  syntax:
+    content: public bool Reprojected(Geometry geometry)
+    parameters:
+    - id: geometry
+      type: MapQuest.Topology.Geometries.Geometry
+      description: 座標を変換する <xref href="MapQuest.Topology.Geometries.Geometry" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: 変換に成功したら true 、それ以外の場合は false を返します。
+    content.vb: Public Function Reprojected(geometry As Geometry) As Boolean
+  overload: MapQuest.Features.FeatureReprojection.Reprojected*
+- uid: MapQuest.Features.FeatureReprojection.Clone
+  commentId: M:MapQuest.Features.FeatureReprojection.Clone
+  id: Clone
+  parent: MapQuest.Features.FeatureReprojection
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: FeatureReprojection.Clone()
+  fullName: MapQuest.Features.FeatureReprojection.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 現在のインスタンスの簡易コピーを生成します。
+  remarks: <xref href="MapQuest.Features.FeatureReprojection.Transformation" data-throw-if-not-resolved="false"></xref> は、Clone されません。参照が渡されます。
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+      description: 現在のインスタンスの簡易コピー
+    content.vb: Public Function Clone() As Object
+  overload: MapQuest.Features.FeatureReprojection.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.Features.FeatureReprojection.GetLineAngle(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Features.FeatureReprojection.GetLineAngle(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  id: GetLineAngle(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Features.FeatureReprojection
+  langs:
+  - csharp
+  - vb
+  name: GetLineAngle(Coordinate, Coordinate, Coordinate)
+  nameWithType: FeatureReprojection.GetLineAngle(Coordinate, Coordinate, Coordinate)
+  fullName: MapQuest.Features.FeatureReprojection.GetLineAngle(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 3 つの座標で構成される線分の狭い領域の角度を取得します。
+  remarks: NSECOM32.DLL nse_GetLineAngle からの移植です。
+  example: []
+  syntax:
+    content: public static double GetLineAngle(Coordinate p1, Coordinate p2, Coordinate p3)
+    parameters:
+    - id: p1
+      type: MapQuest.Coordinates.Coordinate
+      description: 第 1 の座標。
+    - id: p2
+      type: MapQuest.Coordinates.Coordinate
+      description: 第 2 の座標。
+    - id: p3
+      type: MapQuest.Coordinates.Coordinate
+      description: 第 3 の座標。
+    return:
+      type: System.Double
+      description: >-
+        3 つの座標で構成される線分の狭い領域の角度。
+                    必ず 0 ～ 180 の値になります。
+    content.vb: Public Shared Function GetLineAngle(p1 As Coordinate, p2 As Coordinate, p3 As Coordinate) As Double
+  overload: MapQuest.Features.FeatureReprojection.GetLineAngle*
+- uid: MapQuest.Features.FeatureReprojection.GetDistance(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Features.FeatureReprojection.GetDistance(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  id: GetDistance(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Features.FeatureReprojection
+  langs:
+  - csharp
+  - vb
+  name: GetDistance(Coordinate, Coordinate)
+  nameWithType: FeatureReprojection.GetDistance(Coordinate, Coordinate)
+  fullName: MapQuest.Features.FeatureReprojection.GetDistance(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 指定された 2 点間の距離を取得します。
+  remarks: NSECOM32.DLL nse_GetDistance からの移植です。
+  example: []
+  syntax:
+    content: public static double GetDistance(Coordinate p1, Coordinate p2)
+    parameters:
+    - id: p1
+      type: MapQuest.Coordinates.Coordinate
+      description: 第 1 の座標。
+    - id: p2
+      type: MapQuest.Coordinates.Coordinate
+      description: 第 2 の座標。
+    return:
+      type: System.Double
+      description: 2 点間の距離。
+    content.vb: Public Shared Function GetDistance(p1 As Coordinate, p2 As Coordinate) As Double
+  overload: MapQuest.Features.FeatureReprojection.GetDistance*
+- uid: MapQuest.Features.FeatureReprojection.Transformation
+  commentId: P:MapQuest.Features.FeatureReprojection.Transformation
+  id: Transformation
+  parent: MapQuest.Features.FeatureReprojection
+  langs:
+  - csharp
+  - vb
+  name: Transformation
+  nameWithType: FeatureReprojection.Transformation
+  fullName: MapQuest.Features.FeatureReprojection.Transformation
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 現在の <xref href="MapQuest.CoordinateTransformations.ICoordinateTransformation" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: public ICoordinateTransformation Transformation { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateTransformations.ICoordinateTransformation
+      description: 現在の <xref href="MapQuest.CoordinateTransformations.ICoordinateTransformation" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public ReadOnly Property Transformation As ICoordinateTransformation
+  overload: MapQuest.Features.FeatureReprojection.Transformation*
+- uid: MapQuest.Features.FeatureReprojection.LastException
+  commentId: P:MapQuest.Features.FeatureReprojection.LastException
+  id: LastException
+  parent: MapQuest.Features.FeatureReprojection
+  langs:
+  - csharp
+  - vb
+  name: LastException
+  nameWithType: FeatureReprojection.LastException
+  fullName: MapQuest.Features.FeatureReprojection.LastException
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 最後に発生した例外を取得します。
+  example: []
+  syntax:
+    content: public Exception LastException { get; }
+    parameters: []
+    return:
+      type: System.Exception
+      description: 最後に発生した <xref href="System.Exception" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public ReadOnly Property LastException As Exception
+  overload: MapQuest.Features.FeatureReprojection.LastException*
+- uid: MapQuest.Features.FeatureReprojection.FixAngleByReprojection
+  commentId: P:MapQuest.Features.FeatureReprojection.FixAngleByReprojection
+  id: FixAngleByReprojection
+  parent: MapQuest.Features.FeatureReprojection
+  langs:
+  - csharp
+  - vb
+  name: FixAngleByReprojection
+  nameWithType: FeatureReprojection.FixAngleByReprojection
+  fullName: MapQuest.Features.FeatureReprojection.FixAngleByReprojection
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 投影変換によるシンボル、及びテキストを回転しない
+  example: []
+  syntax:
+    content: public bool FixAngleByReprojection { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FixAngleByReprojection As Boolean
+  overload: MapQuest.Features.FeatureReprojection.FixAngleByReprojection*
+references:
+- uid: MapQuest.Features.Feature
+  commentId: T:MapQuest.Features.Feature
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.Feature.html
+  name: Feature
+  nameWithType: Feature
+  fullName: MapQuest.Features.Feature
+- uid: MapQuest.Features.Feature.Geometry
+  commentId: P:MapQuest.Features.Feature.Geometry
+  isExternal: true
+  href: MapQuest.Features.Feature.html#MapQuest_Features_Feature_Geometry
+  name: Geometry
+  nameWithType: Feature.Geometry
+  fullName: MapQuest.Features.Feature.Geometry
+- uid: MapQuest.Features
+  commentId: N:MapQuest.Features
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features
+  nameWithType: MapQuest.Features
+  fullName: MapQuest.Features
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Topology.GeometryVisitors.IGeometryComponentVisitor
+  commentId: '!:MapQuest.Topology.GeometryVisitors.IGeometryComponentVisitor'
+  isExternal: true
+  name: IGeometryComponentVisitor
+  nameWithType: IGeometryComponentVisitor
+  fullName: MapQuest.Topology.GeometryVisitors.IGeometryComponentVisitor
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateTransformations.ICoordinateTransformation
+  commentId: T:MapQuest.CoordinateTransformations.ICoordinateTransformation
+  isExternal: true
+  name: ICoordinateTransformation
+  nameWithType: ICoordinateTransformation
+  fullName: MapQuest.CoordinateTransformations.ICoordinateTransformation
+- uid: MapQuest.Features.FeatureReprojection.#ctor*
+  commentId: Overload:MapQuest.Features.FeatureReprojection.#ctor
+  isExternal: true
+  href: MapQuest.Features.FeatureReprojection.html#MapQuest_Features_FeatureReprojection__ctor_MapQuest_CoordinateTransformations_ICoordinateTransformation_
+  name: FeatureReprojection
+  nameWithType: FeatureReprojection.FeatureReprojection
+  fullName: MapQuest.Features.FeatureReprojection.FeatureReprojection
+  nameWithType.vb: FeatureReprojection.New
+  fullName.vb: MapQuest.Features.FeatureReprojection.New
+  name.vb: New
+- uid: MapQuest.Features.FeatureReprojection.Reprojected*
+  commentId: Overload:MapQuest.Features.FeatureReprojection.Reprojected
+  isExternal: true
+  href: MapQuest.Features.FeatureReprojection.html#MapQuest_Features_FeatureReprojection_Reprojected_MapQuest_Features_Feature_
+  name: Reprojected
+  nameWithType: FeatureReprojection.Reprojected
+  fullName: MapQuest.Features.FeatureReprojection.Reprojected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.Topology.Geometries.Geometry
+  commentId: T:MapQuest.Topology.Geometries.Geometry
+  isExternal: true
+  name: Geometry
+  nameWithType: Geometry
+  fullName: MapQuest.Topology.Geometries.Geometry
+- uid: MapQuest.Features.FeatureReprojection.Transformation
+  commentId: P:MapQuest.Features.FeatureReprojection.Transformation
+  isExternal: true
+  href: MapQuest.Features.FeatureReprojection.html#MapQuest_Features_FeatureReprojection_Transformation
+  name: Transformation
+  nameWithType: FeatureReprojection.Transformation
+  fullName: MapQuest.Features.FeatureReprojection.Transformation
+- uid: MapQuest.Features.FeatureReprojection.Clone*
+  commentId: Overload:MapQuest.Features.FeatureReprojection.Clone
+  isExternal: true
+  href: MapQuest.Features.FeatureReprojection.html#MapQuest_Features_FeatureReprojection_Clone
+  name: Clone
+  nameWithType: FeatureReprojection.Clone
+  fullName: MapQuest.Features.FeatureReprojection.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureReprojection.GetLineAngle*
+  commentId: Overload:MapQuest.Features.FeatureReprojection.GetLineAngle
+  isExternal: true
+  href: MapQuest.Features.FeatureReprojection.html#MapQuest_Features_FeatureReprojection_GetLineAngle_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_
+  name: GetLineAngle
+  nameWithType: FeatureReprojection.GetLineAngle
+  fullName: MapQuest.Features.FeatureReprojection.GetLineAngle
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: MapQuest.Features.FeatureReprojection.GetDistance*
+  commentId: Overload:MapQuest.Features.FeatureReprojection.GetDistance
+  isExternal: true
+  href: MapQuest.Features.FeatureReprojection.html#MapQuest_Features_FeatureReprojection_GetDistance_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_
+  name: GetDistance
+  nameWithType: FeatureReprojection.GetDistance
+  fullName: MapQuest.Features.FeatureReprojection.GetDistance
+- uid: MapQuest.Features.FeatureReprojection.Transformation*
+  commentId: Overload:MapQuest.Features.FeatureReprojection.Transformation
+  isExternal: true
+  href: MapQuest.Features.FeatureReprojection.html#MapQuest_Features_FeatureReprojection_Transformation
+  name: Transformation
+  nameWithType: FeatureReprojection.Transformation
+  fullName: MapQuest.Features.FeatureReprojection.Transformation
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: MapQuest.Features.FeatureReprojection.LastException*
+  commentId: Overload:MapQuest.Features.FeatureReprojection.LastException
+  isExternal: true
+  href: MapQuest.Features.FeatureReprojection.html#MapQuest_Features_FeatureReprojection_LastException
+  name: LastException
+  nameWithType: FeatureReprojection.LastException
+  fullName: MapQuest.Features.FeatureReprojection.LastException
+- uid: MapQuest.Features.FeatureReprojection.FixAngleByReprojection*
+  commentId: Overload:MapQuest.Features.FeatureReprojection.FixAngleByReprojection
+  isExternal: true
+  href: MapQuest.Features.FeatureReprojection.html#MapQuest_Features_FeatureReprojection_FixAngleByReprojection
+  name: FixAngleByReprojection
+  nameWithType: FeatureReprojection.FixAngleByReprojection
+  fullName: MapQuest.Features.FeatureReprojection.FixAngleByReprojection

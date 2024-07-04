@@ -1,0 +1,1662 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BinaryFormatReader | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BinaryFormatReader | mysite ">
+      
+      <meta name="description" content="プリミティブ データ型を特定のエンコーディングのバイナリ値として読み取ります。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.IO.BinaryFormatReader">
+
+
+
+  <h1 id="MapQuest_IO_BinaryFormatReader" data-uid="MapQuest.IO.BinaryFormatReader" class="text-break">
+Class BinaryFormatReader  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.IO.html">IO</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>
+        プリミティブ データ型を特定のエンコーディングのバイナリ値として読み取ります。
+        </p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BinaryFormatReader : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">BinaryFormatReader</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MapQuest_IO_BinaryFormatReader_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p><a class="xref" href="MapQuest.IO.BinaryFormatReader.html">BinaryFormatReader</a> は、リトルエンディアン／ビッグエンディアン両方に対応した
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader">BinaryReader</a> です。</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_IO_BinaryFormatReader__ctor_" data-uid="MapQuest.IO.BinaryFormatReader.#ctor*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader__ctor_System_IO_Stream_" data-uid="MapQuest.IO.BinaryFormatReader.#ctor(System.IO.Stream)">
+  BinaryFormatReader(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        指定したストリームを基にし、<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.utf8encoding">UTF8Encoding</a> を使用して、<a class="xref" href="MapQuest.IO.BinaryFormatReader.html">BinaryFormatReader</a> クラスの新しいインスタンスを初期化します。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BinaryFormatReader(Stream input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>ストリームが読み取りをサポートしていないか、<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> であるか、または既に閉じています。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader__ctor_" data-uid="MapQuest.IO.BinaryFormatReader.#ctor*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader__ctor_System_IO_Stream_System_Text_Encoding_" data-uid="MapQuest.IO.BinaryFormatReader.#ctor(System.IO.Stream,System.Text.Encoding)">
+  BinaryFormatReader(Stream, Encoding)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        供給されたストリームと特定の文字エンコーディングに基づいて、<a class="xref" href="MapQuest.IO.BinaryFormatReader.html">BinaryFormatReader</a> クラスの新しいインスタンスを初期化します。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BinaryFormatReader(Stream input, Encoding encoding)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>供給するストリーム。</p>
+</dd>
+    <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>文字エンコーディング。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>ストリームが読み取りをサポートしていないか、<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> であるか、または既に閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">encoding</code> が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_BaseStream_" data-uid="MapQuest.IO.BinaryFormatReader.BaseStream*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_BaseStream" data-uid="MapQuest.IO.BinaryFormatReader.BaseStream">
+  BaseStream
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+  <a class="xref" href="MapQuest.IO.BinaryFormatReader.html">BinaryFormatReader</a> の基になるストリームへのアクセスを公開します。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Stream BaseStream { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_InternalBuffer_" data-uid="MapQuest.IO.BinaryFormatReader.InternalBuffer*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_InternalBuffer" data-uid="MapQuest.IO.BinaryFormatReader.InternalBuffer">
+  InternalBuffer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>内部で使用しているバッファを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] InternalBuffer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_InternalCharBuffer_" data-uid="MapQuest.IO.BinaryFormatReader.InternalCharBuffer*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_InternalCharBuffer" data-uid="MapQuest.IO.BinaryFormatReader.InternalCharBuffer">
+  InternalCharBuffer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>内部で使用している文字のバッファを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected char[] InternalCharBuffer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_InternalDecoder_" data-uid="MapQuest.IO.BinaryFormatReader.InternalDecoder*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_InternalDecoder" data-uid="MapQuest.IO.BinaryFormatReader.InternalDecoder">
+  InternalDecoder
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>内部で使用している <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.decoder">Decoder</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Decoder InternalDecoder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.decoder">Decoder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_InternalSingleChar_" data-uid="MapQuest.IO.BinaryFormatReader.InternalSingleChar*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_InternalSingleChar" data-uid="MapQuest.IO.BinaryFormatReader.InternalSingleChar">
+  InternalSingleChar
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>内部で使用している文字の配列を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected char[] InternalSingleChar { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_IsLittleEndian_" data-uid="MapQuest.IO.BinaryFormatReader.IsLittleEndian*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_IsLittleEndian" data-uid="MapQuest.IO.BinaryFormatReader.IsLittleEndian">
+  IsLittleEndian
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>読み取る <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> がリトルエンディアンかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLittleEndian { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> がリトルエンディアンである場合は true 、
+ビッグエンディアンである場合は false を返します。
+既定値は <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.bitconverter.islittleendian">BitConverter.IsLittleEndian</a> に依存します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_Close_" data-uid="MapQuest.IO.BinaryFormatReader.Close*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_Close" data-uid="MapQuest.IO.BinaryFormatReader.Close">
+  Close()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在のリーダーと基になるストリームをクローズします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_Dispose_" data-uid="MapQuest.IO.BinaryFormatReader.Dispose*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_Dispose_System_Boolean_" data-uid="MapQuest.IO.BinaryFormatReader.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.IO.BinaryFormatReader.html">BinaryFormatReader</a> によって使用されている
+アンマネージ リソースを解放し、オプションでマネージ リソースも解放します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>マネージ リソースとアンマネージ リソースの両方を解放する場合は
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。アンマネージ リソースだけを解放する場合は <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_FillBuffer_" data-uid="MapQuest.IO.BinaryFormatReader.FillBuffer*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_FillBuffer_System_Int32_" data-uid="MapQuest.IO.BinaryFormatReader.FillBuffer(System.Int32)">
+  FillBuffer(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        指定したバイト数分だけストリームから読み取ったバイトを内部バッファに格納します。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void FillBuffer(int numBytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numBytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>読み取るバイト数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p><code class="paramref">numBytes</code> 分のバイトを読み取る前にストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_PeekChar_" data-uid="MapQuest.IO.BinaryFormatReader.PeekChar*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_PeekChar" data-uid="MapQuest.IO.BinaryFormatReader.PeekChar">
+  PeekChar()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        読み取り可能な次の文字を返します。バイトの位置または文字の位置は変化しません。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int PeekChar()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>
+        使用できる次の文字。使用できる文字がないか、ストリームがシークをサポートしていない場合は -1。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_Read_" data-uid="MapQuest.IO.BinaryFormatReader.Read*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_Read" data-uid="MapQuest.IO.BinaryFormatReader.Read">
+  Read()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        基になるストリームから文字を読み取り、使用した <code>Encoding</code> とストリームから読み取った特定の文字に従ってストリームの現在位置を進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Read()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>
+        入力ストリームの次の文字。現在取り可能な文字がない場合は -1。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_Read_" data-uid="MapQuest.IO.BinaryFormatReader.Read*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_Read_System_Byte___System_Int32_System_Int32_" data-uid="MapQuest.IO.BinaryFormatReader.Read(System.Byte[],System.Int32,System.Int32)">
+  Read(byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+  <code class="paramref">index</code> をバイト配列内の開始点として、ストリームから <code class="paramref">count</code> で指定したバイト数分のバイトを読み取ります。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Read(byte[] buffer, int index, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>データを読み取るバッファ。</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>バッファ内の、バッファへの読み取り開始点。</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>読み取る文字数。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>
+  <code class="paramref">buffer</code> に読み取った文字数。要求したバイト数分のバイトを読み取れなかった場合、この値は要求したバイト数より小さくなります。ストリームの末尾に到達した場合は 0 になることがあります。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>バッファ長から <code class="paramref">index</code> を差し引いた値が <code class="paramref">count</code> より小さい値です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">buffer</code> が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">index</code> または <code class="paramref">count</code> が負の値です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_Read_" data-uid="MapQuest.IO.BinaryFormatReader.Read*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_Read_System_Char___System_Int32_System_Int32_" data-uid="MapQuest.IO.BinaryFormatReader.Read(System.Char[],System.Int32,System.Int32)">
+  Read(char[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+  <code class="paramref">index</code> を文字配列内の開始点として、ストリームから <code class="paramref">count</code> で指定した文字数分だけ文字を読み取ります。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Read(char[] buffer, int index, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>
+        バッファに読み取られた合計文字数。要求した文字数分の文字を読み取れなかった場合、この値は要求した文字数より小さくなります。また、ストリームの末尾に到達した場合は 0 になることがあります。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>バッファ長から <code class="paramref">index</code> を差し引いた値が <code class="paramref">count</code> より小さい値です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">buffer</code> が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">index</code> または <code class="paramref">count</code> が負の値です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_Read7BitEncodedInt_" data-uid="MapQuest.IO.BinaryFormatReader.Read7BitEncodedInt*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_Read7BitEncodedInt" data-uid="MapQuest.IO.BinaryFormatReader.Read7BitEncodedInt">
+  Read7BitEncodedInt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        32 ビット整数を圧縮形式で読み取ります。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int Read7BitEncodedInt()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>
+        圧縮形式の 32 ビット整数。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadBoolean_" data-uid="MapQuest.IO.BinaryFormatReader.ReadBoolean*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadBoolean" data-uid="MapQuest.IO.BinaryFormatReader.ReadBoolean">
+  ReadBoolean()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから <code>Boolean</code> 値を読み取り、ストリームの現在位置を 1 バイトだけ進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ReadBoolean()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>
+        読み取ったバイトが 0 以外の場合は <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。0 の場合は <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadByte_" data-uid="MapQuest.IO.BinaryFormatReader.ReadByte*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadByte" data-uid="MapQuest.IO.BinaryFormatReader.ReadByte">
+  ReadByte()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから次のバイトを読み取り、ストリームの現在位置を 1 バイトだけ進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte ReadByte()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>
+        現在のストリームから読み取った次のバイト。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadBytes_" data-uid="MapQuest.IO.BinaryFormatReader.ReadBytes*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadBytes_System_Int32_" data-uid="MapQuest.IO.BinaryFormatReader.ReadBytes(System.Int32)">
+  ReadBytes(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームからバイト配列に <code class="paramref">count</code> で指定したバイト数分のバイトを読み取り、<code class="paramref">count</code> で指定したバイト数だけ現在位置を進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] ReadBytes(int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>読み取るバイト数。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>
+        基になるストリームから読み取ったデータが格納されているバイト配列。ストリームの末尾に到達した場合は要求したバイト数より小さくなることがあります。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">count</code> が負の値です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadChar_" data-uid="MapQuest.IO.BinaryFormatReader.ReadChar*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadChar" data-uid="MapQuest.IO.BinaryFormatReader.ReadChar">
+  ReadChar()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームの次の文字を読み取り、使用した <code>Encoding</code> とストリームから読み取った特定の文字に従ってストリームの現在位置を進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual char ReadChar()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>
+        現在のストリームから読み取った文字。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadChars_" data-uid="MapQuest.IO.BinaryFormatReader.ReadChars*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadChars_System_Int32_" data-uid="MapQuest.IO.BinaryFormatReader.ReadChars(System.Int32)">
+  ReadChars(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから <code class="paramref">count</code> で指定した文字数分の文字を読み取り、そのデータを文字配列として返します。使用した <code>Encoding</code> とストリームから読み取った特定の文字に従って現在位置を進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual char[] ReadChars(int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>読み取る文字数。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p>
+        基になるストリームから読み取ったデータが格納されている文字配列。ストリームの末尾に到達した場合は、要求された文字数より小さくなることがあります。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">count</code> が負の値です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadDecimal_" data-uid="MapQuest.IO.BinaryFormatReader.ReadDecimal*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadDecimal" data-uid="MapQuest.IO.BinaryFormatReader.ReadDecimal">
+  ReadDecimal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから 10 進数値を読み取り、ストリームの現在位置を 16 バイトだけ進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual decimal ReadDecimal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>
+        現在のストリームから読み取った 10 進数値。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadDouble_" data-uid="MapQuest.IO.BinaryFormatReader.ReadDouble*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadDouble" data-uid="MapQuest.IO.BinaryFormatReader.ReadDouble">
+  ReadDouble()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから 8 バイト浮動小数点値を読み取り、ストリームの現在位置を 8 バイトだけ進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double ReadDouble()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>
+        現在のストリームから読み取った 8 バイト浮動小数点値。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadInt16_" data-uid="MapQuest.IO.BinaryFormatReader.ReadInt16*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadInt16" data-uid="MapQuest.IO.BinaryFormatReader.ReadInt16">
+  ReadInt16()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから 2 バイト符号付き整数を読み取り、ストリームの現在位置を 2 バイトだけ進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual short ReadInt16()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>
+        現在のストリームから読み取った 2 バイト符号付き整数。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadInt32_" data-uid="MapQuest.IO.BinaryFormatReader.ReadInt32*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadInt32" data-uid="MapQuest.IO.BinaryFormatReader.ReadInt32">
+  ReadInt32()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから 4 バイト符号付き整数を読み取り、ストリームの現在位置を 4 バイトだけ進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ReadInt32()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>
+        現在のストリームから読み取った 4 バイト符号付き整数。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadInt64_" data-uid="MapQuest.IO.BinaryFormatReader.ReadInt64*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadInt64" data-uid="MapQuest.IO.BinaryFormatReader.ReadInt64">
+  ReadInt64()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから 8 バイト符号付き整数を読み取り、ストリームの現在位置を 8 バイトだけ進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long ReadInt64()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>
+        現在のストリームから読み取った 8 バイト符号付き整数。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadSByte_" data-uid="MapQuest.IO.BinaryFormatReader.ReadSByte*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadSByte" data-uid="MapQuest.IO.BinaryFormatReader.ReadSByte">
+  ReadSByte()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから符号付きバイトを読み取り、ストリームの現在位置を 1 バイトだけ進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public virtual sbyte ReadSByte()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd><p>
+        現在のストリームから読み取った符号付きバイト。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadSingle_" data-uid="MapQuest.IO.BinaryFormatReader.ReadSingle*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadSingle" data-uid="MapQuest.IO.BinaryFormatReader.ReadSingle">
+  ReadSingle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから 4 バイト浮動小数点値を読み取り、ストリームの現在位置を 4 バイトだけ進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float ReadSingle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>
+        現在のストリームから読み取った 4 バイト浮動小数点値。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadString_" data-uid="MapQuest.IO.BinaryFormatReader.ReadString*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadString" data-uid="MapQuest.IO.BinaryFormatReader.ReadString">
+  ReadString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから文字列を読み取ります。文字列の先頭に長さを付け、7 ビットの整数としてまとめてエンコードします。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ReadString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>
+        読み取った文字列。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadUInt16_" data-uid="MapQuest.IO.BinaryFormatReader.ReadUInt16*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadUInt16" data-uid="MapQuest.IO.BinaryFormatReader.ReadUInt16">
+  ReadUInt16()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから 2 バイト符号なし整数を読み取り、ストリームの位置を 2 バイトだけ進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public virtual ushort ReadUInt16()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>
+        現在のストリームから読み取った 2 バイト符号なし整数。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadUInt32_" data-uid="MapQuest.IO.BinaryFormatReader.ReadUInt32*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadUInt32" data-uid="MapQuest.IO.BinaryFormatReader.ReadUInt32">
+  ReadUInt32()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから 4 バイト符号なし整数を読み取り、ストリームの位置を 4 バイトだけ進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public virtual uint ReadUInt32()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>
+        現在のストリームから読み取った 4 バイト符号なし整数。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_IO_BinaryFormatReader_ReadUInt64_" data-uid="MapQuest.IO.BinaryFormatReader.ReadUInt64*"></a>
+
+  <h3 id="MapQuest_IO_BinaryFormatReader_ReadUInt64" data-uid="MapQuest.IO.BinaryFormatReader.ReadUInt64">
+  ReadUInt64()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+        現在のストリームから 8 バイト符号なし整数を読み取り、ストリームの位置を 8 バイトだけ進めます。
+        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public virtual ulong ReadUInt64()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>
+        現在のストリームから読み取った 8 バイト符号なし整数。
+        </p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>ストリームの末尾に到達しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>I/O エラーが発生しました。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>ストリームが閉じています。</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

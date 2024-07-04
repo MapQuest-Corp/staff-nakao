@@ -1,0 +1,836 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AngularUnit | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AngularUnit | mysite ">
+      
+      <meta name="description" content="角度の単位を表すクラスです。 例えば、「度(Degree)」や「ラジアン(Radian)」などです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.CoordinateSystems.AngularUnit">
+
+
+
+  <h1 id="MapQuest_CoordinateSystems_AngularUnit" data-uid="MapQuest.CoordinateSystems.AngularUnit" class="text-break">
+Class AngularUnit  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.CoordinateSystems.html">CoordinateSystems</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.CoordinateSystems.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>角度の単位を表すクラスです。
+例えば、「度(Degree)」や「ラジアン(Radian)」などです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AngularUnit : Unit, IAngularUnit, IUnit, IInfo, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.Info.html">Info</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.Unit.html">Unit</a></div>
+      <div><span class="xref">AngularUnit</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.IAngularUnit.html">IAngularUnit</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.IUnit.html">IUnit</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.IInfo.html">IInfo</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Millimetre">Unit.Millimetre</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Centimetre">Unit.Centimetre</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Metre">Unit.Metre</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Kilometre">Unit.Kilometre</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Inch">Unit.Inch</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Point">Unit.Point</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Radian">Unit.Radian</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Degree">Unit.Degree</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Minute">Unit.Minute</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Second">Unit.Second</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Millisecond">Unit.Millisecond</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Gon">Unit.Gon</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Grad">Unit.Grad</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Pixel">Unit.Pixel</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode">Info.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_">Info.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Remarks">Info.Remarks</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">Info.AuthorityCode</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Info.Authority</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Info.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Info.Alias</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Info.Abbreviation</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_WKT">Info.WKT</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_XML">Info.XML</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit__ctor_" data-uid="MapQuest.CoordinateSystems.AngularUnit.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit__ctor_MapQuest_CoordinateSystems_AngularUnit_" data-uid="MapQuest.CoordinateSystems.AngularUnit.#ctor(MapQuest.CoordinateSystems.AngularUnit)">
+  AngularUnit(AngularUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在のインスタンスの詳細コピーを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AngularUnit(AngularUnit angularUnit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angularUnit</code> <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a></dt>
+    <dd><p>複製元の <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>angularUnit が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit__ctor_" data-uid="MapQuest.CoordinateSystems.AngularUnit.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit__ctor_System_Double_" data-uid="MapQuest.CoordinateSystems.AngularUnit.#ctor(System.Double)">
+  AngularUnit(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_RadiansPerUnit">RadiansPerUnit</a> を指定して、
+新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AngularUnit(double radiansPerUnit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radiansPerUnit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_RadiansPerUnit">RadiansPerUnit</a> の値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_AngularUnit__ctor_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>radiansPerUnit には 0 を指定する事はできません。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystemException.html">CoordinateSystemException</a></dt>
+    <dd><p>radiansPerUnit に 0 を指定しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit__ctor_" data-uid="MapQuest.CoordinateSystems.AngularUnit.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit__ctor_System_Double_System_String_" data-uid="MapQuest.CoordinateSystems.AngularUnit.#ctor(System.Double,System.String)">
+  AngularUnit(double, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_RadiansPerUnit">RadiansPerUnit</a> と単位の名称を指定して、
+新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AngularUnit(double radiansPerUnit, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radiansPerUnit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_RadiansPerUnit">RadiansPerUnit</a> の値。</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>単位の名称。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_AngularUnit__ctor_System_Double_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><param name="name">
+        radiansPerUnit には 0 を指定する事はできません。
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystemException.html">CoordinateSystemException</a></dt>
+    <dd><p>radiansPerUnit に 0 を指定しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit__ctor_" data-uid="MapQuest.CoordinateSystems.AngularUnit.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit__ctor_System_Double_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="MapQuest.CoordinateSystems.AngularUnit.#ctor(System.Double,System.String,System.String,System.String,System.String,System.String,System.String)">
+  AngularUnit(double, string, string, string, string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>必要なパラメータを指定して、新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AngularUnit(double radiansPerUnit, string remarks, string authority, string authorityCode, string name, string alias, string abbreviation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radiansPerUnit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_RadiansPerUnit">RadiansPerUnit</a> の値。</p>
+</dd>
+    <dt><code>remarks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>単位の説明。</p>
+</dd>
+    <dt><code>authority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>単位の策定元団体・機関名。</p>
+</dd>
+    <dt><code>authorityCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>authority が策定したこの単位の ID 。</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>単位の名称。</p>
+</dd>
+    <dt><code>alias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>単位の別名。</p>
+</dd>
+    <dt><code>abbreviation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>単位の省略名。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_AngularUnit__ctor_System_Double_System_String_System_String_System_String_System_String_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>radiansPerUnit には 0 を指定する事はできません。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystemException.html">CoordinateSystemException</a></dt>
+    <dd><p>radiansPerUnit に 0 を指定しました。</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit_IsLinear_" data-uid="MapQuest.CoordinateSystems.AngularUnit.IsLinear*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit_IsLinear" data-uid="MapQuest.CoordinateSystems.AngularUnit.IsLinear">
+  IsLinear
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この単位が、<a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a> であるかどうかを返します。
+false を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsLinear { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>false を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit_RadiansPerUnit_" data-uid="MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit_RadiansPerUnit" data-uid="MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit">
+  RadiansPerUnit
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この単位のラジアンに対する比率を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double RadiansPerUnit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>この単位のラジアンに対する比率。読み取り専用です。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_AngularUnit_RadiansPerUnit_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>全ての <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> は、ラジアンをベースに考えます。</p>
+<p></p>
+「その単位は、ラジアンに対してどの位の比率か？」を、
+コンストラクタのパラメータで設定します。
+<p></p>
+例えば、「度」は、「π÷１８０」であるので、「度」を表す 
+<a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> の <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_RadiansPerUnit">RadiansPerUnit</a> には、
+「π÷１８０」、つまり 0.01745... を設定します。
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit_Clone_" data-uid="MapQuest.CoordinateSystems.AngularUnit.Clone*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit_Clone" data-uid="MapQuest.CoordinateSystems.AngularUnit.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在のインスタンスの詳細コピーを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>複製した <a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html">AngularUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit_DegreeAdd_" data-uid="MapQuest.CoordinateSystems.AngularUnit.DegreeAdd*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit_DegreeAdd_System_Double_System_Double_" data-uid="MapQuest.CoordinateSystems.AngularUnit.DegreeAdd(System.Double,System.Double)">
+  DegreeAdd(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>角度の足し算を行います。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double DegreeAdd(double degree, double add)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>degree</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>足される基となる角度(度)。</p>
+</dd>
+    <dt><code>add</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>足す値(度)。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>足し算の結果。必ず 0 ～ 360 の範囲の値になります。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_AngularUnit_DegreeAdd_System_Double_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このメソッドは、角度値は 0 ～ 360 の範囲である事を考慮して加算を行います。</p>
+<p></p>
+例えば、<code>340 + 30</code> は、通常は <code>370</code> ですが、このメソッドの結果は、
+<code>10</code> になります。
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit_GetDegree_" data-uid="MapQuest.CoordinateSystems.AngularUnit.GetDegree*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit_GetDegree_System_Double_" data-uid="MapQuest.CoordinateSystems.AngularUnit.GetDegree(System.Double)">
+  GetDegree(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「トータル度」から「度」の値を抽出します。
+<a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetMinute_System_Double_">GetMinute(double)</a><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetSecond_System_Double_">GetSecond(double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static short GetDegree(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>「トータル度」の値。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>トータル度から抽出した「度」だけの値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_AngularUnit_GetDegree_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>「トータル度」とは、度分秒の値を全て「度」の少数点形式で表したものを指します。<br>
+例えば、136度30分00秒は、トータル度では、「136.5度」と表します。</p>
+<p></p>
+このメソッドは、トータル度から、「度」の成分だけを抽出します。
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit_GetMinute_" data-uid="MapQuest.CoordinateSystems.AngularUnit.GetMinute*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit_GetMinute_System_Double_" data-uid="MapQuest.CoordinateSystems.AngularUnit.GetMinute(System.Double)">
+  GetMinute(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「トータル度」から「分」の値を抽出します。
+<a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetDegree_System_Double_">GetDegree(double)</a><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetSecond_System_Double_">GetSecond(double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static short GetMinute(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>「トータル度」の値。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>トータル度から抽出した「分」だけの値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_AngularUnit_GetMinute_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>「トータル度」とは、度分秒の値を全て「度」の少数点形式で表したものを指します。<br>
+例えば、136度30分00秒は、トータル度では、「136.5度」と表します。</p>
+<p></p>
+このメソッドは、トータル度から、「分」の成分だけを抽出します。
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit_GetSecond_" data-uid="MapQuest.CoordinateSystems.AngularUnit.GetSecond*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit_GetSecond_System_Double_" data-uid="MapQuest.CoordinateSystems.AngularUnit.GetSecond(System.Double)">
+  GetSecond(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「トータル度」から「秒」の値を抽出します。
+<a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetDegree_System_Double_">GetDegree(double)</a><a class="xref" href="MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetMinute_System_Double_">GetMinute(double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetSecond(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>「トータル度」の値。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>トータル度から抽出した「秒」だけの値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_AngularUnit_GetSecond_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>「トータル度」とは、度分秒の値を全て「度」の少数点形式で表したものを指します。<br>
+例えば、136度30分00秒は、トータル度では、「136.5度」と表します。</p>
+<p></p>
+このメソッドは、トータル度から、「秒」の成分だけを抽出します。
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit_GetTotalDegree_" data-uid="MapQuest.CoordinateSystems.AngularUnit.GetTotalDegree*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit_GetTotalDegree_System_Int16_System_Int16_System_Double_" data-uid="MapQuest.CoordinateSystems.AngularUnit.GetTotalDegree(System.Int16,System.Int16,System.Double)">
+  GetTotalDegree(short, short, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>&quot;度&quot; &quot;分&quot; &quot;秒&quot; の値から「トータル度」の値を求めます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetTotalDegree(short degree, short minute, double second)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>degree</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>度</p>
+</dd>
+    <dt><code>minute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>分</p>
+</dd>
+    <dt><code>second</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>秒</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>トータル度。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_AngularUnit_NormalizeDegree_" data-uid="MapQuest.CoordinateSystems.AngularUnit.NormalizeDegree*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_AngularUnit_NormalizeDegree_System_Double__" data-uid="MapQuest.CoordinateSystems.AngularUnit.NormalizeDegree(System.Double@)">
+  NormalizeDegree(ref double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>角度の値を正規化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void NormalizeDegree(ref double degree)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>degree</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>[IN/OUT]角度値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_AngularUnit_NormalizeDegree_System_Double___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>角度の値（度）がマイナスの値、0～360の範囲外の値を、正しく 0～360 の範囲
+に納めるようにします。<p></p>
+例)<br>
+・390 → 30<br>
+・-30 → 330<br>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

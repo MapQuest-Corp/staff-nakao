@@ -1,0 +1,953 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Ellipsoid | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Ellipsoid | mysite ">
+      
+      <meta name="description" content="「楕円体」を表すクラスです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.CoordinateSystems.Ellipsoid">
+
+
+
+  <h1 id="MapQuest_CoordinateSystems_Ellipsoid" data-uid="MapQuest.CoordinateSystems.Ellipsoid" class="text-break">
+Class Ellipsoid  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.CoordinateSystems.html">CoordinateSystems</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.CoordinateSystems.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>「楕円体」を表すクラスです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Ellipsoid : Info, IEllipsoid, IInfo, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.Info.html">Info</a></div>
+      <div><span class="xref">Ellipsoid</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.IEllipsoid.html">IEllipsoid</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.IInfo.html">IInfo</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode">Info.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_">Info.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Remarks">Info.Remarks</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">Info.AuthorityCode</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Info.Authority</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Info.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Info.Alias</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Info.Abbreviation</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_WKT">Info.WKT</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_XML">Info.XML</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MapQuest_CoordinateSystems_Ellipsoid_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>楕円体とは、地球を数学的に表すために、ジオイドに厳密に接近させた、
+測地・測量で使うための図形です。</p>
+<p></p>
+日本では、次の楕円体が一般的によく利用されます。
+<ol><li><span class="term">Bessel 1841</span>
+日本測地系の平面直角座標系で使われる楕円体です。
+</li><li><span class="term">GRS 1980</span>
+測地成果2000 で使用される楕円体です。
+</li></ol>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid__ctor_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid__ctor_MapQuest_CoordinateSystems_Ellipsoid_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.#ctor(MapQuest.CoordinateSystems.Ellipsoid)">
+  Ellipsoid(Ellipsoid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>コピーコンストラクタ。指定したインスタンスの詳細コピーを提供します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Ellipsoid(Ellipsoid sourceEllipsoid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceEllipsoid</code> <a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html">Ellipsoid</a></dt>
+    <dd><p>コピー元のインスタンス。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid__ctor_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid__ctor_System_Double_System_Double_System_Double_System_Boolean_MapQuest_CoordinateSystems_ILinearUnit_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit)">
+  Ellipsoid(double, double, double, bool, ILinearUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>楕円体のパラメータを指定して、新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Ellipsoid(double semiMajorAxis, double semiMinorAxis, double inverseFlattening, bool isIvfDefinitive, ILinearUnit linearUnit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semiMajorAxis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の長半径。</p>
+</dd>
+    <dt><code>semiMinorAxis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の短半径。</p>
+</dd>
+    <dt><code>inverseFlattening</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の「扁平率の逆数」。</p>
+</dd>
+    <dt><code>isIvfDefinitive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>inverseFlattening を明示的に設定した場合は true 、
+それ以外の場合は false 。</p>
+</dd>
+    <dt><code>linearUnit</code> <a class="xref" href="MapQuest.CoordinateSystems.ILinearUnit.html">ILinearUnit</a></dt>
+    <dd><p>楕円体の距離の単位。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid__ctor_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid__ctor_System_Double_System_Double_System_Double_System_Boolean_MapQuest_CoordinateSystems_ILinearUnit_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit,System.String,System.String,System.String,System.String,System.String,System.String)">
+  Ellipsoid(double, double, double, bool, ILinearUnit, string, string, string, string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>楕円体のパラメータと、名称などの情報を指定して、
+新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Ellipsoid(double semiMajorAxis, double semiMinorAxis, double inverseFlattening, bool isIvfDefinitive, ILinearUnit linearUnit, string remarks, string authority, string authorityCode, string name, string alias, string abbreviation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semiMajorAxis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の長半径。</p>
+</dd>
+    <dt><code>semiMinorAxis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の短半径。</p>
+</dd>
+    <dt><code>inverseFlattening</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の「扁平率の逆数」。</p>
+</dd>
+    <dt><code>isIvfDefinitive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>inverseFlattening を明示的に設定した場合は true 、
+それ以外の場合は false 。</p>
+</dd>
+    <dt><code>linearUnit</code> <a class="xref" href="MapQuest.CoordinateSystems.ILinearUnit.html">ILinearUnit</a></dt>
+    <dd><p>楕円体の距離の単位。</p>
+</dd>
+    <dt><code>remarks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>楕円体の説明。</p>
+</dd>
+    <dt><code>authority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>この楕円体を策定した機関や団体の名称。</p>
+</dd>
+    <dt><code>authorityCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>authority によって策定されたこの楕円体を識別する ID 。</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>楕円体の名称。</p>
+</dd>
+    <dt><code>alias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>楕円体の名称以外の別名。</p>
+</dd>
+    <dt><code>abbreviation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>楕円体の短縮名。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid__ctor_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid__ctor_System_String_System_Double_System_Double_MapQuest_CoordinateSystems_ILinearUnit_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.String,System.Double,System.Double,MapQuest.CoordinateSystems.ILinearUnit)">
+  Ellipsoid(string, double, double, ILinearUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>楕円体の、名前・長半径・短半径・単位を指定して、
+新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Ellipsoid(string name, double semiMajorAxis, double semiMinorAxis, ILinearUnit linearUnit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>楕円体の名称。</p>
+</dd>
+    <dt><code>semiMajorAxis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の長半径。</p>
+</dd>
+    <dt><code>semiMinorAxis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の短半径。</p>
+</dd>
+    <dt><code>linearUnit</code> <a class="xref" href="MapQuest.CoordinateSystems.ILinearUnit.html">ILinearUnit</a></dt>
+    <dd><p>楕円体の距離の単位。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid__ctor_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid__ctor_System_String_System_Double_System_Double_System_Double_System_Boolean_MapQuest_CoordinateSystems_ILinearUnit_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.#ctor(System.String,System.Double,System.Double,System.Double,System.Boolean,MapQuest.CoordinateSystems.ILinearUnit)">
+  Ellipsoid(string, double, double, double, bool, ILinearUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a new ellipsoid using the specified axis length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Ellipsoid(string name, double semiMajorAxis, double semiMinorAxis, double inverseFlattening, bool isIvfDefinitive, ILinearUnit linearUnit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>楕円体の名称。</p>
+</dd>
+    <dt><code>semiMajorAxis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の長半径。</p>
+</dd>
+    <dt><code>semiMinorAxis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の短半径。</p>
+</dd>
+    <dt><code>inverseFlattening</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の「扁平率の逆数」。</p>
+</dd>
+    <dt><code>isIvfDefinitive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>inverseFlattening を明示的に設定した場合は true 、
+それ以外の場合は false 。</p>
+</dd>
+    <dt><code>linearUnit</code> <a class="xref" href="MapQuest.CoordinateSystems.ILinearUnit.html">ILinearUnit</a></dt>
+    <dd><p>楕円体の距離の単位。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_AxisUnit_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.AxisUnit*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_AxisUnit" data-uid="MapQuest.CoordinateSystems.Ellipsoid.AxisUnit">
+  AxisUnit
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>楕円体の長半径・短半径の単位を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILinearUnit AxisUnit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ILinearUnit.html">ILinearUnit</a></dt>
+    <dd><p>楕円体の軸の単位を示す <a class="xref" href="MapQuest.CoordinateSystems.ILinearUnit.html">ILinearUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_Bessel1841_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.Bessel1841*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_Bessel1841" data-uid="MapQuest.CoordinateSystems.Ellipsoid.Bessel1841">
+  Bessel1841
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「Bessel 1841」楕円体を取得します。古い日本測地系で使用されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Ellipsoid Bessel1841 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html">Ellipsoid</a></dt>
+    <dd><p>「Bessel 1841」楕円体を示す <a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html">Ellipsoid</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_Eccentricity_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.Eccentricity*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_Eccentricity" data-uid="MapQuest.CoordinateSystems.Ellipsoid.Eccentricity">
+  Eccentricity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>偏心率を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Eccentricity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>この楕円体の偏心率。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Ellipsoid_Eccentricity_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>偏心率は、以下の計算式によって表されます。</p>
+<pre><code class="lang-csharp">a, b, は楕円体の長半径と短半径を示します。
+f, flattening = (a - b)/a.
+
+e = sqrt(2 * f - f * f)</code></pre>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_GRS80_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.GRS80*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_GRS80" data-uid="MapQuest.CoordinateSystems.Ellipsoid.GRS80">
+  GRS80
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「GRS80」楕円体を取得します。日本の「測地成果2000(JGD2000)」や
+アメリカの「American datum system (NAD83)」で使用されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Ellipsoid GRS80 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html">Ellipsoid</a></dt>
+    <dd><p>「GRS80」楕円体を示す <a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html">Ellipsoid</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_InverseFlattening_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.InverseFlattening*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_InverseFlattening" data-uid="MapQuest.CoordinateSystems.Ellipsoid.InverseFlattening">
+  InverseFlattening
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>楕円体のつぶれ方を示す「扁平率の逆数」を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double InverseFlattening { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の扁平率の逆数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_IsIvfDefinitive_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.IsIvfDefinitive*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_IsIvfDefinitive" data-uid="MapQuest.CoordinateSystems.Ellipsoid.IsIvfDefinitive">
+  IsIvfDefinitive
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「楕円体のつぶれ方」を示す「扁平率の逆数」が、
+明示的にパラメータとして与えられているかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIvfDefinitive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true の場合、「楕円体のつぶれ方」は、明確に与えられます。
+false の場合は、長半径・短半径から計算されます。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Ellipsoid_IsIvfDefinitive_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>いくつかの楕円体は定義する値として「扁平率の逆数」を使用します。<p></p>
+他の楕円体は、「扁平率の逆数」を計算するために極半径を使用します。<p></p>
+この区別は浮動小数点での丸め誤差を回避するのに重要になります。<p></p>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_IsSphere_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.IsSphere*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_IsSphere" data-uid="MapQuest.CoordinateSystems.Ellipsoid.IsSphere">
+  IsSphere
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>完全な球体かどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSphere { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true の場合、この楕円体は完全な「球体」である事を示します。
+それ以外の場合は false を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_SemiMajorAxis_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.SemiMajorAxis*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_SemiMajorAxis" data-uid="MapQuest.CoordinateSystems.Ellipsoid.SemiMajorAxis">
+  SemiMajorAxis
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>楕円体の長半径を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SemiMajorAxis { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の長半径。
+単位は <a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_AxisUnit">AxisUnit</a> で定義されます。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_SemiMinorAxis_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.SemiMinorAxis*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_SemiMinorAxis" data-uid="MapQuest.CoordinateSystems.Ellipsoid.SemiMinorAxis">
+  SemiMinorAxis
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>楕円体の短半径を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SemiMinorAxis { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の短半径。
+単位は <a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_AxisUnit">AxisUnit</a> で定義されます。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_WGS84_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.WGS84*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_WGS84" data-uid="MapQuest.CoordinateSystems.Ellipsoid.WGS84">
+  WGS84
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>「WGS84 楕円体」を取得します。GPS などで使われる楕円体です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Ellipsoid WGS84 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html">Ellipsoid</a></dt>
+    <dd><p>「WGS84 楕円体」を示す <a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html">Ellipsoid</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_Clone_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.Clone*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_Clone" data-uid="MapQuest.CoordinateSystems.Ellipsoid.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在のインスタンスの詳細コピーを提供します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>複製された <a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html">Ellipsoid</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_Create_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.Create*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_Create_System_String_System_Double_System_Double_MapQuest_CoordinateSystems_ILinearUnit_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.Create(System.String,System.Double,System.Double,MapQuest.CoordinateSystems.ILinearUnit)">
+  Create(string, double, double, ILinearUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>新しい楕円体を生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Ellipsoid Create(string name, double semiMajorAxis, double inverseFlattening, ILinearUnit linearUnit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>楕円体の名称。</p>
+</dd>
+    <dt><code>semiMajorAxis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体の長半径。</p>
+</dd>
+    <dt><code>inverseFlattening</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>扁平率の逆数。</p>
+</dd>
+    <dt><code>linearUnit</code> <a class="xref" href="MapQuest.CoordinateSystems.ILinearUnit.html">ILinearUnit</a></dt>
+    <dd><p>楕円体の座標の単位。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html">Ellipsoid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Ellipsoid_OrthodromicDistance_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.OrthodromicDistance*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Ellipsoid_OrthodromicDistance_System_Double_System_Double_System_Double_System_Double_" data-uid="MapQuest.CoordinateSystems.Ellipsoid.OrthodromicDistance(System.Double,System.Double,System.Double,System.Double)">
+  OrthodromicDistance(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>楕円体上の 2 つの座標間の距離（大圏コースの距離）を計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double OrthodromicDistance(double x1, double y1, double x2, double y2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>第 1 の経度(度)。</p>
+</dd>
+    <dt><code>y1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>第 1 の緯度(度)。</p>
+</dd>
+    <dt><code>x2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>第 2 の経度(度)。</p>
+</dd>
+    <dt><code>y2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>第 2 の緯度(度)。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>楕円体上の 2 つの座標間の距離(単位は <a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html#MapQuest_CoordinateSystems_Ellipsoid_AxisUnit">AxisUnit</a> 。)<p></p>
+計算に失敗した場合は <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double.nan">NaN</a> を返します。
+例外は発生しません。
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Ellipsoid_OrthodromicDistance_System_Double_System_Double_System_Double_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>「Orthodromic Distance」とは、楕円体の表面の 2 つの座標間の、最も近い距離の事です。
+この距離で示されるコースを「大圏コース」といいます。</p>
+<p></p>
+大圏コースは、「航程線(loxodromic)」とは異なります。
+航程線は、経線と常に一定の角度で進んでいくため、大圏コースよりも長くなります。
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

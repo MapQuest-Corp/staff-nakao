@@ -1,0 +1,1271 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.FeatureOperator
+  commentId: T:MapQuest.Features.FeatureOperator
+  id: FeatureOperator
+  parent: MapQuest.Features
+  children:
+  - MapQuest.Features.FeatureOperator.#ctor(MapQuest.Features.FeatureFactory)
+  - MapQuest.Features.FeatureOperator.#ctor(MapQuest.Features.FeatureFactory,MapQuest.Topology.Operation.BufferEndCapStyle)
+  - MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double)
+  - MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double,System.Int32)
+  - MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator,System.Double)
+  - MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator,System.Double,System.Int32)
+  - MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList,System.Double)
+  - MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList,System.Double,System.Int32)
+  - MapQuest.Features.FeatureOperator.BufferStyle
+  - MapQuest.Features.FeatureOperator.ConvexHull(MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureOperator.Difference(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureOperator.Error
+  - MapQuest.Features.FeatureOperator.Factory
+  - MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.IFeatureIterator)
+  - MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.IFeatureList)
+  - MapQuest.Features.FeatureOperator.Relate(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureOperator.SymmetricDifference(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureOperator.Union(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureOperator.Union(MapQuest.Features.IFeatureIterator)
+  - MapQuest.Features.FeatureOperator.Union(MapQuest.Features.IFeatureList)
+  langs:
+  - csharp
+  - vb
+  name: FeatureOperator
+  nameWithType: FeatureOperator
+  fullName: MapQuest.Features.FeatureOperator
+  type: Class
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    空間解析や空間演算を処理するためのクラスです。
+
+
+    <newpara><xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> から 
+    	<xref href="MapQuest.Topology.Geometries.Geometry" data-throw-if-not-resolved="false"></xref> 
+    	を取得しなくても解析や演算処理を行うことができます。
+
+    </newpara>
+  example: []
+  syntax:
+    content: public sealed class FeatureOperator
+    content.vb: Public NotInheritable Class FeatureOperator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: MapQuest.Features.FeatureOperator.#ctor(MapQuest.Features.FeatureFactory)
+  commentId: M:MapQuest.Features.FeatureOperator.#ctor(MapQuest.Features.FeatureFactory)
+  id: '#ctor(MapQuest.Features.FeatureFactory)'
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: FeatureOperator(FeatureFactory)
+  nameWithType: FeatureOperator.FeatureOperator(FeatureFactory)
+  fullName: MapQuest.Features.FeatureOperator.FeatureOperator(MapQuest.Features.FeatureFactory)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    指定した Factory を備えた、 
+
+    <xref href="MapQuest.Features.FeatureOperator" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  remarks: >-
+    バッファ処理のキャップ スタイルには、
+
+
+    全て <xref href="MapQuest.Topology.Operation.BufferEndCapStyle.Round" data-throw-if-not-resolved="false"></xref> が指定されます。
+  example: []
+  syntax:
+    content: public FeatureOperator(FeatureFactory factory)
+    parameters:
+    - id: factory
+      type: MapQuest.Features.FeatureFactory
+      description: >-
+        空間演算により <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> を生成するための 
+
+        <xref href="MapQuest.Features.FeatureFactory" data-throw-if-not-resolved="false"></xref> 
+
+        オブジェクト。
+    content.vb: Public Sub New(factory As FeatureFactory)
+  overload: MapQuest.Features.FeatureOperator.#ctor*
+  nameWithType.vb: FeatureOperator.New(FeatureFactory)
+  fullName.vb: MapQuest.Features.FeatureOperator.New(MapQuest.Features.FeatureFactory)
+  name.vb: New(FeatureFactory)
+- uid: MapQuest.Features.FeatureOperator.#ctor(MapQuest.Features.FeatureFactory,MapQuest.Topology.Operation.BufferEndCapStyle)
+  commentId: M:MapQuest.Features.FeatureOperator.#ctor(MapQuest.Features.FeatureFactory,MapQuest.Topology.Operation.BufferEndCapStyle)
+  id: '#ctor(MapQuest.Features.FeatureFactory,MapQuest.Topology.Operation.BufferEndCapStyle)'
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: FeatureOperator(FeatureFactory, BufferEndCapStyle)
+  nameWithType: FeatureOperator.FeatureOperator(FeatureFactory, BufferEndCapStyle)
+  fullName: MapQuest.Features.FeatureOperator.FeatureOperator(MapQuest.Features.FeatureFactory, MapQuest.Topology.Operation.BufferEndCapStyle)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    指定した Factory 、キャップ スタイルを備えた、 
+
+    <xref href="MapQuest.Features.FeatureOperator" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public FeatureOperator(FeatureFactory factory, BufferEndCapStyle bufferStyle)
+    parameters:
+    - id: factory
+      type: MapQuest.Features.FeatureFactory
+      description: >-
+        空間演算により <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> を生成するための 
+
+        <xref href="MapQuest.Features.FeatureFactory" data-throw-if-not-resolved="false"></xref> 
+
+        オブジェクト。
+    - id: bufferStyle
+      type: MapQuest.Topology.Operation.BufferEndCapStyle
+      description: バッファ処理で使用されるキャップ スタイル。
+    content.vb: Public Sub New(factory As FeatureFactory, bufferStyle As BufferEndCapStyle)
+  overload: MapQuest.Features.FeatureOperator.#ctor*
+  nameWithType.vb: FeatureOperator.New(FeatureFactory, BufferEndCapStyle)
+  fullName.vb: MapQuest.Features.FeatureOperator.New(MapQuest.Features.FeatureFactory, MapQuest.Topology.Operation.BufferEndCapStyle)
+  name.vb: New(FeatureFactory, BufferEndCapStyle)
+- uid: MapQuest.Features.FeatureOperator.Relate(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureOperator.Relate(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  id: Relate(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Relate(Feature, Feature)
+  nameWithType: FeatureOperator.Relate(Feature, Feature)
+  fullName: MapQuest.Features.FeatureOperator.Relate(MapQuest.Features.Feature, MapQuest.Features.Feature)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    指定された地物間の位置関係（リレーションシップ）を計算します。
+
+
+    <p><!-- Non Support 2005/01/20 -->
+    	このメソッドは、現在サポートしていません。
+    </p>
+  remarks: "  <xref href=\"MapQuest.Topology.Geometries.IntersectionMatrix\" data-throw-if-not-resolved=\"false\"></xref> は、 \r\nhttp://www.opengis.org \r\nに定義されている交差マトリックス\r\n「 Dimensionally-Extended 9 Intersection Matrix 」 ( DE-9IM ) に準拠しています。"
+  example: []
+  syntax:
+    content: public IntersectionMatrix Relate(Feature feature1, Feature feature2)
+    parameters:
+    - id: feature1
+      type: MapQuest.Features.Feature
+      description: 比較する <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> オブジェクト１。
+    - id: feature2
+      type: MapQuest.Features.Feature
+      description: 比較する <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> オブジェクト２。
+    return:
+      type: MapQuest.Topology.Geometries.IntersectionMatrix
+      description: >-
+        二つの地物のリレーションシップが定義された 
+
+        <xref href="MapQuest.Topology.Geometries.IntersectionMatrix" data-throw-if-not-resolved="false"></xref> オブジェクト。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Relate(feature1 As Feature, feature2 As Feature) As IntersectionMatrix
+  overload: MapQuest.Features.FeatureOperator.Relate*
+- uid: MapQuest.Features.FeatureOperator.ConvexHull(MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureOperator.ConvexHull(MapQuest.Features.Feature)
+  id: ConvexHull(MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: ConvexHull(Feature)
+  nameWithType: FeatureOperator.ConvexHull(Feature)
+  fullName: MapQuest.Features.FeatureOperator.ConvexHull(MapQuest.Features.Feature)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    指定された地物の全てのポイントを含む、
+
+
+    最も小さな凸面を持つ地物を計算します。
+  example: []
+  syntax:
+    content: public Feature ConvexHull(Feature feature)
+    parameters:
+    - id: feature
+      type: MapQuest.Features.Feature
+      description: 計算対象となるポイントを持つ <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        凸面を計算した <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function ConvexHull(feature As Feature) As Feature
+  overload: MapQuest.Features.FeatureOperator.ConvexHull*
+- uid: MapQuest.Features.FeatureOperator.Difference(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureOperator.Difference(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  id: Difference(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Difference(Feature, Feature)
+  nameWithType: FeatureOperator.Difference(Feature, Feature)
+  fullName: MapQuest.Features.FeatureOperator.Difference(MapQuest.Features.Feature, MapQuest.Features.Feature)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 二つの地物形状の論理差を計算します。
+  example: []
+  syntax:
+    content: public Feature Difference(Feature feature1, Feature feature2)
+    parameters:
+    - id: feature1
+      type: MapQuest.Features.Feature
+      description: 論理差を求める <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> オブジェクト。
+    - id: feature2
+      type: MapQuest.Features.Feature
+      description: 差分となる <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> オブジェクト。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        論理差を計算した <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Difference(feature1 As Feature, feature2 As Feature) As Feature
+  overload: MapQuest.Features.FeatureOperator.Difference*
+- uid: MapQuest.Features.FeatureOperator.SymmetricDifference(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureOperator.SymmetricDifference(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  id: SymmetricDifference(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: SymmetricDifference(Feature, Feature)
+  nameWithType: FeatureOperator.SymmetricDifference(Feature, Feature)
+  fullName: MapQuest.Features.FeatureOperator.SymmetricDifference(MapQuest.Features.Feature, MapQuest.Features.Feature)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 二つの地物形状の排他的論理和を計算します。
+  example: []
+  syntax:
+    content: public Feature SymmetricDifference(Feature feature1, Feature feature2)
+    parameters:
+    - id: feature1
+      type: MapQuest.Features.Feature
+      description: 排他的論理和を求める <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> オブジェクト１。
+    - id: feature2
+      type: MapQuest.Features.Feature
+      description: 排他的論理和を求める <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> オブジェクト２。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        排他的論理和を計算した <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function SymmetricDifference(feature1 As Feature, feature2 As Feature) As Feature
+  overload: MapQuest.Features.FeatureOperator.SymmetricDifference*
+- uid: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double)
+  commentId: M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double)
+  id: Buffer(MapQuest.Features.Feature,System.Double)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Buffer(Feature, double)
+  nameWithType: FeatureOperator.Buffer(Feature, double)
+  fullName: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature, double)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 指定された距離から、一定幅のエリアを計算します。
+  remarks: >-
+    通常、バッファリングで得られるアウトラインには、カーブが含まれます。
+
+
+    MapQuest.NET では、ラインのジオメトリを用いて、その形状にに近づけます。
+
+
+    このとき、近似の程度はユーザーによってコントロールすることができます。
+
+
+    MapQuest.NET では、4 分割した円を基準としたセグメント数（分割数）。
+
+
+    このセグメント数を多く指定すると、より実際の形状に近づくことになります。
+
+
+    セグメント数の既定値は 8 です。
+  example: []
+  syntax:
+    content: public Feature Buffer(Feature feature, double distance)
+    parameters:
+    - id: feature
+      type: MapQuest.Features.Feature
+      description: バッファリングする <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> オブジェクト。
+    - id: distance
+      type: System.Double
+      description: バッファリングする距離。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        バッファリングした <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Buffer(feature As Feature, distance As Double) As Feature
+  overload: MapQuest.Features.FeatureOperator.Buffer*
+  nameWithType.vb: FeatureOperator.Buffer(Feature, Double)
+  fullName.vb: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature, Double)
+  name.vb: Buffer(Feature, Double)
+- uid: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double,System.Int32)
+  commentId: M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double,System.Int32)
+  id: Buffer(MapQuest.Features.Feature,System.Double,System.Int32)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Buffer(Feature, double, int)
+  nameWithType: FeatureOperator.Buffer(Feature, double, int)
+  fullName: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature, double, int)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 指定された距離とセグメント数から、一定幅のエリアを計算します。
+  remarks: セグメント数については <xref href="MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature%2cSystem.Double)" data-throw-if-not-resolved="false"></xref> の解説を参照してください。
+  example: []
+  syntax:
+    content: public Feature Buffer(Feature feature, double distance, int quadrantSegments)
+    parameters:
+    - id: feature
+      type: MapQuest.Features.Feature
+      description: バッファリングする <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> オブジェクト。
+    - id: distance
+      type: System.Double
+      description: バッファリングする距離。
+    - id: quadrantSegments
+      type: System.Int32
+      description: カーブのセグメント数。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        バッファリングした <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Buffer(feature As Feature, distance As Double, quadrantSegments As Integer) As Feature
+  overload: MapQuest.Features.FeatureOperator.Buffer*
+  nameWithType.vb: FeatureOperator.Buffer(Feature, Double, Integer)
+  fullName.vb: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature, Double, Integer)
+  name.vb: Buffer(Feature, Double, Integer)
+- uid: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator,System.Double)
+  commentId: M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator,System.Double)
+  id: Buffer(MapQuest.Features.IFeatureIterator,System.Double)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Buffer(IFeatureIterator, double)
+  nameWithType: FeatureOperator.Buffer(IFeatureIterator, double)
+  fullName: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator, double)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 指定された距離と複数の地物から、一定幅のエリアを計算します。
+  example: []
+  syntax:
+    content: public Feature Buffer(IFeatureIterator iterator, double distance)
+    parameters:
+    - id: iterator
+      type: MapQuest.Features.IFeatureIterator
+      description: バッファリングする 1 つ以上の地物を含む <xref href="MapQuest.Features.IFeatureIterator" data-throw-if-not-resolved="false"></xref> 。
+    - id: distance
+      type: System.Double
+      description: バッファリングする距離。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        バッファリングした <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Buffer(iterator As IFeatureIterator, distance As Double) As Feature
+  overload: MapQuest.Features.FeatureOperator.Buffer*
+  nameWithType.vb: FeatureOperator.Buffer(IFeatureIterator, Double)
+  fullName.vb: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator, Double)
+  name.vb: Buffer(IFeatureIterator, Double)
+- uid: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator,System.Double,System.Int32)
+  commentId: M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator,System.Double,System.Int32)
+  id: Buffer(MapQuest.Features.IFeatureIterator,System.Double,System.Int32)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Buffer(IFeatureIterator, double, int)
+  nameWithType: FeatureOperator.Buffer(IFeatureIterator, double, int)
+  fullName: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator, double, int)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 指定された距離と複数の地物とセグメント数から、一定幅のエリアを計算します。
+  remarks: セグメント数については <xref href="MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature%2cSystem.Double)" data-throw-if-not-resolved="false"></xref> の解説を参照してください。
+  example: []
+  syntax:
+    content: public Feature Buffer(IFeatureIterator iterator, double distance, int quadrantSegments)
+    parameters:
+    - id: iterator
+      type: MapQuest.Features.IFeatureIterator
+      description: バッファリングする 1 つ以上の地物を含む <xref href="MapQuest.Features.IFeatureIterator" data-throw-if-not-resolved="false"></xref> 。
+    - id: distance
+      type: System.Double
+      description: バッファリングする距離。
+    - id: quadrantSegments
+      type: System.Int32
+      description: カーブのセグメント数。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        バッファリングした <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Buffer(iterator As IFeatureIterator, distance As Double, quadrantSegments As Integer) As Feature
+  overload: MapQuest.Features.FeatureOperator.Buffer*
+  nameWithType.vb: FeatureOperator.Buffer(IFeatureIterator, Double, Integer)
+  fullName.vb: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator, Double, Integer)
+  name.vb: Buffer(IFeatureIterator, Double, Integer)
+- uid: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList,System.Double)
+  commentId: M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList,System.Double)
+  id: Buffer(MapQuest.Features.IFeatureList,System.Double)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Buffer(IFeatureList, double)
+  nameWithType: FeatureOperator.Buffer(IFeatureList, double)
+  fullName: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList, double)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 指定された距離と複数の地物から、一定幅のエリアを計算します。
+  example: []
+  syntax:
+    content: public Feature Buffer(IFeatureList features, double distance)
+    parameters:
+    - id: features
+      type: MapQuest.Features.IFeatureList
+      description: バッファリングする 1 つ以上の地物を含む <xref href="MapQuest.Features.IFeatureList" data-throw-if-not-resolved="false"></xref> 。
+    - id: distance
+      type: System.Double
+      description: バッファリングする距離。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        バッファリングした <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Buffer(features As IFeatureList, distance As Double) As Feature
+  overload: MapQuest.Features.FeatureOperator.Buffer*
+  nameWithType.vb: FeatureOperator.Buffer(IFeatureList, Double)
+  fullName.vb: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList, Double)
+  name.vb: Buffer(IFeatureList, Double)
+- uid: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList,System.Double,System.Int32)
+  commentId: M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList,System.Double,System.Int32)
+  id: Buffer(MapQuest.Features.IFeatureList,System.Double,System.Int32)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Buffer(IFeatureList, double, int)
+  nameWithType: FeatureOperator.Buffer(IFeatureList, double, int)
+  fullName: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList, double, int)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 指定された距離と複数の地物とセグメント数から、一定幅のエリアを計算します。
+  remarks: セグメント数については <xref href="MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature%2cSystem.Double)" data-throw-if-not-resolved="false"></xref> の解説を参照してください。
+  example: []
+  syntax:
+    content: public Feature Buffer(IFeatureList features, double distance, int quadrantSegments)
+    parameters:
+    - id: features
+      type: MapQuest.Features.IFeatureList
+      description: バッファリングする 1 つ以上の地物を含む <xref href="MapQuest.Features.IFeatureList" data-throw-if-not-resolved="false"></xref> 。
+    - id: distance
+      type: System.Double
+      description: バッファリングする距離。
+    - id: quadrantSegments
+      type: System.Int32
+      description: カーブのセグメント数。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        バッファリングした <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Buffer(features As IFeatureList, distance As Double, quadrantSegments As Integer) As Feature
+  overload: MapQuest.Features.FeatureOperator.Buffer*
+  nameWithType.vb: FeatureOperator.Buffer(IFeatureList, Double, Integer)
+  fullName.vb: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList, Double, Integer)
+  name.vb: Buffer(IFeatureList, Double, Integer)
+- uid: MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  id: Intersection(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Intersection(Feature, Feature)
+  nameWithType: FeatureOperator.Intersection(Feature, Feature)
+  fullName: MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.Feature, MapQuest.Features.Feature)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 二つの地物形状の交差を計算します。
+  example: []
+  syntax:
+    content: public Feature Intersection(Feature feature1, Feature feature2)
+    parameters:
+    - id: feature1
+      type: MapQuest.Features.Feature
+      description: 交差する <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> オブジェクト１。
+    - id: feature2
+      type: MapQuest.Features.Feature
+      description: 交差する <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> オブジェクト２。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        交差した <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Intersection(feature1 As Feature, feature2 As Feature) As Feature
+  overload: MapQuest.Features.FeatureOperator.Intersection*
+- uid: MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.IFeatureIterator)
+  commentId: M:MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.IFeatureIterator)
+  id: Intersection(MapQuest.Features.IFeatureIterator)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Intersection(IFeatureIterator)
+  nameWithType: FeatureOperator.Intersection(IFeatureIterator)
+  fullName: MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.IFeatureIterator)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 複数の地物形状の交差を計算します。
+  example: []
+  syntax:
+    content: public Feature Intersection(IFeatureIterator iterator)
+    parameters:
+    - id: iterator
+      type: MapQuest.Features.IFeatureIterator
+      description: 計算対象となる 1 つ以上の地物を含む <xref href="MapQuest.Features.IFeatureIterator" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        交差した <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Intersection(iterator As IFeatureIterator) As Feature
+  overload: MapQuest.Features.FeatureOperator.Intersection*
+- uid: MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.IFeatureList)
+  commentId: M:MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.IFeatureList)
+  id: Intersection(MapQuest.Features.IFeatureList)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Intersection(IFeatureList)
+  nameWithType: FeatureOperator.Intersection(IFeatureList)
+  fullName: MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.IFeatureList)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 複数の地物形状の交差を計算します。
+  example: []
+  syntax:
+    content: public Feature Intersection(IFeatureList features)
+    parameters:
+    - id: features
+      type: MapQuest.Features.IFeatureList
+      description: 交差する 1 つ以上の地物を含む <xref href="MapQuest.Features.IFeatureList" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        交差した <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Intersection(features As IFeatureList) As Feature
+  overload: MapQuest.Features.FeatureOperator.Intersection*
+- uid: MapQuest.Features.FeatureOperator.Union(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureOperator.Union(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  id: Union(MapQuest.Features.Feature,MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Union(Feature, Feature)
+  nameWithType: FeatureOperator.Union(Feature, Feature)
+  fullName: MapQuest.Features.FeatureOperator.Union(MapQuest.Features.Feature, MapQuest.Features.Feature)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 二つの地物形状の結合を計算します。
+  example: []
+  syntax:
+    content: public Feature Union(Feature feature1, Feature feature2)
+    parameters:
+    - id: feature1
+      type: MapQuest.Features.Feature
+      description: 結合する <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> オブジェクト１。
+    - id: feature2
+      type: MapQuest.Features.Feature
+      description: 結合する <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> オブジェクト２。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        結合した <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Union(feature1 As Feature, feature2 As Feature) As Feature
+  overload: MapQuest.Features.FeatureOperator.Union*
+- uid: MapQuest.Features.FeatureOperator.Union(MapQuest.Features.IFeatureIterator)
+  commentId: M:MapQuest.Features.FeatureOperator.Union(MapQuest.Features.IFeatureIterator)
+  id: Union(MapQuest.Features.IFeatureIterator)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Union(IFeatureIterator)
+  nameWithType: FeatureOperator.Union(IFeatureIterator)
+  fullName: MapQuest.Features.FeatureOperator.Union(MapQuest.Features.IFeatureIterator)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 複数の地物形状の結合を計算します。
+  example: []
+  syntax:
+    content: public Feature Union(IFeatureIterator iterator)
+    parameters:
+    - id: iterator
+      type: MapQuest.Features.IFeatureIterator
+      description: 結合する 1 つ以上の地物を含む <xref href="MapQuest.Features.IFeatureIterator" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        結合した <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Union(iterator As IFeatureIterator) As Feature
+  overload: MapQuest.Features.FeatureOperator.Union*
+- uid: MapQuest.Features.FeatureOperator.Union(MapQuest.Features.IFeatureList)
+  commentId: M:MapQuest.Features.FeatureOperator.Union(MapQuest.Features.IFeatureList)
+  id: Union(MapQuest.Features.IFeatureList)
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Union(IFeatureList)
+  nameWithType: FeatureOperator.Union(IFeatureList)
+  fullName: MapQuest.Features.FeatureOperator.Union(MapQuest.Features.IFeatureList)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 複数の地物形状の結合を計算します。
+  example: []
+  syntax:
+    content: public Feature Union(IFeatureList features)
+    parameters:
+    - id: features
+      type: MapQuest.Features.IFeatureList
+      description: 結合する 1 つ以上の地物を含む <xref href="MapQuest.Features.IFeatureList" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: MapQuest.Features.Feature
+      description: >-
+        結合した <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+
+
+        それ以外の場合は null 。
+    content.vb: Public Function Union(features As IFeatureList) As Feature
+  overload: MapQuest.Features.FeatureOperator.Union*
+- uid: MapQuest.Features.FeatureOperator.Factory
+  commentId: P:MapQuest.Features.FeatureOperator.Factory
+  id: Factory
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Factory
+  nameWithType: FeatureOperator.Factory
+  fullName: MapQuest.Features.FeatureOperator.Factory
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    空間演算処理において <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> の生成に使用される 
+
+    <xref href="MapQuest.Features.FeatureFactory" data-throw-if-not-resolved="false"></xref> を取得または設定します。
+  example: []
+  syntax:
+    content: public FeatureFactory Factory { get; set; }
+    parameters: []
+    return:
+      type: MapQuest.Features.FeatureFactory
+      description: "  <xref href=\"MapQuest.Features.Feature\" data-throw-if-not-resolved=\"false\"></xref> の生成に使用される \r\n<xref href=\"MapQuest.Features.FeatureFactory\" data-throw-if-not-resolved=\"false\"></xref> オブジェクト。"
+    content.vb: Public Property Factory As FeatureFactory
+  overload: MapQuest.Features.FeatureOperator.Factory*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "  <p>\r\n	指定された <xref href=\"MapQuest.Features.FeatureFactory\" data-throw-if-not-resolved=\"false\"></xref> が \r\n	null 参照 (Visual Basic では <b>Nothing</b>) です。\r\n\r\n</p>"
+- uid: MapQuest.Features.FeatureOperator.BufferStyle
+  commentId: P:MapQuest.Features.FeatureOperator.BufferStyle
+  id: BufferStyle
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: BufferStyle
+  nameWithType: FeatureOperator.BufferStyle
+  fullName: MapQuest.Features.FeatureOperator.BufferStyle
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: バッファ処理で使用されるキャップ スタイルを取得または設定します。
+  example: []
+  syntax:
+    content: public BufferEndCapStyle BufferStyle { get; set; }
+    parameters: []
+    return:
+      type: MapQuest.Topology.Operation.BufferEndCapStyle
+      description: バッファ処理で使用されるキャップ スタイル。
+    content.vb: Public Property BufferStyle As BufferEndCapStyle
+  overload: MapQuest.Features.FeatureOperator.BufferStyle*
+- uid: MapQuest.Features.FeatureOperator.Error
+  commentId: P:MapQuest.Features.FeatureOperator.Error
+  id: Error
+  parent: MapQuest.Features.FeatureOperator
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: FeatureOperator.Error
+  fullName: MapQuest.Features.FeatureOperator.Error
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: "  <xref href=\"MapQuest.Features.FeatureOperator\" data-throw-if-not-resolved=\"false\"></xref> \r\n内の直前の処理で発生したエラー情報を取得します。"
+  example: []
+  syntax:
+    content: public Exception Error { get; }
+    parameters: []
+    return:
+      type: System.Exception
+      description: "  <xref href=\"MapQuest.Features.FeatureOperator\" data-throw-if-not-resolved=\"false\"></xref> \r\n内の直前の処理で発生したエラー情報。"
+    content.vb: Public ReadOnly Property [Error] As Exception
+  overload: MapQuest.Features.FeatureOperator.Error*
+references:
+- uid: MapQuest.Features.Feature
+  commentId: T:MapQuest.Features.Feature
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.Feature.html
+  name: Feature
+  nameWithType: Feature
+  fullName: MapQuest.Features.Feature
+- uid: MapQuest.Topology.Geometries.Geometry
+  commentId: T:MapQuest.Topology.Geometries.Geometry
+  isExternal: true
+  name: Geometry
+  nameWithType: Geometry
+  fullName: MapQuest.Topology.Geometries.Geometry
+- uid: MapQuest.Features
+  commentId: N:MapQuest.Features
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features
+  nameWithType: MapQuest.Features
+  fullName: MapQuest.Features
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Features.FeatureOperator
+  commentId: T:MapQuest.Features.FeatureOperator
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html
+  name: FeatureOperator
+  nameWithType: FeatureOperator
+  fullName: MapQuest.Features.FeatureOperator
+- uid: MapQuest.Features.FeatureFactory
+  commentId: T:MapQuest.Features.FeatureFactory
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.FeatureFactory.html
+  name: FeatureFactory
+  nameWithType: FeatureFactory
+  fullName: MapQuest.Features.FeatureFactory
+- uid: MapQuest.Topology.Operation.BufferEndCapStyle.Round
+  commentId: F:MapQuest.Topology.Operation.BufferEndCapStyle.Round
+  isExternal: true
+- uid: MapQuest.Features.FeatureOperator.#ctor*
+  commentId: Overload:MapQuest.Features.FeatureOperator.#ctor
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator__ctor_MapQuest_Features_FeatureFactory_
+  name: FeatureOperator
+  nameWithType: FeatureOperator.FeatureOperator
+  fullName: MapQuest.Features.FeatureOperator.FeatureOperator
+  nameWithType.vb: FeatureOperator.New
+  fullName.vb: MapQuest.Features.FeatureOperator.New
+  name.vb: New
+- uid: MapQuest.Topology.Operation.BufferEndCapStyle
+  isExternal: true
+  name: BufferEndCapStyle
+  nameWithType: BufferEndCapStyle
+  fullName: MapQuest.Topology.Operation.BufferEndCapStyle
+- uid: MapQuest.Topology.Geometries.IntersectionMatrix
+  commentId: T:MapQuest.Topology.Geometries.IntersectionMatrix
+  isExternal: true
+  name: IntersectionMatrix
+  nameWithType: IntersectionMatrix
+  fullName: MapQuest.Topology.Geometries.IntersectionMatrix
+- uid: MapQuest.Features.FeatureOperator.Relate*
+  commentId: Overload:MapQuest.Features.FeatureOperator.Relate
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Relate_MapQuest_Features_Feature_MapQuest_Features_Feature_
+  name: Relate
+  nameWithType: FeatureOperator.Relate
+  fullName: MapQuest.Features.FeatureOperator.Relate
+- uid: MapQuest.Features.FeatureOperator.ConvexHull*
+  commentId: Overload:MapQuest.Features.FeatureOperator.ConvexHull
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_ConvexHull_MapQuest_Features_Feature_
+  name: ConvexHull
+  nameWithType: FeatureOperator.ConvexHull
+  fullName: MapQuest.Features.FeatureOperator.ConvexHull
+- uid: MapQuest.Features.FeatureOperator.Difference*
+  commentId: Overload:MapQuest.Features.FeatureOperator.Difference
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Difference_MapQuest_Features_Feature_MapQuest_Features_Feature_
+  name: Difference
+  nameWithType: FeatureOperator.Difference
+  fullName: MapQuest.Features.FeatureOperator.Difference
+- uid: MapQuest.Features.FeatureOperator.SymmetricDifference*
+  commentId: Overload:MapQuest.Features.FeatureOperator.SymmetricDifference
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_SymmetricDifference_MapQuest_Features_Feature_MapQuest_Features_Feature_
+  name: SymmetricDifference
+  nameWithType: FeatureOperator.SymmetricDifference
+  fullName: MapQuest.Features.FeatureOperator.SymmetricDifference
+- uid: MapQuest.Features.FeatureOperator.Buffer*
+  commentId: Overload:MapQuest.Features.FeatureOperator.Buffer
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_Feature_System_Double_
+  name: Buffer
+  nameWithType: FeatureOperator.Buffer
+  fullName: MapQuest.Features.FeatureOperator.Buffer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double)
+  commentId: M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double)
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_Feature_System_Double_
+  name: Buffer(Feature, double)
+  nameWithType: FeatureOperator.Buffer(Feature, double)
+  fullName: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature, double)
+  nameWithType.vb: FeatureOperator.Buffer(Feature, Double)
+  fullName.vb: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature, Double)
+  name.vb: Buffer(Feature, Double)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double)
+    name: Buffer
+    isExternal: true
+    href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_Feature_System_Double_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double)
+    name: Buffer
+    isExternal: true
+    href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_Feature_System_Double_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MapQuest.Features.IFeatureIterator
+  commentId: T:MapQuest.Features.IFeatureIterator
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.IFeatureIterator.html
+  name: IFeatureIterator
+  nameWithType: IFeatureIterator
+  fullName: MapQuest.Features.IFeatureIterator
+- uid: MapQuest.Features.IFeatureList
+  commentId: T:MapQuest.Features.IFeatureList
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.IFeatureList.html
+  name: IFeatureList
+  nameWithType: IFeatureList
+  fullName: MapQuest.Features.IFeatureList
+- uid: MapQuest.Features.FeatureOperator.Intersection*
+  commentId: Overload:MapQuest.Features.FeatureOperator.Intersection
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Intersection_MapQuest_Features_Feature_MapQuest_Features_Feature_
+  name: Intersection
+  nameWithType: FeatureOperator.Intersection
+  fullName: MapQuest.Features.FeatureOperator.Intersection
+- uid: MapQuest.Features.FeatureOperator.Union*
+  commentId: Overload:MapQuest.Features.FeatureOperator.Union
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Union_MapQuest_Features_Feature_MapQuest_Features_Feature_
+  name: Union
+  nameWithType: FeatureOperator.Union
+  fullName: MapQuest.Features.FeatureOperator.Union
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: MapQuest.Features.FeatureOperator.Factory*
+  commentId: Overload:MapQuest.Features.FeatureOperator.Factory
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Factory
+  name: Factory
+  nameWithType: FeatureOperator.Factory
+  fullName: MapQuest.Features.FeatureOperator.Factory
+- uid: MapQuest.Features.FeatureOperator.BufferStyle*
+  commentId: Overload:MapQuest.Features.FeatureOperator.BufferStyle
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_BufferStyle
+  name: BufferStyle
+  nameWithType: FeatureOperator.BufferStyle
+  fullName: MapQuest.Features.FeatureOperator.BufferStyle
+- uid: MapQuest.Features.FeatureOperator.Error*
+  commentId: Overload:MapQuest.Features.FeatureOperator.Error
+  isExternal: true
+  href: MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Error
+  name: Error
+  nameWithType: FeatureOperator.Error
+  fullName: MapQuest.Features.FeatureOperator.Error
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception

@@ -1,0 +1,1105 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.CoordinatePoint
+  commentId: T:MapQuest.Coordinates.CoordinatePoint
+  id: CoordinatePoint
+  parent: MapQuest.Coordinates
+  children:
+  - MapQuest.Coordinates.CoordinatePoint.#ctor(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.CoordinatePoint.#ctor(MapQuest.Coordinates.CoordinatePoint)
+  - MapQuest.Coordinates.CoordinatePoint.#ctor(System.Double,System.Double)
+  - MapQuest.Coordinates.CoordinatePoint.#ctor(System.Double,System.Double,System.Double)
+  - MapQuest.Coordinates.CoordinatePoint.#ctor(System.Double[])
+  - MapQuest.Coordinates.CoordinatePoint.#ctor(System.Int32)
+  - MapQuest.Coordinates.CoordinatePoint.Clone
+  - MapQuest.Coordinates.CoordinatePoint.Dimension
+  - MapQuest.Coordinates.CoordinatePoint.Equals(System.Object)
+  - MapQuest.Coordinates.CoordinatePoint.GetHashCode
+  - MapQuest.Coordinates.CoordinatePoint.GetOrdinate(System.Int32)
+  - MapQuest.Coordinates.CoordinatePoint.Ordinate
+  - MapQuest.Coordinates.CoordinatePoint.SetLocation(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.CoordinatePoint.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+  - MapQuest.Coordinates.CoordinatePoint.SetOrdinate(System.Int32,System.Double)
+  - MapQuest.Coordinates.CoordinatePoint.ToCoordinate
+  - MapQuest.Coordinates.CoordinatePoint.ToString
+  langs:
+  - csharp
+  - vb
+  name: CoordinatePoint
+  nameWithType: CoordinatePoint
+  fullName: MapQuest.Coordinates.CoordinatePoint
+  type: Struct
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    数値のリストによって定義された位置を示します。
+
+
+    <code>numDim</code>がCoordinateのポイントが属する座標系の次元である場合、そのインデックスとなるOrdinateの値は<code>0</code>から<code>(numDim-1)</code>で指定します。
+  example: []
+  syntax:
+    content: 'public struct CoordinatePoint : ICoordinatePoint, ICloneable'
+    content.vb: Public Structure CoordinatePoint Implements ICoordinatePoint, ICloneable
+  seealso:
+  - linkId: MapQuest.Coordinates.ICoordinatePoint
+    commentId: T:MapQuest.Coordinates.ICoordinatePoint
+  implements:
+  - MapQuest.Coordinates.ICoordinatePoint
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: MapQuest.Coordinates.CoordinatePoint.#ctor(System.Int32)
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: CoordinatePoint(int)
+  nameWithType: CoordinatePoint.CoordinatePoint(int)
+  fullName: MapQuest.Coordinates.CoordinatePoint.CoordinatePoint(int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 次元を指定する値を指定して<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public CoordinatePoint(int numDim)
+    parameters:
+    - id: numDim
+      type: System.Int32
+      description: 次元を指定する値
+    content.vb: Public Sub New(numDim As Integer)
+  overload: MapQuest.Coordinates.CoordinatePoint.#ctor*
+  nameWithType.vb: CoordinatePoint.New(Integer)
+  fullName.vb: MapQuest.Coordinates.CoordinatePoint.New(Integer)
+  name.vb: New(Integer)
+- uid: MapQuest.Coordinates.CoordinatePoint.#ctor(System.Double[])
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.#ctor(System.Double[])
+  id: '#ctor(System.Double[])'
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: CoordinatePoint(double[])
+  nameWithType: CoordinatePoint.CoordinatePoint(double[])
+  fullName: MapQuest.Coordinates.CoordinatePoint.CoordinatePoint(double[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    ordinateの配列を指定して<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+
+
+    ordinateの配列はコピーされます。
+  example: []
+  syntax:
+    content: public CoordinatePoint(double[] ord)
+    parameters:
+    - id: ord
+      type: System.Double[]
+      description: この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>を生成する配列
+    content.vb: Public Sub New(ord As Double())
+  overload: MapQuest.Coordinates.CoordinatePoint.#ctor*
+  nameWithType.vb: CoordinatePoint.New(Double())
+  fullName.vb: MapQuest.Coordinates.CoordinatePoint.New(Double())
+  name.vb: New(Double())
+- uid: MapQuest.Coordinates.CoordinatePoint.#ctor(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.#ctor(System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double)'
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: CoordinatePoint(double, double)
+  nameWithType: CoordinatePoint.CoordinatePoint(double, double)
+  fullName: MapQuest.Coordinates.CoordinatePoint.CoordinatePoint(double, double)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定されたordinatesから 2 次元<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>の<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public CoordinatePoint(double x, double y)
+    parameters:
+    - id: x
+      type: System.Double
+      description: 2 次元<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>を生成するX座標
+    - id: y
+      type: System.Double
+      description: 2 次元<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>を生成するY座標
+    content.vb: Public Sub New(x As Double, y As Double)
+  overload: MapQuest.Coordinates.CoordinatePoint.#ctor*
+  nameWithType.vb: CoordinatePoint.New(Double, Double)
+  fullName.vb: MapQuest.Coordinates.CoordinatePoint.New(Double, Double)
+  name.vb: New(Double, Double)
+- uid: MapQuest.Coordinates.CoordinatePoint.#ctor(System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.#ctor(System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double)'
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: CoordinatePoint(double, double, double)
+  nameWithType: CoordinatePoint.CoordinatePoint(double, double, double)
+  fullName: MapQuest.Coordinates.CoordinatePoint.CoordinatePoint(double, double, double)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定されたordinatesから３次元<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>の<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public CoordinatePoint(double x, double y, double z)
+    parameters:
+    - id: x
+      type: System.Double
+      description: 3 次元<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>を生成するX座標
+    - id: y
+      type: System.Double
+      description: 3 次元<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>を生成するY座標
+    - id: z
+      type: System.Double
+      description: 3 次元<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>を生成するZ座標
+    content.vb: Public Sub New(x As Double, y As Double, z As Double)
+  overload: MapQuest.Coordinates.CoordinatePoint.#ctor*
+  nameWithType.vb: CoordinatePoint.New(Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.CoordinatePoint.New(Double, Double, Double)
+  name.vb: New(Double, Double, Double)
+- uid: MapQuest.Coordinates.CoordinatePoint.#ctor(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.#ctor(MapQuest.Coordinates.Coordinate)
+  id: '#ctor(MapQuest.Coordinates.Coordinate)'
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: CoordinatePoint(Coordinate)
+  nameWithType: CoordinatePoint.CoordinatePoint(Coordinate)
+  fullName: MapQuest.Coordinates.CoordinatePoint.CoordinatePoint(MapQuest.Coordinates.Coordinate)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定された<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>の<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public CoordinatePoint(Coordinate point)
+    parameters:
+    - id: point
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>を生成する<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub New(point As Coordinate)
+  overload: MapQuest.Coordinates.CoordinatePoint.#ctor*
+  nameWithType.vb: CoordinatePoint.New(Coordinate)
+  fullName.vb: MapQuest.Coordinates.CoordinatePoint.New(MapQuest.Coordinates.Coordinate)
+  name.vb: New(Coordinate)
+- uid: MapQuest.Coordinates.CoordinatePoint.#ctor(MapQuest.Coordinates.CoordinatePoint)
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.#ctor(MapQuest.Coordinates.CoordinatePoint)
+  id: '#ctor(MapQuest.Coordinates.CoordinatePoint)'
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: CoordinatePoint(CoordinatePoint)
+  nameWithType: CoordinatePoint.CoordinatePoint(CoordinatePoint)
+  fullName: MapQuest.Coordinates.CoordinatePoint.CoordinatePoint(MapQuest.Coordinates.CoordinatePoint)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定された<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>と同じ値を持った<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>の<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public CoordinatePoint(CoordinatePoint point)
+    parameters:
+    - id: point
+      type: MapQuest.Coordinates.CoordinatePoint
+      description: <xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>を生成する<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub New(point As CoordinatePoint)
+  overload: MapQuest.Coordinates.CoordinatePoint.#ctor*
+  nameWithType.vb: CoordinatePoint.New(CoordinatePoint)
+  fullName.vb: MapQuest.Coordinates.CoordinatePoint.New(MapQuest.Coordinates.CoordinatePoint)
+  name.vb: New(CoordinatePoint)
+- uid: MapQuest.Coordinates.CoordinatePoint.SetLocation(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.SetLocation(MapQuest.Coordinates.Coordinate)
+  id: SetLocation(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: SetLocation(Coordinate)
+  nameWithType: CoordinatePoint.SetLocation(Coordinate)
+  fullName: MapQuest.Coordinates.CoordinatePoint.SetLocation(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    この<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>を引数で指定された<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>に設定します。
+
+
+    この<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>は 2 次元でなくてはなりません。
+  example: []
+  syntax:
+    content: public void SetLocation(Coordinate point)
+    parameters:
+    - id: point
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>に設定したい座標を持った<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub SetLocation(point As Coordinate)
+  overload: MapQuest.Coordinates.CoordinatePoint.SetLocation*
+- uid: MapQuest.Coordinates.CoordinatePoint.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+  id: SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: SetLocation(ICoordinatePoint)
+  nameWithType: CoordinatePoint.SetLocation(ICoordinatePoint)
+  fullName: MapQuest.Coordinates.CoordinatePoint.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>を引数で指定された<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>に設定します。
+  example: []
+  syntax:
+    content: public void SetLocation(ICoordinatePoint point)
+    parameters:
+    - id: point
+      type: MapQuest.Coordinates.ICoordinatePoint
+      description: この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>のための新しい<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub SetLocation(point As ICoordinatePoint)
+  overload: MapQuest.Coordinates.CoordinatePoint.SetLocation*
+  implements:
+  - MapQuest.Coordinates.ICoordinatePoint.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+- uid: MapQuest.Coordinates.CoordinatePoint.GetOrdinate(System.Int32)
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.GetOrdinate(System.Int32)
+  id: GetOrdinate(System.Int32)
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: GetOrdinate(int)
+  nameWithType: CoordinatePoint.GetOrdinate(int)
+  fullName: MapQuest.Coordinates.CoordinatePoint.GetOrdinate(int)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定された次元の座標を取得します。
+  remarks: 例えば次元を 1 にした場合は x 値。次元を 2 にした場合は y 値を返します。
+  example: []
+  syntax:
+    content: public double GetOrdinate(int dimension)
+    parameters:
+    - id: dimension
+      type: System.Int32
+      description: 取得したい次元
+    return:
+      type: System.Double
+      description: 指定された次元の座標値。
+    content.vb: Public Function GetOrdinate(dimension As Integer) As Double
+  overload: MapQuest.Coordinates.CoordinatePoint.GetOrdinate*
+  implements:
+  - MapQuest.Coordinates.ICoordinatePoint.GetOrdinate(System.Int32)
+  nameWithType.vb: CoordinatePoint.GetOrdinate(Integer)
+  fullName.vb: MapQuest.Coordinates.CoordinatePoint.GetOrdinate(Integer)
+  name.vb: GetOrdinate(Integer)
+- uid: MapQuest.Coordinates.CoordinatePoint.SetOrdinate(System.Int32,System.Double)
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.SetOrdinate(System.Int32,System.Double)
+  id: SetOrdinate(System.Int32,System.Double)
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: SetOrdinate(int, double)
+  nameWithType: CoordinatePoint.SetOrdinate(int, double)
+  fullName: MapQuest.Coordinates.CoordinatePoint.SetOrdinate(int, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定された次元の座標を設定します。
+  example: []
+  syntax:
+    content: public void SetOrdinate(int dimension, double value)
+    parameters:
+    - id: dimension
+      type: System.Int32
+      description: 設定する次元
+    - id: value
+      type: System.Double
+      description: 設定する次元に代入したい値
+    content.vb: Public Sub SetOrdinate(dimension As Integer, value As Double)
+  overload: MapQuest.Coordinates.CoordinatePoint.SetOrdinate*
+  implements:
+  - MapQuest.Coordinates.ICoordinatePoint.SetOrdinate(System.Int32,System.Double)
+  nameWithType.vb: CoordinatePoint.SetOrdinate(Integer, Double)
+  fullName.vb: MapQuest.Coordinates.CoordinatePoint.SetOrdinate(Integer, Double)
+  name.vb: SetOrdinate(Integer, Double)
+- uid: MapQuest.Coordinates.CoordinatePoint.ToCoordinate
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.ToCoordinate
+  id: ToCoordinate
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: ToCoordinate()
+  nameWithType: CoordinatePoint.ToCoordinate()
+  fullName: MapQuest.Coordinates.CoordinatePoint.ToCoordinate()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>と同じ値を持った<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>に変換します。
+  example: []
+  syntax:
+    content: public Coordinate ToCoordinate()
+    return:
+      type: MapQuest.Coordinates.Coordinate
+      description: この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>と同じ値を持った<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function ToCoordinate() As Coordinate
+  overload: MapQuest.Coordinates.CoordinatePoint.ToCoordinate*
+- uid: MapQuest.Coordinates.CoordinatePoint.GetHashCode
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.GetHashCode
+  id: GetHashCode
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: CoordinatePoint.GetHashCode()
+  fullName: MapQuest.Coordinates.CoordinatePoint.GetHashCode()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>に対するハッシュ値を取得します。
+
+
+    この値は同じクラスの異なるインプリメンテーション間で一貫しつづける必要はありません。
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: 取得されたハッシュ値
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: MapQuest.Coordinates.CoordinatePoint.GetHashCode*
+- uid: MapQuest.Coordinates.CoordinatePoint.Equals(System.Object)
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: CoordinatePoint.Equals(object)
+  fullName: MapQuest.Coordinates.CoordinatePoint.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>と指定されたオブジェクトを比較します。
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>と比較する対象の<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Boolean
+      description: 比較結果が等しければ<code>true</code>を、そうでなければ<code>false</code>を返します。
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: MapQuest.Coordinates.CoordinatePoint.Equals*
+  nameWithType.vb: CoordinatePoint.Equals(Object)
+  fullName.vb: MapQuest.Coordinates.CoordinatePoint.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.Coordinates.CoordinatePoint.Clone
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.Clone
+  id: Clone
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: CoordinatePoint.Clone()
+  fullName: MapQuest.Coordinates.CoordinatePoint.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>のコピーを返します。
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+      description: コピーされた結果の<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function Clone() As Object
+  overload: MapQuest.Coordinates.CoordinatePoint.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.Coordinates.CoordinatePoint.ToString
+  commentId: M:MapQuest.Coordinates.CoordinatePoint.ToString
+  id: ToString
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: CoordinatePoint.ToString()
+  fullName: MapQuest.Coordinates.CoordinatePoint.ToString()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>を文字列表現したものを返します。
+
+
+    文字列は、通常はプロセスをデバッグするために提供されます。
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: <xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>の文字列表現
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: MapQuest.Coordinates.CoordinatePoint.ToString*
+- uid: MapQuest.Coordinates.CoordinatePoint.Dimension
+  commentId: P:MapQuest.Coordinates.CoordinatePoint.Dimension
+  id: Dimension
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: Dimension
+  nameWithType: CoordinatePoint.Dimension
+  fullName: MapQuest.Coordinates.CoordinatePoint.Dimension
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>オブジェクトの次元を取得します。
+  example: []
+  syntax:
+    content: public int Dimension { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>オブジェクトの次元
+    content.vb: Public ReadOnly Property Dimension As Integer
+  overload: MapQuest.Coordinates.CoordinatePoint.Dimension*
+  implements:
+  - MapQuest.Coordinates.ICoordinatePoint.Dimension
+- uid: MapQuest.Coordinates.CoordinatePoint.Ordinate
+  commentId: P:MapQuest.Coordinates.CoordinatePoint.Ordinate
+  id: Ordinate
+  parent: MapQuest.Coordinates.CoordinatePoint
+  langs:
+  - csharp
+  - vb
+  name: Ordinate
+  nameWithType: CoordinatePoint.Ordinate
+  fullName: MapQuest.Coordinates.CoordinatePoint.Ordinate
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>オブジェクトの座標を取得します。
+  remarks: Ordinate[0]がX座標、Ordinate[1]がY座標、Ordinate[2]がZ座標を表します。
+  example: []
+  syntax:
+    content: public double[] Ordinate { get; }
+    parameters: []
+    return:
+      type: System.Double[]
+      description: この<xref href="MapQuest.Coordinates.CoordinatePoint?text=CoordinatePoint" data-throw-if-not-resolved="false"></xref>オブジェクトの座標
+    content.vb: Public ReadOnly Property Ordinate As Double()
+  overload: MapQuest.Coordinates.CoordinatePoint.Ordinate*
+  implements:
+  - MapQuest.Coordinates.ICoordinatePoint.Ordinate
+references:
+- uid: MapQuest.Coordinates.ICoordinatePoint
+  commentId: T:MapQuest.Coordinates.ICoordinatePoint
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinatePoint.html
+  name: ICoordinatePoint
+  nameWithType: ICoordinatePoint
+  fullName: MapQuest.Coordinates.ICoordinatePoint
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Coordinates.CoordinatePoint
+  commentId: T:MapQuest.Coordinates.CoordinatePoint
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinatePoint.html
+  name: CoordinatePoint
+  nameWithType: CoordinatePoint
+  fullName: MapQuest.Coordinates.CoordinatePoint
+- uid: MapQuest.Coordinates.CoordinatePoint.#ctor*
+  commentId: Overload:MapQuest.Coordinates.CoordinatePoint.#ctor
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinatePoint.html#MapQuest_Coordinates_CoordinatePoint__ctor_System_Int32_
+  name: CoordinatePoint
+  nameWithType: CoordinatePoint.CoordinatePoint
+  fullName: MapQuest.Coordinates.CoordinatePoint.CoordinatePoint
+  nameWithType.vb: CoordinatePoint.New
+  fullName.vb: MapQuest.Coordinates.CoordinatePoint.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.Coordinates.CoordinatePoint.SetLocation*
+  commentId: Overload:MapQuest.Coordinates.CoordinatePoint.SetLocation
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinatePoint.html#MapQuest_Coordinates_CoordinatePoint_SetLocation_MapQuest_Coordinates_Coordinate_
+  name: SetLocation
+  nameWithType: CoordinatePoint.SetLocation
+  fullName: MapQuest.Coordinates.CoordinatePoint.SetLocation
+- uid: MapQuest.Coordinates.ICoordinatePoint.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+  commentId: M:MapQuest.Coordinates.ICoordinatePoint.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+  parent: MapQuest.Coordinates.ICoordinatePoint
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinatePoint.html#MapQuest_Coordinates_ICoordinatePoint_SetLocation_MapQuest_Coordinates_ICoordinatePoint_
+  name: SetLocation(ICoordinatePoint)
+  nameWithType: ICoordinatePoint.SetLocation(ICoordinatePoint)
+  fullName: MapQuest.Coordinates.ICoordinatePoint.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinatePoint.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+    name: SetLocation
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinatePoint.html#MapQuest_Coordinates_ICoordinatePoint_SetLocation_MapQuest_Coordinates_ICoordinatePoint_
+  - name: (
+  - uid: MapQuest.Coordinates.ICoordinatePoint
+    name: ICoordinatePoint
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinatePoint.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinatePoint.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+    name: SetLocation
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinatePoint.html#MapQuest_Coordinates_ICoordinatePoint_SetLocation_MapQuest_Coordinates_ICoordinatePoint_
+  - name: (
+  - uid: MapQuest.Coordinates.ICoordinatePoint
+    name: ICoordinatePoint
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinatePoint.html
+  - name: )
+- uid: MapQuest.Coordinates.CoordinatePoint.GetOrdinate*
+  commentId: Overload:MapQuest.Coordinates.CoordinatePoint.GetOrdinate
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinatePoint.html#MapQuest_Coordinates_CoordinatePoint_GetOrdinate_System_Int32_
+  name: GetOrdinate
+  nameWithType: CoordinatePoint.GetOrdinate
+  fullName: MapQuest.Coordinates.CoordinatePoint.GetOrdinate
+- uid: MapQuest.Coordinates.ICoordinatePoint.GetOrdinate(System.Int32)
+  commentId: M:MapQuest.Coordinates.ICoordinatePoint.GetOrdinate(System.Int32)
+  parent: MapQuest.Coordinates.ICoordinatePoint
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinatePoint.html#MapQuest_Coordinates_ICoordinatePoint_GetOrdinate_System_Int32_
+  name: GetOrdinate(int)
+  nameWithType: ICoordinatePoint.GetOrdinate(int)
+  fullName: MapQuest.Coordinates.ICoordinatePoint.GetOrdinate(int)
+  nameWithType.vb: ICoordinatePoint.GetOrdinate(Integer)
+  fullName.vb: MapQuest.Coordinates.ICoordinatePoint.GetOrdinate(Integer)
+  name.vb: GetOrdinate(Integer)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinatePoint.GetOrdinate(System.Int32)
+    name: GetOrdinate
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinatePoint.html#MapQuest_Coordinates_ICoordinatePoint_GetOrdinate_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinatePoint.GetOrdinate(System.Int32)
+    name: GetOrdinate
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinatePoint.html#MapQuest_Coordinates_ICoordinatePoint_GetOrdinate_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Coordinates.CoordinatePoint.SetOrdinate*
+  commentId: Overload:MapQuest.Coordinates.CoordinatePoint.SetOrdinate
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinatePoint.html#MapQuest_Coordinates_CoordinatePoint_SetOrdinate_System_Int32_System_Double_
+  name: SetOrdinate
+  nameWithType: CoordinatePoint.SetOrdinate
+  fullName: MapQuest.Coordinates.CoordinatePoint.SetOrdinate
+- uid: MapQuest.Coordinates.ICoordinatePoint.SetOrdinate(System.Int32,System.Double)
+  commentId: M:MapQuest.Coordinates.ICoordinatePoint.SetOrdinate(System.Int32,System.Double)
+  parent: MapQuest.Coordinates.ICoordinatePoint
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinatePoint.html#MapQuest_Coordinates_ICoordinatePoint_SetOrdinate_System_Int32_System_Double_
+  name: SetOrdinate(int, double)
+  nameWithType: ICoordinatePoint.SetOrdinate(int, double)
+  fullName: MapQuest.Coordinates.ICoordinatePoint.SetOrdinate(int, double)
+  nameWithType.vb: ICoordinatePoint.SetOrdinate(Integer, Double)
+  fullName.vb: MapQuest.Coordinates.ICoordinatePoint.SetOrdinate(Integer, Double)
+  name.vb: SetOrdinate(Integer, Double)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinatePoint.SetOrdinate(System.Int32,System.Double)
+    name: SetOrdinate
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinatePoint.html#MapQuest_Coordinates_ICoordinatePoint_SetOrdinate_System_Int32_System_Double_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinatePoint.SetOrdinate(System.Int32,System.Double)
+    name: SetOrdinate
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinatePoint.html#MapQuest_Coordinates_ICoordinatePoint_SetOrdinate_System_Int32_System_Double_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: MapQuest.Coordinates.CoordinatePoint.ToCoordinate*
+  commentId: Overload:MapQuest.Coordinates.CoordinatePoint.ToCoordinate
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinatePoint.html#MapQuest_Coordinates_CoordinatePoint_ToCoordinate
+  name: ToCoordinate
+  nameWithType: CoordinatePoint.ToCoordinate
+  fullName: MapQuest.Coordinates.CoordinatePoint.ToCoordinate
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.CoordinatePoint.GetHashCode*
+  commentId: Overload:MapQuest.Coordinates.CoordinatePoint.GetHashCode
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinatePoint.html#MapQuest_Coordinates_CoordinatePoint_GetHashCode
+  name: GetHashCode
+  nameWithType: CoordinatePoint.GetHashCode
+  fullName: MapQuest.Coordinates.CoordinatePoint.GetHashCode
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Coordinates.CoordinatePoint.Equals*
+  commentId: Overload:MapQuest.Coordinates.CoordinatePoint.Equals
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinatePoint.html#MapQuest_Coordinates_CoordinatePoint_Equals_System_Object_
+  name: Equals
+  nameWithType: CoordinatePoint.Equals
+  fullName: MapQuest.Coordinates.CoordinatePoint.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.Coordinates.CoordinatePoint.Clone*
+  commentId: Overload:MapQuest.Coordinates.CoordinatePoint.Clone
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinatePoint.html#MapQuest_Coordinates_CoordinatePoint_Clone
+  name: Clone
+  nameWithType: CoordinatePoint.Clone
+  fullName: MapQuest.Coordinates.CoordinatePoint.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.CoordinatePoint.ToString*
+  commentId: Overload:MapQuest.Coordinates.CoordinatePoint.ToString
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinatePoint.html#MapQuest_Coordinates_CoordinatePoint_ToString
+  name: ToString
+  nameWithType: CoordinatePoint.ToString
+  fullName: MapQuest.Coordinates.CoordinatePoint.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.Coordinates.CoordinatePoint.Dimension*
+  commentId: Overload:MapQuest.Coordinates.CoordinatePoint.Dimension
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinatePoint.html#MapQuest_Coordinates_CoordinatePoint_Dimension
+  name: Dimension
+  nameWithType: CoordinatePoint.Dimension
+  fullName: MapQuest.Coordinates.CoordinatePoint.Dimension
+- uid: MapQuest.Coordinates.ICoordinatePoint.Dimension
+  commentId: P:MapQuest.Coordinates.ICoordinatePoint.Dimension
+  parent: MapQuest.Coordinates.ICoordinatePoint
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinatePoint.html#MapQuest_Coordinates_ICoordinatePoint_Dimension
+  name: Dimension
+  nameWithType: ICoordinatePoint.Dimension
+  fullName: MapQuest.Coordinates.ICoordinatePoint.Dimension
+- uid: MapQuest.Coordinates.CoordinatePoint.Ordinate*
+  commentId: Overload:MapQuest.Coordinates.CoordinatePoint.Ordinate
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinatePoint.html#MapQuest_Coordinates_CoordinatePoint_Ordinate
+  name: Ordinate
+  nameWithType: CoordinatePoint.Ordinate
+  fullName: MapQuest.Coordinates.CoordinatePoint.Ordinate
+- uid: MapQuest.Coordinates.ICoordinatePoint.Ordinate
+  commentId: P:MapQuest.Coordinates.ICoordinatePoint.Ordinate
+  parent: MapQuest.Coordinates.ICoordinatePoint
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinatePoint.html#MapQuest_Coordinates_ICoordinatePoint_Ordinate
+  name: Ordinate
+  nameWithType: ICoordinatePoint.Ordinate
+  fullName: MapQuest.Coordinates.ICoordinatePoint.Ordinate

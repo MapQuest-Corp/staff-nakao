@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: DocFXSample.EnumTest
+  commentId: T:DocFXSample.EnumTest
+  id: EnumTest
+  parent: DocFXSample
+  children:
+  - DocFXSample.EnumTest.Elem1
+  - DocFXSample.EnumTest.Elem2
+  - DocFXSample.EnumTest.Elem3
+  langs:
+  - csharp
+  - vb
+  name: EnumTest
+  nameWithType: EnumTest
+  fullName: DocFXSample.EnumTest
+  type: Enum
+  source:
+    remote:
+      path: docfx/ConsoleApp1/ConsoleApp1/Program.cs
+      branch: docfx
+      repo: https://github.com/MapQuest-Corp/staff-nakao.git
+    id: EnumTest
+    path: ../ConsoleApp1/Program.cs
+    startLine: 47
+  assemblies:
+  - ConsoleApp1
+  namespace: DocFXSample
+  summary: enumのテスト。
+  example: []
+  syntax:
+    content: public enum EnumTest
+    content.vb: Public Enum EnumTest
+  extensionMethods:
+  - DocFXSample.EnumTest.DocFXSample.EnumTestExt.Name
+- uid: DocFXSample.EnumTest.Elem1
+  commentId: F:DocFXSample.EnumTest.Elem1
+  id: Elem1
+  parent: DocFXSample.EnumTest
+  langs:
+  - csharp
+  - vb
+  name: Elem1
+  nameWithType: EnumTest.Elem1
+  fullName: DocFXSample.EnumTest.Elem1
+  type: Field
+  source:
+    remote:
+      path: docfx/ConsoleApp1/ConsoleApp1/Program.cs
+      branch: docfx
+      repo: https://github.com/MapQuest-Corp/staff-nakao.git
+    id: Elem1
+    path: ../ConsoleApp1/Program.cs
+    startLine: 52
+  assemblies:
+  - ConsoleApp1
+  namespace: DocFXSample
+  summary: 要素1。
+  example: []
+  syntax:
+    content: Elem1 = 0
+    return:
+      type: DocFXSample.EnumTest
+- uid: DocFXSample.EnumTest.Elem2
+  commentId: F:DocFXSample.EnumTest.Elem2
+  id: Elem2
+  parent: DocFXSample.EnumTest
+  langs:
+  - csharp
+  - vb
+  name: Elem2
+  nameWithType: EnumTest.Elem2
+  fullName: DocFXSample.EnumTest.Elem2
+  type: Field
+  source:
+    remote:
+      path: docfx/ConsoleApp1/ConsoleApp1/Program.cs
+      branch: docfx
+      repo: https://github.com/MapQuest-Corp/staff-nakao.git
+    id: Elem2
+    path: ../ConsoleApp1/Program.cs
+    startLine: 56
+  assemblies:
+  - ConsoleApp1
+  namespace: DocFXSample
+  summary: 要素2。
+  example: []
+  syntax:
+    content: Elem2 = 1
+    return:
+      type: DocFXSample.EnumTest
+- uid: DocFXSample.EnumTest.Elem3
+  commentId: F:DocFXSample.EnumTest.Elem3
+  id: Elem3
+  parent: DocFXSample.EnumTest
+  langs:
+  - csharp
+  - vb
+  name: Elem3
+  nameWithType: EnumTest.Elem3
+  fullName: DocFXSample.EnumTest.Elem3
+  type: Field
+  source:
+    remote:
+      path: docfx/ConsoleApp1/ConsoleApp1/Program.cs
+      branch: docfx
+      repo: https://github.com/MapQuest-Corp/staff-nakao.git
+    id: Elem3
+    path: ../ConsoleApp1/Program.cs
+    startLine: 60
+  assemblies:
+  - ConsoleApp1
+  namespace: DocFXSample
+  summary: 要素3。
+  example: []
+  syntax:
+    content: Elem3 = 2
+    return:
+      type: DocFXSample.EnumTest
+references:
+- uid: DocFXSample
+  commentId: N:DocFXSample
+  href: DocFXSample.html
+  name: DocFXSample
+  nameWithType: DocFXSample
+  fullName: DocFXSample
+- uid: DocFXSample.EnumTest.DocFXSample.EnumTestExt.Name
+  commentId: M:DocFXSample.EnumTestExt.Name(DocFXSample.EnumTest)
+  parent: DocFXSample.EnumTestExt
+  definition: DocFXSample.EnumTestExt.Name(DocFXSample.EnumTest)
+  href: DocFXSample.EnumTestExt.html#DocFXSample_EnumTestExt_Name_DocFXSample_EnumTest_
+  name: Name(EnumTest)
+  nameWithType: EnumTestExt.Name(EnumTest)
+  fullName: DocFXSample.EnumTestExt.Name(DocFXSample.EnumTest)
+  spec.csharp:
+  - uid: DocFXSample.EnumTestExt.Name(DocFXSample.EnumTest)
+    name: Name
+    href: DocFXSample.EnumTestExt.html#DocFXSample_EnumTestExt_Name_DocFXSample_EnumTest_
+  - name: (
+  - uid: DocFXSample.EnumTest
+    name: EnumTest
+    href: DocFXSample.EnumTest.html
+  - name: )
+  spec.vb:
+  - uid: DocFXSample.EnumTestExt.Name(DocFXSample.EnumTest)
+    name: Name
+    href: DocFXSample.EnumTestExt.html#DocFXSample_EnumTestExt_Name_DocFXSample_EnumTest_
+  - name: (
+  - uid: DocFXSample.EnumTest
+    name: EnumTest
+    href: DocFXSample.EnumTest.html
+  - name: )
+- uid: DocFXSample.EnumTestExt.Name(DocFXSample.EnumTest)
+  commentId: M:DocFXSample.EnumTestExt.Name(DocFXSample.EnumTest)
+  href: DocFXSample.EnumTestExt.html#DocFXSample_EnumTestExt_Name_DocFXSample_EnumTest_
+  name: Name(EnumTest)
+  nameWithType: EnumTestExt.Name(EnumTest)
+  fullName: DocFXSample.EnumTestExt.Name(DocFXSample.EnumTest)
+  spec.csharp:
+  - uid: DocFXSample.EnumTestExt.Name(DocFXSample.EnumTest)
+    name: Name
+    href: DocFXSample.EnumTestExt.html#DocFXSample_EnumTestExt_Name_DocFXSample_EnumTest_
+  - name: (
+  - uid: DocFXSample.EnumTest
+    name: EnumTest
+    href: DocFXSample.EnumTest.html
+  - name: )
+  spec.vb:
+  - uid: DocFXSample.EnumTestExt.Name(DocFXSample.EnumTest)
+    name: Name
+    href: DocFXSample.EnumTestExt.html#DocFXSample_EnumTestExt_Name_DocFXSample_EnumTest_
+  - name: (
+  - uid: DocFXSample.EnumTest
+    name: EnumTest
+    href: DocFXSample.EnumTest.html
+  - name: )
+- uid: DocFXSample.EnumTestExt
+  commentId: T:DocFXSample.EnumTestExt
+  parent: DocFXSample
+  href: DocFXSample.EnumTestExt.html
+  name: EnumTestExt
+  nameWithType: EnumTestExt
+  fullName: DocFXSample.EnumTestExt
+- uid: DocFXSample.EnumTest
+  commentId: T:DocFXSample.EnumTest
+  parent: DocFXSample
+  href: DocFXSample.EnumTest.html
+  name: EnumTest
+  nameWithType: EnumTest
+  fullName: DocFXSample.EnumTest

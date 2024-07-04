@@ -1,0 +1,1043 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  commentId: T:MapQuest.CoordinateSystems.WGS84ConversionInfo
+  id: WGS84ConversionInfo
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.#ctor(MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.AreaOfUse
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.Clone
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.Dx
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.Dy
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.Dz
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.Empty
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals(MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals(System.Object)
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.Ex
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.Ey
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.Ez
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.GetHashCode
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.IsEmpty
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.Ppm
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.ToString
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Equality(MapQuest.CoordinateSystems.WGS84ConversionInfo,MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  - MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Inequality(MapQuest.CoordinateSystems.WGS84ConversionInfo,MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  langs:
+  - csharp
+  - vb
+  name: WGS84ConversionInfo
+  nameWithType: WGS84ConversionInfo
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  type: Struct
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: ある楕円体から WGS84 楕円体への変換パラメータを示します。
+  remarks: >-
+    ブルサ・ウルフ(Bursa Wolf)パラメータは、地球の中心から測った座標に適用されます。
+
+    グリニッジ基準子午線のX軸ポイント、Y軸は東を指示します。また、Z軸は北を指示します。
+  example: []
+  syntax:
+    content: 'public struct WGS84ConversionInfo : ICloneable'
+    content.vb: Public Structure WGS84ConversionInfo Implements ICloneable
+  implements:
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Empty
+  commentId: F:MapQuest.CoordinateSystems.WGS84ConversionInfo.Empty
+  id: Empty
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: WGS84ConversionInfo.Empty
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Empty
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 空の <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: public static readonly WGS84ConversionInfo Empty
+    return:
+      type: MapQuest.CoordinateSystems.WGS84ConversionInfo
+    content.vb: Public Shared ReadOnly Empty As WGS84ConversionInfo
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.CoordinateSystems.WGS84ConversionInfo.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)'
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: WGS84ConversionInfo(double, double, double, double, double, double, double)
+  nameWithType: WGS84ConversionInfo.WGS84ConversionInfo(double, double, double, double, double, double, double)
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.WGS84ConversionInfo(double, double, double, double, double, double, double)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 必要なパラメータを指定して、新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public WGS84ConversionInfo(double dx, double dy, double dz, double ex, double ey, double ez, double ppm)
+    parameters:
+    - id: dx
+      type: System.Double
+      description: Bursa Wolf X軸の移動量[m] 。
+    - id: dy
+      type: System.Double
+      description: Bursa Wolf Y軸の移動量[m] 。
+    - id: dz
+      type: System.Double
+      description: Bursa Wolf Z軸の移動量[m] 。
+    - id: ex
+      type: System.Double
+      description: Bursa Wolf X軸の回転量[sec] 。
+    - id: ey
+      type: System.Double
+      description: Bursa Wolf Y軸の回転量[sec] 。
+    - id: ez
+      type: System.Double
+      description: Bursa Wolf Z軸の回転量[sec] 。
+    - id: ppm
+      type: System.Double
+      description: Bursa Wolf scaling in parts per million.
+    content.vb: Public Sub New(dx As Double, dy As Double, dz As Double, ex As Double, ey As Double, ez As Double, ppm As Double)
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.#ctor*
+  nameWithType.vb: WGS84ConversionInfo.New(Double, Double, Double, Double, Double, Double, Double)
+  fullName.vb: MapQuest.CoordinateSystems.WGS84ConversionInfo.New(Double, Double, Double, Double, Double, Double, Double)
+  name.vb: New(Double, Double, Double, Double, Double, Double, Double)
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.#ctor(MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  commentId: M:MapQuest.CoordinateSystems.WGS84ConversionInfo.#ctor(MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  id: '#ctor(MapQuest.CoordinateSystems.WGS84ConversionInfo)'
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: WGS84ConversionInfo(WGS84ConversionInfo)
+  nameWithType: WGS84ConversionInfo.WGS84ConversionInfo(WGS84ConversionInfo)
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.WGS84ConversionInfo(MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: コピーコンストラクタ。指定したインスタンスの詳細コピーを提供します。
+  example: []
+  syntax:
+    content: public WGS84ConversionInfo(WGS84ConversionInfo wgsInfo)
+    parameters:
+    - id: wgsInfo
+      type: MapQuest.CoordinateSystems.WGS84ConversionInfo
+      description: コピー元の <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub New(wgsInfo As WGS84ConversionInfo)
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.#ctor*
+  nameWithType.vb: WGS84ConversionInfo.New(WGS84ConversionInfo)
+  fullName.vb: MapQuest.CoordinateSystems.WGS84ConversionInfo.New(MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  name.vb: New(WGS84ConversionInfo)
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals(MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  commentId: M:MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals(MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  id: Equals(MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: Equals(WGS84ConversionInfo)
+  nameWithType: WGS84ConversionInfo.Equals(WGS84ConversionInfo)
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals(MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在のオブジェクトと、指定されたオブジェクトが等しいかどうかを返します。
+  example: []
+  syntax:
+    content: public bool Equals(WGS84ConversionInfo obj)
+    parameters:
+    - id: obj
+      type: MapQuest.CoordinateSystems.WGS84ConversionInfo
+      description: 比較する <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: >-
+        全てのプロパティが等しければ true を返します。
+
+        それ以外の場合は false を返します。
+    content.vb: Public Function Equals(obj As WGS84ConversionInfo) As Boolean
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals*
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals(System.Object)
+  commentId: M:MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: WGS84ConversionInfo.Equals(object)
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在のオブジェクトと、指定されたオブジェクトが等しいかどうかを返します。
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: 比較する <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: >-
+        全てのプロパティが等しければ true を返します。
+
+        それ以外の場合は false を返します。
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals*
+  nameWithType.vb: WGS84ConversionInfo.Equals(Object)
+  fullName.vb: MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.GetHashCode
+  commentId: M:MapQuest.CoordinateSystems.WGS84ConversionInfo.GetHashCode
+  id: GetHashCode
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: WGS84ConversionInfo.GetHashCode()
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.GetHashCode()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: この <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> のハッシュ コードを返します。
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: この <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> のハッシュ コード。
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.GetHashCode*
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.ToString
+  commentId: M:MapQuest.CoordinateSystems.WGS84ConversionInfo.ToString
+  id: ToString
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: WGS84ConversionInfo.ToString()
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.ToString()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    この <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> を
+
+    Well-Known Text (WKT) 形式で表します。
+  remarks: >-
+    WKT は OpenGIS' により策定されている、下記のような形式です。
+
+    <pre><code class="lang-csharp">TOWGS84[Dx, Dy, Dz, Ex, Ey, Ez, Ppm]</code></pre>
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.ToString*
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Equality(MapQuest.CoordinateSystems.WGS84ConversionInfo,MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  commentId: M:MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Equality(MapQuest.CoordinateSystems.WGS84ConversionInfo,MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  id: op_Equality(MapQuest.CoordinateSystems.WGS84ConversionInfo,MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: operator ==(WGS84ConversionInfo, WGS84ConversionInfo)
+  nameWithType: WGS84ConversionInfo.operator ==(WGS84ConversionInfo, WGS84ConversionInfo)
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.operator ==(MapQuest.CoordinateSystems.WGS84ConversionInfo, MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  type: Operator
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 二つの <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> が等しいかどうかを調べます。
+  remarks: left.Equals(right) を実行した結果を返します。
+  example: []
+  syntax:
+    content: public static bool operator ==(WGS84ConversionInfo left, WGS84ConversionInfo right)
+    parameters:
+    - id: left
+      type: MapQuest.CoordinateSystems.WGS84ConversionInfo
+      description: 1 つ目の <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> 。
+    - id: right
+      type: MapQuest.CoordinateSystems.WGS84ConversionInfo
+      description: 2 つ目の <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: >-
+        二つの <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> が等しければ true 、
+                    等しくなければ false を返します。
+    content.vb: Public Shared Operator =(left As WGS84ConversionInfo, right As WGS84ConversionInfo) As Boolean
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Equality*
+  nameWithType.vb: WGS84ConversionInfo.=(WGS84ConversionInfo, WGS84ConversionInfo)
+  fullName.vb: MapQuest.CoordinateSystems.WGS84ConversionInfo.=(MapQuest.CoordinateSystems.WGS84ConversionInfo, MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  name.vb: =(WGS84ConversionInfo, WGS84ConversionInfo)
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Inequality(MapQuest.CoordinateSystems.WGS84ConversionInfo,MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  commentId: M:MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Inequality(MapQuest.CoordinateSystems.WGS84ConversionInfo,MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  id: op_Inequality(MapQuest.CoordinateSystems.WGS84ConversionInfo,MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: operator !=(WGS84ConversionInfo, WGS84ConversionInfo)
+  nameWithType: WGS84ConversionInfo.operator !=(WGS84ConversionInfo, WGS84ConversionInfo)
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.operator !=(MapQuest.CoordinateSystems.WGS84ConversionInfo, MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  type: Operator
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 二つの <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> が等しくないかどうかを調べます。
+  remarks: '!left.Equals(right) を実行した結果を返します。'
+  example: []
+  syntax:
+    content: public static bool operator !=(WGS84ConversionInfo left, WGS84ConversionInfo right)
+    parameters:
+    - id: left
+      type: MapQuest.CoordinateSystems.WGS84ConversionInfo
+      description: 1 つ目の <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> 。
+    - id: right
+      type: MapQuest.CoordinateSystems.WGS84ConversionInfo
+      description: 2 つ目の <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: >-
+        二つの <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> が等しくなければ true 、
+                    等しければ false を返します。
+    content.vb: Public Shared Operator <>(left As WGS84ConversionInfo, right As WGS84ConversionInfo) As Boolean
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Inequality*
+  nameWithType.vb: WGS84ConversionInfo.<>(WGS84ConversionInfo, WGS84ConversionInfo)
+  fullName.vb: MapQuest.CoordinateSystems.WGS84ConversionInfo.<>(MapQuest.CoordinateSystems.WGS84ConversionInfo, MapQuest.CoordinateSystems.WGS84ConversionInfo)
+  name.vb: <>(WGS84ConversionInfo, WGS84ConversionInfo)
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Clone
+  commentId: M:MapQuest.CoordinateSystems.WGS84ConversionInfo.Clone
+  id: Clone
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: WGS84ConversionInfo.Clone()
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在のインスタンスの詳細コピーを提供します。
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+      description: コピーされた新しい <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function Clone() As Object
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.AreaOfUse
+  commentId: P:MapQuest.CoordinateSystems.WGS84ConversionInfo.AreaOfUse
+  id: AreaOfUse
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: AreaOfUse
+  nameWithType: WGS84ConversionInfo.AreaOfUse
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.AreaOfUse
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: このパラメータが使用可能な地球上のおおよそのエリアを設定・取得します。
+  remarks: この値は、説明に使われるもので、特に設定が必要なものではありません。
+  example: []
+  syntax:
+    content: public string AreaOfUse { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: このパラメータが使用可能な地球上のおおよそのエリアを示す文字列。
+    content.vb: Public Property AreaOfUse As String
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.AreaOfUse*
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dx
+  commentId: P:MapQuest.CoordinateSystems.WGS84ConversionInfo.Dx
+  id: Dx
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: Dx
+  nameWithType: WGS84ConversionInfo.Dx
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dx
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: Bursa Wolf X軸の移動量[m] を設定・取得します。
+  example: []
+  syntax:
+    content: public double Dx { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: Bursa Wolf X軸の移動量[m]。
+    content.vb: Public Property Dx As Double
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dx*
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dy
+  commentId: P:MapQuest.CoordinateSystems.WGS84ConversionInfo.Dy
+  id: Dy
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: Dy
+  nameWithType: WGS84ConversionInfo.Dy
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dy
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: Bursa Wolf Y軸の移動量[m] を設定・取得します。
+  example: []
+  syntax:
+    content: public double Dy { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: Bursa Wolf Y軸の移動量[m]。
+    content.vb: Public Property Dy As Double
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dy*
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dz
+  commentId: P:MapQuest.CoordinateSystems.WGS84ConversionInfo.Dz
+  id: Dz
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: Dz
+  nameWithType: WGS84ConversionInfo.Dz
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dz
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: Bursa Wolf Z軸の移動量[m] を設定・取得します。
+  example: []
+  syntax:
+    content: public double Dz { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: Bursa Wolf Z軸の移動量[m]。
+    content.vb: Public Property Dz As Double
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dz*
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ex
+  commentId: P:MapQuest.CoordinateSystems.WGS84ConversionInfo.Ex
+  id: Ex
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: Ex
+  nameWithType: WGS84ConversionInfo.Ex
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ex
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: Bursa Wolf X軸の回転量[sec] を設定・取得します。
+  example: []
+  syntax:
+    content: public double Ex { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: Bursa Wolf X軸の回転量[sec]。
+    content.vb: Public Property Ex As Double
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ex*
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ey
+  commentId: P:MapQuest.CoordinateSystems.WGS84ConversionInfo.Ey
+  id: Ey
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: Ey
+  nameWithType: WGS84ConversionInfo.Ey
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ey
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: Bursa Wolf Y軸の回転量[sec] を設定・取得します。
+  example: []
+  syntax:
+    content: public double Ey { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: Bursa Wolf Y軸の回転量[sec]。
+    content.vb: Public Property Ey As Double
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ey*
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ez
+  commentId: P:MapQuest.CoordinateSystems.WGS84ConversionInfo.Ez
+  id: Ez
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: Ez
+  nameWithType: WGS84ConversionInfo.Ez
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ez
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: Bursa Wolf Z軸の回転量[sec] を設定・取得します。
+  example: []
+  syntax:
+    content: public double Ez { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: Bursa Wolf Z軸の回転量[sec]。
+    content.vb: Public Property Ez As Double
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ez*
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ppm
+  commentId: P:MapQuest.CoordinateSystems.WGS84ConversionInfo.Ppm
+  id: Ppm
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: Ppm
+  nameWithType: WGS84ConversionInfo.Ppm
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ppm
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: Gets or sets Bursa Wolf scaling in parts per million.
+  example: []
+  syntax:
+    content: public double Ppm { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: A double precision value specifying the scaling factor.
+    content.vb: Public Property Ppm As Double
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ppm*
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.IsEmpty
+  commentId: P:MapQuest.CoordinateSystems.WGS84ConversionInfo.IsEmpty
+  id: IsEmpty
+  parent: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: WGS84ConversionInfo.IsEmpty
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.IsEmpty
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在のインスタンスが「空」かどうかを返します。
+  example: []
+  syntax:
+    content: public bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        数値のプロパティが全て 0 、
+
+        文字列のプロパティが全て null あるいは 空文字 の場合は true を返します。
+
+        それ以外は false を返します。
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+  overload: MapQuest.CoordinateSystems.WGS84ConversionInfo.IsEmpty*
+references:
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  commentId: T:MapQuest.CoordinateSystems.WGS84ConversionInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html
+  name: WGS84ConversionInfo
+  nameWithType: WGS84ConversionInfo
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.#ctor*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.#ctor
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo__ctor_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: WGS84ConversionInfo
+  nameWithType: WGS84ConversionInfo.WGS84ConversionInfo
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.WGS84ConversionInfo
+  nameWithType.vb: WGS84ConversionInfo.New
+  fullName.vb: MapQuest.CoordinateSystems.WGS84ConversionInfo.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_Equals_MapQuest_CoordinateSystems_WGS84ConversionInfo_
+  name: Equals
+  nameWithType: WGS84ConversionInfo.Equals
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.GetHashCode*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.GetHashCode
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_GetHashCode
+  name: GetHashCode
+  nameWithType: WGS84ConversionInfo.GetHashCode
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.ToString*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.ToString
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_ToString
+  name: ToString
+  nameWithType: WGS84ConversionInfo.ToString
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Equality*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Equality
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_op_Equality_MapQuest_CoordinateSystems_WGS84ConversionInfo_MapQuest_CoordinateSystems_WGS84ConversionInfo_
+  name: operator ==
+  nameWithType: WGS84ConversionInfo.operator ==
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.operator ==
+  nameWithType.vb: WGS84ConversionInfo.=
+  fullName.vb: MapQuest.CoordinateSystems.WGS84ConversionInfo.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Equality*
+    name: ==
+    isExternal: true
+    href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_op_Equality_MapQuest_CoordinateSystems_WGS84ConversionInfo_MapQuest_CoordinateSystems_WGS84ConversionInfo_
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Inequality*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Inequality
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_op_Inequality_MapQuest_CoordinateSystems_WGS84ConversionInfo_MapQuest_CoordinateSystems_WGS84ConversionInfo_
+  name: operator !=
+  nameWithType: WGS84ConversionInfo.operator !=
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.operator !=
+  nameWithType.vb: WGS84ConversionInfo.<>
+  fullName.vb: MapQuest.CoordinateSystems.WGS84ConversionInfo.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_op_Inequality_MapQuest_CoordinateSystems_WGS84ConversionInfo_MapQuest_CoordinateSystems_WGS84ConversionInfo_
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Clone*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.Clone
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_Clone
+  name: Clone
+  nameWithType: WGS84ConversionInfo.Clone
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.AreaOfUse*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.AreaOfUse
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_AreaOfUse
+  name: AreaOfUse
+  nameWithType: WGS84ConversionInfo.AreaOfUse
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.AreaOfUse
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dx*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.Dx
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_Dx
+  name: Dx
+  nameWithType: WGS84ConversionInfo.Dx
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dx
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dy*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.Dy
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_Dy
+  name: Dy
+  nameWithType: WGS84ConversionInfo.Dy
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dy
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dz*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.Dz
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_Dz
+  name: Dz
+  nameWithType: WGS84ConversionInfo.Dz
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Dz
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ex*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.Ex
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_Ex
+  name: Ex
+  nameWithType: WGS84ConversionInfo.Ex
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ex
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ey*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.Ey
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_Ey
+  name: Ey
+  nameWithType: WGS84ConversionInfo.Ey
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ey
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ez*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.Ez
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_Ez
+  name: Ez
+  nameWithType: WGS84ConversionInfo.Ez
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ez
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ppm*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.Ppm
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_Ppm
+  name: Ppm
+  nameWithType: WGS84ConversionInfo.Ppm
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.Ppm
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo.IsEmpty*
+  commentId: Overload:MapQuest.CoordinateSystems.WGS84ConversionInfo.IsEmpty
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html#MapQuest_CoordinateSystems_WGS84ConversionInfo_IsEmpty
+  name: IsEmpty
+  nameWithType: WGS84ConversionInfo.IsEmpty
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo.IsEmpty

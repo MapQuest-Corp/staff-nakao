@@ -1,0 +1,6724 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CoordinateSystemMapQuestFactory | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CoordinateSystemMapQuestFactory | mysite ">
+      
+      <meta name="description" content="MapQuest.co.jp 社が定める GridID により  を生成するファクトリクラスです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory">
+
+
+
+  <h1 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory" class="text-break">
+Class CoordinateSystemMapQuestFactory  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.CoordinateSystems.html">CoordinateSystems</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.CoordinateSystems.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>MapQuest.co.jp 社が定める GridID により
+<a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a> を生成するファクトリクラスです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CoordinateSystemMapQuestFactory : ICoordinateSystemSimpleFactory</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CoordinateSystemMapQuestFactory</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.html">ICoordinateSystemSimpleFactory</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>このクラスは、<a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.html#MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_Create_System_Int32_">Create(int)</a> メソッドにて、MapQuest.co.jp 社が定めた
+座標系番号である <b>GridID</b> を指定して、
+それに応じた座標系を生成して返すものです。</p>
+<p></p>
+id として指定できる GridID とその意味を下記に示します。
+<ul><li><b>1 ～ 19</b> - 平面直角座標系(日本測地系)を表します。</li><li><b>101 ～ 160</b> - UTM座標系を表します。楕円体は WGS84 を使用します。
+値から 100 を減算したものが UTM で定められるゾーンに該当します。
+例えば 105 は、「UTM ゾーン 5」を示します。</li><li><b>201 ～ 219</b> - 平面直角座標系(世界測地系)を表します
+(※楕円体は GRS80 を使用します)。
+値から 200 を減算したものが、平面直角座標系 の 1 ～ 19 に対応します。
+例えば東京都付近の世界測地系の平面直角座標系を表す GridID は 209 です。</li></ul>
+これらの数値は定数としても用意されています。<a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.html#MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_01">TOKYO_01</a> 、
+<a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.html#MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_01">JGD2000_01</a> 、 <a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.html#MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE01">UTM_ZONE01</a> を参照して下さい。
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory__ctor_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory__ctor" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.#ctor">
+  CoordinateSystemMapQuestFactory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.html">CoordinateSystemMapQuestFactory</a> クラスの
+新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoordinateSystemMapQuestFactory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_01" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_01">
+  JGD2000_01
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 1 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_01</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_02" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_02">
+  JGD2000_02
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 2 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_02</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_03" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_03">
+  JGD2000_03
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 3 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_03</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_04" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_04">
+  JGD2000_04
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 4 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_04</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_05" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_05">
+  JGD2000_05
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 5 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_05</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_06" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_06">
+  JGD2000_06
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 6 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_06</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_07" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_07">
+  JGD2000_07
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 7 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_07</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_08" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_08">
+  JGD2000_08
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 8 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_08</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_09" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_09">
+  JGD2000_09
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 9 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_09</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_10" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_10">
+  JGD2000_10
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 10 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_11" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_11">
+  JGD2000_11
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 11 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_11</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_12" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_12">
+  JGD2000_12
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 12 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_12</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_13" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_13">
+  JGD2000_13
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 13 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_13</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_14" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_14">
+  JGD2000_14
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 14 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_14</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_15" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_15">
+  JGD2000_15
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 15 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_15</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_16" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_16">
+  JGD2000_16
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 16 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_16</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_17" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_17">
+  JGD2000_17
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 17 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_17</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_18" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_18">
+  JGD2000_18
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 18 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_18</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2000_19" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2000_19">
+  JGD2000_19
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 19 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2000_19</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_01" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_01">
+  JGD2011_01
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 1 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_01</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_02" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_02">
+  JGD2011_02
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 2 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_02</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_03" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_03">
+  JGD2011_03
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 3 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_03</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_04" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_04">
+  JGD2011_04
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 4 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_04</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_05" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_05">
+  JGD2011_05
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 5 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_05</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_06" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_06">
+  JGD2011_06
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 6 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_06</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_07" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_07">
+  JGD2011_07
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 7 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_07</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_08" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_08">
+  JGD2011_08
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 8 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_08</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_09" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_09">
+  JGD2011_09
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 9 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_09</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_10" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_10">
+  JGD2011_10
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 10 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_11" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_11">
+  JGD2011_11
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 11 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_11</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_12" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_12">
+  JGD2011_12
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 12 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_12</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_13" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_13">
+  JGD2011_13
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 13 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_13</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_14" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_14">
+  JGD2011_14
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 14 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_14</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_15" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_15">
+  JGD2011_15
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 15 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_15</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_16" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_16">
+  JGD2011_16
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 16 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_16</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_17" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_17">
+  JGD2011_17
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 17 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_17</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_18" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_18">
+  JGD2011_18
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 18 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_18</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_JGD2011_19" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.JGD2011_19">
+  JGD2011_19
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 19 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int JGD2011_19</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_LATLON_JGD2000" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.LATLON_JGD2000">
+  LATLON_JGD2000
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の緯度経度座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int LATLON_JGD2000</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_LATLON_JGD2011" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.LATLON_JGD2011">
+  LATLON_JGD2011
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の緯度経度座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int LATLON_JGD2011</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_LATLON_TOKYO" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.LATLON_TOKYO">
+  LATLON_TOKYO
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の緯度経度座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int LATLON_TOKYO</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MERCATOR" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MERCATOR">
+  MERCATOR
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>メルカトル図法を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MERCATOR</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_01" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_01">
+  MJGD2000_01
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 1 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_01</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_02" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_02">
+  MJGD2000_02
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 2 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_02</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_03" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_03">
+  MJGD2000_03
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 3 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_03</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_04" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_04">
+  MJGD2000_04
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 4 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_04</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_05" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_05">
+  MJGD2000_05
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 5 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_05</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_06" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_06">
+  MJGD2000_06
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 6 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_06</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_07" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_07">
+  MJGD2000_07
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 7 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_07</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_08" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_08">
+  MJGD2000_08
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 8 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_08</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_09" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_09">
+  MJGD2000_09
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 9 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_09</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_10" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_10">
+  MJGD2000_10
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 10 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_11" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_11">
+  MJGD2000_11
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 11 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_11</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_12" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_12">
+  MJGD2000_12
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 12 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_12</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_13" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_13">
+  MJGD2000_13
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 13 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_13</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_14" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_14">
+  MJGD2000_14
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 14 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_14</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_15" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_15">
+  MJGD2000_15
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 15 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_15</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_16" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_16">
+  MJGD2000_16
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 16 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_16</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_17" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_17">
+  MJGD2000_17
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 17 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_17</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_18" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_18">
+  MJGD2000_18
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 18 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_18</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2000_19" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2000_19">
+  MJGD2000_19
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系の平面直角座標第 19 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2000_19</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_01" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_01">
+  MJGD2011_01
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 1 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_01</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_02" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_02">
+  MJGD2011_02
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 2 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_02</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_03" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_03">
+  MJGD2011_03
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 3 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_03</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_04" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_04">
+  MJGD2011_04
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 4 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_04</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_05" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_05">
+  MJGD2011_05
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 5 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_05</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_06" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_06">
+  MJGD2011_06
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 6 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_06</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_07" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_07">
+  MJGD2011_07
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 7 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_07</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_08" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_08">
+  MJGD2011_08
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 8 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_08</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_09" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_09">
+  MJGD2011_09
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 9 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_09</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_10" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_10">
+  MJGD2011_10
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 10 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_11" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_11">
+  MJGD2011_11
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 11 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_11</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_12" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_12">
+  MJGD2011_12
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 12 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_12</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_13" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_13">
+  MJGD2011_13
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 13 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_13</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_14" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_14">
+  MJGD2011_14
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 14 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_14</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_15" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_15">
+  MJGD2011_15
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 15 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_15</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_16" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_16">
+  MJGD2011_16
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 16 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_16</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_17" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_17">
+  MJGD2011_17
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 17 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_17</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_18" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_18">
+  MJGD2011_18
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 18 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_18</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MJGD2011_19" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MJGD2011_19">
+  MJGD2011_19
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>世界測地系(JGD2011：測地成果2011)の平面直角座標第 19 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MJGD2011_19</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_01" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_01">
+  MTOKYO_01
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 1 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_01</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_02" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_02">
+  MTOKYO_02
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 2 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_02</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_03" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_03">
+  MTOKYO_03
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 3 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_03</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_04" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_04">
+  MTOKYO_04
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 4 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_04</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_05" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_05">
+  MTOKYO_05
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 5 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_05</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_06" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_06">
+  MTOKYO_06
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 6 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_06</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_07" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_07">
+  MTOKYO_07
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 7 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_07</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_08" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_08">
+  MTOKYO_08
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 8 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_08</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_09" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_09">
+  MTOKYO_09
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 9 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_09</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_10" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_10">
+  MTOKYO_10
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 10 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_11" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_11">
+  MTOKYO_11
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 11 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_11</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_12" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_12">
+  MTOKYO_12
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 12 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_12</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_13" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_13">
+  MTOKYO_13
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 13 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_13</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_14" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_14">
+  MTOKYO_14
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 14 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_14</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_15" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_15">
+  MTOKYO_15
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 15 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_15</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_16" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_16">
+  MTOKYO_16
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 16 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_16</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_17" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_17">
+  MTOKYO_17
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 17 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_17</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_18" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_18">
+  MTOKYO_18
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 18 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_18</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_MTOKYO_19" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.MTOKYO_19">
+  MTOKYO_19
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 19 座標系(ミリ精度)を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int MTOKYO_19</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_01" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_01">
+  TOKYO_01
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 1 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_01</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_02" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_02">
+  TOKYO_02
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 2 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_02</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_03" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_03">
+  TOKYO_03
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 3 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_03</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_04" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_04">
+  TOKYO_04
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 4 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_04</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_05" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_05">
+  TOKYO_05
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 5 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_05</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_06" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_06">
+  TOKYO_06
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 6 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_06</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_07" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_07">
+  TOKYO_07
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 7 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_07</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_08" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_08">
+  TOKYO_08
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 8 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_08</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_09" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_09">
+  TOKYO_09
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 9 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_09</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_10" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_10">
+  TOKYO_10
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 10 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_11" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_11">
+  TOKYO_11
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 11 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_11</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_12" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_12">
+  TOKYO_12
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 12 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_12</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_13" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_13">
+  TOKYO_13
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 13 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_13</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_14" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_14">
+  TOKYO_14
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 14 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_14</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_15" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_15">
+  TOKYO_15
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 15 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_15</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_16" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_16">
+  TOKYO_16
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 16 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_16</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_17" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_17">
+  TOKYO_17
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 17 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_17</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_18" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_18">
+  TOKYO_18
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 18 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_18</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_TOKYO_19" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.TOKYO_19">
+  TOKYO_19
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>日本測地系の平面直角座標第 19 座標系を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TOKYO_19</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE01" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE01">
+  UTM_ZONE01
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 1 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE01</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE02" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE02">
+  UTM_ZONE02
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 2 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE02</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE03" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE03">
+  UTM_ZONE03
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 3 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE03</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE04" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE04">
+  UTM_ZONE04
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 4 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE04</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE05" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE05">
+  UTM_ZONE05
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 5 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE05</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE06" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE06">
+  UTM_ZONE06
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 6 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE06</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE07" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE07">
+  UTM_ZONE07
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 7 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE07</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE08" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE08">
+  UTM_ZONE08
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 8 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE08</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE09" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE09">
+  UTM_ZONE09
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 9 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE09</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE10" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE10">
+  UTM_ZONE10
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 10 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE11" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE11">
+  UTM_ZONE11
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 11 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE11</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE12" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE12">
+  UTM_ZONE12
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 12 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE12</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE13" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE13">
+  UTM_ZONE13
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 13 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE13</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE14" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE14">
+  UTM_ZONE14
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 14 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE14</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE15" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE15">
+  UTM_ZONE15
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 15 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE15</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE16" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE16">
+  UTM_ZONE16
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 16 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE16</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE17" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE17">
+  UTM_ZONE17
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 17 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE17</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE18" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE18">
+  UTM_ZONE18
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 18 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE18</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE19" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE19">
+  UTM_ZONE19
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 19 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE19</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE20" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE20">
+  UTM_ZONE20
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 20 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE20</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE21" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE21">
+  UTM_ZONE21
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 21 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE21</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE22" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE22">
+  UTM_ZONE22
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 22 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE22</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE23" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE23">
+  UTM_ZONE23
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 23 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE23</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE24" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE24">
+  UTM_ZONE24
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 24 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE24</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE25" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE25">
+  UTM_ZONE25
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 25 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE25</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE26" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE26">
+  UTM_ZONE26
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 26 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE26</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE27" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE27">
+  UTM_ZONE27
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 27 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE27</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE28" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE28">
+  UTM_ZONE28
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 28 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE28</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE29" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE29">
+  UTM_ZONE29
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 29 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE29</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE30" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE30">
+  UTM_ZONE30
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 30 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE30</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE31" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE31">
+  UTM_ZONE31
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 31 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE31</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE32" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE32">
+  UTM_ZONE32
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 32 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE32</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE33" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE33">
+  UTM_ZONE33
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 33 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE33</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE34" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE34">
+  UTM_ZONE34
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 34 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE34</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE35" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE35">
+  UTM_ZONE35
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 35 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE35</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE36" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE36">
+  UTM_ZONE36
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 36 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE36</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE37" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE37">
+  UTM_ZONE37
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 37 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE37</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE38" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE38">
+  UTM_ZONE38
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 38 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE38</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE39" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE39">
+  UTM_ZONE39
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 39 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE39</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE40" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE40">
+  UTM_ZONE40
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 40 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE40</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE41" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE41">
+  UTM_ZONE41
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 41 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE41</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE42" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE42">
+  UTM_ZONE42
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 42 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE42</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE43" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE43">
+  UTM_ZONE43
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 43 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE43</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE44" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE44">
+  UTM_ZONE44
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 44 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE44</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE45" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE45">
+  UTM_ZONE45
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 45 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE45</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE46" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE46">
+  UTM_ZONE46
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 46 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE46</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE47" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE47">
+  UTM_ZONE47
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 47 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE47</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE48" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE48">
+  UTM_ZONE48
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 48 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE48</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE49" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE49">
+  UTM_ZONE49
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 49 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE49</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE50" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE50">
+  UTM_ZONE50
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 50 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE50</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE51" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE51">
+  UTM_ZONE51
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 51 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE51</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE52" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE52">
+  UTM_ZONE52
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 52 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE52</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE53" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE53">
+  UTM_ZONE53
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 53 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE53</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE54" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE54">
+  UTM_ZONE54
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 54 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE54</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE55" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE55">
+  UTM_ZONE55
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 55 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE55</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE56" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE56">
+  UTM_ZONE56
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 56 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE56</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE57" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE57">
+  UTM_ZONE57
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 57 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE57</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE58" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE58">
+  UTM_ZONE58
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 58 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE58</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE59" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE59">
+  UTM_ZONE59
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 59 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE59</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_UTM_ZONE60" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.UTM_ZONE60">
+  UTM_ZONE60
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UTM座標系の ゾーン 60 を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int UTM_ZONE60</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_WEB_MERCATOR" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.WEB_MERCATOR">
+  WEB_MERCATOR
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Webメルカトル図法を表す GridID です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int WEB_MERCATOR</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_AngularUnit_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.AngularUnit*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_AngularUnit" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.AngularUnit">
+  AngularUnit
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tokyo/Jgd2000/Wgs84 の GeographicCoordinateSystem を生成する際の、
+角度の単位を指定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAngularUnit AngularUnit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.IAngularUnit.html">IAngularUnit</a></dt>
+    <dd><p>既定値は MilliSecond（ミリ秒）です。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_AngularUnit_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>通常、このプロパティの値を変更する必要はありません。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_Create_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.Create*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_Create_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.Create(System.Int32)">
+  Create(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>数値の GridID を指定して、座標系を生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ICoordinateSystem Create(int gridID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gridID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>MapQuest.co.jp 社が定める座標系番号。
+詳細は、<a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.html">CoordinateSystemMapQuestFactory</a> を参照して下さい。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_Create_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.Create*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_Create_System_String_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.Create(System.String)">
+  Create(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>文字列の GridID を指定して、座標系を生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ICoordinateSystem Create(string gridID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gridID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>MapQuest.co.jp 社が定める座標系番号を
+文字列にキャストしたもの。
+詳細は、<a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.html">CoordinateSystemMapQuestFactory</a> を参照して下さい。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd><p>生成された <a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>gridID に数値以外を指定しました。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateJgd2000Geographic_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateJgd2000Geographic*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateJgd2000Geographic_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateJgd2000Geographic(System.Int32)">
+  CreateJgd2000Geographic(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateJgd2000Geographic(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateJgd2000Projected_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateJgd2000Projected*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateJgd2000Projected_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateJgd2000Projected(System.Int32)">
+  CreateJgd2000Projected(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateJgd2000Projected(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateJgd2000Projected_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateJgd2000Projected*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateJgd2000Projected_System_Int32_MapQuest_CoordinateSystems_LinearUnit_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateJgd2000Projected(System.Int32,MapQuest.CoordinateSystems.LinearUnit)">
+  CreateJgd2000Projected(int, LinearUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateJgd2000Projected(int code, LinearUnit linearUnit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>linearUnit</code> <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateJgd2011Geographic_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateJgd2011Geographic*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateJgd2011Geographic_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateJgd2011Geographic(System.Int32)">
+  CreateJgd2011Geographic(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateJgd2011Geographic(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateJgd2011Projected_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateJgd2011Projected*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateJgd2011Projected_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateJgd2011Projected(System.Int32)">
+  CreateJgd2011Projected(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateJgd2011Projected(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateJgd2011Projected_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateJgd2011Projected*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateJgd2011Projected_System_Int32_MapQuest_CoordinateSystems_LinearUnit_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateJgd2011Projected(System.Int32,MapQuest.CoordinateSystems.LinearUnit)">
+  CreateJgd2011Projected(int, LinearUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateJgd2011Projected(int code, LinearUnit linearUnit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>linearUnit</code> <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateMercatorProjected_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateMercatorProjected*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateMercatorProjected_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateMercatorProjected(System.Int32)">
+  CreateMercatorProjected(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateMercatorProjected(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateTokyoGeographic_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateTokyoGeographic*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateTokyoGeographic_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateTokyoGeographic(System.Int32)">
+  CreateTokyoGeographic(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateTokyoGeographic(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateTokyoProjected_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateTokyoProjected*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateTokyoProjected_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateTokyoProjected(System.Int32)">
+  CreateTokyoProjected(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateTokyoProjected(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateTokyoProjected_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateTokyoProjected*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateTokyoProjected_System_Int32_MapQuest_CoordinateSystems_LinearUnit_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateTokyoProjected(System.Int32,MapQuest.CoordinateSystems.LinearUnit)">
+  CreateTokyoProjected(int, LinearUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateTokyoProjected(int code, LinearUnit linearUnit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>linearUnit</code> <a class="xref" href="MapQuest.CoordinateSystems.LinearUnit.html">LinearUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateUtmProjected_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateUtmProjected*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateUtmProjected_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateUtmProjected(System.Int32)">
+  CreateUtmProjected(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateUtmProjected(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateWebMercatorProjected_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateWebMercatorProjected*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateWebMercatorProjected_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateWebMercatorProjected(System.Int32)">
+  CreateWebMercatorProjected(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateWebMercatorProjected(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateWgs84Geographic_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateWgs84Geographic*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateWgs84Geographic_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateWgs84Geographic(System.Int32)">
+  CreateWgs84Geographic(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateWgs84Geographic(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateWgs84Projected_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateWgs84Projected*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_CreateWgs84Projected_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.CreateWgs84Projected(System.Int32)">
+  CreateWgs84Projected(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ICoordinateSystem CreateWgs84Projected(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetJapanParameters_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetJapanParameters*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetJapanParameters_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetJapanParameters(System.Int32)">
+  GetJapanParameters(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IProjection GetJapanParameters(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.IProjection.html">IProjection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetJgd2000Geographic_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetJgd2000Geographic*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetJgd2000Geographic" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetJgd2000Geographic">
+  GetJgd2000Geographic()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IGeographicCoordinateSystem GetJgd2000Geographic()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.IGeographicCoordinateSystem.html">IGeographicCoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetJgd2011Geographic_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetJgd2011Geographic*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetJgd2011Geographic" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetJgd2011Geographic">
+  GetJgd2011Geographic()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IGeographicCoordinateSystem GetJgd2011Geographic()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.IGeographicCoordinateSystem.html">IGeographicCoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetMercatorParameters_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetMercatorParameters*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetMercatorParameters_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetMercatorParameters(System.Int32)">
+  GetMercatorParameters(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IProjection GetMercatorParameters(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.IProjection.html">IProjection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetTokyoGeographic_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetTokyoGeographic*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetTokyoGeographic" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetTokyoGeographic">
+  GetTokyoGeographic()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IGeographicCoordinateSystem GetTokyoGeographic()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.IGeographicCoordinateSystem.html">IGeographicCoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetWebMercatorParameters_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetWebMercatorParameters*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetWebMercatorParameters_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetWebMercatorParameters(System.Int32)">
+  GetWebMercatorParameters(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IProjection GetWebMercatorParameters(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.IProjection.html">IProjection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetWgs84Geographic_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetWgs84Geographic*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetWgs84Geographic" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetWgs84Geographic">
+  GetWgs84Geographic()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IGeographicCoordinateSystem GetWgs84Geographic()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.IGeographicCoordinateSystem.html">IGeographicCoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetWgs84Parameters_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetWgs84Parameters*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetWgs84Parameters_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetWgs84Parameters(System.Int32)">
+  GetWgs84Parameters(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IProjection GetWgs84Parameters(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.IProjection.html">IProjection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetWgs84SphereGeographic_" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetWgs84SphereGeographic*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystemMapQuestFactory_GetWgs84SphereGeographic" data-uid="MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.GetWgs84SphereGeographic">
+  GetWgs84SphereGeographic()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IGeographicCoordinateSystem GetWgs84SphereGeographic()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.IGeographicCoordinateSystem.html">IGeographicCoordinateSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

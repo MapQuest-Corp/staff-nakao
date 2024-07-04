@@ -1,0 +1,1203 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.PrecisionModel
+  commentId: T:MapQuest.Coordinates.PrecisionModel
+  id: PrecisionModel
+  parent: MapQuest.Coordinates
+  children:
+  - MapQuest.Coordinates.PrecisionModel.#ctor
+  - MapQuest.Coordinates.PrecisionModel.#ctor(MapQuest.Coordinates.PrecisionModel)
+  - MapQuest.Coordinates.PrecisionModel.#ctor(MapQuest.Coordinates.PrecisionModelType)
+  - MapQuest.Coordinates.PrecisionModel.#ctor(System.Double)
+  - MapQuest.Coordinates.PrecisionModel.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Coordinates.PrecisionModel.Clone
+  - MapQuest.Coordinates.PrecisionModel.CompareTo(System.Object)
+  - MapQuest.Coordinates.PrecisionModel.Equals(System.Object)
+  - MapQuest.Coordinates.PrecisionModel.GetHashCode
+  - MapQuest.Coordinates.PrecisionModel.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Coordinates.PrecisionModel.IsFloating
+  - MapQuest.Coordinates.PrecisionModel.MakePrecise(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.PrecisionModel.MakePrecise(System.Double)
+  - MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits
+  - MapQuest.Coordinates.PrecisionModel.ModelType
+  - MapQuest.Coordinates.PrecisionModel.Scale
+  - MapQuest.Coordinates.PrecisionModel.ToString
+  - MapQuest.Coordinates.PrecisionModel.maximumPreciseValue
+  langs:
+  - csharp
+  - vb
+  name: PrecisionModel
+  nameWithType: PrecisionModel
+  fullName: MapQuest.Coordinates.PrecisionModel
+  type: Class
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <b>Geometry</b> における <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> の <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> の仕様を定めます。
+  remarks: "	言いかえれば、 <xref href=\"MapQuest.Coordinates.PrecisionModel\" data-throw-if-not-resolved=\"false\"></xref> は、どのような <b>Geometry</b> のインスタンスにおいても、全ての正当なポイントのグリッドを指定します。\r\n\r\n<p><xref href=\"MapQuest.Coordinates.PrecisionModel.MakePrecise(System.Double)?text=PrecisionModel.MakePrecise\" data-throw-if-not-resolved=\"false\"></xref>メソッドは <xref href=\"MapQuest.Coordinates.Coordinate\" data-throw-if-not-resolved=\"false\"></xref> を高精度に切り上げます。;その精度が正確に知られています。\r\n\r\n</p><xref href=\"MapQuest.Coordinates.Coordinate\" data-throw-if-not-resolved=\"false\"></xref> は <b>Geometry</b> において厳格であると仮定されます。\r\n\r\nすなわち、 <xref href=\"MapQuest.Coordinates.Coordinate\" data-throw-if-not-resolved=\"false\"></xref> は、 <b>Geometry</b> のために与えられた PrecisionModel に切り上げられると仮定されます。\r\n\r\nOTSは、 <b>Geometry</b> を作成する前に PrecisionModel に対して、自動的に <xref href=\"MapQuest.Coordinates.Coordinate\" data-throw-if-not-resolved=\"false\"></xref> を切り上げるルーチンを入力します。\r\n\r\n<p>\r\n内部オペレーションはすべて、 <xref href=\"MapQuest.Coordinates.Coordinate\" data-throw-if-not-resolved=\"false\"></xref> が <xref href=\"MapQuest.Coordinates.PrecisionModel\" data-throw-if-not-resolved=\"false\"></xref> に切り上げられると仮定します。\r\n\r\nコンストラクタメソッド(ブール型のオペレーションのような)は、常に適切な <xref href=\"MapQuest.Coordinates.PrecisionModel\" data-throw-if-not-resolved=\"false\"></xref> への座標を計算し、切り上げます。\r\n\r\n</p><p>\r\n現在、３つの型を PrecisionModel ではサポートしています:\r\n<ol><li>\r\nFloating[浮動小数点] - 倍精度浮動小数点を表わします。これはOTSの中で使用される初期値の <xref href=\"MapQuest.Coordinates.PrecisionModel\" data-throw-if-not-resolved=\"false\"></xref> です。\r\n\r\n</li><li>\r\nFloating-single[単精度浮動小数点] - 単精度浮動小数点を表わします。\r\n\r\n</li><li>\r\nFixed[固定小数点] - 小数位の定数を備えたモデルを表わします。\r\n\r\n固定小数点モデルの小数位は、<xref href=\"MapQuest.Coordinates.PrecisionModel.Scale?text=scale+factor\" data-throw-if-not-resolved=\"false\"></xref>によって指定されます。\r\n\r\n</li></ol><xref href=\"MapQuest.Coordinates.PrecisionModel.Scale?text=scale+factor\" data-throw-if-not-resolved=\"false\"></xref>は、数が切り上げされるグリッドを指定します。\r\n\r\n入力座標は、次の方程式による固定座標へ写像されます:\r\n\r\n<ul><li>\r\nMqPt.x = round( (inputPt.x * scale ) / scale\r\n</li><li>\r\nMqPt.y = round( (inputPt.y * scale ) / scale\r\n</li></ul>\r\n座標は、.NET倍精度価値として内部に表わされます。\r\n\r\n.NETがIEEE-394浮動小数点標準を使用し、この精度は53ビットで提供されます。(したがって正確に表現可能な最大の整数は9,007,199,254,740,992です。)。\r\n\r\n</p><p>\r\n現在、OTSメソッドは異なった <xref href=\"MapQuest.Coordinates.PrecisionModel\" data-throw-if-not-resolved=\"false\"></xref> 間における入力ハンドラを扱いません。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: 'public class PrecisionModel : IComparable, ICloneable, ISerializable'
+    content.vb: Public Class PrecisionModel Implements IComparable, ICloneable, ISerializable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IComparable
+  - System.ICloneable
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Coordinates.PrecisionModel.maximumPreciseValue
+  commentId: F:MapQuest.Coordinates.PrecisionModel.maximumPreciseValue
+  id: maximumPreciseValue
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: maximumPreciseValue
+  nameWithType: PrecisionModel.maximumPreciseValue
+  fullName: MapQuest.Coordinates.PrecisionModel.maximumPreciseValue
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    Double型において表現可能な最大の正確な値。
+
+
+    IEE754によればDouble型の仮数に53ビット許可するので、値は2＾53-1と等しい。
+
+
+    これは、ほとんどの小数点以下16桁の数字を正確に提供します。
+  example: []
+  syntax:
+    content: public const double maximumPreciseValue = 9007199254740992
+    return:
+      type: System.Double
+    content.vb: Public Const maximumPreciseValue As Double = 9007199254740992
+- uid: MapQuest.Coordinates.PrecisionModel.#ctor
+  commentId: M:MapQuest.Coordinates.PrecisionModel.#ctor
+  id: '#ctor'
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: PrecisionModel()
+  nameWithType: PrecisionModel.PrecisionModel()
+  fullName: MapQuest.Coordinates.PrecisionModel.PrecisionModel()
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の指定がない場合、初期設定の精度では浮動小数点で <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public PrecisionModel()
+    content.vb: Public Sub New()
+  overload: MapQuest.Coordinates.PrecisionModel.#ctor*
+  nameWithType.vb: PrecisionModel.New()
+  fullName.vb: MapQuest.Coordinates.PrecisionModel.New()
+  name.vb: New()
+- uid: MapQuest.Coordinates.PrecisionModel.#ctor(MapQuest.Coordinates.PrecisionModelType)
+  commentId: M:MapQuest.Coordinates.PrecisionModel.#ctor(MapQuest.Coordinates.PrecisionModelType)
+  id: '#ctor(MapQuest.Coordinates.PrecisionModelType)'
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: PrecisionModel(PrecisionModelType)
+  nameWithType: PrecisionModel.PrecisionModel(PrecisionModelType)
+  fullName: MapQuest.Coordinates.PrecisionModel.PrecisionModel(MapQuest.Coordinates.PrecisionModelType)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    引数で指定された型で <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+
+
+    指定された型が固定小数点の場合、初期設定では<xref href="MapQuest.Coordinates.PrecisionModel.Scale?text=scale+factor" data-throw-if-not-resolved="false"></xref>は1に設定されます。
+  example: []
+  syntax:
+    content: public PrecisionModel(PrecisionModelType modelType)
+    parameters:
+    - id: modelType
+      type: MapQuest.Coordinates.PrecisionModelType
+      description: <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> を作成したい精度の型
+    content.vb: Public Sub New(modelType As PrecisionModelType)
+  overload: MapQuest.Coordinates.PrecisionModel.#ctor*
+  nameWithType.vb: PrecisionModel.New(PrecisionModelType)
+  fullName.vb: MapQuest.Coordinates.PrecisionModel.New(MapQuest.Coordinates.PrecisionModelType)
+  name.vb: New(PrecisionModelType)
+- uid: MapQuest.Coordinates.PrecisionModel.#ctor(System.Double)
+  commentId: M:MapQuest.Coordinates.PrecisionModel.#ctor(System.Double)
+  id: '#ctor(System.Double)'
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: PrecisionModel(double)
+  nameWithType: PrecisionModel.PrecisionModel(double)
+  fullName: MapQuest.Coordinates.PrecisionModel.PrecisionModel(double)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    固定小数点の小数位を指定して <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+
+
+    固定小数点の座標は、正確な内部座標(それらは、<xref href="MapQuest.Coordinates.PrecisionModel.Scale?text=scale+factor" data-throw-if-not-resolved="false"></xref>により定義されたグリッドに切り上げされる)として表わされます。
+  example: []
+  syntax:
+    content: public PrecisionModel(double scale)
+    parameters:
+    - id: scale
+      type: System.Double
+      description: 正確な <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> を得るためにオフセットを引いた後の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> に掛ける値。
+    content.vb: Public Sub New(scale As Double)
+  overload: MapQuest.Coordinates.PrecisionModel.#ctor*
+  nameWithType.vb: PrecisionModel.New(Double)
+  fullName.vb: MapQuest.Coordinates.PrecisionModel.New(Double)
+  name.vb: New(Double)
+- uid: MapQuest.Coordinates.PrecisionModel.#ctor(MapQuest.Coordinates.PrecisionModel)
+  commentId: M:MapQuest.Coordinates.PrecisionModel.#ctor(MapQuest.Coordinates.PrecisionModel)
+  id: '#ctor(MapQuest.Coordinates.PrecisionModel)'
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: PrecisionModel(PrecisionModel)
+  nameWithType: PrecisionModel.PrecisionModel(PrecisionModel)
+  fullName: MapQuest.Coordinates.PrecisionModel.PrecisionModel(MapQuest.Coordinates.PrecisionModel)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の既存の <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> をコピーして、 <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public PrecisionModel(PrecisionModel pm)
+    parameters:
+    - id: pm
+      type: MapQuest.Coordinates.PrecisionModel
+      description: このPrecisionModelにコピーしたい既存の <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub New(pm As PrecisionModel)
+  overload: MapQuest.Coordinates.PrecisionModel.#ctor*
+  nameWithType.vb: PrecisionModel.New(PrecisionModel)
+  fullName.vb: MapQuest.Coordinates.PrecisionModel.New(MapQuest.Coordinates.PrecisionModel)
+  name.vb: New(PrecisionModel)
+- uid: MapQuest.Coordinates.PrecisionModel.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Coordinates.PrecisionModel.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: PrecisionModel(SerializationInfo, StreamingContext)
+  nameWithType: PrecisionModel.PrecisionModel(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Coordinates.PrecisionModel.PrecisionModel(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: シリアル化された情報から<xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref>を作成します。
+  example: []
+  syntax:
+    content: public PrecisionModel(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: シリアル化する情報を格納するオブジェクト
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: ''
+    content.vb: Public Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Coordinates.PrecisionModel.#ctor*
+  nameWithType.vb: PrecisionModel.New(SerializationInfo, StreamingContext)
+  fullName.vb: MapQuest.Coordinates.PrecisionModel.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name.vb: New(SerializationInfo, StreamingContext)
+- uid: MapQuest.Coordinates.PrecisionModel.MakePrecise(System.Double)
+  commentId: M:MapQuest.Coordinates.PrecisionModel.MakePrecise(System.Double)
+  id: MakePrecise(System.Double)
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: MakePrecise(double)
+  nameWithType: PrecisionModel.MakePrecise(double)
+  fullName: MapQuest.Coordinates.PrecisionModel.MakePrecise(double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の数値を、この高精度グリッド <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> に切り上げます。
+  example: []
+  syntax:
+    content: public virtual double MakePrecise(double val)
+    parameters:
+    - id: val
+      type: System.Double
+      description: 切り上げる元の数値
+    return:
+      type: System.Double
+      description: 切り上げた数値。
+    content.vb: Public Overridable Function MakePrecise(val As Double) As Double
+  overload: MapQuest.Coordinates.PrecisionModel.MakePrecise*
+  nameWithType.vb: PrecisionModel.MakePrecise(Double)
+  fullName.vb: MapQuest.Coordinates.PrecisionModel.MakePrecise(Double)
+  name.vb: MakePrecise(Double)
+- uid: MapQuest.Coordinates.PrecisionModel.MakePrecise(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.PrecisionModel.MakePrecise(MapQuest.Coordinates.Coordinate)
+  id: MakePrecise(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: MakePrecise(Coordinate)
+  nameWithType: PrecisionModel.MakePrecise(Coordinate)
+  fullName: MapQuest.Coordinates.PrecisionModel.MakePrecise(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> を、この高精度グリッド <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> に切り上げます。
+  example: []
+  syntax:
+    content: public virtual void MakePrecise(Coordinate coord)
+    parameters:
+    - id: coord
+      type: MapQuest.Coordinates.Coordinate
+      description: 切り上げる元の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Overridable Sub MakePrecise(coord As Coordinate)
+  overload: MapQuest.Coordinates.PrecisionModel.MakePrecise*
+- uid: MapQuest.Coordinates.PrecisionModel.ToString
+  commentId: M:MapQuest.Coordinates.PrecisionModel.ToString
+  id: ToString
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: PrecisionModel.ToString()
+  fullName: MapQuest.Coordinates.PrecisionModel.ToString()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: '[ModelType]の形式で文字列を返します。'
+  remarks: ModelTypeが<xref href="MapQuest.Coordinates.PrecisionModelType.Fixed?text=Fixed" data-throw-if-not-resolved="false"></xref>の場合[Fixed Scale]の形式で文字列を返します。
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: MapQuest.Coordinates.PrecisionModel.ToString*
+- uid: MapQuest.Coordinates.PrecisionModel.Equals(System.Object)
+  commentId: M:MapQuest.Coordinates.PrecisionModel.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: PrecisionModel.Equals(object)
+  fullName: MapQuest.Coordinates.PrecisionModel.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> とこの <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> が等しいかどうか調べます。
+  example: []
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+    return:
+      type: System.Boolean
+      description: PrecisionModelの型と<xref href="MapQuest.Coordinates.PrecisionModel.Scale?text=scale" data-throw-if-not-resolved="false"></xref>が共に等しければ<code>true</code>を、そうでなければ<code>false</code>を返します。
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: MapQuest.Coordinates.PrecisionModel.Equals*
+  nameWithType.vb: PrecisionModel.Equals(Object)
+  fullName.vb: MapQuest.Coordinates.PrecisionModel.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.Coordinates.PrecisionModel.GetHashCode
+  commentId: M:MapQuest.Coordinates.PrecisionModel.GetHashCode
+  id: GetHashCode
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: PrecisionModel.GetHashCode()
+  fullName: MapQuest.Coordinates.PrecisionModel.GetHashCode()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 特定の型のハッシュ関数として機能します。
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: MapQuest.Coordinates.PrecisionModel.GetHashCode*
+- uid: MapQuest.Coordinates.PrecisionModel.CompareTo(System.Object)
+  commentId: M:MapQuest.Coordinates.PrecisionModel.CompareTo(System.Object)
+  id: CompareTo(System.Object)
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(object)
+  nameWithType: PrecisionModel.CompareTo(object)
+  fullName: MapQuest.Coordinates.PrecisionModel.CompareTo(object)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数で指定されたオブジェクトと、この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> オブジェクトを比較します。
+  remarks: >-
+    この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> の有効桁の方が多く、より厳密に正確である場合、この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> がより大きいということを示します。
+
+
+    その比較は、<xref href="MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits?text=MaximumSignificantDigits" data-throw-if-not-resolved="false"></xref>を取得し、その返り値に基づいて評価されます。
+
+
+    固定小数点モデルと浮動小数点モデルを比較する場合、この比較は厳密に正確ではありません;
+
+    しかしながら、両方のモデルが浮動小数点モデルか固定小数点モデルのどちらかに統一された場合、この比較は正確です。
+  example: []
+  syntax:
+    content: public virtual int CompareTo(object o)
+    parameters:
+    - id: o
+      type: System.Object
+      description: この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> と比較したい <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Int32
+      description: >-
+        この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> の方が小さかった場合、負の整数を返します。
+
+        				同じだった場合、ゼロを返します。
+
+        				引数の <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> の方が大きかった場合正の整数を返します。
+    content.vb: Public Overridable Function CompareTo(o As Object) As Integer
+  overload: MapQuest.Coordinates.PrecisionModel.CompareTo*
+  implements:
+  - System.IComparable.CompareTo(System.Object)
+  nameWithType.vb: PrecisionModel.CompareTo(Object)
+  fullName.vb: MapQuest.Coordinates.PrecisionModel.CompareTo(Object)
+  name.vb: CompareTo(Object)
+- uid: MapQuest.Coordinates.PrecisionModel.Clone
+  commentId: M:MapQuest.Coordinates.PrecisionModel.Clone
+  id: Clone
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: PrecisionModel.Clone()
+  fullName: MapQuest.Coordinates.PrecisionModel.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 現在のインスタンスの簡易コピーを生成します。
+  example: []
+  syntax:
+    content: public virtual object Clone()
+    return:
+      type: System.Object
+      description: 複製された <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Overridable Function Clone() As Object
+  overload: MapQuest.Coordinates.PrecisionModel.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.Coordinates.PrecisionModel.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Coordinates.PrecisionModel.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: PrecisionModel.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Coordinates.PrecisionModel.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: オブジェクトをシリアル化します。
+  example: []
+  syntax:
+    content: public void GetObjectData(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: シリアル化する情報を格納するオブジェクト
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: ''
+    content.vb: Public Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Coordinates.PrecisionModel.GetObjectData*
+  implements:
+  - System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- uid: MapQuest.Coordinates.PrecisionModel.IsFloating
+  commentId: P:MapQuest.Coordinates.PrecisionModel.IsFloating
+  id: IsFloating
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: IsFloating
+  nameWithType: PrecisionModel.IsFloating
+  fullName: MapQuest.Coordinates.PrecisionModel.IsFloating
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> オブジェクトが浮動小数点をサポートしているかどうかを取得します。
+  remarks: この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> オブジェクトが浮動小数点をサポートしていれば<code>true</code>，そうでなければ<code>false</code>を返します。
+  example: []
+  syntax:
+    content: public virtual bool IsFloating { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> オブジェクトが浮動小数点をサポートしているかどうかの値
+    content.vb: Public Overridable ReadOnly Property IsFloating As Boolean
+  overload: MapQuest.Coordinates.PrecisionModel.IsFloating*
+- uid: MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits
+  commentId: P:MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits
+  id: MaximumSignificantDigits
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: MaximumSignificantDigits
+  nameWithType: PrecisionModel.MaximumSignificantDigits
+  fullName: MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> オブジェクトによって提供される有効数字の最大の数を取得します。
+  remarks: >-
+    この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> によって提供される有効数字の最大の数を返します。
+
+    				正確な値を印刷する必要のあるルーチンによる使用を意図しています。
+  example: []
+  syntax:
+    content: public virtual int MaximumSignificantDigits { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> オブジェクトによって提供される有効数字の最大の数
+    content.vb: Public Overridable ReadOnly Property MaximumSignificantDigits As Integer
+  overload: MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits*
+- uid: MapQuest.Coordinates.PrecisionModel.Scale
+  commentId: P:MapQuest.Coordinates.PrecisionModel.Scale
+  id: Scale
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: PrecisionModel.Scale
+  fullName: MapQuest.Coordinates.PrecisionModel.Scale
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 正確な <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> を得るためにオフセットを引いた後の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> に掛ける値を取得、設定します。
+  remarks: <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> の型は不変であるように意図されるので、このメソッドはprivateです。
+  example: []
+  syntax:
+    content: public virtual double Scale { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: 正確な <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> を得るためにオフセットを引いた後の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> に掛ける値
+    content.vb: Public Overridable Property Scale As Double
+  overload: MapQuest.Coordinates.PrecisionModel.Scale*
+- uid: MapQuest.Coordinates.PrecisionModel.ModelType
+  commentId: P:MapQuest.Coordinates.PrecisionModel.ModelType
+  id: ModelType
+  parent: MapQuest.Coordinates.PrecisionModel
+  langs:
+  - csharp
+  - vb
+  name: ModelType
+  nameWithType: PrecisionModel.ModelType
+  fullName: MapQuest.Coordinates.PrecisionModel.ModelType
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> オブジェクトの型を取得します。
+  example: []
+  syntax:
+    content: public virtual PrecisionModelType ModelType { get; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.PrecisionModelType
+      description: この <xref href="MapQuest.Coordinates.PrecisionModel" data-throw-if-not-resolved="false"></xref> の型
+    content.vb: Public Overridable ReadOnly Property ModelType As PrecisionModelType
+  overload: MapQuest.Coordinates.PrecisionModel.ModelType*
+references:
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: MapQuest.Coordinates.PrecisionModel
+  commentId: T:MapQuest.Coordinates.PrecisionModel
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html
+  name: PrecisionModel
+  nameWithType: PrecisionModel
+  fullName: MapQuest.Coordinates.PrecisionModel
+- uid: MapQuest.Coordinates.PrecisionModel.MakePrecise(System.Double)
+  commentId: M:MapQuest.Coordinates.PrecisionModel.MakePrecise(System.Double)
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_MakePrecise_System_Double_
+  name: MakePrecise(double)
+  nameWithType: PrecisionModel.MakePrecise(double)
+  fullName: MapQuest.Coordinates.PrecisionModel.MakePrecise(double)
+  nameWithType.vb: PrecisionModel.MakePrecise(Double)
+  fullName.vb: MapQuest.Coordinates.PrecisionModel.MakePrecise(Double)
+  name.vb: MakePrecise(Double)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.PrecisionModel.MakePrecise(System.Double)
+    name: MakePrecise
+    isExternal: true
+    href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_MakePrecise_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.PrecisionModel.MakePrecise(System.Double)
+    name: MakePrecise
+    isExternal: true
+    href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_MakePrecise_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: MapQuest.Coordinates.PrecisionModel.Scale
+  commentId: P:MapQuest.Coordinates.PrecisionModel.Scale
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_Scale
+  name: Scale
+  nameWithType: PrecisionModel.Scale
+  fullName: MapQuest.Coordinates.PrecisionModel.Scale
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IComparable
+  commentId: T:System.IComparable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable
+  name: IComparable
+  nameWithType: IComparable
+  fullName: System.IComparable
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.Coordinates.PrecisionModel.#ctor*
+  commentId: Overload:MapQuest.Coordinates.PrecisionModel.#ctor
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel__ctor
+  name: PrecisionModel
+  nameWithType: PrecisionModel.PrecisionModel
+  fullName: MapQuest.Coordinates.PrecisionModel.PrecisionModel
+  nameWithType.vb: PrecisionModel.New
+  fullName.vb: MapQuest.Coordinates.PrecisionModel.New
+  name.vb: New
+- uid: MapQuest.Coordinates.PrecisionModelType
+  commentId: T:MapQuest.Coordinates.PrecisionModelType
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModelType.html
+  name: PrecisionModelType
+  nameWithType: PrecisionModelType
+  fullName: MapQuest.Coordinates.PrecisionModelType
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: MapQuest.Coordinates.PrecisionModel.MakePrecise*
+  commentId: Overload:MapQuest.Coordinates.PrecisionModel.MakePrecise
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_MakePrecise_System_Double_
+  name: MakePrecise
+  nameWithType: PrecisionModel.MakePrecise
+  fullName: MapQuest.Coordinates.PrecisionModel.MakePrecise
+- uid: MapQuest.Coordinates.PrecisionModelType.Fixed
+  commentId: F:MapQuest.Coordinates.PrecisionModelType.Fixed
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModelType.html#MapQuest_Coordinates_PrecisionModelType_Fixed
+  name: Fixed
+  nameWithType: PrecisionModelType.Fixed
+  fullName: MapQuest.Coordinates.PrecisionModelType.Fixed
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.PrecisionModel.ToString*
+  commentId: Overload:MapQuest.Coordinates.PrecisionModel.ToString
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_ToString
+  name: ToString
+  nameWithType: PrecisionModel.ToString
+  fullName: MapQuest.Coordinates.PrecisionModel.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Coordinates.PrecisionModel.Equals*
+  commentId: Overload:MapQuest.Coordinates.PrecisionModel.Equals
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_Equals_System_Object_
+  name: Equals
+  nameWithType: PrecisionModel.Equals
+  fullName: MapQuest.Coordinates.PrecisionModel.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.PrecisionModel.GetHashCode*
+  commentId: Overload:MapQuest.Coordinates.PrecisionModel.GetHashCode
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_GetHashCode
+  name: GetHashCode
+  nameWithType: PrecisionModel.GetHashCode
+  fullName: MapQuest.Coordinates.PrecisionModel.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits
+  commentId: P:MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_MaximumSignificantDigits
+  name: MaximumSignificantDigits
+  nameWithType: PrecisionModel.MaximumSignificantDigits
+  fullName: MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits
+- uid: MapQuest.Coordinates.PrecisionModel.CompareTo*
+  commentId: Overload:MapQuest.Coordinates.PrecisionModel.CompareTo
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_CompareTo_System_Object_
+  name: CompareTo
+  nameWithType: PrecisionModel.CompareTo
+  fullName: MapQuest.Coordinates.PrecisionModel.CompareTo
+- uid: System.IComparable.CompareTo(System.Object)
+  commentId: M:System.IComparable.CompareTo(System.Object)
+  parent: System.IComparable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
+  name: CompareTo(object)
+  nameWithType: IComparable.CompareTo(object)
+  fullName: System.IComparable.CompareTo(object)
+  nameWithType.vb: IComparable.CompareTo(Object)
+  fullName.vb: System.IComparable.CompareTo(Object)
+  name.vb: CompareTo(Object)
+  spec.csharp:
+  - uid: System.IComparable.CompareTo(System.Object)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.IComparable.CompareTo(System.Object)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Coordinates.PrecisionModel.Clone*
+  commentId: Overload:MapQuest.Coordinates.PrecisionModel.Clone
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_Clone
+  name: Clone
+  nameWithType: PrecisionModel.Clone
+  fullName: MapQuest.Coordinates.PrecisionModel.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.PrecisionModel.GetObjectData*
+  commentId: Overload:MapQuest.Coordinates.PrecisionModel.GetObjectData
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  name: GetObjectData
+  nameWithType: PrecisionModel.GetObjectData
+  fullName: MapQuest.Coordinates.PrecisionModel.GetObjectData
+- uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Runtime.Serialization.ISerializable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: ISerializable.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: MapQuest.Coordinates.PrecisionModel.IsFloating*
+  commentId: Overload:MapQuest.Coordinates.PrecisionModel.IsFloating
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_IsFloating
+  name: IsFloating
+  nameWithType: PrecisionModel.IsFloating
+  fullName: MapQuest.Coordinates.PrecisionModel.IsFloating
+- uid: MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits*
+  commentId: Overload:MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_MaximumSignificantDigits
+  name: MaximumSignificantDigits
+  nameWithType: PrecisionModel.MaximumSignificantDigits
+  fullName: MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits
+- uid: MapQuest.Coordinates.PrecisionModel.Scale*
+  commentId: Overload:MapQuest.Coordinates.PrecisionModel.Scale
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_Scale
+  name: Scale
+  nameWithType: PrecisionModel.Scale
+  fullName: MapQuest.Coordinates.PrecisionModel.Scale
+- uid: MapQuest.Coordinates.PrecisionModel.ModelType*
+  commentId: Overload:MapQuest.Coordinates.PrecisionModel.ModelType
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_ModelType
+  name: ModelType
+  nameWithType: PrecisionModel.ModelType
+  fullName: MapQuest.Coordinates.PrecisionModel.ModelType

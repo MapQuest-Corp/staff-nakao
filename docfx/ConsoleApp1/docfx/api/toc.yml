@@ -1,0 +1,424 @@
+### YamlMime:TableOfContent
+items:
+- uid: DocFXSample
+  name: DocFXSample
+  items:
+  - uid: DocFXSample.BaseClass
+    name: BaseClass
+  - uid: DocFXSample.DerivedClass
+    name: DerivedClass
+  - uid: DocFXSample.EnumTest
+    name: EnumTest
+  - uid: DocFXSample.EnumTestExt
+    name: EnumTestExt
+  - uid: DocFXSample.Program
+    name: Program
+- uid: MapQuest
+  name: MapQuest
+  items:
+  - uid: MapQuest.CoreException
+    name: CoreException
+  - uid: MapQuest.ProductInformation
+    name: ProductInformation
+- uid: MapQuest.Collections
+  name: MapQuest.Collections
+  items:
+  - uid: MapQuest.Collections.BoolArray
+    name: BoolArray
+  - uid: MapQuest.Collections.CacheBase
+    name: CacheBase
+  - uid: MapQuest.Collections.DisposableCacheBase
+    name: DisposableCacheBase
+  - uid: MapQuest.Collections.DoubleArray
+    name: DoubleArray
+  - uid: MapQuest.Collections.FloatArray
+    name: FloatArray
+  - uid: MapQuest.Collections.IPropertyChange
+    name: IPropertyChange
+  - uid: MapQuest.Collections.IStringCollection
+    name: IStringCollection
+  - uid: MapQuest.Collections.IStringEnumerator
+    name: IStringEnumerator
+  - uid: MapQuest.Collections.IStringList
+    name: IStringList
+  - uid: MapQuest.Collections.IntArray
+    name: IntArray
+  - uid: MapQuest.Collections.LongArray
+    name: LongArray
+  - uid: MapQuest.Collections.PropertyChangeActionType
+    name: PropertyChangeActionType
+  - uid: MapQuest.Collections.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+  - uid: MapQuest.Collections.PropertyChangedEventHandler
+    name: PropertyChangedEventHandler
+  - uid: MapQuest.Collections.PropertyObjects
+    name: PropertyObjects
+  - uid: MapQuest.Collections.PropertyObjectsEnumerator
+    name: PropertyObjectsEnumerator
+  - uid: MapQuest.Collections.PropertyStrings
+    name: PropertyStrings
+  - uid: MapQuest.Collections.PropertyStringsEnumerator
+    name: PropertyStringsEnumerator
+  - uid: MapQuest.Collections.ShortArray
+    name: ShortArray
+  - uid: MapQuest.Collections.StringList
+    name: StringList
+- uid: MapQuest.CoordinateSystems
+  name: MapQuest.CoordinateSystems
+  items:
+  - uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+    name: AngularToLinearUnitConverter
+  - uid: MapQuest.CoordinateSystems.AngularUnit
+    name: AngularUnit
+  - uid: MapQuest.CoordinateSystems.AngularUnitConverter
+    name: AngularUnitConverter
+  - uid: MapQuest.CoordinateSystems.AxisInfo
+    name: AxisInfo
+  - uid: MapQuest.CoordinateSystems.AxisOrientation
+    name: AxisOrientation
+  - uid: MapQuest.CoordinateSystems.CoordinateSystem
+    name: CoordinateSystem
+  - uid: MapQuest.CoordinateSystems.CoordinateSystemComparer
+    name: CoordinateSystemComparer
+  - uid: MapQuest.CoordinateSystems.CoordinateSystemEpsgFactory
+    name: CoordinateSystemEpsgFactory
+  - uid: MapQuest.CoordinateSystems.CoordinateSystemException
+    name: CoordinateSystemException
+  - uid: MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory
+    name: CoordinateSystemMapQuestFactory
+  - uid: MapQuest.CoordinateSystems.CoordinateSystemType
+    name: CoordinateSystemType
+  - uid: MapQuest.CoordinateSystems.Datum
+    name: Datum
+  - uid: MapQuest.CoordinateSystems.DatumType
+    name: DatumType
+  - uid: MapQuest.CoordinateSystems.Ellipsoid
+    name: Ellipsoid
+  - uid: MapQuest.CoordinateSystems.EpsgDbConnection
+    name: EpsgDbConnection
+  - uid: MapQuest.CoordinateSystems.EpsgParameterFile
+    name: EpsgParameterFile
+  - uid: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile
+    name: EpsgParameterFile.OpenParameterFile
+  - uid: MapQuest.CoordinateSystems.GeographicCoordinateSystem
+    name: GeographicCoordinateSystem
+  - uid: MapQuest.CoordinateSystems.HorizontalCoordinateSystem
+    name: HorizontalCoordinateSystem
+  - uid: MapQuest.CoordinateSystems.HorizontalDatum
+    name: HorizontalDatum
+  - uid: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter
+    name: IAngularToLinearUnitConverter
+  - uid: MapQuest.CoordinateSystems.IAngularUnit
+    name: IAngularUnit
+  - uid: MapQuest.CoordinateSystems.IAngularUnitConverter
+    name: IAngularUnitConverter
+  - uid: MapQuest.CoordinateSystems.IAxisInfo
+    name: IAxisInfo
+  - uid: MapQuest.CoordinateSystems.ICoordinateSystem
+    name: ICoordinateSystem
+  - uid: MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory
+    name: ICoordinateSystemSimpleFactory
+  - uid: MapQuest.CoordinateSystems.IDatum
+    name: IDatum
+  - uid: MapQuest.CoordinateSystems.IEllipsoid
+    name: IEllipsoid
+  - uid: MapQuest.CoordinateSystems.IGeographicCoordinateSystem
+    name: IGeographicCoordinateSystem
+  - uid: MapQuest.CoordinateSystems.IHorizontalCoordinateSystem
+    name: IHorizontalCoordinateSystem
+  - uid: MapQuest.CoordinateSystems.IHorizontalDatum
+    name: IHorizontalDatum
+  - uid: MapQuest.CoordinateSystems.IInfo
+    name: IInfo
+  - uid: MapQuest.CoordinateSystems.ILinearToAngularUnitConverter
+    name: ILinearToAngularUnitConverter
+  - uid: MapQuest.CoordinateSystems.ILinearUnit
+    name: ILinearUnit
+  - uid: MapQuest.CoordinateSystems.ILinearUnitConverter
+    name: ILinearUnitConverter
+  - uid: MapQuest.CoordinateSystems.IPrimeMeridian
+    name: IPrimeMeridian
+  - uid: MapQuest.CoordinateSystems.IProjectedCoordinateSystem
+    name: IProjectedCoordinateSystem
+  - uid: MapQuest.CoordinateSystems.IProjection
+    name: IProjection
+  - uid: MapQuest.CoordinateSystems.IUnit
+    name: IUnit
+  - uid: MapQuest.CoordinateSystems.IUnitConverter
+    name: IUnitConverter
+  - uid: MapQuest.CoordinateSystems.Info
+    name: Info
+  - uid: MapQuest.CoordinateSystems.LinearToAngularUnitConverter
+    name: LinearToAngularUnitConverter
+  - uid: MapQuest.CoordinateSystems.LinearUnit
+    name: LinearUnit
+  - uid: MapQuest.CoordinateSystems.LinearUnitConverter
+    name: LinearUnitConverter
+  - uid: MapQuest.CoordinateSystems.ParameterList
+    name: ParameterList
+  - uid: MapQuest.CoordinateSystems.PrimeMeridian
+    name: PrimeMeridian
+  - uid: MapQuest.CoordinateSystems.ProjectedCoordinateSystem
+    name: ProjectedCoordinateSystem
+  - uid: MapQuest.CoordinateSystems.Projection
+    name: Projection
+  - uid: MapQuest.CoordinateSystems.ProjectionParameter
+    name: ProjectionParameter
+  - uid: MapQuest.CoordinateSystems.Unit
+    name: Unit
+  - uid: MapQuest.CoordinateSystems.UnitConverterFactory
+    name: UnitConverterFactory
+  - uid: MapQuest.CoordinateSystems.WGS84ConversionInfo
+    name: WGS84ConversionInfo
+- uid: MapQuest.CoordinateSystems.IO
+  name: MapQuest.CoordinateSystems.IO
+  items:
+  - uid: MapQuest.CoordinateSystems.IO.CoordinateSystemWktReader
+    name: CoordinateSystemWktReader
+- uid: MapQuest.Coordinates
+  name: MapQuest.Coordinates
+  items:
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+  - uid: MapQuest.Coordinates.Coordinate3D
+    name: Coordinate3D
+  - uid: MapQuest.Coordinates.CoordinateArrayVisitor
+    name: CoordinateArrayVisitor
+  - uid: MapQuest.Coordinates.CoordinateCountVisitor
+    name: CoordinateCountVisitor
+  - uid: MapQuest.Coordinates.CoordinateException
+    name: CoordinateException
+  - uid: MapQuest.Coordinates.CoordinateList
+    name: CoordinateList
+  - uid: MapQuest.Coordinates.CoordinatePoint
+    name: CoordinatePoint
+  - uid: MapQuest.Coordinates.CoordinateType
+    name: CoordinateType
+  - uid: MapQuest.Coordinates.Dimension
+    name: Dimension
+  - uid: MapQuest.Coordinates.Envelope
+    name: Envelope
+  - uid: MapQuest.Coordinates.FlaggedCoordinate
+    name: FlaggedCoordinate
+  - uid: MapQuest.Coordinates.FlaggedCoordinate3D
+    name: FlaggedCoordinate3D
+  - uid: MapQuest.Coordinates.FlaggedPointType
+    name: FlaggedPointType
+  - uid: MapQuest.Coordinates.ICoordinateCollection
+    name: ICoordinateCollection
+  - uid: MapQuest.Coordinates.ICoordinateEnumerator
+    name: ICoordinateEnumerator
+  - uid: MapQuest.Coordinates.ICoordinateList
+    name: ICoordinateList
+  - uid: MapQuest.Coordinates.ICoordinatePoint
+    name: ICoordinatePoint
+  - uid: MapQuest.Coordinates.ICoordinateVisitor
+    name: ICoordinateVisitor
+  - uid: MapQuest.Coordinates.MeasuredCoordinate
+    name: MeasuredCoordinate
+  - uid: MapQuest.Coordinates.MeasuredCoordinate3D
+    name: MeasuredCoordinate3D
+  - uid: MapQuest.Coordinates.PrecisionModel
+    name: PrecisionModel
+  - uid: MapQuest.Coordinates.PrecisionModelType
+    name: PrecisionModelType
+  - uid: MapQuest.Coordinates.UniqueCoordinateArrayVisitor
+    name: UniqueCoordinateArrayVisitor
+- uid: MapQuest.Coordinates.Transforms
+  name: MapQuest.Coordinates.Transforms
+  items:
+  - uid: MapQuest.Coordinates.Transforms.AffineAxisInfo
+    name: AffineAxisInfo
+  - uid: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+    name: AffineAxisOrientation
+  - uid: MapQuest.Coordinates.Transforms.AffineOrder
+    name: AffineOrder
+  - uid: MapQuest.Coordinates.Transforms.AffineTransform
+    name: AffineTransform
+  - uid: MapQuest.Coordinates.Transforms.CoordinateMapping
+    name: CoordinateMapping
+  - uid: MapQuest.Coordinates.Transforms.GeneralMatrix
+    name: GeneralMatrix
+  - uid: MapQuest.Coordinates.Transforms.Transform
+    name: Transform
+- uid: MapQuest.Features
+  name: MapQuest.Features
+  items:
+  - uid: MapQuest.Features.Feature
+    name: Feature
+  - uid: MapQuest.Features.FeatureCollection
+    name: FeatureCollection
+  - uid: MapQuest.Features.FeatureDataType
+    name: FeatureDataType
+  - uid: MapQuest.Features.FeatureException
+    name: FeatureException
+  - uid: MapQuest.Features.FeatureFactory
+    name: FeatureFactory
+  - uid: MapQuest.Features.FeatureIterator
+    name: FeatureIterator
+  - uid: MapQuest.Features.FeatureOperator
+    name: FeatureOperator
+  - uid: MapQuest.Features.FeatureProperty
+    name: FeatureProperty
+  - uid: MapQuest.Features.FeatureReprojection
+    name: FeatureReprojection
+  - uid: MapQuest.Features.FeatureSchema
+    name: FeatureSchema
+  - uid: MapQuest.Features.FeatureType
+    name: FeatureType
+  - uid: MapQuest.Features.FeatureTypeProperty
+    name: FeatureTypeProperty
+  - uid: MapQuest.Features.IFeature
+    name: IFeature
+  - uid: MapQuest.Features.IFeatureCollection
+    name: IFeatureCollection
+  - uid: MapQuest.Features.IFeatureIterator
+    name: IFeatureIterator
+  - uid: MapQuest.Features.IFeatureList
+    name: IFeatureList
+  - uid: MapQuest.Features.IFeatureProperty
+    name: IFeatureProperty
+  - uid: MapQuest.Features.IFeatureType
+    name: IFeatureType
+  - uid: MapQuest.Features.IFeatureTypeProperty
+    name: IFeatureTypeProperty
+  - uid: MapQuest.Features.UnitUtil
+    name: UnitUtil
+- uid: MapQuest.Features.Comparers
+  name: MapQuest.Features.Comparers
+  items:
+  - uid: MapQuest.Features.Comparers.BasicFeatureComparer
+    name: BasicFeatureComparer
+  - uid: MapQuest.Features.Comparers.FeatureAreaComparer
+    name: FeatureAreaComparer
+  - uid: MapQuest.Features.Comparers.FeatureComparer
+    name: FeatureComparer
+  - uid: MapQuest.Features.Comparers.FeatureDistanceComparer
+    name: FeatureDistanceComparer
+  - uid: MapQuest.Features.Comparers.FeatureLengthComparer
+    name: FeatureLengthComparer
+  - uid: MapQuest.Features.Comparers.FeatureOutlineDistanceComparer
+    name: FeatureOutlineDistanceComparer
+- uid: MapQuest.Features.SpatialIndexers
+  name: MapQuest.Features.SpatialIndexers
+  items:
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+  - uid: MapQuest.Features.SpatialIndexers.HyperPoint
+    name: HyperPoint
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+    name: ISpatialIndexer
+  - uid: MapQuest.Features.SpatialIndexers.IndexNode
+    name: IndexNode
+  - uid: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+    name: IndexedFeatureCollection
+  - uid: MapQuest.Features.SpatialIndexers.LeafNode
+    name: LeafNode
+  - uid: MapQuest.Features.SpatialIndexers.MemoryPageFile
+    name: MemoryPageFile
+  - uid: MapQuest.Features.SpatialIndexers.Node
+    name: Node
+  - uid: MapQuest.Features.SpatialIndexers.PageFile
+    name: PageFile
+  - uid: MapQuest.Features.SpatialIndexers.PageFileException
+    name: PageFileException
+  - uid: MapQuest.Features.SpatialIndexers.PersistentPageFile
+    name: PersistentPageFile
+  - uid: MapQuest.Features.SpatialIndexers.SpatialIndexer
+    name: SpatialIndexer
+  - uid: MapQuest.Features.SpatialIndexers.SpatialIndexerException
+    name: SpatialIndexerException
+- uid: MapQuest.Geocoding
+  name: MapQuest.Geocoding
+  items:
+  - uid: MapQuest.Geocoding.IGeocoder
+    name: IGeocoder
+  - uid: MapQuest.Geocoding.IReverseGeocoder
+    name: IReverseGeocoder
+- uid: MapQuest.IO
+  name: MapQuest.IO
+  items:
+  - uid: MapQuest.IO.AppSettingsManager
+    name: AppSettingsManager
+  - uid: MapQuest.IO.BinaryFormatReader
+    name: BinaryFormatReader
+  - uid: MapQuest.IO.BinaryFormatWriter
+    name: BinaryFormatWriter
+  - uid: MapQuest.IO.CacheFileDeletedEventArgs
+    name: CacheFileDeletedEventArgs
+  - uid: MapQuest.IO.CacheFileDeletedEventHandler
+    name: CacheFileDeletedEventHandler
+  - uid: MapQuest.IO.CharTypeBits
+    name: CharTypeBits
+  - uid: MapQuest.IO.CoreIOException
+    name: CoreIOException
+  - uid: MapQuest.IO.EofToken
+    name: EofToken
+  - uid: MapQuest.IO.EolToken
+    name: EolToken
+  - uid: MapQuest.IO.FileCache
+    name: FileCache
+  - uid: MapQuest.IO.FileLock
+    name: FileLock
+  - uid: MapQuest.IO.FileLockException
+    name: FileLockException
+  - uid: MapQuest.IO.FileLockFatalErrorCode
+    name: FileLockFatalErrorCode
+  - uid: MapQuest.IO.FileLockFatalException
+    name: FileLockFatalException
+  - uid: MapQuest.IO.FileUtil
+    name: FileUtil
+  - uid: MapQuest.IO.IFileCache
+    name: IFileCache
+  - uid: MapQuest.IO.IFileLock
+    name: IFileLock
+  - uid: MapQuest.IO.MemoryCache
+    name: MemoryCache
+- uid: MapQuest.Loggers
+  name: MapQuest.Loggers
+  items:
+  - uid: MapQuest.Loggers.ILog
+    name: ILog
+  - uid: MapQuest.Loggers.LevelTypes
+    name: LevelTypes
+  - uid: MapQuest.Loggers.Logger
+    name: Logger
+- uid: MapQuest.Patterns.Composite
+  name: MapQuest.Patterns.Composite
+  items:
+  - uid: MapQuest.Patterns.Composite.IEntry
+    name: IEntry
+  - uid: MapQuest.Patterns.Composite.ILeaf
+    name: ILeaf
+  - uid: MapQuest.Patterns.Composite.INode
+    name: INode
+- uid: MapQuest.Serialization
+  name: MapQuest.Serialization
+  items:
+  - uid: MapQuest.Serialization.SerializationBinderFactory
+    name: SerializationBinderFactory
+  - uid: MapQuest.Serialization.SerializationInfoHelper
+    name: SerializationInfoHelper
+- uid: MapQuest.Utilities
+  name: MapQuest.Utilities
+  items:
+  - uid: MapQuest.Utilities.CoreUtilitiesException
+    name: CoreUtilitiesException
+  - uid: MapQuest.Utilities.MathUtil
+    name: MathUtil
+  - uid: MapQuest.Utilities.ObjectConverter
+    name: ObjectConverter
+  - uid: MapQuest.Utilities.StringUtil
+    name: StringUtil
+  - uid: MapQuest.Utilities.UnitConverter
+    name: UnitConverter
+- uid: MapQuest.WebApi
+  name: MapQuest.WebApi
+  items:
+  - uid: MapQuest.WebApi.IAuthManager
+    name: IAuthManager
+  - uid: MapQuest.WebApi.WebApiClient
+    name: WebApiClient
+  - uid: MapQuest.WebApi.WebApiResponse`1
+    name: WebApiResponse<T>
+memberLayout: SamePage

@@ -1,0 +1,785 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  commentId: T:MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  id: AngularToLinearUnitConverter
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.AngularToLinearUnitConverter.#ctor(MapQuest.CoordinateSystems.IAngularUnit,MapQuest.CoordinateSystems.ILinearUnit)
+  - MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Clone
+  - MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Convert(System.Double)
+  - MapQuest.CoordinateSystems.AngularToLinearUnitConverter.GetInverse
+  - MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Initialize(MapQuest.CoordinateSystems.IAngularUnit,MapQuest.CoordinateSystems.ILinearUnit)
+  - MapQuest.CoordinateSystems.AngularToLinearUnitConverter.IsLinear
+  - MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source
+  - MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target
+  langs:
+  - csharp
+  - vb
+  name: AngularToLinearUnitConverter
+  nameWithType: AngularToLinearUnitConverter
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  type: Class
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: <xref href="MapQuest.CoordinateSystems.IAngularUnit" data-throw-if-not-resolved="false"></xref> から <xref href="MapQuest.CoordinateSystems.ILinearUnit" data-throw-if-not-resolved="false"></xref> への値の変換機能を提供します。
+  example: []
+  syntax:
+    content: 'public sealed class AngularToLinearUnitConverter : IAngularToLinearUnitConverter, IUnitConverter, ICloneable'
+    content.vb: Public NotInheritable Class AngularToLinearUnitConverter Implements IAngularToLinearUnitConverter, IUnitConverter, ICloneable
+  inheritance:
+  - System.Object
+  implements:
+  - MapQuest.CoordinateSystems.IAngularToLinearUnitConverter
+  - MapQuest.CoordinateSystems.IUnitConverter
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.#ctor(MapQuest.CoordinateSystems.IAngularUnit,MapQuest.CoordinateSystems.ILinearUnit)
+  commentId: M:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.#ctor(MapQuest.CoordinateSystems.IAngularUnit,MapQuest.CoordinateSystems.ILinearUnit)
+  id: '#ctor(MapQuest.CoordinateSystems.IAngularUnit,MapQuest.CoordinateSystems.ILinearUnit)'
+  parent: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: AngularToLinearUnitConverter(IAngularUnit, ILinearUnit)
+  nameWithType: AngularToLinearUnitConverter.AngularToLinearUnitConverter(IAngularUnit, ILinearUnit)
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.AngularToLinearUnitConverter(MapQuest.CoordinateSystems.IAngularUnit, MapQuest.CoordinateSystems.ILinearUnit)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public AngularToLinearUnitConverter(IAngularUnit source, ILinearUnit target)
+    parameters:
+    - id: source
+      type: MapQuest.CoordinateSystems.IAngularUnit
+      description: 変換元の <xref href="MapQuest.CoordinateSystems.IAngularUnit" data-throw-if-not-resolved="false"></xref> 。
+    - id: target
+      type: MapQuest.CoordinateSystems.ILinearUnit
+      description: 変換先の <xref href="MapQuest.CoordinateSystems.ILinearUnit" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub New(source As IAngularUnit, target As ILinearUnit)
+  overload: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: source または target が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  nameWithType.vb: AngularToLinearUnitConverter.New(IAngularUnit, ILinearUnit)
+  fullName.vb: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.New(MapQuest.CoordinateSystems.IAngularUnit, MapQuest.CoordinateSystems.ILinearUnit)
+  name.vb: New(IAngularUnit, ILinearUnit)
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.GetInverse
+  commentId: M:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.GetInverse
+  id: GetInverse
+  parent: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: GetInverse()
+  nameWithType: AngularToLinearUnitConverter.GetInverse()
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.GetInverse()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在の変換の「逆変換」を表す <xref href="MapQuest.CoordinateSystems.ILinearToAngularUnitConverter" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: public ILinearToAngularUnitConverter GetInverse()
+    return:
+      type: MapQuest.CoordinateSystems.ILinearToAngularUnitConverter
+      description: 現在の変換の「逆変換」を表す <xref href="MapQuest.CoordinateSystems.ILinearToAngularUnitConverter" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function GetInverse() As ILinearToAngularUnitConverter
+  overload: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.GetInverse*
+  implements:
+  - MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.GetInverse
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Initialize(MapQuest.CoordinateSystems.IAngularUnit,MapQuest.CoordinateSystems.ILinearUnit)
+  commentId: M:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Initialize(MapQuest.CoordinateSystems.IAngularUnit,MapQuest.CoordinateSystems.ILinearUnit)
+  id: Initialize(MapQuest.CoordinateSystems.IAngularUnit,MapQuest.CoordinateSystems.ILinearUnit)
+  parent: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: Initialize(IAngularUnit, ILinearUnit)
+  nameWithType: AngularToLinearUnitConverter.Initialize(IAngularUnit, ILinearUnit)
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Initialize(MapQuest.CoordinateSystems.IAngularUnit, MapQuest.CoordinateSystems.ILinearUnit)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在のインスタンスの、変換元と変換先を初期化します。
+  example: []
+  syntax:
+    content: public void Initialize(IAngularUnit sourceUnit, ILinearUnit targetUnit)
+    parameters:
+    - id: sourceUnit
+      type: MapQuest.CoordinateSystems.IAngularUnit
+      description: 変換元の <xref href="MapQuest.CoordinateSystems.IAngularUnit" data-throw-if-not-resolved="false"></xref> 。
+    - id: targetUnit
+      type: MapQuest.CoordinateSystems.ILinearUnit
+      description: 変換先の <xref href="MapQuest.CoordinateSystems.ILinearUnit" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub Initialize(sourceUnit As IAngularUnit, targetUnit As ILinearUnit)
+  overload: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Initialize*
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Convert(System.Double)
+  commentId: M:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Convert(System.Double)
+  id: Convert(System.Double)
+  parent: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: Convert(double)
+  nameWithType: AngularToLinearUnitConverter.Convert(double)
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Convert(double)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 値の単位を変換します。
+  remarks: >-
+    引数で指定された <xref href="MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source" data-throw-if-not-resolved="false"></xref> の単位の値を変換して、
+
+    <xref href="MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target" data-throw-if-not-resolved="false"></xref> の単位の値を返します。
+
+    <p></p>
+  example: []
+  syntax:
+    content: public double Convert(double value)
+    parameters:
+    - id: value
+      type: System.Double
+      description: 変換する <xref href="MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source" data-throw-if-not-resolved="false"></xref> の単位の値。
+    return:
+      type: System.Double
+      description: 変換された <xref href="MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target" data-throw-if-not-resolved="false"></xref> の単位の値
+    content.vb: Public Function Convert(value As Double) As Double
+  overload: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Convert*
+  implements:
+  - MapQuest.CoordinateSystems.IUnitConverter.Convert(System.Double)
+  nameWithType.vb: AngularToLinearUnitConverter.Convert(Double)
+  fullName.vb: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Convert(Double)
+  name.vb: Convert(Double)
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Clone
+  commentId: M:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Clone
+  id: Clone
+  parent: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: AngularToLinearUnitConverter.Clone()
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在のインスタンスの詳細コピーを生成します。
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+      description: 複製された <xref href="MapQuest.CoordinateSystems.AngularToLinearUnitConverter" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function Clone() As Object
+  overload: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source
+  commentId: P:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source
+  id: Source
+  parent: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: AngularToLinearUnitConverter.Source
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 変換元の <xref href="MapQuest.CoordinateSystems.IAngularUnit" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: public IAngularUnit Source { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.IAngularUnit
+      description: >-
+        変換元の単位を示す <xref href="MapQuest.CoordinateSystems.IAngularUnit" data-throw-if-not-resolved="false"></xref> 。
+
+        読み取り専用です。
+    content.vb: Public ReadOnly Property Source As IAngularUnit
+  overload: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source*
+  implements:
+  - MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.Source
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target
+  commentId: P:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target
+  id: Target
+  parent: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: AngularToLinearUnitConverter.Target
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 変換先の <xref href="MapQuest.CoordinateSystems.ILinearUnit" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: public ILinearUnit Target { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.ILinearUnit
+      description: >-
+        変換先の単位を示す <xref href="MapQuest.CoordinateSystems.ILinearUnit" data-throw-if-not-resolved="false"></xref> 。
+
+        読み取り専用です。
+    content.vb: Public ReadOnly Property Target As ILinearUnit
+  overload: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target*
+  implements:
+  - MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.Target
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.IsLinear
+  commentId: P:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.IsLinear
+  id: IsLinear
+  parent: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: IsLinear
+  nameWithType: AngularToLinearUnitConverter.IsLinear
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.IsLinear
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    <xref href="MapQuest.CoordinateSystems.LinearUnit" data-throw-if-not-resolved="false"></xref> 間の変換かどうかを取得します。
+            false を返します。
+  example: []
+  syntax:
+    content: public bool IsLinear { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: false を返します。
+    content.vb: Public ReadOnly Property IsLinear As Boolean
+  overload: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.IsLinear*
+  implements:
+  - MapQuest.CoordinateSystems.IUnitConverter.IsLinear
+references:
+- uid: MapQuest.CoordinateSystems.IAngularUnit
+  commentId: T:MapQuest.CoordinateSystems.IAngularUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAngularUnit.html
+  name: IAngularUnit
+  nameWithType: IAngularUnit
+  fullName: MapQuest.CoordinateSystems.IAngularUnit
+- uid: MapQuest.CoordinateSystems.ILinearUnit
+  commentId: T:MapQuest.CoordinateSystems.ILinearUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ILinearUnit.html
+  name: ILinearUnit
+  nameWithType: ILinearUnit
+  fullName: MapQuest.CoordinateSystems.ILinearUnit
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter
+  commentId: T:MapQuest.CoordinateSystems.IAngularToLinearUnitConverter
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.html
+  name: IAngularToLinearUnitConverter
+  nameWithType: IAngularToLinearUnitConverter
+  fullName: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter
+- uid: MapQuest.CoordinateSystems.IUnitConverter
+  commentId: T:MapQuest.CoordinateSystems.IUnitConverter
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnitConverter.html
+  name: IUnitConverter
+  nameWithType: IUnitConverter
+  fullName: MapQuest.CoordinateSystems.IUnitConverter
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.#ctor*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.#ctor
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_AngularToLinearUnitConverter__ctor_MapQuest_CoordinateSystems_IAngularUnit_MapQuest_CoordinateSystems_ILinearUnit_
+  name: AngularToLinearUnitConverter
+  nameWithType: AngularToLinearUnitConverter.AngularToLinearUnitConverter
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.AngularToLinearUnitConverter
+  nameWithType.vb: AngularToLinearUnitConverter.New
+  fullName.vb: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.New
+  name.vb: New
+- uid: MapQuest.CoordinateSystems.ILinearToAngularUnitConverter
+  commentId: T:MapQuest.CoordinateSystems.ILinearToAngularUnitConverter
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ILinearToAngularUnitConverter.html
+  name: ILinearToAngularUnitConverter
+  nameWithType: ILinearToAngularUnitConverter
+  fullName: MapQuest.CoordinateSystems.ILinearToAngularUnitConverter
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.GetInverse*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.GetInverse
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_AngularToLinearUnitConverter_GetInverse
+  name: GetInverse
+  nameWithType: AngularToLinearUnitConverter.GetInverse
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.GetInverse
+- uid: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.GetInverse
+  commentId: M:MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.GetInverse
+  parent: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_IAngularToLinearUnitConverter_GetInverse
+  name: GetInverse()
+  nameWithType: IAngularToLinearUnitConverter.GetInverse()
+  fullName: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.GetInverse()
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.GetInverse
+    name: GetInverse
+    isExternal: true
+    href: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_IAngularToLinearUnitConverter_GetInverse
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.GetInverse
+    name: GetInverse
+    isExternal: true
+    href: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_IAngularToLinearUnitConverter_GetInverse
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Initialize*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Initialize
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_AngularToLinearUnitConverter_Initialize_MapQuest_CoordinateSystems_IAngularUnit_MapQuest_CoordinateSystems_ILinearUnit_
+  name: Initialize
+  nameWithType: AngularToLinearUnitConverter.Initialize
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Initialize
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source
+  commentId: P:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_AngularToLinearUnitConverter_Source
+  name: Source
+  nameWithType: AngularToLinearUnitConverter.Source
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target
+  commentId: P:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_AngularToLinearUnitConverter_Target
+  name: Target
+  nameWithType: AngularToLinearUnitConverter.Target
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Convert*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Convert
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_AngularToLinearUnitConverter_Convert_System_Double_
+  name: Convert
+  nameWithType: AngularToLinearUnitConverter.Convert
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Convert
+- uid: MapQuest.CoordinateSystems.IUnitConverter.Convert(System.Double)
+  commentId: M:MapQuest.CoordinateSystems.IUnitConverter.Convert(System.Double)
+  parent: MapQuest.CoordinateSystems.IUnitConverter
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnitConverter.html#MapQuest_CoordinateSystems_IUnitConverter_Convert_System_Double_
+  name: Convert(double)
+  nameWithType: IUnitConverter.Convert(double)
+  fullName: MapQuest.CoordinateSystems.IUnitConverter.Convert(double)
+  nameWithType.vb: IUnitConverter.Convert(Double)
+  fullName.vb: MapQuest.CoordinateSystems.IUnitConverter.Convert(Double)
+  name.vb: Convert(Double)
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.IUnitConverter.Convert(System.Double)
+    name: Convert
+    isExternal: true
+    href: MapQuest.CoordinateSystems.IUnitConverter.html#MapQuest_CoordinateSystems_IUnitConverter_Convert_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.IUnitConverter.Convert(System.Double)
+    name: Convert
+    isExternal: true
+    href: MapQuest.CoordinateSystems.IUnitConverter.html#MapQuest_CoordinateSystems_IUnitConverter_Convert_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  commentId: T:MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.html
+  name: AngularToLinearUnitConverter
+  nameWithType: AngularToLinearUnitConverter
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Clone*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Clone
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_AngularToLinearUnitConverter_Clone
+  name: Clone
+  nameWithType: AngularToLinearUnitConverter.Clone
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_AngularToLinearUnitConverter_Source
+  name: Source
+  nameWithType: AngularToLinearUnitConverter.Source
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Source
+- uid: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.Source
+  commentId: P:MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.Source
+  parent: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_IAngularToLinearUnitConverter_Source
+  name: Source
+  nameWithType: IAngularToLinearUnitConverter.Source
+  fullName: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.Source
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_AngularToLinearUnitConverter_Target
+  name: Target
+  nameWithType: AngularToLinearUnitConverter.Target
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.Target
+- uid: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.Target
+  commentId: P:MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.Target
+  parent: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_IAngularToLinearUnitConverter_Target
+  name: Target
+  nameWithType: IAngularToLinearUnitConverter.Target
+  fullName: MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.Target
+- uid: MapQuest.CoordinateSystems.LinearUnit
+  commentId: T:MapQuest.CoordinateSystems.LinearUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.LinearUnit.html
+  name: LinearUnit
+  nameWithType: LinearUnit
+  fullName: MapQuest.CoordinateSystems.LinearUnit
+- uid: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.IsLinear*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularToLinearUnitConverter.IsLinear
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.html#MapQuest_CoordinateSystems_AngularToLinearUnitConverter_IsLinear
+  name: IsLinear
+  nameWithType: AngularToLinearUnitConverter.IsLinear
+  fullName: MapQuest.CoordinateSystems.AngularToLinearUnitConverter.IsLinear
+- uid: MapQuest.CoordinateSystems.IUnitConverter.IsLinear
+  commentId: P:MapQuest.CoordinateSystems.IUnitConverter.IsLinear
+  parent: MapQuest.CoordinateSystems.IUnitConverter
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnitConverter.html#MapQuest_CoordinateSystems_IUnitConverter_IsLinear
+  name: IsLinear
+  nameWithType: IUnitConverter.IsLinear
+  fullName: MapQuest.CoordinateSystems.IUnitConverter.IsLinear
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

@@ -1,0 +1,645 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.IO.EolToken
+  commentId: T:MapQuest.IO.EolToken
+  id: EolToken
+  parent: MapQuest.IO
+  children:
+  - MapQuest.IO.EolToken.#ctor
+  - MapQuest.IO.EolToken.#ctor(System.Int32)
+  - MapQuest.IO.EolToken.Equals(System.Object)
+  - MapQuest.IO.EolToken.GetHashCode
+  - MapQuest.IO.EolToken.StringValue
+  - MapQuest.IO.EolToken.ToDebugString
+  - MapQuest.IO.EolToken.ToString
+  - MapQuest.IO.EolToken.Type
+  langs:
+  - csharp
+  - vb
+  name: EolToken
+  nameWithType: EolToken
+  fullName: MapQuest.IO.EolToken
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: Represents end-of-lines (line separator characters).
+  example: []
+  syntax:
+    content: 'public class EolToken : Token'
+    content.vb: Public Class EolToken Inherits Token
+  inheritance:
+  - System.Object
+  - MapQuest.IO.Token
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.IO.EolToken.#ctor
+  commentId: M:MapQuest.IO.EolToken.#ctor
+  id: '#ctor'
+  parent: MapQuest.IO.EolToken
+  langs:
+  - csharp
+  - vb
+  name: EolToken()
+  nameWithType: EolToken.EolToken()
+  fullName: MapQuest.IO.EolToken.EolToken()
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: Default constructor.
+  example: []
+  syntax:
+    content: public EolToken()
+    content.vb: Public Sub New()
+  overload: MapQuest.IO.EolToken.#ctor*
+  nameWithType.vb: EolToken.New()
+  fullName.vb: MapQuest.IO.EolToken.New()
+  name.vb: New()
+- uid: MapQuest.IO.EolToken.#ctor(System.Int32)
+  commentId: M:MapQuest.IO.EolToken.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: MapQuest.IO.EolToken
+  langs:
+  - csharp
+  - vb
+  name: EolToken(int)
+  nameWithType: EolToken.EolToken(int)
+  fullName: MapQuest.IO.EolToken.EolToken(int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: Constructor that takes line number.
+  example: []
+  syntax:
+    content: public EolToken(int line)
+    parameters:
+    - id: line
+      type: System.Int32
+    content.vb: Public Sub New(line As Integer)
+  overload: MapQuest.IO.EolToken.#ctor*
+  nameWithType.vb: EolToken.New(Integer)
+  fullName.vb: MapQuest.IO.EolToken.New(Integer)
+  name.vb: New(Integer)
+- uid: MapQuest.IO.EolToken.ToDebugString
+  commentId: M:MapQuest.IO.EolToken.ToDebugString
+  id: ToDebugString
+  parent: MapQuest.IO.EolToken
+  langs:
+  - csharp
+  - vb
+  name: ToDebugString()
+  nameWithType: EolToken.ToDebugString()
+  fullName: MapQuest.IO.EolToken.ToDebugString()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: Override, see base <xref href="MapQuest.IO.Token" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public override string ToDebugString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToDebugString() As String
+  overridden: MapQuest.IO.Token.ToDebugString
+  overload: MapQuest.IO.EolToken.ToDebugString*
+- uid: MapQuest.IO.EolToken.ToString
+  commentId: M:MapQuest.IO.EolToken.ToString
+  id: ToString
+  parent: MapQuest.IO.EolToken
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: EolToken.ToString()
+  fullName: MapQuest.IO.EolToken.ToString()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: Override, see base <xref href="MapQuest.IO.Token" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: MapQuest.IO.EolToken.ToString*
+- uid: MapQuest.IO.EolToken.Equals(System.Object)
+  commentId: M:MapQuest.IO.EolToken.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.IO.EolToken
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: EolToken.Equals(object)
+  fullName: MapQuest.IO.EolToken.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: Override, see base <xref href="MapQuest.IO.Token" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: MapQuest.IO.Token.Equals(System.Object)
+  overload: MapQuest.IO.EolToken.Equals*
+  nameWithType.vb: EolToken.Equals(Object)
+  fullName.vb: MapQuest.IO.EolToken.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.IO.EolToken.GetHashCode
+  commentId: M:MapQuest.IO.EolToken.GetHashCode
+  id: GetHashCode
+  parent: MapQuest.IO.EolToken
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: EolToken.GetHashCode()
+  fullName: MapQuest.IO.EolToken.GetHashCode()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: Override, see base <xref href="MapQuest.IO.Token" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: MapQuest.IO.Token.GetHashCode
+  overload: MapQuest.IO.EolToken.GetHashCode*
+- uid: MapQuest.IO.EolToken.Type
+  commentId: P:MapQuest.IO.EolToken.Type
+  id: Type
+  parent: MapQuest.IO.EolToken
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: EolToken.Type
+  fullName: MapQuest.IO.EolToken.Type
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: この <xref href="MapQuest.IO.Token" data-throw-if-not-resolved="false"></xref> の種類を取得します。
+  example: []
+  syntax:
+    content: public override TokenType Type { get; }
+    parameters: []
+    return:
+      type: MapQuest.IO.TokenType
+      description: >-
+        <xref href="MapQuest.IO.TokenType.Eol?text=TokenType.Eol" data-throw-if-not-resolved="false"></xref> を返します。
+                読み取り専用です。
+    content.vb: Public Overrides ReadOnly Property Type As TokenType
+  overridden: MapQuest.IO.Token.Type
+  overload: MapQuest.IO.EolToken.Type*
+- uid: MapQuest.IO.EolToken.StringValue
+  commentId: P:MapQuest.IO.EolToken.StringValue
+  id: StringValue
+  parent: MapQuest.IO.EolToken
+  langs:
+  - csharp
+  - vb
+  name: StringValue
+  nameWithType: EolToken.StringValue
+  fullName: MapQuest.IO.EolToken.StringValue
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: Override, see base <xref href="MapQuest.IO.Token" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public override string StringValue { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property StringValue As String
+  overridden: MapQuest.IO.Token.StringValue
+  overload: MapQuest.IO.EolToken.StringValue*
+references:
+- uid: MapQuest.IO
+  commentId: N:MapQuest.IO
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.IO
+  nameWithType: MapQuest.IO
+  fullName: MapQuest.IO
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.IO.Token
+  commentId: T:MapQuest.IO.Token
+  parent: MapQuest.IO
+  isExternal: true
+  href: MapQuest.IO.Token.html
+  name: Token
+  nameWithType: Token
+  fullName: MapQuest.IO.Token
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.IO.EolToken.#ctor*
+  commentId: Overload:MapQuest.IO.EolToken.#ctor
+  isExternal: true
+  href: MapQuest.IO.EolToken.html#MapQuest_IO_EolToken__ctor
+  name: EolToken
+  nameWithType: EolToken.EolToken
+  fullName: MapQuest.IO.EolToken.EolToken
+  nameWithType.vb: EolToken.New
+  fullName.vb: MapQuest.IO.EolToken.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MapQuest.IO.Token.ToDebugString
+  commentId: M:MapQuest.IO.Token.ToDebugString
+  parent: MapQuest.IO.Token
+  isExternal: true
+  href: MapQuest.IO.Token.html#MapQuest_IO_Token_ToDebugString
+  name: ToDebugString()
+  nameWithType: Token.ToDebugString()
+  fullName: MapQuest.IO.Token.ToDebugString()
+  spec.csharp:
+  - uid: MapQuest.IO.Token.ToDebugString
+    name: ToDebugString
+    isExternal: true
+    href: MapQuest.IO.Token.html#MapQuest_IO_Token_ToDebugString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.IO.Token.ToDebugString
+    name: ToDebugString
+    isExternal: true
+    href: MapQuest.IO.Token.html#MapQuest_IO_Token_ToDebugString
+  - name: (
+  - name: )
+- uid: MapQuest.IO.EolToken.ToDebugString*
+  commentId: Overload:MapQuest.IO.EolToken.ToDebugString
+  isExternal: true
+  href: MapQuest.IO.EolToken.html#MapQuest_IO_EolToken_ToDebugString
+  name: ToDebugString
+  nameWithType: EolToken.ToDebugString
+  fullName: MapQuest.IO.EolToken.ToDebugString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: MapQuest.IO.EolToken.ToString*
+  commentId: Overload:MapQuest.IO.EolToken.ToString
+  isExternal: true
+  href: MapQuest.IO.EolToken.html#MapQuest_IO_EolToken_ToString
+  name: ToString
+  nameWithType: EolToken.ToString
+  fullName: MapQuest.IO.EolToken.ToString
+- uid: MapQuest.IO.Token.Equals(System.Object)
+  commentId: M:MapQuest.IO.Token.Equals(System.Object)
+  parent: MapQuest.IO.Token
+  isExternal: true
+  href: MapQuest.IO.Token.html#MapQuest_IO_Token_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: Token.Equals(object)
+  fullName: MapQuest.IO.Token.Equals(object)
+  nameWithType.vb: Token.Equals(Object)
+  fullName.vb: MapQuest.IO.Token.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: MapQuest.IO.Token.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.IO.Token.html#MapQuest_IO_Token_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: MapQuest.IO.Token.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.IO.Token.html#MapQuest_IO_Token_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.IO.EolToken.Equals*
+  commentId: Overload:MapQuest.IO.EolToken.Equals
+  isExternal: true
+  href: MapQuest.IO.EolToken.html#MapQuest_IO_EolToken_Equals_System_Object_
+  name: Equals
+  nameWithType: EolToken.Equals
+  fullName: MapQuest.IO.EolToken.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.IO.Token.GetHashCode
+  commentId: M:MapQuest.IO.Token.GetHashCode
+  parent: MapQuest.IO.Token
+  isExternal: true
+  href: MapQuest.IO.Token.html#MapQuest_IO_Token_GetHashCode
+  name: GetHashCode()
+  nameWithType: Token.GetHashCode()
+  fullName: MapQuest.IO.Token.GetHashCode()
+  spec.csharp:
+  - uid: MapQuest.IO.Token.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: MapQuest.IO.Token.html#MapQuest_IO_Token_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.IO.Token.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: MapQuest.IO.Token.html#MapQuest_IO_Token_GetHashCode
+  - name: (
+  - name: )
+- uid: MapQuest.IO.EolToken.GetHashCode*
+  commentId: Overload:MapQuest.IO.EolToken.GetHashCode
+  isExternal: true
+  href: MapQuest.IO.EolToken.html#MapQuest_IO_EolToken_GetHashCode
+  name: GetHashCode
+  nameWithType: EolToken.GetHashCode
+  fullName: MapQuest.IO.EolToken.GetHashCode
+- uid: MapQuest.IO.TokenType.Eol
+  commentId: F:MapQuest.IO.TokenType.Eol
+  isExternal: true
+  href: MapQuest.IO.TokenType.html#MapQuest_IO_TokenType_Eol
+  name: Eol
+  nameWithType: TokenType.Eol
+  fullName: MapQuest.IO.TokenType.Eol
+- uid: MapQuest.IO.Token.Type
+  commentId: P:MapQuest.IO.Token.Type
+  parent: MapQuest.IO.Token
+  isExternal: true
+  href: MapQuest.IO.Token.html#MapQuest_IO_Token_Type
+  name: Type
+  nameWithType: Token.Type
+  fullName: MapQuest.IO.Token.Type
+- uid: MapQuest.IO.EolToken.Type*
+  commentId: Overload:MapQuest.IO.EolToken.Type
+  isExternal: true
+  href: MapQuest.IO.EolToken.html#MapQuest_IO_EolToken_Type
+  name: Type
+  nameWithType: EolToken.Type
+  fullName: MapQuest.IO.EolToken.Type
+- uid: MapQuest.IO.TokenType
+  commentId: T:MapQuest.IO.TokenType
+  parent: MapQuest.IO
+  isExternal: true
+  href: MapQuest.IO.TokenType.html
+  name: TokenType
+  nameWithType: TokenType
+  fullName: MapQuest.IO.TokenType
+- uid: MapQuest.IO.Token.StringValue
+  commentId: P:MapQuest.IO.Token.StringValue
+  parent: MapQuest.IO.Token
+  isExternal: true
+  href: MapQuest.IO.Token.html#MapQuest_IO_Token_StringValue
+  name: StringValue
+  nameWithType: Token.StringValue
+  fullName: MapQuest.IO.Token.StringValue
+- uid: MapQuest.IO.EolToken.StringValue*
+  commentId: Overload:MapQuest.IO.EolToken.StringValue
+  isExternal: true
+  href: MapQuest.IO.EolToken.html#MapQuest_IO_EolToken_StringValue
+  name: StringValue
+  nameWithType: EolToken.StringValue
+  fullName: MapQuest.IO.EolToken.StringValue

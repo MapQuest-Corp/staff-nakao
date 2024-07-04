@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.IO.CacheFileDeletedEventHandler
+  commentId: T:MapQuest.IO.CacheFileDeletedEventHandler
+  id: CacheFileDeletedEventHandler
+  parent: MapQuest.IO
+  children:
+  - MapQuest.IO.CacheFileDeletedEventHandler.#ctor(System.Object,System.IntPtr)
+  - MapQuest.IO.CacheFileDeletedEventHandler.BeginInvoke(System.Object,MapQuest.IO.CacheFileDeletedEventArgs,System.AsyncCallback,System.Object)
+  - MapQuest.IO.CacheFileDeletedEventHandler.EndInvoke(System.IAsyncResult)
+  - MapQuest.IO.CacheFileDeletedEventHandler.Invoke(System.Object,MapQuest.IO.CacheFileDeletedEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: CacheFileDeletedEventHandler
+  nameWithType: CacheFileDeletedEventHandler
+  fullName: MapQuest.IO.CacheFileDeletedEventHandler
+  type: Delegate
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: CacheFileDeleted イベントを処理するメソッドを表します。
+  example: []
+  syntax:
+    content: public delegate void CacheFileDeletedEventHandler(object sender, CacheFileDeletedEventArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: イベントのソース。
+    - id: args
+      type: MapQuest.IO.CacheFileDeletedEventArgs
+      description: >-
+        イベント データを格納している 
+                    <xref href="MapQuest.IO.CacheFileDeletedEventArgs" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Delegate Sub CacheFileDeletedEventHandler(sender As Object, args As CacheFileDeletedEventArgs)
+- uid: MapQuest.IO.CacheFileDeletedEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:MapQuest.IO.CacheFileDeletedEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: MapQuest.IO.CacheFileDeletedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: CacheFileDeletedEventHandler(object, IntPtr)
+  nameWithType: CacheFileDeletedEventHandler.CacheFileDeletedEventHandler(object, IntPtr)
+  fullName: MapQuest.IO.CacheFileDeletedEventHandler.CacheFileDeletedEventHandler(object, System.IntPtr)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  syntax:
+    content: public CacheFileDeletedEventHandler(object @object, IntPtr method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: MapQuest.IO.CacheFileDeletedEventHandler.#ctor*
+  nameWithType.vb: CacheFileDeletedEventHandler.New(Object, IntPtr)
+  fullName.vb: MapQuest.IO.CacheFileDeletedEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: MapQuest.IO.CacheFileDeletedEventHandler.Invoke(System.Object,MapQuest.IO.CacheFileDeletedEventArgs)
+  commentId: M:MapQuest.IO.CacheFileDeletedEventHandler.Invoke(System.Object,MapQuest.IO.CacheFileDeletedEventArgs)
+  id: Invoke(System.Object,MapQuest.IO.CacheFileDeletedEventArgs)
+  parent: MapQuest.IO.CacheFileDeletedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(object, CacheFileDeletedEventArgs)
+  nameWithType: CacheFileDeletedEventHandler.Invoke(object, CacheFileDeletedEventArgs)
+  fullName: MapQuest.IO.CacheFileDeletedEventHandler.Invoke(object, MapQuest.IO.CacheFileDeletedEventArgs)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  syntax:
+    content: public virtual void Invoke(object sender, CacheFileDeletedEventArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: args
+      type: MapQuest.IO.CacheFileDeletedEventArgs
+    content.vb: Public Overridable Sub Invoke(sender As Object, args As CacheFileDeletedEventArgs)
+  overload: MapQuest.IO.CacheFileDeletedEventHandler.Invoke*
+  nameWithType.vb: CacheFileDeletedEventHandler.Invoke(Object, CacheFileDeletedEventArgs)
+  fullName.vb: MapQuest.IO.CacheFileDeletedEventHandler.Invoke(Object, MapQuest.IO.CacheFileDeletedEventArgs)
+  name.vb: Invoke(Object, CacheFileDeletedEventArgs)
+- uid: MapQuest.IO.CacheFileDeletedEventHandler.BeginInvoke(System.Object,MapQuest.IO.CacheFileDeletedEventArgs,System.AsyncCallback,System.Object)
+  commentId: M:MapQuest.IO.CacheFileDeletedEventHandler.BeginInvoke(System.Object,MapQuest.IO.CacheFileDeletedEventArgs,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.Object,MapQuest.IO.CacheFileDeletedEventArgs,System.AsyncCallback,System.Object)
+  parent: MapQuest.IO.CacheFileDeletedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(object, CacheFileDeletedEventArgs, AsyncCallback, object)
+  nameWithType: CacheFileDeletedEventHandler.BeginInvoke(object, CacheFileDeletedEventArgs, AsyncCallback, object)
+  fullName: MapQuest.IO.CacheFileDeletedEventHandler.BeginInvoke(object, MapQuest.IO.CacheFileDeletedEventArgs, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(object sender, CacheFileDeletedEventArgs args, AsyncCallback callback, object @object)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: args
+      type: MapQuest.IO.CacheFileDeletedEventArgs
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(sender As Object, args As CacheFileDeletedEventArgs, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: MapQuest.IO.CacheFileDeletedEventHandler.BeginInvoke*
+  nameWithType.vb: CacheFileDeletedEventHandler.BeginInvoke(Object, CacheFileDeletedEventArgs, AsyncCallback, Object)
+  fullName.vb: MapQuest.IO.CacheFileDeletedEventHandler.BeginInvoke(Object, MapQuest.IO.CacheFileDeletedEventArgs, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(Object, CacheFileDeletedEventArgs, AsyncCallback, Object)
+- uid: MapQuest.IO.CacheFileDeletedEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:MapQuest.IO.CacheFileDeletedEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: MapQuest.IO.CacheFileDeletedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: CacheFileDeletedEventHandler.EndInvoke(IAsyncResult)
+  fullName: MapQuest.IO.CacheFileDeletedEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: MapQuest.IO.CacheFileDeletedEventHandler.EndInvoke*
+references:
+- uid: MapQuest.IO.CacheFileDeletedEventArgs
+  commentId: T:MapQuest.IO.CacheFileDeletedEventArgs
+  parent: MapQuest.IO
+  isExternal: true
+  href: MapQuest.IO.CacheFileDeletedEventArgs.html
+  name: CacheFileDeletedEventArgs
+  nameWithType: CacheFileDeletedEventArgs
+  fullName: MapQuest.IO.CacheFileDeletedEventArgs
+- uid: MapQuest.IO
+  commentId: N:MapQuest.IO
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.IO
+  nameWithType: MapQuest.IO
+  fullName: MapQuest.IO
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.IO.CacheFileDeletedEventHandler.#ctor*
+  commentId: Overload:MapQuest.IO.CacheFileDeletedEventHandler.#ctor
+  isExternal: true
+  href: MapQuest.IO.CacheFileDeletedEventHandler.html#MapQuest_IO_CacheFileDeletedEventHandler__ctor_System_Object_System_IntPtr_
+  name: CacheFileDeletedEventHandler
+  nameWithType: CacheFileDeletedEventHandler.CacheFileDeletedEventHandler
+  fullName: MapQuest.IO.CacheFileDeletedEventHandler.CacheFileDeletedEventHandler
+  nameWithType.vb: CacheFileDeletedEventHandler.New
+  fullName.vb: MapQuest.IO.CacheFileDeletedEventHandler.New
+  name.vb: New
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: MapQuest.IO.CacheFileDeletedEventHandler.Invoke*
+  commentId: Overload:MapQuest.IO.CacheFileDeletedEventHandler.Invoke
+  isExternal: true
+  href: MapQuest.IO.CacheFileDeletedEventHandler.html#MapQuest_IO_CacheFileDeletedEventHandler_Invoke_System_Object_MapQuest_IO_CacheFileDeletedEventArgs_
+  name: Invoke
+  nameWithType: CacheFileDeletedEventHandler.Invoke
+  fullName: MapQuest.IO.CacheFileDeletedEventHandler.Invoke
+- uid: MapQuest.IO.CacheFileDeletedEventHandler.BeginInvoke*
+  commentId: Overload:MapQuest.IO.CacheFileDeletedEventHandler.BeginInvoke
+  isExternal: true
+  href: MapQuest.IO.CacheFileDeletedEventHandler.html#MapQuest_IO_CacheFileDeletedEventHandler_BeginInvoke_System_Object_MapQuest_IO_CacheFileDeletedEventArgs_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: CacheFileDeletedEventHandler.BeginInvoke
+  fullName: MapQuest.IO.CacheFileDeletedEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: MapQuest.IO.CacheFileDeletedEventHandler.EndInvoke*
+  commentId: Overload:MapQuest.IO.CacheFileDeletedEventHandler.EndInvoke
+  isExternal: true
+  href: MapQuest.IO.CacheFileDeletedEventHandler.html#MapQuest_IO_CacheFileDeletedEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: CacheFileDeletedEventHandler.EndInvoke
+  fullName: MapQuest.IO.CacheFileDeletedEventHandler.EndInvoke

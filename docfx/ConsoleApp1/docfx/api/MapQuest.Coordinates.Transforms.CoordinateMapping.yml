@@ -1,0 +1,1147 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping
+  commentId: T:MapQuest.Coordinates.Transforms.CoordinateMapping
+  id: CoordinateMapping
+  parent: MapQuest.Coordinates.Transforms
+  children:
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.#ctor
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.Clone
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.GetViewportSpaceExtents(System.Double@,System.Double@,System.Double@,System.Double@)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.GetWorldSpaceExtents(System.Double@,System.Double@,System.Double@,System.Double@)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.Pan(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.Pan(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.SetViewportSpaceExtents(System.Double,System.Double,System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.SetWorldSpaceExtents(System.Double,System.Double,System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(System.Double@)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(System.Double@,System.Double@)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(System.Double@)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(System.Double@,System.Double@)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.ViewportSpaceExtents
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.Visit(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.WorldSpaceExtents
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomBy(System.Double)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo(System.Double,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo(System.Double,System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: CoordinateMapping
+  nameWithType: CoordinateMapping
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping
+  type: Class
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: 'public class CoordinateMapping : ICoordinateVisitor, ICloneable'
+    content.vb: Public Class CoordinateMapping Implements ICoordinateVisitor, ICloneable
+  inheritance:
+  - System.Object
+  implements:
+  - MapQuest.Coordinates.ICoordinateVisitor
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.#ctor
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.#ctor
+  id: '#ctor'
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: CoordinateMapping()
+  nameWithType: CoordinateMapping.CoordinateMapping()
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.CoordinateMapping()
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public CoordinateMapping()
+    content.vb: Public Sub New()
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.#ctor*
+  nameWithType.vb: CoordinateMapping.New()
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.New()
+  name.vb: New()
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(MapQuest.Coordinates.Coordinate)
+  id: ToViewport(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: ToViewport(Coordinate)
+  nameWithType: CoordinateMapping.ToViewport(Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ToViewport(Coordinate point)
+    parameters:
+    - id: point
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub ToViewport(point As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport*
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(MapQuest.Coordinates.Coordinate)
+  id: ToWorld(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: ToWorld(Coordinate)
+  nameWithType: CoordinateMapping.ToWorld(Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ToWorld(Coordinate point)
+    parameters:
+    - id: point
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub ToWorld(point As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld*
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(System.Double@)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(System.Double@)
+  id: ToViewport(System.Double@)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: ToViewport(ref double)
+  nameWithType: CoordinateMapping.ToViewport(ref double)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(ref double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ToViewport(ref double scalar)
+    parameters:
+    - id: scalar
+      type: System.Double
+    content.vb: Public Sub ToViewport(scalar As Double)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport*
+  nameWithType.vb: CoordinateMapping.ToViewport(Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(Double)
+  name.vb: ToViewport(Double)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(System.Double@)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(System.Double@)
+  id: ToWorld(System.Double@)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: ToWorld(ref double)
+  nameWithType: CoordinateMapping.ToWorld(ref double)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(ref double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ToWorld(ref double scalar)
+    parameters:
+    - id: scalar
+      type: System.Double
+    content.vb: Public Sub ToWorld(scalar As Double)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld*
+  nameWithType.vb: CoordinateMapping.ToWorld(Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(Double)
+  name.vb: ToWorld(Double)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace(MapQuest.Coordinates.Coordinate)
+  id: IsPointInWorldSpace(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: IsPointInWorldSpace(Coordinate)
+  nameWithType: CoordinateMapping.IsPointInWorldSpace(Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public bool IsPointInWorldSpace(Coordinate pt)
+    parameters:
+    - id: pt
+      type: MapQuest.Coordinates.Coordinate
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsPointInWorldSpace(pt As Coordinate) As Boolean
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace*
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace(System.Double,System.Double)
+  id: IsPointInWorldSpace(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: IsPointInWorldSpace(double, double)
+  nameWithType: CoordinateMapping.IsPointInWorldSpace(double, double)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public bool IsPointInWorldSpace(double x, double y)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsPointInWorldSpace(x As Double, y As Double) As Boolean
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace*
+  nameWithType.vb: CoordinateMapping.IsPointInWorldSpace(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace(Double, Double)
+  name.vb: IsPointInWorldSpace(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomBy(System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomBy(System.Double)
+  id: ZoomBy(System.Double)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: ZoomBy(double)
+  nameWithType: CoordinateMapping.ZoomBy(double)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomBy(double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ZoomBy(double factor)
+    parameters:
+    - id: factor
+      type: System.Double
+    content.vb: Public Sub ZoomBy(factor As Double)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomBy*
+  nameWithType.vb: CoordinateMapping.ZoomBy(Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomBy(Double)
+  name.vb: ZoomBy(Double)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.Pan(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.Pan(MapQuest.Coordinates.Coordinate)
+  id: Pan(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: Pan(Coordinate)
+  nameWithType: CoordinateMapping.Pan(Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.Pan(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Pan(Coordinate newCenter)
+    parameters:
+    - id: newCenter
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub Pan(newCenter As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.Pan*
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo(System.Double,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo(System.Double,MapQuest.Coordinates.Coordinate)
+  id: ZoomTo(System.Double,MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: ZoomTo(double, Coordinate)
+  nameWithType: CoordinateMapping.ZoomTo(double, Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo(double, MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ZoomTo(double factor, Coordinate newCenter)
+    parameters:
+    - id: factor
+      type: System.Double
+    - id: newCenter
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub ZoomTo(factor As Double, newCenter As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo*
+  nameWithType.vb: CoordinateMapping.ZoomTo(Double, Coordinate)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo(Double, MapQuest.Coordinates.Coordinate)
+  name.vb: ZoomTo(Double, Coordinate)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.SetWorldSpaceExtents(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.SetWorldSpaceExtents(System.Double,System.Double,System.Double,System.Double)
+  id: SetWorldSpaceExtents(System.Double,System.Double,System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: SetWorldSpaceExtents(double, double, double, double)
+  nameWithType: CoordinateMapping.SetWorldSpaceExtents(double, double, double, double)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.SetWorldSpaceExtents(double, double, double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void SetWorldSpaceExtents(double x1, double y1, double x2, double y2)
+    parameters:
+    - id: x1
+      type: System.Double
+    - id: y1
+      type: System.Double
+    - id: x2
+      type: System.Double
+    - id: y2
+      type: System.Double
+    content.vb: Public Sub SetWorldSpaceExtents(x1 As Double, y1 As Double, x2 As Double, y2 As Double)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.SetWorldSpaceExtents*
+  nameWithType.vb: CoordinateMapping.SetWorldSpaceExtents(Double, Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.SetWorldSpaceExtents(Double, Double, Double, Double)
+  name.vb: SetWorldSpaceExtents(Double, Double, Double, Double)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.GetWorldSpaceExtents(System.Double@,System.Double@,System.Double@,System.Double@)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.GetWorldSpaceExtents(System.Double@,System.Double@,System.Double@,System.Double@)
+  id: GetWorldSpaceExtents(System.Double@,System.Double@,System.Double@,System.Double@)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: GetWorldSpaceExtents(ref double, ref double, ref double, ref double)
+  nameWithType: CoordinateMapping.GetWorldSpaceExtents(ref double, ref double, ref double, ref double)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.GetWorldSpaceExtents(ref double, ref double, ref double, ref double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void GetWorldSpaceExtents(ref double x1, ref double y1, ref double x2, ref double y2)
+    parameters:
+    - id: x1
+      type: System.Double
+    - id: y1
+      type: System.Double
+    - id: x2
+      type: System.Double
+    - id: y2
+      type: System.Double
+    content.vb: Public Sub GetWorldSpaceExtents(x1 As Double, y1 As Double, x2 As Double, y2 As Double)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.GetWorldSpaceExtents*
+  nameWithType.vb: CoordinateMapping.GetWorldSpaceExtents(Double, Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.GetWorldSpaceExtents(Double, Double, Double, Double)
+  name.vb: GetWorldSpaceExtents(Double, Double, Double, Double)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.SetViewportSpaceExtents(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.SetViewportSpaceExtents(System.Double,System.Double,System.Double,System.Double)
+  id: SetViewportSpaceExtents(System.Double,System.Double,System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: SetViewportSpaceExtents(double, double, double, double)
+  nameWithType: CoordinateMapping.SetViewportSpaceExtents(double, double, double, double)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.SetViewportSpaceExtents(double, double, double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void SetViewportSpaceExtents(double x1, double y1, double x2, double y2)
+    parameters:
+    - id: x1
+      type: System.Double
+    - id: y1
+      type: System.Double
+    - id: x2
+      type: System.Double
+    - id: y2
+      type: System.Double
+    content.vb: Public Sub SetViewportSpaceExtents(x1 As Double, y1 As Double, x2 As Double, y2 As Double)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.SetViewportSpaceExtents*
+  nameWithType.vb: CoordinateMapping.SetViewportSpaceExtents(Double, Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.SetViewportSpaceExtents(Double, Double, Double, Double)
+  name.vb: SetViewportSpaceExtents(Double, Double, Double, Double)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.GetViewportSpaceExtents(System.Double@,System.Double@,System.Double@,System.Double@)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.GetViewportSpaceExtents(System.Double@,System.Double@,System.Double@,System.Double@)
+  id: GetViewportSpaceExtents(System.Double@,System.Double@,System.Double@,System.Double@)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: GetViewportSpaceExtents(ref double, ref double, ref double, ref double)
+  nameWithType: CoordinateMapping.GetViewportSpaceExtents(ref double, ref double, ref double, ref double)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.GetViewportSpaceExtents(ref double, ref double, ref double, ref double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void GetViewportSpaceExtents(ref double x1, ref double y1, ref double x2, ref double y2)
+    parameters:
+    - id: x1
+      type: System.Double
+    - id: y1
+      type: System.Double
+    - id: x2
+      type: System.Double
+    - id: y2
+      type: System.Double
+    content.vb: Public Sub GetViewportSpaceExtents(x1 As Double, y1 As Double, x2 As Double, y2 As Double)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.GetViewportSpaceExtents*
+  nameWithType.vb: CoordinateMapping.GetViewportSpaceExtents(Double, Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.GetViewportSpaceExtents(Double, Double, Double, Double)
+  name.vb: GetViewportSpaceExtents(Double, Double, Double, Double)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.Pan(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.Pan(System.Double,System.Double)
+  id: Pan(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: Pan(double, double)
+  nameWithType: CoordinateMapping.Pan(double, double)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.Pan(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Pan(double newCenterX, double newCenterY)
+    parameters:
+    - id: newCenterX
+      type: System.Double
+    - id: newCenterY
+      type: System.Double
+    content.vb: Public Sub Pan(newCenterX As Double, newCenterY As Double)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.Pan*
+  nameWithType.vb: CoordinateMapping.Pan(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.Pan(Double, Double)
+  name.vb: Pan(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo(System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo(System.Double,System.Double,System.Double)
+  id: ZoomTo(System.Double,System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: ZoomTo(double, double, double)
+  nameWithType: CoordinateMapping.ZoomTo(double, double, double)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo(double, double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ZoomTo(double factor, double newCenterX, double newCenterY)
+    parameters:
+    - id: factor
+      type: System.Double
+    - id: newCenterX
+      type: System.Double
+    - id: newCenterY
+      type: System.Double
+    content.vb: Public Sub ZoomTo(factor As Double, newCenterX As Double, newCenterY As Double)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo*
+  nameWithType.vb: CoordinateMapping.ZoomTo(Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo(Double, Double, Double)
+  name.vb: ZoomTo(Double, Double, Double)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(System.Double@,System.Double@)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(System.Double@,System.Double@)
+  id: ToViewport(System.Double@,System.Double@)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: ToViewport(ref double, ref double)
+  nameWithType: CoordinateMapping.ToViewport(ref double, ref double)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(ref double, ref double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ToViewport(ref double x, ref double y)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    content.vb: Public Sub ToViewport(x As Double, y As Double)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport*
+  nameWithType.vb: CoordinateMapping.ToViewport(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport(Double, Double)
+  name.vb: ToViewport(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(System.Double@,System.Double@)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(System.Double@,System.Double@)
+  id: ToWorld(System.Double@,System.Double@)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: ToWorld(ref double, ref double)
+  nameWithType: CoordinateMapping.ToWorld(ref double, ref double)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(ref double, ref double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ToWorld(ref double x, ref double y)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    content.vb: Public Sub ToWorld(x As Double, y As Double)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld*
+  nameWithType.vb: CoordinateMapping.ToWorld(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld(Double, Double)
+  name.vb: ToWorld(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.Visit(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.Visit(MapQuest.Coordinates.Coordinate)
+  id: Visit(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: Visit(Coordinate)
+  nameWithType: CoordinateMapping.Visit(Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.Visit(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Visit(Coordinate coord)
+    parameters:
+    - id: coord
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub Visit(coord As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.Visit*
+  implements:
+  - MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.Clone
+  commentId: M:MapQuest.Coordinates.Transforms.CoordinateMapping.Clone
+  id: Clone
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: CoordinateMapping.Clone()
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+    content.vb: Public Function Clone() As Object
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.WorldSpaceExtents
+  commentId: P:MapQuest.Coordinates.Transforms.CoordinateMapping.WorldSpaceExtents
+  id: WorldSpaceExtents
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: WorldSpaceExtents
+  nameWithType: CoordinateMapping.WorldSpaceExtents
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.WorldSpaceExtents
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public Envelope WorldSpaceExtents { get; set; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Envelope
+    content.vb: Public Property WorldSpaceExtents As Envelope
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.WorldSpaceExtents*
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ViewportSpaceExtents
+  commentId: P:MapQuest.Coordinates.Transforms.CoordinateMapping.ViewportSpaceExtents
+  id: ViewportSpaceExtents
+  parent: MapQuest.Coordinates.Transforms.CoordinateMapping
+  langs:
+  - csharp
+  - vb
+  name: ViewportSpaceExtents
+  nameWithType: CoordinateMapping.ViewportSpaceExtents
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ViewportSpaceExtents
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public Envelope ViewportSpaceExtents { get; set; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Envelope
+    content.vb: Public Property ViewportSpaceExtents As Envelope
+  overload: MapQuest.Coordinates.Transforms.CoordinateMapping.ViewportSpaceExtents*
+references:
+- uid: MapQuest.Coordinates.Transforms
+  commentId: N:MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates.Transforms
+  nameWithType: MapQuest.Coordinates.Transforms
+  fullName: MapQuest.Coordinates.Transforms
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Coordinates.ICoordinateVisitor
+  commentId: T:MapQuest.Coordinates.ICoordinateVisitor
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateVisitor.html
+  name: ICoordinateVisitor
+  nameWithType: ICoordinateVisitor
+  fullName: MapQuest.Coordinates.ICoordinateVisitor
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping
+  commentId: T:MapQuest.Coordinates.Transforms.CoordinateMapping
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html
+  name: CoordinateMapping
+  nameWithType: CoordinateMapping
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.#ctor*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.#ctor
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping__ctor
+  name: CoordinateMapping
+  nameWithType: CoordinateMapping.CoordinateMapping
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.CoordinateMapping
+  nameWithType.vb: CoordinateMapping.New
+  fullName.vb: MapQuest.Coordinates.Transforms.CoordinateMapping.New
+  name.vb: New
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_ToViewport_MapQuest_Coordinates_Coordinate_
+  name: ToViewport
+  nameWithType: CoordinateMapping.ToViewport
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ToViewport
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_ToWorld_MapQuest_Coordinates_Coordinate_
+  name: ToWorld
+  nameWithType: CoordinateMapping.ToWorld
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ToWorld
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_IsPointInWorldSpace_MapQuest_Coordinates_Coordinate_
+  name: IsPointInWorldSpace
+  nameWithType: CoordinateMapping.IsPointInWorldSpace
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.IsPointInWorldSpace
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomBy*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomBy
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_ZoomBy_System_Double_
+  name: ZoomBy
+  nameWithType: CoordinateMapping.ZoomBy
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomBy
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.Pan*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.Pan
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_Pan_MapQuest_Coordinates_Coordinate_
+  name: Pan
+  nameWithType: CoordinateMapping.Pan
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.Pan
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_ZoomTo_System_Double_MapQuest_Coordinates_Coordinate_
+  name: ZoomTo
+  nameWithType: CoordinateMapping.ZoomTo
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ZoomTo
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.SetWorldSpaceExtents*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.SetWorldSpaceExtents
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_SetWorldSpaceExtents_System_Double_System_Double_System_Double_System_Double_
+  name: SetWorldSpaceExtents
+  nameWithType: CoordinateMapping.SetWorldSpaceExtents
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.SetWorldSpaceExtents
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.GetWorldSpaceExtents*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.GetWorldSpaceExtents
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_GetWorldSpaceExtents_System_Double__System_Double__System_Double__System_Double__
+  name: GetWorldSpaceExtents
+  nameWithType: CoordinateMapping.GetWorldSpaceExtents
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.GetWorldSpaceExtents
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.SetViewportSpaceExtents*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.SetViewportSpaceExtents
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_SetViewportSpaceExtents_System_Double_System_Double_System_Double_System_Double_
+  name: SetViewportSpaceExtents
+  nameWithType: CoordinateMapping.SetViewportSpaceExtents
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.SetViewportSpaceExtents
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.GetViewportSpaceExtents*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.GetViewportSpaceExtents
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_GetViewportSpaceExtents_System_Double__System_Double__System_Double__System_Double__
+  name: GetViewportSpaceExtents
+  nameWithType: CoordinateMapping.GetViewportSpaceExtents
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.GetViewportSpaceExtents
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.Visit*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.Visit
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_Visit_MapQuest_Coordinates_Coordinate_
+  name: Visit
+  nameWithType: CoordinateMapping.Visit
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.Visit
+- uid: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.ICoordinateVisitor
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateVisitor.html#MapQuest_Coordinates_ICoordinateVisitor_Visit_MapQuest_Coordinates_Coordinate_
+  name: Visit(Coordinate)
+  nameWithType: ICoordinateVisitor.Visit(Coordinate)
+  fullName: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+    name: Visit
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateVisitor.html#MapQuest_Coordinates_ICoordinateVisitor_Visit_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+    name: Visit
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateVisitor.html#MapQuest_Coordinates_ICoordinateVisitor_Visit_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.Clone*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.Clone
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_Clone
+  name: Clone
+  nameWithType: CoordinateMapping.Clone
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.WorldSpaceExtents*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.WorldSpaceExtents
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_WorldSpaceExtents
+  name: WorldSpaceExtents
+  nameWithType: CoordinateMapping.WorldSpaceExtents
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.WorldSpaceExtents
+- uid: MapQuest.Coordinates.Envelope
+  commentId: T:MapQuest.Coordinates.Envelope
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html
+  name: Envelope
+  nameWithType: Envelope
+  fullName: MapQuest.Coordinates.Envelope
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping.ViewportSpaceExtents*
+  commentId: Overload:MapQuest.Coordinates.Transforms.CoordinateMapping.ViewportSpaceExtents
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html#MapQuest_Coordinates_Transforms_CoordinateMapping_ViewportSpaceExtents
+  name: ViewportSpaceExtents
+  nameWithType: CoordinateMapping.ViewportSpaceExtents
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping.ViewportSpaceExtents

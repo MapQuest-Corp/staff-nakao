@@ -1,0 +1,277 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.IPrimeMeridian
+  commentId: T:MapQuest.CoordinateSystems.IPrimeMeridian
+  id: IPrimeMeridian
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.IPrimeMeridian.AngularUnit
+  - MapQuest.CoordinateSystems.IPrimeMeridian.Longitude
+  langs:
+  - csharp
+  - vb
+  name: IPrimeMeridian
+  nameWithType: IPrimeMeridian
+  fullName: MapQuest.CoordinateSystems.IPrimeMeridian
+  type: Interface
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    「本初子午線」を示すインターフェースです。
+
+    殆どの場合、本初子午線はグリニッジ子午線と同一です。
+  example: []
+  syntax:
+    content: 'public interface IPrimeMeridian : IInfo, ICloneable'
+    content.vb: Public Interface IPrimeMeridian Inherits IInfo, ICloneable
+  inheritedMembers:
+  - MapQuest.CoordinateSystems.IInfo.Abbreviation
+  - MapQuest.CoordinateSystems.IInfo.Alias
+  - MapQuest.CoordinateSystems.IInfo.Authority
+  - MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  - MapQuest.CoordinateSystems.IInfo.Name
+  - MapQuest.CoordinateSystems.IInfo.Remarks
+  - MapQuest.CoordinateSystems.IInfo.WKT
+  - MapQuest.CoordinateSystems.IInfo.XML
+  - System.ICloneable.Clone
+- uid: MapQuest.CoordinateSystems.IPrimeMeridian.AngularUnit
+  commentId: P:MapQuest.CoordinateSystems.IPrimeMeridian.AngularUnit
+  id: AngularUnit
+  parent: MapQuest.CoordinateSystems.IPrimeMeridian
+  langs:
+  - csharp
+  - vb
+  name: AngularUnit
+  nameWithType: IPrimeMeridian.AngularUnit
+  fullName: MapQuest.CoordinateSystems.IPrimeMeridian.AngularUnit
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: <xref href="MapQuest.CoordinateSystems.IPrimeMeridian.Longitude" data-throw-if-not-resolved="false"></xref> の単位を取得します。
+  example: []
+  syntax:
+    content: IAngularUnit AngularUnit { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.IAngularUnit
+      description: <xref href="MapQuest.CoordinateSystems.IPrimeMeridian.Longitude" data-throw-if-not-resolved="false"></xref> の単位。
+    content.vb: ReadOnly Property AngularUnit As IAngularUnit
+  overload: MapQuest.CoordinateSystems.IPrimeMeridian.AngularUnit*
+- uid: MapQuest.CoordinateSystems.IPrimeMeridian.Longitude
+  commentId: P:MapQuest.CoordinateSystems.IPrimeMeridian.Longitude
+  id: Longitude
+  parent: MapQuest.CoordinateSystems.IPrimeMeridian
+  langs:
+  - csharp
+  - vb
+  name: Longitude
+  nameWithType: IPrimeMeridian.Longitude
+  fullName: MapQuest.CoordinateSystems.IPrimeMeridian.Longitude
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    この PrimeMeridian が示す子午線の経度を、
+
+    グリニッジ子午線からの相対角度で取得します。
+  remarks: >-
+    殆どの場合、本初子午線はグリニッジ子午線と同一です。
+
+    つまり、このプロパティは 0 を返します。
+  example: []
+  syntax:
+    content: double Longitude { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property Longitude As Double
+  overload: MapQuest.CoordinateSystems.IPrimeMeridian.Longitude*
+references:
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: MapQuest.CoordinateSystems.IInfo.Abbreviation
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Abbreviation
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Abbreviation
+  name: Abbreviation
+  nameWithType: IInfo.Abbreviation
+  fullName: MapQuest.CoordinateSystems.IInfo.Abbreviation
+- uid: MapQuest.CoordinateSystems.IInfo.Alias
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Alias
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Alias
+  name: Alias
+  nameWithType: IInfo.Alias
+  fullName: MapQuest.CoordinateSystems.IInfo.Alias
+- uid: MapQuest.CoordinateSystems.IInfo.Authority
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Authority
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Authority
+  name: Authority
+  nameWithType: IInfo.Authority
+  fullName: MapQuest.CoordinateSystems.IInfo.Authority
+- uid: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  commentId: P:MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_AuthorityCode
+  name: AuthorityCode
+  nameWithType: IInfo.AuthorityCode
+  fullName: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+- uid: MapQuest.CoordinateSystems.IInfo.Name
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Name
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Name
+  name: Name
+  nameWithType: IInfo.Name
+  fullName: MapQuest.CoordinateSystems.IInfo.Name
+- uid: MapQuest.CoordinateSystems.IInfo.Remarks
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Remarks
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Remarks
+  name: Remarks
+  nameWithType: IInfo.Remarks
+  fullName: MapQuest.CoordinateSystems.IInfo.Remarks
+- uid: MapQuest.CoordinateSystems.IInfo.WKT
+  commentId: P:MapQuest.CoordinateSystems.IInfo.WKT
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_WKT
+  name: WKT
+  nameWithType: IInfo.WKT
+  fullName: MapQuest.CoordinateSystems.IInfo.WKT
+- uid: MapQuest.CoordinateSystems.IInfo.XML
+  commentId: P:MapQuest.CoordinateSystems.IInfo.XML
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_XML
+  name: XML
+  nameWithType: IInfo.XML
+  fullName: MapQuest.CoordinateSystems.IInfo.XML
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.IInfo
+  commentId: T:MapQuest.CoordinateSystems.IInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html
+  name: IInfo
+  nameWithType: IInfo
+  fullName: MapQuest.CoordinateSystems.IInfo
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateSystems.IPrimeMeridian.Longitude
+  commentId: P:MapQuest.CoordinateSystems.IPrimeMeridian.Longitude
+  parent: MapQuest.CoordinateSystems.IPrimeMeridian
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IPrimeMeridian.html#MapQuest_CoordinateSystems_IPrimeMeridian_Longitude
+  name: Longitude
+  nameWithType: IPrimeMeridian.Longitude
+  fullName: MapQuest.CoordinateSystems.IPrimeMeridian.Longitude
+- uid: MapQuest.CoordinateSystems.IPrimeMeridian.AngularUnit*
+  commentId: Overload:MapQuest.CoordinateSystems.IPrimeMeridian.AngularUnit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IPrimeMeridian.html#MapQuest_CoordinateSystems_IPrimeMeridian_AngularUnit
+  name: AngularUnit
+  nameWithType: IPrimeMeridian.AngularUnit
+  fullName: MapQuest.CoordinateSystems.IPrimeMeridian.AngularUnit
+- uid: MapQuest.CoordinateSystems.IAngularUnit
+  commentId: T:MapQuest.CoordinateSystems.IAngularUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAngularUnit.html
+  name: IAngularUnit
+  nameWithType: IAngularUnit
+  fullName: MapQuest.CoordinateSystems.IAngularUnit
+- uid: MapQuest.CoordinateSystems.IPrimeMeridian
+  commentId: T:MapQuest.CoordinateSystems.IPrimeMeridian
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IPrimeMeridian.html
+  name: IPrimeMeridian
+  nameWithType: IPrimeMeridian
+  fullName: MapQuest.CoordinateSystems.IPrimeMeridian
+- uid: MapQuest.CoordinateSystems.IPrimeMeridian.Longitude*
+  commentId: Overload:MapQuest.CoordinateSystems.IPrimeMeridian.Longitude
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IPrimeMeridian.html#MapQuest_CoordinateSystems_IPrimeMeridian_Longitude
+  name: Longitude
+  nameWithType: IPrimeMeridian.Longitude
+  fullName: MapQuest.CoordinateSystems.IPrimeMeridian.Longitude
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double

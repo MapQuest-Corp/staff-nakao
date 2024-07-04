@@ -1,0 +1,319 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.IFeatureType
+  commentId: T:MapQuest.Features.IFeatureType
+  id: IFeatureType
+  parent: MapQuest.Features
+  children:
+  - MapQuest.Features.IFeatureType.Children
+  - MapQuest.Features.IFeatureType.GetProperty(System.String)
+  - MapQuest.Features.IFeatureType.Name
+  - MapQuest.Features.IFeatureType.Parents
+  - MapQuest.Features.IFeatureType.Properties
+  langs:
+  - csharp
+  - vb
+  name: IFeatureType
+  nameWithType: IFeatureType
+  fullName: MapQuest.Features.IFeatureType
+  type: Interface
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: <xref href="MapQuest.Features.IFeatureType" data-throw-if-not-resolved="false"></xref> インターフェースは、<xref href="MapQuest.Features.IFeature" data-throw-if-not-resolved="false"></xref> のタイプの詳細を提供します。
+  remarks: <xref href="MapQuest.Features.IFeature" data-throw-if-not-resolved="false"></xref> は <xref href="MapQuest.Features.IFeatureType" data-throw-if-not-resolved="false"></xref> を必要とします。
+  example: []
+  syntax:
+    content: public interface IFeatureType
+    content.vb: Public Interface IFeatureType
+- uid: MapQuest.Features.IFeatureType.GetProperty(System.String)
+  commentId: M:MapQuest.Features.IFeatureType.GetProperty(System.String)
+  id: GetProperty(System.String)
+  parent: MapQuest.Features.IFeatureType
+  langs:
+  - csharp
+  - vb
+  name: GetProperty(string)
+  nameWithType: IFeatureType.GetProperty(string)
+  fullName: MapQuest.Features.IFeatureType.GetProperty(string)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 指定した名称の <xref href="MapQuest.Features.IFeatureTypeProperty" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: IFeatureTypeProperty GetProperty(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得したい <xref href="MapQuest.Features.IFeatureTypeProperty" data-throw-if-not-resolved="false"></xref> の名称。
+    return:
+      type: MapQuest.Features.IFeatureTypeProperty
+      description: 指定した名称の <xref href="MapQuest.Features.IFeatureTypeProperty" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Function GetProperty(name As String) As IFeatureTypeProperty
+  overload: MapQuest.Features.IFeatureType.GetProperty*
+  nameWithType.vb: IFeatureType.GetProperty(String)
+  fullName.vb: MapQuest.Features.IFeatureType.GetProperty(String)
+  name.vb: GetProperty(String)
+- uid: MapQuest.Features.IFeatureType.Parents
+  commentId: P:MapQuest.Features.IFeatureType.Parents
+  id: Parents
+  parent: MapQuest.Features.IFeatureType
+  langs:
+  - csharp
+  - vb
+  name: Parents
+  nameWithType: IFeatureType.Parents
+  fullName: MapQuest.Features.IFeatureType.Parents
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 親となる <xref href="MapQuest.Features.IFeatureType" data-throw-if-not-resolved="false"></xref> の配列を返します。
+  example: []
+  syntax:
+    content: IFeatureType[] Parents { get; }
+    parameters: []
+    return:
+      type: MapQuest.Features.IFeatureType[]
+      description: >-
+        親となる <xref href="MapQuest.Features.IFeatureType" data-throw-if-not-resolved="false"></xref> の配列。親が存在しない場合は null 。
+
+        読み取り専用です。
+    content.vb: ReadOnly Property Parents As IFeatureType()
+  overload: MapQuest.Features.IFeatureType.Parents*
+- uid: MapQuest.Features.IFeatureType.Children
+  commentId: P:MapQuest.Features.IFeatureType.Children
+  id: Children
+  parent: MapQuest.Features.IFeatureType
+  langs:
+  - csharp
+  - vb
+  name: Children
+  nameWithType: IFeatureType.Children
+  fullName: MapQuest.Features.IFeatureType.Children
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 子となる <xref href="MapQuest.Features.IFeatureType" data-throw-if-not-resolved="false"></xref> の配列を返します。
+  example: []
+  syntax:
+    content: IFeatureType[] Children { get; }
+    parameters: []
+    return:
+      type: MapQuest.Features.IFeatureType[]
+      description: >-
+        子となる <xref href="MapQuest.Features.IFeatureType" data-throw-if-not-resolved="false"></xref> の配列。子が存在しない場合は null 。
+
+        読み取り専用です。
+    content.vb: ReadOnly Property Children As IFeatureType()
+  overload: MapQuest.Features.IFeatureType.Children*
+- uid: MapQuest.Features.IFeatureType.Name
+  commentId: P:MapQuest.Features.IFeatureType.Name
+  id: Name
+  parent: MapQuest.Features.IFeatureType
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IFeatureType.Name
+  fullName: MapQuest.Features.IFeatureType.Name
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: この <xref href="MapQuest.Features.FeatureType" data-throw-if-not-resolved="false"></xref> の名称を返します。
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: <xref href="MapQuest.Features.FeatureType" data-throw-if-not-resolved="false"></xref> の名称。読み取り専用です。
+    content.vb: ReadOnly Property Name As String
+  overload: MapQuest.Features.IFeatureType.Name*
+- uid: MapQuest.Features.IFeatureType.Properties
+  commentId: P:MapQuest.Features.IFeatureType.Properties
+  id: Properties
+  parent: MapQuest.Features.IFeatureType
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: IFeatureType.Properties
+  fullName: MapQuest.Features.IFeatureType.Properties
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: この <xref href="MapQuest.Features.FeatureType" data-throw-if-not-resolved="false"></xref> のプロパティを取得します。
+  example: []
+  syntax:
+    content: IFeatureTypeProperty[] Properties { get; }
+    parameters: []
+    return:
+      type: MapQuest.Features.IFeatureTypeProperty[]
+      description: <xref href="MapQuest.Features.FeatureType" data-throw-if-not-resolved="false"></xref> のプロパティを示す <xref href="MapQuest.Features.IFeatureTypeProperty" data-throw-if-not-resolved="false"></xref> を配列。
+    content.vb: ReadOnly Property Properties As IFeatureTypeProperty()
+  overload: MapQuest.Features.IFeatureType.Properties*
+references:
+- uid: MapQuest.Features.IFeatureType
+  commentId: T:MapQuest.Features.IFeatureType
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.IFeatureType.html
+  name: IFeatureType
+  nameWithType: IFeatureType
+  fullName: MapQuest.Features.IFeatureType
+- uid: MapQuest.Features.IFeature
+  commentId: T:MapQuest.Features.IFeature
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.IFeature.html
+  name: IFeature
+  nameWithType: IFeature
+  fullName: MapQuest.Features.IFeature
+- uid: MapQuest.Features
+  commentId: N:MapQuest.Features
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features
+  nameWithType: MapQuest.Features
+  fullName: MapQuest.Features
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+- uid: MapQuest.Features.IFeatureTypeProperty
+  commentId: T:MapQuest.Features.IFeatureTypeProperty
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.IFeatureTypeProperty.html
+  name: IFeatureTypeProperty
+  nameWithType: IFeatureTypeProperty
+  fullName: MapQuest.Features.IFeatureTypeProperty
+- uid: MapQuest.Features.IFeatureType.GetProperty*
+  commentId: Overload:MapQuest.Features.IFeatureType.GetProperty
+  isExternal: true
+  href: MapQuest.Features.IFeatureType.html#MapQuest_Features_IFeatureType_GetProperty_System_String_
+  name: GetProperty
+  nameWithType: IFeatureType.GetProperty
+  fullName: MapQuest.Features.IFeatureType.GetProperty
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Features.IFeatureType.Parents*
+  commentId: Overload:MapQuest.Features.IFeatureType.Parents
+  isExternal: true
+  href: MapQuest.Features.IFeatureType.html#MapQuest_Features_IFeatureType_Parents
+  name: Parents
+  nameWithType: IFeatureType.Parents
+  fullName: MapQuest.Features.IFeatureType.Parents
+- uid: MapQuest.Features.IFeatureType[]
+  isExternal: true
+  href: MapQuest.Features.IFeatureType.html
+  name: IFeatureType[]
+  nameWithType: IFeatureType[]
+  fullName: MapQuest.Features.IFeatureType[]
+  nameWithType.vb: IFeatureType()
+  fullName.vb: MapQuest.Features.IFeatureType()
+  name.vb: IFeatureType()
+  spec.csharp:
+  - uid: MapQuest.Features.IFeatureType
+    name: IFeatureType
+    isExternal: true
+    href: MapQuest.Features.IFeatureType.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MapQuest.Features.IFeatureType
+    name: IFeatureType
+    isExternal: true
+    href: MapQuest.Features.IFeatureType.html
+  - name: (
+  - name: )
+- uid: MapQuest.Features.IFeatureType.Children*
+  commentId: Overload:MapQuest.Features.IFeatureType.Children
+  isExternal: true
+  href: MapQuest.Features.IFeatureType.html#MapQuest_Features_IFeatureType_Children
+  name: Children
+  nameWithType: IFeatureType.Children
+  fullName: MapQuest.Features.IFeatureType.Children
+- uid: MapQuest.Features.FeatureType
+  commentId: T:MapQuest.Features.FeatureType
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.FeatureType.html
+  name: FeatureType
+  nameWithType: FeatureType
+  fullName: MapQuest.Features.FeatureType
+- uid: MapQuest.Features.IFeatureType.Name*
+  commentId: Overload:MapQuest.Features.IFeatureType.Name
+  isExternal: true
+  href: MapQuest.Features.IFeatureType.html#MapQuest_Features_IFeatureType_Name
+  name: Name
+  nameWithType: IFeatureType.Name
+  fullName: MapQuest.Features.IFeatureType.Name
+- uid: MapQuest.Features.IFeatureType.Properties*
+  commentId: Overload:MapQuest.Features.IFeatureType.Properties
+  isExternal: true
+  href: MapQuest.Features.IFeatureType.html#MapQuest_Features_IFeatureType_Properties
+  name: Properties
+  nameWithType: IFeatureType.Properties
+  fullName: MapQuest.Features.IFeatureType.Properties
+- uid: MapQuest.Features.IFeatureTypeProperty[]
+  isExternal: true
+  href: MapQuest.Features.IFeatureTypeProperty.html
+  name: IFeatureTypeProperty[]
+  nameWithType: IFeatureTypeProperty[]
+  fullName: MapQuest.Features.IFeatureTypeProperty[]
+  nameWithType.vb: IFeatureTypeProperty()
+  fullName.vb: MapQuest.Features.IFeatureTypeProperty()
+  name.vb: IFeatureTypeProperty()
+  spec.csharp:
+  - uid: MapQuest.Features.IFeatureTypeProperty
+    name: IFeatureTypeProperty
+    isExternal: true
+    href: MapQuest.Features.IFeatureTypeProperty.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MapQuest.Features.IFeatureTypeProperty
+    name: IFeatureTypeProperty
+    isExternal: true
+    href: MapQuest.Features.IFeatureTypeProperty.html
+  - name: (
+  - name: )

@@ -1,0 +1,399 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.UnitConverterFactory
+  commentId: T:MapQuest.CoordinateSystems.UnitConverterFactory
+  id: UnitConverterFactory
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.UnitConverterFactory.#ctor
+  - MapQuest.CoordinateSystems.UnitConverterFactory.Create(MapQuest.CoordinateSystems.IUnit,MapQuest.CoordinateSystems.IUnit)
+  langs:
+  - csharp
+  - vb
+  name: UnitConverterFactory
+  nameWithType: UnitConverterFactory
+  fullName: MapQuest.CoordinateSystems.UnitConverterFactory
+  type: Class
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 値の変換を行う <xref href="MapQuest.CoordinateSystems.IUnitConverter" data-throw-if-not-resolved="false"></xref> を生成するクラスです。
+  example: []
+  syntax:
+    content: public class UnitConverterFactory
+    content.vb: Public Class UnitConverterFactory
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.CoordinateSystems.UnitConverterFactory.Create(MapQuest.CoordinateSystems.IUnit,MapQuest.CoordinateSystems.IUnit)
+  commentId: M:MapQuest.CoordinateSystems.UnitConverterFactory.Create(MapQuest.CoordinateSystems.IUnit,MapQuest.CoordinateSystems.IUnit)
+  id: Create(MapQuest.CoordinateSystems.IUnit,MapQuest.CoordinateSystems.IUnit)
+  parent: MapQuest.CoordinateSystems.UnitConverterFactory
+  langs:
+  - csharp
+  - vb
+  name: Create(IUnit, IUnit)
+  nameWithType: UnitConverterFactory.Create(IUnit, IUnit)
+  fullName: MapQuest.CoordinateSystems.UnitConverterFactory.Create(MapQuest.CoordinateSystems.IUnit, MapQuest.CoordinateSystems.IUnit)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 値の変換を行う <xref href="MapQuest.CoordinateSystems.IUnitConverter" data-throw-if-not-resolved="false"></xref> を生成します。
+  example: []
+  syntax:
+    content: public static IUnitConverter Create(IUnit source, IUnit target)
+    parameters:
+    - id: source
+      type: MapQuest.CoordinateSystems.IUnit
+      description: 変換元の <xref href="MapQuest.CoordinateSystems.ILinearUnit" data-throw-if-not-resolved="false"></xref> 。
+    - id: target
+      type: MapQuest.CoordinateSystems.IUnit
+      description: 変換先の <xref href="MapQuest.CoordinateSystems.IAngularUnit" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: MapQuest.CoordinateSystems.IUnitConverter
+      description: 値の変換を行う  <xref href="MapQuest.CoordinateSystems.IUnitConverter" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Shared Function Create(source As IUnit, target As IUnit) As IUnitConverter
+  overload: MapQuest.CoordinateSystems.UnitConverterFactory.Create*
+- uid: MapQuest.CoordinateSystems.UnitConverterFactory.#ctor
+  commentId: M:MapQuest.CoordinateSystems.UnitConverterFactory.#ctor
+  id: '#ctor'
+  parent: MapQuest.CoordinateSystems.UnitConverterFactory
+  langs:
+  - csharp
+  - vb
+  name: UnitConverterFactory()
+  nameWithType: UnitConverterFactory.UnitConverterFactory()
+  fullName: MapQuest.CoordinateSystems.UnitConverterFactory.UnitConverterFactory()
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  syntax:
+    content: public UnitConverterFactory()
+    content.vb: Public Sub New()
+  overload: MapQuest.CoordinateSystems.UnitConverterFactory.#ctor*
+  nameWithType.vb: UnitConverterFactory.New()
+  fullName.vb: MapQuest.CoordinateSystems.UnitConverterFactory.New()
+  name.vb: New()
+references:
+- uid: MapQuest.CoordinateSystems.IUnitConverter
+  commentId: T:MapQuest.CoordinateSystems.IUnitConverter
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnitConverter.html
+  name: IUnitConverter
+  nameWithType: IUnitConverter
+  fullName: MapQuest.CoordinateSystems.IUnitConverter
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateSystems.ILinearUnit
+  commentId: T:MapQuest.CoordinateSystems.ILinearUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ILinearUnit.html
+  name: ILinearUnit
+  nameWithType: ILinearUnit
+  fullName: MapQuest.CoordinateSystems.ILinearUnit
+- uid: MapQuest.CoordinateSystems.IAngularUnit
+  commentId: T:MapQuest.CoordinateSystems.IAngularUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAngularUnit.html
+  name: IAngularUnit
+  nameWithType: IAngularUnit
+  fullName: MapQuest.CoordinateSystems.IAngularUnit
+- uid: MapQuest.CoordinateSystems.UnitConverterFactory.Create*
+  commentId: Overload:MapQuest.CoordinateSystems.UnitConverterFactory.Create
+  isExternal: true
+  href: MapQuest.CoordinateSystems.UnitConverterFactory.html#MapQuest_CoordinateSystems_UnitConverterFactory_Create_MapQuest_CoordinateSystems_IUnit_MapQuest_CoordinateSystems_IUnit_
+  name: Create
+  nameWithType: UnitConverterFactory.Create
+  fullName: MapQuest.CoordinateSystems.UnitConverterFactory.Create
+- uid: MapQuest.CoordinateSystems.IUnit
+  commentId: T:MapQuest.CoordinateSystems.IUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnit.html
+  name: IUnit
+  nameWithType: IUnit
+  fullName: MapQuest.CoordinateSystems.IUnit
+- uid: MapQuest.CoordinateSystems.UnitConverterFactory.#ctor*
+  commentId: Overload:MapQuest.CoordinateSystems.UnitConverterFactory.#ctor
+  isExternal: true
+  href: MapQuest.CoordinateSystems.UnitConverterFactory.html#MapQuest_CoordinateSystems_UnitConverterFactory__ctor
+  name: UnitConverterFactory
+  nameWithType: UnitConverterFactory.UnitConverterFactory
+  fullName: MapQuest.CoordinateSystems.UnitConverterFactory.UnitConverterFactory
+  nameWithType.vb: UnitConverterFactory.New
+  fullName.vb: MapQuest.CoordinateSystems.UnitConverterFactory.New
+  name.vb: New

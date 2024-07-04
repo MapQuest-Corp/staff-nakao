@@ -1,0 +1,1092 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FeatureOperator | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FeatureOperator | mysite ">
+      
+      <meta name="description" content="空間解析や空間演算を処理するためのクラスです。  から  を取得しなくても解析や演算処理を行うことができます。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Features.FeatureOperator">
+
+
+
+  <h1 id="MapQuest_Features_FeatureOperator" data-uid="MapQuest.Features.FeatureOperator" class="text-break">
+Class FeatureOperator  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Features.html">Features</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Features.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>空間解析や空間演算を処理するためのクラスです。</p>
+<p><newpara><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> から
+<span class="xref">MapQuest.Topology.Geometries.Geometry</span>
+を取得しなくても解析や演算処理を行うことができます。</newpara></p>
+
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FeatureOperator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">FeatureOperator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Features_FeatureOperator__ctor_" data-uid="MapQuest.Features.FeatureOperator.#ctor*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator__ctor_MapQuest_Features_FeatureFactory_" data-uid="MapQuest.Features.FeatureOperator.#ctor(MapQuest.Features.FeatureFactory)">
+  FeatureOperator(FeatureFactory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した Factory を備えた、
+<a class="xref" href="MapQuest.Features.FeatureOperator.html">FeatureOperator</a>
+クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FeatureOperator(FeatureFactory factory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factory</code> <a class="xref" href="MapQuest.Features.FeatureFactory.html">FeatureFactory</a></dt>
+    <dd><p>空間演算により <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を生成するための
+<a class="xref" href="MapQuest.Features.FeatureFactory.html">FeatureFactory</a>
+オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Features_FeatureOperator__ctor_MapQuest_Features_FeatureFactory__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>バッファ処理のキャップ スタイルには、</p>
+<p>全て <span class="xref">MapQuest.Topology.Operation.BufferEndCapStyle.Round</span> が指定されます。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator__ctor_" data-uid="MapQuest.Features.FeatureOperator.#ctor*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator__ctor_MapQuest_Features_FeatureFactory_MapQuest_Topology_Operation_BufferEndCapStyle_" data-uid="MapQuest.Features.FeatureOperator.#ctor(MapQuest.Features.FeatureFactory,MapQuest.Topology.Operation.BufferEndCapStyle)">
+  FeatureOperator(FeatureFactory, BufferEndCapStyle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した Factory 、キャップ スタイルを備えた、
+<a class="xref" href="MapQuest.Features.FeatureOperator.html">FeatureOperator</a>
+クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FeatureOperator(FeatureFactory factory, BufferEndCapStyle bufferStyle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factory</code> <a class="xref" href="MapQuest.Features.FeatureFactory.html">FeatureFactory</a></dt>
+    <dd><p>空間演算により <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> を生成するための
+<a class="xref" href="MapQuest.Features.FeatureFactory.html">FeatureFactory</a>
+オブジェクト。</p>
+</dd>
+    <dt><code>bufferStyle</code> <span class="xref">BufferEndCapStyle</span></dt>
+    <dd><p>バッファ処理で使用されるキャップ スタイル。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Features_FeatureOperator_BufferStyle_" data-uid="MapQuest.Features.FeatureOperator.BufferStyle*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_BufferStyle" data-uid="MapQuest.Features.FeatureOperator.BufferStyle">
+  BufferStyle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>バッファ処理で使用されるキャップ スタイルを取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BufferEndCapStyle BufferStyle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">BufferEndCapStyle</span></dt>
+    <dd><p>バッファ処理で使用されるキャップ スタイル。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Error_" data-uid="MapQuest.Features.FeatureOperator.Error*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Error" data-uid="MapQuest.Features.FeatureOperator.Error">
+  Error
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Features.FeatureOperator.html">FeatureOperator</a>
+内の直前の処理で発生したエラー情報を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Exception Error { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.FeatureOperator.html">FeatureOperator</a>
+内の直前の処理で発生したエラー情報。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Factory_" data-uid="MapQuest.Features.FeatureOperator.Factory*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Factory" data-uid="MapQuest.Features.FeatureOperator.Factory">
+  Factory
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>空間演算処理において <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の生成に使用される
+<a class="xref" href="MapQuest.Features.FeatureFactory.html">FeatureFactory</a> を取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FeatureFactory Factory { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.FeatureFactory.html">FeatureFactory</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Features.Feature.html">Feature</a> の生成に使用される
+<a class="xref" href="MapQuest.Features.FeatureFactory.html">FeatureFactory</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd>  <p>
+	指定された <a class="xref" href="MapQuest.Features.FeatureFactory.html">FeatureFactory</a> が 
+	null 参照 (Visual Basic では <b>Nothing</b>) です。
+</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Features_FeatureOperator_Buffer_" data-uid="MapQuest.Features.FeatureOperator.Buffer*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_Feature_System_Double_" data-uid="MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double)">
+  Buffer(Feature, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定された距離から、一定幅のエリアを計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Buffer(Feature feature, double distance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>バッファリングする <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>バッファリングする距離。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>バッファリングした <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_Feature_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>通常、バッファリングで得られるアウトラインには、カーブが含まれます。</p>
+<p>MapQuest.NET では、ラインのジオメトリを用いて、その形状にに近づけます。</p>
+<p>このとき、近似の程度はユーザーによってコントロールすることができます。</p>
+<p>MapQuest.NET では、4 分割した円を基準としたセグメント数（分割数）。</p>
+<p>このセグメント数を多く指定すると、より実際の形状に近づくことになります。</p>
+<p>セグメント数の既定値は 8 です。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Buffer_" data-uid="MapQuest.Features.FeatureOperator.Buffer*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_Feature_System_Double_System_Int32_" data-uid="MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double,System.Int32)">
+  Buffer(Feature, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定された距離とセグメント数から、一定幅のエリアを計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Buffer(Feature feature, double distance, int quadrantSegments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>バッファリングする <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>バッファリングする距離。</p>
+</dd>
+    <dt><code>quadrantSegments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>カーブのセグメント数。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>バッファリングした <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_Feature_System_Double_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>セグメント数については <a class="xref" href="MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_Feature_System_Double_">Buffer(Feature, double)</a> の解説を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Buffer_" data-uid="MapQuest.Features.FeatureOperator.Buffer*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_IFeatureIterator_System_Double_" data-uid="MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator,System.Double)">
+  Buffer(IFeatureIterator, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定された距離と複数の地物から、一定幅のエリアを計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Buffer(IFeatureIterator iterator, double distance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iterator</code> <a class="xref" href="MapQuest.Features.IFeatureIterator.html">IFeatureIterator</a></dt>
+    <dd><p>バッファリングする 1 つ以上の地物を含む <a class="xref" href="MapQuest.Features.IFeatureIterator.html">IFeatureIterator</a> 。</p>
+</dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>バッファリングする距離。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>バッファリングした <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Buffer_" data-uid="MapQuest.Features.FeatureOperator.Buffer*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_IFeatureIterator_System_Double_System_Int32_" data-uid="MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator,System.Double,System.Int32)">
+  Buffer(IFeatureIterator, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定された距離と複数の地物とセグメント数から、一定幅のエリアを計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Buffer(IFeatureIterator iterator, double distance, int quadrantSegments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iterator</code> <a class="xref" href="MapQuest.Features.IFeatureIterator.html">IFeatureIterator</a></dt>
+    <dd><p>バッファリングする 1 つ以上の地物を含む <a class="xref" href="MapQuest.Features.IFeatureIterator.html">IFeatureIterator</a> 。</p>
+</dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>バッファリングする距離。</p>
+</dd>
+    <dt><code>quadrantSegments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>カーブのセグメント数。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>バッファリングした <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_IFeatureIterator_System_Double_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>セグメント数については <a class="xref" href="MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_Feature_System_Double_">Buffer(Feature, double)</a> の解説を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Buffer_" data-uid="MapQuest.Features.FeatureOperator.Buffer*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_IFeatureList_System_Double_" data-uid="MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList,System.Double)">
+  Buffer(IFeatureList, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定された距離と複数の地物から、一定幅のエリアを計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Buffer(IFeatureList features, double distance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>features</code> <a class="xref" href="MapQuest.Features.IFeatureList.html">IFeatureList</a></dt>
+    <dd><p>バッファリングする 1 つ以上の地物を含む <a class="xref" href="MapQuest.Features.IFeatureList.html">IFeatureList</a> 。</p>
+</dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>バッファリングする距離。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>バッファリングした <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Buffer_" data-uid="MapQuest.Features.FeatureOperator.Buffer*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_IFeatureList_System_Double_System_Int32_" data-uid="MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList,System.Double,System.Int32)">
+  Buffer(IFeatureList, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定された距離と複数の地物とセグメント数から、一定幅のエリアを計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Buffer(IFeatureList features, double distance, int quadrantSegments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>features</code> <a class="xref" href="MapQuest.Features.IFeatureList.html">IFeatureList</a></dt>
+    <dd><p>バッファリングする 1 つ以上の地物を含む <a class="xref" href="MapQuest.Features.IFeatureList.html">IFeatureList</a> 。</p>
+</dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>バッファリングする距離。</p>
+</dd>
+    <dt><code>quadrantSegments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>カーブのセグメント数。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>バッファリングした <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_IFeatureList_System_Double_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>セグメント数については <a class="xref" href="MapQuest.Features.FeatureOperator.html#MapQuest_Features_FeatureOperator_Buffer_MapQuest_Features_Feature_System_Double_">Buffer(Feature, double)</a> の解説を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_ConvexHull_" data-uid="MapQuest.Features.FeatureOperator.ConvexHull*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_ConvexHull_MapQuest_Features_Feature_" data-uid="MapQuest.Features.FeatureOperator.ConvexHull(MapQuest.Features.Feature)">
+  ConvexHull(Feature)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定された地物の全てのポイントを含む、</p>
+<p>最も小さな凸面を持つ地物を計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature ConvexHull(Feature feature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>計算対象となるポイントを持つ <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>凸面を計算した <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Difference_" data-uid="MapQuest.Features.FeatureOperator.Difference*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Difference_MapQuest_Features_Feature_MapQuest_Features_Feature_" data-uid="MapQuest.Features.FeatureOperator.Difference(MapQuest.Features.Feature,MapQuest.Features.Feature)">
+  Difference(Feature, Feature)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>二つの地物形状の論理差を計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Difference(Feature feature1, Feature feature2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature1</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>論理差を求める <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+    <dt><code>feature2</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>差分となる <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>論理差を計算した <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Intersection_" data-uid="MapQuest.Features.FeatureOperator.Intersection*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Intersection_MapQuest_Features_Feature_MapQuest_Features_Feature_" data-uid="MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.Feature,MapQuest.Features.Feature)">
+  Intersection(Feature, Feature)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>二つの地物形状の交差を計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Intersection(Feature feature1, Feature feature2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature1</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>交差する <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト１。</p>
+</dd>
+    <dt><code>feature2</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>交差する <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト２。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>交差した <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Intersection_" data-uid="MapQuest.Features.FeatureOperator.Intersection*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Intersection_MapQuest_Features_IFeatureIterator_" data-uid="MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.IFeatureIterator)">
+  Intersection(IFeatureIterator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>複数の地物形状の交差を計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Intersection(IFeatureIterator iterator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iterator</code> <a class="xref" href="MapQuest.Features.IFeatureIterator.html">IFeatureIterator</a></dt>
+    <dd><p>計算対象となる 1 つ以上の地物を含む <a class="xref" href="MapQuest.Features.IFeatureIterator.html">IFeatureIterator</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>交差した <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Intersection_" data-uid="MapQuest.Features.FeatureOperator.Intersection*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Intersection_MapQuest_Features_IFeatureList_" data-uid="MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.IFeatureList)">
+  Intersection(IFeatureList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>複数の地物形状の交差を計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Intersection(IFeatureList features)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>features</code> <a class="xref" href="MapQuest.Features.IFeatureList.html">IFeatureList</a></dt>
+    <dd><p>交差する 1 つ以上の地物を含む <a class="xref" href="MapQuest.Features.IFeatureList.html">IFeatureList</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>交差した <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Relate_" data-uid="MapQuest.Features.FeatureOperator.Relate*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Relate_MapQuest_Features_Feature_MapQuest_Features_Feature_" data-uid="MapQuest.Features.FeatureOperator.Relate(MapQuest.Features.Feature,MapQuest.Features.Feature)">
+  Relate(Feature, Feature)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定された地物間の位置関係（リレーションシップ）を計算します。</p>
+<p><!-- Non Support 2005/01/20 -->
+	このメソッドは、現在サポートしていません。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntersectionMatrix Relate(Feature feature1, Feature feature2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature1</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>比較する <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト１。</p>
+</dd>
+    <dt><code>feature2</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>比較する <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト２。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IntersectionMatrix</span></dt>
+    <dd><p>二つの地物のリレーションシップが定義された
+<span class="xref">MapQuest.Topology.Geometries.IntersectionMatrix</span> オブジェクト。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Features_FeatureOperator_Relate_MapQuest_Features_Feature_MapQuest_Features_Feature__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><span class="xref">MapQuest.Topology.Geometries.IntersectionMatrix</span> は、
+<a href="http://www.opengis.org">http://www.opengis.org</a>
+に定義されている交差マトリックス
+「 Dimensionally-Extended 9 Intersection Matrix 」 ( DE-9IM ) に準拠しています。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_SymmetricDifference_" data-uid="MapQuest.Features.FeatureOperator.SymmetricDifference*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_SymmetricDifference_MapQuest_Features_Feature_MapQuest_Features_Feature_" data-uid="MapQuest.Features.FeatureOperator.SymmetricDifference(MapQuest.Features.Feature,MapQuest.Features.Feature)">
+  SymmetricDifference(Feature, Feature)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>二つの地物形状の排他的論理和を計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature SymmetricDifference(Feature feature1, Feature feature2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature1</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>排他的論理和を求める <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト１。</p>
+</dd>
+    <dt><code>feature2</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>排他的論理和を求める <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト２。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>排他的論理和を計算した <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Union_" data-uid="MapQuest.Features.FeatureOperator.Union*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Union_MapQuest_Features_Feature_MapQuest_Features_Feature_" data-uid="MapQuest.Features.FeatureOperator.Union(MapQuest.Features.Feature,MapQuest.Features.Feature)">
+  Union(Feature, Feature)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>二つの地物形状の結合を計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Union(Feature feature1, Feature feature2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature1</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>結合する <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト１。</p>
+</dd>
+    <dt><code>feature2</code> <a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>結合する <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> オブジェクト２。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>結合した <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Union_" data-uid="MapQuest.Features.FeatureOperator.Union*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Union_MapQuest_Features_IFeatureIterator_" data-uid="MapQuest.Features.FeatureOperator.Union(MapQuest.Features.IFeatureIterator)">
+  Union(IFeatureIterator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>複数の地物形状の結合を計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Union(IFeatureIterator iterator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iterator</code> <a class="xref" href="MapQuest.Features.IFeatureIterator.html">IFeatureIterator</a></dt>
+    <dd><p>結合する 1 つ以上の地物を含む <a class="xref" href="MapQuest.Features.IFeatureIterator.html">IFeatureIterator</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>結合した <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_FeatureOperator_Union_" data-uid="MapQuest.Features.FeatureOperator.Union*"></a>
+
+  <h3 id="MapQuest_Features_FeatureOperator_Union_MapQuest_Features_IFeatureList_" data-uid="MapQuest.Features.FeatureOperator.Union(MapQuest.Features.IFeatureList)">
+  Union(IFeatureList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>複数の地物形状の結合を計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Feature Union(IFeatureList features)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>features</code> <a class="xref" href="MapQuest.Features.IFeatureList.html">IFeatureList</a></dt>
+    <dd><p>結合する 1 つ以上の地物を含む <a class="xref" href="MapQuest.Features.IFeatureList.html">IFeatureList</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Features.Feature.html">Feature</a></dt>
+    <dd><p>結合した <a class="xref" href="MapQuest.Features.Feature.html">Feature</a> 。</p>
+<p>それ以外の場合は null 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

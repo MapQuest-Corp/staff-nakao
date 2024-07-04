@@ -1,0 +1,1672 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Serialization.SerializationInfoHelper
+  commentId: T:MapQuest.Serialization.SerializationInfoHelper
+  id: SerializationInfoHelper
+  parent: MapQuest.Serialization
+  children:
+  - MapQuest.Serialization.SerializationInfoHelper.#ctor(System.Runtime.Serialization.SerializationInfo)
+  - MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Boolean[])
+  - MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Collections.ArrayList)
+  - MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Collections.Specialized.HybridDictionary)
+  - MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Color)
+  - MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Color[])
+  - MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Drawing2D.Blend)
+  - MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Drawing2D.ColorBlend)
+  - MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.PointF)
+  - MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.PointF[])
+  - MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.RectangleF)
+  - MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.SizeF)
+  - MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Single[])
+  - MapQuest.Serialization.SerializationInfoHelper.Dispose
+  - MapQuest.Serialization.SerializationInfoHelper.GetArrayList(System.String)
+  - MapQuest.Serialization.SerializationInfoHelper.GetBlend(System.String)
+  - MapQuest.Serialization.SerializationInfoHelper.GetBooleanArray(System.String)
+  - MapQuest.Serialization.SerializationInfoHelper.GetColor(System.String)
+  - MapQuest.Serialization.SerializationInfoHelper.GetColorArray(System.String)
+  - MapQuest.Serialization.SerializationInfoHelper.GetColorBlend(System.String)
+  - MapQuest.Serialization.SerializationInfoHelper.GetHybridDictionary(System.String)
+  - MapQuest.Serialization.SerializationInfoHelper.GetPointF(System.String)
+  - MapQuest.Serialization.SerializationInfoHelper.GetPointFArray(System.String)
+  - MapQuest.Serialization.SerializationInfoHelper.GetRectangleF(System.String)
+  - MapQuest.Serialization.SerializationInfoHelper.GetSingleArray(System.String)
+  - MapQuest.Serialization.SerializationInfoHelper.GetSizeF(System.String)
+  - MapQuest.Serialization.SerializationInfoHelper.Info
+  langs:
+  - csharp
+  - vb
+  name: SerializationInfoHelper
+  nameWithType: SerializationInfoHelper
+  fullName: MapQuest.Serialization.SerializationInfoHelper
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: >-
+    <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> がサポートしていない型のデータを分解して保持します。
+            <xref href="MapQuest.Serialization.SerializationInfoHelper" data-throw-if-not-resolved="false"></xref> は <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> の
+            ラッパーです。実際のデータの保持は <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> が対応します。
+  example:
+  - >-
+    シリアライズの例。
+
+    <pre><code class="lang-csharp">public void GetObjectData(SerializationInfo info, StreamingContext context)
+
+    {	// シリアル化情報に、シリアル化に際して値に関連づけられる名称とその値を追加します
+    	using(SerializationInfoHelper helper = new SerializationInfoHelper(info))
+    	{
+    		// SingleValues プロパティの値を追加( null 値は追加できないので必要に合わせてチェックする)
+    		if (this.SingleValues != null) helper.AddValue("SingleValues", this.SingleValues);
+    		// PointFValue プロパティの値を追加
+    		helper.AddValue("PointFValue", this.PointFValue);
+    	}
+    }</code></pre>
+
+    デシリアライズの例。
+
+    <pre><code class="lang-csharp">public SerializeClass(SerializationInfo info, StreamingContext context)
+
+    {	// シリアル化情報から値を逆シリアル化された値を取得・設定する
+    	using (SerializationInfoHelper helper = new SerializationInfoHelper(info)) 
+    	{
+    		try {
+    			m_SingleValues = helper.GetSingleArray("SingleValues");
+    		} catch	{ // 例外処理 (シリアライズデータにないと判断して既定値を設定する)
+    			m_SingleValues = null;
+    		}
+    	}
+    }</code></pre>
+  syntax:
+    content: 'public class SerializationInfoHelper : IDisposable'
+    content.vb: Public Class SerializationInfoHelper Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Serialization.SerializationInfoHelper.#ctor(System.Runtime.Serialization.SerializationInfo)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.#ctor(System.Runtime.Serialization.SerializationInfo)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo)'
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: SerializationInfoHelper(SerializationInfo)
+  nameWithType: SerializationInfoHelper.SerializationInfoHelper(SerializationInfo)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.SerializationInfoHelper(System.Runtime.Serialization.SerializationInfo)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="MapQuest.Serialization.SerializationInfoHelper" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを作成します。
+  example: []
+  syntax:
+    content: public SerializationInfoHelper(SerializationInfo info)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: ''
+    content.vb: Public Sub New(info As SerializationInfo)
+  overload: MapQuest.Serialization.SerializationInfoHelper.#ctor*
+  nameWithType.vb: SerializationInfoHelper.New(SerializationInfo)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.New(System.Runtime.Serialization.SerializationInfo)
+  name.vb: New(SerializationInfo)
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Single[])
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Single[])
+  id: AddValue(System.String,System.Single[])
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, float[])
+  nameWithType: SerializationInfoHelper.AddValue(string, float[])
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue(string, float[])
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> に単精度浮動小数点値の配列を追加します。
+  example: []
+  syntax:
+    content: public void AddValue(string name, float[] values)
+    parameters:
+    - id: name
+      type: System.String
+      description: 後から逆シリアル化できるように、値に関連付けておく名前。
+    - id: values
+      type: System.Single[]
+      description: シリアル化する <xref href="System.Single" data-throw-if-not-resolved="false"></xref> 型の値。
+    content.vb: Public Sub AddValue(name As String, values As Single())
+  overload: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  nameWithType.vb: SerializationInfoHelper.AddValue(String, Single())
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.AddValue(String, Single())
+  name.vb: AddValue(String, Single())
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.PointF)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.PointF)
+  id: AddValue(System.String,System.Drawing.PointF)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, PointF)
+  nameWithType: SerializationInfoHelper.AddValue(string, PointF)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue(string, System.Drawing.PointF)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> に <xref href="System.Drawing.PointF" data-throw-if-not-resolved="false"></xref> を追加します。
+  example: []
+  syntax:
+    content: public void AddValue(string name, PointF value)
+    parameters:
+    - id: name
+      type: System.String
+      description: 後から逆シリアル化できるように、値に関連付けておく名前。
+    - id: value
+      type: System.Drawing.PointF
+      description: シリアル化する <xref href="System.Drawing.PointF" data-throw-if-not-resolved="false"></xref> 型の値。
+    content.vb: Public Sub AddValue(name As String, value As PointF)
+  overload: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  nameWithType.vb: SerializationInfoHelper.AddValue(String, PointF)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.AddValue(String, System.Drawing.PointF)
+  name.vb: AddValue(String, PointF)
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.PointF[])
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.PointF[])
+  id: AddValue(System.String,System.Drawing.PointF[])
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, PointF[])
+  nameWithType: SerializationInfoHelper.AddValue(string, PointF[])
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue(string, System.Drawing.PointF[])
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> に <xref href="System.Drawing.PointF" data-throw-if-not-resolved="false"></xref> の配列を追加します。
+  example: []
+  syntax:
+    content: public void AddValue(string name, PointF[] values)
+    parameters:
+    - id: name
+      type: System.String
+      description: 後から逆シリアル化できるように、値に関連付けておく名前。
+    - id: values
+      type: System.Drawing.PointF[]
+      description: シリアル化する <xref href="System.Drawing.PointF" data-throw-if-not-resolved="false"></xref> 型の配列。
+    content.vb: Public Sub AddValue(name As String, values As PointF())
+  overload: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  nameWithType.vb: SerializationInfoHelper.AddValue(String, PointF())
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.AddValue(String, System.Drawing.PointF())
+  name.vb: AddValue(String, PointF())
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.SizeF)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.SizeF)
+  id: AddValue(System.String,System.Drawing.SizeF)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, SizeF)
+  nameWithType: SerializationInfoHelper.AddValue(string, SizeF)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue(string, System.Drawing.SizeF)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> に <xref href="System.Drawing.SizeF" data-throw-if-not-resolved="false"></xref> を追加します。
+  example: []
+  syntax:
+    content: public void AddValue(string name, SizeF value)
+    parameters:
+    - id: name
+      type: System.String
+      description: 後から逆シリアル化できるように、値に関連付けておく名前。
+    - id: value
+      type: System.Drawing.SizeF
+      description: シリアル化する <xref href="System.Drawing.SizeF" data-throw-if-not-resolved="false"></xref> 型の値。
+    content.vb: Public Sub AddValue(name As String, value As SizeF)
+  overload: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  nameWithType.vb: SerializationInfoHelper.AddValue(String, SizeF)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.AddValue(String, System.Drawing.SizeF)
+  name.vb: AddValue(String, SizeF)
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.RectangleF)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.RectangleF)
+  id: AddValue(System.String,System.Drawing.RectangleF)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, RectangleF)
+  nameWithType: SerializationInfoHelper.AddValue(string, RectangleF)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue(string, System.Drawing.RectangleF)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> に <xref href="System.Drawing.RectangleF" data-throw-if-not-resolved="false"></xref> を追加します。
+  example: []
+  syntax:
+    content: public void AddValue(string name, RectangleF value)
+    parameters:
+    - id: name
+      type: System.String
+      description: 後から逆シリアル化できるように、値に関連付けておく名前。
+    - id: value
+      type: System.Drawing.RectangleF
+      description: シリアル化する <xref href="System.Drawing.RectangleF" data-throw-if-not-resolved="false"></xref> 型の値。
+    content.vb: Public Sub AddValue(name As String, value As RectangleF)
+  overload: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  nameWithType.vb: SerializationInfoHelper.AddValue(String, RectangleF)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.AddValue(String, System.Drawing.RectangleF)
+  name.vb: AddValue(String, RectangleF)
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Color)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Color)
+  id: AddValue(System.String,System.Drawing.Color)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, Color)
+  nameWithType: SerializationInfoHelper.AddValue(string, Color)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue(string, System.Drawing.Color)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> に <xref href="System.Drawing.Color" data-throw-if-not-resolved="false"></xref> を追加します。
+  example: []
+  syntax:
+    content: public void AddValue(string name, Color value)
+    parameters:
+    - id: name
+      type: System.String
+      description: 後から逆シリアル化できるように、値に関連付けておく名前。
+    - id: value
+      type: System.Drawing.Color
+      description: シリアル化する <xref href="System.Drawing.Color" data-throw-if-not-resolved="false"></xref> 型の値。
+    content.vb: Public Sub AddValue(name As String, value As Color)
+  overload: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  nameWithType.vb: SerializationInfoHelper.AddValue(String, Color)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.AddValue(String, System.Drawing.Color)
+  name.vb: AddValue(String, Color)
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Color[])
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Color[])
+  id: AddValue(System.String,System.Drawing.Color[])
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, Color[])
+  nameWithType: SerializationInfoHelper.AddValue(string, Color[])
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue(string, System.Drawing.Color[])
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> に <xref href="System.Drawing.Color" data-throw-if-not-resolved="false"></xref> の配列を追加します。
+  example: []
+  syntax:
+    content: public void AddValue(string name, Color[] values)
+    parameters:
+    - id: name
+      type: System.String
+      description: 後から逆シリアル化できるように、値に関連付けておく名前。
+    - id: values
+      type: System.Drawing.Color[]
+      description: シリアル化する <xref href="System.Drawing.Color" data-throw-if-not-resolved="false"></xref> 型の配列。
+    content.vb: Public Sub AddValue(name As String, values As Color())
+  overload: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  nameWithType.vb: SerializationInfoHelper.AddValue(String, Color())
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.AddValue(String, System.Drawing.Color())
+  name.vb: AddValue(String, Color())
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Drawing2D.Blend)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Drawing2D.Blend)
+  id: AddValue(System.String,System.Drawing.Drawing2D.Blend)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, Blend)
+  nameWithType: SerializationInfoHelper.AddValue(string, Blend)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue(string, System.Drawing.Drawing2D.Blend)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> に <xref href="System.Drawing.Drawing2D.Blend" data-throw-if-not-resolved="false"></xref> を追加します。
+  example: []
+  syntax:
+    content: public void AddValue(string name, Blend value)
+    parameters:
+    - id: name
+      type: System.String
+      description: 後から逆シリアル化できるように、値に関連付けておく名前。
+    - id: value
+      type: System.Drawing.Drawing2D.Blend
+      description: シリアル化する <xref href="System.Drawing.Drawing2D.Blend" data-throw-if-not-resolved="false"></xref> 型の値。
+    content.vb: Public Sub AddValue(name As String, value As Blend)
+  overload: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  nameWithType.vb: SerializationInfoHelper.AddValue(String, Blend)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.AddValue(String, System.Drawing.Drawing2D.Blend)
+  name.vb: AddValue(String, Blend)
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Drawing2D.ColorBlend)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Drawing2D.ColorBlend)
+  id: AddValue(System.String,System.Drawing.Drawing2D.ColorBlend)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, ColorBlend)
+  nameWithType: SerializationInfoHelper.AddValue(string, ColorBlend)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue(string, System.Drawing.Drawing2D.ColorBlend)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> に <xref href="System.Drawing.Drawing2D.ColorBlend" data-throw-if-not-resolved="false"></xref> を追加します。
+  example: []
+  syntax:
+    content: public void AddValue(string name, ColorBlend value)
+    parameters:
+    - id: name
+      type: System.String
+      description: 後から逆シリアル化できるように、値に関連付けておく名前。
+    - id: value
+      type: System.Drawing.Drawing2D.ColorBlend
+      description: シリアル化する <xref href="System.Drawing.Drawing2D.ColorBlend" data-throw-if-not-resolved="false"></xref> 型の値。
+    content.vb: Public Sub AddValue(name As String, value As ColorBlend)
+  overload: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  nameWithType.vb: SerializationInfoHelper.AddValue(String, ColorBlend)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.AddValue(String, System.Drawing.Drawing2D.ColorBlend)
+  name.vb: AddValue(String, ColorBlend)
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Boolean[])
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Boolean[])
+  id: AddValue(System.String,System.Boolean[])
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, bool[])
+  nameWithType: SerializationInfoHelper.AddValue(string, bool[])
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue(string, bool[])
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> に <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> の配列を追加します。
+  example: []
+  syntax:
+    content: public void AddValue(string name, bool[] values)
+    parameters:
+    - id: name
+      type: System.String
+      description: 後から逆シリアル化できるように、値に関連付けておく名前。
+    - id: values
+      type: System.Boolean[]
+      description: シリアル化する <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> 型の配列。
+    content.vb: Public Sub AddValue(name As String, values As Boolean())
+  overload: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  nameWithType.vb: SerializationInfoHelper.AddValue(String, Boolean())
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.AddValue(String, Boolean())
+  name.vb: AddValue(String, Boolean())
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Collections.ArrayList)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Collections.ArrayList)
+  id: AddValue(System.String,System.Collections.ArrayList)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, ArrayList)
+  nameWithType: SerializationInfoHelper.AddValue(string, ArrayList)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue(string, System.Collections.ArrayList)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> に <xref href="System.Collections.ArrayList" data-throw-if-not-resolved="false"></xref> を追加します。
+  remarks: このメソッドは現在サポートしていません。
+  example: []
+  syntax:
+    content: public void AddValue(string name, ArrayList values)
+    parameters:
+    - id: name
+      type: System.String
+      description: 後から逆シリアル化できるように、値に関連付けておく名前。
+    - id: values
+      type: System.Collections.ArrayList
+      description: シリアル化する <xref href="System.Collections.ArrayList" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub AddValue(name As String, values As ArrayList)
+  overload: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  nameWithType.vb: SerializationInfoHelper.AddValue(String, ArrayList)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.AddValue(String, System.Collections.ArrayList)
+  name.vb: AddValue(String, ArrayList)
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Collections.Specialized.HybridDictionary)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Collections.Specialized.HybridDictionary)
+  id: AddValue(System.String,System.Collections.Specialized.HybridDictionary)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: AddValue(string, HybridDictionary)
+  nameWithType: SerializationInfoHelper.AddValue(string, HybridDictionary)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue(string, System.Collections.Specialized.HybridDictionary)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> に <xref href="System.Collections.Specialized.HybridDictionary" data-throw-if-not-resolved="false"></xref> を追加します。
+  remarks: このメソッドは現在サポートしていません。
+  example: []
+  syntax:
+    content: public void AddValue(string name, HybridDictionary values)
+    parameters:
+    - id: name
+      type: System.String
+      description: 後から逆シリアル化できるように、値に関連付けておく名前。
+    - id: values
+      type: System.Collections.Specialized.HybridDictionary
+      description: シリアル化する <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> 型の配列。
+    content.vb: Public Sub AddValue(name As String, values As HybridDictionary)
+  overload: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  nameWithType.vb: SerializationInfoHelper.AddValue(String, HybridDictionary)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.AddValue(String, System.Collections.Specialized.HybridDictionary)
+  name.vb: AddValue(String, HybridDictionary)
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetSingleArray(System.String)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.GetSingleArray(System.String)
+  id: GetSingleArray(System.String)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSingleArray(string)
+  nameWithType: SerializationInfoHelper.GetSingleArray(string)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetSingleArray(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> から単精度浮動小数点値の配列を取得します。
+  example: []
+  syntax:
+    content: public float[] GetSingleArray(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得する値の名前。
+    return:
+      type: System.Single[]
+      description: <code class="paramref">name</code> に関連付けられた単精度浮動小数点値の配列。
+    content.vb: Public Function GetSingleArray(name As String) As Single()
+  overload: MapQuest.Serialization.SerializationInfoHelper.GetSingleArray*
+  nameWithType.vb: SerializationInfoHelper.GetSingleArray(String)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.GetSingleArray(String)
+  name.vb: GetSingleArray(String)
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetPointF(System.String)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.GetPointF(System.String)
+  id: GetPointF(System.String)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: GetPointF(string)
+  nameWithType: SerializationInfoHelper.GetPointF(string)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetPointF(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> から <xref href="System.Drawing.PointF" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: public PointF GetPointF(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得する値の名前。
+    return:
+      type: System.Drawing.PointF
+      description: <code class="paramref">name</code> に関連付けられた <xref href="System.Drawing.PointF" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function GetPointF(name As String) As PointF
+  overload: MapQuest.Serialization.SerializationInfoHelper.GetPointF*
+  nameWithType.vb: SerializationInfoHelper.GetPointF(String)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.GetPointF(String)
+  name.vb: GetPointF(String)
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetPointFArray(System.String)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.GetPointFArray(System.String)
+  id: GetPointFArray(System.String)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: GetPointFArray(string)
+  nameWithType: SerializationInfoHelper.GetPointFArray(string)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetPointFArray(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> から <xref href="System.Drawing.PointF" data-throw-if-not-resolved="false"></xref> の配列を取得します。
+  example: []
+  syntax:
+    content: public PointF[] GetPointFArray(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得する値の名前。
+    return:
+      type: System.Drawing.PointF[]
+      description: <code class="paramref">name</code> に関連付けられた <xref href="System.Drawing.PointF" data-throw-if-not-resolved="false"></xref> の配列。
+    content.vb: Public Function GetPointFArray(name As String) As PointF()
+  overload: MapQuest.Serialization.SerializationInfoHelper.GetPointFArray*
+  nameWithType.vb: SerializationInfoHelper.GetPointFArray(String)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.GetPointFArray(String)
+  name.vb: GetPointFArray(String)
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetSizeF(System.String)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.GetSizeF(System.String)
+  id: GetSizeF(System.String)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSizeF(string)
+  nameWithType: SerializationInfoHelper.GetSizeF(string)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetSizeF(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> から <xref href="System.Drawing.SizeF" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: public SizeF GetSizeF(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得する値の名前。
+    return:
+      type: System.Drawing.SizeF
+      description: <code class="paramref">name</code> に関連付けられた <xref href="System.Drawing.SizeF" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function GetSizeF(name As String) As SizeF
+  overload: MapQuest.Serialization.SerializationInfoHelper.GetSizeF*
+  nameWithType.vb: SerializationInfoHelper.GetSizeF(String)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.GetSizeF(String)
+  name.vb: GetSizeF(String)
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetRectangleF(System.String)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.GetRectangleF(System.String)
+  id: GetRectangleF(System.String)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: GetRectangleF(string)
+  nameWithType: SerializationInfoHelper.GetRectangleF(string)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetRectangleF(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> から <xref href="System.Drawing.RectangleF" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: public RectangleF GetRectangleF(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得する値の名前。
+    return:
+      type: System.Drawing.RectangleF
+      description: <code class="paramref">name</code> に関連付けられた <xref href="System.Drawing.RectangleF" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function GetRectangleF(name As String) As RectangleF
+  overload: MapQuest.Serialization.SerializationInfoHelper.GetRectangleF*
+  nameWithType.vb: SerializationInfoHelper.GetRectangleF(String)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.GetRectangleF(String)
+  name.vb: GetRectangleF(String)
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetColor(System.String)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.GetColor(System.String)
+  id: GetColor(System.String)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: GetColor(string)
+  nameWithType: SerializationInfoHelper.GetColor(string)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetColor(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> から <xref href="System.Drawing.Color" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: public Color GetColor(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得する値の名前。
+    return:
+      type: System.Drawing.Color
+      description: <code class="paramref">name</code> に関連付けられた <xref href="System.Drawing.Color" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function GetColor(name As String) As Color
+  overload: MapQuest.Serialization.SerializationInfoHelper.GetColor*
+  nameWithType.vb: SerializationInfoHelper.GetColor(String)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.GetColor(String)
+  name.vb: GetColor(String)
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetColorArray(System.String)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.GetColorArray(System.String)
+  id: GetColorArray(System.String)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: GetColorArray(string)
+  nameWithType: SerializationInfoHelper.GetColorArray(string)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetColorArray(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> から <xref href="System.Drawing.Color" data-throw-if-not-resolved="false"></xref> の配列を取得します。
+  example: []
+  syntax:
+    content: public Color[] GetColorArray(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得する値の名前。
+    return:
+      type: System.Drawing.Color[]
+      description: <code class="paramref">name</code> に関連付けられた <xref href="System.Drawing.Color" data-throw-if-not-resolved="false"></xref> の配列。
+    content.vb: Public Function GetColorArray(name As String) As Color()
+  overload: MapQuest.Serialization.SerializationInfoHelper.GetColorArray*
+  nameWithType.vb: SerializationInfoHelper.GetColorArray(String)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.GetColorArray(String)
+  name.vb: GetColorArray(String)
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetBlend(System.String)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.GetBlend(System.String)
+  id: GetBlend(System.String)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: GetBlend(string)
+  nameWithType: SerializationInfoHelper.GetBlend(string)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetBlend(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> から <xref href="System.Drawing.Drawing2D.Blend" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: public Blend GetBlend(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得する値の名前。
+    return:
+      type: System.Drawing.Drawing2D.Blend
+      description: <code class="paramref">name</code> に関連付けられた <xref href="System.Drawing.Drawing2D.Blend" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function GetBlend(name As String) As Blend
+  overload: MapQuest.Serialization.SerializationInfoHelper.GetBlend*
+  nameWithType.vb: SerializationInfoHelper.GetBlend(String)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.GetBlend(String)
+  name.vb: GetBlend(String)
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetColorBlend(System.String)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.GetColorBlend(System.String)
+  id: GetColorBlend(System.String)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: GetColorBlend(string)
+  nameWithType: SerializationInfoHelper.GetColorBlend(string)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetColorBlend(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> から <xref href="System.Drawing.Drawing2D.ColorBlend" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: public ColorBlend GetColorBlend(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得する値の名前。
+    return:
+      type: System.Drawing.Drawing2D.ColorBlend
+      description: <code class="paramref">name</code> に関連付けられた <xref href="System.Drawing.Drawing2D.ColorBlend" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function GetColorBlend(name As String) As ColorBlend
+  overload: MapQuest.Serialization.SerializationInfoHelper.GetColorBlend*
+  nameWithType.vb: SerializationInfoHelper.GetColorBlend(String)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.GetColorBlend(String)
+  name.vb: GetColorBlend(String)
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetBooleanArray(System.String)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.GetBooleanArray(System.String)
+  id: GetBooleanArray(System.String)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: GetBooleanArray(string)
+  nameWithType: SerializationInfoHelper.GetBooleanArray(string)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetBooleanArray(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> から <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> の配列を取得します。
+  example: []
+  syntax:
+    content: public bool[] GetBooleanArray(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得する値の名前。
+    return:
+      type: System.Boolean[]
+      description: <code class="paramref">name</code> に関連付けられた <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> の配列。
+    content.vb: Public Function GetBooleanArray(name As String) As Boolean()
+  overload: MapQuest.Serialization.SerializationInfoHelper.GetBooleanArray*
+  nameWithType.vb: SerializationInfoHelper.GetBooleanArray(String)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.GetBooleanArray(String)
+  name.vb: GetBooleanArray(String)
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetArrayList(System.String)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.GetArrayList(System.String)
+  id: GetArrayList(System.String)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: GetArrayList(string)
+  nameWithType: SerializationInfoHelper.GetArrayList(string)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetArrayList(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> から <xref href="System.Collections.ArrayList" data-throw-if-not-resolved="false"></xref> を取得します。
+  remarks: このメソッドは現在サポートしていません。
+  example: []
+  syntax:
+    content: public ArrayList GetArrayList(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得する値の名前。
+    return:
+      type: System.Collections.ArrayList
+      description: <code class="paramref">name</code> に関連付けられた <xref href="System.Collections.ArrayList" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function GetArrayList(name As String) As ArrayList
+  overload: MapQuest.Serialization.SerializationInfoHelper.GetArrayList*
+  nameWithType.vb: SerializationInfoHelper.GetArrayList(String)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.GetArrayList(String)
+  name.vb: GetArrayList(String)
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetHybridDictionary(System.String)
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.GetHybridDictionary(System.String)
+  id: GetHybridDictionary(System.String)
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: GetHybridDictionary(string)
+  nameWithType: SerializationInfoHelper.GetHybridDictionary(string)
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetHybridDictionary(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> から <xref href="System.Collections.Specialized.HybridDictionary" data-throw-if-not-resolved="false"></xref> を取得します。
+  remarks: このメソッドは現在サポートしていません。
+  example: []
+  syntax:
+    content: public HybridDictionary GetHybridDictionary(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 取得する値の名前。
+    return:
+      type: System.Collections.Specialized.HybridDictionary
+      description: <code class="paramref">name</code> に関連付けられたm_info.GetValue(name + string.Format("-{0}", index),typeof(object)); <xref href="System.Collections.Specialized.HybridDictionary" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Function GetHybridDictionary(name As String) As HybridDictionary
+  overload: MapQuest.Serialization.SerializationInfoHelper.GetHybridDictionary*
+  nameWithType.vb: SerializationInfoHelper.GetHybridDictionary(String)
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.GetHybridDictionary(String)
+  name.vb: GetHybridDictionary(String)
+- uid: MapQuest.Serialization.SerializationInfoHelper.Dispose
+  commentId: M:MapQuest.Serialization.SerializationInfoHelper.Dispose
+  id: Dispose
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SerializationInfoHelper.Dispose()
+  fullName: MapQuest.Serialization.SerializationInfoHelper.Dispose()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: >-
+    この <xref href="MapQuest.Serialization.SerializationInfoHelper" data-throw-if-not-resolved="false"></xref> 
+
+    オブジェクトによって使用されているすべてのリソースを解放します。
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: MapQuest.Serialization.SerializationInfoHelper.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: MapQuest.Serialization.SerializationInfoHelper.Info
+  commentId: P:MapQuest.Serialization.SerializationInfoHelper.Info
+  id: Info
+  parent: MapQuest.Serialization.SerializationInfoHelper
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: SerializationInfoHelper.Info
+  fullName: MapQuest.Serialization.SerializationInfoHelper.Info
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: シリアライズ情報保存オブジェクトを取得または設定します。
+  example: []
+  syntax:
+    content: public SerializationInfo Info { get; }
+    parameters: []
+    return:
+      type: System.Runtime.Serialization.SerializationInfo
+      description: シリアライズ情報保存オブジェクト。
+    content.vb: Public ReadOnly Property Info As SerializationInfo
+  overload: MapQuest.Serialization.SerializationInfoHelper.Info*
+references:
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: MapQuest.Serialization.SerializationInfoHelper
+  commentId: T:MapQuest.Serialization.SerializationInfoHelper
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html
+  name: SerializationInfoHelper
+  nameWithType: SerializationInfoHelper
+  fullName: MapQuest.Serialization.SerializationInfoHelper
+- uid: MapQuest.Serialization
+  commentId: N:MapQuest.Serialization
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Serialization
+  nameWithType: MapQuest.Serialization
+  fullName: MapQuest.Serialization
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Serialization
+    name: Serialization
+    isExternal: true
+    href: MapQuest.Serialization.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Serialization
+    name: Serialization
+    isExternal: true
+    href: MapQuest.Serialization.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Serialization.SerializationInfoHelper.#ctor*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.#ctor
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper__ctor_System_Runtime_Serialization_SerializationInfo_
+  name: SerializationInfoHelper
+  nameWithType: SerializationInfoHelper.SerializationInfoHelper
+  fullName: MapQuest.Serialization.SerializationInfoHelper.SerializationInfoHelper
+  nameWithType.vb: SerializationInfoHelper.New
+  fullName.vb: MapQuest.Serialization.SerializationInfoHelper.New
+  name.vb: New
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MapQuest.Serialization.SerializationInfoHelper.AddValue*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.AddValue
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Single___
+  name: AddValue
+  nameWithType: SerializationInfoHelper.AddValue
+  fullName: MapQuest.Serialization.SerializationInfoHelper.AddValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: System.Drawing.PointF
+  commentId: T:System.Drawing.PointF
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.pointf
+  name: PointF
+  nameWithType: PointF
+  fullName: System.Drawing.PointF
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+- uid: System.Drawing.PointF[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.pointf
+  name: PointF[]
+  nameWithType: PointF[]
+  fullName: System.Drawing.PointF[]
+  nameWithType.vb: PointF()
+  fullName.vb: System.Drawing.PointF()
+  name.vb: PointF()
+  spec.csharp:
+  - uid: System.Drawing.PointF
+    name: PointF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.pointf
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Drawing.PointF
+    name: PointF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.pointf
+  - name: (
+  - name: )
+- uid: System.Drawing.SizeF
+  commentId: T:System.Drawing.SizeF
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.sizef
+  name: SizeF
+  nameWithType: SizeF
+  fullName: System.Drawing.SizeF
+- uid: System.Drawing.RectangleF
+  commentId: T:System.Drawing.RectangleF
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.rectanglef
+  name: RectangleF
+  nameWithType: RectangleF
+  fullName: System.Drawing.RectangleF
+- uid: System.Drawing.Color
+  commentId: T:System.Drawing.Color
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  name: Color
+  nameWithType: Color
+  fullName: System.Drawing.Color
+- uid: System.Drawing.Color[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  name: Color[]
+  nameWithType: Color[]
+  fullName: System.Drawing.Color[]
+  nameWithType.vb: Color()
+  fullName.vb: System.Drawing.Color()
+  name.vb: Color()
+  spec.csharp:
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: (
+  - name: )
+- uid: System.Drawing.Drawing2D.Blend
+  commentId: T:System.Drawing.Drawing2D.Blend
+  parent: System.Drawing.Drawing2D
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.blend
+  name: Blend
+  nameWithType: Blend
+  fullName: System.Drawing.Drawing2D.Blend
+- uid: System.Drawing.Drawing2D
+  commentId: N:System.Drawing.Drawing2D
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Drawing.Drawing2D
+  nameWithType: System.Drawing.Drawing2D
+  fullName: System.Drawing.Drawing2D
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+  - name: .
+  - uid: System.Drawing.Drawing2D
+    name: Drawing2D
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+  - name: .
+  - uid: System.Drawing.Drawing2D
+    name: Drawing2D
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d
+- uid: System.Drawing.Drawing2D.ColorBlend
+  commentId: T:System.Drawing.Drawing2D.ColorBlend
+  parent: System.Drawing.Drawing2D
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.colorblend
+  name: ColorBlend
+  nameWithType: ColorBlend
+  fullName: System.Drawing.Drawing2D.ColorBlend
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Boolean[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool[]
+  nameWithType: bool[]
+  fullName: bool[]
+  nameWithType.vb: Boolean()
+  fullName.vb: Boolean()
+  name.vb: Boolean()
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList
+  commentId: T:System.Collections.ArrayList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist
+  name: ArrayList
+  nameWithType: ArrayList
+  fullName: System.Collections.ArrayList
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Collections.Specialized.HybridDictionary
+  commentId: T:System.Collections.Specialized.HybridDictionary
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.hybriddictionary
+  name: HybridDictionary
+  nameWithType: HybridDictionary
+  fullName: System.Collections.Specialized.HybridDictionary
+- uid: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetSingleArray*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.GetSingleArray
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_GetSingleArray_System_String_
+  name: GetSingleArray
+  nameWithType: SerializationInfoHelper.GetSingleArray
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetSingleArray
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetPointF*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.GetPointF
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_GetPointF_System_String_
+  name: GetPointF
+  nameWithType: SerializationInfoHelper.GetPointF
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetPointF
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetPointFArray*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.GetPointFArray
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_GetPointFArray_System_String_
+  name: GetPointFArray
+  nameWithType: SerializationInfoHelper.GetPointFArray
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetPointFArray
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetSizeF*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.GetSizeF
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_GetSizeF_System_String_
+  name: GetSizeF
+  nameWithType: SerializationInfoHelper.GetSizeF
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetSizeF
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetRectangleF*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.GetRectangleF
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_GetRectangleF_System_String_
+  name: GetRectangleF
+  nameWithType: SerializationInfoHelper.GetRectangleF
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetRectangleF
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetColor*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.GetColor
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_GetColor_System_String_
+  name: GetColor
+  nameWithType: SerializationInfoHelper.GetColor
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetColor
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetColorArray*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.GetColorArray
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_GetColorArray_System_String_
+  name: GetColorArray
+  nameWithType: SerializationInfoHelper.GetColorArray
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetColorArray
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetBlend*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.GetBlend
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_GetBlend_System_String_
+  name: GetBlend
+  nameWithType: SerializationInfoHelper.GetBlend
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetBlend
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetColorBlend*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.GetColorBlend
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_GetColorBlend_System_String_
+  name: GetColorBlend
+  nameWithType: SerializationInfoHelper.GetColorBlend
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetColorBlend
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetBooleanArray*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.GetBooleanArray
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_GetBooleanArray_System_String_
+  name: GetBooleanArray
+  nameWithType: SerializationInfoHelper.GetBooleanArray
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetBooleanArray
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetArrayList*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.GetArrayList
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_GetArrayList_System_String_
+  name: GetArrayList
+  nameWithType: SerializationInfoHelper.GetArrayList
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetArrayList
+- uid: MapQuest.Serialization.SerializationInfoHelper.GetHybridDictionary*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.GetHybridDictionary
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_GetHybridDictionary_System_String_
+  name: GetHybridDictionary
+  nameWithType: SerializationInfoHelper.GetHybridDictionary
+  fullName: MapQuest.Serialization.SerializationInfoHelper.GetHybridDictionary
+- uid: MapQuest.Serialization.SerializationInfoHelper.Dispose*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.Dispose
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_Dispose
+  name: Dispose
+  nameWithType: SerializationInfoHelper.Dispose
+  fullName: MapQuest.Serialization.SerializationInfoHelper.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: MapQuest.Serialization.SerializationInfoHelper.Info*
+  commentId: Overload:MapQuest.Serialization.SerializationInfoHelper.Info
+  isExternal: true
+  href: MapQuest.Serialization.SerializationInfoHelper.html#MapQuest_Serialization_SerializationInfoHelper_Info
+  name: Info
+  nameWithType: SerializationInfoHelper.Info
+  fullName: MapQuest.Serialization.SerializationInfoHelper.Info

@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.SpatialIndexers
+  commentId: N:MapQuest.Features.SpatialIndexers
+  id: MapQuest.Features.SpatialIndexers
+  children:
+  - MapQuest.Features.SpatialIndexers.HyperBox
+  - MapQuest.Features.SpatialIndexers.HyperPoint
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  - MapQuest.Features.SpatialIndexers.IndexNode
+  - MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  - MapQuest.Features.SpatialIndexers.LeafNode
+  - MapQuest.Features.SpatialIndexers.MemoryPageFile
+  - MapQuest.Features.SpatialIndexers.Node
+  - MapQuest.Features.SpatialIndexers.PageFile
+  - MapQuest.Features.SpatialIndexers.PageFileException
+  - MapQuest.Features.SpatialIndexers.PersistentPageFile
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer
+  - MapQuest.Features.SpatialIndexers.SpatialIndexerException
+  langs:
+  - csharp
+  - vb
+  name: MapQuest.Features.SpatialIndexers
+  nameWithType: MapQuest.Features.SpatialIndexers
+  fullName: MapQuest.Features.SpatialIndexers
+  type: Namespace
+  assemblies:
+  - MapQuest.Features
+references:
+- uid: MapQuest.Features.SpatialIndexers.HyperBox
+  commentId: T:MapQuest.Features.SpatialIndexers.HyperBox
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  name: HyperBox
+  nameWithType: HyperBox
+  fullName: MapQuest.Features.SpatialIndexers.HyperBox
+- uid: MapQuest.Features.SpatialIndexers.HyperPoint
+  commentId: T:MapQuest.Features.SpatialIndexers.HyperPoint
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.HyperPoint.html
+  name: HyperPoint
+  nameWithType: HyperPoint
+  fullName: MapQuest.Features.SpatialIndexers.HyperPoint
+- uid: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  commentId: T:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.html
+  name: IndexedFeatureCollection
+  nameWithType: IndexedFeatureCollection
+  fullName: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+- uid: MapQuest.Features.SpatialIndexers.IndexNode
+  commentId: T:MapQuest.Features.SpatialIndexers.IndexNode
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.IndexNode.html
+  name: IndexNode
+  nameWithType: IndexNode
+  fullName: MapQuest.Features.SpatialIndexers.IndexNode
+- uid: MapQuest.Features.SpatialIndexers.Node
+  commentId: T:MapQuest.Features.SpatialIndexers.Node
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html
+  name: Node
+  nameWithType: Node
+  fullName: MapQuest.Features.SpatialIndexers.Node
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  commentId: T:MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html
+  name: ISpatialIndexer
+  nameWithType: ISpatialIndexer
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+- uid: MapQuest.Features.SpatialIndexers.LeafNode
+  commentId: T:MapQuest.Features.SpatialIndexers.LeafNode
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.LeafNode.html
+  name: LeafNode
+  nameWithType: LeafNode
+  fullName: MapQuest.Features.SpatialIndexers.LeafNode
+- uid: MapQuest.Features.SpatialIndexers.MemoryPageFile
+  commentId: T:MapQuest.Features.SpatialIndexers.MemoryPageFile
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.MemoryPageFile.html
+  name: MemoryPageFile
+  nameWithType: MemoryPageFile
+  fullName: MapQuest.Features.SpatialIndexers.MemoryPageFile
+- uid: MapQuest.Features.SpatialIndexers.PageFile
+  commentId: T:MapQuest.Features.SpatialIndexers.PageFile
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html
+  name: PageFile
+  nameWithType: PageFile
+  fullName: MapQuest.Features.SpatialIndexers.PageFile
+- uid: MapQuest.Features.SpatialIndexers.PageFileException
+  commentId: T:MapQuest.Features.SpatialIndexers.PageFileException
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFileException.html
+  name: PageFileException
+  nameWithType: PageFileException
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException
+- uid: MapQuest.Features.SpatialIndexers.PersistentPageFile
+  commentId: T:MapQuest.Features.SpatialIndexers.PersistentPageFile
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PersistentPageFile.html
+  name: PersistentPageFile
+  nameWithType: PersistentPageFile
+  fullName: MapQuest.Features.SpatialIndexers.PersistentPageFile
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  commentId: T:MapQuest.Features.SpatialIndexers.SpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexer.html
+  name: SpatialIndexer
+  nameWithType: SpatialIndexer
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexerException
+  commentId: T:MapQuest.Features.SpatialIndexers.SpatialIndexerException
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexerException.html
+  name: SpatialIndexerException
+  nameWithType: SpatialIndexerException
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexerException
+- uid: MapQuest.Features.SpatialIndexers
+  commentId: N:MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features.SpatialIndexers
+  nameWithType: MapQuest.Features.SpatialIndexers
+  fullName: MapQuest.Features.SpatialIndexers
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.SpatialIndexers
+    name: SpatialIndexers
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.SpatialIndexers
+    name: SpatialIndexers
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.html

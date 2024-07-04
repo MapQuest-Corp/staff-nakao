@@ -1,0 +1,1367 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D
+  commentId: T:MapQuest.Coordinates.FlaggedCoordinate3D
+  id: FlaggedCoordinate3D
+  parent: MapQuest.Coordinates
+  children:
+  - MapQuest.Coordinates.FlaggedCoordinate3D.#ctor
+  - MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(MapQuest.Coordinates.Coordinate3D)
+  - MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(MapQuest.Coordinates.FlaggedCoordinate3D)
+  - MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(System.Double,System.Double,System.Double)
+  - MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Coordinates.FlaggedCoordinate3D.Clone
+  - MapQuest.Coordinates.FlaggedCoordinate3D.CoordinateType
+  - MapQuest.Coordinates.FlaggedCoordinate3D.Equals(System.Object)
+  - MapQuest.Coordinates.FlaggedCoordinate3D.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Coordinates.FlaggedCoordinate3D.Visible
+  langs:
+  - csharp
+  - vb
+  name: FlaggedCoordinate3D
+  nameWithType: FlaggedCoordinate3D
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D
+  type: Class
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	あるポイントが可視状態かどうかの情報が付与された 3 次元座標管理をカプセル化したインターフェースを提供します。\r\n\r\n</p>"
+  remarks: このインターフェースにはあるポイントが可視状態かどうかを判定するプロパティが用意されています。
+  example: []
+  syntax:
+    content: 'public class FlaggedCoordinate3D : Coordinate3D, ICoordinatePoint, ICloneable, IComparable, ISerializable'
+    content.vb: Public Class FlaggedCoordinate3D Inherits Coordinate3D Implements ICoordinatePoint, ICloneable, IComparable, ISerializable
+  inheritance:
+  - System.Object
+  - MapQuest.Coordinates.Coordinate
+  - MapQuest.Coordinates.Coordinate3D
+  implements:
+  - MapQuest.Coordinates.ICoordinatePoint
+  - System.ICloneable
+  - System.IComparable
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - MapQuest.Coordinates.Coordinate3D.SetCoordinate(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Coordinate3D.CompareTo(System.Object)
+  - MapQuest.Coordinates.Coordinate3D.ToString
+  - MapQuest.Coordinates.Coordinate3D.MakePrecise(MapQuest.Coordinates.PrecisionModel)
+  - MapQuest.Coordinates.Coordinate3D.Distance(MapQuest.Coordinates.Coordinate3D)
+  - MapQuest.Coordinates.Coordinate3D.GetHashCode
+  - MapQuest.Coordinates.Coordinate3D.GetOrdinate(System.Int32)
+  - MapQuest.Coordinates.Coordinate3D.SetOrdinate(System.Int32,System.Double)
+  - MapQuest.Coordinates.Coordinate3D.Z
+  - MapQuest.Coordinates.Coordinate3D.Dimension
+  - MapQuest.Coordinates.Coordinate.SetCoordinate(System.Single,System.Single)
+  - MapQuest.Coordinates.Coordinate.SetCoordinate(System.Double,System.Double)
+  - MapQuest.Coordinates.Coordinate.Distance(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Coordinate.Rotate(System.Double,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Coordinate.Rotate(System.Double,System.Double,System.Double)
+  - MapQuest.Coordinates.Coordinate.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+  - MapQuest.Coordinates.Coordinate.X
+  - MapQuest.Coordinates.Coordinate.Y
+  - MapQuest.Coordinates.Coordinate.Ordinate
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.#ctor
+  commentId: M:MapQuest.Coordinates.FlaggedCoordinate3D.#ctor
+  id: '#ctor'
+  parent: MapQuest.Coordinates.FlaggedCoordinate3D
+  langs:
+  - csharp
+  - vb
+  name: FlaggedCoordinate3D()
+  nameWithType: FlaggedCoordinate3D.FlaggedCoordinate3D()
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.FlaggedCoordinate3D()
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	引数の指定がない場合X座標、Y座標，Z座標を(0.0 , 0.0 , 0.0)として<xref href=\"MapQuest.Coordinates.FlaggedCoordinate3D?text=FlaggedCoordinate3D\" data-throw-if-not-resolved=\"false\"></xref>クラスの新しいインスタンスを初期化します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public FlaggedCoordinate3D()
+    content.vb: Public Sub New()
+  overload: MapQuest.Coordinates.FlaggedCoordinate3D.#ctor*
+  nameWithType.vb: FlaggedCoordinate3D.New()
+  fullName.vb: MapQuest.Coordinates.FlaggedCoordinate3D.New()
+  name.vb: New()
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double)'
+  parent: MapQuest.Coordinates.FlaggedCoordinate3D
+  langs:
+  - csharp
+  - vb
+  name: FlaggedCoordinate3D(double, double, double)
+  nameWithType: FlaggedCoordinate3D.FlaggedCoordinate3D(double, double, double)
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.FlaggedCoordinate3D(double, double, double)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	引数を(x,y,z)として<xref href=\"MapQuest.Coordinates.FlaggedCoordinate3D?text=FlaggedCoordinate3D\" data-throw-if-not-resolved=\"false\"></xref>クラスの新しいインスタンスを初期化します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public FlaggedCoordinate3D(double x, double y, double z)
+    parameters:
+    - id: x
+      type: System.Double
+      description: X座標
+    - id: y
+      type: System.Double
+      description: Y座標
+    - id: z
+      type: System.Double
+      description: Z座標
+    content.vb: Public Sub New(x As Double, y As Double, z As Double)
+  overload: MapQuest.Coordinates.FlaggedCoordinate3D.#ctor*
+  nameWithType.vb: FlaggedCoordinate3D.New(Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.FlaggedCoordinate3D.New(Double, Double, Double)
+  name.vb: New(Double, Double, Double)
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(MapQuest.Coordinates.Coordinate3D)
+  commentId: M:MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(MapQuest.Coordinates.Coordinate3D)
+  id: '#ctor(MapQuest.Coordinates.Coordinate3D)'
+  parent: MapQuest.Coordinates.FlaggedCoordinate3D
+  langs:
+  - csharp
+  - vb
+  name: FlaggedCoordinate3D(Coordinate3D)
+  nameWithType: FlaggedCoordinate3D.FlaggedCoordinate3D(Coordinate3D)
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.FlaggedCoordinate3D(MapQuest.Coordinates.Coordinate3D)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	引数の<xref href=\"MapQuest.Coordinates.Coordinate3D?text=Coordinate3D\" data-throw-if-not-resolved=\"false\"></xref>と同じX座標,Y座標,Z座標を持った<xref href=\"MapQuest.Coordinates.FlaggedCoordinate3D?text=FlaggedCoordinate3D\" data-throw-if-not-resolved=\"false\"></xref>クラスの新しいインスタンスを初期化します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public FlaggedCoordinate3D(Coordinate3D c)
+    parameters:
+    - id: c
+      type: MapQuest.Coordinates.Coordinate3D
+      description: コピー元の<xref href="MapQuest.Coordinates.Coordinate3D?text=Coordinate3D" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub New(c As Coordinate3D)
+  overload: MapQuest.Coordinates.FlaggedCoordinate3D.#ctor*
+  nameWithType.vb: FlaggedCoordinate3D.New(Coordinate3D)
+  fullName.vb: MapQuest.Coordinates.FlaggedCoordinate3D.New(MapQuest.Coordinates.Coordinate3D)
+  name.vb: New(Coordinate3D)
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(MapQuest.Coordinates.FlaggedCoordinate3D)
+  commentId: M:MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(MapQuest.Coordinates.FlaggedCoordinate3D)
+  id: '#ctor(MapQuest.Coordinates.FlaggedCoordinate3D)'
+  parent: MapQuest.Coordinates.FlaggedCoordinate3D
+  langs:
+  - csharp
+  - vb
+  name: FlaggedCoordinate3D(FlaggedCoordinate3D)
+  nameWithType: FlaggedCoordinate3D.FlaggedCoordinate3D(FlaggedCoordinate3D)
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.FlaggedCoordinate3D(MapQuest.Coordinates.FlaggedCoordinate3D)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	引数の<xref href=\"MapQuest.Coordinates.FlaggedCoordinate3D?text=FlaggedCoordinate3D\" data-throw-if-not-resolved=\"false\"></xref>と同じX座標,Y座標,Z座標を持った<xref href=\"MapQuest.Coordinates.FlaggedCoordinate3D?text=FlaggedCoordinate3D\" data-throw-if-not-resolved=\"false\"></xref>クラスの新しいインスタンスを初期化します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public FlaggedCoordinate3D(FlaggedCoordinate3D c)
+    parameters:
+    - id: c
+      type: MapQuest.Coordinates.FlaggedCoordinate3D
+      description: コピー元の<xref href="MapQuest.Coordinates.FlaggedCoordinate3D?text=FlaggedCoordinate3D" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub New(c As FlaggedCoordinate3D)
+  overload: MapQuest.Coordinates.FlaggedCoordinate3D.#ctor*
+  nameWithType.vb: FlaggedCoordinate3D.New(FlaggedCoordinate3D)
+  fullName.vb: MapQuest.Coordinates.FlaggedCoordinate3D.New(MapQuest.Coordinates.FlaggedCoordinate3D)
+  name.vb: New(FlaggedCoordinate3D)
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: MapQuest.Coordinates.FlaggedCoordinate3D
+  langs:
+  - csharp
+  - vb
+  name: FlaggedCoordinate3D(SerializationInfo, StreamingContext)
+  nameWithType: FlaggedCoordinate3D.FlaggedCoordinate3D(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.FlaggedCoordinate3D(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: シリアル化された情報から<xref href="MapQuest.Coordinates.FlaggedCoordinate3D" data-throw-if-not-resolved="false"></xref>を作成します。
+  example: []
+  syntax:
+    content: public FlaggedCoordinate3D(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: シリアル化する情報を格納するオブジェクト
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: ''
+    content.vb: Public Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Coordinates.FlaggedCoordinate3D.#ctor*
+  nameWithType.vb: FlaggedCoordinate3D.New(SerializationInfo, StreamingContext)
+  fullName.vb: MapQuest.Coordinates.FlaggedCoordinate3D.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name.vb: New(SerializationInfo, StreamingContext)
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.Clone
+  commentId: M:MapQuest.Coordinates.FlaggedCoordinate3D.Clone
+  id: Clone
+  parent: MapQuest.Coordinates.FlaggedCoordinate3D
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: FlaggedCoordinate3D.Clone()
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 現在のインスタンスを複製します。
+  example: []
+  syntax:
+    content: public override object Clone()
+    return:
+      type: System.Object
+      description: 複製された <xref href="MapQuest.Coordinates.FlaggedCoordinate3D" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Overrides Function Clone() As Object
+  overridden: MapQuest.Coordinates.Coordinate3D.Clone
+  overload: MapQuest.Coordinates.FlaggedCoordinate3D.Clone*
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.Equals(System.Object)
+  commentId: M:MapQuest.Coordinates.FlaggedCoordinate3D.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.Coordinates.FlaggedCoordinate3D
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: FlaggedCoordinate3D.Equals(object)
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: オブジェクトの内容が等しい場合に真を返します。
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: 比較する<xref href="MapQuest.Coordinates.FlaggedCoordinate3D" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Boolean
+      description: 等価であるか
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: MapQuest.Coordinates.Coordinate3D.Equals(System.Object)
+  overload: MapQuest.Coordinates.FlaggedCoordinate3D.Equals*
+  nameWithType.vb: FlaggedCoordinate3D.Equals(Object)
+  fullName.vb: MapQuest.Coordinates.FlaggedCoordinate3D.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Coordinates.FlaggedCoordinate3D.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: MapQuest.Coordinates.FlaggedCoordinate3D
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: FlaggedCoordinate3D.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: オブジェクトをシリアル化します。
+  example: []
+  syntax:
+    content: public void GetObjectData(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: シリアル化する情報を格納するオブジェクト
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: ''
+    content.vb: Public Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Coordinates.FlaggedCoordinate3D.GetObjectData*
+  implements:
+  - System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.Visible
+  commentId: P:MapQuest.Coordinates.FlaggedCoordinate3D.Visible
+  id: Visible
+  parent: MapQuest.Coordinates.FlaggedCoordinate3D
+  langs:
+  - csharp
+  - vb
+  name: Visible
+  nameWithType: FlaggedCoordinate3D.Visible
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.Visible
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	この<xref href=\"MapQuest.Coordinates.FlaggedCoordinate3D?text=FlaggedCoordinate3D\" data-throw-if-not-resolved=\"false\"></xref>オブジェクトが可視可能かどうかを取得、設定します。\r\n\r\n</p>"
+  remarks: <xref href="MapQuest.Coordinates.FlaggedCoordinate3D?text=FlaggedCoordinate3D" data-throw-if-not-resolved="false"></xref>オブジェクトが可視可能ならば<code>true</code>、そうでなければ<code>false</code>を示します。
+  example: []
+  syntax:
+    content: public bool Visible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: この<xref href="MapQuest.Coordinates.FlaggedCoordinate3D?text=FlaggedCoordinate3D" data-throw-if-not-resolved="false"></xref>オブジェクトが可視可能かどうかの値
+    content.vb: Public Property Visible As Boolean
+  overload: MapQuest.Coordinates.FlaggedCoordinate3D.Visible*
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.CoordinateType
+  commentId: P:MapQuest.Coordinates.FlaggedCoordinate3D.CoordinateType
+  id: CoordinateType
+  parent: MapQuest.Coordinates.FlaggedCoordinate3D
+  langs:
+  - csharp
+  - vb
+  name: CoordinateType
+  nameWithType: FlaggedCoordinate3D.CoordinateType
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.CoordinateType
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    この <xref href="MapQuest.Coordinates.FlaggedCoordinate3D?text=FlaggedCoordinate3D" data-throw-if-not-resolved="false"></xref> オブジェクトの 
+
+    <xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref> の種類を取得します。
+  remarks: <xref href="MapQuest.Coordinates.FlaggedCoordinate3D?text=FlaggedCoordinate3D" data-throw-if-not-resolved="false"></xref> の CoordinateType は <b>Flagged</b> です。
+  example: []
+  syntax:
+    content: public override CoordinateType CoordinateType { get; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.CoordinateType
+      description: >-
+        この <xref href="MapQuest.Coordinates.FlaggedCoordinate3D?text=FlaggedCoordinate3D" data-throw-if-not-resolved="false"></xref> オブジェクトの 
+                    <xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref> の種類
+    content.vb: Public Overrides ReadOnly Property CoordinateType As CoordinateType
+  overridden: MapQuest.Coordinates.Coordinate.CoordinateType
+  overload: MapQuest.Coordinates.FlaggedCoordinate3D.CoordinateType*
+  seealso:
+  - linkId: MapQuest.Coordinates.CoordinateType.Flagged
+    commentId: F:MapQuest.Coordinates.CoordinateType.Flagged
+    altText: CoordinateType.Flagged
+references:
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: MapQuest.Coordinates.Coordinate3D
+  commentId: T:MapQuest.Coordinates.Coordinate3D
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html
+  name: Coordinate3D
+  nameWithType: Coordinate3D
+  fullName: MapQuest.Coordinates.Coordinate3D
+- uid: MapQuest.Coordinates.ICoordinatePoint
+  commentId: T:MapQuest.Coordinates.ICoordinatePoint
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinatePoint.html
+  name: ICoordinatePoint
+  nameWithType: ICoordinatePoint
+  fullName: MapQuest.Coordinates.ICoordinatePoint
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.IComparable
+  commentId: T:System.IComparable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable
+  name: IComparable
+  nameWithType: IComparable
+  fullName: System.IComparable
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: MapQuest.Coordinates.Coordinate3D.SetCoordinate(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Coordinate3D.SetCoordinate(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Coordinate3D
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_SetCoordinate_MapQuest_Coordinates_Coordinate_
+  name: SetCoordinate(Coordinate)
+  nameWithType: Coordinate3D.SetCoordinate(Coordinate)
+  fullName: MapQuest.Coordinates.Coordinate3D.SetCoordinate(MapQuest.Coordinates.Coordinate)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate3D.SetCoordinate(MapQuest.Coordinates.Coordinate)
+    name: SetCoordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_SetCoordinate_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate3D.SetCoordinate(MapQuest.Coordinates.Coordinate)
+    name: SetCoordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_SetCoordinate_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate3D.CompareTo(System.Object)
+  commentId: M:MapQuest.Coordinates.Coordinate3D.CompareTo(System.Object)
+  parent: MapQuest.Coordinates.Coordinate3D
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_CompareTo_System_Object_
+  name: CompareTo(object)
+  nameWithType: Coordinate3D.CompareTo(object)
+  fullName: MapQuest.Coordinates.Coordinate3D.CompareTo(object)
+  nameWithType.vb: Coordinate3D.CompareTo(Object)
+  fullName.vb: MapQuest.Coordinates.Coordinate3D.CompareTo(Object)
+  name.vb: CompareTo(Object)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate3D.CompareTo(System.Object)
+    name: CompareTo
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_CompareTo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate3D.CompareTo(System.Object)
+    name: CompareTo
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_CompareTo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate3D.ToString
+  commentId: M:MapQuest.Coordinates.Coordinate3D.ToString
+  parent: MapQuest.Coordinates.Coordinate3D
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_ToString
+  name: ToString()
+  nameWithType: Coordinate3D.ToString()
+  fullName: MapQuest.Coordinates.Coordinate3D.ToString()
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate3D.ToString
+    name: ToString
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate3D.ToString
+    name: ToString
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_ToString
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate3D.MakePrecise(MapQuest.Coordinates.PrecisionModel)
+  commentId: M:MapQuest.Coordinates.Coordinate3D.MakePrecise(MapQuest.Coordinates.PrecisionModel)
+  parent: MapQuest.Coordinates.Coordinate3D
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_MakePrecise_MapQuest_Coordinates_PrecisionModel_
+  name: MakePrecise(PrecisionModel)
+  nameWithType: Coordinate3D.MakePrecise(PrecisionModel)
+  fullName: MapQuest.Coordinates.Coordinate3D.MakePrecise(MapQuest.Coordinates.PrecisionModel)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate3D.MakePrecise(MapQuest.Coordinates.PrecisionModel)
+    name: MakePrecise
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_MakePrecise_MapQuest_Coordinates_PrecisionModel_
+  - name: (
+  - uid: MapQuest.Coordinates.PrecisionModel
+    name: PrecisionModel
+    isExternal: true
+    href: MapQuest.Coordinates.PrecisionModel.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate3D.MakePrecise(MapQuest.Coordinates.PrecisionModel)
+    name: MakePrecise
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_MakePrecise_MapQuest_Coordinates_PrecisionModel_
+  - name: (
+  - uid: MapQuest.Coordinates.PrecisionModel
+    name: PrecisionModel
+    isExternal: true
+    href: MapQuest.Coordinates.PrecisionModel.html
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate3D.Distance(MapQuest.Coordinates.Coordinate3D)
+  commentId: M:MapQuest.Coordinates.Coordinate3D.Distance(MapQuest.Coordinates.Coordinate3D)
+  parent: MapQuest.Coordinates.Coordinate3D
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Distance_MapQuest_Coordinates_Coordinate3D_
+  name: Distance(Coordinate3D)
+  nameWithType: Coordinate3D.Distance(Coordinate3D)
+  fullName: MapQuest.Coordinates.Coordinate3D.Distance(MapQuest.Coordinates.Coordinate3D)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate3D.Distance(MapQuest.Coordinates.Coordinate3D)
+    name: Distance
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Distance_MapQuest_Coordinates_Coordinate3D_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate3D
+    name: Coordinate3D
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate3D.Distance(MapQuest.Coordinates.Coordinate3D)
+    name: Distance
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Distance_MapQuest_Coordinates_Coordinate3D_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate3D
+    name: Coordinate3D
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate3D.GetHashCode
+  commentId: M:MapQuest.Coordinates.Coordinate3D.GetHashCode
+  parent: MapQuest.Coordinates.Coordinate3D
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_GetHashCode
+  name: GetHashCode()
+  nameWithType: Coordinate3D.GetHashCode()
+  fullName: MapQuest.Coordinates.Coordinate3D.GetHashCode()
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate3D.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate3D.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_GetHashCode
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate3D.GetOrdinate(System.Int32)
+  commentId: M:MapQuest.Coordinates.Coordinate3D.GetOrdinate(System.Int32)
+  parent: MapQuest.Coordinates.Coordinate3D
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_GetOrdinate_System_Int32_
+  name: GetOrdinate(int)
+  nameWithType: Coordinate3D.GetOrdinate(int)
+  fullName: MapQuest.Coordinates.Coordinate3D.GetOrdinate(int)
+  nameWithType.vb: Coordinate3D.GetOrdinate(Integer)
+  fullName.vb: MapQuest.Coordinates.Coordinate3D.GetOrdinate(Integer)
+  name.vb: GetOrdinate(Integer)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate3D.GetOrdinate(System.Int32)
+    name: GetOrdinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_GetOrdinate_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate3D.GetOrdinate(System.Int32)
+    name: GetOrdinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_GetOrdinate_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate3D.SetOrdinate(System.Int32,System.Double)
+  commentId: M:MapQuest.Coordinates.Coordinate3D.SetOrdinate(System.Int32,System.Double)
+  parent: MapQuest.Coordinates.Coordinate3D
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_SetOrdinate_System_Int32_System_Double_
+  name: SetOrdinate(int, double)
+  nameWithType: Coordinate3D.SetOrdinate(int, double)
+  fullName: MapQuest.Coordinates.Coordinate3D.SetOrdinate(int, double)
+  nameWithType.vb: Coordinate3D.SetOrdinate(Integer, Double)
+  fullName.vb: MapQuest.Coordinates.Coordinate3D.SetOrdinate(Integer, Double)
+  name.vb: SetOrdinate(Integer, Double)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate3D.SetOrdinate(System.Int32,System.Double)
+    name: SetOrdinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_SetOrdinate_System_Int32_System_Double_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate3D.SetOrdinate(System.Int32,System.Double)
+    name: SetOrdinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_SetOrdinate_System_Int32_System_Double_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate3D.Z
+  commentId: P:MapQuest.Coordinates.Coordinate3D.Z
+  parent: MapQuest.Coordinates.Coordinate3D
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Z
+  name: Z
+  nameWithType: Coordinate3D.Z
+  fullName: MapQuest.Coordinates.Coordinate3D.Z
+- uid: MapQuest.Coordinates.Coordinate3D.Dimension
+  commentId: P:MapQuest.Coordinates.Coordinate3D.Dimension
+  parent: MapQuest.Coordinates.Coordinate3D
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Dimension
+  name: Dimension
+  nameWithType: Coordinate3D.Dimension
+  fullName: MapQuest.Coordinates.Coordinate3D.Dimension
+- uid: MapQuest.Coordinates.Coordinate.SetCoordinate(System.Single,System.Single)
+  commentId: M:MapQuest.Coordinates.Coordinate.SetCoordinate(System.Single,System.Single)
+  parent: MapQuest.Coordinates.Coordinate
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_SetCoordinate_System_Single_System_Single_
+  name: SetCoordinate(float, float)
+  nameWithType: Coordinate.SetCoordinate(float, float)
+  fullName: MapQuest.Coordinates.Coordinate.SetCoordinate(float, float)
+  nameWithType.vb: Coordinate.SetCoordinate(Single, Single)
+  fullName.vb: MapQuest.Coordinates.Coordinate.SetCoordinate(Single, Single)
+  name.vb: SetCoordinate(Single, Single)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate.SetCoordinate(System.Single,System.Single)
+    name: SetCoordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_SetCoordinate_System_Single_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate.SetCoordinate(System.Single,System.Single)
+    name: SetCoordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_SetCoordinate_System_Single_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate.SetCoordinate(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Coordinate.SetCoordinate(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Coordinate
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_SetCoordinate_System_Double_System_Double_
+  name: SetCoordinate(double, double)
+  nameWithType: Coordinate.SetCoordinate(double, double)
+  fullName: MapQuest.Coordinates.Coordinate.SetCoordinate(double, double)
+  nameWithType.vb: Coordinate.SetCoordinate(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Coordinate.SetCoordinate(Double, Double)
+  name.vb: SetCoordinate(Double, Double)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate.SetCoordinate(System.Double,System.Double)
+    name: SetCoordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_SetCoordinate_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate.SetCoordinate(System.Double,System.Double)
+    name: SetCoordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_SetCoordinate_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate.Distance(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Coordinate.Distance(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Coordinate
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Distance_MapQuest_Coordinates_Coordinate_
+  name: Distance(Coordinate)
+  nameWithType: Coordinate.Distance(Coordinate)
+  fullName: MapQuest.Coordinates.Coordinate.Distance(MapQuest.Coordinates.Coordinate)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate.Distance(MapQuest.Coordinates.Coordinate)
+    name: Distance
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Distance_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate.Distance(MapQuest.Coordinates.Coordinate)
+    name: Distance
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Distance_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate.Rotate(System.Double,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Coordinate.Rotate(System.Double,MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Coordinate
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Rotate_System_Double_MapQuest_Coordinates_Coordinate_
+  name: Rotate(double, Coordinate)
+  nameWithType: Coordinate.Rotate(double, Coordinate)
+  fullName: MapQuest.Coordinates.Coordinate.Rotate(double, MapQuest.Coordinates.Coordinate)
+  nameWithType.vb: Coordinate.Rotate(Double, Coordinate)
+  fullName.vb: MapQuest.Coordinates.Coordinate.Rotate(Double, MapQuest.Coordinates.Coordinate)
+  name.vb: Rotate(Double, Coordinate)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate.Rotate(System.Double,MapQuest.Coordinates.Coordinate)
+    name: Rotate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Rotate_System_Double_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate.Rotate(System.Double,MapQuest.Coordinates.Coordinate)
+    name: Rotate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Rotate_System_Double_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate.Rotate(System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Coordinate.Rotate(System.Double,System.Double,System.Double)
+  parent: MapQuest.Coordinates.Coordinate
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Rotate_System_Double_System_Double_System_Double_
+  name: Rotate(double, double, double)
+  nameWithType: Coordinate.Rotate(double, double, double)
+  fullName: MapQuest.Coordinates.Coordinate.Rotate(double, double, double)
+  nameWithType.vb: Coordinate.Rotate(Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Coordinate.Rotate(Double, Double, Double)
+  name.vb: Rotate(Double, Double, Double)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate.Rotate(System.Double,System.Double,System.Double)
+    name: Rotate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Rotate_System_Double_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate.Rotate(System.Double,System.Double,System.Double)
+    name: Rotate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Rotate_System_Double_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+  commentId: M:MapQuest.Coordinates.Coordinate.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+  parent: MapQuest.Coordinates.Coordinate
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_SetLocation_MapQuest_Coordinates_ICoordinatePoint_
+  name: SetLocation(ICoordinatePoint)
+  nameWithType: Coordinate.SetLocation(ICoordinatePoint)
+  fullName: MapQuest.Coordinates.Coordinate.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+    name: SetLocation
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_SetLocation_MapQuest_Coordinates_ICoordinatePoint_
+  - name: (
+  - uid: MapQuest.Coordinates.ICoordinatePoint
+    name: ICoordinatePoint
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinatePoint.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate.SetLocation(MapQuest.Coordinates.ICoordinatePoint)
+    name: SetLocation
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_SetLocation_MapQuest_Coordinates_ICoordinatePoint_
+  - name: (
+  - uid: MapQuest.Coordinates.ICoordinatePoint
+    name: ICoordinatePoint
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinatePoint.html
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate.X
+  commentId: P:MapQuest.Coordinates.Coordinate.X
+  parent: MapQuest.Coordinates.Coordinate
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_X
+  name: X
+  nameWithType: Coordinate.X
+  fullName: MapQuest.Coordinates.Coordinate.X
+- uid: MapQuest.Coordinates.Coordinate.Y
+  commentId: P:MapQuest.Coordinates.Coordinate.Y
+  parent: MapQuest.Coordinates.Coordinate
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Y
+  name: Y
+  nameWithType: Coordinate.Y
+  fullName: MapQuest.Coordinates.Coordinate.Y
+- uid: MapQuest.Coordinates.Coordinate.Ordinate
+  commentId: P:MapQuest.Coordinates.Coordinate.Ordinate
+  parent: MapQuest.Coordinates.Coordinate
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Ordinate
+  name: Ordinate
+  nameWithType: Coordinate.Ordinate
+  fullName: MapQuest.Coordinates.Coordinate.Ordinate
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D
+  commentId: T:MapQuest.Coordinates.FlaggedCoordinate3D
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.FlaggedCoordinate3D.html
+  name: FlaggedCoordinate3D
+  nameWithType: FlaggedCoordinate3D
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.#ctor*
+  commentId: Overload:MapQuest.Coordinates.FlaggedCoordinate3D.#ctor
+  isExternal: true
+  href: MapQuest.Coordinates.FlaggedCoordinate3D.html#MapQuest_Coordinates_FlaggedCoordinate3D__ctor
+  name: FlaggedCoordinate3D
+  nameWithType: FlaggedCoordinate3D.FlaggedCoordinate3D
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.FlaggedCoordinate3D
+  nameWithType.vb: FlaggedCoordinate3D.New
+  fullName.vb: MapQuest.Coordinates.FlaggedCoordinate3D.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: MapQuest.Coordinates.Coordinate3D.Clone
+  commentId: M:MapQuest.Coordinates.Coordinate3D.Clone
+  parent: MapQuest.Coordinates.Coordinate3D
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Clone
+  name: Clone()
+  nameWithType: Coordinate3D.Clone()
+  fullName: MapQuest.Coordinates.Coordinate3D.Clone()
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate3D.Clone
+    name: Clone
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate3D.Clone
+    name: Clone
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Clone
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.Clone*
+  commentId: Overload:MapQuest.Coordinates.FlaggedCoordinate3D.Clone
+  isExternal: true
+  href: MapQuest.Coordinates.FlaggedCoordinate3D.html#MapQuest_Coordinates_FlaggedCoordinate3D_Clone
+  name: Clone
+  nameWithType: FlaggedCoordinate3D.Clone
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.Clone
+- uid: MapQuest.Coordinates.Coordinate3D.Equals(System.Object)
+  commentId: M:MapQuest.Coordinates.Coordinate3D.Equals(System.Object)
+  parent: MapQuest.Coordinates.Coordinate3D
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: Coordinate3D.Equals(object)
+  fullName: MapQuest.Coordinates.Coordinate3D.Equals(object)
+  nameWithType.vb: Coordinate3D.Equals(Object)
+  fullName.vb: MapQuest.Coordinates.Coordinate3D.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate3D.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate3D.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.Equals*
+  commentId: Overload:MapQuest.Coordinates.FlaggedCoordinate3D.Equals
+  isExternal: true
+  href: MapQuest.Coordinates.FlaggedCoordinate3D.html#MapQuest_Coordinates_FlaggedCoordinate3D_Equals_System_Object_
+  name: Equals
+  nameWithType: FlaggedCoordinate3D.Equals
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.GetObjectData*
+  commentId: Overload:MapQuest.Coordinates.FlaggedCoordinate3D.GetObjectData
+  isExternal: true
+  href: MapQuest.Coordinates.FlaggedCoordinate3D.html#MapQuest_Coordinates_FlaggedCoordinate3D_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  name: GetObjectData
+  nameWithType: FlaggedCoordinate3D.GetObjectData
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.GetObjectData
+- uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Runtime.Serialization.ISerializable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: ISerializable.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.Visible*
+  commentId: Overload:MapQuest.Coordinates.FlaggedCoordinate3D.Visible
+  isExternal: true
+  href: MapQuest.Coordinates.FlaggedCoordinate3D.html#MapQuest_Coordinates_FlaggedCoordinate3D_Visible
+  name: Visible
+  nameWithType: FlaggedCoordinate3D.Visible
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.Visible
+- uid: MapQuest.Coordinates.CoordinateType.Flagged
+  commentId: F:MapQuest.Coordinates.CoordinateType.Flagged
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateType.html#MapQuest_Coordinates_CoordinateType_Flagged
+  name: Flagged
+  nameWithType: CoordinateType.Flagged
+  fullName: MapQuest.Coordinates.CoordinateType.Flagged
+- uid: MapQuest.Coordinates.Coordinate.CoordinateType
+  commentId: P:MapQuest.Coordinates.Coordinate.CoordinateType
+  parent: MapQuest.Coordinates.Coordinate
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_CoordinateType
+  name: CoordinateType
+  nameWithType: Coordinate.CoordinateType
+  fullName: MapQuest.Coordinates.Coordinate.CoordinateType
+- uid: MapQuest.Coordinates.FlaggedCoordinate3D.CoordinateType*
+  commentId: Overload:MapQuest.Coordinates.FlaggedCoordinate3D.CoordinateType
+  isExternal: true
+  href: MapQuest.Coordinates.FlaggedCoordinate3D.html#MapQuest_Coordinates_FlaggedCoordinate3D_CoordinateType
+  name: CoordinateType
+  nameWithType: FlaggedCoordinate3D.CoordinateType
+  fullName: MapQuest.Coordinates.FlaggedCoordinate3D.CoordinateType
+- uid: MapQuest.Coordinates.CoordinateType
+  commentId: T:MapQuest.Coordinates.CoordinateType
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateType.html
+  name: CoordinateType
+  nameWithType: CoordinateType
+  fullName: MapQuest.Coordinates.CoordinateType

@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.Transforms
+  commentId: N:MapQuest.Coordinates.Transforms
+  id: MapQuest.Coordinates.Transforms
+  children:
+  - MapQuest.Coordinates.Transforms.AffineAxisInfo
+  - MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  - MapQuest.Coordinates.Transforms.AffineOrder
+  - MapQuest.Coordinates.Transforms.AffineTransform
+  - MapQuest.Coordinates.Transforms.CoordinateMapping
+  - MapQuest.Coordinates.Transforms.GeneralMatrix
+  - MapQuest.Coordinates.Transforms.Transform
+  langs:
+  - csharp
+  - vb
+  name: MapQuest.Coordinates.Transforms
+  nameWithType: MapQuest.Coordinates.Transforms
+  fullName: MapQuest.Coordinates.Transforms
+  type: Namespace
+  assemblies:
+  - MapQuest.Coordinates
+references:
+- uid: MapQuest.Coordinates.Transforms.AffineAxisInfo
+  commentId: T:MapQuest.Coordinates.Transforms.AffineAxisInfo
+  parent: MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisInfo.html
+  name: AffineAxisInfo
+  nameWithType: AffineAxisInfo
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisInfo
+- uid: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  commentId: T:MapQuest.Coordinates.Transforms.AffineAxisOrientation
+  parent: MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineAxisOrientation.html
+  name: AffineAxisOrientation
+  nameWithType: AffineAxisOrientation
+  fullName: MapQuest.Coordinates.Transforms.AffineAxisOrientation
+- uid: MapQuest.Coordinates.Transforms.AffineOrder
+  commentId: T:MapQuest.Coordinates.Transforms.AffineOrder
+  parent: MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineOrder.html
+  name: AffineOrder
+  nameWithType: AffineOrder
+  fullName: MapQuest.Coordinates.Transforms.AffineOrder
+- uid: MapQuest.Coordinates.Transforms.AffineTransform
+  commentId: T:MapQuest.Coordinates.Transforms.AffineTransform
+  parent: MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html
+  name: AffineTransform
+  nameWithType: AffineTransform
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform
+- uid: MapQuest.Coordinates.Transforms.CoordinateMapping
+  commentId: T:MapQuest.Coordinates.Transforms.CoordinateMapping
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.CoordinateMapping.html
+  name: CoordinateMapping
+  nameWithType: CoordinateMapping
+  fullName: MapQuest.Coordinates.Transforms.CoordinateMapping
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix
+  commentId: T:MapQuest.Coordinates.Transforms.GeneralMatrix
+  parent: MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html
+  name: GeneralMatrix
+  nameWithType: GeneralMatrix
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix
+- uid: MapQuest.Coordinates.Transforms.Transform
+  commentId: T:MapQuest.Coordinates.Transforms.Transform
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.Transform.html
+  name: Transform
+  nameWithType: Transform
+  fullName: MapQuest.Coordinates.Transforms.Transform
+- uid: MapQuest.Coordinates.Transforms
+  commentId: N:MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates.Transforms
+  nameWithType: MapQuest.Coordinates.Transforms
+  fullName: MapQuest.Coordinates.Transforms
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html

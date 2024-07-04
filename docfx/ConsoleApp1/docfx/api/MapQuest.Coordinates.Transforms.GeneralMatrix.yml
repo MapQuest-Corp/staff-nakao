@@ -1,0 +1,2389 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix
+  commentId: T:MapQuest.Coordinates.Transforms.GeneralMatrix
+  id: GeneralMatrix
+  parent: MapQuest.Coordinates.Transforms
+  children:
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Double[],System.Int32)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Double[][])
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Double[][],System.Int32,System.Int32)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Int32,System.Int32)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Int32,System.Int32,System.Double)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Add(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.AddEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Array
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayCopy
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivide(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivideEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiply(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiplyEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivide(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivideEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Clone
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnDimension
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnPackedCopy
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Copy
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Create(System.Double[][])
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Determinant
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.GetElement(System.Int32,System.Int32)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32,System.Int32,System.Int32,System.Int32)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32,System.Int32,System.Int32[])
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32[],System.Int32,System.Int32)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32[],System.Int32[])
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Identity(System.Int32,System.Int32)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Inverse
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply(System.Double)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.MultiplyEquals(System.Double)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Norm1
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.NormF
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.NormInf
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Random(System.Int32,System.Int32)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.RowDimension
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.RowPackedCopy
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.SetElement(System.Int32,System.Int32,System.Double)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32,System.Int32,System.Int32,System.Int32,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32,System.Int32,System.Int32[],MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32[],System.Int32,System.Int32,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32[],System.Int32[],MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Solve(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.SolveTranspose(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Subtract(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.SubtractEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Trace
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.Transpose
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.UnaryMinus
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.op_Addition(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.op_Multiply(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  - MapQuest.Coordinates.Transforms.GeneralMatrix.op_Subtraction(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  langs:
+  - csharp
+  - vb
+  name: GeneralMatrix
+  nameWithType: GeneralMatrix
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix
+  type: Struct
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: 'public struct GeneralMatrix : ICloneable'
+    content.vb: Public Structure GeneralMatrix Implements ICloneable
+  implements:
+  - System.ICloneable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Int32,System.Int32)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: GeneralMatrix(int, int)
+  nameWithType: GeneralMatrix.GeneralMatrix(int, int)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GeneralMatrix(int, int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Construct an m-by-n matrix of zeros.
+  example: []
+  syntax:
+    content: public GeneralMatrix(int m, int n)
+    parameters:
+    - id: m
+      type: System.Int32
+      description: Number of rows.
+    - id: n
+      type: System.Int32
+      description: Number of colums.
+    content.vb: Public Sub New(m As Integer, n As Integer)
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor*
+  nameWithType.vb: GeneralMatrix.New(Integer, Integer)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Int32,System.Int32,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Int32,System.Int32,System.Double)
+  id: '#ctor(System.Int32,System.Int32,System.Double)'
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: GeneralMatrix(int, int, double)
+  nameWithType: GeneralMatrix.GeneralMatrix(int, int, double)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GeneralMatrix(int, int, double)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Construct an m-by-n constant matrix.
+  example: []
+  syntax:
+    content: public GeneralMatrix(int m, int n, double s)
+    parameters:
+    - id: m
+      type: System.Int32
+      description: Number of rows.
+    - id: n
+      type: System.Int32
+      description: Number of colums.
+    - id: s
+      type: System.Double
+      description: Fill the matrix with this scalar value.
+    content.vb: Public Sub New(m As Integer, n As Integer, s As Double)
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor*
+  nameWithType.vb: GeneralMatrix.New(Integer, Integer, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.New(Integer, Integer, Double)
+  name.vb: New(Integer, Integer, Double)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Double[][])
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Double[][])
+  id: '#ctor(System.Double[][])'
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: GeneralMatrix(double[][])
+  nameWithType: GeneralMatrix.GeneralMatrix(double[][])
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GeneralMatrix(double[][])
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Construct a matrix from a 2-D array.
+  example: []
+  syntax:
+    content: public GeneralMatrix(double[][] A)
+    parameters:
+    - id: A
+      type: System.Double[][]
+      description: Two-dimensional array of doubles.
+    content.vb: Public Sub New(A As Double()())
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: All rows must have the same length
+  seealso:
+  - linkId: MapQuest.Coordinates.Transforms.GeneralMatrix.Create(System.Double[][])
+    commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Create(System.Double[][])
+  nameWithType.vb: GeneralMatrix.New(Double()())
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.New(Double()())
+  name.vb: New(Double()())
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Double[][],System.Int32,System.Int32)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Double[][],System.Int32,System.Int32)
+  id: '#ctor(System.Double[][],System.Int32,System.Int32)'
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: GeneralMatrix(double[][], int, int)
+  nameWithType: GeneralMatrix.GeneralMatrix(double[][], int, int)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GeneralMatrix(double[][], int, int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Construct a matrix quickly without checking arguments.
+  example: []
+  syntax:
+    content: public GeneralMatrix(double[][] A, int m, int n)
+    parameters:
+    - id: A
+      type: System.Double[][]
+      description: Two-dimensional array of doubles.
+    - id: m
+      type: System.Int32
+      description: Number of rows.
+    - id: n
+      type: System.Int32
+      description: Number of colums.
+    content.vb: Public Sub New(A As Double()(), m As Integer, n As Integer)
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor*
+  nameWithType.vb: GeneralMatrix.New(Double()(), Integer, Integer)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.New(Double()(), Integer, Integer)
+  name.vb: New(Double()(), Integer, Integer)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Double[],System.Int32)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor(System.Double[],System.Int32)
+  id: '#ctor(System.Double[],System.Int32)'
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: GeneralMatrix(double[], int)
+  nameWithType: GeneralMatrix.GeneralMatrix(double[], int)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GeneralMatrix(double[], int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Construct a matrix from a one-dimensional packed array
+  example: []
+  syntax:
+    content: public GeneralMatrix(double[] vals, int m)
+    parameters:
+    - id: vals
+      type: System.Double[]
+      description: One-dimensional array of doubles, packed by columns (ala Fortran).
+    - id: m
+      type: System.Int32
+      description: Number of rows.
+    content.vb: Public Sub New(vals As Double(), m As Integer)
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Array length must be a multiple of m.
+  nameWithType.vb: GeneralMatrix.New(Double(), Integer)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.New(Double(), Integer)
+  name.vb: New(Double(), Integer)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Create(System.Double[][])
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Create(System.Double[][])
+  id: Create(System.Double[][])
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Create(double[][])
+  nameWithType: GeneralMatrix.Create(double[][])
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Create(double[][])
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Construct a matrix from a copy of a 2-D array.
+  example: []
+  syntax:
+    content: public static GeneralMatrix Create(double[][] A)
+    parameters:
+    - id: A
+      type: System.Double[][]
+      description: Two-dimensional array of doubles.
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+    content.vb: Public Shared Function Create(A As Double()()) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Create*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: All rows must have the same length.
+  nameWithType.vb: GeneralMatrix.Create(Double()())
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.Create(Double()())
+  name.vb: Create(Double()())
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Copy
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Copy
+  id: Copy
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Copy()
+  nameWithType: GeneralMatrix.Copy()
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Copy()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Make a deep copy of a matrix
+  example: []
+  syntax:
+    content: public GeneralMatrix Copy()
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+    content.vb: Public Function Copy() As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Copy*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.GetElement(System.Int32,System.Int32)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.GetElement(System.Int32,System.Int32)
+  id: GetElement(System.Int32,System.Int32)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: GetElement(int, int)
+  nameWithType: GeneralMatrix.GetElement(int, int)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GetElement(int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Get a single element.
+  example: []
+  syntax:
+    content: public double GetElement(int i, int j)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: Row index.
+    - id: j
+      type: System.Int32
+      description: Column index.
+    return:
+      type: System.Double
+      description: A(i,j)
+    content.vb: Public Function GetElement(i As Integer, j As Integer) As Double
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.GetElement*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: ''
+  nameWithType.vb: GeneralMatrix.GetElement(Integer, Integer)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.GetElement(Integer, Integer)
+  name.vb: GetElement(Integer, Integer)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: GetMatrix(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: GetMatrix(int, int, int, int)
+  nameWithType: GeneralMatrix.GetMatrix(int, int, int, int)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(int, int, int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Get a submatrix.
+  example: []
+  syntax:
+    content: public GeneralMatrix GetMatrix(int i0, int i1, int j0, int j1)
+    parameters:
+    - id: i0
+      type: System.Int32
+      description: Initial row index
+    - id: i1
+      type: System.Int32
+      description: Final row index
+    - id: j0
+      type: System.Int32
+      description: Initial column index
+    - id: j1
+      type: System.Int32
+      description: Final column index
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A(i0:i1,j0:j1)
+    content.vb: Public Function GetMatrix(i0 As Integer, i1 As Integer, j0 As Integer, j1 As Integer) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: Submatrix indices
+  nameWithType.vb: GeneralMatrix.GetMatrix(Integer, Integer, Integer, Integer)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(Integer, Integer, Integer, Integer)
+  name.vb: GetMatrix(Integer, Integer, Integer, Integer)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32[],System.Int32[])
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32[],System.Int32[])
+  id: GetMatrix(System.Int32[],System.Int32[])
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: GetMatrix(int[], int[])
+  nameWithType: GeneralMatrix.GetMatrix(int[], int[])
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(int[], int[])
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Get a submatrix.
+  example: []
+  syntax:
+    content: public GeneralMatrix GetMatrix(int[] r, int[] c)
+    parameters:
+    - id: r
+      type: System.Int32[]
+      description: Array of row indices.
+    - id: c
+      type: System.Int32[]
+      description: Array of column indices.
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A(r(:),c(:))
+    content.vb: Public Function GetMatrix(r As Integer(), c As Integer()) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: Submatrix indices
+  nameWithType.vb: GeneralMatrix.GetMatrix(Integer(), Integer())
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(Integer(), Integer())
+  name.vb: GetMatrix(Integer(), Integer())
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32,System.Int32,System.Int32[])
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32,System.Int32,System.Int32[])
+  id: GetMatrix(System.Int32,System.Int32,System.Int32[])
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: GetMatrix(int, int, int[])
+  nameWithType: GeneralMatrix.GetMatrix(int, int, int[])
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(int, int, int[])
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Get a submatrix.
+  example: []
+  syntax:
+    content: public GeneralMatrix GetMatrix(int i0, int i1, int[] c)
+    parameters:
+    - id: i0
+      type: System.Int32
+      description: Initial row index
+    - id: i1
+      type: System.Int32
+      description: Final row index
+    - id: c
+      type: System.Int32[]
+      description: Array of column indices.
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A(i0:i1,c(:))
+    content.vb: Public Function GetMatrix(i0 As Integer, i1 As Integer, c As Integer()) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: Submatrix indices
+  nameWithType.vb: GeneralMatrix.GetMatrix(Integer, Integer, Integer())
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(Integer, Integer, Integer())
+  name.vb: GetMatrix(Integer, Integer, Integer())
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32[],System.Int32,System.Int32)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(System.Int32[],System.Int32,System.Int32)
+  id: GetMatrix(System.Int32[],System.Int32,System.Int32)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: GetMatrix(int[], int, int)
+  nameWithType: GeneralMatrix.GetMatrix(int[], int, int)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(int[], int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Get a submatrix.
+  example: []
+  syntax:
+    content: public GeneralMatrix GetMatrix(int[] r, int j0, int j1)
+    parameters:
+    - id: r
+      type: System.Int32[]
+      description: Array of row indices.
+    - id: j0
+      type: System.Int32
+      description: Initial column index
+    - id: j1
+      type: System.Int32
+      description: Final column index
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A(r(:),j0:j1)
+    content.vb: Public Function GetMatrix(r As Integer(), j0 As Integer, j1 As Integer) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: Submatrix indices
+  nameWithType.vb: GeneralMatrix.GetMatrix(Integer(), Integer, Integer)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix(Integer(), Integer, Integer)
+  name.vb: GetMatrix(Integer(), Integer, Integer)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.SetElement(System.Int32,System.Int32,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.SetElement(System.Int32,System.Int32,System.Double)
+  id: SetElement(System.Int32,System.Int32,System.Double)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: SetElement(int, int, double)
+  nameWithType: GeneralMatrix.SetElement(int, int, double)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.SetElement(int, int, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Set a single element.
+  example: []
+  syntax:
+    content: public void SetElement(int i, int j, double s)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: Row index.
+    - id: j
+      type: System.Int32
+      description: Column index.
+    - id: s
+      type: System.Double
+      description: A(i,j).
+    content.vb: Public Sub SetElement(i As Integer, j As Integer, s As Double)
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.SetElement*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: ''
+  nameWithType.vb: GeneralMatrix.SetElement(Integer, Integer, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.SetElement(Integer, Integer, Double)
+  name.vb: SetElement(Integer, Integer, Double)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32,System.Int32,System.Int32,System.Int32,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32,System.Int32,System.Int32,System.Int32,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: SetMatrix(System.Int32,System.Int32,System.Int32,System.Int32,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: SetMatrix(int, int, int, int, GeneralMatrix)
+  nameWithType: GeneralMatrix.SetMatrix(int, int, int, int, GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(int, int, int, int, MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Set a submatrix.
+  example: []
+  syntax:
+    content: public void SetMatrix(int i0, int i1, int j0, int j1, GeneralMatrix X)
+    parameters:
+    - id: i0
+      type: System.Int32
+      description: Initial row index
+    - id: i1
+      type: System.Int32
+      description: Final row index
+    - id: j0
+      type: System.Int32
+      description: Initial column index
+    - id: j1
+      type: System.Int32
+      description: Final column index
+    - id: X
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A(i0:i1,j0:j1)
+    content.vb: Public Sub SetMatrix(i0 As Integer, i1 As Integer, j0 As Integer, j1 As Integer, X As GeneralMatrix)
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: Submatrix indices
+  nameWithType.vb: GeneralMatrix.SetMatrix(Integer, Integer, Integer, Integer, GeneralMatrix)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(Integer, Integer, Integer, Integer, MapQuest.Coordinates.Transforms.GeneralMatrix)
+  name.vb: SetMatrix(Integer, Integer, Integer, Integer, GeneralMatrix)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32[],System.Int32[],MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32[],System.Int32[],MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: SetMatrix(System.Int32[],System.Int32[],MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: SetMatrix(int[], int[], GeneralMatrix)
+  nameWithType: GeneralMatrix.SetMatrix(int[], int[], GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(int[], int[], MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Set a submatrix.
+  example: []
+  syntax:
+    content: public void SetMatrix(int[] r, int[] c, GeneralMatrix X)
+    parameters:
+    - id: r
+      type: System.Int32[]
+      description: Array of row indices.
+    - id: c
+      type: System.Int32[]
+      description: Array of column indices.
+    - id: X
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A(r(:),c(:))
+    content.vb: Public Sub SetMatrix(r As Integer(), c As Integer(), X As GeneralMatrix)
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: Submatrix indices
+  nameWithType.vb: GeneralMatrix.SetMatrix(Integer(), Integer(), GeneralMatrix)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(Integer(), Integer(), MapQuest.Coordinates.Transforms.GeneralMatrix)
+  name.vb: SetMatrix(Integer(), Integer(), GeneralMatrix)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32[],System.Int32,System.Int32,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32[],System.Int32,System.Int32,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: SetMatrix(System.Int32[],System.Int32,System.Int32,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: SetMatrix(int[], int, int, GeneralMatrix)
+  nameWithType: GeneralMatrix.SetMatrix(int[], int, int, GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(int[], int, int, MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Set a submatrix.
+  example: []
+  syntax:
+    content: public void SetMatrix(int[] r, int j0, int j1, GeneralMatrix X)
+    parameters:
+    - id: r
+      type: System.Int32[]
+      description: Array of row indices.
+    - id: j0
+      type: System.Int32
+      description: Initial column index
+    - id: j1
+      type: System.Int32
+      description: Final column index
+    - id: X
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A(r(:),j0:j1)
+    content.vb: Public Sub SetMatrix(r As Integer(), j0 As Integer, j1 As Integer, X As GeneralMatrix)
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: Submatrix indices
+  nameWithType.vb: GeneralMatrix.SetMatrix(Integer(), Integer, Integer, GeneralMatrix)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(Integer(), Integer, Integer, MapQuest.Coordinates.Transforms.GeneralMatrix)
+  name.vb: SetMatrix(Integer(), Integer, Integer, GeneralMatrix)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32,System.Int32,System.Int32[],MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(System.Int32,System.Int32,System.Int32[],MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: SetMatrix(System.Int32,System.Int32,System.Int32[],MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: SetMatrix(int, int, int[], GeneralMatrix)
+  nameWithType: GeneralMatrix.SetMatrix(int, int, int[], GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(int, int, int[], MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Set a submatrix.
+  example: []
+  syntax:
+    content: public void SetMatrix(int i0, int i1, int[] c, GeneralMatrix X)
+    parameters:
+    - id: i0
+      type: System.Int32
+      description: Initial row index
+    - id: i1
+      type: System.Int32
+      description: Final row index
+    - id: c
+      type: System.Int32[]
+      description: Array of column indices.
+    - id: X
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A(i0:i1,c(:))
+    content.vb: Public Sub SetMatrix(i0 As Integer, i1 As Integer, c As Integer(), X As GeneralMatrix)
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: Submatrix indices
+  nameWithType.vb: GeneralMatrix.SetMatrix(Integer, Integer, Integer(), GeneralMatrix)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix(Integer, Integer, Integer(), MapQuest.Coordinates.Transforms.GeneralMatrix)
+  name.vb: SetMatrix(Integer, Integer, Integer(), GeneralMatrix)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Transpose
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Transpose
+  id: Transpose
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Transpose()
+  nameWithType: GeneralMatrix.Transpose()
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Transpose()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Matrix transpose.
+  example: []
+  syntax:
+    content: public GeneralMatrix Transpose()
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A'
+    content.vb: Public Function Transpose() As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Transpose*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Norm1
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Norm1
+  id: Norm1
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Norm1()
+  nameWithType: GeneralMatrix.Norm1()
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Norm1()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: One norm
+  example: []
+  syntax:
+    content: public double Norm1()
+    return:
+      type: System.Double
+      description: maximum column sum.
+    content.vb: Public Function Norm1() As Double
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Norm1*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.NormInf
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.NormInf
+  id: NormInf
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: NormInf()
+  nameWithType: GeneralMatrix.NormInf()
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.NormInf()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Infinity norm
+  example: []
+  syntax:
+    content: public double NormInf()
+    return:
+      type: System.Double
+      description: maximum row sum.
+    content.vb: Public Function NormInf() As Double
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.NormInf*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.NormF
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.NormF
+  id: NormF
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: NormF()
+  nameWithType: GeneralMatrix.NormF()
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.NormF()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Frobenius norm
+  example: []
+  syntax:
+    content: public double NormF()
+    return:
+      type: System.Double
+      description: sqrt of sum of squares of all elements.
+    content.vb: Public Function NormF() As Double
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.NormF*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.UnaryMinus
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.UnaryMinus
+  id: UnaryMinus
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: UnaryMinus()
+  nameWithType: GeneralMatrix.UnaryMinus()
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.UnaryMinus()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Unary minus
+  example: []
+  syntax:
+    content: public GeneralMatrix UnaryMinus()
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: -A
+    content.vb: Public Function UnaryMinus() As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.UnaryMinus*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Add(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Add(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: Add(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Add(GeneralMatrix)
+  nameWithType: GeneralMatrix.Add(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Add(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: C = A + B
+  example: []
+  syntax:
+    content: public GeneralMatrix Add(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: another matrix
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A + B
+    content.vb: Public Function Add(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Add*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.AddEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.AddEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: AddEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: AddEquals(GeneralMatrix)
+  nameWithType: GeneralMatrix.AddEquals(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.AddEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: A = A + B
+  example: []
+  syntax:
+    content: public GeneralMatrix AddEquals(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: another matrix
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A + B
+    content.vb: Public Function AddEquals(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.AddEquals*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Subtract(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Subtract(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: Subtract(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Subtract(GeneralMatrix)
+  nameWithType: GeneralMatrix.Subtract(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Subtract(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: C = A - B
+  example: []
+  syntax:
+    content: public GeneralMatrix Subtract(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: another matrix
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A - B
+    content.vb: Public Function Subtract(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Subtract*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.SubtractEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.SubtractEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: SubtractEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: SubtractEquals(GeneralMatrix)
+  nameWithType: GeneralMatrix.SubtractEquals(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.SubtractEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: A = A - B
+  example: []
+  syntax:
+    content: public GeneralMatrix SubtractEquals(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: another matrix
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A - B
+    content.vb: Public Function SubtractEquals(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.SubtractEquals*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiply(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiply(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: ArrayMultiply(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: ArrayMultiply(GeneralMatrix)
+  nameWithType: GeneralMatrix.ArrayMultiply(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiply(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Element-by-element multiplication, C = A.*B
+  example: []
+  syntax:
+    content: public GeneralMatrix ArrayMultiply(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: another matrix
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A.*B
+    content.vb: Public Function ArrayMultiply(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiply*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiplyEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiplyEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: ArrayMultiplyEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: ArrayMultiplyEquals(GeneralMatrix)
+  nameWithType: GeneralMatrix.ArrayMultiplyEquals(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiplyEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Element-by-element multiplication in place, A = A.*B
+  example: []
+  syntax:
+    content: public GeneralMatrix ArrayMultiplyEquals(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: another matrix
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A.*B
+    content.vb: Public Function ArrayMultiplyEquals(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiplyEquals*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivide(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivide(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: ArrayRightDivide(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: ArrayRightDivide(GeneralMatrix)
+  nameWithType: GeneralMatrix.ArrayRightDivide(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivide(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Element-by-element right division, C = A./B
+  example: []
+  syntax:
+    content: public GeneralMatrix ArrayRightDivide(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: another matrix
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A./B
+    content.vb: Public Function ArrayRightDivide(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivide*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivideEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivideEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: ArrayRightDivideEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: ArrayRightDivideEquals(GeneralMatrix)
+  nameWithType: GeneralMatrix.ArrayRightDivideEquals(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivideEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Element-by-element right division in place, A = A./B
+  example: []
+  syntax:
+    content: public GeneralMatrix ArrayRightDivideEquals(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: another matrix
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A./B
+    content.vb: Public Function ArrayRightDivideEquals(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivideEquals*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivide(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivide(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: ArrayLeftDivide(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: ArrayLeftDivide(GeneralMatrix)
+  nameWithType: GeneralMatrix.ArrayLeftDivide(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivide(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Element-by-element left division, C = A.\B
+  example: []
+  syntax:
+    content: public GeneralMatrix ArrayLeftDivide(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: another matrix
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A.\B
+    content.vb: Public Function ArrayLeftDivide(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivide*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivideEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivideEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: ArrayLeftDivideEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: ArrayLeftDivideEquals(GeneralMatrix)
+  nameWithType: GeneralMatrix.ArrayLeftDivideEquals(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivideEquals(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Element-by-element left division in place, A = A.\B
+  example: []
+  syntax:
+    content: public GeneralMatrix ArrayLeftDivideEquals(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: another matrix
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: A.\B
+    content.vb: Public Function ArrayLeftDivideEquals(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivideEquals*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply(System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply(System.Double)
+  id: Multiply(System.Double)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Multiply(double)
+  nameWithType: GeneralMatrix.Multiply(double)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply(double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Multiply a matrix by a scalar, C = s*A
+  example: []
+  syntax:
+    content: public GeneralMatrix Multiply(double s)
+    parameters:
+    - id: s
+      type: System.Double
+      description: scalar
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: s*A
+    content.vb: Public Function Multiply(s As Double) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply*
+  nameWithType.vb: GeneralMatrix.Multiply(Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply(Double)
+  name.vb: Multiply(Double)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.MultiplyEquals(System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.MultiplyEquals(System.Double)
+  id: MultiplyEquals(System.Double)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: MultiplyEquals(double)
+  nameWithType: GeneralMatrix.MultiplyEquals(double)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.MultiplyEquals(double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Multiply a matrix by a scalar in place, A = s*A
+  example: []
+  syntax:
+    content: public GeneralMatrix MultiplyEquals(double s)
+    parameters:
+    - id: s
+      type: System.Double
+      description: scalar
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: replace A by s*A
+    content.vb: Public Function MultiplyEquals(s As Double) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.MultiplyEquals*
+  nameWithType.vb: GeneralMatrix.MultiplyEquals(Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.MultiplyEquals(Double)
+  name.vb: MultiplyEquals(Double)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: Multiply(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Multiply(GeneralMatrix)
+  nameWithType: GeneralMatrix.Multiply(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Linear algebraic matrix multiplication, A * B
+  example: []
+  syntax:
+    content: public GeneralMatrix Multiply(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: another matrix
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: Matrix product, A * B
+    content.vb: Public Function Multiply(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Matrix inner dimensions must agree.
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Solve(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Solve(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: Solve(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Solve(GeneralMatrix)
+  nameWithType: GeneralMatrix.Solve(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Solve(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Solve A*X = B
+  example: []
+  syntax:
+    content: public GeneralMatrix Solve(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: right hand side
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: solution if A is square, least squares solution otherwise
+    content.vb: Public Function Solve(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Solve*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.SolveTranspose(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.SolveTranspose(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: SolveTranspose(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: SolveTranspose(GeneralMatrix)
+  nameWithType: GeneralMatrix.SolveTranspose(GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.SolveTranspose(MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Solve X*A = B, which is also A'*X' = B'
+  example: []
+  syntax:
+    content: public GeneralMatrix SolveTranspose(GeneralMatrix B)
+    parameters:
+    - id: B
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: right hand side
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: solution if A is square, least squares solution otherwise.
+    content.vb: Public Function SolveTranspose(B As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.SolveTranspose*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Inverse
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Inverse
+  id: Inverse
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Inverse()
+  nameWithType: GeneralMatrix.Inverse()
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Inverse()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Matrix inverse or pseudoinverse
+  example: []
+  syntax:
+    content: public GeneralMatrix Inverse()
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: inverse(A) if A is square, pseudoinverse otherwise.
+    content.vb: Public Function Inverse() As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Inverse*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Determinant
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Determinant
+  id: Determinant
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Determinant()
+  nameWithType: GeneralMatrix.Determinant()
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Determinant()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: GeneralMatrix determinant
+  example: []
+  syntax:
+    content: public double Determinant()
+    return:
+      type: System.Double
+      description: determinant
+    content.vb: Public Function Determinant() As Double
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Determinant*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Trace
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Trace
+  id: Trace
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Trace()
+  nameWithType: GeneralMatrix.Trace()
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Trace()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Matrix trace.
+  example: []
+  syntax:
+    content: public double Trace()
+    return:
+      type: System.Double
+      description: sum of the diagonal elements.
+    content.vb: Public Function Trace() As Double
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Trace*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Random(System.Int32,System.Int32)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Random(System.Int32,System.Int32)
+  id: Random(System.Int32,System.Int32)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Random(int, int)
+  nameWithType: GeneralMatrix.Random(int, int)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Random(int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Generate matrix with random elements
+  example: []
+  syntax:
+    content: public static GeneralMatrix Random(int m, int n)
+    parameters:
+    - id: m
+      type: System.Int32
+      description: Number of rows.
+    - id: n
+      type: System.Int32
+      description: Number of colums.
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: An m-by-n matrix with uniformly distributed random elements.
+    content.vb: Public Shared Function Random(m As Integer, n As Integer) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Random*
+  nameWithType.vb: GeneralMatrix.Random(Integer, Integer)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.Random(Integer, Integer)
+  name.vb: Random(Integer, Integer)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Identity(System.Int32,System.Int32)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Identity(System.Int32,System.Int32)
+  id: Identity(System.Int32,System.Int32)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Identity(int, int)
+  nameWithType: GeneralMatrix.Identity(int, int)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Identity(int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Generate identity matrix
+  example: []
+  syntax:
+    content: public static GeneralMatrix Identity(int m, int n)
+    parameters:
+    - id: m
+      type: System.Int32
+      description: Number of rows.
+    - id: n
+      type: System.Int32
+      description: Number of colums.
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: An m-by-n matrix with ones on the diagonal and zeros elsewhere.
+    content.vb: Public Shared Function Identity(m As Integer, n As Integer) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Identity*
+  nameWithType.vb: GeneralMatrix.Identity(Integer, Integer)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.Identity(Integer, Integer)
+  name.vb: Identity(Integer, Integer)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.op_Addition(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.op_Addition(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: op_Addition(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: operator +(GeneralMatrix, GeneralMatrix)
+  nameWithType: GeneralMatrix.operator +(GeneralMatrix, GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.operator +(MapQuest.Coordinates.Transforms.GeneralMatrix, MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Addition of matrices
+  example: []
+  syntax:
+    content: public static GeneralMatrix operator +(GeneralMatrix m1, GeneralMatrix m2)
+    parameters:
+    - id: m1
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: ''
+    - id: m2
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: ''
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: ''
+    content.vb: Public Shared Operator +(m1 As GeneralMatrix, m2 As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.op_Addition*
+  nameWithType.vb: GeneralMatrix.+(GeneralMatrix, GeneralMatrix)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.+(MapQuest.Coordinates.Transforms.GeneralMatrix, MapQuest.Coordinates.Transforms.GeneralMatrix)
+  name.vb: +(GeneralMatrix, GeneralMatrix)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.op_Subtraction(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.op_Subtraction(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: op_Subtraction(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: operator -(GeneralMatrix, GeneralMatrix)
+  nameWithType: GeneralMatrix.operator -(GeneralMatrix, GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.operator -(MapQuest.Coordinates.Transforms.GeneralMatrix, MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Subtraction of matrices
+  example: []
+  syntax:
+    content: public static GeneralMatrix operator -(GeneralMatrix m1, GeneralMatrix m2)
+    parameters:
+    - id: m1
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: ''
+    - id: m2
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: ''
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: ''
+    content.vb: Public Shared Operator -(m1 As GeneralMatrix, m2 As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.op_Subtraction*
+  nameWithType.vb: GeneralMatrix.-(GeneralMatrix, GeneralMatrix)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.-(MapQuest.Coordinates.Transforms.GeneralMatrix, MapQuest.Coordinates.Transforms.GeneralMatrix)
+  name.vb: -(GeneralMatrix, GeneralMatrix)
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.op_Multiply(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.op_Multiply(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  id: op_Multiply(MapQuest.Coordinates.Transforms.GeneralMatrix,MapQuest.Coordinates.Transforms.GeneralMatrix)
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: operator *(GeneralMatrix, GeneralMatrix)
+  nameWithType: GeneralMatrix.operator *(GeneralMatrix, GeneralMatrix)
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.operator *(MapQuest.Coordinates.Transforms.GeneralMatrix, MapQuest.Coordinates.Transforms.GeneralMatrix)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Multiplication of matrices
+  example: []
+  syntax:
+    content: public static GeneralMatrix operator *(GeneralMatrix m1, GeneralMatrix m2)
+    parameters:
+    - id: m1
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: ''
+    - id: m2
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: ''
+    return:
+      type: MapQuest.Coordinates.Transforms.GeneralMatrix
+      description: ''
+    content.vb: Public Shared Operator *(m1 As GeneralMatrix, m2 As GeneralMatrix) As GeneralMatrix
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.op_Multiply*
+  nameWithType.vb: GeneralMatrix.*(GeneralMatrix, GeneralMatrix)
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.*(MapQuest.Coordinates.Transforms.GeneralMatrix, MapQuest.Coordinates.Transforms.GeneralMatrix)
+  name.vb: '*(GeneralMatrix, GeneralMatrix)'
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Clone
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Clone
+  id: Clone
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: GeneralMatrix.Clone()
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Clone the GeneralMatrix object.
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+    content.vb: Public Function Clone() As Object
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Array
+  commentId: P:MapQuest.Coordinates.Transforms.GeneralMatrix.Array
+  id: Array
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: Array
+  nameWithType: GeneralMatrix.Array
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Array
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Access the internal two-dimensional array.
+  example: []
+  syntax:
+    content: public double[][] Array { get; }
+    parameters: []
+    return:
+      type: System.Double[][]
+      description: Pointer to the two-dimensional array of matrix elements.
+    content.vb: Public ReadOnly Property Array As Double()()
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.Array*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayCopy
+  commentId: P:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayCopy
+  id: ArrayCopy
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: ArrayCopy
+  nameWithType: GeneralMatrix.ArrayCopy
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayCopy
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Copy the internal two-dimensional array.
+  example: []
+  syntax:
+    content: public double[][] ArrayCopy { get; }
+    parameters: []
+    return:
+      type: System.Double[][]
+      description: Two-dimensional array copy of matrix elements.
+    content.vb: Public ReadOnly Property ArrayCopy As Double()()
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayCopy*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnPackedCopy
+  commentId: P:MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnPackedCopy
+  id: ColumnPackedCopy
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: ColumnPackedCopy
+  nameWithType: GeneralMatrix.ColumnPackedCopy
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnPackedCopy
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Make a one-dimensional column packed copy of the internal array.
+  example: []
+  syntax:
+    content: public double[] ColumnPackedCopy { get; }
+    parameters: []
+    return:
+      type: System.Double[]
+      description: Matrix elements packed in a one-dimensional array by columns.
+    content.vb: Public ReadOnly Property ColumnPackedCopy As Double()
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnPackedCopy*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.RowPackedCopy
+  commentId: P:MapQuest.Coordinates.Transforms.GeneralMatrix.RowPackedCopy
+  id: RowPackedCopy
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: RowPackedCopy
+  nameWithType: GeneralMatrix.RowPackedCopy
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.RowPackedCopy
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Make a one-dimensional row packed copy of the internal array.
+  example: []
+  syntax:
+    content: public double[] RowPackedCopy { get; }
+    parameters: []
+    return:
+      type: System.Double[]
+      description: Matrix elements packed in a one-dimensional array by rows.
+    content.vb: Public ReadOnly Property RowPackedCopy As Double()
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.RowPackedCopy*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.RowDimension
+  commentId: P:MapQuest.Coordinates.Transforms.GeneralMatrix.RowDimension
+  id: RowDimension
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: RowDimension
+  nameWithType: GeneralMatrix.RowDimension
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.RowDimension
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Get row dimension.
+  example: []
+  syntax:
+    content: public int RowDimension { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of rows.
+    content.vb: Public ReadOnly Property RowDimension As Integer
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.RowDimension*
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnDimension
+  commentId: P:MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnDimension
+  id: ColumnDimension
+  parent: MapQuest.Coordinates.Transforms.GeneralMatrix
+  langs:
+  - csharp
+  - vb
+  name: ColumnDimension
+  nameWithType: GeneralMatrix.ColumnDimension
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnDimension
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  summary: Get column dimension.
+  example: []
+  syntax:
+    content: public int ColumnDimension { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of columns.
+    content.vb: Public ReadOnly Property ColumnDimension As Integer
+  overload: MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnDimension*
+references:
+- uid: MapQuest.Coordinates.Transforms
+  commentId: N:MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates.Transforms
+  nameWithType: MapQuest.Coordinates.Transforms
+  fullName: MapQuest.Coordinates.Transforms
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.#ctor
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix__ctor_System_Int32_System_Int32_
+  name: GeneralMatrix
+  nameWithType: GeneralMatrix.GeneralMatrix
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GeneralMatrix
+  nameWithType.vb: GeneralMatrix.New
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Create(System.Double[][])
+  commentId: M:MapQuest.Coordinates.Transforms.GeneralMatrix.Create(System.Double[][])
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Create_System_Double_____
+  name: Create(double[][])
+  nameWithType: GeneralMatrix.Create(double[][])
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Create(double[][])
+  nameWithType.vb: GeneralMatrix.Create(Double()())
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.Create(Double()())
+  name.vb: Create(Double()())
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Create(System.Double[][])
+    name: Create
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Create_System_Double_____
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Create(System.Double[][])
+    name: Create
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Create_System_Double_____
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+  - name: (
+  - name: )
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Double[][]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[][]
+  nameWithType: double[][]
+  fullName: double[][]
+  nameWithType.vb: Double()()
+  fullName.vb: Double()()
+  name.vb: Double()()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+  - name: (
+  - name: )
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Create*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Create
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Create_System_Double_____
+  name: Create
+  nameWithType: GeneralMatrix.Create
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Create
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix
+  commentId: T:MapQuest.Coordinates.Transforms.GeneralMatrix
+  parent: MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html
+  name: GeneralMatrix
+  nameWithType: GeneralMatrix
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Copy*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Copy
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Copy
+  name: Copy
+  nameWithType: GeneralMatrix.Copy
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Copy
+- uid: System.IndexOutOfRangeException
+  commentId: T:System.IndexOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception
+  name: IndexOutOfRangeException
+  nameWithType: IndexOutOfRangeException
+  fullName: System.IndexOutOfRangeException
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.GetElement*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.GetElement
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_GetElement_System_Int32_System_Int32_
+  name: GetElement
+  nameWithType: GeneralMatrix.GetElement
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GetElement
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_GetMatrix_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: GetMatrix
+  nameWithType: GeneralMatrix.GetMatrix
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.GetMatrix
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.SetElement*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.SetElement
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_SetElement_System_Int32_System_Int32_System_Double_
+  name: SetElement
+  nameWithType: GeneralMatrix.SetElement
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.SetElement
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_SetMatrix_System_Int32_System_Int32_System_Int32_System_Int32_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: SetMatrix
+  nameWithType: GeneralMatrix.SetMatrix
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.SetMatrix
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Transpose*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Transpose
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Transpose
+  name: Transpose
+  nameWithType: GeneralMatrix.Transpose
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Transpose
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Norm1*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Norm1
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Norm1
+  name: Norm1
+  nameWithType: GeneralMatrix.Norm1
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Norm1
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.NormInf*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.NormInf
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_NormInf
+  name: NormInf
+  nameWithType: GeneralMatrix.NormInf
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.NormInf
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.NormF*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.NormF
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_NormF
+  name: NormF
+  nameWithType: GeneralMatrix.NormF
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.NormF
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.UnaryMinus*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.UnaryMinus
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_UnaryMinus
+  name: UnaryMinus
+  nameWithType: GeneralMatrix.UnaryMinus
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.UnaryMinus
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Add*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Add
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Add_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: Add
+  nameWithType: GeneralMatrix.Add
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Add
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.AddEquals*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.AddEquals
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_AddEquals_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: AddEquals
+  nameWithType: GeneralMatrix.AddEquals
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.AddEquals
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Subtract*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Subtract
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Subtract_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: Subtract
+  nameWithType: GeneralMatrix.Subtract
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Subtract
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.SubtractEquals*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.SubtractEquals
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_SubtractEquals_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: SubtractEquals
+  nameWithType: GeneralMatrix.SubtractEquals
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.SubtractEquals
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiply*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiply
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayMultiply_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: ArrayMultiply
+  nameWithType: GeneralMatrix.ArrayMultiply
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiply
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiplyEquals*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiplyEquals
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayMultiplyEquals_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: ArrayMultiplyEquals
+  nameWithType: GeneralMatrix.ArrayMultiplyEquals
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayMultiplyEquals
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivide*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivide
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayRightDivide_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: ArrayRightDivide
+  nameWithType: GeneralMatrix.ArrayRightDivide
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivide
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivideEquals*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivideEquals
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayRightDivideEquals_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: ArrayRightDivideEquals
+  nameWithType: GeneralMatrix.ArrayRightDivideEquals
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayRightDivideEquals
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivide*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivide
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayLeftDivide_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: ArrayLeftDivide
+  nameWithType: GeneralMatrix.ArrayLeftDivide
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivide
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivideEquals*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivideEquals
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayLeftDivideEquals_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: ArrayLeftDivideEquals
+  nameWithType: GeneralMatrix.ArrayLeftDivideEquals
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayLeftDivideEquals
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Multiply_System_Double_
+  name: Multiply
+  nameWithType: GeneralMatrix.Multiply
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Multiply
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.MultiplyEquals*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.MultiplyEquals
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_MultiplyEquals_System_Double_
+  name: MultiplyEquals
+  nameWithType: GeneralMatrix.MultiplyEquals
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.MultiplyEquals
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Solve*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Solve
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Solve_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: Solve
+  nameWithType: GeneralMatrix.Solve
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Solve
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.SolveTranspose*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.SolveTranspose
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_SolveTranspose_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: SolveTranspose
+  nameWithType: GeneralMatrix.SolveTranspose
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.SolveTranspose
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Inverse*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Inverse
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Inverse
+  name: Inverse
+  nameWithType: GeneralMatrix.Inverse
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Inverse
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Determinant*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Determinant
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Determinant
+  name: Determinant
+  nameWithType: GeneralMatrix.Determinant
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Determinant
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Trace*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Trace
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Trace
+  name: Trace
+  nameWithType: GeneralMatrix.Trace
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Trace
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Random*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Random
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Random_System_Int32_System_Int32_
+  name: Random
+  nameWithType: GeneralMatrix.Random
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Random
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Identity*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Identity
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Identity_System_Int32_System_Int32_
+  name: Identity
+  nameWithType: GeneralMatrix.Identity
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Identity
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.op_Addition*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.op_Addition
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_op_Addition_MapQuest_Coordinates_Transforms_GeneralMatrix_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: operator +
+  nameWithType: GeneralMatrix.operator +
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.operator +
+  nameWithType.vb: GeneralMatrix.+
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.Coordinates.Transforms.GeneralMatrix.op_Addition*
+    name: +
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_op_Addition_MapQuest_Coordinates_Transforms_GeneralMatrix_MapQuest_Coordinates_Transforms_GeneralMatrix_
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.op_Subtraction*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.op_Subtraction
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_op_Subtraction_MapQuest_Coordinates_Transforms_GeneralMatrix_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: operator -
+  nameWithType: GeneralMatrix.operator -
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.operator -
+  nameWithType.vb: GeneralMatrix.-
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.Coordinates.Transforms.GeneralMatrix.op_Subtraction*
+    name: '-'
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_op_Subtraction_MapQuest_Coordinates_Transforms_GeneralMatrix_MapQuest_Coordinates_Transforms_GeneralMatrix_
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.op_Multiply*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.op_Multiply
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_op_Multiply_MapQuest_Coordinates_Transforms_GeneralMatrix_MapQuest_Coordinates_Transforms_GeneralMatrix_
+  name: operator *
+  nameWithType: GeneralMatrix.operator *
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.operator *
+  nameWithType.vb: GeneralMatrix.*
+  fullName.vb: MapQuest.Coordinates.Transforms.GeneralMatrix.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.Coordinates.Transforms.GeneralMatrix.op_Multiply*
+    name: '*'
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_op_Multiply_MapQuest_Coordinates_Transforms_GeneralMatrix_MapQuest_Coordinates_Transforms_GeneralMatrix_
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Clone*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Clone
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Clone
+  name: Clone
+  nameWithType: GeneralMatrix.Clone
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.Array*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.Array
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_Array
+  name: Array
+  nameWithType: GeneralMatrix.Array
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.Array
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayCopy*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayCopy
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_ArrayCopy
+  name: ArrayCopy
+  nameWithType: GeneralMatrix.ArrayCopy
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ArrayCopy
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnPackedCopy*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnPackedCopy
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_ColumnPackedCopy
+  name: ColumnPackedCopy
+  nameWithType: GeneralMatrix.ColumnPackedCopy
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnPackedCopy
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.RowPackedCopy*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.RowPackedCopy
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_RowPackedCopy
+  name: RowPackedCopy
+  nameWithType: GeneralMatrix.RowPackedCopy
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.RowPackedCopy
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.RowDimension*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.RowDimension
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_RowDimension
+  name: RowDimension
+  nameWithType: GeneralMatrix.RowDimension
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.RowDimension
+- uid: MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnDimension*
+  commentId: Overload:MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnDimension
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.GeneralMatrix.html#MapQuest_Coordinates_Transforms_GeneralMatrix_ColumnDimension
+  name: ColumnDimension
+  nameWithType: GeneralMatrix.ColumnDimension
+  fullName: MapQuest.Coordinates.Transforms.GeneralMatrix.ColumnDimension

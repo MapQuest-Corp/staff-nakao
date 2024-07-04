@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.CoordinateSystemType
+  commentId: T:MapQuest.CoordinateSystems.CoordinateSystemType
+  id: CoordinateSystemType
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.CoordinateSystemType.Geographic
+  - MapQuest.CoordinateSystems.CoordinateSystemType.Horizontal
+  - MapQuest.CoordinateSystems.CoordinateSystemType.None
+  - MapQuest.CoordinateSystems.CoordinateSystemType.Projected
+  langs:
+  - csharp
+  - vb
+  name: CoordinateSystemType
+  nameWithType: CoordinateSystemType
+  fullName: MapQuest.CoordinateSystems.CoordinateSystemType
+  type: Enum
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 座標系の種類を示す列挙体です。
+  example: []
+  syntax:
+    content: 'public enum CoordinateSystemType : short'
+    content.vb: Public Enum CoordinateSystemType As Short
+- uid: MapQuest.CoordinateSystems.CoordinateSystemType.None
+  commentId: F:MapQuest.CoordinateSystems.CoordinateSystemType.None
+  id: None
+  parent: MapQuest.CoordinateSystems.CoordinateSystemType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: CoordinateSystemType.None
+  fullName: MapQuest.CoordinateSystems.CoordinateSystemType.None
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 未定義。
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: MapQuest.CoordinateSystems.CoordinateSystemType
+- uid: MapQuest.CoordinateSystems.CoordinateSystemType.Horizontal
+  commentId: F:MapQuest.CoordinateSystems.CoordinateSystemType.Horizontal
+  id: Horizontal
+  parent: MapQuest.CoordinateSystems.CoordinateSystemType
+  langs:
+  - csharp
+  - vb
+  name: Horizontal
+  nameWithType: CoordinateSystemType.Horizontal
+  fullName: MapQuest.CoordinateSystems.CoordinateSystemType.Horizontal
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「<xref href="MapQuest.CoordinateSystems.HorizontalCoordinateSystem" data-throw-if-not-resolved="false"></xref>」を示します。
+  example: []
+  syntax:
+    content: Horizontal = 1
+    return:
+      type: MapQuest.CoordinateSystems.CoordinateSystemType
+- uid: MapQuest.CoordinateSystems.CoordinateSystemType.Geographic
+  commentId: F:MapQuest.CoordinateSystems.CoordinateSystemType.Geographic
+  id: Geographic
+  parent: MapQuest.CoordinateSystems.CoordinateSystemType
+  langs:
+  - csharp
+  - vb
+  name: Geographic
+  nameWithType: CoordinateSystemType.Geographic
+  fullName: MapQuest.CoordinateSystems.CoordinateSystemType.Geographic
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「<xref href="MapQuest.CoordinateSystems.GeographicCoordinateSystem" data-throw-if-not-resolved="false"></xref>」を示します。
+  example: []
+  syntax:
+    content: Geographic = 2
+    return:
+      type: MapQuest.CoordinateSystems.CoordinateSystemType
+- uid: MapQuest.CoordinateSystems.CoordinateSystemType.Projected
+  commentId: F:MapQuest.CoordinateSystems.CoordinateSystemType.Projected
+  id: Projected
+  parent: MapQuest.CoordinateSystems.CoordinateSystemType
+  langs:
+  - csharp
+  - vb
+  name: Projected
+  nameWithType: CoordinateSystemType.Projected
+  fullName: MapQuest.CoordinateSystems.CoordinateSystemType.Projected
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 「<xref href="MapQuest.CoordinateSystems.ProjectedCoordinateSystem" data-throw-if-not-resolved="false"></xref>」を示します。
+  example: []
+  syntax:
+    content: Projected = 3
+    return:
+      type: MapQuest.CoordinateSystems.CoordinateSystemType
+references:
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: MapQuest.CoordinateSystems.CoordinateSystemType
+  commentId: T:MapQuest.CoordinateSystems.CoordinateSystemType
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystemType.html
+  name: CoordinateSystemType
+  nameWithType: CoordinateSystemType
+  fullName: MapQuest.CoordinateSystems.CoordinateSystemType
+- uid: MapQuest.CoordinateSystems.HorizontalCoordinateSystem
+  commentId: T:MapQuest.CoordinateSystems.HorizontalCoordinateSystem
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.HorizontalCoordinateSystem.html
+  name: HorizontalCoordinateSystem
+  nameWithType: HorizontalCoordinateSystem
+  fullName: MapQuest.CoordinateSystems.HorizontalCoordinateSystem
+- uid: MapQuest.CoordinateSystems.GeographicCoordinateSystem
+  commentId: T:MapQuest.CoordinateSystems.GeographicCoordinateSystem
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.GeographicCoordinateSystem.html
+  name: GeographicCoordinateSystem
+  nameWithType: GeographicCoordinateSystem
+  fullName: MapQuest.CoordinateSystems.GeographicCoordinateSystem
+- uid: MapQuest.CoordinateSystems.ProjectedCoordinateSystem
+  commentId: T:MapQuest.CoordinateSystems.ProjectedCoordinateSystem
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ProjectedCoordinateSystem.html
+  name: ProjectedCoordinateSystem
+  nameWithType: ProjectedCoordinateSystem
+  fullName: MapQuest.CoordinateSystems.ProjectedCoordinateSystem

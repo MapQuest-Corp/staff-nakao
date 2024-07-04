@@ -1,0 +1,2309 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Collections.BoolArray
+  commentId: T:MapQuest.Collections.BoolArray
+  id: BoolArray
+  parent: MapQuest.Collections
+  children:
+  - MapQuest.Collections.BoolArray.#ctor
+  - MapQuest.Collections.BoolArray.#ctor(MapQuest.Collections.BoolArray)
+  - MapQuest.Collections.BoolArray.#ctor(System.Boolean[])
+  - MapQuest.Collections.BoolArray.#ctor(System.Int32)
+  - MapQuest.Collections.BoolArray.Add(System.Boolean)
+  - MapQuest.Collections.BoolArray.AddRange(MapQuest.Collections.BoolArray)
+  - MapQuest.Collections.BoolArray.AddRange(System.Boolean[])
+  - MapQuest.Collections.BoolArray.Capacity
+  - MapQuest.Collections.BoolArray.Clear
+  - MapQuest.Collections.BoolArray.Clone
+  - MapQuest.Collections.BoolArray.Contains(System.Boolean)
+  - MapQuest.Collections.BoolArray.CopyTo(System.Boolean[])
+  - MapQuest.Collections.BoolArray.CopyTo(System.Boolean[],System.Int32)
+  - MapQuest.Collections.BoolArray.Count
+  - MapQuest.Collections.BoolArray.GetEnumerator
+  - MapQuest.Collections.BoolArray.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Collections.BoolArray.IndexOf(System.Boolean)
+  - MapQuest.Collections.BoolArray.Insert(System.Int32,System.Boolean)
+  - MapQuest.Collections.BoolArray.IsFixedSize
+  - MapQuest.Collections.BoolArray.IsReadOnly
+  - MapQuest.Collections.BoolArray.IsSynchronized
+  - MapQuest.Collections.BoolArray.Item(System.Int32)
+  - MapQuest.Collections.BoolArray.Remove(System.Boolean)
+  - MapQuest.Collections.BoolArray.RemoveAt(System.Int32)
+  - MapQuest.Collections.BoolArray.SyncRoot
+  - MapQuest.Collections.BoolArray.TrimToSize
+  langs:
+  - csharp
+  - vb
+  name: BoolArray
+  nameWithType: BoolArray
+  fullName: MapQuest.Collections.BoolArray
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: タイプセーフである <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> の配列を定義します。
+  example: []
+  syntax:
+    content: 'public sealed class BoolArray : ICloneable, ISerializable, IEnumerable<bool>, IEnumerable'
+    content.vb: Public NotInheritable Class BoolArray Implements ICloneable, ISerializable, IEnumerable(Of Boolean), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.ICloneable
+  - System.Runtime.Serialization.ISerializable
+  - System.Collections.Generic.IEnumerable{System.Boolean}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: MapQuest.Collections.BoolArray.#ctor
+  commentId: M:MapQuest.Collections.BoolArray.#ctor
+  id: '#ctor'
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: BoolArray()
+  nameWithType: BoolArray.BoolArray()
+  fullName: MapQuest.Collections.BoolArray.BoolArray()
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 空で、デフォルトの初期量を備えた、 <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.%23ctor?text=System.Collections.ArrayList()" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public BoolArray()
+    content.vb: Public Sub New()
+  overload: MapQuest.Collections.BoolArray.#ctor*
+  nameWithType.vb: BoolArray.New()
+  fullName.vb: MapQuest.Collections.BoolArray.New()
+  name.vb: New()
+- uid: MapQuest.Collections.BoolArray.#ctor(System.Int32)
+  commentId: M:MapQuest.Collections.BoolArray.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: BoolArray(int)
+  nameWithType: BoolArray.BoolArray(int)
+  fullName: MapQuest.Collections.BoolArray.BoolArray(int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 空で、指定した初期量を備えた、 <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.%23ctor(System.Int32)?text=System.Collections.ArrayList(Int32)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public BoolArray(int capacity)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: 初期状態の新しい配列に格納できる <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> の数。
+    content.vb: Public Sub New(capacity As Integer)
+  overload: MapQuest.Collections.BoolArray.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">capacity</code> が 0 未満です。
+  nameWithType.vb: BoolArray.New(Integer)
+  fullName.vb: MapQuest.Collections.BoolArray.New(Integer)
+  name.vb: New(Integer)
+- uid: MapQuest.Collections.BoolArray.#ctor(MapQuest.Collections.BoolArray)
+  commentId: M:MapQuest.Collections.BoolArray.#ctor(MapQuest.Collections.BoolArray)
+  id: '#ctor(MapQuest.Collections.BoolArray)'
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: BoolArray(BoolArray)
+  nameWithType: BoolArray.BoolArray(BoolArray)
+  fullName: MapQuest.Collections.BoolArray.BoolArray(MapQuest.Collections.BoolArray)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定した <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> からコピーした <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> を格納し、
+
+    コピーされる <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> の数と同じ初期量を備えた、 
+
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.%23ctor(System.Collections.ICollection)?text=System.Collections.ArrayList(ICollection)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public BoolArray(BoolArray c)
+    parameters:
+    - id: c
+      type: MapQuest.Collections.BoolArray
+      description: 新しい配列に要素が追加された <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub New(c As BoolArray)
+  overload: MapQuest.Collections.BoolArray.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">c</code> が 
+              null 参照 (Visual Basic では Nothing) です。
+  nameWithType.vb: BoolArray.New(BoolArray)
+  fullName.vb: MapQuest.Collections.BoolArray.New(MapQuest.Collections.BoolArray)
+  name.vb: New(BoolArray)
+- uid: MapQuest.Collections.BoolArray.#ctor(System.Boolean[])
+  commentId: M:MapQuest.Collections.BoolArray.#ctor(System.Boolean[])
+  id: '#ctor(System.Boolean[])'
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: BoolArray(bool[])
+  nameWithType: BoolArray.BoolArray(bool[])
+  fullName: MapQuest.Collections.BoolArray.BoolArray(bool[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定した <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> の配列からコピーした <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> を格納し、
+
+
+    コピーされる <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> の数と同じ初期量を備えた、 
+
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.%23ctor(System.Collections.ICollection)?text=System.Collections.ArrayList(ICollection)" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public BoolArray(bool[] a)
+    parameters:
+    - id: a
+      type: System.Boolean[]
+      description: 新しい配列に要素が追加された <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub New(a As Boolean())
+  overload: MapQuest.Collections.BoolArray.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">c</code> が 
+              null 参照 (Visual Basic では Nothing) です。
+  nameWithType.vb: BoolArray.New(Boolean())
+  fullName.vb: MapQuest.Collections.BoolArray.New(Boolean())
+  name.vb: New(Boolean())
+- uid: MapQuest.Collections.BoolArray.CopyTo(System.Boolean[])
+  commentId: M:MapQuest.Collections.BoolArray.CopyTo(System.Boolean[])
+  id: CopyTo(System.Boolean[])
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(bool[])
+  nameWithType: BoolArray.CopyTo(bool[])
+  fullName: MapQuest.Collections.BoolArray.CopyTo(bool[])
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+             全体を互換性のある 1 次元の <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 
+             にコピーします。コピー操作は、コピー先の配列の先頭から始まります。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.CopyTo(System.Array)?text=System.Collections.ArrayList.CopyTo" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public void CopyTo(bool[] array)
+    parameters:
+    - id: array
+      type: System.Boolean[]
+      description: >-
+        <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+                 から要素がコピーされる <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 
+                 の 1 次元配列。この配列には、0 から始まるインデックス番号が必要です。
+    content.vb: Public Sub CopyTo(array As Boolean())
+  overload: MapQuest.Collections.BoolArray.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">array</code> が 
+               null 参照 (Visual Basic では Nothing) です。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      <p>
+        <code class="paramref">array</code> が多次元です。
+
+               </p>
+      <p>または</p>
+
+      <p>
+               コピー元の <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+               の <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 数が、コピー先の <code class="paramref">array</code> に格納できる要素の数を超えています。
+
+               </p>
+  nameWithType.vb: BoolArray.CopyTo(Boolean())
+  fullName.vb: MapQuest.Collections.BoolArray.CopyTo(Boolean())
+  name.vb: CopyTo(Boolean())
+- uid: MapQuest.Collections.BoolArray.CopyTo(System.Boolean[],System.Int32)
+  commentId: M:MapQuest.Collections.BoolArray.CopyTo(System.Boolean[],System.Int32)
+  id: CopyTo(System.Boolean[],System.Int32)
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(bool[], int)
+  nameWithType: BoolArray.CopyTo(bool[], int)
+  fullName: MapQuest.Collections.BoolArray.CopyTo(bool[], int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+             全体を互換性のある 1 次元の <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 
+             にコピーします。コピー操作は、コピー先の配列の指定したインデックスから始まります。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.CopyTo(System.Array)?text=System.Collections.ArrayList.CopyTo" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public void CopyTo(bool[] array, int start)
+    parameters:
+    - id: array
+      type: System.Boolean[]
+      description: >-
+        <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+                 から要素がコピーされる <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 
+                 の 1 次元配列。この配列には、0 から始まるインデックス番号が必要です。
+    - id: start
+      type: System.Int32
+      description: コピーの開始位置となる、 0 から始まるインデックス番号。
+    content.vb: Public Sub CopyTo(array As Boolean(), start As Integer)
+  overload: MapQuest.Collections.BoolArray.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      <code class="paramref">array</code> が 
+               null 参照 (Visual Basic では Nothing) です。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">start</code> 
+               が 0 未満です。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      <p>
+        <code class="paramref">array</code> が多次元です。
+
+               </p>
+      <p>または</p>
+
+      <p>
+        <code class="paramref">start</code> が 
+               <code class="paramref">array</code> の長さ以上です。
+
+               </p>
+      <p>または</p>
+
+      <p>
+               コピー元の <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+               の <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 数が、 <code class="paramref">start</code> からコピー先の 
+               <code class="paramref">array</code> の末尾までに格納できる数を超えています。
+
+               </p>
+  nameWithType.vb: BoolArray.CopyTo(Boolean(), Integer)
+  fullName.vb: MapQuest.Collections.BoolArray.CopyTo(Boolean(), Integer)
+  name.vb: CopyTo(Boolean(), Integer)
+- uid: MapQuest.Collections.BoolArray.Add(System.Boolean)
+  commentId: M:MapQuest.Collections.BoolArray.Add(System.Boolean)
+  id: Add(System.Boolean)
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: Add(bool)
+  nameWithType: BoolArray.Add(bool)
+  fullName: MapQuest.Collections.BoolArray.Add(bool)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+             の末尾に <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> を追加します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Add(System.Object)?text=System.Collections.ArrayList.Add" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public int Add(bool item)
+    parameters:
+    - id: item
+      type: System.Boolean
+      description: <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> の末尾に追加する <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Int32
+      description: >-
+        <code class="paramref">item</code> が追加された位置の 
+                 <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> インデックス。
+    content.vb: Public Function Add(item As Boolean) As Integer
+  overload: MapQuest.Collections.BoolArray.Add*
+  nameWithType.vb: BoolArray.Add(Boolean)
+  fullName.vb: MapQuest.Collections.BoolArray.Add(Boolean)
+  name.vb: Add(Boolean)
+- uid: MapQuest.Collections.BoolArray.Clear
+  commentId: M:MapQuest.Collections.BoolArray.Clear
+  id: Clear
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: BoolArray.Clear()
+  fullName: MapQuest.Collections.BoolArray.Clear()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+             からすべての <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> を削除します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Clear?text=System.Collections.ArrayList.Clear" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: MapQuest.Collections.BoolArray.Clear*
+- uid: MapQuest.Collections.BoolArray.Contains(System.Boolean)
+  commentId: M:MapQuest.Collections.BoolArray.Contains(System.Boolean)
+  id: Contains(System.Boolean)
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: Contains(bool)
+  nameWithType: BoolArray.Contains(bool)
+  fullName: MapQuest.Collections.BoolArray.Contains(bool)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    ある <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> が <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+
+    内に存在するかどうかを判断します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Contains(System.Object)?text=System.Collections.ArrayList.Contains" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public bool Contains(bool item)
+    parameters:
+    - id: item
+      type: System.Boolean
+      description: >-
+        <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 内で検索される 
+                 <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: >-
+        <code class="paramref">item</code> が <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+                 に存在する場合は true 。それ以外の場合は false 。
+    content.vb: Public Function Contains(item As Boolean) As Boolean
+  overload: MapQuest.Collections.BoolArray.Contains*
+  nameWithType.vb: BoolArray.Contains(Boolean)
+  fullName.vb: MapQuest.Collections.BoolArray.Contains(Boolean)
+  name.vb: Contains(Boolean)
+- uid: MapQuest.Collections.BoolArray.IndexOf(System.Boolean)
+  commentId: M:MapQuest.Collections.BoolArray.IndexOf(System.Boolean)
+  id: IndexOf(System.Boolean)
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(bool)
+  nameWithType: BoolArray.IndexOf(bool)
+  fullName: MapQuest.Collections.BoolArray.IndexOf(bool)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定した <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> を検索し、 
+
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+
+    内で最初に見つかった位置の 0 から始まるインデックスを返します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.IndexOf(System.Object)?text=System.Collections.ArrayList.IndexOf" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public int IndexOf(bool item)
+    parameters:
+    - id: item
+      type: System.Boolean
+      description: >-
+        <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+                 内で検索される <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Int32
+      description: >-
+        <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 内で <code class="paramref">item</code> 
+                 が見つかった場合は、最初に見つかった位置の 0 から始まるインデックス番号。
+
+                 それ以外の場合は -1。
+    content.vb: Public Function IndexOf(item As Boolean) As Integer
+  overload: MapQuest.Collections.BoolArray.IndexOf*
+  nameWithType.vb: BoolArray.IndexOf(Boolean)
+  fullName.vb: MapQuest.Collections.BoolArray.IndexOf(Boolean)
+  name.vb: IndexOf(Boolean)
+- uid: MapQuest.Collections.BoolArray.Insert(System.Int32,System.Boolean)
+  commentId: M:MapQuest.Collections.BoolArray.Insert(System.Int32,System.Boolean)
+  id: Insert(System.Int32,System.Boolean)
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: Insert(int, bool)
+  nameWithType: BoolArray.Insert(int, bool)
+  fullName: MapQuest.Collections.BoolArray.Insert(int, bool)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+             内の指定したインデックスの位置に要素を挿入します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Insert(System.Int32%2cSystem.Object)?text=System.Collections.ArrayList.Insert" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public void Insert(int index, bool item)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: <code class="paramref">item</code> を挿入する位置の、0 から始まるインデックス番号。
+    - id: item
+      type: System.Boolean
+      description: 挿入する <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub Insert(index As Integer, item As Boolean)
+  overload: MapQuest.Collections.BoolArray.Insert*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <p>
+        <code class="paramref">index</code> が 0 未満です。
+
+               </p>
+      <p>または</p>
+
+      <p>
+        <code class="paramref">index</code> が <xref href="MapQuest.Collections.BoolArray.Count" data-throw-if-not-resolved="false"></xref> より大きい値です。
+
+               </p>
+  nameWithType.vb: BoolArray.Insert(Integer, Boolean)
+  fullName.vb: MapQuest.Collections.BoolArray.Insert(Integer, Boolean)
+  name.vb: Insert(Integer, Boolean)
+- uid: MapQuest.Collections.BoolArray.Remove(System.Boolean)
+  commentId: M:MapQuest.Collections.BoolArray.Remove(System.Boolean)
+  id: Remove(System.Boolean)
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: Remove(bool)
+  nameWithType: BoolArray.Remove(bool)
+  fullName: MapQuest.Collections.BoolArray.Remove(bool)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+             内から指定された <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> を削除します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Remove(System.Object)?text=System.Collections.ArrayList.Remove" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public void Remove(bool item)
+    parameters:
+    - id: item
+      type: System.Boolean
+      description: <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> から削除する <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub Remove(item As Boolean)
+  overload: MapQuest.Collections.BoolArray.Remove*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">item</code> が配列内に見つかりません。
+  nameWithType.vb: BoolArray.Remove(Boolean)
+  fullName.vb: MapQuest.Collections.BoolArray.Remove(Boolean)
+  name.vb: Remove(Boolean)
+- uid: MapQuest.Collections.BoolArray.RemoveAt(System.Int32)
+  commentId: M:MapQuest.Collections.BoolArray.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(int)
+  nameWithType: BoolArray.RemoveAt(int)
+  fullName: MapQuest.Collections.BoolArray.RemoveAt(int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+             の指定したインデックスにある <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> を削除します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.RemoveAt(System.Int32)?text=System.Collections.ArrayList.RemoveAt" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public void RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 削除する <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> の、0 から始まるインデックス番号。
+    content.vb: Public Sub RemoveAt(index As Integer)
+  overload: MapQuest.Collections.BoolArray.RemoveAt*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <p>
+        <code class="paramref">index</code> が 0 未満です。
+
+               </p>
+      <p>または</p>
+
+      <p>
+        <code class="paramref">index</code> が <xref href="MapQuest.Collections.BoolArray.Count" data-throw-if-not-resolved="false"></xref> 以上です。
+
+               </p>
+  nameWithType.vb: BoolArray.RemoveAt(Integer)
+  fullName.vb: MapQuest.Collections.BoolArray.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+- uid: MapQuest.Collections.BoolArray.AddRange(MapQuest.Collections.BoolArray)
+  commentId: M:MapQuest.Collections.BoolArray.AddRange(MapQuest.Collections.BoolArray)
+  id: AddRange(MapQuest.Collections.BoolArray)
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: AddRange(BoolArray)
+  nameWithType: BoolArray.AddRange(BoolArray)
+  fullName: MapQuest.Collections.BoolArray.AddRange(MapQuest.Collections.BoolArray)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 指定した <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> の要素をコピーします。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.AddRange(System.Collections.ICollection)?text=System.Collections.ArrayList.AddRange" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public int AddRange(BoolArray x)
+    parameters:
+    - id: x
+      type: MapQuest.Collections.BoolArray
+      description: >-
+        コレクションに追加するオブジェクトを格納する
+
+        <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Int32
+      description: <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> に格納されている要素の数。
+    content.vb: Public Function AddRange(x As BoolArray) As Integer
+  overload: MapQuest.Collections.BoolArray.AddRange*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">x</code> が null 参照 (Visual Basic では Nothing) です。
+- uid: MapQuest.Collections.BoolArray.AddRange(System.Boolean[])
+  commentId: M:MapQuest.Collections.BoolArray.AddRange(System.Boolean[])
+  id: AddRange(System.Boolean[])
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: AddRange(bool[])
+  nameWithType: BoolArray.AddRange(bool[])
+  fullName: MapQuest.Collections.BoolArray.AddRange(bool[])
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 指定した <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 配列の要素をコピーします。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.AddRange(System.Collections.ICollection)?text=System.Collections.ArrayList.AddRange" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public int AddRange(bool[] x)
+    parameters:
+    - id: x
+      type: System.Boolean[]
+      description: >-
+        コレクションに追加するオブジェクトを格納する
+
+        <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 型の配列。
+    return:
+      type: System.Int32
+      description: <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> に格納されている要素の数。
+    content.vb: Public Function AddRange(x As Boolean()) As Integer
+  overload: MapQuest.Collections.BoolArray.AddRange*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">x</code> が null 参照 (Visual Basic では Nothing) です。
+  nameWithType.vb: BoolArray.AddRange(Boolean())
+  fullName.vb: MapQuest.Collections.BoolArray.AddRange(Boolean())
+  name.vb: AddRange(Boolean())
+- uid: MapQuest.Collections.BoolArray.TrimToSize
+  commentId: M:MapQuest.Collections.BoolArray.TrimToSize
+  id: TrimToSize
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: TrimToSize()
+  nameWithType: BoolArray.TrimToSize()
+  fullName: MapQuest.Collections.BoolArray.TrimToSize()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    容量を <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+
+    内にある実際の <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 数に設定します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.TrimToSize?text=System.Collections.ArrayList.TrimToSize" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public void TrimToSize()
+    content.vb: Public Sub TrimToSize()
+  overload: MapQuest.Collections.BoolArray.TrimToSize*
+- uid: MapQuest.Collections.BoolArray.Clone
+  commentId: M:MapQuest.Collections.BoolArray.Clone
+  id: Clone
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: BoolArray.Clone()
+  fullName: MapQuest.Collections.BoolArray.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> の簡易コピーを生成します。
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+      description: <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> の簡易コピーである新しいオブジェクト。
+    content.vb: Public Function Clone() As Object
+  overload: MapQuest.Collections.BoolArray.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.Collections.BoolArray.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Collections.BoolArray.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: BoolArray.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Collections.BoolArray.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: <xref href="System.Runtime.Serialization.SerializationInfo?text=SerializationInfo" data-throw-if-not-resolved="false"></xref> に、オブジェクトをシリアル化するために必要なデータを設定します。
+  example: []
+  syntax:
+    content: public void GetObjectData(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: データを読み込む先の <xref href="System.Runtime.Serialization.SerializationInfo?text=SerializationInfo" data-throw-if-not-resolved="false"></xref> 。
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: このシリアル化のシリアル化先 (<xref href="System.Runtime.Serialization.StreamingContext?text=StreamingContext" data-throw-if-not-resolved="false"></xref> を参照)。
+    content.vb: Public Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Collections.BoolArray.GetObjectData*
+  implements:
+  - System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- uid: MapQuest.Collections.BoolArray.GetEnumerator
+  commentId: M:MapQuest.Collections.BoolArray.GetEnumerator
+  id: GetEnumerator
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: BoolArray.GetEnumerator()
+  fullName: MapQuest.Collections.BoolArray.GetEnumerator()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  example: []
+  syntax:
+    content: public IEnumerator<bool> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Boolean}
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of Boolean)
+  overload: MapQuest.Collections.BoolArray.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{System.Boolean}.GetEnumerator
+- uid: MapQuest.Collections.BoolArray.Count
+  commentId: P:MapQuest.Collections.BoolArray.Count
+  id: Count
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: BoolArray.Count
+  fullName: MapQuest.Collections.BoolArray.Count
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+            に格納されている <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> の数を取得します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Count?text=System.Collections.ArrayList.Count" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: >-
+        <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+                に格納されている要素の数。
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: MapQuest.Collections.BoolArray.Count*
+- uid: MapQuest.Collections.BoolArray.Item(System.Int32)
+  commentId: P:MapQuest.Collections.BoolArray.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: BoolArray.this[int]
+  fullName: MapQuest.Collections.BoolArray.this[int]
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 指定された <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> を取得または設定します。
+  remarks: 詳細については <xref href="System.Collections.IList.Item(System.Int32)?text=System.Collections.IList.this" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public bool this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 取得または設定する要素の、0 から始まるインデックス番号。
+    return:
+      type: System.Boolean
+      description: 指定したインデックスにある <xref href="System.Boolean?text=System.Boolean" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Default Property this[](index As Integer) As Boolean
+  overload: MapQuest.Collections.BoolArray.Item*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <p>
+        <code class="paramref">index</code> が 0 未満です。</p>
+      <p>または</p>
+
+      <p>
+        <code class="paramref">index</code> が <xref href="MapQuest.Collections.BoolArray.Count" data-throw-if-not-resolved="false"></xref> 以上です。</p>
+  nameWithType.vb: BoolArray.this[](Integer)
+  fullName.vb: MapQuest.Collections.BoolArray.this[](Integer)
+  name.vb: this[](Integer)
+- uid: MapQuest.Collections.BoolArray.IsSynchronized
+  commentId: P:MapQuest.Collections.BoolArray.IsSynchronized
+  id: IsSynchronized
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: IsSynchronized
+  nameWithType: BoolArray.IsSynchronized
+  fullName: MapQuest.Collections.BoolArray.IsSynchronized
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+             へのアクセスが同期されている (スレッド セーフである) かどうかを示す値を取得します。
+
+             <p><!-- Non Support 2005/01/20 -->
+             	このプロパティは、現在サポートしていません。
+
+             </p>
+  remarks: 詳細については <xref href="System.Collections.ArrayList.IsSynchronized?text=System.Collections.ArrayList.IsSynchronized" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public bool IsSynchronized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+                 へのアクセスが同期されている (スレッド セーフである) 場合は true 。
+
+                 それ以外の場合は false 。
+    content.vb: Public ReadOnly Property IsSynchronized As Boolean
+  overload: MapQuest.Collections.BoolArray.IsSynchronized*
+- uid: MapQuest.Collections.BoolArray.SyncRoot
+  commentId: P:MapQuest.Collections.BoolArray.SyncRoot
+  id: SyncRoot
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: SyncRoot
+  nameWithType: BoolArray.SyncRoot
+  fullName: MapQuest.Collections.BoolArray.SyncRoot
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+            へのアクセスを同期するために使用できるオブジェクトを取得します。
+
+            <p><!-- Non Support 2005/01/20 -->
+            	このプロパティは、現在サポートしていません。
+
+            </p>
+  remarks: 詳細については <xref href="System.Collections.ArrayList.SyncRoot?text=System.Collections.ArrayList.SyncRoot" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public object SyncRoot { get; }
+    parameters: []
+    return:
+      type: System.Object
+      description: >-
+        <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+                へのアクセスを同期するために使用できるオブジェクト。
+    content.vb: Public ReadOnly Property SyncRoot As Object
+  overload: MapQuest.Collections.BoolArray.SyncRoot*
+- uid: MapQuest.Collections.BoolArray.IsFixedSize
+  commentId: P:MapQuest.Collections.BoolArray.IsFixedSize
+  id: IsFixedSize
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: IsFixedSize
+  nameWithType: BoolArray.IsFixedSize
+  fullName: MapQuest.Collections.BoolArray.IsFixedSize
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+            が固定サイズかどうかを示す値を取得します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.IsFixedSize?text=System.Collections.ArrayList.IsFixedSize" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public bool IsFixedSize { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: 現在の実装では必ず false です。
+    content.vb: Public ReadOnly Property IsFixedSize As Boolean
+  overload: MapQuest.Collections.BoolArray.IsFixedSize*
+- uid: MapQuest.Collections.BoolArray.IsReadOnly
+  commentId: P:MapQuest.Collections.BoolArray.IsReadOnly
+  id: IsReadOnly
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: BoolArray.IsReadOnly
+  fullName: MapQuest.Collections.BoolArray.IsReadOnly
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+             が読み取り専用かどうかを示す値を取得します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.IsReadOnly?text=System.Collections.ArrayList.IsReadOnly" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: 現在の実装では必ず false です。
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: MapQuest.Collections.BoolArray.IsReadOnly*
+- uid: MapQuest.Collections.BoolArray.Capacity
+  commentId: P:MapQuest.Collections.BoolArray.Capacity
+  id: Capacity
+  parent: MapQuest.Collections.BoolArray
+  langs:
+  - csharp
+  - vb
+  name: Capacity
+  nameWithType: BoolArray.Capacity
+  fullName: MapQuest.Collections.BoolArray.Capacity
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+             に格納できる要素の数を取得または設定します。
+  remarks: 詳細については <xref href="System.Collections.ArrayList.Capacity?text=System.Collections.ArrayList.Capacity" data-throw-if-not-resolved="false"></xref> を参照してください。
+  example: []
+  syntax:
+    content: public int Capacity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: >-
+        <xref href="MapQuest.Collections.BoolArray" data-throw-if-not-resolved="false"></xref> 
+                 に格納できる要素の数。
+
+                  0 が指定された場合は規定値を設定します。
+
+                 現在設定されている数より小さい場合は例外を発行します。
+    content.vb: Public Property Capacity As Integer
+  overload: MapQuest.Collections.BoolArray.Capacity*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <xref href="MapQuest.Collections.BoolArray.Capacity" data-throw-if-not-resolved="false"></xref> が <xref href="MapQuest.Collections.BoolArray.Count" data-throw-if-not-resolved="false"></xref> 
+               より小さい値に設定されています。
+references:
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.Collections
+  commentId: N:MapQuest.Collections
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Collections
+  nameWithType: MapQuest.Collections
+  fullName: MapQuest.Collections
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Collections.Generic.IEnumerable{System.Boolean}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Boolean}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<bool>
+  nameWithType: IEnumerable<bool>
+  fullName: System.Collections.Generic.IEnumerable<bool>
+  nameWithType.vb: IEnumerable(Of Boolean)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Boolean)
+  name.vb: IEnumerable(Of Boolean)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: MapQuest.Collections.BoolArray
+  commentId: T:MapQuest.Collections.BoolArray
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html
+  name: BoolArray
+  nameWithType: BoolArray
+  fullName: MapQuest.Collections.BoolArray
+- uid: System.Collections.ArrayList.#ctor
+  commentId: M:System.Collections.ArrayList.#ctor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor
+  name: ArrayList()
+  nameWithType: ArrayList.ArrayList()
+  fullName: System.Collections.ArrayList.ArrayList()
+  nameWithType.vb: ArrayList.New()
+  fullName.vb: System.Collections.ArrayList.New()
+  name.vb: New()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.#ctor
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor
+  - name: (
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.BoolArray.#ctor*
+  commentId: Overload:MapQuest.Collections.BoolArray.#ctor
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray__ctor
+  name: BoolArray
+  nameWithType: BoolArray.BoolArray
+  fullName: MapQuest.Collections.BoolArray.BoolArray
+  nameWithType.vb: BoolArray.New
+  fullName.vb: MapQuest.Collections.BoolArray.New
+  name.vb: New
+- uid: System.Collections.ArrayList.#ctor(System.Int32)
+  commentId: M:System.Collections.ArrayList.#ctor(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-int32)
+  name: ArrayList(int)
+  nameWithType: ArrayList.ArrayList(int)
+  fullName: System.Collections.ArrayList.ArrayList(int)
+  nameWithType.vb: ArrayList.New(Integer)
+  fullName.vb: System.Collections.ArrayList.New(Integer)
+  name.vb: New(Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.#ctor(System.Int32)
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.ArrayList.#ctor(System.Collections.ICollection)
+  commentId: M:System.Collections.ArrayList.#ctor(System.Collections.ICollection)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-collections-icollection)
+  name: ArrayList(ICollection)
+  nameWithType: ArrayList.ArrayList(ICollection)
+  fullName: System.Collections.ArrayList.ArrayList(System.Collections.ICollection)
+  nameWithType.vb: ArrayList.New(ICollection)
+  fullName.vb: System.Collections.ArrayList.New(System.Collections.ICollection)
+  name.vb: New(ICollection)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.#ctor(System.Collections.ICollection)
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-collections-icollection)
+  - name: (
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Boolean[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool[]
+  nameWithType: bool[]
+  fullName: bool[]
+  nameWithType.vb: Boolean()
+  fullName.vb: Boolean()
+  name.vb: Boolean()
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList.CopyTo(System.Array)
+  commentId: M:System.Collections.ArrayList.CopyTo(System.Array)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)
+  name: CopyTo(Array)
+  nameWithType: ArrayList.CopyTo(Array)
+  fullName: System.Collections.ArrayList.CopyTo(System.Array)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.CopyTo(System.Array)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.CopyTo(System.Array)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: MapQuest.Collections.BoolArray.CopyTo*
+  commentId: Overload:MapQuest.Collections.BoolArray.CopyTo
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_CopyTo_System_Boolean___
+  name: CopyTo
+  nameWithType: BoolArray.CopyTo
+  fullName: MapQuest.Collections.BoolArray.CopyTo
+- uid: System.Collections.ArrayList.Add(System.Object)
+  commentId: M:System.Collections.ArrayList.Add(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add
+  name: Add(object)
+  nameWithType: ArrayList.Add(object)
+  fullName: System.Collections.ArrayList.Add(object)
+  nameWithType.vb: ArrayList.Add(Object)
+  fullName.vb: System.Collections.ArrayList.Add(Object)
+  name.vb: Add(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Add(System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Add(System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Collections.BoolArray.Add*
+  commentId: Overload:MapQuest.Collections.BoolArray.Add
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_Add_System_Boolean_
+  name: Add
+  nameWithType: BoolArray.Add
+  fullName: MapQuest.Collections.BoolArray.Add
+- uid: System.Collections.ArrayList.Clear
+  commentId: M:System.Collections.ArrayList.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear
+  name: Clear()
+  nameWithType: ArrayList.Clear()
+  fullName: System.Collections.ArrayList.Clear()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.BoolArray.Clear*
+  commentId: Overload:MapQuest.Collections.BoolArray.Clear
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_Clear
+  name: Clear
+  nameWithType: BoolArray.Clear
+  fullName: MapQuest.Collections.BoolArray.Clear
+- uid: System.Collections.ArrayList.Contains(System.Object)
+  commentId: M:System.Collections.ArrayList.Contains(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains
+  name: Contains(object)
+  nameWithType: ArrayList.Contains(object)
+  fullName: System.Collections.ArrayList.Contains(object)
+  nameWithType.vb: ArrayList.Contains(Object)
+  fullName.vb: System.Collections.ArrayList.Contains(Object)
+  name.vb: Contains(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Contains(System.Object)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Contains(System.Object)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Collections.BoolArray.Contains*
+  commentId: Overload:MapQuest.Collections.BoolArray.Contains
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_Contains_System_Boolean_
+  name: Contains
+  nameWithType: BoolArray.Contains
+  fullName: MapQuest.Collections.BoolArray.Contains
+- uid: System.Collections.ArrayList.IndexOf(System.Object)
+  commentId: M:System.Collections.ArrayList.IndexOf(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)
+  name: IndexOf(object)
+  nameWithType: ArrayList.IndexOf(object)
+  fullName: System.Collections.ArrayList.IndexOf(object)
+  nameWithType.vb: ArrayList.IndexOf(Object)
+  fullName.vb: System.Collections.ArrayList.IndexOf(Object)
+  name.vb: IndexOf(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.IndexOf(System.Object)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.IndexOf(System.Object)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Collections.BoolArray.IndexOf*
+  commentId: Overload:MapQuest.Collections.BoolArray.IndexOf
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_IndexOf_System_Boolean_
+  name: IndexOf
+  nameWithType: BoolArray.IndexOf
+  fullName: MapQuest.Collections.BoolArray.IndexOf
+- uid: MapQuest.Collections.BoolArray.Count
+  commentId: P:MapQuest.Collections.BoolArray.Count
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_Count
+  name: Count
+  nameWithType: BoolArray.Count
+  fullName: MapQuest.Collections.BoolArray.Count
+- uid: System.Collections.ArrayList.Insert(System.Int32,System.Object)
+  commentId: M:System.Collections.ArrayList.Insert(System.Int32,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert
+  name: Insert(int, object)
+  nameWithType: ArrayList.Insert(int, object)
+  fullName: System.Collections.ArrayList.Insert(int, object)
+  nameWithType.vb: ArrayList.Insert(Integer, Object)
+  fullName.vb: System.Collections.ArrayList.Insert(Integer, Object)
+  name.vb: Insert(Integer, Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Insert(System.Int32,System.Object)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Insert(System.Int32,System.Object)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Collections.BoolArray.Insert*
+  commentId: Overload:MapQuest.Collections.BoolArray.Insert
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_Insert_System_Int32_System_Boolean_
+  name: Insert
+  nameWithType: BoolArray.Insert
+  fullName: MapQuest.Collections.BoolArray.Insert
+- uid: System.Collections.ArrayList.Remove(System.Object)
+  commentId: M:System.Collections.ArrayList.Remove(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove
+  name: Remove(object)
+  nameWithType: ArrayList.Remove(object)
+  fullName: System.Collections.ArrayList.Remove(object)
+  nameWithType.vb: ArrayList.Remove(Object)
+  fullName.vb: System.Collections.ArrayList.Remove(Object)
+  name.vb: Remove(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Collections.BoolArray.Remove*
+  commentId: Overload:MapQuest.Collections.BoolArray.Remove
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_Remove_System_Boolean_
+  name: Remove
+  nameWithType: BoolArray.Remove
+  fullName: MapQuest.Collections.BoolArray.Remove
+- uid: System.Collections.ArrayList.RemoveAt(System.Int32)
+  commentId: M:System.Collections.ArrayList.RemoveAt(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat
+  name: RemoveAt(int)
+  nameWithType: ArrayList.RemoveAt(int)
+  fullName: System.Collections.ArrayList.RemoveAt(int)
+  nameWithType.vb: ArrayList.RemoveAt(Integer)
+  fullName.vb: System.Collections.ArrayList.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.BoolArray.RemoveAt*
+  commentId: Overload:MapQuest.Collections.BoolArray.RemoveAt
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_RemoveAt_System_Int32_
+  name: RemoveAt
+  nameWithType: BoolArray.RemoveAt
+  fullName: MapQuest.Collections.BoolArray.RemoveAt
+- uid: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  commentId: M:System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange
+  name: AddRange(ICollection)
+  nameWithType: ArrayList.AddRange(ICollection)
+  fullName: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+    name: AddRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange
+  - name: (
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+    name: AddRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange
+  - name: (
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+- uid: MapQuest.Collections.BoolArray.AddRange*
+  commentId: Overload:MapQuest.Collections.BoolArray.AddRange
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_AddRange_MapQuest_Collections_BoolArray_
+  name: AddRange
+  nameWithType: BoolArray.AddRange
+  fullName: MapQuest.Collections.BoolArray.AddRange
+- uid: System.Collections.ArrayList.TrimToSize
+  commentId: M:System.Collections.ArrayList.TrimToSize
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize
+  name: TrimToSize()
+  nameWithType: ArrayList.TrimToSize()
+  fullName: System.Collections.ArrayList.TrimToSize()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.TrimToSize
+    name: TrimToSize
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.TrimToSize
+    name: TrimToSize
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.BoolArray.TrimToSize*
+  commentId: Overload:MapQuest.Collections.BoolArray.TrimToSize
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_TrimToSize
+  name: TrimToSize
+  nameWithType: BoolArray.TrimToSize
+  fullName: MapQuest.Collections.BoolArray.TrimToSize
+- uid: MapQuest.Collections.BoolArray.Clone*
+  commentId: Overload:MapQuest.Collections.BoolArray.Clone
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_Clone
+  name: Clone
+  nameWithType: BoolArray.Clone
+  fullName: MapQuest.Collections.BoolArray.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: MapQuest.Collections.BoolArray.GetObjectData*
+  commentId: Overload:MapQuest.Collections.BoolArray.GetObjectData
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  name: GetObjectData
+  nameWithType: BoolArray.GetObjectData
+  fullName: MapQuest.Collections.BoolArray.GetObjectData
+- uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Runtime.Serialization.ISerializable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: ISerializable.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: MapQuest.Collections.BoolArray.GetEnumerator*
+  commentId: Overload:MapQuest.Collections.BoolArray.GetEnumerator
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_GetEnumerator
+  name: GetEnumerator
+  nameWithType: BoolArray.GetEnumerator
+  fullName: MapQuest.Collections.BoolArray.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{System.Boolean}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{System.Boolean}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{System.Boolean}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<bool>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<bool>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of Boolean).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Boolean).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{System.Boolean}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{System.Boolean}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{System.Boolean}
+  commentId: T:System.Collections.Generic.IEnumerator{System.Boolean}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<bool>
+  nameWithType: IEnumerator<bool>
+  fullName: System.Collections.Generic.IEnumerator<bool>
+  nameWithType.vb: IEnumerator(Of Boolean)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Boolean)
+  name.vb: IEnumerator(Of Boolean)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ArrayList.Count
+  commentId: P:System.Collections.ArrayList.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.count
+  name: Count
+  nameWithType: ArrayList.Count
+  fullName: System.Collections.ArrayList.Count
+- uid: MapQuest.Collections.BoolArray.Count*
+  commentId: Overload:MapQuest.Collections.BoolArray.Count
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_Count
+  name: Count
+  nameWithType: BoolArray.Count
+  fullName: MapQuest.Collections.BoolArray.Count
+- uid: System.Collections.IList.Item(System.Int32)
+  commentId: P:System.Collections.IList.Item(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IList.this[int]
+  fullName: System.Collections.IList.this[int]
+  nameWithType.vb: IList.this[](Integer)
+  fullName.vb: System.Collections.IList.this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.IList.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Collections.BoolArray.Item*
+  commentId: Overload:MapQuest.Collections.BoolArray.Item
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_Item_System_Int32_
+  name: this
+  nameWithType: BoolArray.this
+  fullName: MapQuest.Collections.BoolArray.this
+  nameWithType.vb: BoolArray.this[]
+  fullName.vb: MapQuest.Collections.BoolArray.this[]
+  name.vb: this[]
+- uid: System.Collections.ArrayList.IsSynchronized
+  commentId: P:System.Collections.ArrayList.IsSynchronized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.issynchronized
+  name: IsSynchronized
+  nameWithType: ArrayList.IsSynchronized
+  fullName: System.Collections.ArrayList.IsSynchronized
+- uid: MapQuest.Collections.BoolArray.IsSynchronized*
+  commentId: Overload:MapQuest.Collections.BoolArray.IsSynchronized
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_IsSynchronized
+  name: IsSynchronized
+  nameWithType: BoolArray.IsSynchronized
+  fullName: MapQuest.Collections.BoolArray.IsSynchronized
+- uid: System.Collections.ArrayList.SyncRoot
+  commentId: P:System.Collections.ArrayList.SyncRoot
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.syncroot
+  name: SyncRoot
+  nameWithType: ArrayList.SyncRoot
+  fullName: System.Collections.ArrayList.SyncRoot
+- uid: MapQuest.Collections.BoolArray.SyncRoot*
+  commentId: Overload:MapQuest.Collections.BoolArray.SyncRoot
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_SyncRoot
+  name: SyncRoot
+  nameWithType: BoolArray.SyncRoot
+  fullName: MapQuest.Collections.BoolArray.SyncRoot
+- uid: System.Collections.ArrayList.IsFixedSize
+  commentId: P:System.Collections.ArrayList.IsFixedSize
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isfixedsize
+  name: IsFixedSize
+  nameWithType: ArrayList.IsFixedSize
+  fullName: System.Collections.ArrayList.IsFixedSize
+- uid: MapQuest.Collections.BoolArray.IsFixedSize*
+  commentId: Overload:MapQuest.Collections.BoolArray.IsFixedSize
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_IsFixedSize
+  name: IsFixedSize
+  nameWithType: BoolArray.IsFixedSize
+  fullName: MapQuest.Collections.BoolArray.IsFixedSize
+- uid: System.Collections.ArrayList.IsReadOnly
+  commentId: P:System.Collections.ArrayList.IsReadOnly
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isreadonly
+  name: IsReadOnly
+  nameWithType: ArrayList.IsReadOnly
+  fullName: System.Collections.ArrayList.IsReadOnly
+- uid: MapQuest.Collections.BoolArray.IsReadOnly*
+  commentId: Overload:MapQuest.Collections.BoolArray.IsReadOnly
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_IsReadOnly
+  name: IsReadOnly
+  nameWithType: BoolArray.IsReadOnly
+  fullName: MapQuest.Collections.BoolArray.IsReadOnly
+- uid: MapQuest.Collections.BoolArray.Capacity
+  commentId: P:MapQuest.Collections.BoolArray.Capacity
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_Capacity
+  name: Capacity
+  nameWithType: BoolArray.Capacity
+  fullName: MapQuest.Collections.BoolArray.Capacity
+- uid: System.Collections.ArrayList.Capacity
+  commentId: P:System.Collections.ArrayList.Capacity
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.capacity
+  name: Capacity
+  nameWithType: ArrayList.Capacity
+  fullName: System.Collections.ArrayList.Capacity
+- uid: MapQuest.Collections.BoolArray.Capacity*
+  commentId: Overload:MapQuest.Collections.BoolArray.Capacity
+  isExternal: true
+  href: MapQuest.Collections.BoolArray.html#MapQuest_Collections_BoolArray_Capacity
+  name: Capacity
+  nameWithType: BoolArray.Capacity
+  fullName: MapQuest.Collections.BoolArray.Capacity

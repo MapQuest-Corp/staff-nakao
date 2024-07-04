@@ -1,0 +1,1411 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.FeatureSchema
+  commentId: T:MapQuest.Features.FeatureSchema
+  id: FeatureSchema
+  parent: MapQuest.Features
+  children:
+  - MapQuest.Features.FeatureSchema.#ctor
+  - MapQuest.Features.FeatureSchema.#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Coordinates.Envelope)
+  - MapQuest.Features.FeatureSchema.#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Topology.Geometries.GeometryType,MapQuest.Database.AttributesSchemaList[])
+  - MapQuest.Features.FeatureSchema.#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Topology.Geometries.GeometryType,MapQuest.Database.AttributesSchemaList[],System.Int32,MapQuest.Coordinates.Envelope)
+  - MapQuest.Features.FeatureSchema.#ctor(MapQuest.Features.FeatureSchema)
+  - MapQuest.Features.FeatureSchema.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Features.FeatureSchema.#ctor(System.String,System.Int32)
+  - MapQuest.Features.FeatureSchema.AttributesSchemaLists
+  - MapQuest.Features.FeatureSchema.Bounds
+  - MapQuest.Features.FeatureSchema.Clone
+  - MapQuest.Features.FeatureSchema.CoordinateSystem
+  - MapQuest.Features.FeatureSchema.Equals(System.Object)
+  - MapQuest.Features.FeatureSchema.GeometryType
+  - MapQuest.Features.FeatureSchema.GetHashCode
+  - MapQuest.Features.FeatureSchema.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Features.FeatureSchema.Invisible
+  - MapQuest.Features.FeatureSchema.IsEditable
+  - MapQuest.Features.FeatureSchema.IsExportable
+  - MapQuest.Features.FeatureSchema.IsSelectable
+  - MapQuest.Features.FeatureSchema.Name
+  - MapQuest.Features.FeatureSchema.Number
+  - MapQuest.Features.FeatureSchema.Styling
+  langs:
+  - csharp
+  - vb
+  name: FeatureSchema
+  nameWithType: FeatureSchema
+  fullName: MapQuest.Features.FeatureSchema
+  type: Class
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    座標系や形状の種類など、 
+
+    IFeatureClass の定義情報を管理します。
+
+
+    <newpara>
+    	このクラスが持つ情報は、「階層」として管理される情報と同じものです。
+
+    </newpara>
+  remarks: " <xref href=\"MapQuest.Features.FeatureSchema\" data-throw-if-not-resolved=\"false\"></xref> は、<b>FeatureClass</b> の定義情報(メタ情報)です。\r\n<p></p>\r\n主に、<b>LayerManager</b> によって <b>FeatureLayer</b> が生成される際に使用されます。\r\n例えば、階層の番号には、<xref href=\"MapQuest.Features.FeatureSchema.Number\" data-throw-if-not-resolved=\"false\"></xref> が適用され、\r\n階層の名称には、<xref href=\"MapQuest.Features.FeatureSchema.Name\" data-throw-if-not-resolved=\"false\"></xref> が適用されます。\r\n<p></p>\r\n階層のスタイルには、<xref href=\"MapQuest.Features.FeatureSchema.Styling\" data-throw-if-not-resolved=\"false\"></xref> で示されるスタイル名称を\r\nキーにして、FeatureStylesManager から取得した <b>StyleList</b> が適用されます。"
+  example: []
+  syntax:
+    content: 'public class FeatureSchema : ICloneable, ISerializable'
+    content.vb: Public Class FeatureSchema Implements ICloneable, ISerializable
+  inheritance:
+  - System.Object
+  implements:
+  - System.ICloneable
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Features.FeatureSchema.#ctor
+  commentId: M:MapQuest.Features.FeatureSchema.#ctor
+  id: '#ctor'
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: FeatureSchema()
+  nameWithType: FeatureSchema.FeatureSchema()
+  fullName: MapQuest.Features.FeatureSchema.FeatureSchema()
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: " <xref href=\"MapQuest.Features.FeatureSchema\" data-throw-if-not-resolved=\"false\"></xref> \r\nクラスの新しいインスタンスを初期化します。"
+  remarks: 文字列のメンバは、全て <xref href="System.String.Empty" data-throw-if-not-resolved="false"></xref> が指定されます。
+  example: []
+  syntax:
+    content: public FeatureSchema()
+    content.vb: Public Sub New()
+  overload: MapQuest.Features.FeatureSchema.#ctor*
+  nameWithType.vb: FeatureSchema.New()
+  fullName.vb: MapQuest.Features.FeatureSchema.New()
+  name.vb: New()
+- uid: MapQuest.Features.FeatureSchema.#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Features.FeatureSchema.#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Coordinates.Envelope)
+  id: '#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Coordinates.Envelope)'
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: FeatureSchema(ICoordinateSystem, string, string, Envelope)
+  nameWithType: FeatureSchema.FeatureSchema(ICoordinateSystem, string, string, Envelope)
+  fullName: MapQuest.Features.FeatureSchema.FeatureSchema(MapQuest.CoordinateSystems.ICoordinateSystem, string, string, MapQuest.Coordinates.Envelope)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    指定した座標系、スタイル、名前、管理範囲を備えた、 
+
+    <xref href="MapQuest.Features.FeatureSchema" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public FeatureSchema(ICoordinateSystem spatialRef, string styling, string name, Envelope bounds)
+    parameters:
+    - id: spatialRef
+      type: MapQuest.CoordinateSystems.ICoordinateSystem
+      description: 空間参照を表す <xref href="MapQuest.Features.FeatureSchema.CoordinateSystem" data-throw-if-not-resolved="false"></xref> 。
+    - id: styling
+      type: System.String
+      description: スタイルへのインデックス名称。
+    - id: name
+      type: System.String
+      description: 地物が属しているグループの名前。
+    - id: bounds
+      type: MapQuest.Coordinates.Envelope
+      description: 管理範囲を表す <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub New(spatialRef As ICoordinateSystem, styling As String, name As String, bounds As Envelope)
+  overload: MapQuest.Features.FeatureSchema.#ctor*
+  nameWithType.vb: FeatureSchema.New(ICoordinateSystem, String, String, Envelope)
+  fullName.vb: MapQuest.Features.FeatureSchema.New(MapQuest.CoordinateSystems.ICoordinateSystem, String, String, MapQuest.Coordinates.Envelope)
+  name.vb: New(ICoordinateSystem, String, String, Envelope)
+- uid: MapQuest.Features.FeatureSchema.#ctor(MapQuest.Features.FeatureSchema)
+  commentId: M:MapQuest.Features.FeatureSchema.#ctor(MapQuest.Features.FeatureSchema)
+  id: '#ctor(MapQuest.Features.FeatureSchema)'
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: FeatureSchema(FeatureSchema)
+  nameWithType: FeatureSchema.FeatureSchema(FeatureSchema)
+  fullName: MapQuest.Features.FeatureSchema.FeatureSchema(MapQuest.Features.FeatureSchema)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: <xref href="MapQuest.Features.FeatureSchema" data-throw-if-not-resolved="false"></xref> を指定して、新しいインスタンスを初期化します。
+  remarks: <xref href="MapQuest.Features.FeatureSchema" data-throw-if-not-resolved="false"></xref> をコピーするためのコピー コンストラクタです。
+  example: []
+  syntax:
+    content: public FeatureSchema(FeatureSchema schema)
+    parameters:
+    - id: schema
+      type: MapQuest.Features.FeatureSchema
+      description: <xref href="MapQuest.Features.FeatureSchema" data-throw-if-not-resolved="false"></xref> オブジェクト。
+    content.vb: Public Sub New(schema As FeatureSchema)
+  overload: MapQuest.Features.FeatureSchema.#ctor*
+  nameWithType.vb: FeatureSchema.New(FeatureSchema)
+  fullName.vb: MapQuest.Features.FeatureSchema.New(MapQuest.Features.FeatureSchema)
+  name.vb: New(FeatureSchema)
+- uid: MapQuest.Features.FeatureSchema.#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Topology.Geometries.GeometryType,MapQuest.Database.AttributesSchemaList[])
+  commentId: M:MapQuest.Features.FeatureSchema.#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Topology.Geometries.GeometryType,MapQuest.Database.AttributesSchemaList[])
+  id: '#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Topology.Geometries.GeometryType,MapQuest.Database.AttributesSchemaList[])'
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: FeatureSchema(ICoordinateSystem, string, string, GeometryType, AttributesSchemaList[])
+  nameWithType: FeatureSchema.FeatureSchema(ICoordinateSystem, string, string, GeometryType, AttributesSchemaList[])
+  fullName: MapQuest.Features.FeatureSchema.FeatureSchema(MapQuest.CoordinateSystems.ICoordinateSystem, string, string, MapQuest.Topology.Geometries.GeometryType, MapQuest.Database.AttributesSchemaList[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    指定した座標系、スタイル、名前、地物形状の種類、属性定義を備えた、 
+
+    <xref href="MapQuest.Features.FeatureSchema" data-throw-if-not-resolved="false"></xref> 
+
+    クラスの新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public FeatureSchema(ICoordinateSystem spatialRef, string styling, string name, GeometryType geometryType, AttributesSchemaList[] attributesSchemaLists)
+    parameters:
+    - id: spatialRef
+      type: MapQuest.CoordinateSystems.ICoordinateSystem
+      description: 空間参照を表す <xref href="MapQuest.Features.FeatureSchema.CoordinateSystem" data-throw-if-not-resolved="false"></xref> 。
+    - id: styling
+      type: System.String
+      description: スタイルへのインデックス名称。
+    - id: name
+      type: System.String
+      description: 地物が属しているグループの名前。
+    - id: geometryType
+      type: MapQuest.Topology.Geometries.GeometryType
+      description: 地物形状の種類を表す <xref href="MapQuest.Topology.Geometries.GeometryType" data-throw-if-not-resolved="false"></xref> 。
+    - id: attributesSchemaLists
+      type: MapQuest.Database.AttributesSchemaList[]
+      description: 属性定義を表す <xref href="MapQuest.Database.AttributesSchemaList" data-throw-if-not-resolved="false"></xref> の配列。
+    content.vb: Public Sub New(spatialRef As ICoordinateSystem, styling As String, name As String, geometryType As GeometryType, attributesSchemaLists As AttributesSchemaList())
+  overload: MapQuest.Features.FeatureSchema.#ctor*
+  nameWithType.vb: FeatureSchema.New(ICoordinateSystem, String, String, GeometryType, AttributesSchemaList())
+  fullName.vb: MapQuest.Features.FeatureSchema.New(MapQuest.CoordinateSystems.ICoordinateSystem, String, String, MapQuest.Topology.Geometries.GeometryType, MapQuest.Database.AttributesSchemaList())
+  name.vb: New(ICoordinateSystem, String, String, GeometryType, AttributesSchemaList())
+- uid: MapQuest.Features.FeatureSchema.#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Topology.Geometries.GeometryType,MapQuest.Database.AttributesSchemaList[],System.Int32,MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Features.FeatureSchema.#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Topology.Geometries.GeometryType,MapQuest.Database.AttributesSchemaList[],System.Int32,MapQuest.Coordinates.Envelope)
+  id: '#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Topology.Geometries.GeometryType,MapQuest.Database.AttributesSchemaList[],System.Int32,MapQuest.Coordinates.Envelope)'
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: FeatureSchema(ICoordinateSystem, string, string, GeometryType, AttributesSchemaList[], int, Envelope)
+  nameWithType: FeatureSchema.FeatureSchema(ICoordinateSystem, string, string, GeometryType, AttributesSchemaList[], int, Envelope)
+  fullName: MapQuest.Features.FeatureSchema.FeatureSchema(MapQuest.CoordinateSystems.ICoordinateSystem, string, string, MapQuest.Topology.Geometries.GeometryType, MapQuest.Database.AttributesSchemaList[], int, MapQuest.Coordinates.Envelope)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: " <xref href=\"MapQuest.Features.FeatureSchema\" data-throw-if-not-resolved=\"false\"></xref> が管理する全ての項目を指定した、\r\n\r\n新しいインスタンスを初期化します。"
+  example: []
+  syntax:
+    content: public FeatureSchema(ICoordinateSystem spatialRef, string styling, string name, GeometryType geometryType, AttributesSchemaList[] attributesSchemaLists, int number, Envelope bounds)
+    parameters:
+    - id: spatialRef
+      type: MapQuest.CoordinateSystems.ICoordinateSystem
+      description: >-
+        空間参照を定義した 
+
+        <xref href="MapQuest.Features.FeatureSchema.CoordinateSystem" data-throw-if-not-resolved="false"></xref> 
+
+        オブジェクト。
+    - id: styling
+      type: System.String
+      description: スタイルへのインデックス名称。
+    - id: name
+      type: System.String
+      description: 地物が属しているグループの名前。
+    - id: geometryType
+      type: MapQuest.Topology.Geometries.GeometryType
+      description: 地物形状の種類を表す <xref href="MapQuest.Topology.Geometries.GeometryType" data-throw-if-not-resolved="false"></xref> 。
+    - id: attributesSchemaLists
+      type: MapQuest.Database.AttributesSchemaList[]
+      description: 属性定義を表す <xref href="MapQuest.Database.AttributesSchemaList" data-throw-if-not-resolved="false"></xref> の配列。
+    - id: number
+      type: System.Int32
+      description: 地物が属しているデータセットの番号。
+    - id: bounds
+      type: MapQuest.Coordinates.Envelope
+      description: 管理範囲を表す <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub New(spatialRef As ICoordinateSystem, styling As String, name As String, geometryType As GeometryType, attributesSchemaLists As AttributesSchemaList(), number As Integer, bounds As Envelope)
+  overload: MapQuest.Features.FeatureSchema.#ctor*
+  nameWithType.vb: FeatureSchema.New(ICoordinateSystem, String, String, GeometryType, AttributesSchemaList(), Integer, Envelope)
+  fullName.vb: MapQuest.Features.FeatureSchema.New(MapQuest.CoordinateSystems.ICoordinateSystem, String, String, MapQuest.Topology.Geometries.GeometryType, MapQuest.Database.AttributesSchemaList(), Integer, MapQuest.Coordinates.Envelope)
+  name.vb: New(ICoordinateSystem, String, String, GeometryType, AttributesSchemaList(), Integer, Envelope)
+- uid: MapQuest.Features.FeatureSchema.#ctor(System.String,System.Int32)
+  commentId: M:MapQuest.Features.FeatureSchema.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: FeatureSchema(string, int)
+  nameWithType: FeatureSchema.FeatureSchema(string, int)
+  fullName: MapQuest.Features.FeatureSchema.FeatureSchema(string, int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    名前、番号を指定して、 
+
+    <xref href="MapQuest.Features.FeatureSchema" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public FeatureSchema(string name, int number)
+    parameters:
+    - id: name
+      type: System.String
+      description: 地物が属しているクラスの名前。
+    - id: number
+      type: System.Int32
+      description: 地物が属しているクラスの番号。
+    content.vb: Public Sub New(name As String, number As Integer)
+  overload: MapQuest.Features.FeatureSchema.#ctor*
+  nameWithType.vb: FeatureSchema.New(String, Integer)
+  fullName.vb: MapQuest.Features.FeatureSchema.New(String, Integer)
+  name.vb: New(String, Integer)
+- uid: MapQuest.Features.FeatureSchema.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Features.FeatureSchema.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: FeatureSchema(SerializationInfo, StreamingContext)
+  nameWithType: FeatureSchema.FeatureSchema(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Features.FeatureSchema.FeatureSchema(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: シリアル化された情報から<xref href="MapQuest.Features.FeatureSchema" data-throw-if-not-resolved="false"></xref>を作成します。
+  example: []
+  syntax:
+    content: public FeatureSchema(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: シリアル化する情報を格納するオブジェクト
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: ''
+    content.vb: Public Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Features.FeatureSchema.#ctor*
+  nameWithType.vb: FeatureSchema.New(SerializationInfo, StreamingContext)
+  fullName.vb: MapQuest.Features.FeatureSchema.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name.vb: New(SerializationInfo, StreamingContext)
+- uid: MapQuest.Features.FeatureSchema.GetHashCode
+  commentId: M:MapQuest.Features.FeatureSchema.GetHashCode
+  id: GetHashCode
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: FeatureSchema.GetHashCode()
+  fullName: MapQuest.Features.FeatureSchema.GetHashCode()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    このメンバは <xref href="System.Object.GetHashCode?text=Object.GetHashCode" data-throw-if-not-resolved="false"></xref> 
+
+    をオーバーライドします。
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: MapQuest.Features.FeatureSchema.GetHashCode*
+- uid: MapQuest.Features.FeatureSchema.Equals(System.Object)
+  commentId: M:MapQuest.Features.FeatureSchema.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: FeatureSchema.Equals(object)
+  fullName: MapQuest.Features.FeatureSchema.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: このインスタンスと他のインスタンスが等しいかを調べます。
+  remarks: >-
+    このメソッドは、<xref href="MapQuest.Features.FeatureSchema" data-throw-if-not-resolved="false"></xref> の
+
+    全てのプロパティに対して <b>Equals</b> を行い、
+
+    全て true が返されれば一致しているとみなします。
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: >-
+        等しいか調べる他の 
+                    <xref href="MapQuest.Features.FeatureSchema" data-throw-if-not-resolved="false"></xref> インスタンス。
+    return:
+      type: System.Boolean
+      description: >-
+        等しければ true を返します。
+                    それ以外の場合は false を返します。
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: MapQuest.Features.FeatureSchema.Equals*
+  nameWithType.vb: FeatureSchema.Equals(Object)
+  fullName.vb: MapQuest.Features.FeatureSchema.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.Features.FeatureSchema.Clone
+  commentId: M:MapQuest.Features.FeatureSchema.Clone
+  id: Clone
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: FeatureSchema.Clone()
+  fullName: MapQuest.Features.FeatureSchema.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 現在のインスタンスのコピーである新しいオブジェクトを作成します。
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+      description: コピーされた新しい <xref href="MapQuest.Features.FeatureSchema" data-throw-if-not-resolved="false"></xref> オブジェクト。
+    content.vb: Public Function Clone() As Object
+  overload: MapQuest.Features.FeatureSchema.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.Features.FeatureSchema.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Features.FeatureSchema.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: FeatureSchema.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Features.FeatureSchema.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: オブジェクトをシリアル化します。
+  example: []
+  syntax:
+    content: public void GetObjectData(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: シリアル化する情報を格納するオブジェクト
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: ''
+    content.vb: Public Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Features.FeatureSchema.GetObjectData*
+  implements:
+  - System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- uid: MapQuest.Features.FeatureSchema.Invisible
+  commentId: P:MapQuest.Features.FeatureSchema.Invisible
+  id: Invisible
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: Invisible
+  nameWithType: FeatureSchema.Invisible
+  fullName: MapQuest.Features.FeatureSchema.Invisible
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  syntax:
+    content: >-
+      [Browsable(false)]
+
+      public bool Invisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Browsable(False)>
+
+      Public Property Invisible As Boolean
+  overload: MapQuest.Features.FeatureSchema.Invisible*
+  attributes:
+  - type: System.ComponentModel.BrowsableAttribute
+    ctor: System.ComponentModel.BrowsableAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: MapQuest.Features.FeatureSchema.IsEditable
+  commentId: P:MapQuest.Features.FeatureSchema.IsEditable
+  id: IsEditable
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: IsEditable
+  nameWithType: FeatureSchema.IsEditable
+  fullName: MapQuest.Features.FeatureSchema.IsEditable
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  syntax:
+    content: public bool IsEditable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsEditable As Boolean
+  overload: MapQuest.Features.FeatureSchema.IsEditable*
+- uid: MapQuest.Features.FeatureSchema.IsSelectable
+  commentId: P:MapQuest.Features.FeatureSchema.IsSelectable
+  id: IsSelectable
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: IsSelectable
+  nameWithType: FeatureSchema.IsSelectable
+  fullName: MapQuest.Features.FeatureSchema.IsSelectable
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  syntax:
+    content: public bool IsSelectable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSelectable As Boolean
+  overload: MapQuest.Features.FeatureSchema.IsSelectable*
+- uid: MapQuest.Features.FeatureSchema.IsExportable
+  commentId: P:MapQuest.Features.FeatureSchema.IsExportable
+  id: IsExportable
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: IsExportable
+  nameWithType: FeatureSchema.IsExportable
+  fullName: MapQuest.Features.FeatureSchema.IsExportable
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  syntax:
+    content: public bool IsExportable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsExportable As Boolean
+  overload: MapQuest.Features.FeatureSchema.IsExportable*
+- uid: MapQuest.Features.FeatureSchema.CoordinateSystem
+  commentId: P:MapQuest.Features.FeatureSchema.CoordinateSystem
+  id: CoordinateSystem
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: CoordinateSystem
+  nameWithType: FeatureSchema.CoordinateSystem
+  fullName: MapQuest.Features.FeatureSchema.CoordinateSystem
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 地物が属しているグループの座標系を取得します。
+  example: []
+  syntax:
+    content: public ICoordinateSystem CoordinateSystem { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.ICoordinateSystem
+      description: 空間参照を表す <xref href="MapQuest.CoordinateSystems.ICoordinateSystem" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public ReadOnly Property CoordinateSystem As ICoordinateSystem
+  overload: MapQuest.Features.FeatureSchema.CoordinateSystem*
+- uid: MapQuest.Features.FeatureSchema.Styling
+  commentId: P:MapQuest.Features.FeatureSchema.Styling
+  id: Styling
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: Styling
+  nameWithType: FeatureSchema.Styling
+  fullName: MapQuest.Features.FeatureSchema.Styling
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 地物を表現するスタイルへのインデックス名称を取得します。
+  remarks: >-
+    通常、地物を表現するスタイルは、ユニークな名称と対で用意されます。
+
+
+    スタイルを要する機能は、このプロパティから名称を取得することで、
+
+
+    対応するスタイルを検索します。
+  example: []
+  syntax:
+    content: public string Styling { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: スタイルへのインデックス名称。
+    content.vb: Public Property Styling As String
+  overload: MapQuest.Features.FeatureSchema.Styling*
+- uid: MapQuest.Features.FeatureSchema.Name
+  commentId: P:MapQuest.Features.FeatureSchema.Name
+  id: Name
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: FeatureSchema.Name
+  fullName: MapQuest.Features.FeatureSchema.Name
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 地物が属しているグループの名称を取得します。
+  remarks: >-
+    通常、このプロパティの値は、階層名称として使用されます。
+
+
+    <!--
+
+    This value is normally the name of the data source, 
+
+    and should usually be set to the layer name where available.
+
+    -->
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: 地物が属しているグループの名称。
+    content.vb: Public Property Name As String
+  overload: MapQuest.Features.FeatureSchema.Name*
+- uid: MapQuest.Features.FeatureSchema.GeometryType
+  commentId: P:MapQuest.Features.FeatureSchema.GeometryType
+  id: GeometryType
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: GeometryType
+  nameWithType: FeatureSchema.GeometryType
+  fullName: MapQuest.Features.FeatureSchema.GeometryType
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 地物形状の種類を取得します。
+  example: []
+  syntax:
+    content: public GeometryType GeometryType { get; set; }
+    parameters: []
+    return:
+      type: MapQuest.Topology.Geometries.GeometryType
+      description: 地物形状の種類を表す <xref href="MapQuest.Topology.Geometries.GeometryType" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Property GeometryType As GeometryType
+  overload: MapQuest.Features.FeatureSchema.GeometryType*
+- uid: MapQuest.Features.FeatureSchema.AttributesSchemaLists
+  commentId: P:MapQuest.Features.FeatureSchema.AttributesSchemaLists
+  id: AttributesSchemaLists
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: AttributesSchemaLists
+  nameWithType: FeatureSchema.AttributesSchemaLists
+  fullName: MapQuest.Features.FeatureSchema.AttributesSchemaLists
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 地物にリンクする属性の定義情報を取得します。
+  example: []
+  syntax:
+    content: public AttributesSchemaList[] AttributesSchemaLists { get; set; }
+    parameters: []
+    return:
+      type: MapQuest.Database.AttributesSchemaList[]
+    content.vb: Public Property AttributesSchemaLists As AttributesSchemaList()
+  overload: MapQuest.Features.FeatureSchema.AttributesSchemaLists*
+- uid: MapQuest.Features.FeatureSchema.Number
+  commentId: P:MapQuest.Features.FeatureSchema.Number
+  id: Number
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: FeatureSchema.Number
+  fullName: MapQuest.Features.FeatureSchema.Number
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 地物が属しているグループの番号を取得します。
+  remarks: 通常、このプロパティの値は、階層番号として使用されます。
+  example: []
+  syntax:
+    content: public int Number { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: 地物が属しているグループの番号。
+    content.vb: Public ReadOnly Property Number As Integer
+  overload: MapQuest.Features.FeatureSchema.Number*
+- uid: MapQuest.Features.FeatureSchema.Bounds
+  commentId: P:MapQuest.Features.FeatureSchema.Bounds
+  id: Bounds
+  parent: MapQuest.Features.FeatureSchema
+  langs:
+  - csharp
+  - vb
+  name: Bounds
+  nameWithType: FeatureSchema.Bounds
+  fullName: MapQuest.Features.FeatureSchema.Bounds
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 地物が属しているグループの管理範囲を取得します。
+  example: []
+  syntax:
+    content: public Envelope Bounds { get; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Envelope
+      description: 管理範囲を表す <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public ReadOnly Property Bounds As Envelope
+  overload: MapQuest.Features.FeatureSchema.Bounds*
+references:
+- uid: MapQuest.Features.FeatureSchema
+  commentId: T:MapQuest.Features.FeatureSchema
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html
+  name: FeatureSchema
+  nameWithType: FeatureSchema
+  fullName: MapQuest.Features.FeatureSchema
+- uid: MapQuest.Features.FeatureSchema.Number
+  commentId: P:MapQuest.Features.FeatureSchema.Number
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_Number
+  name: Number
+  nameWithType: FeatureSchema.Number
+  fullName: MapQuest.Features.FeatureSchema.Number
+- uid: MapQuest.Features.FeatureSchema.Name
+  commentId: P:MapQuest.Features.FeatureSchema.Name
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_Name
+  name: Name
+  nameWithType: FeatureSchema.Name
+  fullName: MapQuest.Features.FeatureSchema.Name
+- uid: MapQuest.Features.FeatureSchema.Styling
+  commentId: P:MapQuest.Features.FeatureSchema.Styling
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_Styling
+  name: Styling
+  nameWithType: FeatureSchema.Styling
+  fullName: MapQuest.Features.FeatureSchema.Styling
+- uid: MapQuest.Features
+  commentId: N:MapQuest.Features
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features
+  nameWithType: MapQuest.Features
+  fullName: MapQuest.Features
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: System.String.Empty
+  commentId: F:System.String.Empty
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string.empty
+  name: Empty
+  nameWithType: string.Empty
+  fullName: string.Empty
+  nameWithType.vb: String.Empty
+  fullName.vb: String.Empty
+- uid: MapQuest.Features.FeatureSchema.#ctor*
+  commentId: Overload:MapQuest.Features.FeatureSchema.#ctor
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema__ctor
+  name: FeatureSchema
+  nameWithType: FeatureSchema.FeatureSchema
+  fullName: MapQuest.Features.FeatureSchema.FeatureSchema
+  nameWithType.vb: FeatureSchema.New
+  fullName.vb: MapQuest.Features.FeatureSchema.New
+  name.vb: New
+- uid: MapQuest.Features.FeatureSchema.CoordinateSystem
+  commentId: P:MapQuest.Features.FeatureSchema.CoordinateSystem
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_CoordinateSystem
+  name: CoordinateSystem
+  nameWithType: FeatureSchema.CoordinateSystem
+  fullName: MapQuest.Features.FeatureSchema.CoordinateSystem
+- uid: MapQuest.Coordinates.Envelope
+  commentId: T:MapQuest.Coordinates.Envelope
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html
+  name: Envelope
+  nameWithType: Envelope
+  fullName: MapQuest.Coordinates.Envelope
+- uid: MapQuest.CoordinateSystems.ICoordinateSystem
+  commentId: T:MapQuest.CoordinateSystems.ICoordinateSystem
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ICoordinateSystem.html
+  name: ICoordinateSystem
+  nameWithType: ICoordinateSystem
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystem
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: MapQuest.Topology.Geometries.GeometryType
+  commentId: T:MapQuest.Topology.Geometries.GeometryType
+  isExternal: true
+  name: GeometryType
+  nameWithType: GeometryType
+  fullName: MapQuest.Topology.Geometries.GeometryType
+- uid: MapQuest.Database.AttributesSchemaList
+  isExternal: true
+  name: AttributesSchemaList
+  nameWithType: AttributesSchemaList
+  fullName: MapQuest.Database.AttributesSchemaList
+- uid: MapQuest.Database.AttributesSchemaList[]
+  isExternal: true
+  name: AttributesSchemaList[]
+  nameWithType: AttributesSchemaList[]
+  fullName: MapQuest.Database.AttributesSchemaList[]
+  nameWithType.vb: AttributesSchemaList()
+  fullName.vb: MapQuest.Database.AttributesSchemaList()
+  name.vb: AttributesSchemaList()
+  spec.csharp:
+  - uid: MapQuest.Database.AttributesSchemaList
+    name: AttributesSchemaList
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MapQuest.Database.AttributesSchemaList
+    name: AttributesSchemaList
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureSchema.GetHashCode*
+  commentId: Overload:MapQuest.Features.FeatureSchema.GetHashCode
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_GetHashCode
+  name: GetHashCode
+  nameWithType: FeatureSchema.GetHashCode
+  fullName: MapQuest.Features.FeatureSchema.GetHashCode
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Features.FeatureSchema.Equals*
+  commentId: Overload:MapQuest.Features.FeatureSchema.Equals
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_Equals_System_Object_
+  name: Equals
+  nameWithType: FeatureSchema.Equals
+  fullName: MapQuest.Features.FeatureSchema.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.Features.FeatureSchema.Clone*
+  commentId: Overload:MapQuest.Features.FeatureSchema.Clone
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_Clone
+  name: Clone
+  nameWithType: FeatureSchema.Clone
+  fullName: MapQuest.Features.FeatureSchema.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureSchema.GetObjectData*
+  commentId: Overload:MapQuest.Features.FeatureSchema.GetObjectData
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  name: GetObjectData
+  nameWithType: FeatureSchema.GetObjectData
+  fullName: MapQuest.Features.FeatureSchema.GetObjectData
+- uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Runtime.Serialization.ISerializable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: ISerializable.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: MapQuest.Features.FeatureSchema.Invisible*
+  commentId: Overload:MapQuest.Features.FeatureSchema.Invisible
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_Invisible
+  name: Invisible
+  nameWithType: FeatureSchema.Invisible
+  fullName: MapQuest.Features.FeatureSchema.Invisible
+- uid: MapQuest.Features.FeatureSchema.IsEditable*
+  commentId: Overload:MapQuest.Features.FeatureSchema.IsEditable
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_IsEditable
+  name: IsEditable
+  nameWithType: FeatureSchema.IsEditable
+  fullName: MapQuest.Features.FeatureSchema.IsEditable
+- uid: MapQuest.Features.FeatureSchema.IsSelectable*
+  commentId: Overload:MapQuest.Features.FeatureSchema.IsSelectable
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_IsSelectable
+  name: IsSelectable
+  nameWithType: FeatureSchema.IsSelectable
+  fullName: MapQuest.Features.FeatureSchema.IsSelectable
+- uid: MapQuest.Features.FeatureSchema.IsExportable*
+  commentId: Overload:MapQuest.Features.FeatureSchema.IsExportable
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_IsExportable
+  name: IsExportable
+  nameWithType: FeatureSchema.IsExportable
+  fullName: MapQuest.Features.FeatureSchema.IsExportable
+- uid: MapQuest.Features.FeatureSchema.CoordinateSystem*
+  commentId: Overload:MapQuest.Features.FeatureSchema.CoordinateSystem
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_CoordinateSystem
+  name: CoordinateSystem
+  nameWithType: FeatureSchema.CoordinateSystem
+  fullName: MapQuest.Features.FeatureSchema.CoordinateSystem
+- uid: MapQuest.Features.FeatureSchema.Styling*
+  commentId: Overload:MapQuest.Features.FeatureSchema.Styling
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_Styling
+  name: Styling
+  nameWithType: FeatureSchema.Styling
+  fullName: MapQuest.Features.FeatureSchema.Styling
+- uid: MapQuest.Features.FeatureSchema.Name*
+  commentId: Overload:MapQuest.Features.FeatureSchema.Name
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_Name
+  name: Name
+  nameWithType: FeatureSchema.Name
+  fullName: MapQuest.Features.FeatureSchema.Name
+- uid: MapQuest.Features.FeatureSchema.GeometryType*
+  commentId: Overload:MapQuest.Features.FeatureSchema.GeometryType
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_GeometryType
+  name: GeometryType
+  nameWithType: FeatureSchema.GeometryType
+  fullName: MapQuest.Features.FeatureSchema.GeometryType
+- uid: MapQuest.Features.FeatureSchema.AttributesSchemaLists*
+  commentId: Overload:MapQuest.Features.FeatureSchema.AttributesSchemaLists
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_AttributesSchemaLists
+  name: AttributesSchemaLists
+  nameWithType: FeatureSchema.AttributesSchemaLists
+  fullName: MapQuest.Features.FeatureSchema.AttributesSchemaLists
+- uid: MapQuest.Features.FeatureSchema.Number*
+  commentId: Overload:MapQuest.Features.FeatureSchema.Number
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_Number
+  name: Number
+  nameWithType: FeatureSchema.Number
+  fullName: MapQuest.Features.FeatureSchema.Number
+- uid: MapQuest.Features.FeatureSchema.Bounds*
+  commentId: Overload:MapQuest.Features.FeatureSchema.Bounds
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html#MapQuest_Features_FeatureSchema_Bounds
+  name: Bounds
+  nameWithType: FeatureSchema.Bounds
+  fullName: MapQuest.Features.FeatureSchema.Bounds

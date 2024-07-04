@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.IO
+  commentId: N:MapQuest.CoordinateSystems.IO
+  id: MapQuest.CoordinateSystems.IO
+  children:
+  - MapQuest.CoordinateSystems.IO.CoordinateSystemWktReader
+  langs:
+  - csharp
+  - vb
+  name: MapQuest.CoordinateSystems.IO
+  nameWithType: MapQuest.CoordinateSystems.IO
+  fullName: MapQuest.CoordinateSystems.IO
+  type: Namespace
+  assemblies:
+  - MapQuest.CoordinateSystems
+references:
+- uid: MapQuest.CoordinateSystems.IO.CoordinateSystemWktReader
+  commentId: T:MapQuest.CoordinateSystems.IO.CoordinateSystemWktReader
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IO.CoordinateSystemWktReader.html
+  name: CoordinateSystemWktReader
+  nameWithType: CoordinateSystemWktReader
+  fullName: MapQuest.CoordinateSystems.IO.CoordinateSystemWktReader

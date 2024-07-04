@@ -1,0 +1,32 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Geocoding
+  commentId: N:MapQuest.Geocoding
+  id: MapQuest.Geocoding
+  children:
+  - MapQuest.Geocoding.IGeocoder
+  - MapQuest.Geocoding.IReverseGeocoder
+  langs:
+  - csharp
+  - vb
+  name: MapQuest.Geocoding
+  nameWithType: MapQuest.Geocoding
+  fullName: MapQuest.Geocoding
+  type: Namespace
+  assemblies:
+  - MapQuest.Core
+references:
+- uid: MapQuest.Geocoding.IGeocoder
+  commentId: T:MapQuest.Geocoding.IGeocoder
+  isExternal: true
+  href: MapQuest.Geocoding.IGeocoder.html
+  name: IGeocoder
+  nameWithType: IGeocoder
+  fullName: MapQuest.Geocoding.IGeocoder
+- uid: MapQuest.Geocoding.IReverseGeocoder
+  commentId: T:MapQuest.Geocoding.IReverseGeocoder
+  isExternal: true
+  href: MapQuest.Geocoding.IReverseGeocoder.html
+  name: IReverseGeocoder
+  nameWithType: IReverseGeocoder
+  fullName: MapQuest.Geocoding.IReverseGeocoder

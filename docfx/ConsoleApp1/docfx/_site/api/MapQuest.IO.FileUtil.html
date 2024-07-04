@@ -1,0 +1,758 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FileUtil | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FileUtil | mysite ">
+      
+      <meta name="description" content="ローカルファイルか、URL かを意識することなくファイルを開く事ができる クラスです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.IO.FileUtil">
+
+
+
+  <h1 id="MapQuest_IO_FileUtil" data-uid="MapQuest.IO.FileUtil" class="text-break">
+Class FileUtil  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.IO.html">IO</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>ローカルファイルか、URL かを意識することなくファイルを開く事ができる
+クラスです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FileUtil</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">FileUtil</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_IO_FileUtil_CopyStream_" data-uid="MapQuest.IO.FileUtil.CopyStream*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_CopyStream_System_IO_Stream_System_IO_Stream_System_Delegate_" data-uid="MapQuest.IO.FileUtil.CopyStream(System.IO.Stream,System.IO.Stream,System.Delegate)">
+  CopyStream(Stream, Stream, Delegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stream の内容を別の Stream へコピーします。</p>
+<p></p>
+strm1 の現在位置から strem2 の現在位置へデータをコピーし、
+両方の Stream の現在位置を進めます。
+つまり、どちらの Stream も、このメソッドに渡す時の現在位置が「0(=開始位置)」
+でなければ、全データコピーにはなりません。
+<p></p>
+また、このメソッドの処理終了時の両方の Stream の現在位置は、どちらも
+終点になります。
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyStream(Stream strm1, Stream strm2, Delegate subscribeProgress)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strm1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>コピー元の Stream 。</p>
+</dd>
+    <dt><code>strm2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>コピー先の Stream 。</p>
+</dd>
+    <dt><code>subscribeProgress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd><p>コピーの進捗状況を通知する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_FileUtil_GetDirectoryName_" data-uid="MapQuest.IO.FileUtil.GetDirectoryName*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_GetDirectoryName_System_String_" data-uid="MapQuest.IO.FileUtil.GetDirectoryName(System.String)">
+  GetDirectoryName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した引数の、親のディレクトリ名をフルパスで取得します。</p>
+<p></p>
+ローカルパス、UNCパス、URL に対応しています。
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDirectoryName(string source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>フルパスのローカルパス、UNCパス、URL 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>source の親のディレクトリをフルパスで示した文字列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_IO_FileUtil_GetDirectoryName_System_String__examples">Examples</h4>
+  <ul><li>"C:\data.dat" → "C:\"</li><li>"C:\dir\data.dat" → "C:\dir\"</li><li>"\\NSE_T\dir\data.dat" → "\\NSE_T\dir\"</li><li>"http://domain/dir/data.dat" → "http://domain/dir/"</li></ul>
+
+
+
+
+
+
+  <a id="MapQuest_IO_FileUtil_IsPhysicalPath_" data-uid="MapQuest.IO.FileUtil.IsPhysicalPath*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_IsPhysicalPath_System_String_" data-uid="MapQuest.IO.FileUtil.IsPhysicalPath(System.String)">
+  IsPhysicalPath(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>パスが絶対パスかどうかを取得する。
+パフォーマンスを重視し、文字列の簡単なチェックで判別している
+ため、厳密には正しくないかもしれない。
+しかし、フォルダ存在チェックなどを行うと速度が落ちるので、
+これでよしとする。</p>
+<p></p>
+ローカルパス、UNCパス、URL に対応しています。
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPhysicalPath(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>パス</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>絶対パスならば true。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_FileUtil_IsPhysicalPath_" data-uid="MapQuest.IO.FileUtil.IsPhysicalPath*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_IsPhysicalPath_System_String_System_Boolean_" data-uid="MapQuest.IO.FileUtil.IsPhysicalPath(System.String,System.Boolean)">
+  IsPhysicalPath(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>パスが絶対パスかどうかを取得する。
+パフォーマンスを重視し、文字列の簡単なチェックで判別している
+ため、厳密には正しくないかもしれない。
+しかし、フォルダ存在チェックなどを行うと速度が落ちるので、
+これでよしとする。</p>
+<p></p>
+ローカルパス、UNCパス、URL に対応しています。
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPhysicalPath(string path, bool checkByUriScheme)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>パス</p>
+</dd>
+    <dt><code>checkByUriScheme</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>URL、UNC、絶対パスならば true。空文字 や null などそれ以外の場合はfalse。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_FileUtil_LoadAppScope_" data-uid="MapQuest.IO.FileUtil.LoadAppScope*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_LoadAppScope_System_String_" data-uid="MapQuest.IO.FileUtil.LoadAppScope(System.String)">
+  LoadAppScope(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定されたパスの、SoapFormatterでシリアライズされたファイルをHashTableに読み込みます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Hashtable LoadAppScope(string filePath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>SaopFormatterでシリアライズして保存されたファイルへのパス。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.hashtable">Hashtable</a></dt>
+    <dd><p>指定されたパスのSoapFormatterでシリアライズされたファイルをデシリアライズしたHashTable。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_FileUtil_OpenRead_" data-uid="MapQuest.IO.FileUtil.OpenRead*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_OpenRead_System_String_" data-uid="MapQuest.IO.FileUtil.OpenRead(System.String)">
+  OpenRead(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ローカルや URL などを指定してファイルを開きます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Stream OpenRead(string source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ファイルの所在を示すローカルパス または
+UNC または URL 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_IO_FileUtil_OpenRead_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>FileUtil.OpenRead(source, true, &quot;&quot;, null); の処理を行います。
+つまり、ローカルにはダウンロードせずにファイルを開き、そのコピーを返します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_IO_FileUtil_OpenRead_" data-uid="MapQuest.IO.FileUtil.OpenRead*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_OpenRead_System_String_System_Net_WebHeaderCollection_" data-uid="MapQuest.IO.FileUtil.OpenRead(System.String,System.Net.WebHeaderCollection)">
+  OpenRead(string, WebHeaderCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Stream OpenRead(string source, WebHeaderCollection header)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>header</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.webheadercollection">WebHeaderCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_FileUtil_OpenRead_" data-uid="MapQuest.IO.FileUtil.OpenRead*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_OpenRead_System_String_System_String_System_Delegate_" data-uid="MapQuest.IO.FileUtil.OpenRead(System.String,System.String,System.Delegate)">
+  OpenRead(string, string, Delegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Stream OpenRead(string source, string downloadFolder, Delegate subscribeProgress)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>downloadFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>subscribeProgress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_FileUtil_OpenRead_" data-uid="MapQuest.IO.FileUtil.OpenRead*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_OpenRead_System_String_System_String_System_Delegate_System_Boolean_" data-uid="MapQuest.IO.FileUtil.OpenRead(System.String,System.String,System.Delegate,System.Boolean)">
+  OpenRead(string, string, Delegate, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>コピーを使用するか、ローカルフォルダにダウンロードするかどうかなどを指定して、
+ローカルや URL などのファイルを開きます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Stream OpenRead(string source, string downloadFolder, Delegate subscribeProgress, bool createZeroFile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ファイルの所在を示すローカルパス または
+UNC または URL 。</p>
+</dd>
+    <dt><code>downloadFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>useCopy が true で且つ、
+この引数にローカルの任意のフォルダを指定すると、
+そのフォルダにダウンロードします。既にファイルが存在する場合、
+ダウンロードせずそのファイルを読み込みます。</p>
+</dd>
+    <dt><code>subscribeProgress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd><p>ファイル転送中を通知する Delegate 。
+詳細未定。</p>
+</dd>
+    <dt><code>createZeroFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>開いた <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_IO_FileUtil_OpenRead_System_String_System_String_System_Delegate_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><div class="NOTE"><h5>note</h5><p>downloadFolder の存在確認はしていません。速度が低下するためです。</p></div>
+</div>
+
+
+
+
+  <a id="MapQuest_IO_FileUtil_OpenRead_" data-uid="MapQuest.IO.FileUtil.OpenRead*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_OpenRead_System_String_System_String_System_Delegate_System_Boolean_System_Net_WebHeaderCollection_" data-uid="MapQuest.IO.FileUtil.OpenRead(System.String,System.String,System.Delegate,System.Boolean,System.Net.WebHeaderCollection)">
+  OpenRead(string, string, Delegate, bool, WebHeaderCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>コピーを使用するか、ローカルフォルダにダウンロードするかどうかなどを指定して、
+ローカルや URL などのファイルを開きます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Stream OpenRead(string source, string downloadFolder, Delegate subscribeProgress, bool createZeroFile, WebHeaderCollection header)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ファイルの所在を示すローカルパス または
+UNC または URL 。</p>
+</dd>
+    <dt><code>downloadFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>useCopy が true で且つ、
+この引数にローカルの任意のフォルダを指定すると、
+そのフォルダにダウンロードします。既にファイルが存在する場合、
+ダウンロードせずそのファイルを読み込みます。</p>
+</dd>
+    <dt><code>subscribeProgress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd><p>ファイル転送中を通知する Delegate 。
+詳細未定。</p>
+</dd>
+    <dt><code>createZeroFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>header</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.webheadercollection">WebHeaderCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>開いた <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_IO_FileUtil_OpenRead_System_String_System_String_System_Delegate_System_Boolean_System_Net_WebHeaderCollection__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><div class="NOTE"><h5>note</h5><p>downloadFolder の存在確認はしていません。速度が低下するためです。</p></div>
+</div>
+
+
+
+
+  <a id="MapQuest_IO_FileUtil_PathAddBackSlash_" data-uid="MapQuest.IO.FileUtil.PathAddBackSlash*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_PathAddBackSlash_System_String_" data-uid="MapQuest.IO.FileUtil.PathAddBackSlash(System.String)">
+  PathAddBackSlash(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>パスの終端に、パス区切り文字列を付けて返します。</p>
+<p></p>
+ローカルパス、UNCパス、URL に対応しています。
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PathAddBackSlash(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>区切り文字を付けるパス文字列。
+ローカルパスまたは UNC または URL 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>終端に区切り文字がついた文字列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_FileUtil_PathCombine_" data-uid="MapQuest.IO.FileUtil.PathCombine*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_PathCombine_System_String_System_String_" data-uid="MapQuest.IO.FileUtil.PathCombine(System.String,System.String)">
+  PathCombine(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ベースのパスに相対パスを連結します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PathCombine(string basePath, string relativePath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>basePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ベースとなるローカルパス、UNCパス、URL 。</p>
+</dd>
+    <dt><code>relativePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ベースからの相対パス。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>basePath に relativePath を連結したパス。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_IO_FileUtil_SaveAppScope_" data-uid="MapQuest.IO.FileUtil.SaveAppScope*"></a>
+
+  <h3 id="MapQuest_IO_FileUtil_SaveAppScope_System_Collections_Hashtable_System_String_" data-uid="MapQuest.IO.FileUtil.SaveAppScope(System.Collections.Hashtable,System.String)">
+  SaveAppScope(Hashtable, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定されたHashTableをSoapFormatterでシリアライズした内容を、指定されたパスに保存します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SaveAppScope(Hashtable settings, string filePath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.hashtable">Hashtable</a></dt>
+    <dd><p>保存するHashtable</p>
+</dd>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>保存先のファイルパス</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

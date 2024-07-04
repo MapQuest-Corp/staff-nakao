@@ -1,0 +1,511 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.SpatialIndexers.PageFileException
+  commentId: T:MapQuest.Features.SpatialIndexers.PageFileException
+  id: PageFileException
+  parent: MapQuest.Features.SpatialIndexers
+  children:
+  - MapQuest.Features.SpatialIndexers.PageFileException.#ctor
+  - MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.Int32,System.Exception,System.Object[])
+  - MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.Int32,System.Object[])
+  - MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String)
+  - MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Exception)
+  - MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32)
+  - MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32,System.Exception)
+  - MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32,System.Exception,System.Object[])
+  - MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: PageFileException
+  nameWithType: PageFileException
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException
+  type: Class
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: Summary description for PageFileException.
+  example: []
+  syntax:
+    content: 'public class PageFileException : DefaultException'
+    content.vb: Public Class PageFileException Inherits DefaultException
+  inheritance:
+  - System.Object
+- uid: MapQuest.Features.SpatialIndexers.PageFileException.#ctor
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor
+  id: '#ctor'
+  parent: MapQuest.Features.SpatialIndexers.PageFileException
+  langs:
+  - csharp
+  - vb
+  name: PageFileException()
+  nameWithType: PageFileException.PageFileException()
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException.PageFileException()
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: Default constructor.
+  example: []
+  syntax:
+    content: public PageFileException()
+    content.vb: Public Sub New()
+  overload: MapQuest.Features.SpatialIndexers.PageFileException.#ctor*
+  nameWithType.vb: PageFileException.New()
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFileException.New()
+  name.vb: New()
+- uid: MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String)
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: MapQuest.Features.SpatialIndexers.PageFileException
+  langs:
+  - csharp
+  - vb
+  name: PageFileException(string)
+  nameWithType: PageFileException.PageFileException(string)
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException.PageFileException(string)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: Constructor with exception message.
+  example: []
+  syntax:
+    content: public PageFileException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: MapQuest.Features.SpatialIndexers.PageFileException.#ctor*
+  nameWithType.vb: PageFileException.New(String)
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFileException.New(String)
+  name.vb: New(String)
+- uid: MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Exception)
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: MapQuest.Features.SpatialIndexers.PageFileException
+  langs:
+  - csharp
+  - vb
+  name: PageFileException(string, Exception)
+  nameWithType: PageFileException.PageFileException(string, Exception)
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException.PageFileException(string, System.Exception)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: Constructor with message and inner exception.
+  example: []
+  syntax:
+    content: public PageFileException(string message, Exception inner)
+    parameters:
+    - id: message
+      type: System.String
+    - id: inner
+      type: System.Exception
+    content.vb: Public Sub New(message As String, inner As Exception)
+  overload: MapQuest.Features.SpatialIndexers.PageFileException.#ctor*
+  nameWithType.vb: PageFileException.New(String, Exception)
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFileException.New(String, System.Exception)
+  name.vb: New(String, Exception)
+- uid: MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: MapQuest.Features.SpatialIndexers.PageFileException
+  langs:
+  - csharp
+  - vb
+  name: PageFileException(SerializationInfo, StreamingContext)
+  nameWithType: PageFileException.PageFileException(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException.PageFileException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: Protected constructor to de-serialize data.
+  example: []
+  syntax:
+    content: protected PageFileException(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Features.SpatialIndexers.PageFileException.#ctor*
+  nameWithType.vb: PageFileException.New(SerializationInfo, StreamingContext)
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFileException.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name.vb: New(SerializationInfo, StreamingContext)
+- uid: MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.Int32,System.Object[])
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.Int32,System.Object[])
+  id: '#ctor(System.Int32,System.Object[])'
+  parent: MapQuest.Features.SpatialIndexers.PageFileException
+  langs:
+  - csharp
+  - vb
+  name: PageFileException(int, params object[])
+  nameWithType: PageFileException.PageFileException(int, params object[])
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException.PageFileException(int, params object[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: Constructor allowing the Message property to be set through the exception ID.
+  example: []
+  syntax:
+    content: public PageFileException(int exceptionID, params object[] args)
+    parameters:
+    - id: exceptionID
+      type: System.Int32
+      description: A number identifying the message of the exception in resource file.
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub New(exceptionID As Integer, ParamArray args As Object())
+  overload: MapQuest.Features.SpatialIndexers.PageFileException.#ctor*
+  nameWithType.vb: PageFileException.New(Integer, ParamArray Object())
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFileException.New(Integer, ParamArray Object())
+  name.vb: New(Integer, ParamArray Object())
+- uid: MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.Int32,System.Exception,System.Object[])
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.Int32,System.Exception,System.Object[])
+  id: '#ctor(System.Int32,System.Exception,System.Object[])'
+  parent: MapQuest.Features.SpatialIndexers.PageFileException
+  langs:
+  - csharp
+  - vb
+  name: PageFileException(int, Exception, params object[])
+  nameWithType: PageFileException.PageFileException(int, Exception, params object[])
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException.PageFileException(int, System.Exception, params object[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: >-
+    Constructor allowing the Message resource ID and InnerException 
+
+    property to be set.
+  example: []
+  syntax:
+    content: public PageFileException(int exceptionID, Exception inner, params object[] args)
+    parameters:
+    - id: exceptionID
+      type: System.Int32
+      description: A number identifying the message of the exception in resource file.
+    - id: inner
+      type: System.Exception
+      description: Sets a reference to the InnerException.
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub New(exceptionID As Integer, inner As Exception, ParamArray args As Object())
+  overload: MapQuest.Features.SpatialIndexers.PageFileException.#ctor*
+  nameWithType.vb: PageFileException.New(Integer, Exception, ParamArray Object())
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFileException.New(Integer, System.Exception, ParamArray Object())
+  name.vb: New(Integer, Exception, ParamArray Object())
+- uid: MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: MapQuest.Features.SpatialIndexers.PageFileException
+  langs:
+  - csharp
+  - vb
+  name: PageFileException(string, int)
+  nameWithType: PageFileException.PageFileException(string, int)
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException.PageFileException(string, int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: Constructor allowing the Message property to be set through the exception ID.
+  example: []
+  syntax:
+    content: protected PageFileException(string prefix, int exceptionID)
+    parameters:
+    - id: prefix
+      type: System.String
+    - id: exceptionID
+      type: System.Int32
+      description: A number identifying the message of the exception in resource file.
+    content.vb: Protected Sub New(prefix As String, exceptionID As Integer)
+  overload: MapQuest.Features.SpatialIndexers.PageFileException.#ctor*
+  nameWithType.vb: PageFileException.New(String, Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFileException.New(String, Integer)
+  name.vb: New(String, Integer)
+- uid: MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32,System.Exception)
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32,System.Exception)
+  id: '#ctor(System.String,System.Int32,System.Exception)'
+  parent: MapQuest.Features.SpatialIndexers.PageFileException
+  langs:
+  - csharp
+  - vb
+  name: PageFileException(string, int, Exception)
+  nameWithType: PageFileException.PageFileException(string, int, Exception)
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException.PageFileException(string, int, System.Exception)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: >-
+    Constructor allowing the Message resource ID and InnerException 
+
+    property to be set.
+  example: []
+  syntax:
+    content: protected PageFileException(string prefix, int exceptionID, Exception inner)
+    parameters:
+    - id: prefix
+      type: System.String
+    - id: exceptionID
+      type: System.Int32
+      description: A number identifying the message of the exception in resource file.
+    - id: inner
+      type: System.Exception
+      description: Sets a reference to the InnerException.
+    content.vb: Protected Sub New(prefix As String, exceptionID As Integer, inner As Exception)
+  overload: MapQuest.Features.SpatialIndexers.PageFileException.#ctor*
+  nameWithType.vb: PageFileException.New(String, Integer, Exception)
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFileException.New(String, Integer, System.Exception)
+  name.vb: New(String, Integer, Exception)
+- uid: MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32,System.Object[])
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32,System.Object[])
+  id: '#ctor(System.String,System.Int32,System.Object[])'
+  parent: MapQuest.Features.SpatialIndexers.PageFileException
+  langs:
+  - csharp
+  - vb
+  name: PageFileException(string, int, params object[])
+  nameWithType: PageFileException.PageFileException(string, int, params object[])
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException.PageFileException(string, int, params object[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: Constructor allowing the Message property to be set through the exception ID.
+  example: []
+  syntax:
+    content: protected PageFileException(string prefix, int exceptionID, params object[] args)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: ''
+    - id: exceptionID
+      type: System.Int32
+      description: A number identifying the message of the exception in resource file.
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Protected Sub New(prefix As String, exceptionID As Integer, ParamArray args As Object())
+  overload: MapQuest.Features.SpatialIndexers.PageFileException.#ctor*
+  nameWithType.vb: PageFileException.New(String, Integer, ParamArray Object())
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFileException.New(String, Integer, ParamArray Object())
+  name.vb: New(String, Integer, ParamArray Object())
+- uid: MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32,System.Exception,System.Object[])
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32,System.Exception,System.Object[])
+  id: '#ctor(System.String,System.Int32,System.Exception,System.Object[])'
+  parent: MapQuest.Features.SpatialIndexers.PageFileException
+  langs:
+  - csharp
+  - vb
+  name: PageFileException(string, int, Exception, params object[])
+  nameWithType: PageFileException.PageFileException(string, int, Exception, params object[])
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException.PageFileException(string, int, System.Exception, params object[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: >-
+    Constructor allowing the Message resource ID and InnerException 
+
+    property to be set.
+  example: []
+  syntax:
+    content: protected PageFileException(string prefix, int exceptionID, Exception inner, params object[] args)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: ''
+    - id: exceptionID
+      type: System.Int32
+      description: A number identifying the message of the exception in resource file.
+    - id: inner
+      type: System.Exception
+      description: Sets a reference to the InnerException.
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Protected Sub New(prefix As String, exceptionID As Integer, inner As Exception, ParamArray args As Object())
+  overload: MapQuest.Features.SpatialIndexers.PageFileException.#ctor*
+  nameWithType.vb: PageFileException.New(String, Integer, Exception, ParamArray Object())
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFileException.New(String, Integer, System.Exception, ParamArray Object())
+  name.vb: New(String, Integer, Exception, ParamArray Object())
+references:
+- uid: MapQuest.Features.SpatialIndexers
+  commentId: N:MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features.SpatialIndexers
+  nameWithType: MapQuest.Features.SpatialIndexers
+  fullName: MapQuest.Features.SpatialIndexers
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.SpatialIndexers
+    name: SpatialIndexers
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.SpatialIndexers
+    name: SpatialIndexers
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Features.SpatialIndexers.PageFileException.#ctor*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.PageFileException.#ctor
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFileException.html#MapQuest_Features_SpatialIndexers_PageFileException__ctor
+  name: PageFileException
+  nameWithType: PageFileException.PageFileException
+  fullName: MapQuest.Features.SpatialIndexers.PageFileException.PageFileException
+  nameWithType.vb: PageFileException.New
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFileException.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )

@@ -1,0 +1,1389 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Coordinate | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Coordinate | mysite ">
+      
+      <meta name="description" content="2 次元直交座標系で座標を格納した軽量のクラスです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Coordinates.Coordinate">
+
+
+
+  <h1 id="MapQuest_Coordinates_Coordinate" data-uid="MapQuest.Coordinates.Coordinate" class="text-break">
+Class Coordinate  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Coordinates.html">Coordinates</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Coordinates.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>2 次元直交座標系で座標を格納した軽量のクラスです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Coordinate : ICoordinatePoint, ICloneable, IComparable, ISerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Coordinate</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.Coordinates.ICoordinatePoint.html">ICoordinatePoint</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.Coordinates.Coordinate3D.html">Coordinate3D</a></div>
+      <div><a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate.html">FlaggedCoordinate</a></div>
+      <div><a class="xref" href="MapQuest.Coordinates.MeasuredCoordinate.html">MeasuredCoordinate</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MapQuest_Coordinates_Coordinate_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>は、ポイント(Geometryにおけるサブクラス)とは異なります。</p>
+<p>面積、精密モデル、および空間的参照システム情報のような補足情報を含んでいるポイント型のオブジェクトとは異なり、</p>
+<p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>は座標の値およびアクセスするメソッドを含んでいるだけです。</p>
+<p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>は、z座標が付加された 2 次元座標です。
+<pre><code>OTSは、基礎的なアクセスする機能以外のz座標に対する操作をサポートしません。
+
+構築された座標のz座標はNaNとなります。標準の比較機能はz座標を無視します。
+</code></pre>
+
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Coordinate__ctor_" data-uid="MapQuest.Coordinates.Coordinate.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate__ctor" data-uid="MapQuest.Coordinates.Coordinate.#ctor">
+  Coordinate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数の指定がない場合X座標、Y座標を(0.0 , 0.0)として<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>クラスの新しいインスタンスを初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coordinate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate__ctor_" data-uid="MapQuest.Coordinates.Coordinate.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate__ctor_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Coordinate.#ctor(MapQuest.Coordinates.Coordinate)">
+  Coordinate(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数の<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>と同じX座標,Y座標を持った<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>クラスの新しいインスタンスを初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coordinate(Coordinate c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>コピー元の<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate__ctor_" data-uid="MapQuest.Coordinates.Coordinate.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate__ctor_System_Double_System_Double_" data-uid="MapQuest.Coordinates.Coordinate.#ctor(System.Double,System.Double)">
+  Coordinate(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数を(x,y)として<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>クラスの新しいインスタンスを初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coordinate(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>X座標</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Y座標</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate__ctor_" data-uid="MapQuest.Coordinates.Coordinate.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="MapQuest.Coordinates.Coordinate.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+  Coordinate(SerializationInfo, StreamingContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>シリアル化された情報から<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coordinate(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd><p>シリアル化する情報を格納するオブジェクト</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Coordinate_CoordinateType_" data-uid="MapQuest.Coordinates.Coordinate.CoordinateType*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_CoordinateType" data-uid="MapQuest.Coordinates.Coordinate.CoordinateType">
+  CoordinateType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクトの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>の種類を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CoordinateType CoordinateType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.CoordinateType.html">CoordinateType</a></dt>
+    <dd><p>この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクトの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>の種類</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Coordinate_CoordinateType_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のCoordinateTypeは<b>Default</b>です。</p>
+</div>
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MapQuest.Coordinates.CoordinateType.html#MapQuest_Coordinates_CoordinateType_Default">Default</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MapQuest_Coordinates_Coordinate_Dimension_" data-uid="MapQuest.Coordinates.Coordinate.Dimension*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_Dimension" data-uid="MapQuest.Coordinates.Coordinate.Dimension">
+  Dimension
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクトの次元を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimension { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクトの次元</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Coordinate_Dimension_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>の次元は2です。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_Ordinate_" data-uid="MapQuest.Coordinates.Coordinate.Ordinate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_Ordinate" data-uid="MapQuest.Coordinates.Coordinate.Ordinate">
+  Ordinate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクトの座標を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double[] Ordinate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクトの座標</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Coordinate_Ordinate_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Ordinate[0]がX座標、Ordinate[1]がY座標を表します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_X_" data-uid="MapQuest.Coordinates.Coordinate.X*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_X" data-uid="MapQuest.Coordinates.Coordinate.X">
+  X
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクトのX座標を取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double X { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクトのX座標</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_Y_" data-uid="MapQuest.Coordinates.Coordinate.Y*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_Y" data-uid="MapQuest.Coordinates.Coordinate.Y">
+  Y
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクトのY座標を取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Y { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>オブジェクトのY座標</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Coordinate_Clone_" data-uid="MapQuest.Coordinates.Coordinate.Clone*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_Clone" data-uid="MapQuest.Coordinates.Coordinate.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を複製します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>複製された<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_CompareTo_" data-uid="MapQuest.Coordinates.Coordinate.CompareTo*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_CompareTo_System_Object_" data-uid="MapQuest.Coordinates.Coordinate.CompareTo(System.Object)">
+  CompareTo(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数で指定されたオブジェクトとこのオブジェクトを比較します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CompareTo(object o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>このCoordinateと比較する対象の<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のほうが小さかった場合マイナスの値、等しかった場合ゼロ、この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>の方が大きかった場合プラスの値を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Coordinate_CompareTo_System_Object__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>返り値</p>
+<ul><li>
+-1, if <code> this.x &lt; other.x || ((this.x == other.x) &amp;&amp; (this.y &lt; other.y)) </code></li><li>
+0, if <code>this.x == other.x &amp;&amp; this.y = other.y</code></li><li>
+1, if <code>this.x &gt; other.x || ((this.x == other.x) &amp;&amp; (this.y &gt; other.y))</code></li></ul>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_Distance_" data-uid="MapQuest.Coordinates.Coordinate.Distance*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_Distance_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Coordinate.Distance(MapQuest.Coordinates.Coordinate)">
+  Distance(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>間の最短距離を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Distance(Coordinate p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>最短距離を取得する対象の<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>間の最短距離を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_Equals_" data-uid="MapQuest.Coordinates.Coordinate.Equals*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_Equals_System_Object_" data-uid="MapQuest.Coordinates.Coordinate.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	Ｘ座標とＹ座標の両方が等しいときに<code>true</code>を返します。
+<pre><code>座標が2.5Dなので、比較する場合このルーチンはz座標を無視します。
+</code></pre>
+
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>比較する対象の<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Ｘ座標とＹ座標の両方が等しいときに<code>true</code>を返します。そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_GetHashCode_" data-uid="MapQuest.Coordinates.Coordinate.GetHashCode*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_GetHashCode" data-uid="MapQuest.Coordinates.Coordinate.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標とY座標を元にハッシュ値を生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>生成されたハッシュ値を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_GetObjectData_" data-uid="MapQuest.Coordinates.Coordinate.GetObjectData*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="MapQuest.Coordinates.Coordinate.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+  GetObjectData(SerializationInfo, StreamingContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オブジェクトをシリアル化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd><p>シリアル化する情報を格納するオブジェクト</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_GetOrdinate_" data-uid="MapQuest.Coordinates.Coordinate.GetOrdinate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_GetOrdinate_System_Int32_" data-uid="MapQuest.Coordinates.Coordinate.GetOrdinate(System.Int32)">
+  GetOrdinate(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数で指定した次元の座標を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double GetOrdinate(int dimension)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dimension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>取得したい次元</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>指定した次元の座標を返します。dimensionが0ならばX座標、dimensionが1ならばY座標を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.CoordinateException.html">CoordinateException</a></dt>
+    <dd><p>dimensionが0または1以外の時にCoordinateExceptionをthrowします。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_MakePrecise_" data-uid="MapQuest.Coordinates.Coordinate.MakePrecise*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_MakePrecise_MapQuest_Coordinates_PrecisionModel_" data-uid="MapQuest.Coordinates.Coordinate.MakePrecise(MapQuest.Coordinates.PrecisionModel)">
+  MakePrecise(PrecisionModel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>高精度グリッド<a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a>に，この<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を調整します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MakePrecise(PrecisionModel precisionModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>precisionModel</code> <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a></dt>
+    <dd><p>調整する元の<a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_Rotate_" data-uid="MapQuest.Coordinates.Coordinate.Rotate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_Rotate_System_Double_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Coordinate.Rotate(System.Double,MapQuest.Coordinates.Coordinate)">
+  Rotate(double, Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>回転角度と基準点を基に、この <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を、反時計回りに回転します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rotate(double angle, Coordinate baseCoord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を回転する角度。（度単位）</p>
+</dd>
+    <dt><code>baseCoord</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>回転する際の基準点となる <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_Rotate_" data-uid="MapQuest.Coordinates.Coordinate.Rotate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_Rotate_System_Double_System_Double_System_Double_" data-uid="MapQuest.Coordinates.Coordinate.Rotate(System.Double,System.Double,System.Double)">
+  Rotate(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>回転角度と基準点を基に、この <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を、反時計回りに回転します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rotate(double angle, double baseX, double baseY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を回転する角度。（度単位）</p>
+</dd>
+    <dt><code>baseX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>回転する際の基準点のX座標。</p>
+</dd>
+    <dt><code>baseY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>回転する際の基準点のY座標。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_SetCoordinate_" data-uid="MapQuest.Coordinates.Coordinate.SetCoordinate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_SetCoordinate_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Coordinate.SetCoordinate(MapQuest.Coordinates.Coordinate)">
+  SetCoordinate(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数のCoordinateのX座標、Y座標をこの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>にコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetCoordinate(Coordinate other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>コピー元の<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_SetCoordinate_" data-uid="MapQuest.Coordinates.Coordinate.SetCoordinate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_SetCoordinate_System_Double_System_Double_" data-uid="MapQuest.Coordinates.Coordinate.SetCoordinate(System.Double,System.Double)">
+  SetCoordinate(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数のX座標、Y座標をこの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>にコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCoordinate(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>X座標</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Y座標</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_SetCoordinate_" data-uid="MapQuest.Coordinates.Coordinate.SetCoordinate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_SetCoordinate_System_Single_System_Single_" data-uid="MapQuest.Coordinates.Coordinate.SetCoordinate(System.Single,System.Single)">
+  SetCoordinate(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数のX座標、Y座標をこの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>にコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCoordinate(float x, float y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>X座標</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Y座標</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_SetLocation_" data-uid="MapQuest.Coordinates.Coordinate.SetLocation*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_SetLocation_MapQuest_Coordinates_ICoordinatePoint_" data-uid="MapQuest.Coordinates.Coordinate.SetLocation(MapQuest.Coordinates.ICoordinatePoint)">
+  SetLocation(ICoordinatePoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の座標をこの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>に設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetLocation(ICoordinatePoint point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="MapQuest.Coordinates.ICoordinatePoint.html">ICoordinatePoint</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.ICoordinatePoint.html">ICoordinatePoint</a>型の座標</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>pointのdimensionが1以下の場合ArgumentExceptionをthrowします。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_SetOrdinate_" data-uid="MapQuest.Coordinates.Coordinate.SetOrdinate*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_SetOrdinate_System_Int32_System_Double_" data-uid="MapQuest.Coordinates.Coordinate.SetOrdinate(System.Int32,System.Double)">
+  SetOrdinate(int, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数で指定した次元の座標を設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetOrdinate(int dimension, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dimension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>設定する次元</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>設定する次元に代入したい値</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.CoordinateException.html">CoordinateException</a></dt>
+    <dd><p>dimensionが0または1以外の時にCoordinateExceptionをthrowします。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_ToString_" data-uid="MapQuest.Coordinates.Coordinate.ToString*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_ToString" data-uid="MapQuest.Coordinates.Coordinate.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(x, y)の形式で文字列を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(x, y)の形式の文字列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="MapQuest_Coordinates_Coordinate_op_Addition_" data-uid="MapQuest.Coordinates.Coordinate.op_Addition*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_op_Addition_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Coordinate.op_Addition(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)">
+  operator +(Coordinate, Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>と右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を加算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate operator +(Coordinate left, Coordinate right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>加算された結果の<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Coordinate_op_Addition_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標、Y座標と右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標、Y座標をそれぞれ加算します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_op_GreaterThan_" data-uid="MapQuest.Coordinates.Coordinate.op_GreaterThan*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_op_GreaterThan_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Coordinate.op_GreaterThan(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)">
+  operator &gt;(Coordinate, Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>が右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>より大きいかどうかを判定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(Coordinate left, Coordinate right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>が右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>より大きければ<code>true</code>、そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Coordinate_op_GreaterThan_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標が右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標よりも大きければ<code>true</code>を返します。</p>
+<p>また、左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標、Y座標が共に右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標、Y座標よりも大きければ<code>true</code>を返します。</p>
+<p>そうでなければ<code>false</code>を返します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_op_LessThan_" data-uid="MapQuest.Coordinates.Coordinate.op_LessThan*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_op_LessThan_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Coordinate.op_LessThan(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)">
+  operator &lt;(Coordinate, Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>が右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>より小さいかどうかを判定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(Coordinate left, Coordinate right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>が右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>より小さければ<code>true</code>、そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Coordinate_op_LessThan_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標が右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標よりも小さければ<code>true</code>を返します。</p>
+<p>また、左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標、Y座標が共に右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標、Y座標よりも小さければ<code>true</code>を返します。</p>
+<p>そうでなければ<code>false</code>を返します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_op_Multiply_" data-uid="MapQuest.Coordinates.Coordinate.op_Multiply*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_op_Multiply_MapQuest_Coordinates_Coordinate_System_Double_" data-uid="MapQuest.Coordinates.Coordinate.op_Multiply(MapQuest.Coordinates.Coordinate,System.Double)">
+  operator *(Coordinate, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>と右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を乗算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate operator *(Coordinate point, double scalar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd></dd>
+    <dt><code>scalar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>乗算された結果の<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Coordinate_op_Multiply_MapQuest_Coordinates_Coordinate_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標、Y座標と右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標、Y座標をそれぞれ乗算します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_op_Subtraction_" data-uid="MapQuest.Coordinates.Coordinate.op_Subtraction*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_op_Subtraction_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Coordinate.op_Subtraction(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)">
+  operator -(Coordinate, Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>から右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を減算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate operator -(Coordinate left, Coordinate right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>減算された結果の<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Coordinate_op_Subtraction_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>左のオペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標、Y座標から右オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標、Y座標をそれぞれ減算します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_Coordinate_op_UnaryNegation_" data-uid="MapQuest.Coordinates.Coordinate.op_UnaryNegation*"></a>
+
+  <h3 id="MapQuest_Coordinates_Coordinate_op_UnaryNegation_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.Coordinate.op_UnaryNegation(MapQuest.Coordinates.Coordinate)">
+  operator -(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を原点を中心に反転します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate operator -(Coordinate point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>反転された結果の<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_Coordinate_op_UnaryNegation_MapQuest_Coordinates_Coordinate__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>オペランドの<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a>のX座標、Y座標をそれぞれ原点を中心に反転します。</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

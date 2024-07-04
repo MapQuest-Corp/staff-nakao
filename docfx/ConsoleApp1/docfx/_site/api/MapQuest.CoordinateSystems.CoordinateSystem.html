@@ -1,0 +1,629 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CoordinateSystem | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CoordinateSystem | mysite ">
+      
+      <meta name="description" content="「地図座標系(Coordinate Reference System)」をモデル化するすべてのクラスのベースクラスです。 「地図座標系」は、1 つの座標系(Coordinate System) と 1 つの測地系(Datum)から成ります。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.CoordinateSystems.CoordinateSystem">
+
+
+
+  <h1 id="MapQuest_CoordinateSystems_CoordinateSystem" data-uid="MapQuest.CoordinateSystems.CoordinateSystem" class="text-break">
+Class CoordinateSystem  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.CoordinateSystems.html">CoordinateSystems</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.CoordinateSystems.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>「地図座標系(Coordinate Reference System)」をモデル化するすべてのクラスのベースクラスです。
+「地図座標系」は、1 つの座標系(Coordinate System) と 1 つの測地系(Datum)から成ります。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CoordinateSystem : Info, ICoordinateSystem, IInfo, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.Info.html">Info</a></div>
+      <div><span class="xref">CoordinateSystem</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.IInfo.html">IInfo</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.HorizontalCoordinateSystem.html">HorizontalCoordinateSystem</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Clone">Info.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Remarks">Info.Remarks</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">Info.AuthorityCode</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Info.Authority</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Info.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Info.Alias</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Info.Abbreviation</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_WKT">Info.WKT</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_XML">Info.XML</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MapQuest_CoordinateSystems_CoordinateSystem_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>これは、座標系をさらに拡張あるいは継承するための抽象的なクラスです。</p>
+<p></p>
+座標系とは、数学的な空間(ここで空間の要素は位置と呼ばれる)です。
+<p></p>
+各位置は数のリストによって記述されます。リストの長さは座標系の次元に相当します。
+したがって、2 次元の座標系では、各位置は 2 つの数値を含んでいるリストによって記述されます。
+<p></p>
+しかし、座標系では、数のすべてのリストは位置に相当するとは限りません。
+<p></p>
+いくつかのリストは座標系の領域の外にあるかもしれません。
+例えば、2次元の緯度/経度座標系では、緯度:91度・経度:91度 という値は位置に相当しません。
+いくつかの座標系は、さらに実際の世界の位置への数学的なスペースからのマッピングを持っています。
+したがって、緯度/経度座標系では、数学的な位置(緯度、経度)は、地球の表面上の位置に相当します。
+実際の世界の位置の中への数学的なスペースからのこのマッピングは測地系(Datum, データム)と呼ばれます。
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystem__ctor_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystem__ctor_MapQuest_CoordinateSystems_CoordinateSystem_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.#ctor(MapQuest.CoordinateSystems.CoordinateSystem)">
+  CoordinateSystem(CoordinateSystem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在のインスタンスの簡易コピーを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CoordinateSystem(CoordinateSystem sourceCS)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceCS</code> <a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystem.html">CoordinateSystem</a></dt>
+    <dd><p>複製元の <a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystem.html">CoordinateSystem</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystem__ctor_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystem__ctor_System_String_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.#ctor(System.String)">
+  CoordinateSystem(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>座標系の名称を指定して、新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CoordinateSystem(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>座標系の名称。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystem__ctor_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystem__ctor_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+  CoordinateSystem(string, string, string, string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>必要なパラメータを指定して、新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CoordinateSystem(string remarks, string authority, string authorityCode, string name, string alias, string abbreviation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>remarks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>座標系の説明。</p>
+</dd>
+    <dt><code>authority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>座標系の策定元団体・機関の名称。</p>
+</dd>
+    <dt><code>authorityCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>authority が策定した座標系の ID 。</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>座標系の名称。</p>
+</dd>
+    <dt><code>alias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>座標系の別名。</p>
+</dd>
+    <dt><code>abbreviation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>座標系の省略名。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystem_CoordinateSystemType_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystem_CoordinateSystemType" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType">
+  CoordinateSystemType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>このインスタンスの座標系の種類を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract CoordinateSystemType CoordinateSystemType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystemType.html">CoordinateSystemType</a></dt>
+    <dd><p>座標系の種類を示す <a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_CoordinateSystemType">CoordinateSystemType</a> 値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystem_DefaultEnvelope_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.DefaultEnvelope*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystem_DefaultEnvelope" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.DefaultEnvelope">
+  DefaultEnvelope
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>座標系の既定の範囲を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Envelope DefaultEnvelope { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a></dt>
+    <dd><p>この座標系で定義されている範囲をしめす <a class="xref" href="MapQuest.Coordinates.Envelope.html">Envelope</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_CoordinateSystem_DefaultEnvelope_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>領域に制限のある座標系は、その領域を返します。
+領域に制限のない座標系は、使用が考えられる領域を返す事が望ましいです。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystem_Dimension_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.Dimension*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystem_Dimension" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.Dimension">
+  Dimension
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>座標系の次元の数を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int Dimension { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>座標系の次元の数。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_CoordinateSystem_Dimension_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>座標系中の各次元は対応する軸を持っています。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystem_Equals_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.Equals*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystem_Equals_System_Object_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>対象のインスタンスが、
+指定したオブジェクトに等しいかどうかを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>このインスタンスと比較するオブジェクト。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>obj が、このインスタンスと同じ値である場合は true 。
+それ以外の場合は false 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_CoordinateSystem_Equals_System_Object__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このクラスの <a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_Equals_System_Object_">Equals(object)</a> メソッドは、
+Authority 、 AuthorityCode 、
+Name を比較し、その全てが等しければ true を返します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystem_GetAxis_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.GetAxis*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystem_GetAxis_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.GetAxis(System.Int32)">
+  GetAxis(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>座標系の、指定した次元の「軸」の情報を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IAxisInfo GetAxis(int Dimension)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Dimension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>次元を示す 0 から始まるインデックス。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.IAxisInfo.html">IAxisInfo</a></dt>
+    <dd><p>指定した次元の軸情報を定義する <a class="xref" href="MapQuest.CoordinateSystems.IAxisInfo.html">IAxisInfo</a>
+オブジェクトを返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_CoordinateSystem_GetAxis_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>座標系中の各次元は対応する軸を持っています。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystem_GetHashCode_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.GetHashCode*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystem_GetHashCode" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>このインスタンスのハッシュ コードを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><code>base.GetHashCode()</code> の結果を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_CoordinateSystem_GetUnits_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.GetUnits*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_CoordinateSystem_GetUnits_System_Int32_" data-uid="MapQuest.CoordinateSystems.CoordinateSystem.GetUnits(System.Int32)">
+  GetUnits(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>座標系の、指定した次元の「単位」の情報を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IUnit GetUnits(int dimension)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dimension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>次元を示す 0 から始まるインデックス。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.CoordinateSystems.IUnit.html">IUnit</a></dt>
+    <dd><p>座標系の軸の単位を示す <a class="xref" href="MapQuest.CoordinateSystems.IUnit.html">IUnit</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_CoordinateSystem_GetUnits_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>座標系中の各次元は対応する「単位」を持っています。</p>
+</div>
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="MapQuest.CoordinateSystems.ICoordinateSystem.html">ICoordinateSystem</a></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

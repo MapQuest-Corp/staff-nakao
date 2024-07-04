@@ -1,0 +1,2770 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.Transforms.AffineTransform
+  commentId: T:MapQuest.Coordinates.Transforms.AffineTransform
+  id: AffineTransform
+  parent: MapQuest.Coordinates.Transforms
+  children:
+  - MapQuest.Coordinates.Transforms.AffineTransform.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.AffineTransform.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.AffineTransform.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.AffineTransform.#ctor(MapQuest.Coordinates.Transforms.AffineTransform)
+  - MapQuest.Coordinates.Transforms.AffineTransform.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Clone
+  - MapQuest.Coordinates.Transforms.AffineTransform.CreateRotation(System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.CreateRotationAt(System.Double,System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.CreateScaling(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.CreateShearing(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.CreateSkew(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewX(System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewY(System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.CreateTranslation(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Determinant
+  - MapQuest.Coordinates.Transforms.AffineTransform.Elements
+  - MapQuest.Coordinates.Transforms.AffineTransform.Equals(MapQuest.Coordinates.Transforms.AffineTransform)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Equals(System.Object)
+  - MapQuest.Coordinates.Transforms.AffineTransform.FlipX
+  - MapQuest.Coordinates.Transforms.AffineTransform.FlipY
+  - MapQuest.Coordinates.Transforms.AffineTransform.GetHashCode
+  - MapQuest.Coordinates.Transforms.AffineTransform.HasInverse
+  - MapQuest.Coordinates.Transforms.AffineTransform.Identity
+  - MapQuest.Coordinates.Transforms.AffineTransform.Inverse
+  - MapQuest.Coordinates.Transforms.AffineTransform.Invert
+  - MapQuest.Coordinates.Transforms.AffineTransform.IsIdentity
+  - MapQuest.Coordinates.Transforms.AffineTransform.Multiply(MapQuest.Coordinates.Transforms.AffineTransform)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Multiply(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineOrder)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Reset
+  - MapQuest.Coordinates.Transforms.AffineTransform.Reset(MapQuest.Coordinates.Transforms.AffineTransform)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Reset(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation(System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation(System.Double,System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.ResetToScale(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.ResetToShear(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.ResetToTranslation(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Rotate(System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Rotate(System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  - MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(System.Double,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(System.Double,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Transforms.AffineOrder)
+  - MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(System.Double,System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(System.Double,System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Scale(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Scale(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  - MapQuest.Coordinates.Transforms.AffineTransform.ScaleAt(System.Double,System.Double,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.AffineTransform.ScaleX
+  - MapQuest.Coordinates.Transforms.AffineTransform.ScaleY
+  - MapQuest.Coordinates.Transforms.AffineTransform.Shear(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Shear(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  - MapQuest.Coordinates.Transforms.AffineTransform.ShearX
+  - MapQuest.Coordinates.Transforms.AffineTransform.ShearY
+  - MapQuest.Coordinates.Transforms.AffineTransform.Skew(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Skew(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  - MapQuest.Coordinates.Transforms.AffineTransform.SkewX(System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.SkewY(System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.ToString
+  - MapQuest.Coordinates.Transforms.AffineTransform.Transform(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Transform(MapQuest.Coordinates.Coordinate[])
+  - MapQuest.Coordinates.Transforms.AffineTransform.Transform(System.Double@,System.Double@)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Transform(System.Single@,System.Single@)
+  - MapQuest.Coordinates.Transforms.AffineTransform.TransformVector(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.AffineTransform.TransformVectors(MapQuest.Coordinates.Coordinate[])
+  - MapQuest.Coordinates.Transforms.AffineTransform.Translate(System.Double,System.Double)
+  - MapQuest.Coordinates.Transforms.AffineTransform.Translate(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  - MapQuest.Coordinates.Transforms.AffineTransform.TranslateX
+  - MapQuest.Coordinates.Transforms.AffineTransform.TranslateY
+  - MapQuest.Coordinates.Transforms.AffineTransform.Visit(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Transforms.AffineTransform.op_Equality(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineTransform)
+  - MapQuest.Coordinates.Transforms.AffineTransform.op_Inequality(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineTransform)
+  - MapQuest.Coordinates.Transforms.AffineTransform.op_Multiply(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineTransform)
+  langs:
+  - csharp
+  - vb
+  name: AffineTransform
+  nameWithType: AffineTransform
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform
+  type: Struct
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: 'public struct AffineTransform : ICoordinateVisitor, ICloneable'
+    content.vb: Public Structure AffineTransform Implements ICoordinateVisitor, ICloneable
+  implements:
+  - MapQuest.Coordinates.ICoordinateVisitor
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)'
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: AffineTransform(double, double, double, double, double, double)
+  nameWithType: AffineTransform.AffineTransform(double, double, double, double, double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.AffineTransform(double, double, double, double, double, double)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public AffineTransform(double a11, double a12, double a21, double a22, double a13, double a23)
+    parameters:
+    - id: a11
+      type: System.Double
+    - id: a12
+      type: System.Double
+    - id: a21
+      type: System.Double
+    - id: a22
+      type: System.Double
+    - id: a13
+      type: System.Double
+    - id: a23
+      type: System.Double
+    content.vb: Public Sub New(a11 As Double, a12 As Double, a21 As Double, a22 As Double, a13 As Double, a23 As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.#ctor*
+  nameWithType.vb: AffineTransform.New(Double, Double, Double, Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.New(Double, Double, Double, Double, Double, Double)
+  name.vb: New(Double, Double, Double, Double, Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  id: '#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)'
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: AffineTransform(Coordinate, Coordinate)
+  nameWithType: AffineTransform.AffineTransform(Coordinate, Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.AffineTransform(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public AffineTransform(Coordinate p1, Coordinate q1)
+    parameters:
+    - id: p1
+      type: MapQuest.Coordinates.Coordinate
+    - id: q1
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub New(p1 As Coordinate, q1 As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.#ctor*
+  nameWithType.vb: AffineTransform.New(Coordinate, Coordinate)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.New(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  name.vb: New(Coordinate, Coordinate)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  id: '#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)'
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: AffineTransform(Coordinate, Coordinate, Coordinate, Coordinate)
+  nameWithType: AffineTransform.AffineTransform(Coordinate, Coordinate, Coordinate, Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.AffineTransform(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public AffineTransform(Coordinate p1, Coordinate q1, Coordinate p2, Coordinate q2)
+    parameters:
+    - id: p1
+      type: MapQuest.Coordinates.Coordinate
+    - id: q1
+      type: MapQuest.Coordinates.Coordinate
+    - id: p2
+      type: MapQuest.Coordinates.Coordinate
+    - id: q2
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub New(p1 As Coordinate, q1 As Coordinate, p2 As Coordinate, q2 As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.#ctor*
+  nameWithType.vb: AffineTransform.New(Coordinate, Coordinate, Coordinate, Coordinate)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.New(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  name.vb: New(Coordinate, Coordinate, Coordinate, Coordinate)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  id: '#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)'
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: AffineTransform(Coordinate, Coordinate, Coordinate, Coordinate, Coordinate, Coordinate)
+  nameWithType: AffineTransform.AffineTransform(Coordinate, Coordinate, Coordinate, Coordinate, Coordinate, Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.AffineTransform(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public AffineTransform(Coordinate p1, Coordinate q1, Coordinate p2, Coordinate q2, Coordinate p3, Coordinate q3)
+    parameters:
+    - id: p1
+      type: MapQuest.Coordinates.Coordinate
+    - id: q1
+      type: MapQuest.Coordinates.Coordinate
+    - id: p2
+      type: MapQuest.Coordinates.Coordinate
+    - id: q2
+      type: MapQuest.Coordinates.Coordinate
+    - id: p3
+      type: MapQuest.Coordinates.Coordinate
+    - id: q3
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub New(p1 As Coordinate, q1 As Coordinate, p2 As Coordinate, q2 As Coordinate, p3 As Coordinate, q3 As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.#ctor*
+  nameWithType.vb: AffineTransform.New(Coordinate, Coordinate, Coordinate, Coordinate, Coordinate, Coordinate)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.New(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  name.vb: New(Coordinate, Coordinate, Coordinate, Coordinate, Coordinate, Coordinate)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.#ctor(MapQuest.Coordinates.Transforms.AffineTransform)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.#ctor(MapQuest.Coordinates.Transforms.AffineTransform)
+  id: '#ctor(MapQuest.Coordinates.Transforms.AffineTransform)'
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: AffineTransform(AffineTransform)
+  nameWithType: AffineTransform.AffineTransform(AffineTransform)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.AffineTransform(MapQuest.Coordinates.Transforms.AffineTransform)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public AffineTransform(AffineTransform affine)
+    parameters:
+    - id: affine
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Sub New(affine As AffineTransform)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.#ctor*
+  nameWithType.vb: AffineTransform.New(AffineTransform)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.New(MapQuest.Coordinates.Transforms.AffineTransform)
+  name.vb: New(AffineTransform)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Transform(System.Single@,System.Single@)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Transform(System.Single@,System.Single@)
+  id: Transform(System.Single@,System.Single@)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Transform(ref float, ref float)
+  nameWithType: AffineTransform.Transform(ref float, ref float)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Transform(ref float, ref float)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Transform(ref float x, ref float y)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    content.vb: Public Sub Transform(x As Single, y As Single)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Transform*
+  nameWithType.vb: AffineTransform.Transform(Single, Single)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Transform(Single, Single)
+  name.vb: Transform(Single, Single)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Transform(System.Double@,System.Double@)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Transform(System.Double@,System.Double@)
+  id: Transform(System.Double@,System.Double@)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Transform(ref double, ref double)
+  nameWithType: AffineTransform.Transform(ref double, ref double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Transform(ref double, ref double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Transform(ref double x, ref double y)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    content.vb: Public Sub Transform(x As Double, y As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Transform*
+  nameWithType.vb: AffineTransform.Transform(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Transform(Double, Double)
+  name.vb: Transform(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Transform(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Transform(MapQuest.Coordinates.Coordinate)
+  id: Transform(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Transform(Coordinate)
+  nameWithType: AffineTransform.Transform(Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Transform(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Transform(Coordinate point)
+    parameters:
+    - id: point
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub Transform(point As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Transform*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Transform(MapQuest.Coordinates.Coordinate[])
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Transform(MapQuest.Coordinates.Coordinate[])
+  id: Transform(MapQuest.Coordinates.Coordinate[])
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Transform(Coordinate[])
+  nameWithType: AffineTransform.Transform(Coordinate[])
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Transform(MapQuest.Coordinates.Coordinate[])
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Transform(Coordinate[] points)
+    parameters:
+    - id: points
+      type: MapQuest.Coordinates.Coordinate[]
+    content.vb: Public Sub Transform(points As Coordinate())
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Transform*
+  nameWithType.vb: AffineTransform.Transform(Coordinate())
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Transform(MapQuest.Coordinates.Coordinate())
+  name.vb: Transform(Coordinate())
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.TransformVector(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.TransformVector(MapQuest.Coordinates.Coordinate)
+  id: TransformVector(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: TransformVector(Coordinate)
+  nameWithType: AffineTransform.TransformVector(Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.TransformVector(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void TransformVector(Coordinate vector)
+    parameters:
+    - id: vector
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub TransformVector(vector As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.TransformVector*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.TransformVectors(MapQuest.Coordinates.Coordinate[])
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.TransformVectors(MapQuest.Coordinates.Coordinate[])
+  id: TransformVectors(MapQuest.Coordinates.Coordinate[])
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: TransformVectors(Coordinate[])
+  nameWithType: AffineTransform.TransformVectors(Coordinate[])
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.TransformVectors(MapQuest.Coordinates.Coordinate[])
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void TransformVectors(Coordinate[] vectors)
+    parameters:
+    - id: vectors
+      type: MapQuest.Coordinates.Coordinate[]
+    content.vb: Public Sub TransformVectors(vectors As Coordinate())
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.TransformVectors*
+  nameWithType.vb: AffineTransform.TransformVectors(Coordinate())
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.TransformVectors(MapQuest.Coordinates.Coordinate())
+  name.vb: TransformVectors(Coordinate())
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Rotate(System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Rotate(System.Double)
+  id: Rotate(System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Rotate(double)
+  nameWithType: AffineTransform.Rotate(double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Rotate(double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Rotate(double angle)
+    parameters:
+    - id: angle
+      type: System.Double
+    content.vb: Public Sub Rotate(angle As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Rotate*
+  nameWithType.vb: AffineTransform.Rotate(Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Rotate(Double)
+  name.vb: Rotate(Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Rotate(System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Rotate(System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  id: Rotate(System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Rotate(double, AffineOrder)
+  nameWithType: AffineTransform.Rotate(double, AffineOrder)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Rotate(double, MapQuest.Coordinates.Transforms.AffineOrder)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Rotate(double angle, AffineOrder order)
+    parameters:
+    - id: angle
+      type: System.Double
+    - id: order
+      type: MapQuest.Coordinates.Transforms.AffineOrder
+    content.vb: Public Sub Rotate(angle As Double, order As AffineOrder)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Rotate*
+  nameWithType.vb: AffineTransform.Rotate(Double, AffineOrder)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Rotate(Double, MapQuest.Coordinates.Transforms.AffineOrder)
+  name.vb: Rotate(Double, AffineOrder)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(System.Double,System.Double,System.Double)
+  id: RotateAt(System.Double,System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: RotateAt(double, double, double)
+  nameWithType: AffineTransform.RotateAt(double, double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(double, double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void RotateAt(double angle, double x, double y)
+    parameters:
+    - id: angle
+      type: System.Double
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    content.vb: Public Sub RotateAt(angle As Double, x As Double, y As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt*
+  nameWithType.vb: AffineTransform.RotateAt(Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(Double, Double, Double)
+  name.vb: RotateAt(Double, Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(System.Double,System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(System.Double,System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  id: RotateAt(System.Double,System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: RotateAt(double, double, double, AffineOrder)
+  nameWithType: AffineTransform.RotateAt(double, double, double, AffineOrder)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(double, double, double, MapQuest.Coordinates.Transforms.AffineOrder)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void RotateAt(double angle, double x, double y, AffineOrder order)
+    parameters:
+    - id: angle
+      type: System.Double
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: order
+      type: MapQuest.Coordinates.Transforms.AffineOrder
+    content.vb: Public Sub RotateAt(angle As Double, x As Double, y As Double, order As AffineOrder)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt*
+  nameWithType.vb: AffineTransform.RotateAt(Double, Double, Double, AffineOrder)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(Double, Double, Double, MapQuest.Coordinates.Transforms.AffineOrder)
+  name.vb: RotateAt(Double, Double, Double, AffineOrder)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(System.Double,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(System.Double,MapQuest.Coordinates.Coordinate)
+  id: RotateAt(System.Double,MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: RotateAt(double, Coordinate)
+  nameWithType: AffineTransform.RotateAt(double, Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(double, MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void RotateAt(double angle, Coordinate center)
+    parameters:
+    - id: angle
+      type: System.Double
+    - id: center
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub RotateAt(angle As Double, center As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt*
+  nameWithType.vb: AffineTransform.RotateAt(Double, Coordinate)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(Double, MapQuest.Coordinates.Coordinate)
+  name.vb: RotateAt(Double, Coordinate)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(System.Double,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Transforms.AffineOrder)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(System.Double,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Transforms.AffineOrder)
+  id: RotateAt(System.Double,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Transforms.AffineOrder)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: RotateAt(double, Coordinate, AffineOrder)
+  nameWithType: AffineTransform.RotateAt(double, Coordinate, AffineOrder)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(double, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Transforms.AffineOrder)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void RotateAt(double angle, Coordinate center, AffineOrder order)
+    parameters:
+    - id: angle
+      type: System.Double
+    - id: center
+      type: MapQuest.Coordinates.Coordinate
+    - id: order
+      type: MapQuest.Coordinates.Transforms.AffineOrder
+    content.vb: Public Sub RotateAt(angle As Double, center As Coordinate, order As AffineOrder)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt*
+  nameWithType.vb: AffineTransform.RotateAt(Double, Coordinate, AffineOrder)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt(Double, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Transforms.AffineOrder)
+  name.vb: RotateAt(Double, Coordinate, AffineOrder)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Scale(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Scale(System.Double,System.Double)
+  id: Scale(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Scale(double, double)
+  nameWithType: AffineTransform.Scale(double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Scale(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Scale(double scaleX, double scaleY)
+    parameters:
+    - id: scaleX
+      type: System.Double
+    - id: scaleY
+      type: System.Double
+    content.vb: Public Sub Scale(scaleX As Double, scaleY As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Scale*
+  nameWithType.vb: AffineTransform.Scale(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Scale(Double, Double)
+  name.vb: Scale(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Scale(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Scale(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  id: Scale(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Scale(double, double, AffineOrder)
+  nameWithType: AffineTransform.Scale(double, double, AffineOrder)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Scale(double, double, MapQuest.Coordinates.Transforms.AffineOrder)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Scale(double scaleX, double scaleY, AffineOrder order)
+    parameters:
+    - id: scaleX
+      type: System.Double
+    - id: scaleY
+      type: System.Double
+    - id: order
+      type: MapQuest.Coordinates.Transforms.AffineOrder
+    content.vb: Public Sub Scale(scaleX As Double, scaleY As Double, order As AffineOrder)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Scale*
+  nameWithType.vb: AffineTransform.Scale(Double, Double, AffineOrder)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Scale(Double, Double, MapQuest.Coordinates.Transforms.AffineOrder)
+  name.vb: Scale(Double, Double, AffineOrder)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ScaleAt(System.Double,System.Double,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.ScaleAt(System.Double,System.Double,MapQuest.Coordinates.Coordinate)
+  id: ScaleAt(System.Double,System.Double,MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: ScaleAt(double, double, Coordinate)
+  nameWithType: AffineTransform.ScaleAt(double, double, Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ScaleAt(double, double, MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ScaleAt(double scaleX, double scaleY, Coordinate point)
+    parameters:
+    - id: scaleX
+      type: System.Double
+    - id: scaleY
+      type: System.Double
+    - id: point
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub ScaleAt(scaleX As Double, scaleY As Double, point As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.ScaleAt*
+  nameWithType.vb: AffineTransform.ScaleAt(Double, Double, Coordinate)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.ScaleAt(Double, Double, MapQuest.Coordinates.Coordinate)
+  name.vb: ScaleAt(Double, Double, Coordinate)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Shear(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Shear(System.Double,System.Double)
+  id: Shear(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Shear(double, double)
+  nameWithType: AffineTransform.Shear(double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Shear(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Shear(double shearX, double shearY)
+    parameters:
+    - id: shearX
+      type: System.Double
+    - id: shearY
+      type: System.Double
+    content.vb: Public Sub Shear(shearX As Double, shearY As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Shear*
+  nameWithType.vb: AffineTransform.Shear(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Shear(Double, Double)
+  name.vb: Shear(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Shear(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Shear(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  id: Shear(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Shear(double, double, AffineOrder)
+  nameWithType: AffineTransform.Shear(double, double, AffineOrder)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Shear(double, double, MapQuest.Coordinates.Transforms.AffineOrder)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Shear(double shearX, double shearY, AffineOrder order)
+    parameters:
+    - id: shearX
+      type: System.Double
+    - id: shearY
+      type: System.Double
+    - id: order
+      type: MapQuest.Coordinates.Transforms.AffineOrder
+    content.vb: Public Sub Shear(shearX As Double, shearY As Double, order As AffineOrder)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Shear*
+  nameWithType.vb: AffineTransform.Shear(Double, Double, AffineOrder)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Shear(Double, Double, MapQuest.Coordinates.Transforms.AffineOrder)
+  name.vb: Shear(Double, Double, AffineOrder)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Translate(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Translate(System.Double,System.Double)
+  id: Translate(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Translate(double, double)
+  nameWithType: AffineTransform.Translate(double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Translate(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Translate(double translateX, double translateY)
+    parameters:
+    - id: translateX
+      type: System.Double
+    - id: translateY
+      type: System.Double
+    content.vb: Public Sub Translate(translateX As Double, translateY As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Translate*
+  nameWithType.vb: AffineTransform.Translate(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Translate(Double, Double)
+  name.vb: Translate(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Translate(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Translate(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  id: Translate(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Translate(double, double, AffineOrder)
+  nameWithType: AffineTransform.Translate(double, double, AffineOrder)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Translate(double, double, MapQuest.Coordinates.Transforms.AffineOrder)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Translate(double translateX, double translateY, AffineOrder order)
+    parameters:
+    - id: translateX
+      type: System.Double
+    - id: translateY
+      type: System.Double
+    - id: order
+      type: MapQuest.Coordinates.Transforms.AffineOrder
+    content.vb: Public Sub Translate(translateX As Double, translateY As Double, order As AffineOrder)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Translate*
+  nameWithType.vb: AffineTransform.Translate(Double, Double, AffineOrder)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Translate(Double, Double, MapQuest.Coordinates.Transforms.AffineOrder)
+  name.vb: Translate(Double, Double, AffineOrder)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.SkewX(System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.SkewX(System.Double)
+  id: SkewX(System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: SkewX(double)
+  nameWithType: AffineTransform.SkewX(double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.SkewX(double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void SkewX(double skewX)
+    parameters:
+    - id: skewX
+      type: System.Double
+    content.vb: Public Sub SkewX(skewX As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.SkewX*
+  nameWithType.vb: AffineTransform.SkewX(Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.SkewX(Double)
+  name.vb: SkewX(Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.SkewY(System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.SkewY(System.Double)
+  id: SkewY(System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: SkewY(double)
+  nameWithType: AffineTransform.SkewY(double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.SkewY(double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void SkewY(double skewY)
+    parameters:
+    - id: skewY
+      type: System.Double
+    content.vb: Public Sub SkewY(skewY As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.SkewY*
+  nameWithType.vb: AffineTransform.SkewY(Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.SkewY(Double)
+  name.vb: SkewY(Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Skew(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Skew(System.Double,System.Double)
+  id: Skew(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Skew(double, double)
+  nameWithType: AffineTransform.Skew(double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Skew(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Skew(double skewX, double skewY)
+    parameters:
+    - id: skewX
+      type: System.Double
+    - id: skewY
+      type: System.Double
+    content.vb: Public Sub Skew(skewX As Double, skewY As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Skew*
+  nameWithType.vb: AffineTransform.Skew(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Skew(Double, Double)
+  name.vb: Skew(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Skew(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Skew(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  id: Skew(System.Double,System.Double,MapQuest.Coordinates.Transforms.AffineOrder)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Skew(double, double, AffineOrder)
+  nameWithType: AffineTransform.Skew(double, double, AffineOrder)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Skew(double, double, MapQuest.Coordinates.Transforms.AffineOrder)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Skew(double skewX, double skewY, AffineOrder order)
+    parameters:
+    - id: skewX
+      type: System.Double
+    - id: skewY
+      type: System.Double
+    - id: order
+      type: MapQuest.Coordinates.Transforms.AffineOrder
+    content.vb: Public Sub Skew(skewX As Double, skewY As Double, order As AffineOrder)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Skew*
+  nameWithType.vb: AffineTransform.Skew(Double, Double, AffineOrder)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Skew(Double, Double, MapQuest.Coordinates.Transforms.AffineOrder)
+  name.vb: Skew(Double, Double, AffineOrder)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Inverse
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Inverse
+  id: Inverse
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Inverse()
+  nameWithType: AffineTransform.Inverse()
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Inverse()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public AffineTransform Inverse()
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Function Inverse() As AffineTransform
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Inverse*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Invert
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Invert
+  id: Invert
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Invert()
+  nameWithType: AffineTransform.Invert()
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Invert()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Invert()
+    content.vb: Public Sub Invert()
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Invert*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Multiply(MapQuest.Coordinates.Transforms.AffineTransform)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Multiply(MapQuest.Coordinates.Transforms.AffineTransform)
+  id: Multiply(MapQuest.Coordinates.Transforms.AffineTransform)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Multiply(AffineTransform)
+  nameWithType: AffineTransform.Multiply(AffineTransform)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Multiply(MapQuest.Coordinates.Transforms.AffineTransform)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Multiply(AffineTransform affine)
+    parameters:
+    - id: affine
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Sub Multiply(affine As AffineTransform)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Multiply*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Multiply(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineOrder)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Multiply(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineOrder)
+  id: Multiply(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineOrder)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Multiply(AffineTransform, AffineOrder)
+  nameWithType: AffineTransform.Multiply(AffineTransform, AffineOrder)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Multiply(MapQuest.Coordinates.Transforms.AffineTransform, MapQuest.Coordinates.Transforms.AffineOrder)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Multiply(AffineTransform affine, AffineOrder order)
+    parameters:
+    - id: affine
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    - id: order
+      type: MapQuest.Coordinates.Transforms.AffineOrder
+    content.vb: Public Sub Multiply(affine As AffineTransform, order As AffineOrder)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Multiply*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Reset
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Reset
+  id: Reset
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: AffineTransform.Reset()
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Reset()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Reset*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Reset(MapQuest.Coordinates.Transforms.AffineTransform)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Reset(MapQuest.Coordinates.Transforms.AffineTransform)
+  id: Reset(MapQuest.Coordinates.Transforms.AffineTransform)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Reset(AffineTransform)
+  nameWithType: AffineTransform.Reset(AffineTransform)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Reset(MapQuest.Coordinates.Transforms.AffineTransform)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Reset(AffineTransform affine)
+    parameters:
+    - id: affine
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Sub Reset(affine As AffineTransform)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Reset*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Reset(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Reset(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: Reset(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Reset(double, double, double, double, double, double)
+  nameWithType: AffineTransform.Reset(double, double, double, double, double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Reset(double, double, double, double, double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Reset(double a11, double a12, double a13, double a21, double a22, double a23)
+    parameters:
+    - id: a11
+      type: System.Double
+    - id: a12
+      type: System.Double
+    - id: a13
+      type: System.Double
+    - id: a21
+      type: System.Double
+    - id: a22
+      type: System.Double
+    - id: a23
+      type: System.Double
+    content.vb: Public Sub Reset(a11 As Double, a12 As Double, a13 As Double, a21 As Double, a22 As Double, a23 As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Reset*
+  nameWithType.vb: AffineTransform.Reset(Double, Double, Double, Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Reset(Double, Double, Double, Double, Double, Double)
+  name.vb: Reset(Double, Double, Double, Double, Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ResetToTranslation(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.ResetToTranslation(System.Double,System.Double)
+  id: ResetToTranslation(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: ResetToTranslation(double, double)
+  nameWithType: AffineTransform.ResetToTranslation(double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ResetToTranslation(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ResetToTranslation(double translateX, double translateY)
+    parameters:
+    - id: translateX
+      type: System.Double
+    - id: translateY
+      type: System.Double
+    content.vb: Public Sub ResetToTranslation(translateX As Double, translateY As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.ResetToTranslation*
+  nameWithType.vb: AffineTransform.ResetToTranslation(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.ResetToTranslation(Double, Double)
+  name.vb: ResetToTranslation(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation(System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation(System.Double)
+  id: ResetToRotation(System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: ResetToRotation(double)
+  nameWithType: AffineTransform.ResetToRotation(double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation(double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ResetToRotation(double angle)
+    parameters:
+    - id: angle
+      type: System.Double
+    content.vb: Public Sub ResetToRotation(angle As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation*
+  nameWithType.vb: AffineTransform.ResetToRotation(Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation(Double)
+  name.vb: ResetToRotation(Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation(System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation(System.Double,System.Double,System.Double)
+  id: ResetToRotation(System.Double,System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: ResetToRotation(double, double, double)
+  nameWithType: AffineTransform.ResetToRotation(double, double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation(double, double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ResetToRotation(double angle, double x, double y)
+    parameters:
+    - id: angle
+      type: System.Double
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    content.vb: Public Sub ResetToRotation(angle As Double, x As Double, y As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation*
+  nameWithType.vb: AffineTransform.ResetToRotation(Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation(Double, Double, Double)
+  name.vb: ResetToRotation(Double, Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ResetToScale(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.ResetToScale(System.Double,System.Double)
+  id: ResetToScale(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: ResetToScale(double, double)
+  nameWithType: AffineTransform.ResetToScale(double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ResetToScale(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ResetToScale(double scaleX, double scaleY)
+    parameters:
+    - id: scaleX
+      type: System.Double
+    - id: scaleY
+      type: System.Double
+    content.vb: Public Sub ResetToScale(scaleX As Double, scaleY As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.ResetToScale*
+  nameWithType.vb: AffineTransform.ResetToScale(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.ResetToScale(Double, Double)
+  name.vb: ResetToScale(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ResetToShear(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.ResetToShear(System.Double,System.Double)
+  id: ResetToShear(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: ResetToShear(double, double)
+  nameWithType: AffineTransform.ResetToShear(double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ResetToShear(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void ResetToShear(double shearX, double shearY)
+    parameters:
+    - id: shearX
+      type: System.Double
+    - id: shearY
+      type: System.Double
+    content.vb: Public Sub ResetToShear(shearX As Double, shearY As Double)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.ResetToShear*
+  nameWithType.vb: AffineTransform.ResetToShear(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.ResetToShear(Double, Double)
+  name.vb: ResetToShear(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.FlipX
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.FlipX
+  id: FlipX
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: FlipX()
+  nameWithType: AffineTransform.FlipX()
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.FlipX()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void FlipX()
+    content.vb: Public Sub FlipX()
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.FlipX*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.FlipY
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.FlipY
+  id: FlipY
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: FlipY()
+  nameWithType: AffineTransform.FlipY()
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.FlipY()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void FlipY()
+    content.vb: Public Sub FlipY()
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.FlipY*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateTranslation(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.CreateTranslation(System.Double,System.Double)
+  id: CreateTranslation(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: CreateTranslation(double, double)
+  nameWithType: AffineTransform.CreateTranslation(double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateTranslation(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static AffineTransform CreateTranslation(double translateX, double translateY)
+    parameters:
+    - id: translateX
+      type: System.Double
+    - id: translateY
+      type: System.Double
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Shared Function CreateTranslation(translateX As Double, translateY As Double) As AffineTransform
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.CreateTranslation*
+  nameWithType.vb: AffineTransform.CreateTranslation(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.CreateTranslation(Double, Double)
+  name.vb: CreateTranslation(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateRotation(System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.CreateRotation(System.Double)
+  id: CreateRotation(System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: CreateRotation(double)
+  nameWithType: AffineTransform.CreateRotation(double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateRotation(double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static AffineTransform CreateRotation(double angle)
+    parameters:
+    - id: angle
+      type: System.Double
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Shared Function CreateRotation(angle As Double) As AffineTransform
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.CreateRotation*
+  nameWithType.vb: AffineTransform.CreateRotation(Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.CreateRotation(Double)
+  name.vb: CreateRotation(Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateRotationAt(System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.CreateRotationAt(System.Double,System.Double,System.Double)
+  id: CreateRotationAt(System.Double,System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: CreateRotationAt(double, double, double)
+  nameWithType: AffineTransform.CreateRotationAt(double, double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateRotationAt(double, double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static AffineTransform CreateRotationAt(double angle, double x, double y)
+    parameters:
+    - id: angle
+      type: System.Double
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Shared Function CreateRotationAt(angle As Double, x As Double, y As Double) As AffineTransform
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.CreateRotationAt*
+  nameWithType.vb: AffineTransform.CreateRotationAt(Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.CreateRotationAt(Double, Double, Double)
+  name.vb: CreateRotationAt(Double, Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateScaling(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.CreateScaling(System.Double,System.Double)
+  id: CreateScaling(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: CreateScaling(double, double)
+  nameWithType: AffineTransform.CreateScaling(double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateScaling(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static AffineTransform CreateScaling(double scaleX, double scaleY)
+    parameters:
+    - id: scaleX
+      type: System.Double
+    - id: scaleY
+      type: System.Double
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Shared Function CreateScaling(scaleX As Double, scaleY As Double) As AffineTransform
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.CreateScaling*
+  nameWithType.vb: AffineTransform.CreateScaling(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.CreateScaling(Double, Double)
+  name.vb: CreateScaling(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateShearing(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.CreateShearing(System.Double,System.Double)
+  id: CreateShearing(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: CreateShearing(double, double)
+  nameWithType: AffineTransform.CreateShearing(double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateShearing(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static AffineTransform CreateShearing(double shearX, double shearY)
+    parameters:
+    - id: shearX
+      type: System.Double
+    - id: shearY
+      type: System.Double
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Shared Function CreateShearing(shearX As Double, shearY As Double) As AffineTransform
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.CreateShearing*
+  nameWithType.vb: AffineTransform.CreateShearing(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.CreateShearing(Double, Double)
+  name.vb: CreateShearing(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewX(System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewX(System.Double)
+  id: CreateSkewX(System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: CreateSkewX(double)
+  nameWithType: AffineTransform.CreateSkewX(double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewX(double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static AffineTransform CreateSkewX(double skewX)
+    parameters:
+    - id: skewX
+      type: System.Double
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Shared Function CreateSkewX(skewX As Double) As AffineTransform
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewX*
+  nameWithType.vb: AffineTransform.CreateSkewX(Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewX(Double)
+  name.vb: CreateSkewX(Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewY(System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewY(System.Double)
+  id: CreateSkewY(System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: CreateSkewY(double)
+  nameWithType: AffineTransform.CreateSkewY(double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewY(double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static AffineTransform CreateSkewY(double skewY)
+    parameters:
+    - id: skewY
+      type: System.Double
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Shared Function CreateSkewY(skewY As Double) As AffineTransform
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewY*
+  nameWithType.vb: AffineTransform.CreateSkewY(Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewY(Double)
+  name.vb: CreateSkewY(Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkew(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.CreateSkew(System.Double,System.Double)
+  id: CreateSkew(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: CreateSkew(double, double)
+  nameWithType: AffineTransform.CreateSkew(double, double)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkew(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static AffineTransform CreateSkew(double skewX, double skewY)
+    parameters:
+    - id: skewX
+      type: System.Double
+    - id: skewY
+      type: System.Double
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Shared Function CreateSkew(skewX As Double, skewY As Double) As AffineTransform
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkew*
+  nameWithType.vb: AffineTransform.CreateSkew(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkew(Double, Double)
+  name.vb: CreateSkew(Double, Double)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ToString
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.ToString
+  id: ToString
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AffineTransform.ToString()
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ToString()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.ToString*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.GetHashCode
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.GetHashCode
+  id: GetHashCode
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: AffineTransform.GetHashCode()
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.GetHashCode()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.GetHashCode*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Equals(System.Object)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: AffineTransform.Equals(object)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Equals*
+  nameWithType.vb: AffineTransform.Equals(Object)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Equals(MapQuest.Coordinates.Transforms.AffineTransform)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Equals(MapQuest.Coordinates.Transforms.AffineTransform)
+  id: Equals(MapQuest.Coordinates.Transforms.AffineTransform)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Equals(AffineTransform)
+  nameWithType: AffineTransform.Equals(AffineTransform)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Equals(MapQuest.Coordinates.Transforms.AffineTransform)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public bool Equals(AffineTransform obj)
+    parameters:
+    - id: obj
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(obj As AffineTransform) As Boolean
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Equals*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.op_Equality(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineTransform)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.op_Equality(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineTransform)
+  id: op_Equality(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineTransform)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: operator ==(AffineTransform, AffineTransform)
+  nameWithType: AffineTransform.operator ==(AffineTransform, AffineTransform)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.operator ==(MapQuest.Coordinates.Transforms.AffineTransform, MapQuest.Coordinates.Transforms.AffineTransform)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static bool operator ==(AffineTransform transform1, AffineTransform transform2)
+    parameters:
+    - id: transform1
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    - id: transform2
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(transform1 As AffineTransform, transform2 As AffineTransform) As Boolean
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.op_Equality*
+  nameWithType.vb: AffineTransform.=(AffineTransform, AffineTransform)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.=(MapQuest.Coordinates.Transforms.AffineTransform, MapQuest.Coordinates.Transforms.AffineTransform)
+  name.vb: =(AffineTransform, AffineTransform)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.op_Inequality(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineTransform)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.op_Inequality(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineTransform)
+  id: op_Inequality(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineTransform)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: operator !=(AffineTransform, AffineTransform)
+  nameWithType: AffineTransform.operator !=(AffineTransform, AffineTransform)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.operator !=(MapQuest.Coordinates.Transforms.AffineTransform, MapQuest.Coordinates.Transforms.AffineTransform)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static bool operator !=(AffineTransform transform1, AffineTransform transform2)
+    parameters:
+    - id: transform1
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    - id: transform2
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(transform1 As AffineTransform, transform2 As AffineTransform) As Boolean
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.op_Inequality*
+  nameWithType.vb: AffineTransform.<>(AffineTransform, AffineTransform)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.<>(MapQuest.Coordinates.Transforms.AffineTransform, MapQuest.Coordinates.Transforms.AffineTransform)
+  name.vb: <>(AffineTransform, AffineTransform)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.op_Multiply(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineTransform)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.op_Multiply(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineTransform)
+  id: op_Multiply(MapQuest.Coordinates.Transforms.AffineTransform,MapQuest.Coordinates.Transforms.AffineTransform)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: operator *(AffineTransform, AffineTransform)
+  nameWithType: AffineTransform.operator *(AffineTransform, AffineTransform)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.operator *(MapQuest.Coordinates.Transforms.AffineTransform, MapQuest.Coordinates.Transforms.AffineTransform)
+  type: Operator
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static AffineTransform operator *(AffineTransform transform1, AffineTransform transform2)
+    parameters:
+    - id: transform1
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    - id: transform2
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Shared Operator *(transform1 As AffineTransform, transform2 As AffineTransform) As AffineTransform
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.op_Multiply*
+  nameWithType.vb: AffineTransform.*(AffineTransform, AffineTransform)
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.*(MapQuest.Coordinates.Transforms.AffineTransform, MapQuest.Coordinates.Transforms.AffineTransform)
+  name.vb: '*(AffineTransform, AffineTransform)'
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Visit(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Visit(MapQuest.Coordinates.Coordinate)
+  id: Visit(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Visit(Coordinate)
+  nameWithType: AffineTransform.Visit(Coordinate)
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Visit(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public void Visit(Coordinate coord)
+    parameters:
+    - id: coord
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Sub Visit(coord As Coordinate)
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Visit*
+  implements:
+  - MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Clone
+  commentId: M:MapQuest.Coordinates.Transforms.AffineTransform.Clone
+  id: Clone
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: AffineTransform.Clone()
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+    content.vb: Public Function Clone() As Object
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.IsIdentity
+  commentId: P:MapQuest.Coordinates.Transforms.AffineTransform.IsIdentity
+  id: IsIdentity
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: IsIdentity
+  nameWithType: AffineTransform.IsIdentity
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.IsIdentity
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public bool IsIdentity { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsIdentity As Boolean
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.IsIdentity*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.HasInverse
+  commentId: P:MapQuest.Coordinates.Transforms.AffineTransform.HasInverse
+  id: HasInverse
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: HasInverse
+  nameWithType: AffineTransform.HasInverse
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.HasInverse
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public bool HasInverse { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasInverse As Boolean
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.HasInverse*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Determinant
+  commentId: P:MapQuest.Coordinates.Transforms.AffineTransform.Determinant
+  id: Determinant
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Determinant
+  nameWithType: AffineTransform.Determinant
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Determinant
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public double Determinant { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Determinant As Double
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Determinant*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Elements
+  commentId: P:MapQuest.Coordinates.Transforms.AffineTransform.Elements
+  id: Elements
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Elements
+  nameWithType: AffineTransform.Elements
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Elements
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public double[] Elements { get; set; }
+    parameters: []
+    return:
+      type: System.Double[]
+    content.vb: Public Property Elements As Double()
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Elements*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ScaleX
+  commentId: P:MapQuest.Coordinates.Transforms.AffineTransform.ScaleX
+  id: ScaleX
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: ScaleX
+  nameWithType: AffineTransform.ScaleX
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ScaleX
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public double ScaleX { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ScaleX As Double
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.ScaleX*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ScaleY
+  commentId: P:MapQuest.Coordinates.Transforms.AffineTransform.ScaleY
+  id: ScaleY
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: ScaleY
+  nameWithType: AffineTransform.ScaleY
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ScaleY
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public double ScaleY { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ScaleY As Double
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.ScaleY*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ShearX
+  commentId: P:MapQuest.Coordinates.Transforms.AffineTransform.ShearX
+  id: ShearX
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: ShearX
+  nameWithType: AffineTransform.ShearX
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ShearX
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public double ShearX { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ShearX As Double
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.ShearX*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ShearY
+  commentId: P:MapQuest.Coordinates.Transforms.AffineTransform.ShearY
+  id: ShearY
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: ShearY
+  nameWithType: AffineTransform.ShearY
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ShearY
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public double ShearY { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ShearY As Double
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.ShearY*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.TranslateX
+  commentId: P:MapQuest.Coordinates.Transforms.AffineTransform.TranslateX
+  id: TranslateX
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: TranslateX
+  nameWithType: AffineTransform.TranslateX
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.TranslateX
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public double TranslateX { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property TranslateX As Double
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.TranslateX*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.TranslateY
+  commentId: P:MapQuest.Coordinates.Transforms.AffineTransform.TranslateY
+  id: TranslateY
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: TranslateY
+  nameWithType: AffineTransform.TranslateY
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.TranslateY
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public double TranslateY { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property TranslateY As Double
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.TranslateY*
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Identity
+  commentId: P:MapQuest.Coordinates.Transforms.AffineTransform.Identity
+  id: Identity
+  parent: MapQuest.Coordinates.Transforms.AffineTransform
+  langs:
+  - csharp
+  - vb
+  name: Identity
+  nameWithType: AffineTransform.Identity
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Identity
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates.Transforms
+  example: []
+  syntax:
+    content: public static AffineTransform Identity { get; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Transforms.AffineTransform
+    content.vb: Public Shared ReadOnly Property Identity As AffineTransform
+  overload: MapQuest.Coordinates.Transforms.AffineTransform.Identity*
+references:
+- uid: MapQuest.Coordinates.Transforms
+  commentId: N:MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates.Transforms
+  nameWithType: MapQuest.Coordinates.Transforms
+  fullName: MapQuest.Coordinates.Transforms
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  - name: .
+  - uid: MapQuest.Coordinates.Transforms
+    name: Transforms
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.html
+- uid: MapQuest.Coordinates.ICoordinateVisitor
+  commentId: T:MapQuest.Coordinates.ICoordinateVisitor
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateVisitor.html
+  name: ICoordinateVisitor
+  nameWithType: ICoordinateVisitor
+  fullName: MapQuest.Coordinates.ICoordinateVisitor
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Coordinates.Transforms.AffineTransform
+  commentId: T:MapQuest.Coordinates.Transforms.AffineTransform
+  parent: MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html
+  name: AffineTransform
+  nameWithType: AffineTransform
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.#ctor*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.#ctor
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform__ctor_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: AffineTransform
+  nameWithType: AffineTransform.AffineTransform
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.AffineTransform
+  nameWithType.vb: AffineTransform.New
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Transform*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Transform
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Transform_System_Single__System_Single__
+  name: Transform
+  nameWithType: AffineTransform.Transform
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Transform
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MapQuest.Coordinates.Coordinate[]
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate[]
+  nameWithType: Coordinate[]
+  fullName: MapQuest.Coordinates.Coordinate[]
+  nameWithType.vb: Coordinate()
+  fullName.vb: MapQuest.Coordinates.Coordinate()
+  name.vb: Coordinate()
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.TransformVector*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.TransformVector
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_TransformVector_MapQuest_Coordinates_Coordinate_
+  name: TransformVector
+  nameWithType: AffineTransform.TransformVector
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.TransformVector
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.TransformVectors*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.TransformVectors
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_TransformVectors_MapQuest_Coordinates_Coordinate___
+  name: TransformVectors
+  nameWithType: AffineTransform.TransformVectors
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.TransformVectors
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Rotate*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Rotate
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Rotate_System_Double_
+  name: Rotate
+  nameWithType: AffineTransform.Rotate
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Rotate
+- uid: MapQuest.Coordinates.Transforms.AffineOrder
+  commentId: T:MapQuest.Coordinates.Transforms.AffineOrder
+  parent: MapQuest.Coordinates.Transforms
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineOrder.html
+  name: AffineOrder
+  nameWithType: AffineOrder
+  fullName: MapQuest.Coordinates.Transforms.AffineOrder
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.RotateAt
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_RotateAt_System_Double_System_Double_System_Double_
+  name: RotateAt
+  nameWithType: AffineTransform.RotateAt
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.RotateAt
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Scale*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Scale
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Scale_System_Double_System_Double_
+  name: Scale
+  nameWithType: AffineTransform.Scale
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Scale
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ScaleAt*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.ScaleAt
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_ScaleAt_System_Double_System_Double_MapQuest_Coordinates_Coordinate_
+  name: ScaleAt
+  nameWithType: AffineTransform.ScaleAt
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ScaleAt
+- uid: MapQuest.Coordinates.Transforms.AffineOrder.Append
+  commentId: F:MapQuest.Coordinates.Transforms.AffineOrder.Append
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineOrder.html#MapQuest_Coordinates_Transforms_AffineOrder_Append
+  name: Append
+  nameWithType: AffineOrder.Append
+  fullName: MapQuest.Coordinates.Transforms.AffineOrder.Append
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Shear*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Shear
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Shear_System_Double_System_Double_
+  name: Shear
+  nameWithType: AffineTransform.Shear
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Shear
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Translate*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Translate
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Translate_System_Double_System_Double_
+  name: Translate
+  nameWithType: AffineTransform.Translate
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Translate
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.SkewX*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.SkewX
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_SkewX_System_Double_
+  name: SkewX
+  nameWithType: AffineTransform.SkewX
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.SkewX
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.SkewY*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.SkewY
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_SkewY_System_Double_
+  name: SkewY
+  nameWithType: AffineTransform.SkewY
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.SkewY
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Skew*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Skew
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Skew_System_Double_System_Double_
+  name: Skew
+  nameWithType: AffineTransform.Skew
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Skew
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Inverse*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Inverse
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Inverse
+  name: Inverse
+  nameWithType: AffineTransform.Inverse
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Inverse
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Invert*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Invert
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Invert
+  name: Invert
+  nameWithType: AffineTransform.Invert
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Invert
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Multiply*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Multiply
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Multiply_MapQuest_Coordinates_Transforms_AffineTransform_
+  name: Multiply
+  nameWithType: AffineTransform.Multiply
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Multiply
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Reset*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Reset
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Reset
+  name: Reset
+  nameWithType: AffineTransform.Reset
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Reset
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ResetToTranslation*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.ResetToTranslation
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_ResetToTranslation_System_Double_System_Double_
+  name: ResetToTranslation
+  nameWithType: AffineTransform.ResetToTranslation
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ResetToTranslation
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_ResetToRotation_System_Double_
+  name: ResetToRotation
+  nameWithType: AffineTransform.ResetToRotation
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ResetToRotation
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ResetToScale*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.ResetToScale
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_ResetToScale_System_Double_System_Double_
+  name: ResetToScale
+  nameWithType: AffineTransform.ResetToScale
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ResetToScale
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ResetToShear*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.ResetToShear
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_ResetToShear_System_Double_System_Double_
+  name: ResetToShear
+  nameWithType: AffineTransform.ResetToShear
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ResetToShear
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.FlipX*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.FlipX
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_FlipX
+  name: FlipX
+  nameWithType: AffineTransform.FlipX
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.FlipX
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.FlipY*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.FlipY
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_FlipY
+  name: FlipY
+  nameWithType: AffineTransform.FlipY
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.FlipY
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateTranslation*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.CreateTranslation
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_CreateTranslation_System_Double_System_Double_
+  name: CreateTranslation
+  nameWithType: AffineTransform.CreateTranslation
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateTranslation
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateRotation*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.CreateRotation
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_CreateRotation_System_Double_
+  name: CreateRotation
+  nameWithType: AffineTransform.CreateRotation
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateRotation
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateRotationAt*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.CreateRotationAt
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_CreateRotationAt_System_Double_System_Double_System_Double_
+  name: CreateRotationAt
+  nameWithType: AffineTransform.CreateRotationAt
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateRotationAt
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateScaling*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.CreateScaling
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_CreateScaling_System_Double_System_Double_
+  name: CreateScaling
+  nameWithType: AffineTransform.CreateScaling
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateScaling
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateShearing*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.CreateShearing
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_CreateShearing_System_Double_System_Double_
+  name: CreateShearing
+  nameWithType: AffineTransform.CreateShearing
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateShearing
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewX*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewX
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_CreateSkewX_System_Double_
+  name: CreateSkewX
+  nameWithType: AffineTransform.CreateSkewX
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewX
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewY*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewY
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_CreateSkewY_System_Double_
+  name: CreateSkewY
+  nameWithType: AffineTransform.CreateSkewY
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkewY
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkew*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.CreateSkew
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_CreateSkew_System_Double_System_Double_
+  name: CreateSkew
+  nameWithType: AffineTransform.CreateSkew
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.CreateSkew
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ToString*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.ToString
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_ToString
+  name: ToString
+  nameWithType: AffineTransform.ToString
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ToString
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.GetHashCode*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.GetHashCode
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_GetHashCode
+  name: GetHashCode
+  nameWithType: AffineTransform.GetHashCode
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Equals*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Equals
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Equals_System_Object_
+  name: Equals
+  nameWithType: AffineTransform.Equals
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.op_Equality*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.op_Equality
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_op_Equality_MapQuest_Coordinates_Transforms_AffineTransform_MapQuest_Coordinates_Transforms_AffineTransform_
+  name: operator ==
+  nameWithType: AffineTransform.operator ==
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.operator ==
+  nameWithType.vb: AffineTransform.=
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.Coordinates.Transforms.AffineTransform.op_Equality*
+    name: ==
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_op_Equality_MapQuest_Coordinates_Transforms_AffineTransform_MapQuest_Coordinates_Transforms_AffineTransform_
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.op_Inequality*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.op_Inequality
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_op_Inequality_MapQuest_Coordinates_Transforms_AffineTransform_MapQuest_Coordinates_Transforms_AffineTransform_
+  name: operator !=
+  nameWithType: AffineTransform.operator !=
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.operator !=
+  nameWithType.vb: AffineTransform.<>
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.Coordinates.Transforms.AffineTransform.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_op_Inequality_MapQuest_Coordinates_Transforms_AffineTransform_MapQuest_Coordinates_Transforms_AffineTransform_
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.op_Multiply*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.op_Multiply
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_op_Multiply_MapQuest_Coordinates_Transforms_AffineTransform_MapQuest_Coordinates_Transforms_AffineTransform_
+  name: operator *
+  nameWithType: AffineTransform.operator *
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.operator *
+  nameWithType.vb: AffineTransform.*
+  fullName.vb: MapQuest.Coordinates.Transforms.AffineTransform.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.Coordinates.Transforms.AffineTransform.op_Multiply*
+    name: '*'
+    isExternal: true
+    href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_op_Multiply_MapQuest_Coordinates_Transforms_AffineTransform_MapQuest_Coordinates_Transforms_AffineTransform_
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Visit*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Visit
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Visit_MapQuest_Coordinates_Coordinate_
+  name: Visit
+  nameWithType: AffineTransform.Visit
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Visit
+- uid: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.ICoordinateVisitor
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateVisitor.html#MapQuest_Coordinates_ICoordinateVisitor_Visit_MapQuest_Coordinates_Coordinate_
+  name: Visit(Coordinate)
+  nameWithType: ICoordinateVisitor.Visit(Coordinate)
+  fullName: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+    name: Visit
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateVisitor.html#MapQuest_Coordinates_ICoordinateVisitor_Visit_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+    name: Visit
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateVisitor.html#MapQuest_Coordinates_ICoordinateVisitor_Visit_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Clone*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Clone
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Clone
+  name: Clone
+  nameWithType: AffineTransform.Clone
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.IsIdentity*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.IsIdentity
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_IsIdentity
+  name: IsIdentity
+  nameWithType: AffineTransform.IsIdentity
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.IsIdentity
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.HasInverse*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.HasInverse
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_HasInverse
+  name: HasInverse
+  nameWithType: AffineTransform.HasInverse
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.HasInverse
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Determinant*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Determinant
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Determinant
+  name: Determinant
+  nameWithType: AffineTransform.Determinant
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Determinant
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Elements*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Elements
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Elements
+  name: Elements
+  nameWithType: AffineTransform.Elements
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Elements
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ScaleX*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.ScaleX
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_ScaleX
+  name: ScaleX
+  nameWithType: AffineTransform.ScaleX
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ScaleX
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ScaleY*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.ScaleY
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_ScaleY
+  name: ScaleY
+  nameWithType: AffineTransform.ScaleY
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ScaleY
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ShearX*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.ShearX
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_ShearX
+  name: ShearX
+  nameWithType: AffineTransform.ShearX
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ShearX
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.ShearY*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.ShearY
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_ShearY
+  name: ShearY
+  nameWithType: AffineTransform.ShearY
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.ShearY
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.TranslateX*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.TranslateX
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_TranslateX
+  name: TranslateX
+  nameWithType: AffineTransform.TranslateX
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.TranslateX
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.TranslateY*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.TranslateY
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_TranslateY
+  name: TranslateY
+  nameWithType: AffineTransform.TranslateY
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.TranslateY
+- uid: MapQuest.Coordinates.Transforms.AffineTransform.Identity*
+  commentId: Overload:MapQuest.Coordinates.Transforms.AffineTransform.Identity
+  isExternal: true
+  href: MapQuest.Coordinates.Transforms.AffineTransform.html#MapQuest_Coordinates_Transforms_AffineTransform_Identity
+  name: Identity
+  nameWithType: AffineTransform.Identity
+  fullName: MapQuest.Coordinates.Transforms.AffineTransform.Identity

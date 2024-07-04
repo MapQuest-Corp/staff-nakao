@@ -1,0 +1,2203 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.Envelope
+  commentId: T:MapQuest.Coordinates.Envelope
+  id: Envelope
+  parent: MapQuest.Coordinates
+  children:
+  - MapQuest.Coordinates.Envelope.#ctor
+  - MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Coordinate,System.Double)
+  - MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Envelope)
+  - MapQuest.Coordinates.Envelope.#ctor(System.Double,System.Double,System.Double,System.Double)
+  - MapQuest.Coordinates.Envelope.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Coordinates.Envelope.Center
+  - MapQuest.Coordinates.Envelope.Clone
+  - MapQuest.Coordinates.Envelope.Contains(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Envelope.Contains(MapQuest.Coordinates.Envelope)
+  - MapQuest.Coordinates.Envelope.Contains(System.Double,System.Double)
+  - MapQuest.Coordinates.Envelope.Distance(MapQuest.Coordinates.Envelope)
+  - MapQuest.Coordinates.Envelope.Equals(System.Object)
+  - MapQuest.Coordinates.Envelope.ExpandToInclude(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Envelope.ExpandToInclude(MapQuest.Coordinates.Envelope)
+  - MapQuest.Coordinates.Envelope.ExpandToInclude(System.Double,System.Double)
+  - MapQuest.Coordinates.Envelope.GetHashCode
+  - MapQuest.Coordinates.Envelope.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Coordinates.Envelope.Height
+  - MapQuest.Coordinates.Envelope.Inflate(System.Double)
+  - MapQuest.Coordinates.Envelope.Inflate(System.Double,System.Double)
+  - MapQuest.Coordinates.Envelope.Initialize
+  - MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate,System.Double)
+  - MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Envelope)
+  - MapQuest.Coordinates.Envelope.Initialize(System.Double,System.Double,System.Double,System.Double)
+  - MapQuest.Coordinates.Envelope.Intersection(MapQuest.Coordinates.Envelope,MapQuest.Coordinates.Envelope)
+  - MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Envelope)
+  - MapQuest.Coordinates.Envelope.Intersects(System.Double,System.Double)
+  - MapQuest.Coordinates.Envelope.IsNormalized
+  - MapQuest.Coordinates.Envelope.IsNull
+  - MapQuest.Coordinates.Envelope.Max
+  - MapQuest.Coordinates.Envelope.MaxX
+  - MapQuest.Coordinates.Envelope.MaxY
+  - MapQuest.Coordinates.Envelope.Min
+  - MapQuest.Coordinates.Envelope.MinX
+  - MapQuest.Coordinates.Envelope.MinY
+  - MapQuest.Coordinates.Envelope.Normalize
+  - MapQuest.Coordinates.Envelope.ReflectOrigin
+  - MapQuest.Coordinates.Envelope.ReflectXAxis
+  - MapQuest.Coordinates.Envelope.ReflectYAxis
+  - MapQuest.Coordinates.Envelope.Scale(System.Double,System.Double)
+  - MapQuest.Coordinates.Envelope.SetToNull
+  - MapQuest.Coordinates.Envelope.ToString
+  - MapQuest.Coordinates.Envelope.Translate(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.Envelope.Translate(System.Double,System.Double)
+  - MapQuest.Coordinates.Envelope.Width
+  langs:
+  - csharp
+  - vb
+  name: Envelope
+  nameWithType: Envelope
+  fullName: MapQuest.Coordinates.Envelope
+  type: Class
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 2 次元平面における長方形を定義します。
+  remarks: >-
+    これは幾何学的な(例えば最小および最大の x 座標、y 座標の値を持つような)長方形を表わすために使用されます。
+
+    Double.PositiveInfinity、または Double.NegativeInfinity を使用することにより、 <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> が無限大あるいは負の無限大の範囲をサポートすることに注意してください。
+
+    <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトが作成、または初期化される場合、その値は正確な順序に自動的にソートされます。
+  example: []
+  syntax:
+    content: 'public class Envelope : ICloneable, ISerializable'
+    content.vb: Public Class Envelope Implements ICloneable, ISerializable
+  inheritance:
+  - System.Object
+  implements:
+  - System.ICloneable
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Coordinates.Envelope.#ctor
+  commentId: M:MapQuest.Coordinates.Envelope.#ctor
+  id: '#ctor'
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Envelope()
+  nameWithType: Envelope.Envelope()
+  fullName: MapQuest.Coordinates.Envelope.Envelope()
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の指定がない場合、空の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+  remarks: MinX, MinY, MaxX, MaxY は 全て 非数（Double.NaN） に設定されます。
+  example: []
+  syntax:
+    content: public Envelope()
+    content.vb: Public Sub New()
+  overload: MapQuest.Coordinates.Envelope.#ctor*
+  nameWithType.vb: Envelope.New()
+  fullName.vb: MapQuest.Coordinates.Envelope.New()
+  name.vb: New()
+- uid: MapQuest.Coordinates.Envelope.#ctor(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Envelope.#ctor(System.Double,System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double,System.Double)'
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Envelope(double, double, double, double)
+  nameWithType: Envelope.Envelope(double, double, double, double)
+  fullName: MapQuest.Coordinates.Envelope.Envelope(double, double, double, double)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	引数のX座標Y座標の、最小値と最大値により定義された領域の <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> クラスの新しいインスタンスを初期化します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public Envelope(double x1, double x2, double y1, double y2)
+    parameters:
+    - id: x1
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を作成する元となるX座標1
+    - id: x2
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を作成する元となるX座標2
+    - id: y1
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を作成する元となるY座標1
+    - id: y2
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を作成する元となるY座標2
+    content.vb: Public Sub New(x1 As Double, x2 As Double, y1 As Double, y2 As Double)
+  overload: MapQuest.Coordinates.Envelope.#ctor*
+  nameWithType.vb: Envelope.New(Double, Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Envelope.New(Double, Double, Double, Double)
+  name.vb: New(Double, Double, Double, Double)
+- uid: MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  id: '#ctor(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)'
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Envelope(Coordinate, Coordinate)
+  nameWithType: Envelope.Envelope(Coordinate, Coordinate)
+  fullName: MapQuest.Coordinates.Envelope.Envelope(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	引数の二つの <xref href=\"MapQuest.Coordinates.Coordinate\" data-throw-if-not-resolved=\"false\"></xref> により定義された領域の <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> クラスの新しいインスタンスを初期化します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public Envelope(Coordinate p1, Coordinate p2)
+    parameters:
+    - id: p1
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を作成する元となる、一つ目の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    - id: p2
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を作成する元となる、もう一つの <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub New(p1 As Coordinate, p2 As Coordinate)
+  overload: MapQuest.Coordinates.Envelope.#ctor*
+  nameWithType.vb: Envelope.New(Coordinate, Coordinate)
+  fullName.vb: MapQuest.Coordinates.Envelope.New(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  name.vb: New(Coordinate, Coordinate)
+- uid: MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Coordinate)
+  id: '#ctor(MapQuest.Coordinates.Coordinate)'
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Envelope(Coordinate)
+  nameWithType: Envelope.Envelope(Coordinate)
+  fullName: MapQuest.Coordinates.Envelope.Envelope(MapQuest.Coordinates.Coordinate)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	引数の <xref href=\"MapQuest.Coordinates.Coordinate\" data-throw-if-not-resolved=\"false\"></xref> により定義された地点の <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> クラスの新しいインスタンスを初期化します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public Envelope(Coordinate p)
+    parameters:
+    - id: p
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を作成する元の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub New(p As Coordinate)
+  overload: MapQuest.Coordinates.Envelope.#ctor*
+  nameWithType.vb: Envelope.New(Coordinate)
+  fullName.vb: MapQuest.Coordinates.Envelope.New(MapQuest.Coordinates.Coordinate)
+  name.vb: New(Coordinate)
+- uid: MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Envelope)
+  id: '#ctor(MapQuest.Coordinates.Envelope)'
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Envelope(Envelope)
+  nameWithType: Envelope.Envelope(Envelope)
+  fullName: MapQuest.Coordinates.Envelope.Envelope(MapQuest.Coordinates.Envelope)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	引数の既存の <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> から <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> クラスの新しいインスタンスを初期化します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public Envelope(Envelope env)
+    parameters:
+    - id: env
+      type: MapQuest.Coordinates.Envelope
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を作成する元の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub New(env As Envelope)
+  overload: MapQuest.Coordinates.Envelope.#ctor*
+  nameWithType.vb: Envelope.New(Envelope)
+  fullName.vb: MapQuest.Coordinates.Envelope.New(MapQuest.Coordinates.Envelope)
+  name.vb: New(Envelope)
+- uid: MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Coordinate,System.Double)
+  commentId: M:MapQuest.Coordinates.Envelope.#ctor(MapQuest.Coordinates.Coordinate,System.Double)
+  id: '#ctor(MapQuest.Coordinates.Coordinate,System.Double)'
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Envelope(Coordinate, double)
+  nameWithType: Envelope.Envelope(Coordinate, double)
+  fullName: MapQuest.Coordinates.Envelope.Envelope(MapQuest.Coordinates.Coordinate, double)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 中心点と拡幅値を指定して、この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を初期化します。
+  remarks: >-
+    このメソッドは、矩形の中心座標と、そこから上下左右に拡幅する値
+
+    を指定して <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を初期化します。
+
+    <p></p>
+
+    例えば、p が (10, 5) 、inflate が 2 の場合、初期化される矩形の座標値は、
+
+    (minX, minY)-(maxX, maxY) 形式で (8, 3)-(12, 7) となります。
+  example: []
+  syntax:
+    content: public Envelope(Coordinate p, double inflate)
+    parameters:
+    - id: p
+      type: MapQuest.Coordinates.Coordinate
+      description: 矩形の中心位置。
+    - id: inflate
+      type: System.Double
+      description: p から、上下左右に拡幅する値。
+    content.vb: Public Sub New(p As Coordinate, inflate As Double)
+  overload: MapQuest.Coordinates.Envelope.#ctor*
+  nameWithType.vb: Envelope.New(Coordinate, Double)
+  fullName.vb: MapQuest.Coordinates.Envelope.New(MapQuest.Coordinates.Coordinate, Double)
+  name.vb: New(Coordinate, Double)
+- uid: MapQuest.Coordinates.Envelope.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Coordinates.Envelope.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Envelope(SerializationInfo, StreamingContext)
+  nameWithType: Envelope.Envelope(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Coordinates.Envelope.Envelope(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: シリアル化された情報から<xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>を作成します。
+  example: []
+  syntax:
+    content: public Envelope(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: シリアル化する情報を格納するオブジェクト
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: ''
+    content.vb: Public Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Coordinates.Envelope.#ctor*
+  nameWithType.vb: Envelope.New(SerializationInfo, StreamingContext)
+  fullName.vb: MapQuest.Coordinates.Envelope.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name.vb: New(SerializationInfo, StreamingContext)
+- uid: MapQuest.Coordinates.Envelope.Initialize
+  commentId: M:MapQuest.Coordinates.Envelope.Initialize
+  id: Initialize
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: Envelope.Initialize()
+  fullName: MapQuest.Coordinates.Envelope.Initialize()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: null(未定義)の状態として初期化します。
+  remarks: MinX, MinY, MaxX, MaxY は 全て 非数（Double.NaN） に設定されます。
+  example: []
+  syntax:
+    content: public virtual void Initialize()
+    content.vb: Public Overridable Sub Initialize()
+  overload: MapQuest.Coordinates.Envelope.Initialize*
+- uid: MapQuest.Coordinates.Envelope.Initialize(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Envelope.Initialize(System.Double,System.Double,System.Double,System.Double)
+  id: Initialize(System.Double,System.Double,System.Double,System.Double)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Initialize(double, double, double, double)
+  nameWithType: Envelope.Initialize(double, double, double, double)
+  fullName: MapQuest.Coordinates.Envelope.Initialize(double, double, double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	引数のX座標Y座標の、最小値と最大値により定義された領域に <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> を初期化します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public virtual void Initialize(double x1, double x2, double y1, double y2)
+    parameters:
+    - id: x1
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を初期化する元となるX座標1
+    - id: x2
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を初期化する元となるX座標2
+    - id: y1
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を初期化する元となるY座標1
+    - id: y2
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を初期化する元となるY座標2
+    content.vb: Public Overridable Sub Initialize(x1 As Double, x2 As Double, y1 As Double, y2 As Double)
+  overload: MapQuest.Coordinates.Envelope.Initialize*
+  nameWithType.vb: Envelope.Initialize(Double, Double, Double, Double)
+  fullName.vb: MapQuest.Coordinates.Envelope.Initialize(Double, Double, Double, Double)
+  name.vb: Initialize(Double, Double, Double, Double)
+- uid: MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  id: Initialize(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Coordinate, Coordinate)
+  nameWithType: Envelope.Initialize(Coordinate, Coordinate)
+  fullName: MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	引数の二つの <xref href=\"MapQuest.Coordinates.Coordinate\" data-throw-if-not-resolved=\"false\"></xref> により定義された領域に <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> を初期化します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public virtual void Initialize(Coordinate p1, Coordinate p2)
+    parameters:
+    - id: p1
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を初期化する元となる、最初の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    - id: p2
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を初期化する元となる、もう一つの <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Overridable Sub Initialize(p1 As Coordinate, p2 As Coordinate)
+  overload: MapQuest.Coordinates.Envelope.Initialize*
+- uid: MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate)
+  id: Initialize(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Coordinate)
+  nameWithType: Envelope.Initialize(Coordinate)
+  fullName: MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	引数の <xref href=\"MapQuest.Coordinates.Coordinate\" data-throw-if-not-resolved=\"false\"></xref> により定義されたポイントに <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> を初期化します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public virtual void Initialize(Coordinate p)
+    parameters:
+    - id: p
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を初期化する元の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Overridable Sub Initialize(p As Coordinate)
+  overload: MapQuest.Coordinates.Envelope.Initialize*
+- uid: MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Envelope)
+  id: Initialize(MapQuest.Coordinates.Envelope)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Envelope)
+  nameWithType: Envelope.Initialize(Envelope)
+  fullName: MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Envelope)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	引数の既存の <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> にこの <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> を初期化します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public virtual void Initialize(Envelope env)
+    parameters:
+    - id: env
+      type: MapQuest.Coordinates.Envelope
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を初期化する元の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Overridable Sub Initialize(env As Envelope)
+  overload: MapQuest.Coordinates.Envelope.Initialize*
+- uid: MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate,System.Double)
+  commentId: M:MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate,System.Double)
+  id: Initialize(MapQuest.Coordinates.Coordinate,System.Double)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Coordinate, double)
+  nameWithType: Envelope.Initialize(Coordinate, double)
+  fullName: MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 中心点と拡幅値を指定して、この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を初期化します。
+  remarks: >-
+    このメソッドは、矩形の中心座標と、そこから上下左右に拡幅する値
+
+    を指定して <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を初期化します。
+
+    <p></p>
+
+    例えば、p が (10, 5) 、inflate が 2 の場合、初期化される矩形の座標値は、
+
+    (minX, minY)-(maxX, maxY) 形式で (8, 3)-(12, 7) となります。
+  example: []
+  syntax:
+    content: public virtual void Initialize(Coordinate p, double inflate)
+    parameters:
+    - id: p
+      type: MapQuest.Coordinates.Coordinate
+      description: 矩形の中心位置。
+    - id: inflate
+      type: System.Double
+      description: p から、上下左右に拡幅する値。
+    content.vb: Public Overridable Sub Initialize(p As Coordinate, inflate As Double)
+  overload: MapQuest.Coordinates.Envelope.Initialize*
+  nameWithType.vb: Envelope.Initialize(Coordinate, Double)
+  fullName.vb: MapQuest.Coordinates.Envelope.Initialize(MapQuest.Coordinates.Coordinate, Double)
+  name.vb: Initialize(Coordinate, Double)
+- uid: MapQuest.Coordinates.Envelope.Equals(System.Object)
+  commentId: M:MapQuest.Coordinates.Envelope.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Envelope.Equals(object)
+  fullName: MapQuest.Coordinates.Envelope.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n   <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> 同士の比較を行います。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+      description: 比較する対象の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Boolean
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> の最小X座標、最大X座標、最小Y座標、最大Y座標が、それぞれ全て等しかった場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: MapQuest.Coordinates.Envelope.Equals*
+  nameWithType.vb: Envelope.Equals(Object)
+  fullName.vb: MapQuest.Coordinates.Envelope.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.Coordinates.Envelope.ToString
+  commentId: M:MapQuest.Coordinates.Envelope.ToString
+  id: ToString
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Envelope.ToString()
+  fullName: MapQuest.Coordinates.Envelope.ToString()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 'Env[ 最小X座標 : 最大X座標 , 最小Y座標 : 最大Y座標 ]の形式で文字列を返します。'
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: 'Env[ 最小X座標 : 最大X座標 , 最小Y座標 : 最大Y座標 ]の形式で文字列を返します。'
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: MapQuest.Coordinates.Envelope.ToString*
+- uid: MapQuest.Coordinates.Envelope.GetHashCode
+  commentId: M:MapQuest.Coordinates.Envelope.GetHashCode
+  id: GetHashCode
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Envelope.GetHashCode()
+  fullName: MapQuest.Coordinates.Envelope.GetHashCode()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> の最小X座標、最大X座標、最小Y座標、最大Y座標を元にハッシュ値を生成します。
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: 生成されたハッシュ値を返します。
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: MapQuest.Coordinates.Envelope.GetHashCode*
+- uid: MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  id: Intersects(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Coordinate, Coordinate, Coordinate)
+  nameWithType: Envelope.Intersects(Coordinate, Coordinate, Coordinate)
+  fullName: MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> qがp1-p2によって定義された <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> と交差するかどうかを検査します。
+  example: []
+  syntax:
+    content: public static bool Intersects(Coordinate p1, Coordinate p2, Coordinate q)
+    parameters:
+    - id: p1
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を定義するある極値ポイント
+    - id: p2
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を定義するp1とは別の極値ポイント
+    - id: q
+      type: MapQuest.Coordinates.Coordinate
+      description: 交差しているかどうかを検査するポイント
+    return:
+      type: System.Boolean
+      description: p1-p2から定義された <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> とポイントqが交差する場合<code>true</code>を、そうでなければ<code>false</code>を返します。
+    content.vb: Public Shared Function Intersects(p1 As Coordinate, p2 As Coordinate, q As Coordinate) As Boolean
+  overload: MapQuest.Coordinates.Envelope.Intersects*
+- uid: MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  id: Intersects(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Coordinate, Coordinate, Coordinate, Coordinate)
+  nameWithType: Envelope.Intersects(Coordinate, Coordinate, Coordinate, Coordinate)
+  fullName: MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate, MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数のq1-q2によって定義された <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> Qがp1-p2によって定義された <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> Pと重複、交差するかどうかを検査します。
+  example: []
+  syntax:
+    content: public static bool Intersects(Coordinate p1, Coordinate p2, Coordinate q1, Coordinate q2)
+    parameters:
+    - id: p1
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> Pを構成するある極値ポイント
+    - id: p2
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> Pを構成するp1とは別の極値ポイント
+    - id: q1
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> Qを構成するある極値ポイント
+    - id: q2
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> Qを構成するq1とは別の極値ポイント
+    return:
+      type: System.Boolean
+      description: p1-p2から構成された <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> Pとq1-q2から定義された <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> Qが重複、交差する場合<code>true</code>を、そうでなければ<code>false</code>を返します。
+    content.vb: Public Shared Function Intersects(p1 As Coordinate, p2 As Coordinate, q1 As Coordinate, q2 As Coordinate) As Boolean
+  overload: MapQuest.Coordinates.Envelope.Intersects*
+- uid: MapQuest.Coordinates.Envelope.SetToNull
+  commentId: M:MapQuest.Coordinates.Envelope.SetToNull
+  id: SetToNull
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: SetToNull()
+  nameWithType: Envelope.SetToNull()
+  fullName: MapQuest.Coordinates.Envelope.SetToNull()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を null(未定義) の状態にします。
+  remarks: MinX, MinY, MaxX, MaxY は 全て 非数（Double.NaN） に設定されます。
+  example: []
+  syntax:
+    content: public virtual void SetToNull()
+    content.vb: Public Overridable Sub SetToNull()
+  overload: MapQuest.Coordinates.Envelope.SetToNull*
+- uid: MapQuest.Coordinates.Envelope.ExpandToInclude(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Envelope.ExpandToInclude(MapQuest.Coordinates.Coordinate)
+  id: ExpandToInclude(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: ExpandToInclude(Coordinate)
+  nameWithType: Envelope.ExpandToInclude(Coordinate)
+  fullName: MapQuest.Coordinates.Envelope.ExpandToInclude(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> の座標(p.x, p.y)を含むように、 <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> の境界を拡大させます。 <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> の座標(p.x, p.y)が既に境界上、あるいはその境界内にある場合、何も行いません。
+  example: []
+  syntax:
+    content: public virtual void ExpandToInclude(Coordinate p)
+    parameters:
+    - id: p
+      type: MapQuest.Coordinates.Coordinate
+      description: 最小座標を減少、最大座標を増加させるX座標、Y座標を持った <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Overridable Sub ExpandToInclude(p As Coordinate)
+  overload: MapQuest.Coordinates.Envelope.ExpandToInclude*
+- uid: MapQuest.Coordinates.Envelope.ExpandToInclude(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Envelope.ExpandToInclude(System.Double,System.Double)
+  id: ExpandToInclude(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: ExpandToInclude(double, double)
+  nameWithType: Envelope.ExpandToInclude(double, double)
+  fullName: MapQuest.Coordinates.Envelope.ExpandToInclude(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の(x,y)を含むように、 <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> の境界を拡大させます。(x,y)が既に境界上、あるいはその境界内にある場合、何も行いません。
+  example: []
+  syntax:
+    content: public virtual void ExpandToInclude(double x, double y)
+    parameters:
+    - id: x
+      type: System.Double
+      description: 最小X座標を減少、最大X座標を増加させる値
+    - id: y
+      type: System.Double
+      description: 最小Y座標を減少、最大Y座標を増加させる値
+    content.vb: Public Overridable Sub ExpandToInclude(x As Double, y As Double)
+  overload: MapQuest.Coordinates.Envelope.ExpandToInclude*
+  nameWithType.vb: Envelope.ExpandToInclude(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Envelope.ExpandToInclude(Double, Double)
+  name.vb: ExpandToInclude(Double, Double)
+- uid: MapQuest.Coordinates.Envelope.ExpandToInclude(MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Coordinates.Envelope.ExpandToInclude(MapQuest.Coordinates.Envelope)
+  id: ExpandToInclude(MapQuest.Coordinates.Envelope)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: ExpandToInclude(Envelope)
+  nameWithType: Envelope.ExpandToInclude(Envelope)
+  fullName: MapQuest.Coordinates.Envelope.ExpandToInclude(MapQuest.Coordinates.Envelope)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を含むように、 <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> の境界を拡大させます。引数の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> が既に境界上、あるいはその境界内にある場合、何も行いません。
+  example: []
+  syntax:
+    content: public virtual void ExpandToInclude(Envelope other)
+    parameters:
+    - id: other
+      type: MapQuest.Coordinates.Envelope
+      description: 融合する <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Overridable Sub ExpandToInclude(other As Envelope)
+  overload: MapQuest.Coordinates.Envelope.ExpandToInclude*
+- uid: MapQuest.Coordinates.Envelope.Contains(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Envelope.Contains(MapQuest.Coordinates.Coordinate)
+  id: Contains(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Contains(Coordinate)
+  nameWithType: Envelope.Contains(Coordinate)
+  fullName: MapQuest.Coordinates.Envelope.Contains(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> が引数の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> を内包している場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。
+  example: []
+  syntax:
+    content: public virtual bool Contains(Coordinate p)
+    parameters:
+    - id: p
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> に含まれているかどうかを検査するポイント
+    return:
+      type: System.Boolean
+      description: 引数の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> が <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> の境界線上、また内側に存在している場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。
+    content.vb: Public Overridable Function Contains(p As Coordinate) As Boolean
+  overload: MapQuest.Coordinates.Envelope.Contains*
+- uid: MapQuest.Coordinates.Envelope.Contains(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Envelope.Contains(System.Double,System.Double)
+  id: Contains(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Contains(double, double)
+  nameWithType: Envelope.Contains(double, double)
+  fullName: MapQuest.Coordinates.Envelope.Contains(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> が引数のX座標Y座標を内包している場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。
+  example: []
+  syntax:
+    content: public virtual bool Contains(double x, double y)
+    parameters:
+    - id: x
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> に含まれているかどうかを検査するポイントのX座標
+    - id: y
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> に含まれているかどうかを検査するポイントのY座標
+    return:
+      type: System.Boolean
+      description: 引数のX座標Y座標が <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> の境界線上、また内側に存在している場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。
+    content.vb: Public Overridable Function Contains(x As Double, y As Double) As Boolean
+  overload: MapQuest.Coordinates.Envelope.Contains*
+  nameWithType.vb: Envelope.Contains(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Envelope.Contains(Double, Double)
+  name.vb: Contains(Double, Double)
+- uid: MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Envelope)
+  id: Intersects(MapQuest.Coordinates.Envelope)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Envelope)
+  nameWithType: Envelope.Intersects(Envelope)
+  fullName: MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Envelope)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> がこの <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> と重複、または交差するかどうかを検査します。
+  example: []
+  syntax:
+    content: public virtual bool Intersects(Envelope other)
+    parameters:
+    - id: other
+      type: MapQuest.Coordinates.Envelope
+      description: 重複、交差しているかどうかを検査する <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Boolean
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> が重複、交差する場合<code>true</code>を、そうでなければ<code>false</code>を返します。
+    content.vb: Public Overridable Function Intersects(other As Envelope) As Boolean
+  overload: MapQuest.Coordinates.Envelope.Intersects*
+- uid: MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate)
+  id: Intersects(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Coordinate)
+  nameWithType: Envelope.Intersects(Coordinate)
+  fullName: MapQuest.Coordinates.Envelope.Intersects(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> がこの <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> と交差するかどうかを検査します。
+  example: []
+  syntax:
+    content: public virtual bool Intersects(Coordinate p)
+    parameters:
+    - id: p
+      type: MapQuest.Coordinates.Coordinate
+      description: 交差しているかどうかを検査する <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Boolean
+      description: <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> 交差する場合<code>true</code>を、そうでなければ<code>false</code>を返します。
+    content.vb: Public Overridable Function Intersects(p As Coordinate) As Boolean
+  overload: MapQuest.Coordinates.Envelope.Intersects*
+- uid: MapQuest.Coordinates.Envelope.Intersects(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Envelope.Intersects(System.Double,System.Double)
+  id: Intersects(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Intersects(double, double)
+  nameWithType: Envelope.Intersects(double, double)
+  fullName: MapQuest.Coordinates.Envelope.Intersects(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定された座標が交差するかどうかを検査します。
+  example: []
+  syntax:
+    content: public virtual bool Intersects(double x, double y)
+    parameters:
+    - id: x
+      type: System.Double
+      description: 交差するかどうかを検査する x 座標。
+    - id: y
+      type: System.Double
+      description: 交差するかどうかを検査する y 座標。
+    return:
+      type: System.Boolean
+      description: >-
+        指定された座標が交差する場合は <b>true</b> 。
+
+
+        それ以外の場合は <b>false</b> 。
+    content.vb: Public Overridable Function Intersects(x As Double, y As Double) As Boolean
+  overload: MapQuest.Coordinates.Envelope.Intersects*
+  nameWithType.vb: Envelope.Intersects(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Envelope.Intersects(Double, Double)
+  name.vb: Intersects(Double, Double)
+- uid: MapQuest.Coordinates.Envelope.Contains(MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Coordinates.Envelope.Contains(MapQuest.Coordinates.Envelope)
+  id: Contains(MapQuest.Coordinates.Envelope)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Contains(Envelope)
+  nameWithType: Envelope.Contains(Envelope)
+  fullName: MapQuest.Coordinates.Envelope.Contains(MapQuest.Coordinates.Envelope)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	この <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> が引数の <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> を内包している場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public virtual bool Contains(Envelope other)
+    parameters:
+    - id: other
+      type: MapQuest.Coordinates.Envelope
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> に含まれているかどうかを検査したい <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Boolean
+      description: 引数の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> が <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> の境界線上、また内側に存在している場合<code>true</code>を返します。そうでなければ<code>false</code>を返します。
+    content.vb: Public Overridable Function Contains(other As Envelope) As Boolean
+  overload: MapQuest.Coordinates.Envelope.Contains*
+- uid: MapQuest.Coordinates.Envelope.Distance(MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Coordinates.Envelope.Distance(MapQuest.Coordinates.Envelope)
+  id: Distance(MapQuest.Coordinates.Envelope)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Distance(Envelope)
+  nameWithType: Envelope.Distance(Envelope)
+  fullName: MapQuest.Coordinates.Envelope.Distance(MapQuest.Coordinates.Envelope)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	この <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> と引数の <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> との最短距離を計算します。\r\n\r\n</p>"
+  remarks: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> 同士が重複している場合、距離は0となります。そうでなければ、距離は最も接近しているポイント間のユークリッド距離を示します。
+  example: []
+  syntax:
+    content: public virtual double Distance(Envelope env)
+    parameters:
+    - id: env
+      type: MapQuest.Coordinates.Envelope
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> と最短距離を求めたい <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> 間の最短距離を返します。
+    content.vb: Public Overridable Function Distance(env As Envelope) As Double
+  overload: MapQuest.Coordinates.Envelope.Distance*
+- uid: MapQuest.Coordinates.Envelope.Inflate(System.Double)
+  commentId: M:MapQuest.Coordinates.Envelope.Inflate(System.Double)
+  id: Inflate(System.Double)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Inflate(double)
+  nameWithType: Envelope.Inflate(double)
+  fullName: MapQuest.Coordinates.Envelope.Inflate(double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	この <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> を膨張させます。\r\n\r\n</p>"
+  remarks: X座標、Y座標ともに、cxyほど膨張されます。
+  example: []
+  syntax:
+    content: public void Inflate(double cxy)
+    parameters:
+    - id: cxy
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を膨張させたい値
+    content.vb: Public Sub Inflate(cxy As Double)
+  overload: MapQuest.Coordinates.Envelope.Inflate*
+  nameWithType.vb: Envelope.Inflate(Double)
+  fullName.vb: MapQuest.Coordinates.Envelope.Inflate(Double)
+  name.vb: Inflate(Double)
+- uid: MapQuest.Coordinates.Envelope.Inflate(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Envelope.Inflate(System.Double,System.Double)
+  id: Inflate(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Inflate(double, double)
+  nameWithType: Envelope.Inflate(double, double)
+  fullName: MapQuest.Coordinates.Envelope.Inflate(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	この <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> を引数の(cx,cy)ほど、膨張させます。\r\n\r\n</p>"
+  remarks: X座標はdx、Y座標はdyほど膨張されます。
+  example: []
+  syntax:
+    content: public void Inflate(double cx, double cy)
+    parameters:
+    - id: cx
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を膨張させたいX値
+    - id: cy
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を膨張させたいY値
+    content.vb: Public Sub Inflate(cx As Double, cy As Double)
+  overload: MapQuest.Coordinates.Envelope.Inflate*
+  nameWithType.vb: Envelope.Inflate(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Envelope.Inflate(Double, Double)
+  name.vb: Inflate(Double, Double)
+- uid: MapQuest.Coordinates.Envelope.Translate(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.Envelope.Translate(MapQuest.Coordinates.Coordinate)
+  id: Translate(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Translate(Coordinate)
+  nameWithType: Envelope.Translate(Coordinate)
+  fullName: MapQuest.Coordinates.Envelope.Translate(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	この <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> を引数の <xref href=\"MapQuest.Coordinates.Coordinate\" data-throw-if-not-resolved=\"false\"></xref> の座標ほど、平行移動します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public void Translate(Coordinate by)
+    parameters:
+    - id: by
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を平行移動させたい座標の値を持った <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub Translate(by As Coordinate)
+  overload: MapQuest.Coordinates.Envelope.Translate*
+- uid: MapQuest.Coordinates.Envelope.Translate(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Envelope.Translate(System.Double,System.Double)
+  id: Translate(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Translate(double, double)
+  nameWithType: Envelope.Translate(double, double)
+  fullName: MapQuest.Coordinates.Envelope.Translate(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	この <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> を引数の(dx,dy)ほど、平行移動します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public void Translate(double dx, double dy)
+    parameters:
+    - id: dx
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を平行移動させたいXの値
+    - id: dy
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を平行移動させたいYの値
+    content.vb: Public Sub Translate(dx As Double, dy As Double)
+  overload: MapQuest.Coordinates.Envelope.Translate*
+  nameWithType.vb: Envelope.Translate(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Envelope.Translate(Double, Double)
+  name.vb: Translate(Double, Double)
+- uid: MapQuest.Coordinates.Envelope.ReflectXAxis
+  commentId: M:MapQuest.Coordinates.Envelope.ReflectXAxis
+  id: ReflectXAxis
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: ReflectXAxis()
+  nameWithType: Envelope.ReflectXAxis()
+  fullName: MapQuest.Coordinates.Envelope.ReflectXAxis()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	この <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> をX軸を中心に反転します。\r\n\r\n</p>"
+  remarks: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> のY座標が反転されます。
+  example: []
+  syntax:
+    content: public void ReflectXAxis()
+    content.vb: Public Sub ReflectXAxis()
+  overload: MapQuest.Coordinates.Envelope.ReflectXAxis*
+- uid: MapQuest.Coordinates.Envelope.ReflectYAxis
+  commentId: M:MapQuest.Coordinates.Envelope.ReflectYAxis
+  id: ReflectYAxis
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: ReflectYAxis()
+  nameWithType: Envelope.ReflectYAxis()
+  fullName: MapQuest.Coordinates.Envelope.ReflectYAxis()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	この <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> をY軸を中心に反転します。\r\n\r\n</p>"
+  remarks: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> のX座標が反転されます。
+  example: []
+  syntax:
+    content: public void ReflectYAxis()
+    content.vb: Public Sub ReflectYAxis()
+  overload: MapQuest.Coordinates.Envelope.ReflectYAxis*
+- uid: MapQuest.Coordinates.Envelope.ReflectOrigin
+  commentId: M:MapQuest.Coordinates.Envelope.ReflectOrigin
+  id: ReflectOrigin
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: ReflectOrigin()
+  nameWithType: Envelope.ReflectOrigin()
+  fullName: MapQuest.Coordinates.Envelope.ReflectOrigin()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	この <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> を原点を中心に反転します。\r\n\r\n</p>"
+  remarks: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> のX座標、Y座標がそれぞれ反転されます。
+  example: []
+  syntax:
+    content: public void ReflectOrigin()
+    content.vb: Public Sub ReflectOrigin()
+  overload: MapQuest.Coordinates.Envelope.ReflectOrigin*
+- uid: MapQuest.Coordinates.Envelope.Scale(System.Double,System.Double)
+  commentId: M:MapQuest.Coordinates.Envelope.Scale(System.Double,System.Double)
+  id: Scale(System.Double,System.Double)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Scale(double, double)
+  nameWithType: Envelope.Scale(double, double)
+  fullName: MapQuest.Coordinates.Envelope.Scale(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	このEnvelopeの縮尺を変更します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: public void Scale(double sx, double sy)
+    parameters:
+    - id: sx
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> のX座標に掛ける倍率
+    - id: sy
+      type: System.Double
+      description: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> のY座標に掛ける倍率
+    content.vb: Public Sub Scale(sx As Double, sy As Double)
+  overload: MapQuest.Coordinates.Envelope.Scale*
+  nameWithType.vb: Envelope.Scale(Double, Double)
+  fullName.vb: MapQuest.Coordinates.Envelope.Scale(Double, Double)
+  name.vb: Scale(Double, Double)
+- uid: MapQuest.Coordinates.Envelope.Normalize
+  commentId: M:MapQuest.Coordinates.Envelope.Normalize
+  id: Normalize
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Normalize()
+  nameWithType: Envelope.Normalize()
+  fullName: MapQuest.Coordinates.Envelope.Normalize()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	この <xref href=\"MapQuest.Coordinates.Envelope\" data-throw-if-not-resolved=\"false\"></xref> の示す長方形が確実に( lowerLeft, upperRight )の形式となるように正規化します。\r\n\r\n</p>"
+  remarks: 最小X座標の方が最大X座標より大きい場合、もしくは最小Y座標の方が最大Y座標より大きい場合には，それぞれ最小座標と最大座標を入れ替えます。
+  example: []
+  syntax:
+    content: public void Normalize()
+    content.vb: Public Sub Normalize()
+  overload: MapQuest.Coordinates.Envelope.Normalize*
+- uid: MapQuest.Coordinates.Envelope.Intersection(MapQuest.Coordinates.Envelope,MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Coordinates.Envelope.Intersection(MapQuest.Coordinates.Envelope,MapQuest.Coordinates.Envelope)
+  id: Intersection(MapQuest.Coordinates.Envelope,MapQuest.Coordinates.Envelope)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Intersection(Envelope, Envelope)
+  nameWithType: Envelope.Intersection(Envelope, Envelope)
+  fullName: MapQuest.Coordinates.Envelope.Intersection(MapQuest.Coordinates.Envelope, MapQuest.Coordinates.Envelope)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    <code class="paramref">env1</code> と <code class="paramref">env2</code> の交差部分を
+            示す <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を返します。
+  example: []
+  syntax:
+    content: public static Envelope Intersection(Envelope env1, Envelope env2)
+    parameters:
+    - id: env1
+      type: MapQuest.Coordinates.Envelope
+      description: 1つ目の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> 。
+    - id: env2
+      type: MapQuest.Coordinates.Envelope
+      description: 2つ目の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: MapQuest.Coordinates.Envelope
+      description: >-
+        <code class="paramref">env1</code> と <code class="paramref">env2</code> の交差部分を
+                示す <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> 。交差部分がない場合は null 。
+    content.vb: Public Shared Function Intersection(env1 As Envelope, env2 As Envelope) As Envelope
+  overload: MapQuest.Coordinates.Envelope.Intersection*
+- uid: MapQuest.Coordinates.Envelope.Clone
+  commentId: M:MapQuest.Coordinates.Envelope.Clone
+  id: Clone
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: Envelope.Clone()
+  fullName: MapQuest.Coordinates.Envelope.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を複製します。
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+      description: 複製された <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> を返します。
+    content.vb: Public Function Clone() As Object
+  overload: MapQuest.Coordinates.Envelope.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.Coordinates.Envelope.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Coordinates.Envelope.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Envelope.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Coordinates.Envelope.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: オブジェクトをシリアル化します。
+  example: []
+  syntax:
+    content: public void GetObjectData(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: シリアル化する情報を格納するオブジェクト
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: ''
+    content.vb: Public Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Coordinates.Envelope.GetObjectData*
+  implements:
+  - System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- uid: MapQuest.Coordinates.Envelope.IsNull
+  commentId: P:MapQuest.Coordinates.Envelope.IsNull
+  id: IsNull
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: IsNull
+  nameWithType: Envelope.IsNull
+  fullName: MapQuest.Coordinates.Envelope.IsNull
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトがnull(未定義)かどうかを示す値を取得します。
+  remarks: >-
+    この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトが初期化されていない、
+
+    もしくは空の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> の場合は <see lnagword="true"></see> 、それ以外は <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 。
+  example: []
+  syntax:
+    content: public virtual bool IsNull { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトがnull(未定義)かどうかを示す値。
+    content.vb: Public Overridable ReadOnly Property IsNull As Boolean
+  overload: MapQuest.Coordinates.Envelope.IsNull*
+- uid: MapQuest.Coordinates.Envelope.IsNormalized
+  commentId: P:MapQuest.Coordinates.Envelope.IsNormalized
+  id: IsNormalized
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: IsNormalized
+  nameWithType: Envelope.IsNormalized
+  fullName: MapQuest.Coordinates.Envelope.IsNormalized
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトが正規化されているかどうかを取得します。
+
+
+    この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトのX座標Y座標の最大値最小値が正規化されている場合、<code>true</code>を返します。
+  remarks: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大X座標の方が最小X座標より大きく、かつ最大Y座標の方が最小Y座標より大きい場合、<code>true</code>を返します。
+  example: []
+  syntax:
+    content: public virtual bool IsNormalized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトが正規化されているかどうかの値
+    content.vb: Public Overridable ReadOnly Property IsNormalized As Boolean
+  overload: MapQuest.Coordinates.Envelope.IsNormalized*
+- uid: MapQuest.Coordinates.Envelope.Width
+  commentId: P:MapQuest.Coordinates.Envelope.Width
+  id: Width
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: Envelope.Width
+  fullName: MapQuest.Coordinates.Envelope.Width
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大X座標、最小X座標間の距離を取得します。
+  remarks: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大X座標 - 最小X座標を返します。もしくは、この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> が空の場合0を返します。
+  example: []
+  syntax:
+    content: public virtual double Width { get; }
+    parameters: []
+    return:
+      type: System.Double
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大X座標、最小X座標間の距離
+    content.vb: Public Overridable ReadOnly Property Width As Double
+  overload: MapQuest.Coordinates.Envelope.Width*
+- uid: MapQuest.Coordinates.Envelope.Height
+  commentId: P:MapQuest.Coordinates.Envelope.Height
+  id: Height
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: Envelope.Height
+  fullName: MapQuest.Coordinates.Envelope.Height
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大Y座標、最小Y座標間の距離を取得します。
+  remarks: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大Y座標 - 最小Y座標を返します。もしくは、この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> が空の場合0を返します。
+  example: []
+  syntax:
+    content: public virtual double Height { get; }
+    parameters: []
+    return:
+      type: System.Double
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大Y座標、最小Y座標間の距離
+    content.vb: Public Overridable ReadOnly Property Height As Double
+  overload: MapQuest.Coordinates.Envelope.Height*
+- uid: MapQuest.Coordinates.Envelope.MinX
+  commentId: P:MapQuest.Coordinates.Envelope.MinX
+  id: MinX
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: MinX
+  nameWithType: Envelope.MinX
+  fullName: MapQuest.Coordinates.Envelope.MinX
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最小X座標を取得します。
+  remarks: 最小X座標の方が最大X座標より大きい場合、この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> は空の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> ということを示します。
+  example: []
+  syntax:
+    content: public virtual double MinX { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最小X座標
+    content.vb: Public Overridable Property MinX As Double
+  overload: MapQuest.Coordinates.Envelope.MinX*
+- uid: MapQuest.Coordinates.Envelope.MaxX
+  commentId: P:MapQuest.Coordinates.Envelope.MaxX
+  id: MaxX
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: MaxX
+  nameWithType: Envelope.MaxX
+  fullName: MapQuest.Coordinates.Envelope.MaxX
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大X座標を取得します。
+  remarks: 最大X座標の方が最小X座標より小さい場合、この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトは空の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> ということを示します。
+  example: []
+  syntax:
+    content: public virtual double MaxX { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大X座標
+    content.vb: Public Overridable Property MaxX As Double
+  overload: MapQuest.Coordinates.Envelope.MaxX*
+- uid: MapQuest.Coordinates.Envelope.MinY
+  commentId: P:MapQuest.Coordinates.Envelope.MinY
+  id: MinY
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: MinY
+  nameWithType: Envelope.MinY
+  fullName: MapQuest.Coordinates.Envelope.MinY
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最小Y座標を取得します。
+  remarks: 最小Y座標の方が最大Y座標より大きい場合、この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトは空の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> ということを示します。
+  example: []
+  syntax:
+    content: public virtual double MinY { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最小Y座標
+    content.vb: Public Overridable Property MinY As Double
+  overload: MapQuest.Coordinates.Envelope.MinY*
+- uid: MapQuest.Coordinates.Envelope.MaxY
+  commentId: P:MapQuest.Coordinates.Envelope.MaxY
+  id: MaxY
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: MaxY
+  nameWithType: Envelope.MaxY
+  fullName: MapQuest.Coordinates.Envelope.MaxY
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大Y座標を取得します。
+  remarks: 最大Y座標の方が最小Y座標より小さい場合、この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトは空の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> ということを示します。
+  example: []
+  syntax:
+    content: public virtual double MaxY { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大Y座標
+    content.vb: Public Overridable Property MaxY As Double
+  overload: MapQuest.Coordinates.Envelope.MaxY*
+- uid: MapQuest.Coordinates.Envelope.Min
+  commentId: P:MapQuest.Coordinates.Envelope.Min
+  id: Min
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Min
+  nameWithType: Envelope.Min
+  fullName: MapQuest.Coordinates.Envelope.Min
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最小座標を取得します。
+  remarks: 最小座標の方が最大座標より大きい場合、この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトは空の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> ということを示します。
+  example: []
+  syntax:
+    content: public virtual Coordinate Min { get; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Coordinate
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最小座標を示す <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Overridable ReadOnly Property Min As Coordinate
+  overload: MapQuest.Coordinates.Envelope.Min*
+- uid: MapQuest.Coordinates.Envelope.Max
+  commentId: P:MapQuest.Coordinates.Envelope.Max
+  id: Max
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Max
+  nameWithType: Envelope.Max
+  fullName: MapQuest.Coordinates.Envelope.Max
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大座標を取得します。
+  remarks: 最大座標の方が最小座標より小さい場合、この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトは空の <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> ということを示します。
+  example: []
+  syntax:
+    content: public virtual Coordinate Max { get; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Coordinate
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの最大座標を示す <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Overridable ReadOnly Property Max As Coordinate
+  overload: MapQuest.Coordinates.Envelope.Max*
+- uid: MapQuest.Coordinates.Envelope.Center
+  commentId: P:MapQuest.Coordinates.Envelope.Center
+  id: Center
+  parent: MapQuest.Coordinates.Envelope
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: Envelope.Center
+  fullName: MapQuest.Coordinates.Envelope.Center
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの中心座標を取得します。
+  example: []
+  syntax:
+    content: public Coordinate Center { get; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Coordinate
+      description: この <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> オブジェクトの中心座標を示す <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public ReadOnly Property Center As Coordinate
+  overload: MapQuest.Coordinates.Envelope.Center*
+references:
+- uid: MapQuest.Coordinates.Envelope
+  commentId: T:MapQuest.Coordinates.Envelope
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html
+  name: Envelope
+  nameWithType: Envelope
+  fullName: MapQuest.Coordinates.Envelope
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: MapQuest.Coordinates.Envelope.#ctor*
+  commentId: Overload:MapQuest.Coordinates.Envelope.#ctor
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope__ctor
+  name: Envelope
+  nameWithType: Envelope.Envelope
+  fullName: MapQuest.Coordinates.Envelope.Envelope
+  nameWithType.vb: Envelope.New
+  fullName.vb: MapQuest.Coordinates.Envelope.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: MapQuest.Coordinates.Envelope.Initialize*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Initialize
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Initialize
+  name: Initialize
+  nameWithType: Envelope.Initialize
+  fullName: MapQuest.Coordinates.Envelope.Initialize
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Coordinates.Envelope.Equals*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Equals
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Equals_System_Object_
+  name: Equals
+  nameWithType: Envelope.Equals
+  fullName: MapQuest.Coordinates.Envelope.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Envelope.ToString*
+  commentId: Overload:MapQuest.Coordinates.Envelope.ToString
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_ToString
+  name: ToString
+  nameWithType: Envelope.ToString
+  fullName: MapQuest.Coordinates.Envelope.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Envelope.GetHashCode*
+  commentId: Overload:MapQuest.Coordinates.Envelope.GetHashCode
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_GetHashCode
+  name: GetHashCode
+  nameWithType: Envelope.GetHashCode
+  fullName: MapQuest.Coordinates.Envelope.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MapQuest.Coordinates.Envelope.Intersects*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Intersects
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Intersects_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_MapQuest_Coordinates_Coordinate_
+  name: Intersects
+  nameWithType: Envelope.Intersects
+  fullName: MapQuest.Coordinates.Envelope.Intersects
+- uid: MapQuest.Coordinates.Envelope.SetToNull*
+  commentId: Overload:MapQuest.Coordinates.Envelope.SetToNull
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_SetToNull
+  name: SetToNull
+  nameWithType: Envelope.SetToNull
+  fullName: MapQuest.Coordinates.Envelope.SetToNull
+- uid: MapQuest.Coordinates.Envelope.ExpandToInclude*
+  commentId: Overload:MapQuest.Coordinates.Envelope.ExpandToInclude
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_ExpandToInclude_MapQuest_Coordinates_Coordinate_
+  name: ExpandToInclude
+  nameWithType: Envelope.ExpandToInclude
+  fullName: MapQuest.Coordinates.Envelope.ExpandToInclude
+- uid: MapQuest.Coordinates.Envelope.Contains*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Contains
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Contains_MapQuest_Coordinates_Coordinate_
+  name: Contains
+  nameWithType: Envelope.Contains
+  fullName: MapQuest.Coordinates.Envelope.Contains
+- uid: MapQuest.Coordinates.Envelope.Distance*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Distance
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Distance_MapQuest_Coordinates_Envelope_
+  name: Distance
+  nameWithType: Envelope.Distance
+  fullName: MapQuest.Coordinates.Envelope.Distance
+- uid: MapQuest.Coordinates.Envelope.Inflate*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Inflate
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Inflate_System_Double_
+  name: Inflate
+  nameWithType: Envelope.Inflate
+  fullName: MapQuest.Coordinates.Envelope.Inflate
+- uid: MapQuest.Coordinates.Envelope.Translate*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Translate
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Translate_MapQuest_Coordinates_Coordinate_
+  name: Translate
+  nameWithType: Envelope.Translate
+  fullName: MapQuest.Coordinates.Envelope.Translate
+- uid: MapQuest.Coordinates.Envelope.ReflectXAxis*
+  commentId: Overload:MapQuest.Coordinates.Envelope.ReflectXAxis
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_ReflectXAxis
+  name: ReflectXAxis
+  nameWithType: Envelope.ReflectXAxis
+  fullName: MapQuest.Coordinates.Envelope.ReflectXAxis
+- uid: MapQuest.Coordinates.Envelope.ReflectYAxis*
+  commentId: Overload:MapQuest.Coordinates.Envelope.ReflectYAxis
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_ReflectYAxis
+  name: ReflectYAxis
+  nameWithType: Envelope.ReflectYAxis
+  fullName: MapQuest.Coordinates.Envelope.ReflectYAxis
+- uid: MapQuest.Coordinates.Envelope.ReflectOrigin*
+  commentId: Overload:MapQuest.Coordinates.Envelope.ReflectOrigin
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_ReflectOrigin
+  name: ReflectOrigin
+  nameWithType: Envelope.ReflectOrigin
+  fullName: MapQuest.Coordinates.Envelope.ReflectOrigin
+- uid: MapQuest.Coordinates.Envelope.Scale*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Scale
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Scale_System_Double_System_Double_
+  name: Scale
+  nameWithType: Envelope.Scale
+  fullName: MapQuest.Coordinates.Envelope.Scale
+- uid: MapQuest.Coordinates.Envelope.Normalize*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Normalize
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Normalize
+  name: Normalize
+  nameWithType: Envelope.Normalize
+  fullName: MapQuest.Coordinates.Envelope.Normalize
+- uid: MapQuest.Coordinates.Envelope.Intersection*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Intersection
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Intersection_MapQuest_Coordinates_Envelope_MapQuest_Coordinates_Envelope_
+  name: Intersection
+  nameWithType: Envelope.Intersection
+  fullName: MapQuest.Coordinates.Envelope.Intersection
+- uid: MapQuest.Coordinates.Envelope.Clone*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Clone
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Clone
+  name: Clone
+  nameWithType: Envelope.Clone
+  fullName: MapQuest.Coordinates.Envelope.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.Envelope.GetObjectData*
+  commentId: Overload:MapQuest.Coordinates.Envelope.GetObjectData
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  name: GetObjectData
+  nameWithType: Envelope.GetObjectData
+  fullName: MapQuest.Coordinates.Envelope.GetObjectData
+- uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Runtime.Serialization.ISerializable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: ISerializable.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: MapQuest.Coordinates.Envelope.IsNull*
+  commentId: Overload:MapQuest.Coordinates.Envelope.IsNull
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_IsNull
+  name: IsNull
+  nameWithType: Envelope.IsNull
+  fullName: MapQuest.Coordinates.Envelope.IsNull
+- uid: MapQuest.Coordinates.Envelope.IsNormalized*
+  commentId: Overload:MapQuest.Coordinates.Envelope.IsNormalized
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_IsNormalized
+  name: IsNormalized
+  nameWithType: Envelope.IsNormalized
+  fullName: MapQuest.Coordinates.Envelope.IsNormalized
+- uid: MapQuest.Coordinates.Envelope.Width*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Width
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Width
+  name: Width
+  nameWithType: Envelope.Width
+  fullName: MapQuest.Coordinates.Envelope.Width
+- uid: MapQuest.Coordinates.Envelope.Height*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Height
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Height
+  name: Height
+  nameWithType: Envelope.Height
+  fullName: MapQuest.Coordinates.Envelope.Height
+- uid: MapQuest.Coordinates.Envelope.MinX*
+  commentId: Overload:MapQuest.Coordinates.Envelope.MinX
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_MinX
+  name: MinX
+  nameWithType: Envelope.MinX
+  fullName: MapQuest.Coordinates.Envelope.MinX
+- uid: MapQuest.Coordinates.Envelope.MaxX*
+  commentId: Overload:MapQuest.Coordinates.Envelope.MaxX
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_MaxX
+  name: MaxX
+  nameWithType: Envelope.MaxX
+  fullName: MapQuest.Coordinates.Envelope.MaxX
+- uid: MapQuest.Coordinates.Envelope.MinY*
+  commentId: Overload:MapQuest.Coordinates.Envelope.MinY
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_MinY
+  name: MinY
+  nameWithType: Envelope.MinY
+  fullName: MapQuest.Coordinates.Envelope.MinY
+- uid: MapQuest.Coordinates.Envelope.MaxY*
+  commentId: Overload:MapQuest.Coordinates.Envelope.MaxY
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_MaxY
+  name: MaxY
+  nameWithType: Envelope.MaxY
+  fullName: MapQuest.Coordinates.Envelope.MaxY
+- uid: MapQuest.Coordinates.Envelope.Min*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Min
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Min
+  name: Min
+  nameWithType: Envelope.Min
+  fullName: MapQuest.Coordinates.Envelope.Min
+- uid: MapQuest.Coordinates.Envelope.Max*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Max
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Max
+  name: Max
+  nameWithType: Envelope.Max
+  fullName: MapQuest.Coordinates.Envelope.Max
+- uid: MapQuest.Coordinates.Envelope.Center*
+  commentId: Overload:MapQuest.Coordinates.Envelope.Center
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html#MapQuest_Coordinates_Envelope_Center
+  name: Center
+  nameWithType: Envelope.Center
+  fullName: MapQuest.Coordinates.Envelope.Center

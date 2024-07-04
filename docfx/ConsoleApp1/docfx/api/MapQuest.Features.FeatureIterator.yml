@@ -1,0 +1,880 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.FeatureIterator
+  commentId: T:MapQuest.Features.FeatureIterator
+  id: FeatureIterator
+  parent: MapQuest.Features
+  children:
+  - MapQuest.Features.FeatureIterator.Close
+  - MapQuest.Features.FeatureIterator.Count
+  - MapQuest.Features.FeatureIterator.Current
+  - MapQuest.Features.FeatureIterator.Dispose
+  - MapQuest.Features.FeatureIterator.MoveNext
+  - MapQuest.Features.FeatureIterator.Reset
+  langs:
+  - csharp
+  - vb
+  name: FeatureIterator
+  nameWithType: FeatureIterator
+  fullName: MapQuest.Features.FeatureIterator
+  type: Class
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> のコレクションを順番に走査するためのクラスです。
+  example: []
+  syntax:
+    content: 'public sealed class FeatureIterator : IFeatureIterator, IEnumerator<Feature>, IDisposable, IEnumerator'
+    content.vb: Public NotInheritable Class FeatureIterator Implements IFeatureIterator, IEnumerator(Of Feature), IDisposable, IEnumerator
+  inheritance:
+  - System.Object
+  implements:
+  - MapQuest.Features.IFeatureIterator
+  - System.Collections.Generic.IEnumerator{MapQuest.Features.Feature}
+  - System.IDisposable
+  - System.Collections.IEnumerator
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: MapQuest.Features.FeatureIterator.MoveNext
+  commentId: M:MapQuest.Features.FeatureIterator.MoveNext
+  id: MoveNext
+  parent: MapQuest.Features.FeatureIterator
+  langs:
+  - csharp
+  - vb
+  name: MoveNext()
+  nameWithType: FeatureIterator.MoveNext()
+  fullName: MapQuest.Features.FeatureIterator.MoveNext()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 列挙子をコレクションの次の <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> に進めます。
+  remarks: >-
+    詳細については 
+
+    <xref href="System.Collections.IEnumerator.MoveNext" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: public bool MoveNext()
+    return:
+      type: System.Boolean
+      description: >-
+        列挙子が次の <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> に正常に進んだ場合は <b>true</b> 。
+
+
+        列挙子がコレクションの末尾を越えた場合は <b>false</b> 。
+    content.vb: Public Function MoveNext() As Boolean
+  overload: MapQuest.Features.FeatureIterator.MoveNext*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "  <p>\r\n	列挙子が作成された後に、コレクションが変更されました。\r\n\r\n</p>"
+  implements:
+  - MapQuest.Features.IFeatureIterator.MoveNext
+  - System.Collections.IEnumerator.MoveNext
+- uid: MapQuest.Features.FeatureIterator.Reset
+  commentId: M:MapQuest.Features.FeatureIterator.Reset
+  id: Reset
+  parent: MapQuest.Features.FeatureIterator
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: FeatureIterator.Reset()
+  fullName: MapQuest.Features.FeatureIterator.Reset()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 列挙子を初期位置、つまりコレクションの最初の <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> の前に設定します。
+  remarks: >-
+    詳細については 
+
+    <xref href="System.Collections.IEnumerator.Reset" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: MapQuest.Features.FeatureIterator.Reset*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "  <p>\r\n	列挙子が作成された後に、コレクションが変更されました。\r\n\r\n</p>"
+  implements:
+  - MapQuest.Features.IFeatureIterator.Reset
+  - System.Collections.IEnumerator.Reset
+- uid: MapQuest.Features.FeatureIterator.Close
+  commentId: M:MapQuest.Features.FeatureIterator.Close
+  id: Close
+  parent: MapQuest.Features.FeatureIterator
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: FeatureIterator.Close()
+  fullName: MapQuest.Features.FeatureIterator.Close()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    コレクションの内容を解放します。
+
+
+    <p><!-- Non Support 2005/01/20 -->
+    	このメソッドは、現在サポートしていません。
+    </p>
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: MapQuest.Features.FeatureIterator.Close*
+  implements:
+  - MapQuest.Features.IFeatureIterator.Close
+- uid: MapQuest.Features.FeatureIterator.Dispose
+  commentId: M:MapQuest.Features.FeatureIterator.Dispose
+  id: Dispose
+  parent: MapQuest.Features.FeatureIterator
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: FeatureIterator.Dispose()
+  fullName: MapQuest.Features.FeatureIterator.Dispose()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: MapQuest.Features.FeatureIterator.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: MapQuest.Features.FeatureIterator.Count
+  commentId: P:MapQuest.Features.FeatureIterator.Count
+  id: Count
+  parent: MapQuest.Features.FeatureIterator
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: FeatureIterator.Count
+  fullName: MapQuest.Features.FeatureIterator.Count
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: コレクションに格納されている地物の数を取得します。
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: >-
+        コレクションに格納されている地物の数。
+
+        <div class="CAUTION"><h5>caution</h5><p>
+
+        結果の総数が判らない場合は「-1」を返します。
+
+        </p></div>
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: MapQuest.Features.FeatureIterator.Count*
+  implements:
+  - MapQuest.Features.IFeatureIterator.Count
+- uid: MapQuest.Features.FeatureIterator.Current
+  commentId: P:MapQuest.Features.FeatureIterator.Current
+  id: Current
+  parent: MapQuest.Features.FeatureIterator
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: FeatureIterator.Current
+  fullName: MapQuest.Features.FeatureIterator.Current
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: コレクション内の現在の <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> を取得します。
+  remarks: >-
+    詳細については 
+
+    <xref href="System.Collections.IEnumerator.Current" data-throw-if-not-resolved="false"></xref> 
+
+    を参照してください。
+  example: []
+  syntax:
+    content: public Feature Current { get; }
+    parameters: []
+    return:
+      type: MapQuest.Features.Feature
+      description: コレクション内の現在の <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public ReadOnly Property Current As Feature
+  overload: MapQuest.Features.FeatureIterator.Current*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "  <p>\r\n	列挙子が、コレクションの最初の要素の前、\r\n\r\n	または最後の要素の後に位置しています。\r\n\r\n</p>"
+  implements:
+  - MapQuest.Features.IFeatureIterator.Current
+  - System.Collections.Generic.IEnumerator{MapQuest.Features.Feature}.Current
+references:
+- uid: MapQuest.Features.Feature
+  commentId: T:MapQuest.Features.Feature
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.Feature.html
+  name: Feature
+  nameWithType: Feature
+  fullName: MapQuest.Features.Feature
+- uid: MapQuest.Features
+  commentId: N:MapQuest.Features
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features
+  nameWithType: MapQuest.Features
+  fullName: MapQuest.Features
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Features.IFeatureIterator
+  commentId: T:MapQuest.Features.IFeatureIterator
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.IFeatureIterator.html
+  name: IFeatureIterator
+  nameWithType: IFeatureIterator
+  fullName: MapQuest.Features.IFeatureIterator
+- uid: System.Collections.Generic.IEnumerator{MapQuest.Features.Feature}
+  commentId: T:System.Collections.Generic.IEnumerator{MapQuest.Features.Feature}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<Feature>
+  nameWithType: IEnumerator<Feature>
+  fullName: System.Collections.Generic.IEnumerator<MapQuest.Features.Feature>
+  nameWithType.vb: IEnumerator(Of Feature)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of MapQuest.Features.Feature)
+  name.vb: IEnumerator(Of Feature)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Collections.IEnumerator.MoveNext
+  commentId: M:System.Collections.IEnumerator.MoveNext
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.movenext
+  name: MoveNext()
+  nameWithType: IEnumerator.MoveNext()
+  fullName: System.Collections.IEnumerator.MoveNext()
+  spec.csharp:
+  - uid: System.Collections.IEnumerator.MoveNext
+    name: MoveNext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.movenext
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IEnumerator.MoveNext
+    name: MoveNext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.movenext
+  - name: (
+  - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: MapQuest.Features.FeatureIterator.MoveNext*
+  commentId: Overload:MapQuest.Features.FeatureIterator.MoveNext
+  isExternal: true
+  href: MapQuest.Features.FeatureIterator.html#MapQuest_Features_FeatureIterator_MoveNext
+  name: MoveNext
+  nameWithType: FeatureIterator.MoveNext
+  fullName: MapQuest.Features.FeatureIterator.MoveNext
+- uid: MapQuest.Features.IFeatureIterator.MoveNext
+  commentId: M:MapQuest.Features.IFeatureIterator.MoveNext
+  parent: MapQuest.Features.IFeatureIterator
+  isExternal: true
+  href: MapQuest.Features.IFeatureIterator.html#MapQuest_Features_IFeatureIterator_MoveNext
+  name: MoveNext()
+  nameWithType: IFeatureIterator.MoveNext()
+  fullName: MapQuest.Features.IFeatureIterator.MoveNext()
+  spec.csharp:
+  - uid: MapQuest.Features.IFeatureIterator.MoveNext
+    name: MoveNext
+    isExternal: true
+    href: MapQuest.Features.IFeatureIterator.html#MapQuest_Features_IFeatureIterator_MoveNext
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.IFeatureIterator.MoveNext
+    name: MoveNext
+    isExternal: true
+    href: MapQuest.Features.IFeatureIterator.html#MapQuest_Features_IFeatureIterator_MoveNext
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.IEnumerator.Reset
+  commentId: M:System.Collections.IEnumerator.Reset
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.reset
+  name: Reset()
+  nameWithType: IEnumerator.Reset()
+  fullName: System.Collections.IEnumerator.Reset()
+  spec.csharp:
+  - uid: System.Collections.IEnumerator.Reset
+    name: Reset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IEnumerator.Reset
+    name: Reset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.reset
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureIterator.Reset*
+  commentId: Overload:MapQuest.Features.FeatureIterator.Reset
+  isExternal: true
+  href: MapQuest.Features.FeatureIterator.html#MapQuest_Features_FeatureIterator_Reset
+  name: Reset
+  nameWithType: FeatureIterator.Reset
+  fullName: MapQuest.Features.FeatureIterator.Reset
+- uid: MapQuest.Features.IFeatureIterator.Reset
+  commentId: M:MapQuest.Features.IFeatureIterator.Reset
+  parent: MapQuest.Features.IFeatureIterator
+  isExternal: true
+  href: MapQuest.Features.IFeatureIterator.html#MapQuest_Features_IFeatureIterator_Reset
+  name: Reset()
+  nameWithType: IFeatureIterator.Reset()
+  fullName: MapQuest.Features.IFeatureIterator.Reset()
+  spec.csharp:
+  - uid: MapQuest.Features.IFeatureIterator.Reset
+    name: Reset
+    isExternal: true
+    href: MapQuest.Features.IFeatureIterator.html#MapQuest_Features_IFeatureIterator_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.IFeatureIterator.Reset
+    name: Reset
+    isExternal: true
+    href: MapQuest.Features.IFeatureIterator.html#MapQuest_Features_IFeatureIterator_Reset
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureIterator.Close*
+  commentId: Overload:MapQuest.Features.FeatureIterator.Close
+  isExternal: true
+  href: MapQuest.Features.FeatureIterator.html#MapQuest_Features_FeatureIterator_Close
+  name: Close
+  nameWithType: FeatureIterator.Close
+  fullName: MapQuest.Features.FeatureIterator.Close
+- uid: MapQuest.Features.IFeatureIterator.Close
+  commentId: M:MapQuest.Features.IFeatureIterator.Close
+  parent: MapQuest.Features.IFeatureIterator
+  isExternal: true
+  href: MapQuest.Features.IFeatureIterator.html#MapQuest_Features_IFeatureIterator_Close
+  name: Close()
+  nameWithType: IFeatureIterator.Close()
+  fullName: MapQuest.Features.IFeatureIterator.Close()
+  spec.csharp:
+  - uid: MapQuest.Features.IFeatureIterator.Close
+    name: Close
+    isExternal: true
+    href: MapQuest.Features.IFeatureIterator.html#MapQuest_Features_IFeatureIterator_Close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.IFeatureIterator.Close
+    name: Close
+    isExternal: true
+    href: MapQuest.Features.IFeatureIterator.html#MapQuest_Features_IFeatureIterator_Close
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureIterator.Dispose*
+  commentId: Overload:MapQuest.Features.FeatureIterator.Dispose
+  isExternal: true
+  href: MapQuest.Features.FeatureIterator.html#MapQuest_Features_FeatureIterator_Dispose
+  name: Dispose
+  nameWithType: FeatureIterator.Dispose
+  fullName: MapQuest.Features.FeatureIterator.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureIterator.Count*
+  commentId: Overload:MapQuest.Features.FeatureIterator.Count
+  isExternal: true
+  href: MapQuest.Features.FeatureIterator.html#MapQuest_Features_FeatureIterator_Count
+  name: Count
+  nameWithType: FeatureIterator.Count
+  fullName: MapQuest.Features.FeatureIterator.Count
+- uid: MapQuest.Features.IFeatureIterator.Count
+  commentId: P:MapQuest.Features.IFeatureIterator.Count
+  parent: MapQuest.Features.IFeatureIterator
+  isExternal: true
+  href: MapQuest.Features.IFeatureIterator.html#MapQuest_Features_IFeatureIterator_Count
+  name: Count
+  nameWithType: IFeatureIterator.Count
+  fullName: MapQuest.Features.IFeatureIterator.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.IEnumerator.Current
+  commentId: P:System.Collections.IEnumerator.Current
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator.current
+  name: Current
+  nameWithType: IEnumerator.Current
+  fullName: System.Collections.IEnumerator.Current
+- uid: MapQuest.Features.FeatureIterator.Current*
+  commentId: Overload:MapQuest.Features.FeatureIterator.Current
+  isExternal: true
+  href: MapQuest.Features.FeatureIterator.html#MapQuest_Features_FeatureIterator_Current
+  name: Current
+  nameWithType: FeatureIterator.Current
+  fullName: MapQuest.Features.FeatureIterator.Current
+- uid: MapQuest.Features.IFeatureIterator.Current
+  commentId: P:MapQuest.Features.IFeatureIterator.Current
+  parent: MapQuest.Features.IFeatureIterator
+  isExternal: true
+  href: MapQuest.Features.IFeatureIterator.html#MapQuest_Features_IFeatureIterator_Current
+  name: Current
+  nameWithType: IFeatureIterator.Current
+  fullName: MapQuest.Features.IFeatureIterator.Current
+- uid: System.Collections.Generic.IEnumerator{MapQuest.Features.Feature}.Current
+  commentId: P:System.Collections.Generic.IEnumerator{MapQuest.Features.Feature}.Current
+  parent: System.Collections.Generic.IEnumerator{MapQuest.Features.Feature}
+  definition: System.Collections.Generic.IEnumerator`1.Current
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1.current
+  name: Current
+  nameWithType: IEnumerator<Feature>.Current
+  fullName: System.Collections.Generic.IEnumerator<MapQuest.Features.Feature>.Current
+  nameWithType.vb: IEnumerator(Of Feature).Current
+  fullName.vb: System.Collections.Generic.IEnumerator(Of MapQuest.Features.Feature).Current
+- uid: System.Collections.Generic.IEnumerator`1.Current
+  commentId: P:System.Collections.Generic.IEnumerator`1.Current
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1.current
+  name: Current
+  nameWithType: IEnumerator<T>.Current
+  fullName: System.Collections.Generic.IEnumerator<T>.Current
+  nameWithType.vb: IEnumerator(Of T).Current
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T).Current

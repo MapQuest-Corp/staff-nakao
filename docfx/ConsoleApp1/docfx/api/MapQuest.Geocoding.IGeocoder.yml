@@ -1,0 +1,105 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Geocoding.IGeocoder
+  commentId: T:MapQuest.Geocoding.IGeocoder
+  id: IGeocoder
+  parent: MapQuest.Geocoding
+  children:
+  - MapQuest.Geocoding.IGeocoder.Search``1
+  langs:
+  - csharp
+  - vb
+  name: IGeocoder
+  nameWithType: IGeocoder
+  fullName: MapQuest.Geocoding.IGeocoder
+  type: Interface
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Geocoding
+  summary: 住所文字列から地理的な場所の座標を検索するためのインターフェースです。
+  remarks: >-
+    ジオコーディングは、指定された住所や地名を地理的な座標（緯度と経度）に変換するプロセスです。
+
+    このインターフェースを使用して、アプリケーションはユーザーが提供する住所情報から正確な位置情報を取得できます。
+  example: []
+  syntax:
+    content: public interface IGeocoder
+    content.vb: Public Interface IGeocoder
+- uid: MapQuest.Geocoding.IGeocoder.Search``1
+  commentId: M:MapQuest.Geocoding.IGeocoder.Search``1
+  id: Search``1
+  parent: MapQuest.Geocoding.IGeocoder
+  langs:
+  - csharp
+  - vb
+  name: Search<T>()
+  nameWithType: IGeocoder.Search<T>()
+  fullName: MapQuest.Geocoding.IGeocoder.Search<T>()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Geocoding
+  summary: 指定した住所文字列に基づいて地理的な場所の座標を検索します。
+  remarks: >-
+    ジオコーディングは、文字列形式の住所や地名を地理的な座標（緯度と経度）に変換するプロセスです。
+
+    このメソッドは、ユーザーが提供する住所文字列から対応する地点の座標情報を取得するために使用されます。
+  example: []
+  syntax:
+    content: T Search<T>()
+    typeParameters:
+    - id: T
+      description: 住所情報のクラス
+    return:
+      type: '{T}'
+      description: 指定した住所にマッチした地理的な場所の座標を含むオブジェクトを返します。
+    content.vb: Function Search(Of T)() As T
+  overload: MapQuest.Geocoding.IGeocoder.Search*
+  nameWithType.vb: IGeocoder.Search(Of T)()
+  fullName.vb: MapQuest.Geocoding.IGeocoder.Search(Of T)()
+  name.vb: Search(Of T)()
+references:
+- uid: MapQuest.Geocoding
+  commentId: N:MapQuest.Geocoding
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Geocoding
+  nameWithType: MapQuest.Geocoding
+  fullName: MapQuest.Geocoding
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Geocoding
+    name: Geocoding
+    isExternal: true
+    href: MapQuest.Geocoding.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Geocoding
+    name: Geocoding
+    isExternal: true
+    href: MapQuest.Geocoding.html
+- uid: MapQuest.Geocoding.IGeocoder.Search*
+  commentId: Overload:MapQuest.Geocoding.IGeocoder.Search
+  isExternal: true
+  href: MapQuest.Geocoding.IGeocoder.html#MapQuest_Geocoding_IGeocoder_Search__1
+  name: Search
+  nameWithType: IGeocoder.Search
+  fullName: MapQuest.Geocoding.IGeocoder.Search
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

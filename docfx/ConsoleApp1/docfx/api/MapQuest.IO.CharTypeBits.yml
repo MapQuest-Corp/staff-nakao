@@ -1,0 +1,215 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.IO.CharTypeBits
+  commentId: T:MapQuest.IO.CharTypeBits
+  id: CharTypeBits
+  parent: MapQuest.IO
+  children:
+  - MapQuest.IO.CharTypeBits.Comment
+  - MapQuest.IO.CharTypeBits.Digit
+  - MapQuest.IO.CharTypeBits.Eof
+  - MapQuest.IO.CharTypeBits.HexDigit
+  - MapQuest.IO.CharTypeBits.Quote
+  - MapQuest.IO.CharTypeBits.Whitespace
+  - MapQuest.IO.CharTypeBits.Word
+  langs:
+  - csharp
+  - vb
+  name: CharTypeBits
+  nameWithType: CharTypeBits
+  fullName: MapQuest.IO.CharTypeBits
+  type: Enum
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: Bitwise enumeration for character types.
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum CharTypeBits : byte
+    content.vb: >-
+      <Flags>
+
+      Public Enum CharTypeBits As Byte
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: MapQuest.IO.CharTypeBits.Word
+  commentId: F:MapQuest.IO.CharTypeBits.Word
+  id: Word
+  parent: MapQuest.IO.CharTypeBits
+  langs:
+  - csharp
+  - vb
+  name: Word
+  nameWithType: CharTypeBits.Word
+  fullName: MapQuest.IO.CharTypeBits.Word
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: word characters (usually alpha, digits, and domain specific)
+  example: []
+  syntax:
+    content: Word = 1
+    return:
+      type: MapQuest.IO.CharTypeBits
+- uid: MapQuest.IO.CharTypeBits.Comment
+  commentId: F:MapQuest.IO.CharTypeBits.Comment
+  id: Comment
+  parent: MapQuest.IO.CharTypeBits
+  langs:
+  - csharp
+  - vb
+  name: Comment
+  nameWithType: CharTypeBits.Comment
+  fullName: MapQuest.IO.CharTypeBits.Comment
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: '# or something for line comments'
+  example: []
+  syntax:
+    content: Comment = 2
+    return:
+      type: MapQuest.IO.CharTypeBits
+- uid: MapQuest.IO.CharTypeBits.Whitespace
+  commentId: F:MapQuest.IO.CharTypeBits.Whitespace
+  id: Whitespace
+  parent: MapQuest.IO.CharTypeBits
+  langs:
+  - csharp
+  - vb
+  name: Whitespace
+  nameWithType: CharTypeBits.Whitespace
+  fullName: MapQuest.IO.CharTypeBits.Whitespace
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: whitespace
+  example: []
+  syntax:
+    content: Whitespace = 4
+    return:
+      type: MapQuest.IO.CharTypeBits
+- uid: MapQuest.IO.CharTypeBits.Quote
+  commentId: F:MapQuest.IO.CharTypeBits.Quote
+  id: Quote
+  parent: MapQuest.IO.CharTypeBits
+  langs:
+  - csharp
+  - vb
+  name: Quote
+  nameWithType: CharTypeBits.Quote
+  fullName: MapQuest.IO.CharTypeBits.Quote
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: "' or \" type"
+  example: []
+  syntax:
+    content: Quote = 8
+    return:
+      type: MapQuest.IO.CharTypeBits
+- uid: MapQuest.IO.CharTypeBits.Digit
+  commentId: F:MapQuest.IO.CharTypeBits.Digit
+  id: Digit
+  parent: MapQuest.IO.CharTypeBits
+  langs:
+  - csharp
+  - vb
+  name: Digit
+  nameWithType: CharTypeBits.Digit
+  fullName: MapQuest.IO.CharTypeBits.Digit
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: usually 0 to 9
+  example: []
+  syntax:
+    content: Digit = 16
+    return:
+      type: MapQuest.IO.CharTypeBits
+- uid: MapQuest.IO.CharTypeBits.HexDigit
+  commentId: F:MapQuest.IO.CharTypeBits.HexDigit
+  id: HexDigit
+  parent: MapQuest.IO.CharTypeBits
+  langs:
+  - csharp
+  - vb
+  name: HexDigit
+  nameWithType: CharTypeBits.HexDigit
+  fullName: MapQuest.IO.CharTypeBits.HexDigit
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: usually 0 to 9, a-f and A-F
+  example: []
+  syntax:
+    content: HexDigit = 32
+    return:
+      type: MapQuest.IO.CharTypeBits
+- uid: MapQuest.IO.CharTypeBits.Eof
+  commentId: F:MapQuest.IO.CharTypeBits.Eof
+  id: Eof
+  parent: MapQuest.IO.CharTypeBits
+  langs:
+  - csharp
+  - vb
+  name: Eof
+  nameWithType: CharTypeBits.Eof
+  fullName: MapQuest.IO.CharTypeBits.Eof
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: eof char
+  example: []
+  syntax:
+    content: Eof = 64
+    return:
+      type: MapQuest.IO.CharTypeBits
+references:
+- uid: MapQuest.IO
+  commentId: N:MapQuest.IO
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.IO
+  nameWithType: MapQuest.IO
+  fullName: MapQuest.IO
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+- uid: MapQuest.IO.CharTypeBits
+  commentId: T:MapQuest.IO.CharTypeBits
+  parent: MapQuest.IO
+  isExternal: true
+  href: MapQuest.IO.CharTypeBits.html
+  name: CharTypeBits
+  nameWithType: CharTypeBits
+  fullName: MapQuest.IO.CharTypeBits

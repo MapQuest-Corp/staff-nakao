@@ -1,0 +1,1226 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SerializationInfoHelper | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SerializationInfoHelper | mysite ">
+      
+      <meta name="description" content="がサポートしていない型のデータを分解して保持します。  は  の ラッパーです。実際のデータの保持は  が対応します。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Serialization.SerializationInfoHelper">
+
+
+
+  <h1 id="MapQuest_Serialization_SerializationInfoHelper" data-uid="MapQuest.Serialization.SerializationInfoHelper" class="text-break">
+Class SerializationInfoHelper  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Serialization.html">Serialization</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> がサポートしていない型のデータを分解して保持します。
+<a class="xref" href="MapQuest.Serialization.SerializationInfoHelper.html">SerializationInfoHelper</a> は <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> の
+ラッパーです。実際のデータの保持は <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> が対応します。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SerializationInfoHelper : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SerializationInfoHelper</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+  <h2 id="MapQuest_Serialization_SerializationInfoHelper_examples">Examples</h2>
+  <p>シリアライズの例。</p>
+<pre><code class="lang-csharp">public void GetObjectData(SerializationInfo info, StreamingContext context)
+{	// シリアル化情報に、シリアル化に際して値に関連づけられる名称とその値を追加します
+	using(SerializationInfoHelper helper = new SerializationInfoHelper(info))
+	{
+		// SingleValues プロパティの値を追加( null 値は追加できないので必要に合わせてチェックする)
+		if (this.SingleValues != null) helper.AddValue("SingleValues", this.SingleValues);
+		// PointFValue プロパティの値を追加
+		helper.AddValue("PointFValue", this.PointFValue);
+	}
+}</code></pre>
+<p>デシリアライズの例。</p>
+<pre><code class="lang-csharp">public SerializeClass(SerializationInfo info, StreamingContext context)
+{	// シリアル化情報から値を逆シリアル化された値を取得・設定する
+	using (SerializationInfoHelper helper = new SerializationInfoHelper(info)) 
+	{
+		try {
+			m_SingleValues = helper.GetSingleArray("SingleValues");
+		} catch	{ // 例外処理 (シリアライズデータにないと判断して既定値を設定する)
+			m_SingleValues = null;
+		}
+	}
+}</code></pre>
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper__ctor_" data-uid="MapQuest.Serialization.SerializationInfoHelper.#ctor*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper__ctor_System_Runtime_Serialization_SerializationInfo_" data-uid="MapQuest.Serialization.SerializationInfoHelper.#ctor(System.Runtime.Serialization.SerializationInfo)">
+  SerializationInfoHelper(SerializationInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Serialization.SerializationInfoHelper.html">SerializationInfoHelper</a> クラスの新しいインスタンスを作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SerializationInfoHelper(SerializationInfo info)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_Info_" data-uid="MapQuest.Serialization.SerializationInfoHelper.Info*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_Info" data-uid="MapQuest.Serialization.SerializationInfoHelper.Info">
+  Info
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>シリアライズ情報保存オブジェクトを取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SerializationInfo Info { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd><p>シリアライズ情報保存オブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_AddValue_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Boolean___" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Boolean[])">
+  AddValue(string, bool[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> の配列を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(string name, bool[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>後から逆シリアル化できるように、値に関連付けておく名前。</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd><p>シリアル化する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> 型の配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_AddValue_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Collections_ArrayList_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Collections.ArrayList)">
+  AddValue(string, ArrayList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(string name, ArrayList values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>後から逆シリアル化できるように、値に関連付けておく名前。</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a></dt>
+    <dd><p>シリアル化する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Collections_ArrayList__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このメソッドは現在サポートしていません。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_AddValue_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Collections_Specialized_HybridDictionary_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Collections.Specialized.HybridDictionary)">
+  AddValue(string, HybridDictionary)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.hybriddictionary">HybridDictionary</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(string name, HybridDictionary values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>後から逆シリアル化できるように、値に関連付けておく名前。</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.hybriddictionary">HybridDictionary</a></dt>
+    <dd><p>シリアル化する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> 型の配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Collections_Specialized_HybridDictionary__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このメソッドは現在サポートしていません。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_AddValue_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Drawing_Color_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Color)">
+  AddValue(string, Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(string name, Color value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>後から逆シリアル化できるように、値に関連付けておく名前。</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd><p>シリアル化する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> 型の値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_AddValue_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Drawing_Color___" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Color[])">
+  AddValue(string, Color[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> の配列を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(string name, Color[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>後から逆シリアル化できるように、値に関連付けておく名前。</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>[]</dt>
+    <dd><p>シリアル化する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> 型の配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_AddValue_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Drawing_Drawing2D_Blend_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Drawing2D.Blend)">
+  AddValue(string, Blend)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.blend">Blend</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(string name, Blend value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>後から逆シリアル化できるように、値に関連付けておく名前。</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.blend">Blend</a></dt>
+    <dd><p>シリアル化する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.blend">Blend</a> 型の値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_AddValue_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Drawing_Drawing2D_ColorBlend_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.Drawing2D.ColorBlend)">
+  AddValue(string, ColorBlend)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.colorblend">ColorBlend</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(string name, ColorBlend value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>後から逆シリアル化できるように、値に関連付けておく名前。</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.colorblend">ColorBlend</a></dt>
+    <dd><p>シリアル化する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.colorblend">ColorBlend</a> 型の値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_AddValue_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Drawing_PointF_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.PointF)">
+  AddValue(string, PointF)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(string name, PointF value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>後から逆シリアル化できるように、値に関連付けておく名前。</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a></dt>
+    <dd><p>シリアル化する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a> 型の値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_AddValue_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Drawing_PointF___" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.PointF[])">
+  AddValue(string, PointF[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a> の配列を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(string name, PointF[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>後から逆シリアル化できるように、値に関連付けておく名前。</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a>[]</dt>
+    <dd><p>シリアル化する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a> 型の配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_AddValue_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Drawing_RectangleF_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.RectangleF)">
+  AddValue(string, RectangleF)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(string name, RectangleF value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>後から逆シリアル化できるように、値に関連付けておく名前。</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></dt>
+    <dd><p>シリアル化する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> 型の値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_AddValue_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Drawing_SizeF_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Drawing.SizeF)">
+  AddValue(string, SizeF)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(string name, SizeF value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>後から逆シリアル化できるように、値に関連付けておく名前。</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a></dt>
+    <dd><p>シリアル化する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> 型の値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_AddValue_" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_AddValue_System_String_System_Single___" data-uid="MapQuest.Serialization.SerializationInfoHelper.AddValue(System.String,System.Single[])">
+  AddValue(string, float[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> に単精度浮動小数点値の配列を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(string name, float[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>後から逆シリアル化できるように、値に関連付けておく名前。</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p>シリアル化する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> 型の値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_Dispose_" data-uid="MapQuest.Serialization.SerializationInfoHelper.Dispose*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_Dispose" data-uid="MapQuest.Serialization.SerializationInfoHelper.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Serialization.SerializationInfoHelper.html">SerializationInfoHelper</a>
+オブジェクトによって使用されているすべてのリソースを解放します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_GetArrayList_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetArrayList*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_GetArrayList_System_String_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetArrayList(System.String)">
+  GetArrayList(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> から <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayList GetArrayList(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>取得する値の名前。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a></dt>
+    <dd><p><code class="paramref">name</code> に関連付けられた <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Serialization_SerializationInfoHelper_GetArrayList_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このメソッドは現在サポートしていません。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_GetBlend_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetBlend*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_GetBlend_System_String_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetBlend(System.String)">
+  GetBlend(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> から <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.blend">Blend</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Blend GetBlend(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>取得する値の名前。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.blend">Blend</a></dt>
+    <dd><p><code class="paramref">name</code> に関連付けられた <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.blend">Blend</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_GetBooleanArray_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetBooleanArray*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_GetBooleanArray_System_String_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetBooleanArray(System.String)">
+  GetBooleanArray(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> から <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> の配列を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool[] GetBooleanArray(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>取得する値の名前。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd><p><code class="paramref">name</code> に関連付けられた <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> の配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_GetColor_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetColor*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_GetColor_System_String_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetColor(System.String)">
+  GetColor(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> から <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color GetColor(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>取得する値の名前。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd><p><code class="paramref">name</code> に関連付けられた <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_GetColorArray_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetColorArray*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_GetColorArray_System_String_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetColorArray(System.String)">
+  GetColorArray(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> から <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> の配列を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color[] GetColorArray(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>取得する値の名前。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>[]</dt>
+    <dd><p><code class="paramref">name</code> に関連付けられた <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> の配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_GetColorBlend_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetColorBlend*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_GetColorBlend_System_String_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetColorBlend(System.String)">
+  GetColorBlend(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> から <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.colorblend">ColorBlend</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ColorBlend GetColorBlend(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>取得する値の名前。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.colorblend">ColorBlend</a></dt>
+    <dd><p><code class="paramref">name</code> に関連付けられた <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.drawing2d.colorblend">ColorBlend</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_GetHybridDictionary_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetHybridDictionary*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_GetHybridDictionary_System_String_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetHybridDictionary(System.String)">
+  GetHybridDictionary(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> から <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.hybriddictionary">HybridDictionary</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HybridDictionary GetHybridDictionary(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>取得する値の名前。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.hybriddictionary">HybridDictionary</a></dt>
+    <dd><p><code class="paramref">name</code> に関連付けられたm_info.GetValue(name + string.Format(&quot;-{0}&quot;, index),typeof(object)); <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.hybriddictionary">HybridDictionary</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Serialization_SerializationInfoHelper_GetHybridDictionary_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このメソッドは現在サポートしていません。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_GetPointF_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetPointF*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_GetPointF_System_String_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetPointF(System.String)">
+  GetPointF(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> から <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointF GetPointF(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>取得する値の名前。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a></dt>
+    <dd><p><code class="paramref">name</code> に関連付けられた <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_GetPointFArray_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetPointFArray*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_GetPointFArray_System_String_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetPointFArray(System.String)">
+  GetPointFArray(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> から <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a> の配列を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointF[] GetPointFArray(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>取得する値の名前。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a>[]</dt>
+    <dd><p><code class="paramref">name</code> に関連付けられた <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a> の配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_GetRectangleF_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetRectangleF*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_GetRectangleF_System_String_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetRectangleF(System.String)">
+  GetRectangleF(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> から <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectangleF GetRectangleF(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>取得する値の名前。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></dt>
+    <dd><p><code class="paramref">name</code> に関連付けられた <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_GetSingleArray_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetSingleArray*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_GetSingleArray_System_String_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetSingleArray(System.String)">
+  GetSingleArray(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> から単精度浮動小数点値の配列を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetSingleArray(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>取得する値の名前。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><code class="paramref">name</code> に関連付けられた単精度浮動小数点値の配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Serialization_SerializationInfoHelper_GetSizeF_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetSizeF*"></a>
+
+  <h3 id="MapQuest_Serialization_SerializationInfoHelper_GetSizeF_System_String_" data-uid="MapQuest.Serialization.SerializationInfoHelper.GetSizeF(System.String)">
+  GetSizeF(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> から <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeF GetSizeF(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>取得する値の名前。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a></dt>
+    <dd><p><code class="paramref">name</code> に関連付けられた <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.Comparers
+  commentId: N:MapQuest.Features.Comparers
+  id: MapQuest.Features.Comparers
+  children:
+  - MapQuest.Features.Comparers.BasicFeatureComparer
+  - MapQuest.Features.Comparers.FeatureAreaComparer
+  - MapQuest.Features.Comparers.FeatureComparer
+  - MapQuest.Features.Comparers.FeatureDistanceComparer
+  - MapQuest.Features.Comparers.FeatureLengthComparer
+  - MapQuest.Features.Comparers.FeatureOutlineDistanceComparer
+  langs:
+  - csharp
+  - vb
+  name: MapQuest.Features.Comparers
+  nameWithType: MapQuest.Features.Comparers
+  fullName: MapQuest.Features.Comparers
+  type: Namespace
+  assemblies:
+  - MapQuest.Features
+references:
+- uid: MapQuest.Features.Comparers.BasicFeatureComparer
+  commentId: T:MapQuest.Features.Comparers.BasicFeatureComparer
+  parent: MapQuest.Features.Comparers
+  isExternal: true
+  href: MapQuest.Features.Comparers.BasicFeatureComparer.html
+  name: BasicFeatureComparer
+  nameWithType: BasicFeatureComparer
+  fullName: MapQuest.Features.Comparers.BasicFeatureComparer
+- uid: MapQuest.Features.Comparers.FeatureComparer
+  commentId: T:MapQuest.Features.Comparers.FeatureComparer
+  parent: MapQuest.Features.Comparers
+  isExternal: true
+  href: MapQuest.Features.Comparers.FeatureComparer.html
+  name: FeatureComparer
+  nameWithType: FeatureComparer
+  fullName: MapQuest.Features.Comparers.FeatureComparer
+- uid: MapQuest.Features.Comparers.FeatureAreaComparer
+  commentId: T:MapQuest.Features.Comparers.FeatureAreaComparer
+  isExternal: true
+  href: MapQuest.Features.Comparers.FeatureAreaComparer.html
+  name: FeatureAreaComparer
+  nameWithType: FeatureAreaComparer
+  fullName: MapQuest.Features.Comparers.FeatureAreaComparer
+- uid: MapQuest.Features.Comparers.FeatureDistanceComparer
+  commentId: T:MapQuest.Features.Comparers.FeatureDistanceComparer
+  isExternal: true
+  href: MapQuest.Features.Comparers.FeatureDistanceComparer.html
+  name: FeatureDistanceComparer
+  nameWithType: FeatureDistanceComparer
+  fullName: MapQuest.Features.Comparers.FeatureDistanceComparer
+- uid: MapQuest.Features.Comparers.FeatureLengthComparer
+  commentId: T:MapQuest.Features.Comparers.FeatureLengthComparer
+  isExternal: true
+  href: MapQuest.Features.Comparers.FeatureLengthComparer.html
+  name: FeatureLengthComparer
+  nameWithType: FeatureLengthComparer
+  fullName: MapQuest.Features.Comparers.FeatureLengthComparer
+- uid: MapQuest.Features.Comparers.FeatureOutlineDistanceComparer
+  commentId: T:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer
+  isExternal: true
+  href: MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.html
+  name: FeatureOutlineDistanceComparer
+  nameWithType: FeatureOutlineDistanceComparer
+  fullName: MapQuest.Features.Comparers.FeatureOutlineDistanceComparer
+- uid: MapQuest.Features.Comparers
+  commentId: N:MapQuest.Features.Comparers
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features.Comparers
+  nameWithType: MapQuest.Features.Comparers
+  fullName: MapQuest.Features.Comparers
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.Comparers
+    name: Comparers
+    isExternal: true
+    href: MapQuest.Features.Comparers.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.Comparers
+    name: Comparers
+    isExternal: true
+    href: MapQuest.Features.Comparers.html

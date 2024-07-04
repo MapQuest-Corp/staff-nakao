@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest
+  commentId: N:MapQuest
+  id: MapQuest
+  children:
+  - MapQuest.CoreException
+  - MapQuest.ProductInformation
+  langs:
+  - csharp
+  - vb
+  name: MapQuest
+  nameWithType: MapQuest
+  fullName: MapQuest
+  type: Namespace
+  assemblies:
+  - MapQuest.Core
+references:
+- uid: MapQuest.CoreException
+  commentId: T:MapQuest.CoreException
+  parent: MapQuest
+  isExternal: true
+  href: MapQuest.CoreException.html
+  name: CoreException
+  nameWithType: CoreException
+  fullName: MapQuest.CoreException
+- uid: MapQuest.ProductInformation
+  commentId: T:MapQuest.ProductInformation
+  isExternal: true
+  href: MapQuest.ProductInformation.html
+  name: ProductInformation
+  nameWithType: ProductInformation
+  fullName: MapQuest.ProductInformation
+- uid: MapQuest
+  commentId: N:MapQuest
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest
+  nameWithType: MapQuest
+  fullName: MapQuest

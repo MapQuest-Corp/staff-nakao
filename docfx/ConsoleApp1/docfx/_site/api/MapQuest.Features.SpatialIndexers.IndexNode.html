@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class IndexNode | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class IndexNode | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Features.SpatialIndexers.IndexNode">
+
+
+
+  <h1 id="MapQuest_Features_SpatialIndexers_IndexNode" data-uid="MapQuest.Features.SpatialIndexers.IndexNode" class="text-break">
+Class IndexNode  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Features.html">Features</a>.<a class="xref" href="MapQuest.Features.SpatialIndexers.html">SpatialIndexers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Features.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class IndexNode : Node, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MapQuest.Features.SpatialIndexers.Node.html">Node</a></div>
+      <div><span class="xref">IndexNode</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_GetHyperBox_System_Int32_">Node.GetHyperBox(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_UpdateNodeBoundingBox">Node.UpdateNodeBoundingBox()</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_ToString">Node.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_Parent">Node.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_ParentNumber">Node.ParentNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_PageNumber">Node.PageNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_Place">Node.Place</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_UsedSpace">Node.UsedSpace</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_UnionMinBounds">Node.UnionMinBounds</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_HyperBoxes">Node.HyperBoxes</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_Root">Node.Root</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Features_SpatialIndexers_IndexNode__ctor_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.#ctor*"></a>
+
+  <h3 id="MapQuest_Features_SpatialIndexers_IndexNode__ctor_System_Int32_MapQuest_Features_SpatialIndexers_PageFile_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.#ctor(System.Int32,MapQuest.Features.SpatialIndexers.PageFile)">
+  IndexNode(int, PageFile)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IndexNode(int pageNumber, PageFile file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>file</code> <a class="xref" href="MapQuest.Features.SpatialIndexers.PageFile.html">PageFile</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Features_SpatialIndexers_IndexNode_IsLeaf_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.IsLeaf*"></a>
+
+  <h3 id="MapQuest_Features_SpatialIndexers_IndexNode_IsLeaf" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.IsLeaf">
+  IsLeaf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsLeaf { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Features_SpatialIndexers_IndexNode_Clone_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.Clone*"></a>
+
+  <h3 id="MapQuest_Features_SpatialIndexers_IndexNode_Clone" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_SpatialIndexers_IndexNode_DeleteData_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.DeleteData*"></a>
+
+  <h3 id="MapQuest_Features_SpatialIndexers_IndexNode_DeleteData_System_Int32_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.DeleteData(System.Int32)">
+  DeleteData(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DeleteData(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_SpatialIndexers_IndexNode_GetData_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.GetData*"></a>
+
+  <h3 id="MapQuest_Features_SpatialIndexers_IndexNode_GetData_System_Int32_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.GetData(System.Int32)">
+  GetData(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object GetData(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_SpatialIndexers_IndexNode_GetDataIndex_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.GetDataIndex*"></a>
+
+  <h3 id="MapQuest_Features_SpatialIndexers_IndexNode_GetDataIndex_System_Int32_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.GetDataIndex(System.Int32)">
+  GetDataIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetDataIndex(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_SpatialIndexers_IndexNode_GetLeastEnlargement_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.GetLeastEnlargement*"></a>
+
+  <h3 id="MapQuest_Features_SpatialIndexers_IndexNode_GetLeastEnlargement_MapQuest_Features_SpatialIndexers_HyperBox_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.GetLeastEnlargement(MapQuest.Features.SpatialIndexers.HyperBox)">
+  GetLeastEnlargement(HyperBox)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLeastEnlargement(HyperBox box)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>box</code> <a class="xref" href="MapQuest.Features.SpatialIndexers.HyperBox.html">HyperBox</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_SpatialIndexers_IndexNode_InsertData_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.InsertData*"></a>
+
+  <h3 id="MapQuest_Features_SpatialIndexers_IndexNode_InsertData_System_Object_MapQuest_Features_SpatialIndexers_HyperBox_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.InsertData(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)">
+  InsertData(object, HyperBox)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InsertData(object node, HyperBox box)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>box</code> <a class="xref" href="MapQuest.Features.SpatialIndexers.HyperBox.html">HyperBox</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_SpatialIndexers_IndexNode_SetDataIndex_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.SetDataIndex*"></a>
+
+  <h3 id="MapQuest_Features_SpatialIndexers_IndexNode_SetDataIndex_System_Int32_System_Int32_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.SetDataIndex(System.Int32,System.Int32)">
+  SetDataIndex(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDataIndex(int index, int obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Features_SpatialIndexers_IndexNode_SetDataIndex_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.SetDataIndex*"></a>
+
+  <h3 id="MapQuest_Features_SpatialIndexers_IndexNode_SetDataIndex_System_Int32_System_Object_" data-uid="MapQuest.Features.SpatialIndexers.IndexNode.SetDataIndex(System.Int32,System.Object)">
+  SetDataIndex(int, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDataIndex(int index, object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

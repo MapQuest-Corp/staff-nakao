@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FileLock | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FileLock | mysite ">
+      
+      <meta name="description" content="ファイルを「ロック」する手法を提供するクラスです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.IO.FileLock">
+
+
+
+  <h1 id="MapQuest_IO_FileLock" data-uid="MapQuest.IO.FileLock" class="text-break">
+Class FileLock  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.IO.html">IO</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>ファイルを「ロック」する手法を提供するクラスです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FileLock : IFileLock, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">FileLock</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.IO.IFileLock.html">IFileLock</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+  <h2 id="MapQuest_IO_FileLock_examples">Examples</h2>
+  <p>次の例は、このクラスの一般的な使用方法を示します。</p>
+<pre><code class="lang-csharp">string filename     = @"C:\Data.dat";
+string lockFilename = @"C:\Data.dat.lock";
+
+try
+{
+	using (IFileLock locking = new FileLock(lockFilename))
+	{
+	    // ↓↓↓ using 内の処理は排他制御されます。
+		StreamWriter writer = new StreamWriter(filename);
+
+		writer.WriteLine("My Data...");
+
+		writer.Close();
+		// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+	}
+}
+catch (FileLockException exp)
+{
+	Debug.WriteLine(exp.SourceFile + " は、他のユーザーによって占有されています。");
+}</code></pre>
+
+
+  <h2 id="MapQuest_IO_FileLock_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>このクラスは、インスタンスの生成と同時にロックファイルを生成、
+破棄と同時にロックファイルを削除します。</p>
+<p></p>
+このクラスを using 句で使用することにより、using 句内の処理を排他にする事ができます。
+必ず using 句でのみ使用するようにしてください。
+<p></p>
+他のユーザーやプロセスが同じロックファイルを既に生成している場合は、インスタンスの生成時に
+<a class="xref" href="MapQuest.IO.FileLockException.html">FileLockException</a> が発生します。
+<p></p>
+他の理由でロックファイルが生成、または削除できなかった場合は 
+<a class="xref" href="MapQuest.IO.FileLockFatalException.html">FileLockFatalException</a> が発生します。
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_IO_FileLock__ctor_" data-uid="MapQuest.IO.FileLock.#ctor*"></a>
+
+  <h3 id="MapQuest_IO_FileLock__ctor_System_String_" data-uid="MapQuest.IO.FileLock.#ctor(System.String)">
+  FileLock(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ロックファイルを指定して、インスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileLock(string filePath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ロックファイル名。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_IO_FileLock__ctor_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>ロックファイルを作成し、ロックを開始します。</p>
+<p></p>
+既にファイルが存在しているなどの理由で、ファイルが作成出来ない場合は、
+<a class="xref" href="MapQuest.IO.FileLockException.html">FileLockException</a> をスローします。
+<p></p>
+それ以外の原因で、ファイルが作成出来ない場合は、
+<a class="xref" href="MapQuest.IO.FileLockFatalException.html">FileLockFatalException</a> をスローします。
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.IO.FileLockException.html">FileLockException</a></dt>
+    <dd><p>他のユーザーによって、
+既にファイルロック・オブジェクトが生成されています。</p>
+</dd>
+    <dt><a class="xref" href="MapQuest.IO.FileLockFatalException.html">FileLockFatalException</a></dt>
+    <dd><p>ディスク書き込み不可などの
+理由で、ロックファイルが生成できません。。</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_IO_FileLock_Source_" data-uid="MapQuest.IO.FileLock.Source*"></a>
+
+  <h3 id="MapQuest_IO_FileLock_Source" data-uid="MapQuest.IO.FileLock.Source">
+  Source
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在のロックファイル名を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Source { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>現在のロックファイル名。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_IO_FileLock_Dispose_" data-uid="MapQuest.IO.FileLock.Dispose*"></a>
+
+  <h3 id="MapQuest_IO_FileLock_Dispose" data-uid="MapQuest.IO.FileLock.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>このインスタンスによるファイルロックを解除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_IO_FileLock_Dispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>ロックファイルを削除し、ロックを解除します。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.IO.FileLockFatalException.html">FileLockFatalException</a></dt>
+    <dd><p>ロックファイルが削除できない場合に発生します。</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

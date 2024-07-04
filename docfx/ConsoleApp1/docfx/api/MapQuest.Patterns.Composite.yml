@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Patterns.Composite
+  commentId: N:MapQuest.Patterns.Composite
+  id: MapQuest.Patterns.Composite
+  children:
+  - MapQuest.Patterns.Composite.IEntry
+  - MapQuest.Patterns.Composite.ILeaf
+  - MapQuest.Patterns.Composite.INode
+  langs:
+  - csharp
+  - vb
+  name: MapQuest.Patterns.Composite
+  nameWithType: MapQuest.Patterns.Composite
+  fullName: MapQuest.Patterns.Composite
+  type: Namespace
+  assemblies:
+  - MapQuest.Core
+references:
+- uid: MapQuest.Patterns.Composite.IEntry
+  commentId: T:MapQuest.Patterns.Composite.IEntry
+  parent: MapQuest.Patterns.Composite
+  isExternal: true
+  href: MapQuest.Patterns.Composite.IEntry.html
+  name: IEntry
+  nameWithType: IEntry
+  fullName: MapQuest.Patterns.Composite.IEntry
+- uid: MapQuest.Patterns.Composite.ILeaf
+  commentId: T:MapQuest.Patterns.Composite.ILeaf
+  isExternal: true
+  href: MapQuest.Patterns.Composite.ILeaf.html
+  name: ILeaf
+  nameWithType: ILeaf
+  fullName: MapQuest.Patterns.Composite.ILeaf
+- uid: MapQuest.Patterns.Composite.INode
+  commentId: T:MapQuest.Patterns.Composite.INode
+  isExternal: true
+  href: MapQuest.Patterns.Composite.INode.html
+  name: INode
+  nameWithType: INode
+  fullName: MapQuest.Patterns.Composite.INode
+- uid: MapQuest.Patterns.Composite
+  commentId: N:MapQuest.Patterns.Composite
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Patterns.Composite
+  nameWithType: MapQuest.Patterns.Composite
+  fullName: MapQuest.Patterns.Composite
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Patterns
+    name: Patterns
+    isExternal: true
+    href: MapQuest.Patterns.html
+  - name: .
+  - uid: MapQuest.Patterns.Composite
+    name: Composite
+    isExternal: true
+    href: MapQuest.Patterns.Composite.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Patterns
+    name: Patterns
+    isExternal: true
+    href: MapQuest.Patterns.html
+  - name: .
+  - uid: MapQuest.Patterns.Composite
+    name: Composite
+    isExternal: true
+    href: MapQuest.Patterns.Composite.html

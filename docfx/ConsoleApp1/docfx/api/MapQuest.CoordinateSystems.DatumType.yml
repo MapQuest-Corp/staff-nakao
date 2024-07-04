@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.DatumType
+  commentId: T:MapQuest.CoordinateSystems.DatumType
+  id: DatumType
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.DatumType.IHDClassic
+  - MapQuest.CoordinateSystems.DatumType.IHDGeocentric
+  - MapQuest.CoordinateSystems.DatumType.IVDOther
+  langs:
+  - csharp
+  - vb
+  name: DatumType
+  nameWithType: DatumType
+  fullName: MapQuest.CoordinateSystems.DatumType
+  type: Enum
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 測地系の種類を示す列挙体です。
+  remarks: >-
+    The enumeration is split into ranges which indicate the datum's type.
+
+    The value should be one of the predefined values, or within the range
+
+    for local types.  This is part of the OpenGIS specification to allow
+
+    them to coordinate the addition of new interoperable codes.
+  example: []
+  syntax:
+    content: 'public enum DatumType : short'
+    content.vb: Public Enum DatumType As Short
+- uid: MapQuest.CoordinateSystems.DatumType.IHDClassic
+  commentId: F:MapQuest.CoordinateSystems.DatumType.IHDClassic
+  id: IHDClassic
+  parent: MapQuest.CoordinateSystems.DatumType
+  langs:
+  - csharp
+  - vb
+  name: IHDClassic
+  nameWithType: DatumType.IHDClassic
+  fullName: MapQuest.CoordinateSystems.DatumType.IHDClassic
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: ED50, NAD27 などの古い測地系を示します。
+  example: []
+  syntax:
+    content: IHDClassic = 1001
+    return:
+      type: MapQuest.CoordinateSystems.DatumType
+- uid: MapQuest.CoordinateSystems.DatumType.IHDGeocentric
+  commentId: F:MapQuest.CoordinateSystems.DatumType.IHDGeocentric
+  id: IHDGeocentric
+  parent: MapQuest.CoordinateSystems.DatumType
+  langs:
+  - csharp
+  - vb
+  name: IHDGeocentric
+  nameWithType: DatumType.IHDGeocentric
+  fullName: MapQuest.CoordinateSystems.DatumType.IHDGeocentric
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: ITRF 系や WGS 系など、衛星によって得られた測地系を示します。
+  example: []
+  syntax:
+    content: IHDGeocentric = 1002
+    return:
+      type: MapQuest.CoordinateSystems.DatumType
+- uid: MapQuest.CoordinateSystems.DatumType.IVDOther
+  commentId: F:MapQuest.CoordinateSystems.DatumType.IVDOther
+  id: IVDOther
+  parent: MapQuest.CoordinateSystems.DatumType
+  langs:
+  - csharp
+  - vb
+  name: IVDOther
+  nameWithType: DatumType.IVDOther
+  fullName: MapQuest.CoordinateSystems.DatumType.IVDOther
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: その他の測地系を示します。
+  example: []
+  syntax:
+    content: IVDOther = 2000
+    return:
+      type: MapQuest.CoordinateSystems.DatumType
+references:
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: MapQuest.CoordinateSystems.DatumType
+  commentId: T:MapQuest.CoordinateSystems.DatumType
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.DatumType.html
+  name: DatumType
+  nameWithType: DatumType
+  fullName: MapQuest.CoordinateSystems.DatumType

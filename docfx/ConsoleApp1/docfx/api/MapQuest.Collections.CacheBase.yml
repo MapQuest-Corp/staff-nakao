@@ -1,0 +1,1206 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Collections.CacheBase
+  commentId: T:MapQuest.Collections.CacheBase
+  id: CacheBase
+  parent: MapQuest.Collections
+  children:
+  - MapQuest.Collections.CacheBase.#ctor(System.Int32)
+  - MapQuest.Collections.CacheBase.#ctor(System.Int32,System.Boolean)
+  - MapQuest.Collections.CacheBase.Add(System.String,System.Object)
+  - MapQuest.Collections.CacheBase.Clear
+  - MapQuest.Collections.CacheBase.Contains(System.String)
+  - MapQuest.Collections.CacheBase.CopyTo(System.Array,System.Int32)
+  - MapQuest.Collections.CacheBase.Count
+  - MapQuest.Collections.CacheBase.Dictionary
+  - MapQuest.Collections.CacheBase.GetEnumerator
+  - MapQuest.Collections.CacheBase.IsFixedSize
+  - MapQuest.Collections.CacheBase.IsReadOnly
+  - MapQuest.Collections.CacheBase.IsSynchronized
+  - MapQuest.Collections.CacheBase.Item(System.String)
+  - MapQuest.Collections.CacheBase.Keys
+  - MapQuest.Collections.CacheBase.MaxCapacity
+  - MapQuest.Collections.CacheBase.Remove(System.String)
+  - MapQuest.Collections.CacheBase.SyncRoot
+  - MapQuest.Collections.CacheBase.Values
+  langs:
+  - csharp
+  - vb
+  name: CacheBase
+  nameWithType: CacheBase
+  fullName: MapQuest.Collections.CacheBase
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: オンメモリで動作する、典型的なキャッシュの実装の基礎となるクラス実装を提供します。
+  example: []
+  syntax:
+    content: 'public class CacheBase : IDictionary, ICollection, IEnumerable'
+    content.vb: Public Class CacheBase Implements IDictionary, ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - MapQuest.Collections.DisposableCacheBase
+  implements:
+  - System.Collections.IDictionary
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Collections.CacheBase.Dictionary
+  commentId: F:MapQuest.Collections.CacheBase.Dictionary
+  id: Dictionary
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: Dictionary
+  nameWithType: CacheBase.Dictionary
+  fullName: MapQuest.Collections.CacheBase.Dictionary
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  syntax:
+    content: protected HybridDictionary Dictionary
+    return:
+      type: System.Collections.Specialized.HybridDictionary
+    content.vb: Protected Dictionary As HybridDictionary
+- uid: MapQuest.Collections.CacheBase.#ctor(System.Int32,System.Boolean)
+  commentId: M:MapQuest.Collections.CacheBase.#ctor(System.Int32,System.Boolean)
+  id: '#ctor(System.Int32,System.Boolean)'
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: CacheBase(int, bool)
+  nameWithType: CacheBase.CacheBase(int, bool)
+  fullName: MapQuest.Collections.CacheBase.CacheBase(int, bool)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: CacheBase クラスの新しいインスタンスを、キャッシュ項目の最大登録数、大文字と小文字の区別を指定して初期化します。
+  example: []
+  syntax:
+    content: public CacheBase(int capacity, bool caseInsensitive)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: キャッシュ項目の登録最大数。
+    - id: caseInsensitive
+      type: System.Boolean
+      description: キーの大文字と小文字の区別。
+    content.vb: Public Sub New(capacity As Integer, caseInsensitive As Boolean)
+  overload: MapQuest.Collections.CacheBase.#ctor*
+  nameWithType.vb: CacheBase.New(Integer, Boolean)
+  fullName.vb: MapQuest.Collections.CacheBase.New(Integer, Boolean)
+  name.vb: New(Integer, Boolean)
+- uid: MapQuest.Collections.CacheBase.#ctor(System.Int32)
+  commentId: M:MapQuest.Collections.CacheBase.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: CacheBase(int)
+  nameWithType: CacheBase.CacheBase(int)
+  fullName: MapQuest.Collections.CacheBase.CacheBase(int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 大文字と小文字を区別する CacheBase クラスの新しいインスタンスを、キャッシュ項目の最大登録数を指定して初期化します。
+  example: []
+  syntax:
+    content: public CacheBase(int capacity)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: キャッシュ項目の登録最大数。
+    content.vb: Public Sub New(capacity As Integer)
+  overload: MapQuest.Collections.CacheBase.#ctor*
+  nameWithType.vb: CacheBase.New(Integer)
+  fullName.vb: MapQuest.Collections.CacheBase.New(Integer)
+  name.vb: New(Integer)
+- uid: MapQuest.Collections.CacheBase.Add(System.String,System.Object)
+  commentId: M:MapQuest.Collections.CacheBase.Add(System.String,System.Object)
+  id: Add(System.String,System.Object)
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: Add(string, object)
+  nameWithType: CacheBase.Add(string, object)
+  fullName: MapQuest.Collections.CacheBase.Add(string, object)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 指定したキーおよび値を持つエントリを CacheBase に追加します。
+  example: []
+  syntax:
+    content: public virtual void Add(string key, object value)
+    parameters:
+    - id: key
+      type: System.String
+      description: 追加するエントリのキー。
+    - id: value
+      type: System.Object
+      description: 追加するエントリの値。値は null 参照 (Visual Basic では Nothing) に設定できます。
+    content.vb: Public Overridable Sub Add(key As String, value As Object)
+  overload: MapQuest.Collections.CacheBase.Add*
+  nameWithType.vb: CacheBase.Add(String, Object)
+  fullName.vb: MapQuest.Collections.CacheBase.Add(String, Object)
+  name.vb: Add(String, Object)
+- uid: MapQuest.Collections.CacheBase.Clear
+  commentId: M:MapQuest.Collections.CacheBase.Clear
+  id: Clear
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: CacheBase.Clear()
+  fullName: MapQuest.Collections.CacheBase.Clear()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: CacheBase からすべてのエントリを削除します。
+  example: []
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear()
+  overload: MapQuest.Collections.CacheBase.Clear*
+  implements:
+  - System.Collections.IDictionary.Clear
+- uid: MapQuest.Collections.CacheBase.Contains(System.String)
+  commentId: M:MapQuest.Collections.CacheBase.Contains(System.String)
+  id: Contains(System.String)
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: Contains(string)
+  nameWithType: CacheBase.Contains(string)
+  fullName: MapQuest.Collections.CacheBase.Contains(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: CacheBase に特定のキーが格納されているかどうかを判断します。
+  example: []
+  syntax:
+    content: public virtual bool Contains(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: CacheBase 内で検索されるキー。
+    return:
+      type: System.Boolean
+      description: 指定したキーを持つエントリが CacheBase に格納されている場合は true 。それ以外の場合は false 。
+    content.vb: Public Overridable Function Contains(key As String) As Boolean
+  overload: MapQuest.Collections.CacheBase.Contains*
+  nameWithType.vb: CacheBase.Contains(String)
+  fullName.vb: MapQuest.Collections.CacheBase.Contains(String)
+  name.vb: Contains(String)
+- uid: MapQuest.Collections.CacheBase.CopyTo(System.Array,System.Int32)
+  commentId: M:MapQuest.Collections.CacheBase.CopyTo(System.Array,System.Int32)
+  id: CopyTo(System.Array,System.Int32)
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Array, int)
+  nameWithType: CacheBase.CopyTo(Array, int)
+  fullName: MapQuest.Collections.CacheBase.CopyTo(System.Array, int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 1 次元の Array インスタンスの指定したインデックスに CacheBase のエントリをコピーします。
+  example: []
+  syntax:
+    content: public virtual void CopyTo(Array array, int index)
+    parameters:
+    - id: array
+      type: System.Array
+      description: CacheBase から DictionaryEntry オブジェクトがコピーされる 1 次元の Array 。 Array には、0 から始まるインデックス番号が必要です。
+    - id: index
+      type: System.Int32
+      description: コピーの開始位置となる、array の 0 から始まるインデックス番号。
+    content.vb: Public Overridable Sub CopyTo(array As Array, index As Integer)
+  overload: MapQuest.Collections.CacheBase.CopyTo*
+  implements:
+  - System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  nameWithType.vb: CacheBase.CopyTo(Array, Integer)
+  fullName.vb: MapQuest.Collections.CacheBase.CopyTo(System.Array, Integer)
+  name.vb: CopyTo(Array, Integer)
+- uid: MapQuest.Collections.CacheBase.GetEnumerator
+  commentId: M:MapQuest.Collections.CacheBase.GetEnumerator
+  id: GetEnumerator
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: CacheBase.GetEnumerator()
+  fullName: MapQuest.Collections.CacheBase.GetEnumerator()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: CacheBase を反復処理できる IDictionaryEnumerator を返します。
+  example: []
+  syntax:
+    content: public virtual IDictionaryEnumerator GetEnumerator()
+    return:
+      type: System.Collections.IDictionaryEnumerator
+      description: CacheBase の IDictionaryEnumerator 。
+    content.vb: Public Overridable Function GetEnumerator() As IDictionaryEnumerator
+  overload: MapQuest.Collections.CacheBase.GetEnumerator*
+  implements:
+  - System.Collections.IDictionary.GetEnumerator
+- uid: MapQuest.Collections.CacheBase.Remove(System.String)
+  commentId: M:MapQuest.Collections.CacheBase.Remove(System.String)
+  id: Remove(System.String)
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: Remove(string)
+  nameWithType: CacheBase.Remove(string)
+  fullName: MapQuest.Collections.CacheBase.Remove(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: 指定したキーを持つエントリを CacheBase から削除します。
+  example: []
+  syntax:
+    content: public virtual void Remove(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: 削除するエントリのキー。
+    content.vb: Public Overridable Sub Remove(key As String)
+  overload: MapQuest.Collections.CacheBase.Remove*
+  nameWithType.vb: CacheBase.Remove(String)
+  fullName.vb: MapQuest.Collections.CacheBase.Remove(String)
+  name.vb: Remove(String)
+- uid: MapQuest.Collections.CacheBase.MaxCapacity
+  commentId: P:MapQuest.Collections.CacheBase.MaxCapacity
+  id: MaxCapacity
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: MaxCapacity
+  nameWithType: CacheBase.MaxCapacity
+  fullName: MapQuest.Collections.CacheBase.MaxCapacity
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: このインスタンスの最大容量を設定または取得します。
+  remarks: >-
+    このプロパティを設定すると、それまで保持していたキャッシュはクリアされます。
+
+    現在と同じ値を設定した場合は何も行われません。
+  example: []
+  syntax:
+    content: public virtual int MaxCapacity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: このインスタンスの最大容量。
+    content.vb: Public Overridable Property MaxCapacity As Integer
+  overload: MapQuest.Collections.CacheBase.MaxCapacity*
+- uid: MapQuest.Collections.CacheBase.Count
+  commentId: P:MapQuest.Collections.CacheBase.Count
+  id: Count
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: CacheBase.Count
+  fullName: MapQuest.Collections.CacheBase.Count
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: CacheBase に格納されているキーと値の組み合わせの数を取得します。
+  example: []
+  syntax:
+    content: public virtual int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+  overload: MapQuest.Collections.CacheBase.Count*
+  implements:
+  - System.Collections.ICollection.Count
+- uid: MapQuest.Collections.CacheBase.IsFixedSize
+  commentId: P:MapQuest.Collections.CacheBase.IsFixedSize
+  id: IsFixedSize
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: IsFixedSize
+  nameWithType: CacheBase.IsFixedSize
+  fullName: MapQuest.Collections.CacheBase.IsFixedSize
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: CacheBase が固定サイズかどうかを示す値を取得します。
+  example: []
+  syntax:
+    content: public virtual bool IsFixedSize { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsFixedSize As Boolean
+  overload: MapQuest.Collections.CacheBase.IsFixedSize*
+  implements:
+  - System.Collections.IDictionary.IsFixedSize
+- uid: MapQuest.Collections.CacheBase.IsReadOnly
+  commentId: P:MapQuest.Collections.CacheBase.IsReadOnly
+  id: IsReadOnly
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: CacheBase.IsReadOnly
+  fullName: MapQuest.Collections.CacheBase.IsReadOnly
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: CacheBase が読み取り専用かどうかを示す値を取得します。
+  example: []
+  syntax:
+    content: public virtual bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsReadOnly As Boolean
+  overload: MapQuest.Collections.CacheBase.IsReadOnly*
+  implements:
+  - System.Collections.IDictionary.IsReadOnly
+- uid: MapQuest.Collections.CacheBase.IsSynchronized
+  commentId: P:MapQuest.Collections.CacheBase.IsSynchronized
+  id: IsSynchronized
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: IsSynchronized
+  nameWithType: CacheBase.IsSynchronized
+  fullName: MapQuest.Collections.CacheBase.IsSynchronized
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: CacheBase が同期されている (スレッド セーフである) かどうかを示す値を取得します。
+  example: []
+  syntax:
+    content: public virtual bool IsSynchronized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsSynchronized As Boolean
+  overload: MapQuest.Collections.CacheBase.IsSynchronized*
+  implements:
+  - System.Collections.ICollection.IsSynchronized
+- uid: MapQuest.Collections.CacheBase.Item(System.String)
+  commentId: P:MapQuest.Collections.CacheBase.Item(System.String)
+  id: Item(System.String)
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: this[string]
+  nameWithType: CacheBase.this[string]
+  fullName: MapQuest.Collections.CacheBase.this[string]
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    指定したキーに関連付けられている値を取得または設定します。
+
+    [C#] C# では、このプロパティは CacheBase クラスのインデクサになります。
+  example: []
+  syntax:
+    content: public virtual object this[string key] { get; set; }
+    parameters:
+    - id: key
+      type: System.String
+      description: 値を取得または設定する対象のキー。
+    return:
+      type: System.Object
+    content.vb: Public Overridable Default Property this[](key As String) As Object
+  overload: MapQuest.Collections.CacheBase.Item*
+  nameWithType.vb: CacheBase.this[](String)
+  fullName.vb: MapQuest.Collections.CacheBase.this[](String)
+  name.vb: this[](String)
+- uid: MapQuest.Collections.CacheBase.Keys
+  commentId: P:MapQuest.Collections.CacheBase.Keys
+  id: Keys
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: Keys
+  nameWithType: CacheBase.Keys
+  fullName: MapQuest.Collections.CacheBase.Keys
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: CacheBase 内のキーを格納している ICollection を取得します。
+  example: []
+  syntax:
+    content: public virtual ICollection Keys { get; }
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+    content.vb: Public Overridable ReadOnly Property Keys As ICollection
+  overload: MapQuest.Collections.CacheBase.Keys*
+  implements:
+  - System.Collections.IDictionary.Keys
+- uid: MapQuest.Collections.CacheBase.SyncRoot
+  commentId: P:MapQuest.Collections.CacheBase.SyncRoot
+  id: SyncRoot
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: SyncRoot
+  nameWithType: CacheBase.SyncRoot
+  fullName: MapQuest.Collections.CacheBase.SyncRoot
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: CacheBase へのアクセスを同期するために使用できるオブジェクトを取得します。
+  example: []
+  syntax:
+    content: public virtual object SyncRoot { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Overridable ReadOnly Property SyncRoot As Object
+  overload: MapQuest.Collections.CacheBase.SyncRoot*
+  implements:
+  - System.Collections.ICollection.SyncRoot
+- uid: MapQuest.Collections.CacheBase.Values
+  commentId: P:MapQuest.Collections.CacheBase.Values
+  id: Values
+  parent: MapQuest.Collections.CacheBase
+  langs:
+  - csharp
+  - vb
+  name: Values
+  nameWithType: CacheBase.Values
+  fullName: MapQuest.Collections.CacheBase.Values
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: CacheBase 内の値を格納している ICollection を取得します。
+  example: []
+  syntax:
+    content: public virtual ICollection Values { get; }
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+    content.vb: Public Overridable ReadOnly Property Values As ICollection
+  overload: MapQuest.Collections.CacheBase.Values*
+  implements:
+  - System.Collections.IDictionary.Values
+references:
+- uid: MapQuest.Collections
+  commentId: N:MapQuest.Collections
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Collections
+  nameWithType: MapQuest.Collections
+  fullName: MapQuest.Collections
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.IDictionary
+  commentId: T:System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Collections.Specialized.HybridDictionary
+  commentId: T:System.Collections.Specialized.HybridDictionary
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.hybriddictionary
+  name: HybridDictionary
+  nameWithType: HybridDictionary
+  fullName: System.Collections.Specialized.HybridDictionary
+- uid: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+- uid: MapQuest.Collections.CacheBase.#ctor*
+  commentId: Overload:MapQuest.Collections.CacheBase.#ctor
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase__ctor_System_Int32_System_Boolean_
+  name: CacheBase
+  nameWithType: CacheBase.CacheBase
+  fullName: MapQuest.Collections.CacheBase.CacheBase
+  nameWithType.vb: CacheBase.New
+  fullName.vb: MapQuest.Collections.CacheBase.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.Collections.CacheBase.Add*
+  commentId: Overload:MapQuest.Collections.CacheBase.Add
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_Add_System_String_System_Object_
+  name: Add
+  nameWithType: CacheBase.Add
+  fullName: MapQuest.Collections.CacheBase.Add
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.Collections.CacheBase.Clear*
+  commentId: Overload:MapQuest.Collections.CacheBase.Clear
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_Clear
+  name: Clear
+  nameWithType: CacheBase.Clear
+  fullName: MapQuest.Collections.CacheBase.Clear
+- uid: System.Collections.IDictionary.Clear
+  commentId: M:System.Collections.IDictionary.Clear
+  parent: System.Collections.IDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.clear
+  name: Clear()
+  nameWithType: IDictionary.Clear()
+  fullName: System.Collections.IDictionary.Clear()
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.clear
+  - name: (
+  - name: )
+- uid: MapQuest.Collections.CacheBase.Contains*
+  commentId: Overload:MapQuest.Collections.CacheBase.Contains
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_Contains_System_String_
+  name: Contains
+  nameWithType: CacheBase.Contains
+  fullName: MapQuest.Collections.CacheBase.Contains
+- uid: MapQuest.Collections.CacheBase.CopyTo*
+  commentId: Overload:MapQuest.Collections.CacheBase.CopyTo
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_CopyTo_System_Array_System_Int32_
+  name: CopyTo
+  nameWithType: CacheBase.CopyTo
+  fullName: MapQuest.Collections.CacheBase.CopyTo
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.copyto
+  name: CopyTo(Array, int)
+  nameWithType: ICollection.CopyTo(Array, int)
+  fullName: System.Collections.ICollection.CopyTo(System.Array, int)
+  nameWithType.vb: ICollection.CopyTo(Array, Integer)
+  fullName.vb: System.Collections.ICollection.CopyTo(System.Array, Integer)
+  name.vb: CopyTo(Array, Integer)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.copyto
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.copyto
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Array
+  commentId: T:System.Array
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.array
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: MapQuest.Collections.CacheBase.GetEnumerator*
+  commentId: Overload:MapQuest.Collections.CacheBase.GetEnumerator
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_GetEnumerator
+  name: GetEnumerator
+  nameWithType: CacheBase.GetEnumerator
+  fullName: MapQuest.Collections.CacheBase.GetEnumerator
+- uid: System.Collections.IDictionary.GetEnumerator
+  commentId: M:System.Collections.IDictionary.GetEnumerator
+  parent: System.Collections.IDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.getenumerator
+  name: GetEnumerator()
+  nameWithType: IDictionary.GetEnumerator()
+  fullName: System.Collections.IDictionary.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IDictionary.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.IDictionaryEnumerator
+  commentId: T:System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionaryenumerator
+  name: IDictionaryEnumerator
+  nameWithType: IDictionaryEnumerator
+  fullName: System.Collections.IDictionaryEnumerator
+- uid: MapQuest.Collections.CacheBase.Remove*
+  commentId: Overload:MapQuest.Collections.CacheBase.Remove
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_Remove_System_String_
+  name: Remove
+  nameWithType: CacheBase.Remove
+  fullName: MapQuest.Collections.CacheBase.Remove
+- uid: MapQuest.Collections.CacheBase.MaxCapacity*
+  commentId: Overload:MapQuest.Collections.CacheBase.MaxCapacity
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_MaxCapacity
+  name: MaxCapacity
+  nameWithType: CacheBase.MaxCapacity
+  fullName: MapQuest.Collections.CacheBase.MaxCapacity
+- uid: MapQuest.Collections.CacheBase.Count*
+  commentId: Overload:MapQuest.Collections.CacheBase.Count
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_Count
+  name: Count
+  nameWithType: CacheBase.Count
+  fullName: MapQuest.Collections.CacheBase.Count
+- uid: System.Collections.ICollection.Count
+  commentId: P:System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.count
+  name: Count
+  nameWithType: ICollection.Count
+  fullName: System.Collections.ICollection.Count
+- uid: MapQuest.Collections.CacheBase.IsFixedSize*
+  commentId: Overload:MapQuest.Collections.CacheBase.IsFixedSize
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_IsFixedSize
+  name: IsFixedSize
+  nameWithType: CacheBase.IsFixedSize
+  fullName: MapQuest.Collections.CacheBase.IsFixedSize
+- uid: System.Collections.IDictionary.IsFixedSize
+  commentId: P:System.Collections.IDictionary.IsFixedSize
+  parent: System.Collections.IDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.isfixedsize
+  name: IsFixedSize
+  nameWithType: IDictionary.IsFixedSize
+  fullName: System.Collections.IDictionary.IsFixedSize
+- uid: MapQuest.Collections.CacheBase.IsReadOnly*
+  commentId: Overload:MapQuest.Collections.CacheBase.IsReadOnly
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_IsReadOnly
+  name: IsReadOnly
+  nameWithType: CacheBase.IsReadOnly
+  fullName: MapQuest.Collections.CacheBase.IsReadOnly
+- uid: System.Collections.IDictionary.IsReadOnly
+  commentId: P:System.Collections.IDictionary.IsReadOnly
+  parent: System.Collections.IDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.isreadonly
+  name: IsReadOnly
+  nameWithType: IDictionary.IsReadOnly
+  fullName: System.Collections.IDictionary.IsReadOnly
+- uid: MapQuest.Collections.CacheBase.IsSynchronized*
+  commentId: Overload:MapQuest.Collections.CacheBase.IsSynchronized
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_IsSynchronized
+  name: IsSynchronized
+  nameWithType: CacheBase.IsSynchronized
+  fullName: MapQuest.Collections.CacheBase.IsSynchronized
+- uid: System.Collections.ICollection.IsSynchronized
+  commentId: P:System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.issynchronized
+  name: IsSynchronized
+  nameWithType: ICollection.IsSynchronized
+  fullName: System.Collections.ICollection.IsSynchronized
+- uid: MapQuest.Collections.CacheBase.Item*
+  commentId: Overload:MapQuest.Collections.CacheBase.Item
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_Item_System_String_
+  name: this
+  nameWithType: CacheBase.this
+  fullName: MapQuest.Collections.CacheBase.this
+  nameWithType.vb: CacheBase.this[]
+  fullName.vb: MapQuest.Collections.CacheBase.this[]
+  name.vb: this[]
+- uid: MapQuest.Collections.CacheBase.Keys*
+  commentId: Overload:MapQuest.Collections.CacheBase.Keys
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_Keys
+  name: Keys
+  nameWithType: CacheBase.Keys
+  fullName: MapQuest.Collections.CacheBase.Keys
+- uid: System.Collections.IDictionary.Keys
+  commentId: P:System.Collections.IDictionary.Keys
+  parent: System.Collections.IDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.keys
+  name: Keys
+  nameWithType: IDictionary.Keys
+  fullName: System.Collections.IDictionary.Keys
+- uid: MapQuest.Collections.CacheBase.SyncRoot*
+  commentId: Overload:MapQuest.Collections.CacheBase.SyncRoot
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_SyncRoot
+  name: SyncRoot
+  nameWithType: CacheBase.SyncRoot
+  fullName: MapQuest.Collections.CacheBase.SyncRoot
+- uid: System.Collections.ICollection.SyncRoot
+  commentId: P:System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.syncroot
+  name: SyncRoot
+  nameWithType: ICollection.SyncRoot
+  fullName: System.Collections.ICollection.SyncRoot
+- uid: MapQuest.Collections.CacheBase.Values*
+  commentId: Overload:MapQuest.Collections.CacheBase.Values
+  isExternal: true
+  href: MapQuest.Collections.CacheBase.html#MapQuest_Collections_CacheBase_Values
+  name: Values
+  nameWithType: CacheBase.Values
+  fullName: MapQuest.Collections.CacheBase.Values
+- uid: System.Collections.IDictionary.Values
+  commentId: P:System.Collections.IDictionary.Values
+  parent: System.Collections.IDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary.values
+  name: Values
+  nameWithType: IDictionary.Values
+  fullName: System.Collections.IDictionary.Values

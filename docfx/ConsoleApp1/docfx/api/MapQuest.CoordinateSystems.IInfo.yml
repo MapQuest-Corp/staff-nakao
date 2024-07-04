@@ -1,0 +1,546 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.IInfo
+  commentId: T:MapQuest.CoordinateSystems.IInfo
+  id: IInfo
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.IInfo.Abbreviation
+  - MapQuest.CoordinateSystems.IInfo.Alias
+  - MapQuest.CoordinateSystems.IInfo.Authority
+  - MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  - MapQuest.CoordinateSystems.IInfo.Name
+  - MapQuest.CoordinateSystems.IInfo.Remarks
+  - MapQuest.CoordinateSystems.IInfo.WKT
+  - MapQuest.CoordinateSystems.IInfo.XML
+  langs:
+  - csharp
+  - vb
+  name: IInfo
+  nameWithType: IInfo
+  fullName: MapQuest.CoordinateSystems.IInfo
+  type: Interface
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 座標系に適用可能なメタデータのための基礎インターフェースです。
+  remarks: >-
+    メタデータ <xref href="MapQuest.CoordinateSystems.IInfo.Abbreviation" data-throw-if-not-resolved="false"></xref>, <xref href="MapQuest.CoordinateSystems.IInfo.Alias" data-throw-if-not-resolved="false"></xref>, 
+
+    <xref href="MapQuest.CoordinateSystems.IInfo.Authority" data-throw-if-not-resolved="false"></xref>, <xref href="MapQuest.CoordinateSystems.IInfo.AuthorityCode" data-throw-if-not-resolved="false"></xref>, 
+
+    <xref href="MapQuest.CoordinateSystems.IInfo.Name" data-throw-if-not-resolved="false"></xref> , <xref href="MapQuest.CoordinateSystems.IInfo.Remarks" data-throw-if-not-resolved="false"></xref> は、
+
+    「OpenGIS Simple Features interfaces specifications」で定義されています。
+
+    そのため、これらの項目は、このクラスにより保持することができます。
+
+    仕様では、これらの項目の内容は何でなければならないかは厳密に定められていません。
+
+    しかし、次のガイドラインが用意されています。
+
+    <ul><li><b>ICoordinateSystemAuthorityFactory</b> により座標系を作成する場合、
+
+    <xref href="MapQuest.CoordinateSystems.IInfo.Authority" data-throw-if-not-resolved="false"></xref> は、
+
+    ファクトリオブジェクトの生成者によって Authority 名に設定されるべきです。
+
+    また、<xref href="MapQuest.CoordinateSystems.IInfo.AuthorityCode" data-throw-if-not-resolved="false"></xref> は、
+
+    ファクトリオブジェクトの使用者によって供給されます。
+
+    (Authority が EPSG ならば、ファクトリの開発者は、
+
+    「EPSG」テーブルの中から対応する情報を取り出し使用する事が考えられます。)
+
+    </li><li><b>ICoordinateSystemFactory</b> が <xref href="MapQuest.CoordinateSystems.CoordinateSystem" data-throw-if-not-resolved="false"></xref> 
+
+    オブジェクトを作成する場合、
+
+    名前はクライアントによって供給された値に設定されるべきです。
+
+    他の項目はすべて空にすることが望ましいです。
+
+    </li></ul>
+  example: []
+  syntax:
+    content: 'public interface IInfo : ICloneable'
+    content.vb: Public Interface IInfo Inherits ICloneable
+  seealso:
+  - linkType: HRef
+    linkId: http://www.epsg.org
+    altText: European Petroleum Survey Group (EPSG)
+  - linkType: HRef
+    linkId: http://www.opengis.org/docs/01-009.pdf
+    altText: OpenGIS Coordinate Transformation Services
+  inheritedMembers:
+  - System.ICloneable.Clone
+- uid: MapQuest.CoordinateSystems.IInfo.Abbreviation
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Abbreviation
+  id: Abbreviation
+  parent: MapQuest.CoordinateSystems.IInfo
+  langs:
+  - csharp
+  - vb
+  name: Abbreviation
+  nameWithType: IInfo.Abbreviation
+  fullName: MapQuest.CoordinateSystems.IInfo.Abbreviation
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: このオブジェクトの省略名を取得します。
+  example: []
+  syntax:
+    content: string Abbreviation { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: <xref href="MapQuest.CoordinateSystems.IInfo.Name" data-throw-if-not-resolved="false"></xref> の省略名。存在しない場合は空文字を返します。読み取り専用です。
+    content.vb: ReadOnly Property Abbreviation As String
+  overload: MapQuest.CoordinateSystems.IInfo.Abbreviation*
+- uid: MapQuest.CoordinateSystems.IInfo.Alias
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Alias
+  id: Alias
+  parent: MapQuest.CoordinateSystems.IInfo
+  langs:
+  - csharp
+  - vb
+  name: Alias
+  nameWithType: IInfo.Alias
+  fullName: MapQuest.CoordinateSystems.IInfo.Alias
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: <xref href="MapQuest.CoordinateSystems.IInfo.Name" data-throw-if-not-resolved="false"></xref> の別名を取得します。
+  example: []
+  syntax:
+    content: string Alias { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: >-
+        <xref href="MapQuest.CoordinateSystems.IInfo.Name" data-throw-if-not-resolved="false"></xref> の別名。
+                <xref href="MapQuest.CoordinateSystems.IInfo.Name" data-throw-if-not-resolved="false"></xref> に対して別の呼び方、別の名称があれば返します。
+                存在しない場合は空文字を返します。読み取り専用です。
+    content.vb: ReadOnly Property [Alias] As String
+  overload: MapQuest.CoordinateSystems.IInfo.Alias*
+- uid: MapQuest.CoordinateSystems.IInfo.Authority
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Authority
+  id: Authority
+  parent: MapQuest.CoordinateSystems.IInfo
+  langs:
+  - csharp
+  - vb
+  name: Authority
+  nameWithType: IInfo.Authority
+  fullName: MapQuest.CoordinateSystems.IInfo.Authority
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: このオブジェクトを策定した機関や団体の名称を取得します。
+  remarks: >-
+    <xref href="MapQuest.CoordinateSystems.IInfo.Authority" data-throw-if-not-resolved="false"></xref> は、 <xref href="MapQuest.CoordinateSystems.IInfo.AuthorityCode" data-throw-if-not-resolved="false"></xref> 
+            を策定した機関・組織・団体の名称です。
+            例えば、ヨーロッパの石油調査グループである 
+            "European Petroleum Survey Group (EPSG)" では、座標系やその他の空間に
+            関する定義情報をコード付けして策定しています。
+            <p></p>
+            例えば、「WGS84 緯度経度座標系」の EPSG コードは '4326' です。
+            <p></p>
+            この場合、<xref href="MapQuest.CoordinateSystems.IInfo.Authority" data-throw-if-not-resolved="false"></xref> は "EPSG" 、 
+            <xref href="MapQuest.CoordinateSystems.IInfo.AuthorityCode" data-throw-if-not-resolved="false"></xref> は "4326" になります。
+  example: []
+  syntax:
+    content: string Authority { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: 機関や団体の名称。
+    content.vb: ReadOnly Property Authority As String
+  overload: MapQuest.CoordinateSystems.IInfo.Authority*
+- uid: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  commentId: P:MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  id: AuthorityCode
+  parent: MapQuest.CoordinateSystems.IInfo
+  langs:
+  - csharp
+  - vb
+  name: AuthorityCode
+  nameWithType: IInfo.AuthorityCode
+  fullName: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: <xref href="MapQuest.CoordinateSystems.IInfo.Authority" data-throw-if-not-resolved="false"></xref> によって策定されたこのクラスを識別する ID を取得します。
+  remarks: >-
+    <xref href="MapQuest.CoordinateSystems.IInfo.Authority" data-throw-if-not-resolved="false"></xref> は、 <xref href="MapQuest.CoordinateSystems.IInfo.AuthorityCode" data-throw-if-not-resolved="false"></xref> 
+            を策定した機関・組織・団体の名称です。
+            例えば、ヨーロッパの石油調査グループである 
+            "European Petroleum Survey Group (EPSG)" では、座標系やその他の空間に
+            関する定義情報をコード付けして策定しています。
+            <p></p>
+            例えば、「WGS84 緯度経度座標系」の EPSG コードは '4326' です。
+            <p></p>
+            この場合、<xref href="MapQuest.CoordinateSystems.IInfo.Authority" data-throw-if-not-resolved="false"></xref> は "EPSG" 、 
+            <xref href="MapQuest.CoordinateSystems.IInfo.AuthorityCode" data-throw-if-not-resolved="false"></xref> は "4326" になります。
+  example: []
+  syntax:
+    content: string AuthorityCode { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: <xref href="MapQuest.CoordinateSystems.IInfo.Authority" data-throw-if-not-resolved="false"></xref> によって策定されたこのクラスを識別する ID となる文字列。
+    content.vb: ReadOnly Property AuthorityCode As String
+  overload: MapQuest.CoordinateSystems.IInfo.AuthorityCode*
+- uid: MapQuest.CoordinateSystems.IInfo.Name
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Name
+  id: Name
+  parent: MapQuest.CoordinateSystems.IInfo
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IInfo.Name
+  fullName: MapQuest.CoordinateSystems.IInfo.Name
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: このオブジェクトの名称を取得します。
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: このオブジェクトの名称。
+    content.vb: ReadOnly Property Name As String
+  overload: MapQuest.CoordinateSystems.IInfo.Name*
+- uid: MapQuest.CoordinateSystems.IInfo.Remarks
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Remarks
+  id: Remarks
+  parent: MapQuest.CoordinateSystems.IInfo
+  langs:
+  - csharp
+  - vb
+  name: Remarks
+  nameWithType: IInfo.Remarks
+  fullName: MapQuest.CoordinateSystems.IInfo.Remarks
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: このオブジェクトの説明を取得します。
+  example: []
+  syntax:
+    content: string Remarks { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: このオブジェクトの説明。
+    content.vb: ReadOnly Property Remarks As String
+  overload: MapQuest.CoordinateSystems.IInfo.Remarks*
+- uid: MapQuest.CoordinateSystems.IInfo.WKT
+  commentId: P:MapQuest.CoordinateSystems.IInfo.WKT
+  id: WKT
+  parent: MapQuest.CoordinateSystems.IInfo
+  langs:
+  - csharp
+  - vb
+  name: WKT
+  nameWithType: IInfo.WKT
+  fullName: MapQuest.CoordinateSystems.IInfo.WKT
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: このオブジェクトを <b>WKT(Well-Known Text)</b> 化した文字列を取得します。
+  example: []
+  syntax:
+    content: string WKT { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: このオブジェクトを <b>WKT(Well-Known Text)</b> 化した文字列。
+    content.vb: ReadOnly Property WKT As String
+  overload: MapQuest.CoordinateSystems.IInfo.WKT*
+- uid: MapQuest.CoordinateSystems.IInfo.XML
+  commentId: P:MapQuest.CoordinateSystems.IInfo.XML
+  id: XML
+  parent: MapQuest.CoordinateSystems.IInfo
+  langs:
+  - csharp
+  - vb
+  name: XML
+  nameWithType: IInfo.XML
+  fullName: MapQuest.CoordinateSystems.IInfo.XML
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: このオブジェクトを XML 化した文字列を取得します。
+  example: []
+  syntax:
+    content: string XML { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: このオブジェクトを XML 化した文字列。
+    content.vb: ReadOnly Property XML As String
+  overload: MapQuest.CoordinateSystems.IInfo.XML*
+references:
+- uid: MapQuest.CoordinateSystems.IInfo.Abbreviation
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Abbreviation
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Abbreviation
+  name: Abbreviation
+  nameWithType: IInfo.Abbreviation
+  fullName: MapQuest.CoordinateSystems.IInfo.Abbreviation
+- uid: MapQuest.CoordinateSystems.IInfo.Alias
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Alias
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Alias
+  name: Alias
+  nameWithType: IInfo.Alias
+  fullName: MapQuest.CoordinateSystems.IInfo.Alias
+- uid: MapQuest.CoordinateSystems.IInfo.Authority
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Authority
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Authority
+  name: Authority
+  nameWithType: IInfo.Authority
+  fullName: MapQuest.CoordinateSystems.IInfo.Authority
+- uid: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  commentId: P:MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_AuthorityCode
+  name: AuthorityCode
+  nameWithType: IInfo.AuthorityCode
+  fullName: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+- uid: MapQuest.CoordinateSystems.IInfo.Name
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Name
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Name
+  name: Name
+  nameWithType: IInfo.Name
+  fullName: MapQuest.CoordinateSystems.IInfo.Name
+- uid: MapQuest.CoordinateSystems.IInfo.Remarks
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Remarks
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Remarks
+  name: Remarks
+  nameWithType: IInfo.Remarks
+  fullName: MapQuest.CoordinateSystems.IInfo.Remarks
+- uid: MapQuest.CoordinateSystems.CoordinateSystem
+  commentId: T:MapQuest.CoordinateSystems.CoordinateSystem
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html
+  name: CoordinateSystem
+  nameWithType: CoordinateSystem
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem
+- uid: MapQuest.CoordinateSystems.Info.Abbreviation
+  commentId: P:MapQuest.CoordinateSystems.Info.Abbreviation
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation
+  name: Abbreviation
+  nameWithType: Info.Abbreviation
+  fullName: MapQuest.CoordinateSystems.Info.Abbreviation
+- uid: MapQuest.CoordinateSystems.Info.Alias
+  commentId: P:MapQuest.CoordinateSystems.Info.Alias
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias
+  name: Alias
+  nameWithType: Info.Alias
+  fullName: MapQuest.CoordinateSystems.Info.Alias
+- uid: MapQuest.CoordinateSystems.Info.Authority
+  commentId: P:MapQuest.CoordinateSystems.Info.Authority
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority
+  name: Authority
+  nameWithType: Info.Authority
+  fullName: MapQuest.CoordinateSystems.Info.Authority
+- uid: MapQuest.CoordinateSystems.Info.AuthorityCode
+  commentId: P:MapQuest.CoordinateSystems.Info.AuthorityCode
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode
+  name: AuthorityCode
+  nameWithType: Info.AuthorityCode
+  fullName: MapQuest.CoordinateSystems.Info.AuthorityCode
+- uid: MapQuest.CoordinateSystems.Info.Name
+  commentId: P:MapQuest.CoordinateSystems.Info.Name
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name
+  name: Name
+  nameWithType: Info.Name
+  fullName: MapQuest.CoordinateSystems.Info.Name
+- uid: MapQuest.CoordinateSystems.Info.Remarks
+  commentId: P:MapQuest.CoordinateSystems.Info.Remarks
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Remarks
+  name: Remarks
+  nameWithType: Info.Remarks
+  fullName: MapQuest.CoordinateSystems.Info.Remarks
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.IInfo
+  commentId: T:MapQuest.CoordinateSystems.IInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html
+  name: IInfo
+  nameWithType: IInfo
+  fullName: MapQuest.CoordinateSystems.IInfo
+- uid: MapQuest.CoordinateSystems.Info
+  commentId: T:MapQuest.CoordinateSystems.Info
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html
+  name: Info
+  nameWithType: Info
+  fullName: MapQuest.CoordinateSystems.Info
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateSystems.IInfo.Abbreviation*
+  commentId: Overload:MapQuest.CoordinateSystems.IInfo.Abbreviation
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Abbreviation
+  name: Abbreviation
+  nameWithType: IInfo.Abbreviation
+  fullName: MapQuest.CoordinateSystems.IInfo.Abbreviation
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.CoordinateSystems.IInfo.Alias*
+  commentId: Overload:MapQuest.CoordinateSystems.IInfo.Alias
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Alias
+  name: Alias
+  nameWithType: IInfo.Alias
+  fullName: MapQuest.CoordinateSystems.IInfo.Alias
+- uid: MapQuest.CoordinateSystems.IInfo.Authority*
+  commentId: Overload:MapQuest.CoordinateSystems.IInfo.Authority
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Authority
+  name: Authority
+  nameWithType: IInfo.Authority
+  fullName: MapQuest.CoordinateSystems.IInfo.Authority
+- uid: MapQuest.CoordinateSystems.IInfo.AuthorityCode*
+  commentId: Overload:MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_AuthorityCode
+  name: AuthorityCode
+  nameWithType: IInfo.AuthorityCode
+  fullName: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+- uid: MapQuest.CoordinateSystems.IInfo.Name*
+  commentId: Overload:MapQuest.CoordinateSystems.IInfo.Name
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Name
+  name: Name
+  nameWithType: IInfo.Name
+  fullName: MapQuest.CoordinateSystems.IInfo.Name
+- uid: MapQuest.CoordinateSystems.IInfo.Remarks*
+  commentId: Overload:MapQuest.CoordinateSystems.IInfo.Remarks
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Remarks
+  name: Remarks
+  nameWithType: IInfo.Remarks
+  fullName: MapQuest.CoordinateSystems.IInfo.Remarks
+- uid: MapQuest.CoordinateSystems.IInfo.WKT*
+  commentId: Overload:MapQuest.CoordinateSystems.IInfo.WKT
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_WKT
+  name: WKT
+  nameWithType: IInfo.WKT
+  fullName: MapQuest.CoordinateSystems.IInfo.WKT
+- uid: MapQuest.CoordinateSystems.IInfo.XML*
+  commentId: Overload:MapQuest.CoordinateSystems.IInfo.XML
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_XML
+  name: XML
+  nameWithType: IInfo.XML
+  fullName: MapQuest.CoordinateSystems.IInfo.XML

@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum FeatureDataType | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum FeatureDataType | mysite ">
+      
+      <meta name="description" content="データタイプのフィールド、 または  のパラメータを定義します。 &lt;!-- Specifies the data type of a field, a property, or a parameter object  of . --&gt;">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Features.FeatureDataType">
+
+
+
+
+  <h1 id="MapQuest_Features_FeatureDataType" data-uid="MapQuest.Features.FeatureDataType" class="text-break">
+Enum FeatureDataType  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Features.html">Features</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Features.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>データタイプのフィールド、</p>
+<p>または <a class="xref" href="MapQuest.Features.FeatureType.html">FeatureType</a> のパラメータを定義します。</p>
+<!--
+Specifies the data type of a field, a property, or a parameter object 
+of <see cref="FeatureType"/>.
+-->
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum FeatureDataType : short</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="MapQuest_Features_FeatureDataType_AnsiString"><code>AnsiString = 0</code></dt>
+    <dd><p>1 から 8,000 文字の範囲内の非 Unicode 文字の可変長ストリーム。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_AnsiStringFixedLength"><code>AnsiStringFixedLength = 22</code></dt>
+    <dd><p>非 Unicode 文字の固定長ストリーム。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Binary"><code>Binary = 1</code></dt>
+    <dd><p>1 から 8,000 バイトの範囲内のバイナリ データの可変長ストリーム。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Boolean"><code>Boolean = 3</code></dt>
+    <dd><p><b>true</b> または <b>false</b> のブール値を表す単純型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Byte"><code>Byte = 2</code></dt>
+    <dd><p>値が 0 から 255 までの範囲内の 8 ビット符号なし整数。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Currency"><code>Currency = 4</code></dt>
+    <dd><p>精度が通貨単位の 1/10,000 の、-2<sup>63</sup>
+(-922,337,203,685,477.5808) から 2 <sup>63</sup>
+-1 (+922,337,203,685,477.5807) までの範囲内の通貨値。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Date"><code>Date = 5</code></dt>
+    <dd><p>1753 年 1 月 1 日から 9999 年 12 月 31 日までの範囲で、</p>
+<p>精度 3.33 ミリ秒の日付と時刻のデータ。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_DateTime"><code>DateTime = 6</code></dt>
+    <dd><p>1753 年 1 月 1 日から 9999 年 12 月 31 日までの範囲で、</p>
+<p>精度 3.33 ミリ秒の日付と時刻のデータ。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Decimal"><code>Decimal = 7</code></dt>
+    <dd><p>1.0 x 10<sup>-28</sup> から概数 7.9 x 10<sup>28</sup>
+までの範囲で、有効桁数が 28 または 29 の値を表す単純型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Double"><code>Double = 8</code></dt>
+    <dd><p>概数 5.0 x 10<sup>-324</sup> から 1.7 x 10<sup>308</sup>
+までの範囲で、有効桁数が 15 または 16 の値を表す浮動小数点型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Geometry"><code>Geometry = 24</code></dt>
+    <dd><p><span class="xref">MapQuest.Topology.Geometries.Geometry</span> オブジェクト タイプ。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Guid"><code>Guid = 9</code></dt>
+    <dd><p>グローバル一意識別子 (GUID)。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Image"><code>Image = 25</code></dt>
+    <dd><p>イメージ オブジェクト タイプ。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Integer"><code>Integer = 11</code></dt>
+    <dd><p>-2147483648 から 2147483647 までの値を保持する符号付き 32 ビット整数を表す整数型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Long"><code>Long = 12</code></dt>
+    <dd><p>-9223372036854775808 から 9223372036854775807 までの値を保持する
+符号付き 64 ビット整数を表す整数型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Object"><code>Object = 13</code></dt>
+    <dd><p>別の <b>DbType</b> 値で明示的に表されていない参照型または値型を表す汎用型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_SByte"><code>SByte = 14</code></dt>
+    <dd><p>-128 から 127 までの値を保持する符号付き 8 ビット整数を表す整数型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Short"><code>Short = 10</code></dt>
+    <dd><p>32768 から 32767 までの値を保持する符号付き 16 ビット整数を表す整数型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Single"><code>Single = 15</code></dt>
+    <dd><p>概数 1.5 x 10<sup>-45</sup> から 3.4 x 10<sup>38</sup>
+までの範囲で、有効桁数が 7 の値を表す浮動小数点型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_String"><code>String = 16</code></dt>
+    <dd><p>Unicode 文字列を表す型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_StringFixedLength"><code>StringFixedLength = 23</code></dt>
+    <dd><p>Unicode 文字の固定長ストリーム。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Time"><code>Time = 17</code></dt>
+    <dd><p>1753 年 1 月 1 日から 9999 年 12 月 31 日までの範囲で、</p>
+<p>精度 3.33 ミリ秒の日付と時刻のデータ。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_UInteger"><code>UInteger = 19</code></dt>
+    <dd><p>0 から 4294967295 までの値を保持する符号なし 32 ビット整数を表す整数型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_ULong"><code>ULong = 20</code></dt>
+    <dd><p>0 から 18446744073709551615 までの値を保持する符号なし 64 ビット整数を表す整数型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_UShort"><code>UShort = 18</code></dt>
+    <dd><p>0 から 65535 までの値を保持する符号なし 16 ビット整数を表す整数型。</p>
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_Unknown"><code>Unknown = -1</code></dt>
+    <dd><p>未知のオブジェクト タイプ。</p>
+<!--
+An unknown or unspecified object type.
+-->
+</dd>
+    <dt id="MapQuest_Features_FeatureDataType_VarNumeric"><code>VarNumeric = 21</code></dt>
+    <dd><p>可変長数値。</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,940 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.SpatialIndexers.Node
+  commentId: T:MapQuest.Features.SpatialIndexers.Node
+  id: Node
+  parent: MapQuest.Features.SpatialIndexers
+  children:
+  - MapQuest.Features.SpatialIndexers.Node.#ctor(System.Int32,MapQuest.Features.SpatialIndexers.PageFile)
+  - MapQuest.Features.SpatialIndexers.Node.Clone
+  - MapQuest.Features.SpatialIndexers.Node.DeleteData(System.Int32)
+  - MapQuest.Features.SpatialIndexers.Node.GetData(System.Int32)
+  - MapQuest.Features.SpatialIndexers.Node.GetHyperBox(System.Int32)
+  - MapQuest.Features.SpatialIndexers.Node.HyperBoxes
+  - MapQuest.Features.SpatialIndexers.Node.InsertData(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+  - MapQuest.Features.SpatialIndexers.Node.IsLeaf
+  - MapQuest.Features.SpatialIndexers.Node.PageNumber
+  - MapQuest.Features.SpatialIndexers.Node.Parent
+  - MapQuest.Features.SpatialIndexers.Node.ParentNumber
+  - MapQuest.Features.SpatialIndexers.Node.Place
+  - MapQuest.Features.SpatialIndexers.Node.Root
+  - MapQuest.Features.SpatialIndexers.Node.ToString
+  - MapQuest.Features.SpatialIndexers.Node.UnionMinBounds
+  - MapQuest.Features.SpatialIndexers.Node.UpdateNodeBoundingBox
+  - MapQuest.Features.SpatialIndexers.Node.UsedSpace
+  langs:
+  - csharp
+  - vb
+  name: Node
+  nameWithType: Node
+  fullName: MapQuest.Features.SpatialIndexers.Node
+  type: Class
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: 'public abstract class Node : ICloneable'
+    content.vb: Public MustInherit Class Node Implements ICloneable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - MapQuest.Features.SpatialIndexers.IndexNode
+  - MapQuest.Features.SpatialIndexers.LeafNode
+  implements:
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Features.SpatialIndexers.Node.#ctor(System.Int32,MapQuest.Features.SpatialIndexers.PageFile)
+  commentId: M:MapQuest.Features.SpatialIndexers.Node.#ctor(System.Int32,MapQuest.Features.SpatialIndexers.PageFile)
+  id: '#ctor(System.Int32,MapQuest.Features.SpatialIndexers.PageFile)'
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: Node(int, PageFile)
+  nameWithType: Node.Node(int, PageFile)
+  fullName: MapQuest.Features.SpatialIndexers.Node.Node(int, MapQuest.Features.SpatialIndexers.PageFile)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: protected Node(int pageNumber, PageFile pageFile)
+    parameters:
+    - id: pageNumber
+      type: System.Int32
+    - id: pageFile
+      type: MapQuest.Features.SpatialIndexers.PageFile
+    content.vb: Protected Sub New(pageNumber As Integer, pageFile As PageFile)
+  overload: MapQuest.Features.SpatialIndexers.Node.#ctor*
+  nameWithType.vb: Node.New(Integer, PageFile)
+  fullName.vb: MapQuest.Features.SpatialIndexers.Node.New(Integer, MapQuest.Features.SpatialIndexers.PageFile)
+  name.vb: New(Integer, PageFile)
+- uid: MapQuest.Features.SpatialIndexers.Node.InsertData(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.Node.InsertData(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+  id: InsertData(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: InsertData(object, HyperBox)
+  nameWithType: Node.InsertData(object, HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.Node.InsertData(object, MapQuest.Features.SpatialIndexers.HyperBox)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public abstract void InsertData(object obj, HyperBox box)
+    parameters:
+    - id: obj
+      type: System.Object
+    - id: box
+      type: MapQuest.Features.SpatialIndexers.HyperBox
+    content.vb: Public MustOverride Sub InsertData(obj As Object, box As HyperBox)
+  overload: MapQuest.Features.SpatialIndexers.Node.InsertData*
+  nameWithType.vb: Node.InsertData(Object, HyperBox)
+  fullName.vb: MapQuest.Features.SpatialIndexers.Node.InsertData(Object, MapQuest.Features.SpatialIndexers.HyperBox)
+  name.vb: InsertData(Object, HyperBox)
+- uid: MapQuest.Features.SpatialIndexers.Node.DeleteData(System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.Node.DeleteData(System.Int32)
+  id: DeleteData(System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: DeleteData(int)
+  nameWithType: Node.DeleteData(int)
+  fullName: MapQuest.Features.SpatialIndexers.Node.DeleteData(int)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public abstract void DeleteData(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public MustOverride Sub DeleteData(index As Integer)
+  overload: MapQuest.Features.SpatialIndexers.Node.DeleteData*
+  nameWithType.vb: Node.DeleteData(Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.Node.DeleteData(Integer)
+  name.vb: DeleteData(Integer)
+- uid: MapQuest.Features.SpatialIndexers.Node.GetData(System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.Node.GetData(System.Int32)
+  id: GetData(System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: GetData(int)
+  nameWithType: Node.GetData(int)
+  fullName: MapQuest.Features.SpatialIndexers.Node.GetData(int)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public abstract object GetData(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: Public MustOverride Function GetData(index As Integer) As Object
+  overload: MapQuest.Features.SpatialIndexers.Node.GetData*
+  nameWithType.vb: Node.GetData(Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.Node.GetData(Integer)
+  name.vb: GetData(Integer)
+- uid: MapQuest.Features.SpatialIndexers.Node.GetHyperBox(System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.Node.GetHyperBox(System.Int32)
+  id: GetHyperBox(System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: GetHyperBox(int)
+  nameWithType: Node.GetHyperBox(int)
+  fullName: MapQuest.Features.SpatialIndexers.Node.GetHyperBox(int)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public virtual HyperBox GetHyperBox(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: MapQuest.Features.SpatialIndexers.HyperBox
+    content.vb: Public Overridable Function GetHyperBox(index As Integer) As HyperBox
+  overload: MapQuest.Features.SpatialIndexers.Node.GetHyperBox*
+  nameWithType.vb: Node.GetHyperBox(Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.Node.GetHyperBox(Integer)
+  name.vb: GetHyperBox(Integer)
+- uid: MapQuest.Features.SpatialIndexers.Node.Clone
+  commentId: M:MapQuest.Features.SpatialIndexers.Node.Clone
+  id: Clone
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: Node.Clone()
+  fullName: MapQuest.Features.SpatialIndexers.Node.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public abstract object Clone()
+    return:
+      type: System.Object
+    content.vb: Public MustOverride Function Clone() As Object
+  overload: MapQuest.Features.SpatialIndexers.Node.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.Features.SpatialIndexers.Node.UpdateNodeBoundingBox
+  commentId: M:MapQuest.Features.SpatialIndexers.Node.UpdateNodeBoundingBox
+  id: UpdateNodeBoundingBox
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: UpdateNodeBoundingBox()
+  nameWithType: Node.UpdateNodeBoundingBox()
+  fullName: MapQuest.Features.SpatialIndexers.Node.UpdateNodeBoundingBox()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: ''
+  example: []
+  syntax:
+    content: public void UpdateNodeBoundingBox()
+    content.vb: Public Sub UpdateNodeBoundingBox()
+  overload: MapQuest.Features.SpatialIndexers.Node.UpdateNodeBoundingBox*
+- uid: MapQuest.Features.SpatialIndexers.Node.ToString
+  commentId: M:MapQuest.Features.SpatialIndexers.Node.ToString
+  id: ToString
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Node.ToString()
+  fullName: MapQuest.Features.SpatialIndexers.Node.ToString()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: MapQuest.Features.SpatialIndexers.Node.ToString*
+- uid: MapQuest.Features.SpatialIndexers.Node.Parent
+  commentId: P:MapQuest.Features.SpatialIndexers.Node.Parent
+  id: Parent
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: Node.Parent
+  fullName: MapQuest.Features.SpatialIndexers.Node.Parent
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public virtual Node Parent { get; }
+    parameters: []
+    return:
+      type: MapQuest.Features.SpatialIndexers.Node
+    content.vb: Public Overridable ReadOnly Property Parent As Node
+  overload: MapQuest.Features.SpatialIndexers.Node.Parent*
+- uid: MapQuest.Features.SpatialIndexers.Node.ParentNumber
+  commentId: P:MapQuest.Features.SpatialIndexers.Node.ParentNumber
+  id: ParentNumber
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: ParentNumber
+  nameWithType: Node.ParentNumber
+  fullName: MapQuest.Features.SpatialIndexers.Node.ParentNumber
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public int ParentNumber { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ParentNumber As Integer
+  overload: MapQuest.Features.SpatialIndexers.Node.ParentNumber*
+- uid: MapQuest.Features.SpatialIndexers.Node.PageNumber
+  commentId: P:MapQuest.Features.SpatialIndexers.Node.PageNumber
+  id: PageNumber
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: PageNumber
+  nameWithType: Node.PageNumber
+  fullName: MapQuest.Features.SpatialIndexers.Node.PageNumber
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public virtual int PageNumber { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Property PageNumber As Integer
+  overload: MapQuest.Features.SpatialIndexers.Node.PageNumber*
+- uid: MapQuest.Features.SpatialIndexers.Node.Place
+  commentId: P:MapQuest.Features.SpatialIndexers.Node.Place
+  id: Place
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: Place
+  nameWithType: Node.Place
+  fullName: MapQuest.Features.SpatialIndexers.Node.Place
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public int Place { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Place As Integer
+  overload: MapQuest.Features.SpatialIndexers.Node.Place*
+- uid: MapQuest.Features.SpatialIndexers.Node.UsedSpace
+  commentId: P:MapQuest.Features.SpatialIndexers.Node.UsedSpace
+  id: UsedSpace
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: UsedSpace
+  nameWithType: Node.UsedSpace
+  fullName: MapQuest.Features.SpatialIndexers.Node.UsedSpace
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public virtual int UsedSpace { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Property UsedSpace As Integer
+  overload: MapQuest.Features.SpatialIndexers.Node.UsedSpace*
+- uid: MapQuest.Features.SpatialIndexers.Node.UnionMinBounds
+  commentId: P:MapQuest.Features.SpatialIndexers.Node.UnionMinBounds
+  id: UnionMinBounds
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: UnionMinBounds
+  nameWithType: Node.UnionMinBounds
+  fullName: MapQuest.Features.SpatialIndexers.Node.UnionMinBounds
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public virtual HyperBox UnionMinBounds { get; }
+    parameters: []
+    return:
+      type: MapQuest.Features.SpatialIndexers.HyperBox
+    content.vb: Public Overridable ReadOnly Property UnionMinBounds As HyperBox
+  overload: MapQuest.Features.SpatialIndexers.Node.UnionMinBounds*
+- uid: MapQuest.Features.SpatialIndexers.Node.HyperBoxes
+  commentId: P:MapQuest.Features.SpatialIndexers.Node.HyperBoxes
+  id: HyperBoxes
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: HyperBoxes
+  nameWithType: Node.HyperBoxes
+  fullName: MapQuest.Features.SpatialIndexers.Node.HyperBoxes
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public virtual HyperBox[] HyperBoxes { get; }
+    parameters: []
+    return:
+      type: MapQuest.Features.SpatialIndexers.HyperBox[]
+    content.vb: Public Overridable ReadOnly Property HyperBoxes As HyperBox()
+  overload: MapQuest.Features.SpatialIndexers.Node.HyperBoxes*
+- uid: MapQuest.Features.SpatialIndexers.Node.Root
+  commentId: P:MapQuest.Features.SpatialIndexers.Node.Root
+  id: Root
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: Root
+  nameWithType: Node.Root
+  fullName: MapQuest.Features.SpatialIndexers.Node.Root
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public virtual bool Root { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property Root As Boolean
+  overload: MapQuest.Features.SpatialIndexers.Node.Root*
+- uid: MapQuest.Features.SpatialIndexers.Node.IsLeaf
+  commentId: P:MapQuest.Features.SpatialIndexers.Node.IsLeaf
+  id: IsLeaf
+  parent: MapQuest.Features.SpatialIndexers.Node
+  langs:
+  - csharp
+  - vb
+  name: IsLeaf
+  nameWithType: Node.IsLeaf
+  fullName: MapQuest.Features.SpatialIndexers.Node.IsLeaf
+  type: Property
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public abstract bool IsLeaf { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride ReadOnly Property IsLeaf As Boolean
+  overload: MapQuest.Features.SpatialIndexers.Node.IsLeaf*
+references:
+- uid: MapQuest.Features.SpatialIndexers
+  commentId: N:MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features.SpatialIndexers
+  nameWithType: MapQuest.Features.SpatialIndexers
+  fullName: MapQuest.Features.SpatialIndexers
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.SpatialIndexers
+    name: SpatialIndexers
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.SpatialIndexers
+    name: SpatialIndexers
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Features.SpatialIndexers.Node.#ctor*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.#ctor
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node__ctor_System_Int32_MapQuest_Features_SpatialIndexers_PageFile_
+  name: Node
+  nameWithType: Node.Node
+  fullName: MapQuest.Features.SpatialIndexers.Node.Node
+  nameWithType.vb: Node.New
+  fullName.vb: MapQuest.Features.SpatialIndexers.Node.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MapQuest.Features.SpatialIndexers.PageFile
+  commentId: T:MapQuest.Features.SpatialIndexers.PageFile
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html
+  name: PageFile
+  nameWithType: PageFile
+  fullName: MapQuest.Features.SpatialIndexers.PageFile
+- uid: MapQuest.Features.SpatialIndexers.Node.InsertData*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.InsertData
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_InsertData_System_Object_MapQuest_Features_SpatialIndexers_HyperBox_
+  name: InsertData
+  nameWithType: Node.InsertData
+  fullName: MapQuest.Features.SpatialIndexers.Node.InsertData
+- uid: MapQuest.Features.SpatialIndexers.HyperBox
+  commentId: T:MapQuest.Features.SpatialIndexers.HyperBox
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  name: HyperBox
+  nameWithType: HyperBox
+  fullName: MapQuest.Features.SpatialIndexers.HyperBox
+- uid: MapQuest.Features.SpatialIndexers.Node.DeleteData*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.DeleteData
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_DeleteData_System_Int32_
+  name: DeleteData
+  nameWithType: Node.DeleteData
+  fullName: MapQuest.Features.SpatialIndexers.Node.DeleteData
+- uid: MapQuest.Features.SpatialIndexers.Node.GetData*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.GetData
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_GetData_System_Int32_
+  name: GetData
+  nameWithType: Node.GetData
+  fullName: MapQuest.Features.SpatialIndexers.Node.GetData
+- uid: MapQuest.Features.SpatialIndexers.Node.GetHyperBox*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.GetHyperBox
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_GetHyperBox_System_Int32_
+  name: GetHyperBox
+  nameWithType: Node.GetHyperBox
+  fullName: MapQuest.Features.SpatialIndexers.Node.GetHyperBox
+- uid: MapQuest.Features.SpatialIndexers.Node.Clone*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.Clone
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_Clone
+  name: Clone
+  nameWithType: Node.Clone
+  fullName: MapQuest.Features.SpatialIndexers.Node.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.Node.UpdateNodeBoundingBox*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.UpdateNodeBoundingBox
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_UpdateNodeBoundingBox
+  name: UpdateNodeBoundingBox
+  nameWithType: Node.UpdateNodeBoundingBox
+  fullName: MapQuest.Features.SpatialIndexers.Node.UpdateNodeBoundingBox
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.Node.ToString*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.ToString
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_ToString
+  name: ToString
+  nameWithType: Node.ToString
+  fullName: MapQuest.Features.SpatialIndexers.Node.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.Features.SpatialIndexers.Node.Parent*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.Parent
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_Parent
+  name: Parent
+  nameWithType: Node.Parent
+  fullName: MapQuest.Features.SpatialIndexers.Node.Parent
+- uid: MapQuest.Features.SpatialIndexers.Node
+  commentId: T:MapQuest.Features.SpatialIndexers.Node
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html
+  name: Node
+  nameWithType: Node
+  fullName: MapQuest.Features.SpatialIndexers.Node
+- uid: MapQuest.Features.SpatialIndexers.Node.ParentNumber*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.ParentNumber
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_ParentNumber
+  name: ParentNumber
+  nameWithType: Node.ParentNumber
+  fullName: MapQuest.Features.SpatialIndexers.Node.ParentNumber
+- uid: MapQuest.Features.SpatialIndexers.Node.PageNumber*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.PageNumber
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_PageNumber
+  name: PageNumber
+  nameWithType: Node.PageNumber
+  fullName: MapQuest.Features.SpatialIndexers.Node.PageNumber
+- uid: MapQuest.Features.SpatialIndexers.Node.Place*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.Place
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_Place
+  name: Place
+  nameWithType: Node.Place
+  fullName: MapQuest.Features.SpatialIndexers.Node.Place
+- uid: MapQuest.Features.SpatialIndexers.Node.UsedSpace*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.UsedSpace
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_UsedSpace
+  name: UsedSpace
+  nameWithType: Node.UsedSpace
+  fullName: MapQuest.Features.SpatialIndexers.Node.UsedSpace
+- uid: MapQuest.Features.SpatialIndexers.Node.UnionMinBounds*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.UnionMinBounds
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_UnionMinBounds
+  name: UnionMinBounds
+  nameWithType: Node.UnionMinBounds
+  fullName: MapQuest.Features.SpatialIndexers.Node.UnionMinBounds
+- uid: MapQuest.Features.SpatialIndexers.Node.HyperBoxes*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.HyperBoxes
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_HyperBoxes
+  name: HyperBoxes
+  nameWithType: Node.HyperBoxes
+  fullName: MapQuest.Features.SpatialIndexers.Node.HyperBoxes
+- uid: MapQuest.Features.SpatialIndexers.HyperBox[]
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  name: HyperBox[]
+  nameWithType: HyperBox[]
+  fullName: MapQuest.Features.SpatialIndexers.HyperBox[]
+  nameWithType.vb: HyperBox()
+  fullName.vb: MapQuest.Features.SpatialIndexers.HyperBox()
+  name.vb: HyperBox()
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: (
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.Node.Root*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.Root
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_Root
+  name: Root
+  nameWithType: Node.Root
+  fullName: MapQuest.Features.SpatialIndexers.Node.Root
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.Features.SpatialIndexers.Node.IsLeaf*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.Node.IsLeaf
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html#MapQuest_Features_SpatialIndexers_Node_IsLeaf
+  name: IsLeaf
+  nameWithType: Node.IsLeaf
+  fullName: MapQuest.Features.SpatialIndexers.Node.IsLeaf

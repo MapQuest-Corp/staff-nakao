@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.PrecisionModelType
+  commentId: T:MapQuest.Coordinates.PrecisionModelType
+  id: PrecisionModelType
+  parent: MapQuest.Coordinates
+  children:
+  - MapQuest.Coordinates.PrecisionModelType.Custom
+  - MapQuest.Coordinates.PrecisionModelType.Fixed
+  - MapQuest.Coordinates.PrecisionModelType.Floating
+  - MapQuest.Coordinates.PrecisionModelType.FloatingSingle
+  langs:
+  - csharp
+  - vb
+  name: PrecisionModelType
+  nameWithType: PrecisionModelType
+  fullName: MapQuest.Coordinates.PrecisionModelType
+  type: Enum
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>、もしくは<xref href="MapQuest.Coordinates.CoordinateList?text=CoordinateList" data-throw-if-not-resolved="false"></xref>に対応した<xref href="MapQuest.Coordinates.PrecisionModel?text=PrecisionModel" data-throw-if-not-resolved="false"></xref>の型を表します。
+  example: []
+  syntax:
+    content: 'public enum PrecisionModelType : short'
+    content.vb: Public Enum PrecisionModelType As Short
+- uid: MapQuest.Coordinates.PrecisionModelType.Fixed
+  commentId: F:MapQuest.Coordinates.PrecisionModelType.Fixed
+  id: Fixed
+  parent: MapQuest.Coordinates.PrecisionModelType
+  langs:
+  - csharp
+  - vb
+  name: Fixed
+  nameWithType: PrecisionModelType.Fixed
+  fullName: MapQuest.Coordinates.PrecisionModelType.Fixed
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    Fixedは、<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>が定数の小数位を持っていることを示します。
+
+
+    小数位の数は<xref href="MapQuest.Coordinates.PrecisionModel.Scale?text=scale+factor" data-throw-if-not-resolved="false"></xref>のlog10によって決定されます。
+  example: []
+  syntax:
+    content: Fixed = 1
+    return:
+      type: MapQuest.Coordinates.PrecisionModelType
+- uid: MapQuest.Coordinates.PrecisionModelType.Floating
+  commentId: F:MapQuest.Coordinates.PrecisionModelType.Floating
+  id: Floating
+  parent: MapQuest.Coordinates.PrecisionModelType
+  langs:
+  - csharp
+  - vb
+  name: Floating
+  nameWithType: PrecisionModelType.Floating
+  fullName: MapQuest.Coordinates.PrecisionModelType.Floating
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: Floatingは、.NETの標準の倍精度浮動小数点表現(IEEE-754標準に基づいた)に相当します。
+  example: []
+  syntax:
+    content: Floating = 2
+    return:
+      type: MapQuest.Coordinates.PrecisionModelType
+- uid: MapQuest.Coordinates.PrecisionModelType.FloatingSingle
+  commentId: F:MapQuest.Coordinates.PrecisionModelType.FloatingSingle
+  id: FloatingSingle
+  parent: MapQuest.Coordinates.PrecisionModelType
+  langs:
+  - csharp
+  - vb
+  name: FloatingSingle
+  nameWithType: PrecisionModelType.FloatingSingle
+  fullName: MapQuest.Coordinates.PrecisionModelType.FloatingSingle
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: FloatingSingleは、.NETの標準の単精度浮動小数点表現(IEEE-754標準に基づいた)に相当します。
+  example: []
+  syntax:
+    content: FloatingSingle = 3
+    return:
+      type: MapQuest.Coordinates.PrecisionModelType
+- uid: MapQuest.Coordinates.PrecisionModelType.Custom
+  commentId: F:MapQuest.Coordinates.PrecisionModelType.Custom
+  id: Custom
+  parent: MapQuest.Coordinates.PrecisionModelType
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: PrecisionModelType.Custom
+  fullName: MapQuest.Coordinates.PrecisionModelType.Custom
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: Customはカスタマイズされた<xref href="MapQuest.Coordinates.PrecisionModel?text=PrecisionModel" data-throw-if-not-resolved="false"></xref>を示します。
+  example: []
+  syntax:
+    content: Custom = 4
+    return:
+      type: MapQuest.Coordinates.PrecisionModelType
+references:
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: MapQuest.Coordinates.CoordinateList
+  commentId: T:MapQuest.Coordinates.CoordinateList
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html
+  name: CoordinateList
+  nameWithType: CoordinateList
+  fullName: MapQuest.Coordinates.CoordinateList
+- uid: MapQuest.Coordinates.PrecisionModel
+  commentId: T:MapQuest.Coordinates.PrecisionModel
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html
+  name: PrecisionModel
+  nameWithType: PrecisionModel
+  fullName: MapQuest.Coordinates.PrecisionModel
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: MapQuest.Coordinates.PrecisionModel.Scale
+  commentId: P:MapQuest.Coordinates.PrecisionModel.Scale
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_Scale
+  name: Scale
+  nameWithType: PrecisionModel.Scale
+  fullName: MapQuest.Coordinates.PrecisionModel.Scale
+- uid: MapQuest.Coordinates.PrecisionModelType.Fixed
+  commentId: F:MapQuest.Coordinates.PrecisionModelType.Fixed
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModelType.html#MapQuest_Coordinates_PrecisionModelType_Fixed
+  name: Fixed
+  nameWithType: PrecisionModelType.Fixed
+  fullName: MapQuest.Coordinates.PrecisionModelType.Fixed
+- uid: MapQuest.Coordinates.PrecisionModelType
+  commentId: T:MapQuest.Coordinates.PrecisionModelType
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModelType.html
+  name: PrecisionModelType
+  nameWithType: PrecisionModelType
+  fullName: MapQuest.Coordinates.PrecisionModelType
+- uid: MapQuest.Coordinates.PrecisionModelType.Floating
+  commentId: F:MapQuest.Coordinates.PrecisionModelType.Floating
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModelType.html#MapQuest_Coordinates_PrecisionModelType_Floating
+  name: Floating
+  nameWithType: PrecisionModelType.Floating
+  fullName: MapQuest.Coordinates.PrecisionModelType.Floating
+- uid: MapQuest.Coordinates.PrecisionModelType.FloatingSingle
+  commentId: F:MapQuest.Coordinates.PrecisionModelType.FloatingSingle
+  isExternal: true
+  href: MapQuest.Coordinates.PrecisionModelType.html#MapQuest_Coordinates_PrecisionModelType_FloatingSingle
+  name: FloatingSingle
+  nameWithType: PrecisionModelType.FloatingSingle
+  fullName: MapQuest.Coordinates.PrecisionModelType.FloatingSingle

@@ -1,0 +1,2125 @@
+{
+  "source_base_path": "C:/Users/TakumaNakao/Documents/map_quest/src/docfx/ConsoleApp1/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DocFXSample.BaseClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DocFXSample.BaseClass.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DocFXSample.DerivedClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DocFXSample.DerivedClass.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DocFXSample.EnumTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DocFXSample.EnumTest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DocFXSample.EnumTestExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DocFXSample.EnumTestExt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DocFXSample.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DocFXSample.Program.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DocFXSample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DocFXSample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.BoolArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.BoolArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.CacheBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.CacheBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.DisposableCacheBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.DisposableCacheBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.DoubleArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.DoubleArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.FloatArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.FloatArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.IPropertyChange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.IPropertyChange.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.IStringCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.IStringCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.IStringEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.IStringEnumerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.IStringList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.IStringList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.IntArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.IntArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.LongArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.LongArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.PropertyChangeActionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.PropertyChangeActionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.PropertyChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.PropertyChangedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.PropertyChangedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.PropertyChangedEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.PropertyObjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.PropertyObjects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.PropertyObjectsEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.PropertyObjectsEnumerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.PropertyStrings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.PropertyStrings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.PropertyStringsEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.PropertyStringsEnumerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.ShortArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.ShortArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.StringList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.StringList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Collections.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Collections.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.AngularToLinearUnitConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.AngularToLinearUnitConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.AngularUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.AngularUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.AngularUnitConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.AngularUnitConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.AxisInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.AxisInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.AxisOrientation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.AxisOrientation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.CoordinateSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.CoordinateSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.CoordinateSystemComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.CoordinateSystemComparer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.CoordinateSystemEpsgFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.CoordinateSystemEpsgFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.CoordinateSystemException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.CoordinateSystemException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.CoordinateSystemMapQuestFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.CoordinateSystemType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.CoordinateSystemType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.Datum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.Datum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.DatumType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.DatumType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.Ellipsoid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.Ellipsoid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.EpsgDbConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.EpsgDbConnection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.EpsgParameterFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.EpsgParameterFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.GeographicCoordinateSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.GeographicCoordinateSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.HorizontalCoordinateSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.HorizontalCoordinateSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.HorizontalDatum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.HorizontalDatum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IAngularToLinearUnitConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IAngularUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IAngularUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IAngularUnitConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IAngularUnitConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IAxisInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IAxisInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.ICoordinateSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.ICoordinateSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.ICoordinateSystemSimpleFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IDatum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IDatum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IEllipsoid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IEllipsoid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IGeographicCoordinateSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IGeographicCoordinateSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IHorizontalCoordinateSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IHorizontalCoordinateSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IHorizontalDatum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IHorizontalDatum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.ILinearToAngularUnitConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.ILinearToAngularUnitConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.ILinearUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.ILinearUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.ILinearUnitConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.ILinearUnitConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IO.CoordinateSystemWktReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IO.CoordinateSystemWktReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IPrimeMeridian.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IPrimeMeridian.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IProjectedCoordinateSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IProjectedCoordinateSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IProjection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.IUnitConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.IUnitConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.Info.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.Info.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.LinearToAngularUnitConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.LinearToAngularUnitConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.LinearUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.LinearUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.LinearUnitConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.LinearUnitConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.ParameterList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.ParameterList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.PrimeMeridian.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.PrimeMeridian.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.ProjectedCoordinateSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.ProjectedCoordinateSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.Projection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.Projection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.ProjectionParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.ProjectionParameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.Unit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.Unit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.UnitConverterFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.UnitConverterFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.WGS84ConversionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.WGS84ConversionInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoordinateSystems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoordinateSystems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.Coordinate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.Coordinate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.Coordinate3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.Coordinate3D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.CoordinateArrayVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.CoordinateArrayVisitor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.CoordinateCountVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.CoordinateCountVisitor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.CoordinateException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.CoordinateException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.CoordinateList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.CoordinateList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.CoordinatePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.CoordinatePoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.CoordinateType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.CoordinateType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.Dimension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.Dimension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.Envelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.Envelope.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.FlaggedCoordinate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.FlaggedCoordinate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.FlaggedCoordinate3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.FlaggedCoordinate3D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.FlaggedPointType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.FlaggedPointType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.ICoordinateCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.ICoordinateCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.ICoordinateEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.ICoordinateEnumerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.ICoordinateList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.ICoordinateList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.ICoordinatePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.ICoordinatePoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.ICoordinateVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.ICoordinateVisitor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.MeasuredCoordinate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.MeasuredCoordinate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.MeasuredCoordinate3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.MeasuredCoordinate3D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.PrecisionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.PrecisionModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.PrecisionModelType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.PrecisionModelType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.Transforms.AffineAxisInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.Transforms.AffineAxisInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.Transforms.AffineAxisOrientation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.Transforms.AffineAxisOrientation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.Transforms.AffineOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.Transforms.AffineOrder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.Transforms.AffineTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.Transforms.AffineTransform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.Transforms.CoordinateMapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.Transforms.CoordinateMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.Transforms.GeneralMatrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.Transforms.GeneralMatrix.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.Transforms.Transform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.Transforms.Transform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.Transforms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.Transforms.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.UniqueCoordinateArrayVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.UniqueCoordinateArrayVisitor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Coordinates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Coordinates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.CoreException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.CoreException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.Comparers.BasicFeatureComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.Comparers.BasicFeatureComparer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.Comparers.FeatureAreaComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.Comparers.FeatureAreaComparer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.Comparers.FeatureComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.Comparers.FeatureComparer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.Comparers.FeatureDistanceComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.Comparers.FeatureDistanceComparer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.Comparers.FeatureLengthComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.Comparers.FeatureLengthComparer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.Comparers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.Comparers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.Feature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.Feature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.FeatureCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.FeatureCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.FeatureDataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.FeatureDataType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.FeatureException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.FeatureException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.FeatureFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.FeatureFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.FeatureIterator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.FeatureIterator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.FeatureOperator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.FeatureOperator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.FeatureProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.FeatureProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.FeatureReprojection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.FeatureReprojection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.FeatureSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.FeatureSchema.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.FeatureType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.FeatureType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.FeatureTypeProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.FeatureTypeProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.IFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.IFeature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.IFeatureCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.IFeatureCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.IFeatureIterator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.IFeatureIterator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.IFeatureList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.IFeatureList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.IFeatureProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.IFeatureProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.IFeatureType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.IFeatureType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.IFeatureTypeProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.IFeatureTypeProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.HyperBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.HyperBox.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.HyperPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.HyperPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.ISpatialIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.ISpatialIndexer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.IndexNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.IndexNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.LeafNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.LeafNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.MemoryPageFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.MemoryPageFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.Node.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.Node.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.PageFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.PageFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.PageFileException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.PageFileException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.PersistentPageFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.PersistentPageFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.SpatialIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.SpatialIndexer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.SpatialIndexerException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.SpatialIndexerException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.SpatialIndexers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.SpatialIndexers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.UnitUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.UnitUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Features.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Features.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Geocoding.IGeocoder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Geocoding.IGeocoder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Geocoding.IReverseGeocoder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Geocoding.IReverseGeocoder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Geocoding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Geocoding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.AppSettingsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.AppSettingsManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.BinaryFormatReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.BinaryFormatReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.BinaryFormatWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.BinaryFormatWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.CacheFileDeletedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.CacheFileDeletedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.CacheFileDeletedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.CacheFileDeletedEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.CharTypeBits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.CharTypeBits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.CoreIOException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.CoreIOException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.EofToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.EofToken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.EolToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.EolToken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.FileCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.FileCache.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.FileLock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.FileLock.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.FileLockException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.FileLockException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.FileLockFatalErrorCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.FileLockFatalErrorCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.FileLockFatalException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.FileLockFatalException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.FileUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.FileUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.IFileCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.IFileCache.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.IFileLock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.IFileLock.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.MemoryCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.MemoryCache.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.IO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Loggers.ILog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Loggers.ILog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Loggers.LevelTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Loggers.LevelTypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Loggers.Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Loggers.Logger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Loggers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Loggers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Patterns.Composite.IEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Patterns.Composite.IEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Patterns.Composite.ILeaf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Patterns.Composite.ILeaf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Patterns.Composite.INode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Patterns.Composite.INode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Patterns.Composite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Patterns.Composite.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.ProductInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.ProductInformation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Serialization.SerializationBinderFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Serialization.SerializationBinderFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Serialization.SerializationInfoHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Serialization.SerializationInfoHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Serialization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Utilities.CoreUtilitiesException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Utilities.CoreUtilitiesException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Utilities.MathUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Utilities.MathUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Utilities.ObjectConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Utilities.ObjectConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Utilities.StringUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Utilities.StringUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Utilities.UnitConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Utilities.UnitConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.Utilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.WebApi.IAuthManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.WebApi.IAuthManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.WebApi.WebApiClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.WebApi.WebApiClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.WebApi.WebApiResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.WebApi.WebApiResponse-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.WebApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.WebApi.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MapQuest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MapQuest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/case1.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/case1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/case2.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/case2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/test1.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/test1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

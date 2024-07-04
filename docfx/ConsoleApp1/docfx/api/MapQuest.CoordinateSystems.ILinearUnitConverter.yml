@@ -1,0 +1,312 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.ILinearUnitConverter
+  commentId: T:MapQuest.CoordinateSystems.ILinearUnitConverter
+  id: ILinearUnitConverter
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.ILinearUnitConverter.GetInverse
+  - MapQuest.CoordinateSystems.ILinearUnitConverter.Source
+  - MapQuest.CoordinateSystems.ILinearUnitConverter.Target
+  langs:
+  - csharp
+  - vb
+  name: ILinearUnitConverter
+  nameWithType: ILinearUnitConverter
+  fullName: MapQuest.CoordinateSystems.ILinearUnitConverter
+  type: Interface
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    <xref href="MapQuest.CoordinateSystems.ILinearUnit" data-throw-if-not-resolved="false"></xref> 間の単位変換を行うクラスの
+            ベースとなるインターフェースです。
+  example: []
+  syntax:
+    content: 'public interface ILinearUnitConverter : IUnitConverter, ICloneable'
+    content.vb: Public Interface ILinearUnitConverter Inherits IUnitConverter, ICloneable
+  seealso:
+  - linkId: MapQuest.CoordinateSystems.LinearUnitConverter
+    commentId: T:MapQuest.CoordinateSystems.LinearUnitConverter
+  inheritedMembers:
+  - MapQuest.CoordinateSystems.IUnitConverter.Initialize(MapQuest.CoordinateSystems.IUnit,MapQuest.CoordinateSystems.IUnit)
+  - MapQuest.CoordinateSystems.IUnitConverter.Convert(System.Double)
+  - MapQuest.CoordinateSystems.IUnitConverter.IsLinear
+  - System.ICloneable.Clone
+- uid: MapQuest.CoordinateSystems.ILinearUnitConverter.GetInverse
+  commentId: M:MapQuest.CoordinateSystems.ILinearUnitConverter.GetInverse
+  id: GetInverse
+  parent: MapQuest.CoordinateSystems.ILinearUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: GetInverse()
+  nameWithType: ILinearUnitConverter.GetInverse()
+  fullName: MapQuest.CoordinateSystems.ILinearUnitConverter.GetInverse()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在の変換の「逆変換」を表す <xref href="MapQuest.CoordinateSystems.ILinearUnitConverter" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: ILinearUnitConverter GetInverse()
+    return:
+      type: MapQuest.CoordinateSystems.ILinearUnitConverter
+      description: 現在の変換の「逆変換」を表す <xref href="MapQuest.CoordinateSystems.ILinearUnitConverter" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Function GetInverse() As ILinearUnitConverter
+  overload: MapQuest.CoordinateSystems.ILinearUnitConverter.GetInverse*
+- uid: MapQuest.CoordinateSystems.ILinearUnitConverter.Source
+  commentId: P:MapQuest.CoordinateSystems.ILinearUnitConverter.Source
+  id: Source
+  parent: MapQuest.CoordinateSystems.ILinearUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: ILinearUnitConverter.Source
+  fullName: MapQuest.CoordinateSystems.ILinearUnitConverter.Source
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 変換元の <xref href="MapQuest.CoordinateSystems.ILinearUnit" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: ILinearUnit Source { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.ILinearUnit
+      description: >-
+        変換元の単位を示す <xref href="MapQuest.CoordinateSystems.ILinearUnit" data-throw-if-not-resolved="false"></xref> 。
+
+        読み取り専用です。
+    content.vb: ReadOnly Property Source As ILinearUnit
+  overload: MapQuest.CoordinateSystems.ILinearUnitConverter.Source*
+- uid: MapQuest.CoordinateSystems.ILinearUnitConverter.Target
+  commentId: P:MapQuest.CoordinateSystems.ILinearUnitConverter.Target
+  id: Target
+  parent: MapQuest.CoordinateSystems.ILinearUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: ILinearUnitConverter.Target
+  fullName: MapQuest.CoordinateSystems.ILinearUnitConverter.Target
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 変換先の <xref href="MapQuest.CoordinateSystems.ILinearUnit" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: ILinearUnit Target { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.ILinearUnit
+      description: >-
+        変換先の単位を示す <xref href="MapQuest.CoordinateSystems.ILinearUnit" data-throw-if-not-resolved="false"></xref> 。
+
+        読み取り専用です。
+    content.vb: ReadOnly Property Target As ILinearUnit
+  overload: MapQuest.CoordinateSystems.ILinearUnitConverter.Target*
+references:
+- uid: MapQuest.CoordinateSystems.LinearUnitConverter
+  commentId: T:MapQuest.CoordinateSystems.LinearUnitConverter
+  isExternal: true
+  href: MapQuest.CoordinateSystems.LinearUnitConverter.html
+  name: LinearUnitConverter
+  nameWithType: LinearUnitConverter
+  fullName: MapQuest.CoordinateSystems.LinearUnitConverter
+- uid: MapQuest.CoordinateSystems.ILinearUnit
+  commentId: T:MapQuest.CoordinateSystems.ILinearUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ILinearUnit.html
+  name: ILinearUnit
+  nameWithType: ILinearUnit
+  fullName: MapQuest.CoordinateSystems.ILinearUnit
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: MapQuest.CoordinateSystems.IUnitConverter.Initialize(MapQuest.CoordinateSystems.IUnit,MapQuest.CoordinateSystems.IUnit)
+  commentId: M:MapQuest.CoordinateSystems.IUnitConverter.Initialize(MapQuest.CoordinateSystems.IUnit,MapQuest.CoordinateSystems.IUnit)
+  parent: MapQuest.CoordinateSystems.IUnitConverter
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnitConverter.html#MapQuest_CoordinateSystems_IUnitConverter_Initialize_MapQuest_CoordinateSystems_IUnit_MapQuest_CoordinateSystems_IUnit_
+  name: Initialize(IUnit, IUnit)
+  nameWithType: IUnitConverter.Initialize(IUnit, IUnit)
+  fullName: MapQuest.CoordinateSystems.IUnitConverter.Initialize(MapQuest.CoordinateSystems.IUnit, MapQuest.CoordinateSystems.IUnit)
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.IUnitConverter.Initialize(MapQuest.CoordinateSystems.IUnit,MapQuest.CoordinateSystems.IUnit)
+    name: Initialize
+    isExternal: true
+    href: MapQuest.CoordinateSystems.IUnitConverter.html#MapQuest_CoordinateSystems_IUnitConverter_Initialize_MapQuest_CoordinateSystems_IUnit_MapQuest_CoordinateSystems_IUnit_
+  - name: (
+  - uid: MapQuest.CoordinateSystems.IUnit
+    name: IUnit
+    isExternal: true
+    href: MapQuest.CoordinateSystems.IUnit.html
+  - name: ','
+  - name: " "
+  - uid: MapQuest.CoordinateSystems.IUnit
+    name: IUnit
+    isExternal: true
+    href: MapQuest.CoordinateSystems.IUnit.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.IUnitConverter.Initialize(MapQuest.CoordinateSystems.IUnit,MapQuest.CoordinateSystems.IUnit)
+    name: Initialize
+    isExternal: true
+    href: MapQuest.CoordinateSystems.IUnitConverter.html#MapQuest_CoordinateSystems_IUnitConverter_Initialize_MapQuest_CoordinateSystems_IUnit_MapQuest_CoordinateSystems_IUnit_
+  - name: (
+  - uid: MapQuest.CoordinateSystems.IUnit
+    name: IUnit
+    isExternal: true
+    href: MapQuest.CoordinateSystems.IUnit.html
+  - name: ','
+  - name: " "
+  - uid: MapQuest.CoordinateSystems.IUnit
+    name: IUnit
+    isExternal: true
+    href: MapQuest.CoordinateSystems.IUnit.html
+  - name: )
+- uid: MapQuest.CoordinateSystems.IUnitConverter.Convert(System.Double)
+  commentId: M:MapQuest.CoordinateSystems.IUnitConverter.Convert(System.Double)
+  parent: MapQuest.CoordinateSystems.IUnitConverter
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnitConverter.html#MapQuest_CoordinateSystems_IUnitConverter_Convert_System_Double_
+  name: Convert(double)
+  nameWithType: IUnitConverter.Convert(double)
+  fullName: MapQuest.CoordinateSystems.IUnitConverter.Convert(double)
+  nameWithType.vb: IUnitConverter.Convert(Double)
+  fullName.vb: MapQuest.CoordinateSystems.IUnitConverter.Convert(Double)
+  name.vb: Convert(Double)
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.IUnitConverter.Convert(System.Double)
+    name: Convert
+    isExternal: true
+    href: MapQuest.CoordinateSystems.IUnitConverter.html#MapQuest_CoordinateSystems_IUnitConverter_Convert_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.IUnitConverter.Convert(System.Double)
+    name: Convert
+    isExternal: true
+    href: MapQuest.CoordinateSystems.IUnitConverter.html#MapQuest_CoordinateSystems_IUnitConverter_Convert_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: MapQuest.CoordinateSystems.IUnitConverter.IsLinear
+  commentId: P:MapQuest.CoordinateSystems.IUnitConverter.IsLinear
+  parent: MapQuest.CoordinateSystems.IUnitConverter
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnitConverter.html#MapQuest_CoordinateSystems_IUnitConverter_IsLinear
+  name: IsLinear
+  nameWithType: IUnitConverter.IsLinear
+  fullName: MapQuest.CoordinateSystems.IUnitConverter.IsLinear
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.IUnitConverter
+  commentId: T:MapQuest.CoordinateSystems.IUnitConverter
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnitConverter.html
+  name: IUnitConverter
+  nameWithType: IUnitConverter
+  fullName: MapQuest.CoordinateSystems.IUnitConverter
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateSystems.ILinearUnitConverter
+  commentId: T:MapQuest.CoordinateSystems.ILinearUnitConverter
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ILinearUnitConverter.html
+  name: ILinearUnitConverter
+  nameWithType: ILinearUnitConverter
+  fullName: MapQuest.CoordinateSystems.ILinearUnitConverter
+- uid: MapQuest.CoordinateSystems.ILinearUnitConverter.GetInverse*
+  commentId: Overload:MapQuest.CoordinateSystems.ILinearUnitConverter.GetInverse
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ILinearUnitConverter.html#MapQuest_CoordinateSystems_ILinearUnitConverter_GetInverse
+  name: GetInverse
+  nameWithType: ILinearUnitConverter.GetInverse
+  fullName: MapQuest.CoordinateSystems.ILinearUnitConverter.GetInverse
+- uid: MapQuest.CoordinateSystems.ILinearUnitConverter.Source*
+  commentId: Overload:MapQuest.CoordinateSystems.ILinearUnitConverter.Source
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ILinearUnitConverter.html#MapQuest_CoordinateSystems_ILinearUnitConverter_Source
+  name: Source
+  nameWithType: ILinearUnitConverter.Source
+  fullName: MapQuest.CoordinateSystems.ILinearUnitConverter.Source
+- uid: MapQuest.CoordinateSystems.ILinearUnitConverter.Target*
+  commentId: Overload:MapQuest.CoordinateSystems.ILinearUnitConverter.Target
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ILinearUnitConverter.html#MapQuest_CoordinateSystems_ILinearUnitConverter_Target
+  name: Target
+  nameWithType: ILinearUnitConverter.Target
+  fullName: MapQuest.CoordinateSystems.ILinearUnitConverter.Target

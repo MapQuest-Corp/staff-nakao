@@ -1,0 +1,497 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.CoordinateArrayVisitor
+  commentId: T:MapQuest.Coordinates.CoordinateArrayVisitor
+  id: CoordinateArrayVisitor
+  parent: MapQuest.Coordinates
+  children:
+  - MapQuest.Coordinates.CoordinateArrayVisitor.#ctor(System.Int32)
+  - MapQuest.Coordinates.CoordinateArrayVisitor.Coordinates
+  - MapQuest.Coordinates.CoordinateArrayVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  langs:
+  - csharp
+  - vb
+  name: CoordinateArrayVisitor
+  nameWithType: CoordinateArrayVisitor
+  fullName: MapQuest.Coordinates.CoordinateArrayVisitor
+  type: Class
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <b>Geometry</b>中の全ての<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>を含む配列を作成する<xref href="MapQuest.Coordinates.ICoordinateVisitor?text=ICoordinateVisitor" data-throw-if-not-resolved="false"></xref>です。
+  example: []
+  syntax:
+    content: 'public class CoordinateArrayVisitor : ICoordinateVisitor'
+    content.vb: Public Class CoordinateArrayVisitor Implements ICoordinateVisitor
+  inheritance:
+  - System.Object
+  implements:
+  - MapQuest.Coordinates.ICoordinateVisitor
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Coordinates.CoordinateArrayVisitor.#ctor(System.Int32)
+  commentId: M:MapQuest.Coordinates.CoordinateArrayVisitor.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: MapQuest.Coordinates.CoordinateArrayVisitor
+  langs:
+  - csharp
+  - vb
+  name: CoordinateArrayVisitor(int)
+  nameWithType: CoordinateArrayVisitor.CoordinateArrayVisitor(int)
+  fullName: MapQuest.Coordinates.CoordinateArrayVisitor.CoordinateArrayVisitor(int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateArrayVisitor?text=CoordinateArrayVisitor" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public CoordinateArrayVisitor(int size)
+    parameters:
+    - id: size
+      type: System.Int32
+      description: <xref href="MapQuest.Coordinates.CoordinateArrayVisitor?text=CoordinateArrayVisitor" data-throw-if-not-resolved="false"></xref>に含まれると予測される<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>の数
+    content.vb: Public Sub New(size As Integer)
+  overload: MapQuest.Coordinates.CoordinateArrayVisitor.#ctor*
+  nameWithType.vb: CoordinateArrayVisitor.New(Integer)
+  fullName.vb: MapQuest.Coordinates.CoordinateArrayVisitor.New(Integer)
+  name.vb: New(Integer)
+- uid: MapQuest.Coordinates.CoordinateArrayVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.CoordinateArrayVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  id: Visit(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.CoordinateArrayVisitor
+  langs:
+  - csharp
+  - vb
+  name: Visit(Coordinate)
+  nameWithType: CoordinateArrayVisitor.Visit(Coordinate)
+  fullName: MapQuest.Coordinates.CoordinateArrayVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateArrayVisitor?text=CoordinateArrayVisitor" data-throw-if-not-resolved="false"></xref>に引数の<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>を追加します。
+  example: []
+  syntax:
+    content: public virtual void Visit(Coordinate coord)
+    parameters:
+    - id: coord
+      type: MapQuest.Coordinates.Coordinate
+    content.vb: Public Overridable Sub Visit(coord As Coordinate)
+  overload: MapQuest.Coordinates.CoordinateArrayVisitor.Visit*
+  implements:
+  - MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+- uid: MapQuest.Coordinates.CoordinateArrayVisitor.Coordinates
+  commentId: P:MapQuest.Coordinates.CoordinateArrayVisitor.Coordinates
+  id: Coordinates
+  parent: MapQuest.Coordinates.CoordinateArrayVisitor
+  langs:
+  - csharp
+  - vb
+  name: Coordinates
+  nameWithType: CoordinateArrayVisitor.Coordinates
+  fullName: MapQuest.Coordinates.CoordinateArrayVisitor.Coordinates
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この<xref href="MapQuest.Coordinates.Coordinate3D?text=Coordinate3D" data-throw-if-not-resolved="false"></xref>オブジェクトの収集された<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>を取得します。
+  example: []
+  syntax:
+    content: public virtual Coordinate[] Coordinates { get; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Coordinate[]
+      description: この<xref href="MapQuest.Coordinates.CoordinateArrayVisitor?text=CoordinateArrayVisitor" data-throw-if-not-resolved="false"></xref>によって収集された<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Overridable ReadOnly Property Coordinates As Coordinate()
+  overload: MapQuest.Coordinates.CoordinateArrayVisitor.Coordinates*
+references:
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: MapQuest.Coordinates.ICoordinateVisitor
+  commentId: T:MapQuest.Coordinates.ICoordinateVisitor
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateVisitor.html
+  name: ICoordinateVisitor
+  nameWithType: ICoordinateVisitor
+  fullName: MapQuest.Coordinates.ICoordinateVisitor
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Coordinates.CoordinateArrayVisitor
+  commentId: T:MapQuest.Coordinates.CoordinateArrayVisitor
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateArrayVisitor.html
+  name: CoordinateArrayVisitor
+  nameWithType: CoordinateArrayVisitor
+  fullName: MapQuest.Coordinates.CoordinateArrayVisitor
+- uid: MapQuest.Coordinates.CoordinateArrayVisitor.#ctor*
+  commentId: Overload:MapQuest.Coordinates.CoordinateArrayVisitor.#ctor
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateArrayVisitor.html#MapQuest_Coordinates_CoordinateArrayVisitor__ctor_System_Int32_
+  name: CoordinateArrayVisitor
+  nameWithType: CoordinateArrayVisitor.CoordinateArrayVisitor
+  fullName: MapQuest.Coordinates.CoordinateArrayVisitor.CoordinateArrayVisitor
+  nameWithType.vb: CoordinateArrayVisitor.New
+  fullName.vb: MapQuest.Coordinates.CoordinateArrayVisitor.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MapQuest.Coordinates.CoordinateArrayVisitor.Visit*
+  commentId: Overload:MapQuest.Coordinates.CoordinateArrayVisitor.Visit
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateArrayVisitor.html#MapQuest_Coordinates_CoordinateArrayVisitor_Visit_MapQuest_Coordinates_Coordinate_
+  name: Visit
+  nameWithType: CoordinateArrayVisitor.Visit
+  fullName: MapQuest.Coordinates.CoordinateArrayVisitor.Visit
+- uid: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.ICoordinateVisitor
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateVisitor.html#MapQuest_Coordinates_ICoordinateVisitor_Visit_MapQuest_Coordinates_Coordinate_
+  name: Visit(Coordinate)
+  nameWithType: ICoordinateVisitor.Visit(Coordinate)
+  fullName: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+    name: Visit
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateVisitor.html#MapQuest_Coordinates_ICoordinateVisitor_Visit_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+    name: Visit
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateVisitor.html#MapQuest_Coordinates_ICoordinateVisitor_Visit_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+- uid: MapQuest.Coordinates.Coordinate3D
+  commentId: T:MapQuest.Coordinates.Coordinate3D
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate3D.html
+  name: Coordinate3D
+  nameWithType: Coordinate3D
+  fullName: MapQuest.Coordinates.Coordinate3D
+- uid: MapQuest.Coordinates.CoordinateArrayVisitor.Coordinates*
+  commentId: Overload:MapQuest.Coordinates.CoordinateArrayVisitor.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateArrayVisitor.html#MapQuest_Coordinates_CoordinateArrayVisitor_Coordinates
+  name: Coordinates
+  nameWithType: CoordinateArrayVisitor.Coordinates
+  fullName: MapQuest.Coordinates.CoordinateArrayVisitor.Coordinates
+- uid: MapQuest.Coordinates.Coordinate[]
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate[]
+  nameWithType: Coordinate[]
+  fullName: MapQuest.Coordinates.Coordinate[]
+  nameWithType.vb: Coordinate()
+  fullName.vb: MapQuest.Coordinates.Coordinate()
+  name.vb: Coordinate()
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: (
+  - name: )

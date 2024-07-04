@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.IHorizontalDatum
+  commentId: T:MapQuest.CoordinateSystems.IHorizontalDatum
+  id: IHorizontalDatum
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.IHorizontalDatum.Ellipsoid
+  - MapQuest.CoordinateSystems.IHorizontalDatum.WGS84Parameters
+  langs:
+  - csharp
+  - vb
+  name: IHorizontalDatum
+  nameWithType: IHorizontalDatum
+  fullName: MapQuest.CoordinateSystems.IHorizontalDatum
+  type: Interface
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    地球の表面上で位置を測定するために使用される測地系を示すインターフェースです。
+
+    <p></p>
+
+    ２次元の地図においては最もよく利用される測地系です。
+  example: []
+  syntax:
+    content: 'public interface IHorizontalDatum : IDatum, IInfo, ICloneable'
+    content.vb: Public Interface IHorizontalDatum Inherits IDatum, IInfo, ICloneable
+  inheritedMembers:
+  - MapQuest.CoordinateSystems.IDatum.DatumType
+  - MapQuest.CoordinateSystems.IInfo.Abbreviation
+  - MapQuest.CoordinateSystems.IInfo.Alias
+  - MapQuest.CoordinateSystems.IInfo.Authority
+  - MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  - MapQuest.CoordinateSystems.IInfo.Name
+  - MapQuest.CoordinateSystems.IInfo.Remarks
+  - MapQuest.CoordinateSystems.IInfo.WKT
+  - MapQuest.CoordinateSystems.IInfo.XML
+  - System.ICloneable.Clone
+- uid: MapQuest.CoordinateSystems.IHorizontalDatum.Ellipsoid
+  commentId: P:MapQuest.CoordinateSystems.IHorizontalDatum.Ellipsoid
+  id: Ellipsoid
+  parent: MapQuest.CoordinateSystems.IHorizontalDatum
+  langs:
+  - csharp
+  - vb
+  name: Ellipsoid
+  nameWithType: IHorizontalDatum.Ellipsoid
+  fullName: MapQuest.CoordinateSystems.IHorizontalDatum.Ellipsoid
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: この測地系に関連する楕円体を取得します。
+  example: []
+  syntax:
+    content: IEllipsoid Ellipsoid { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.IEllipsoid
+      description: この測地系に関連する楕円体を示す <xref href="MapQuest.CoordinateSystems.IEllipsoid" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: ReadOnly Property Ellipsoid As IEllipsoid
+  overload: MapQuest.CoordinateSystems.IHorizontalDatum.Ellipsoid*
+- uid: MapQuest.CoordinateSystems.IHorizontalDatum.WGS84Parameters
+  commentId: P:MapQuest.CoordinateSystems.IHorizontalDatum.WGS84Parameters
+  id: WGS84Parameters
+  parent: MapQuest.CoordinateSystems.IHorizontalDatum
+  langs:
+  - csharp
+  - vb
+  name: WGS84Parameters
+  nameWithType: IHorizontalDatum.WGS84Parameters
+  fullName: MapQuest.CoordinateSystems.IHorizontalDatum.WGS84Parameters
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: WGS84 測地系への変換パラメータを取得します。
+  example: []
+  syntax:
+    content: WGS84ConversionInfo WGS84Parameters { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.WGS84ConversionInfo
+      description: >-
+        WGS84 測地系への変換パラメータを示す 
+
+        <xref href="MapQuest.CoordinateSystems.WGS84ConversionInfo" data-throw-if-not-resolved="false"></xref> 構造体。
+    content.vb: ReadOnly Property WGS84Parameters As WGS84ConversionInfo
+  overload: MapQuest.CoordinateSystems.IHorizontalDatum.WGS84Parameters*
+references:
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: MapQuest.CoordinateSystems.IDatum.DatumType
+  commentId: P:MapQuest.CoordinateSystems.IDatum.DatumType
+  parent: MapQuest.CoordinateSystems.IDatum
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IDatum.html#MapQuest_CoordinateSystems_IDatum_DatumType
+  name: DatumType
+  nameWithType: IDatum.DatumType
+  fullName: MapQuest.CoordinateSystems.IDatum.DatumType
+- uid: MapQuest.CoordinateSystems.IInfo.Abbreviation
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Abbreviation
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Abbreviation
+  name: Abbreviation
+  nameWithType: IInfo.Abbreviation
+  fullName: MapQuest.CoordinateSystems.IInfo.Abbreviation
+- uid: MapQuest.CoordinateSystems.IInfo.Alias
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Alias
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Alias
+  name: Alias
+  nameWithType: IInfo.Alias
+  fullName: MapQuest.CoordinateSystems.IInfo.Alias
+- uid: MapQuest.CoordinateSystems.IInfo.Authority
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Authority
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Authority
+  name: Authority
+  nameWithType: IInfo.Authority
+  fullName: MapQuest.CoordinateSystems.IInfo.Authority
+- uid: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  commentId: P:MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_AuthorityCode
+  name: AuthorityCode
+  nameWithType: IInfo.AuthorityCode
+  fullName: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+- uid: MapQuest.CoordinateSystems.IInfo.Name
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Name
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Name
+  name: Name
+  nameWithType: IInfo.Name
+  fullName: MapQuest.CoordinateSystems.IInfo.Name
+- uid: MapQuest.CoordinateSystems.IInfo.Remarks
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Remarks
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Remarks
+  name: Remarks
+  nameWithType: IInfo.Remarks
+  fullName: MapQuest.CoordinateSystems.IInfo.Remarks
+- uid: MapQuest.CoordinateSystems.IInfo.WKT
+  commentId: P:MapQuest.CoordinateSystems.IInfo.WKT
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_WKT
+  name: WKT
+  nameWithType: IInfo.WKT
+  fullName: MapQuest.CoordinateSystems.IInfo.WKT
+- uid: MapQuest.CoordinateSystems.IInfo.XML
+  commentId: P:MapQuest.CoordinateSystems.IInfo.XML
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_XML
+  name: XML
+  nameWithType: IInfo.XML
+  fullName: MapQuest.CoordinateSystems.IInfo.XML
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.IDatum
+  commentId: T:MapQuest.CoordinateSystems.IDatum
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IDatum.html
+  name: IDatum
+  nameWithType: IDatum
+  fullName: MapQuest.CoordinateSystems.IDatum
+- uid: MapQuest.CoordinateSystems.IInfo
+  commentId: T:MapQuest.CoordinateSystems.IInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html
+  name: IInfo
+  nameWithType: IInfo
+  fullName: MapQuest.CoordinateSystems.IInfo
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateSystems.IEllipsoid
+  commentId: T:MapQuest.CoordinateSystems.IEllipsoid
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IEllipsoid.html
+  name: IEllipsoid
+  nameWithType: IEllipsoid
+  fullName: MapQuest.CoordinateSystems.IEllipsoid
+- uid: MapQuest.CoordinateSystems.IHorizontalDatum.Ellipsoid*
+  commentId: Overload:MapQuest.CoordinateSystems.IHorizontalDatum.Ellipsoid
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IHorizontalDatum.html#MapQuest_CoordinateSystems_IHorizontalDatum_Ellipsoid
+  name: Ellipsoid
+  nameWithType: IHorizontalDatum.Ellipsoid
+  fullName: MapQuest.CoordinateSystems.IHorizontalDatum.Ellipsoid
+- uid: MapQuest.CoordinateSystems.WGS84ConversionInfo
+  commentId: T:MapQuest.CoordinateSystems.WGS84ConversionInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.WGS84ConversionInfo.html
+  name: WGS84ConversionInfo
+  nameWithType: WGS84ConversionInfo
+  fullName: MapQuest.CoordinateSystems.WGS84ConversionInfo
+- uid: MapQuest.CoordinateSystems.IHorizontalDatum.WGS84Parameters*
+  commentId: Overload:MapQuest.CoordinateSystems.IHorizontalDatum.WGS84Parameters
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IHorizontalDatum.html#MapQuest_CoordinateSystems_IHorizontalDatum_WGS84Parameters
+  name: WGS84Parameters
+  nameWithType: IHorizontalDatum.WGS84Parameters
+  fullName: MapQuest.CoordinateSystems.IHorizontalDatum.WGS84Parameters

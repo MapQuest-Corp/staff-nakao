@@ -1,0 +1,3238 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.CoordinateList
+  commentId: T:MapQuest.Coordinates.CoordinateList
+  id: CoordinateList
+  parent: MapQuest.Coordinates
+  children:
+  - MapQuest.Coordinates.CoordinateList.#ctor
+  - MapQuest.Coordinates.CoordinateList.#ctor(MapQuest.Coordinates.CoordinateList)
+  - MapQuest.Coordinates.CoordinateList.#ctor(MapQuest.Coordinates.Coordinate[])
+  - MapQuest.Coordinates.CoordinateList.#ctor(MapQuest.Coordinates.Coordinate[],System.Boolean)
+  - MapQuest.Coordinates.CoordinateList.#ctor(System.Int32)
+  - MapQuest.Coordinates.CoordinateList.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate,System.Boolean)
+  - MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.CoordinateList,System.Boolean)
+  - MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.CoordinateList,System.Boolean,System.Boolean)
+  - MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate[],System.Boolean)
+  - MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate[],System.Boolean,System.Boolean)
+  - MapQuest.Coordinates.CoordinateList.Add(System.Object,System.Boolean)
+  - MapQuest.Coordinates.CoordinateList.AddAll(System.Collections.ArrayList,System.Boolean)
+  - MapQuest.Coordinates.CoordinateList.AddRange(MapQuest.Coordinates.CoordinateList)
+  - MapQuest.Coordinates.CoordinateList.AddRange(MapQuest.Coordinates.Coordinate[])
+  - MapQuest.Coordinates.CoordinateList.BinarySearch(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.CoordinateList.Capacity
+  - MapQuest.Coordinates.CoordinateList.Clear
+  - MapQuest.Coordinates.CoordinateList.Clone
+  - MapQuest.Coordinates.CoordinateList.CloseRing
+  - MapQuest.Coordinates.CoordinateList.Contains(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.CoordinateList.CopyTo(MapQuest.Coordinates.Coordinate[])
+  - MapQuest.Coordinates.CoordinateList.CopyTo(MapQuest.Coordinates.Coordinate[],System.Int32)
+  - MapQuest.Coordinates.CoordinateList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)
+  - MapQuest.Coordinates.CoordinateList.Count
+  - MapQuest.Coordinates.CoordinateList.Equals(System.Object)
+  - MapQuest.Coordinates.CoordinateList.GetEnumerator
+  - MapQuest.Coordinates.CoordinateList.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Coordinates.CoordinateList.HasNullElements(MapQuest.Coordinates.Coordinate[])
+  - MapQuest.Coordinates.CoordinateList.IndexOf(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.CoordinateList.Insert(System.Int32,MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.CoordinateList.IsFixedSize
+  - MapQuest.Coordinates.CoordinateList.IsReadOnly
+  - MapQuest.Coordinates.CoordinateList.IsSynchronized
+  - MapQuest.Coordinates.CoordinateList.Item(System.Int32)
+  - MapQuest.Coordinates.CoordinateList.ReadOnly(MapQuest.Coordinates.CoordinateList)
+  - MapQuest.Coordinates.CoordinateList.Remove(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.CoordinateList.RemoveAt(System.Int32)
+  - MapQuest.Coordinates.CoordinateList.RemoveRange(System.Int32,System.Int32)
+  - MapQuest.Coordinates.CoordinateList.Reverse
+  - MapQuest.Coordinates.CoordinateList.Reverse(System.Int32,System.Int32)
+  - MapQuest.Coordinates.CoordinateList.Scroll(MapQuest.Coordinates.Coordinate)
+  - MapQuest.Coordinates.CoordinateList.Sort
+  - MapQuest.Coordinates.CoordinateList.Sort(System.Collections.IComparer)
+  - MapQuest.Coordinates.CoordinateList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  - MapQuest.Coordinates.CoordinateList.SyncRoot
+  - MapQuest.Coordinates.CoordinateList.Synchronized(MapQuest.Coordinates.CoordinateList)
+  - MapQuest.Coordinates.CoordinateList.ToString
+  - MapQuest.Coordinates.CoordinateList.TrimToSize
+  langs:
+  - csharp
+  - vb
+  name: CoordinateList
+  nameWithType: CoordinateList
+  fullName: MapQuest.Coordinates.CoordinateList
+  type: Class
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>オブジェクトに強く型付けされたコレクションを定義します。
+  example: []
+  syntax:
+    content: 'public class CoordinateList : ICoordinateList, ICoordinateCollection, IEnumerable<Coordinate>, IList, ICollection, IEnumerable, ICloneable, ISerializable'
+    content.vb: Public Class CoordinateList Implements ICoordinateList, ICoordinateCollection, IEnumerable(Of Coordinate), IList, ICollection, IEnumerable, ICloneable, ISerializable
+  inheritance:
+  - System.Object
+  implements:
+  - MapQuest.Coordinates.ICoordinateList
+  - MapQuest.Coordinates.ICoordinateCollection
+  - System.Collections.Generic.IEnumerable{MapQuest.Coordinates.Coordinate}
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  - System.ICloneable
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Coordinates.CoordinateList.Synchronized(MapQuest.Coordinates.CoordinateList)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Synchronized(MapQuest.Coordinates.CoordinateList)
+  id: Synchronized(MapQuest.Coordinates.CoordinateList)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Synchronized(CoordinateList)
+  nameWithType: CoordinateList.Synchronized(CoordinateList)
+  fullName: MapQuest.Coordinates.CoordinateList.Synchronized(MapQuest.Coordinates.CoordinateList)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> のインスタンスのために、同期されている (スレッド セーフな)ラッパーを作成します。
+  example: []
+  syntax:
+    content: public static CoordinateList Synchronized(CoordinateList list)
+    parameters:
+    - id: list
+      type: MapQuest.Coordinates.CoordinateList
+      description: 同期する<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: MapQuest.Coordinates.CoordinateList
+      description: 同期されている (スレッド セーフな)<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref>  ラッパー
+    content.vb: Public Shared Function Synchronized(list As CoordinateList) As CoordinateList
+  overload: MapQuest.Coordinates.CoordinateList.Synchronized*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: 引数の<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> がNULLの場合
+- uid: MapQuest.Coordinates.CoordinateList.ReadOnly(MapQuest.Coordinates.CoordinateList)
+  commentId: M:MapQuest.Coordinates.CoordinateList.ReadOnly(MapQuest.Coordinates.CoordinateList)
+  id: ReadOnly(MapQuest.Coordinates.CoordinateList)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: ReadOnly(CoordinateList)
+  nameWithType: CoordinateList.ReadOnly(CoordinateList)
+  fullName: MapQuest.Coordinates.CoordinateList.ReadOnly(MapQuest.Coordinates.CoordinateList)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> のインスタンスのために、読み取り専用のラッパーを作成します。
+  example: []
+  syntax:
+    content: public static CoordinateList ReadOnly(CoordinateList list)
+    parameters:
+    - id: list
+      type: MapQuest.Coordinates.CoordinateList
+      description: 読み取り専用にする<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: MapQuest.Coordinates.CoordinateList
+      description: 読み取り専用の<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref>  ラッパー
+    content.vb: Public Shared Function [ReadOnly](list As CoordinateList) As CoordinateList
+  overload: MapQuest.Coordinates.CoordinateList.ReadOnly*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: 引数の<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> がNULLの場合
+- uid: MapQuest.Coordinates.CoordinateList.#ctor
+  commentId: M:MapQuest.Coordinates.CoordinateList.#ctor
+  id: '#ctor'
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: CoordinateList()
+  nameWithType: CoordinateList.CoordinateList()
+  fullName: MapQuest.Coordinates.CoordinateList.CoordinateList()
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <xref href=\"MapQuest.Coordinates.CoordinateList\" data-throw-if-not-resolved=\"false\"></xref>  クラスの新しいインスタンスを初期化します。\r\n\r\n初期状態は空で、初めの容量は初期設定となります。"
+  example: []
+  syntax:
+    content: public CoordinateList()
+    content.vb: Public Sub New()
+  overload: MapQuest.Coordinates.CoordinateList.#ctor*
+  nameWithType.vb: CoordinateList.New()
+  fullName.vb: MapQuest.Coordinates.CoordinateList.New()
+  name.vb: New()
+- uid: MapQuest.Coordinates.CoordinateList.#ctor(System.Int32)
+  commentId: M:MapQuest.Coordinates.CoordinateList.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: CoordinateList(int)
+  nameWithType: CoordinateList.CoordinateList(int)
+  fullName: MapQuest.Coordinates.CoordinateList.CoordinateList(int)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <xref href=\"MapQuest.Coordinates.CoordinateList\" data-throw-if-not-resolved=\"false\"></xref>  クラスの新しいインスタンスを初期化します。\r\n\r\n初期容量は引数で指定された値となります。"
+  example: []
+  syntax:
+    content: public CoordinateList(int capacity)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: 新しい<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> が最初に格納できる要素の数。
+    content.vb: Public Sub New(capacity As Integer)
+  overload: MapQuest.Coordinates.CoordinateList.#ctor*
+  nameWithType.vb: CoordinateList.New(Integer)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.New(Integer)
+  name.vb: New(Integer)
+- uid: MapQuest.Coordinates.CoordinateList.#ctor(MapQuest.Coordinates.CoordinateList)
+  commentId: M:MapQuest.Coordinates.CoordinateList.#ctor(MapQuest.Coordinates.CoordinateList)
+  id: '#ctor(MapQuest.Coordinates.CoordinateList)'
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: CoordinateList(CoordinateList)
+  nameWithType: CoordinateList.CoordinateList(CoordinateList)
+  fullName: MapQuest.Coordinates.CoordinateList.CoordinateList(MapQuest.Coordinates.CoordinateList)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <xref href=\"MapQuest.Coordinates.CoordinateList\" data-throw-if-not-resolved=\"false\"></xref>  クラスの新しいインスタンスを初期化します。\r\n\r\nそれは、引数で指定された<xref href=\"MapQuest.Coordinates.CoordinateList\" data-throw-if-not-resolved=\"false\"></xref> からコピーされた要素を含みます。"
+  example: []
+  syntax:
+    content: public CoordinateList(CoordinateList c)
+    parameters:
+    - id: c
+      type: MapQuest.Coordinates.CoordinateList
+      description: 新しいコレクションにコピーしたい要素を持った<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub New(c As CoordinateList)
+  overload: MapQuest.Coordinates.CoordinateList.#ctor*
+  nameWithType.vb: CoordinateList.New(CoordinateList)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.New(MapQuest.Coordinates.CoordinateList)
+  name.vb: New(CoordinateList)
+- uid: MapQuest.Coordinates.CoordinateList.#ctor(MapQuest.Coordinates.Coordinate[])
+  commentId: M:MapQuest.Coordinates.CoordinateList.#ctor(MapQuest.Coordinates.Coordinate[])
+  id: '#ctor(MapQuest.Coordinates.Coordinate[])'
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: CoordinateList(Coordinate[])
+  nameWithType: CoordinateList.CoordinateList(Coordinate[])
+  fullName: MapQuest.Coordinates.CoordinateList.CoordinateList(MapQuest.Coordinates.Coordinate[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <xref href=\"MapQuest.Coordinates.CoordinateList\" data-throw-if-not-resolved=\"false\"></xref>  クラスの新しいインスタンスを初期化します。\r\n\r\nそれは、引数で指定された <xref href=\"MapQuest.Coordinates.Coordinate\" data-throw-if-not-resolved=\"false\"></xref>配列からコピーされた要素を含みます。"
+  example: []
+  syntax:
+    content: public CoordinateList(Coordinate[] coords)
+    parameters:
+    - id: coords
+      type: MapQuest.Coordinates.Coordinate[]
+      description: 新しいリストにコピーしたい要素を持った <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列
+    content.vb: Public Sub New(coords As Coordinate())
+  overload: MapQuest.Coordinates.CoordinateList.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: 引数の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列にNULLの要素が含まれていた場合
+  nameWithType.vb: CoordinateList.New(Coordinate())
+  fullName.vb: MapQuest.Coordinates.CoordinateList.New(MapQuest.Coordinates.Coordinate())
+  name.vb: New(Coordinate())
+- uid: MapQuest.Coordinates.CoordinateList.#ctor(MapQuest.Coordinates.Coordinate[],System.Boolean)
+  commentId: M:MapQuest.Coordinates.CoordinateList.#ctor(MapQuest.Coordinates.Coordinate[],System.Boolean)
+  id: '#ctor(MapQuest.Coordinates.Coordinate[],System.Boolean)'
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: CoordinateList(Coordinate[], bool)
+  nameWithType: CoordinateList.CoordinateList(Coordinate[], bool)
+  fullName: MapQuest.Coordinates.CoordinateList.CoordinateList(MapQuest.Coordinates.Coordinate[], bool)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列から重複されたポイントが削除されるかどうかを明示することが可能な、新しいリストを構築します。
+  example: []
+  syntax:
+    content: public CoordinateList(Coordinate[] coords, bool allowRepeated)
+    parameters:
+    - id: coords
+      type: MapQuest.Coordinates.Coordinate[]
+      description: リストに読み込まれる <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列
+    - id: allowRepeated
+      type: System.Boolean
+      description: <b>false</b> の場合、重複されたポイントは削除されます。
+    content.vb: Public Sub New(coords As Coordinate(), allowRepeated As Boolean)
+  overload: MapQuest.Coordinates.CoordinateList.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: 引数の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列にNULLの要素が含まれていた場合
+  nameWithType.vb: CoordinateList.New(Coordinate(), Boolean)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.New(MapQuest.Coordinates.Coordinate(), Boolean)
+  name.vb: New(Coordinate(), Boolean)
+- uid: MapQuest.Coordinates.CoordinateList.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Coordinates.CoordinateList.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: CoordinateList(SerializationInfo, StreamingContext)
+  nameWithType: CoordinateList.CoordinateList(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Coordinates.CoordinateList.CoordinateList(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: シリアル化された情報から<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref>を作成します。
+  example: []
+  syntax:
+    content: public CoordinateList(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: シリアル化する情報を格納するオブジェクト
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: ''
+    content.vb: Public Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Coordinates.CoordinateList.#ctor*
+  nameWithType.vb: CoordinateList.New(SerializationInfo, StreamingContext)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name.vb: New(SerializationInfo, StreamingContext)
+- uid: MapQuest.Coordinates.CoordinateList.Equals(System.Object)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: CoordinateList.Equals(object)
+  fullName: MapQuest.Coordinates.CoordinateList.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 配列の内容が等しい場合に真を返します。
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: 比較する<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Boolean
+      description: 等価であるか
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: MapQuest.Coordinates.CoordinateList.Equals*
+  nameWithType.vb: CoordinateList.Equals(Object)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.Coordinates.CoordinateList.CopyTo(MapQuest.Coordinates.Coordinate[])
+  commentId: M:MapQuest.Coordinates.CoordinateList.CopyTo(MapQuest.Coordinates.Coordinate[])
+  id: CopyTo(MapQuest.Coordinates.Coordinate[])
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Coordinate[])
+  nameWithType: CoordinateList.CopyTo(Coordinate[])
+  fullName: MapQuest.Coordinates.CoordinateList.CopyTo(MapQuest.Coordinates.Coordinate[])
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の全ての要素を、 1 次元 <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> 配列にコピーします。
+  example: []
+  syntax:
+    content: public virtual void CopyTo(Coordinate[] array)
+    parameters:
+    - id: array
+      type: MapQuest.Coordinates.Coordinate[]
+      description: コピーする対象の 1 次元 <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> 配列
+    content.vb: Public Overridable Sub CopyTo(array As Coordinate())
+  overload: MapQuest.Coordinates.CoordinateList.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: " <code class=\"paramref\">array</code> が \r\nnull 参照 (Visual Basic では <b>Nothing</b>) です。"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: " <code class=\"paramref\">array</code> が多次元です。\r\n\r\n<p>または</p>\r\nコピー元の <xref href=\"MapQuest.Coordinates.CoordinateList\" data-throw-if-not-resolved=\"false\"></xref> \r\nの地物数が、コピー先の <code class=\"paramref\">array</code> に格納できる要素の数を超えています。"
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: >-
+      コピー元の <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 
+
+      の型が、コピー先の <code class="paramref">array</code> の型に自動的にキャストできません。
+  nameWithType.vb: CoordinateList.CopyTo(Coordinate())
+  fullName.vb: MapQuest.Coordinates.CoordinateList.CopyTo(MapQuest.Coordinates.Coordinate())
+  name.vb: CopyTo(Coordinate())
+- uid: MapQuest.Coordinates.CoordinateList.CopyTo(MapQuest.Coordinates.Coordinate[],System.Int32)
+  commentId: M:MapQuest.Coordinates.CoordinateList.CopyTo(MapQuest.Coordinates.Coordinate[],System.Int32)
+  id: CopyTo(MapQuest.Coordinates.Coordinate[],System.Int32)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Coordinate[], int)
+  nameWithType: CoordinateList.CopyTo(Coordinate[], int)
+  fullName: MapQuest.Coordinates.CoordinateList.CopyTo(MapQuest.Coordinates.Coordinate[], int)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の全ての要素を、コピーを開始するインデックスを指定して 1 次元 <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> 配列にコピーします。
+  example: []
+  syntax:
+    content: public virtual void CopyTo(Coordinate[] array, int start)
+    parameters:
+    - id: array
+      type: MapQuest.Coordinates.Coordinate[]
+      description: コピーする対象の 1 次元 <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> 配列
+    - id: start
+      type: System.Int32
+      description: コピーを開始する0から始まるインデックス
+    content.vb: Public Overridable Sub CopyTo(array As Coordinate(), start As Integer)
+  overload: MapQuest.Coordinates.CoordinateList.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: " <code class=\"paramref\">array</code> が \r\nnull 参照 (Visual Basic では <b>Nothing</b>) です。"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: " <code class=\"paramref\">start</code> \r\nが 0 未満です。"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: " <code class=\"paramref\">array</code> が多次元です。\r\n\r\n<p>または</p><code class=\"paramref\">start</code> が <code class=\"paramref\">array</code> の長さ以上です。\r\n\r\n<p>または</p>\r\nコピー元の <xref href=\"MapQuest.Coordinates.CoordinateList\" data-throw-if-not-resolved=\"false\"></xref> \r\nの地物数が、 <code class=\"paramref\">start</code> からコピー先の \r\n<code class=\"paramref\">array</code> の末尾までに格納できる数を超えています。"
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: >-
+      コピー元の <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 
+
+      の型が、コピー先の <code class="paramref">array</code> の型に自動的にキャストできません。
+  implements:
+  - MapQuest.Coordinates.ICoordinateCollection.CopyTo(MapQuest.Coordinates.Coordinate[],System.Int32)
+  nameWithType.vb: CoordinateList.CopyTo(Coordinate(), Integer)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.CopyTo(MapQuest.Coordinates.Coordinate(), Integer)
+  name.vb: CopyTo(Coordinate(), Integer)
+- uid: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate)
+  id: Add(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Add(Coordinate)
+  nameWithType: CoordinateList.Add(Coordinate)
+  fullName: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>の要素を追加します。
+  example: []
+  syntax:
+    content: public virtual int Add(Coordinate item)
+    parameters:
+    - id: item
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に追加する <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> オブジェクト。
+    return:
+      type: System.Int32
+      description: <code class="paramref">item</code>が追加された<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> のインデックス
+    content.vb: Public Overridable Function Add(item As Coordinate) As Integer
+  overload: MapQuest.Coordinates.CoordinateList.Add*
+  implements:
+  - MapQuest.Coordinates.ICoordinateList.Add(MapQuest.Coordinates.Coordinate)
+- uid: MapQuest.Coordinates.CoordinateList.Clear
+  commentId: M:MapQuest.Coordinates.CoordinateList.Clear
+  id: Clear
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: CoordinateList.Clear()
+  fullName: MapQuest.Coordinates.CoordinateList.Clear()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> から全ての要素を削除します。
+  example: []
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear()
+  overload: MapQuest.Coordinates.CoordinateList.Clear*
+  implements:
+  - MapQuest.Coordinates.ICoordinateList.Clear
+  - System.Collections.IList.Clear
+- uid: MapQuest.Coordinates.CoordinateList.Clone
+  commentId: M:MapQuest.Coordinates.CoordinateList.Clone
+  id: Clone
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: CoordinateList.Clone()
+  fullName: MapQuest.Coordinates.CoordinateList.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の浅いコピーを作成します。
+  example: []
+  syntax:
+    content: public virtual object Clone()
+    return:
+      type: System.Object
+      description: コピーされた<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Overridable Function Clone() As Object
+  overload: MapQuest.Coordinates.CoordinateList.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.Coordinates.CoordinateList.Contains(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Contains(MapQuest.Coordinates.Coordinate)
+  id: Contains(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Contains(Coordinate)
+  nameWithType: CoordinateList.Contains(Coordinate)
+  fullName: MapQuest.Coordinates.CoordinateList.Contains(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> に指定された <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>の要素が含まれているかどうかを判断します。
+  example: []
+  syntax:
+    content: public virtual bool Contains(Coordinate item)
+    parameters:
+    - id: item
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> から、その位置を見つける <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>オブジェクト。
+    return:
+      type: System.Boolean
+      description: >-
+        <b>true</b>  もし、<code class="paramref">value</code>が<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 内に見つかった場合;
+            そうでない場合、 <b>false</b> .
+    content.vb: Public Overridable Function Contains(item As Coordinate) As Boolean
+  overload: MapQuest.Coordinates.CoordinateList.Contains*
+  implements:
+  - MapQuest.Coordinates.ICoordinateList.Contains(MapQuest.Coordinates.Coordinate)
+- uid: MapQuest.Coordinates.CoordinateList.IndexOf(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.CoordinateList.IndexOf(MapQuest.Coordinates.Coordinate)
+  id: IndexOf(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(Coordinate)
+  nameWithType: CoordinateList.IndexOf(Coordinate)
+  fullName: MapQuest.Coordinates.CoordinateList.IndexOf(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> から指定された <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>を検索し、最初に発見された位置を0から始まるインデックスで返します。
+  example: []
+  syntax:
+    content: public virtual int IndexOf(Coordinate item)
+    parameters:
+    - id: item
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> から、その位置を検索する <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>オブジェクト。
+    return:
+      type: System.Int32
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> から、<code class="paramref">item</code>が最初に発見された0から始まるインデックス。;見つからなかった場合、 -1.
+    content.vb: Public Overridable Function IndexOf(item As Coordinate) As Integer
+  overload: MapQuest.Coordinates.CoordinateList.IndexOf*
+  implements:
+  - MapQuest.Coordinates.ICoordinateList.IndexOf(MapQuest.Coordinates.Coordinate)
+- uid: MapQuest.Coordinates.CoordinateList.Insert(System.Int32,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Insert(System.Int32,MapQuest.Coordinates.Coordinate)
+  id: Insert(System.Int32,MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Insert(int, Coordinate)
+  nameWithType: CoordinateList.Insert(int, Coordinate)
+  fullName: MapQuest.Coordinates.CoordinateList.Insert(int, MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> に指定された <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>の要素を挿入します。
+  example: []
+  syntax:
+    content: public virtual void Insert(int index, Coordinate item)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: <code class="paramref">value</code>を挿入するべき箇所の0から始まるインデックス
+    - id: item
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> に挿入する <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>オブジェクト。
+    content.vb: Public Overridable Sub Insert(index As Integer, item As Coordinate)
+  overload: MapQuest.Coordinates.CoordinateList.Insert*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <p>
+        <code class="paramref">index</code>が0未満</p>
+      <p>又は</p>
+
+      <p>
+        <code class="paramref">index</code>が<xref href="MapQuest.Coordinates.CoordinateList.Count?text=CoordinateList.Count" data-throw-if-not-resolved="false"></xref>と同じか、もしくは大きい場合</p>
+  implements:
+  - MapQuest.Coordinates.ICoordinateList.Insert(System.Int32,MapQuest.Coordinates.Coordinate)
+  nameWithType.vb: CoordinateList.Insert(Integer, Coordinate)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.Insert(Integer, MapQuest.Coordinates.Coordinate)
+  name.vb: Insert(Integer, Coordinate)
+- uid: MapQuest.Coordinates.CoordinateList.Remove(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Remove(MapQuest.Coordinates.Coordinate)
+  id: Remove(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Remove(Coordinate)
+  nameWithType: CoordinateList.Remove(Coordinate)
+  fullName: MapQuest.Coordinates.CoordinateList.Remove(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> から指定された最初に発見された <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>の要素を削除します。
+  example: []
+  syntax:
+    content: public virtual void Remove(Coordinate item)
+    parameters:
+    - id: item
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> から削除する <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>オブジェクト。
+    content.vb: Public Overridable Sub Remove(item As Coordinate)
+  overload: MapQuest.Coordinates.CoordinateList.Remove*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: 指定された <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>が<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> からみつからなかった場合
+  implements:
+  - MapQuest.Coordinates.ICoordinateList.Remove(MapQuest.Coordinates.Coordinate)
+- uid: MapQuest.Coordinates.CoordinateList.RemoveAt(System.Int32)
+  commentId: M:MapQuest.Coordinates.CoordinateList.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(int)
+  nameWithType: CoordinateList.RemoveAt(int)
+  fullName: MapQuest.Coordinates.CoordinateList.RemoveAt(int)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> から指定されたインデックスの <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>の要素を削除します。
+  example: []
+  syntax:
+    content: public virtual void RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 要素を削除する0から始まるインデックス
+    content.vb: Public Overridable Sub RemoveAt(index As Integer)
+  overload: MapQuest.Coordinates.CoordinateList.RemoveAt*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <p>
+        <code class="paramref">index</code>が0未満</p>
+      <p>又は</p>
+
+      <p>
+        <code class="paramref">index</code>が<xref href="MapQuest.Coordinates.CoordinateList.Count?text=CoordinateList.Count" data-throw-if-not-resolved="false"></xref>と同じか、もしくは大きい場合</p>
+  implements:
+  - MapQuest.Coordinates.ICoordinateList.RemoveAt(System.Int32)
+  nameWithType.vb: CoordinateList.RemoveAt(Integer)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+- uid: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate[],System.Boolean,System.Boolean)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate[],System.Boolean,System.Boolean)
+  id: Add(MapQuest.Coordinates.Coordinate[],System.Boolean,System.Boolean)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Add(Coordinate[], bool, bool)
+  nameWithType: CoordinateList.Add(Coordinate[], bool, bool)
+  fullName: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate[], bool, bool)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列の要素を追加します。
+  example: []
+  syntax:
+    content: public virtual bool Add(Coordinate[] coord, bool allowRepeated, bool direction)
+    parameters:
+    - id: coord
+      type: MapQuest.Coordinates.Coordinate[]
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に追加する <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列。
+    - id: allowRepeated
+      type: System.Boolean
+      description: <b>false</b> の場合、重複されたポイントは削除されます。
+    - id: direction
+      type: System.Boolean
+      description: <code class="paramref">coord</code>を追加する際の方向性。 <b>true</b> の場合昇順で、 <b>false</b> の場合降順で追加されます。
+    return:
+      type: System.Boolean
+      description: <b>true</b>
+    content.vb: Public Overridable Function Add(coord As Coordinate(), allowRepeated As Boolean, direction As Boolean) As Boolean
+  overload: MapQuest.Coordinates.CoordinateList.Add*
+  nameWithType.vb: CoordinateList.Add(Coordinate(), Boolean, Boolean)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate(), Boolean, Boolean)
+  name.vb: Add(Coordinate(), Boolean, Boolean)
+- uid: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate[],System.Boolean)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate[],System.Boolean)
+  id: Add(MapQuest.Coordinates.Coordinate[],System.Boolean)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Add(Coordinate[], bool)
+  nameWithType: CoordinateList.Add(Coordinate[], bool)
+  fullName: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate[], bool)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列の要素を昇順で追加します。
+  example: []
+  syntax:
+    content: public virtual bool Add(Coordinate[] coord, bool allowRepeated)
+    parameters:
+    - id: coord
+      type: MapQuest.Coordinates.Coordinate[]
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に追加する <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列。
+    - id: allowRepeated
+      type: System.Boolean
+      description: <b>false</b> の場合、重複されたポイントは削除されます。
+    return:
+      type: System.Boolean
+      description: <b>true</b>
+    content.vb: Public Overridable Function Add(coord As Coordinate(), allowRepeated As Boolean) As Boolean
+  overload: MapQuest.Coordinates.CoordinateList.Add*
+  nameWithType.vb: CoordinateList.Add(Coordinate(), Boolean)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate(), Boolean)
+  name.vb: Add(Coordinate(), Boolean)
+- uid: MapQuest.Coordinates.CoordinateList.Add(System.Object,System.Boolean)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Add(System.Object,System.Boolean)
+  id: Add(System.Object,System.Boolean)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Add(object, bool)
+  nameWithType: CoordinateList.Add(object, bool)
+  fullName: MapQuest.Coordinates.CoordinateList.Add(object, bool)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端にオブジェクトを追加します。
+  example: []
+  syntax:
+    content: public virtual bool Add(object obj, bool allowRepeated)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に追加するオブジェクト
+    - id: allowRepeated
+      type: System.Boolean
+      description: <b>false</b> の場合、重複されたポイントは削除されます。
+    return:
+      type: System.Boolean
+      description: <b>true</b>
+    content.vb: Public Overridable Function Add(obj As Object, allowRepeated As Boolean) As Boolean
+  overload: MapQuest.Coordinates.CoordinateList.Add*
+  nameWithType.vb: CoordinateList.Add(Object, Boolean)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.Add(Object, Boolean)
+  name.vb: Add(Object, Boolean)
+- uid: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate,System.Boolean)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate,System.Boolean)
+  id: Add(MapQuest.Coordinates.Coordinate,System.Boolean)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Add(Coordinate, bool)
+  nameWithType: CoordinateList.Add(Coordinate, bool)
+  fullName: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate, bool)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>の要素を追加します。
+  example: []
+  syntax:
+    content: public virtual void Add(Coordinate coord, bool allowRepeated)
+    parameters:
+    - id: coord
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に追加する <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    - id: allowRepeated
+      type: System.Boolean
+      description: <b>false</b> の場合、重複されたポイントは削除されます。
+    content.vb: Public Overridable Sub Add(coord As Coordinate, allowRepeated As Boolean)
+  overload: MapQuest.Coordinates.CoordinateList.Add*
+  nameWithType.vb: CoordinateList.Add(Coordinate, Boolean)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.Coordinate, Boolean)
+  name.vb: Add(Coordinate, Boolean)
+- uid: MapQuest.Coordinates.CoordinateList.AddAll(System.Collections.ArrayList,System.Boolean)
+  commentId: M:MapQuest.Coordinates.CoordinateList.AddAll(System.Collections.ArrayList,System.Boolean)
+  id: AddAll(System.Collections.ArrayList,System.Boolean)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: AddAll(ArrayList, bool)
+  nameWithType: CoordinateList.AddAll(ArrayList, bool)
+  fullName: MapQuest.Coordinates.CoordinateList.AddAll(System.Collections.ArrayList, bool)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> に引数の<xref href="System.Collections.ArrayList?text=ArrayList" data-throw-if-not-resolved="false"></xref>の要素を全て追加します。
+  example: []
+  syntax:
+    content: public virtual bool AddAll(ArrayList coll, bool allowRepeated)
+    parameters:
+    - id: coll
+      type: System.Collections.ArrayList
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に追加する <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>を含んだ<xref href="System.Collections.ArrayList?text=ArrayList" data-throw-if-not-resolved="false"></xref>
+    - id: allowRepeated
+      type: System.Boolean
+      description: <b>false</b> の場合、重複されたポイントは削除されます。
+    return:
+      type: System.Boolean
+      description: <b>true</b>  もし、<code class="paramref">index</code>の追加により、<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> が変更された場合;そうでなければ <b>false</b>
+    content.vb: Public Overridable Function AddAll(coll As ArrayList, allowRepeated As Boolean) As Boolean
+  overload: MapQuest.Coordinates.CoordinateList.AddAll*
+  nameWithType.vb: CoordinateList.AddAll(ArrayList, Boolean)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.AddAll(System.Collections.ArrayList, Boolean)
+  name.vb: AddAll(ArrayList, Boolean)
+- uid: MapQuest.Coordinates.CoordinateList.CloseRing
+  commentId: M:MapQuest.Coordinates.CoordinateList.CloseRing
+  id: CloseRing
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: CloseRing()
+  nameWithType: CoordinateList.CloseRing()
+  fullName: MapQuest.Coordinates.CoordinateList.CloseRing()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: スタートポイントを終端に加えることによって<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> をリング状にします。
+  example: []
+  syntax:
+    content: public virtual void CloseRing()
+    content.vb: Public Overridable Sub CloseRing()
+  overload: MapQuest.Coordinates.CoordinateList.CloseRing*
+- uid: MapQuest.Coordinates.CoordinateList.HasNullElements(MapQuest.Coordinates.Coordinate[])
+  commentId: M:MapQuest.Coordinates.CoordinateList.HasNullElements(MapQuest.Coordinates.Coordinate[])
+  id: HasNullElements(MapQuest.Coordinates.Coordinate[])
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: HasNullElements(Coordinate[])
+  nameWithType: CoordinateList.HasNullElements(Coordinate[])
+  fullName: MapQuest.Coordinates.CoordinateList.HasNullElements(MapQuest.Coordinates.Coordinate[])
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列がNULL要素を含んでいた場合 <b>true</b> を返します。
+  example: []
+  syntax:
+    content: protected static bool HasNullElements(Coordinate[] array)
+    parameters:
+    - id: array
+      type: MapQuest.Coordinates.Coordinate[]
+      description: 値が正しいかどうかを評価する <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列
+    return:
+      type: System.Boolean
+      description: >-
+        <b>true</b>
+
+        <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列のいずれかの要素がNULLであった場合;そうでなければ <b>false</b>
+    content.vb: Protected Shared Function HasNullElements(array As Coordinate()) As Boolean
+  overload: MapQuest.Coordinates.CoordinateList.HasNullElements*
+  nameWithType.vb: CoordinateList.HasNullElements(Coordinate())
+  fullName.vb: MapQuest.Coordinates.CoordinateList.HasNullElements(MapQuest.Coordinates.Coordinate())
+  name.vb: HasNullElements(Coordinate())
+- uid: MapQuest.Coordinates.CoordinateList.Scroll(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Scroll(MapQuest.Coordinates.Coordinate)
+  id: Scroll(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Scroll(Coordinate)
+  nameWithType: CoordinateList.Scroll(Coordinate)
+  fullName: MapQuest.Coordinates.CoordinateList.Scroll(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数のfirstCoordinateが最初の位置にくるように要素をシフトします。
+  example: []
+  syntax:
+    content: public void Scroll(Coordinate firstCoordinate)
+    parameters:
+    - id: firstCoordinate
+      type: MapQuest.Coordinates.Coordinate
+      description: 最初の位置にくるようにさせたい <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub Scroll(firstCoordinate As Coordinate)
+  overload: MapQuest.Coordinates.CoordinateList.Scroll*
+- uid: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.CoordinateList,System.Boolean,System.Boolean)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.CoordinateList,System.Boolean,System.Boolean)
+  id: Add(MapQuest.Coordinates.CoordinateList,System.Boolean,System.Boolean)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Add(CoordinateList, bool, bool)
+  nameWithType: CoordinateList.Add(CoordinateList, bool, bool)
+  fullName: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.CoordinateList, bool, bool)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に引数の<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> を追加します。
+  example: []
+  syntax:
+    content: public bool Add(CoordinateList coord, bool allowRepeated, bool direction)
+    parameters:
+    - id: coord
+      type: MapQuest.Coordinates.CoordinateList
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に追加する引数の<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref>
+    - id: allowRepeated
+      type: System.Boolean
+      description: <b>false</b> の場合、重複されたポイントは削除されます。
+    - id: direction
+      type: System.Boolean
+      description: <code class="paramref">coord</code>を追加する際の方向性。 <b>true</b> の場合昇順で、 <b>false</b> の場合降順で追加されます。
+    return:
+      type: System.Boolean
+      description: <b>true</b>
+    content.vb: Public Function Add(coord As CoordinateList, allowRepeated As Boolean, direction As Boolean) As Boolean
+  overload: MapQuest.Coordinates.CoordinateList.Add*
+  nameWithType.vb: CoordinateList.Add(CoordinateList, Boolean, Boolean)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.CoordinateList, Boolean, Boolean)
+  name.vb: Add(CoordinateList, Boolean, Boolean)
+- uid: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.CoordinateList,System.Boolean)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.CoordinateList,System.Boolean)
+  id: Add(MapQuest.Coordinates.CoordinateList,System.Boolean)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Add(CoordinateList, bool)
+  nameWithType: CoordinateList.Add(CoordinateList, bool)
+  fullName: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.CoordinateList, bool)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に引数の<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> を追加します。
+  example: []
+  syntax:
+    content: public bool Add(CoordinateList coord, bool allowRepeated)
+    parameters:
+    - id: coord
+      type: MapQuest.Coordinates.CoordinateList
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に追加する<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref>
+    - id: allowRepeated
+      type: System.Boolean
+      description: <b>false</b> の場合、重複されたポイントは削除されます。
+    return:
+      type: System.Boolean
+      description: <b>true</b>
+    content.vb: Public Function Add(coord As CoordinateList, allowRepeated As Boolean) As Boolean
+  overload: MapQuest.Coordinates.CoordinateList.Add*
+  nameWithType.vb: CoordinateList.Add(CoordinateList, Boolean)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.Add(MapQuest.Coordinates.CoordinateList, Boolean)
+  name.vb: Add(CoordinateList, Boolean)
+- uid: MapQuest.Coordinates.CoordinateList.GetEnumerator
+  commentId: M:MapQuest.Coordinates.CoordinateList.GetEnumerator
+  id: GetEnumerator
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: CoordinateList.GetEnumerator()
+  fullName: MapQuest.Coordinates.CoordinateList.GetEnumerator()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の反復可能な列挙子を返します。
+  example: []
+  syntax:
+    content: public virtual ICoordinateEnumerator GetEnumerator()
+    return:
+      type: MapQuest.Coordinates.ICoordinateEnumerator
+      description: 全ての<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の<xref href="MapQuest.Coordinates.CoordinateList.Enumerator?text=Enumerator" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Overridable Function GetEnumerator() As ICoordinateEnumerator
+  overload: MapQuest.Coordinates.CoordinateList.GetEnumerator*
+  implements:
+  - MapQuest.Coordinates.ICoordinateCollection.GetEnumerator
+- uid: MapQuest.Coordinates.CoordinateList.AddRange(MapQuest.Coordinates.CoordinateList)
+  commentId: M:MapQuest.Coordinates.CoordinateList.AddRange(MapQuest.Coordinates.CoordinateList)
+  id: AddRange(MapQuest.Coordinates.CoordinateList)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: AddRange(CoordinateList)
+  nameWithType: CoordinateList.AddRange(CoordinateList)
+  fullName: MapQuest.Coordinates.CoordinateList.AddRange(MapQuest.Coordinates.CoordinateList)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の要素をこの<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に追加します。
+  example: []
+  syntax:
+    content: public virtual int AddRange(CoordinateList x)
+    parameters:
+    - id: x
+      type: MapQuest.Coordinates.CoordinateList
+      description: この<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に追加したい要素の<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Int32
+      description: 引数の<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> を加えた結果の<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の<xref href="MapQuest.Coordinates.CoordinateList.Count?text=CoordinateList.Count" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Overridable Function AddRange(x As CoordinateList) As Integer
+  overload: MapQuest.Coordinates.CoordinateList.AddRange*
+- uid: MapQuest.Coordinates.CoordinateList.AddRange(MapQuest.Coordinates.Coordinate[])
+  commentId: M:MapQuest.Coordinates.CoordinateList.AddRange(MapQuest.Coordinates.Coordinate[])
+  id: AddRange(MapQuest.Coordinates.Coordinate[])
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: AddRange(Coordinate[])
+  nameWithType: CoordinateList.AddRange(Coordinate[])
+  fullName: MapQuest.Coordinates.CoordinateList.AddRange(MapQuest.Coordinates.Coordinate[])
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 引数の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列の要素をこの<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に追加します。
+  example: []
+  syntax:
+    content: public virtual int AddRange(Coordinate[] x)
+    parameters:
+    - id: x
+      type: MapQuest.Coordinates.Coordinate[]
+      description: この<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の終端に追加したい要素の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列
+    return:
+      type: System.Int32
+      description: 引数の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>配列を加えた結果の<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の<xref href="MapQuest.Coordinates.CoordinateList.Count?text=CoordinateList.Count" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Overridable Function AddRange(x As Coordinate()) As Integer
+  overload: MapQuest.Coordinates.CoordinateList.AddRange*
+  nameWithType.vb: CoordinateList.AddRange(Coordinate())
+  fullName.vb: MapQuest.Coordinates.CoordinateList.AddRange(MapQuest.Coordinates.Coordinate())
+  name.vb: AddRange(Coordinate())
+- uid: MapQuest.Coordinates.CoordinateList.TrimToSize
+  commentId: M:MapQuest.Coordinates.CoordinateList.TrimToSize
+  id: TrimToSize
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: TrimToSize()
+  nameWithType: CoordinateList.TrimToSize()
+  fullName: MapQuest.Coordinates.CoordinateList.TrimToSize()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList.Capacity?text=CoordinateList.Capacity" data-throw-if-not-resolved="false"></xref>をこの<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の実際の要素の数に設定します。
+  example: []
+  syntax:
+    content: public virtual void TrimToSize()
+    content.vb: Public Overridable Sub TrimToSize()
+  overload: MapQuest.Coordinates.CoordinateList.TrimToSize*
+- uid: MapQuest.Coordinates.CoordinateList.BinarySearch(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.CoordinateList.BinarySearch(MapQuest.Coordinates.Coordinate)
+  id: BinarySearch(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: BinarySearch(Coordinate)
+  nameWithType: CoordinateList.BinarySearch(Coordinate)
+  fullName: MapQuest.Coordinates.CoordinateList.BinarySearch(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 全ての要素がソートされた<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> から引数の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>の要素を初期設定の比較を用いて検索します。
+  remarks: 詳細は<xref href="System.Collections.ArrayList.BinarySearch(System.Int32%2cSystem.Int32%2cSystem.Object%2cSystem.Collections.IComparer)?text=ArrayList.BinarySearch" data-throw-if-not-resolved="false"></xref>を参照してください。
+  example: []
+  syntax:
+    content: public virtual int BinarySearch(Coordinate value)
+    parameters:
+    - id: value
+      type: MapQuest.Coordinates.Coordinate
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> から検索する対象の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref>オブジェクト。この引数にはNULL参照が許可されます。
+    return:
+      type: System.Int32
+      description: " <code class=\"paramref\">value</code> が見つかった場合は、並べ替えられた <xref href=\"MapQuest.Coordinates.CoordinateList\" data-throw-if-not-resolved=\"false\"></xref>  内の <code class=\"paramref\">value</code> の 0 から始まるインデックス。\r\n\r\n見つからなかった場合は、負の値。\r\n\r\nこれは、 <code class=\"paramref\">value</code> の次に大きい要素のインデックスのビットごとの補数です。\r\n\r\nただし、大きい要素が存在しない場合は、 <xref href=\"MapQuest.Coordinates.CoordinateList.Count?text=CoordinateList.Count\" data-throw-if-not-resolved=\"false\"></xref> のビットごとの補数です。"
+    content.vb: Public Overridable Function BinarySearch(value As Coordinate) As Integer
+  overload: MapQuest.Coordinates.CoordinateList.BinarySearch*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: <code class="paramref">value</code>が<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の要素がいずれも<xref href="System.IComparable?text=IComparable" data-throw-if-not-resolved="false"></xref>インターフェイスを実装していない場合
+- uid: MapQuest.Coordinates.CoordinateList.RemoveRange(System.Int32,System.Int32)
+  commentId: M:MapQuest.Coordinates.CoordinateList.RemoveRange(System.Int32,System.Int32)
+  id: RemoveRange(System.Int32,System.Int32)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: RemoveRange(int, int)
+  nameWithType: CoordinateList.RemoveRange(int, int)
+  fullName: MapQuest.Coordinates.CoordinateList.RemoveRange(int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> から要素の範囲を削除します。
+  remarks: 詳細は<xref href="System.Collections.ArrayList.RemoveRange(System.Int32%2cSystem.Int32)?text=ArrayList.RemoveRange" data-throw-if-not-resolved="false"></xref>を参照してください。
+  example: []
+  syntax:
+    content: public virtual void RemoveRange(int index, int count)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 削除する要素の範囲の開始位置を示す 0 から始まるインデックス。
+    - id: count
+      type: System.Int32
+      description: 削除する要素の数。
+    content.vb: Public Overridable Sub RemoveRange(index As Integer, count As Integer)
+  overload: MapQuest.Coordinates.CoordinateList.RemoveRange*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">index</code> および <code class="paramref">count</code>が<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 内の要素の有効範囲を示していません。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <p>
+        <code class="paramref">index</code>が0未満</p>
+      <p>又は</p>
+
+      <p>
+        <code class="paramref">count</code>が0未満</p>
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: >-
+      <p>
+        <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> が読み取り専用</p>
+      <p>又は</p>
+
+      <p>
+        <b>CoordinateList</b>が固定サイズの場合</p>
+  nameWithType.vb: CoordinateList.RemoveRange(Integer, Integer)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.RemoveRange(Integer, Integer)
+  name.vb: RemoveRange(Integer, Integer)
+- uid: MapQuest.Coordinates.CoordinateList.Reverse
+  commentId: M:MapQuest.Coordinates.CoordinateList.Reverse
+  id: Reverse
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Reverse()
+  nameWithType: CoordinateList.Reverse()
+  fullName: MapQuest.Coordinates.CoordinateList.Reverse()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 内およびその一部の要素の順序を反転させます。
+  remarks: 詳細は<xref href="System.Collections.ArrayList.Reverse?text=ArrayList.Reverse" data-throw-if-not-resolved="false"></xref>を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Reverse()
+    content.vb: Public Overridable Sub Reverse()
+  overload: MapQuest.Coordinates.CoordinateList.Reverse*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> が読み取り専用
+- uid: MapQuest.Coordinates.CoordinateList.Reverse(System.Int32,System.Int32)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Reverse(System.Int32,System.Int32)
+  id: Reverse(System.Int32,System.Int32)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Reverse(int, int)
+  nameWithType: CoordinateList.Reverse(int, int)
+  fullName: MapQuest.Coordinates.CoordinateList.Reverse(int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定した範囲の要素の順序を反転させます。
+  remarks: 詳細は<xref href="System.Collections.ArrayList.Reverse?text=ArrayList.Reverse" data-throw-if-not-resolved="false"></xref>を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Reverse(int index, int count)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 反転させる範囲の開始位置を示す 0 から始まるインデックス。
+    - id: count
+      type: System.Int32
+      description: 反転させる範囲内にある要素の数。
+    content.vb: Public Overridable Sub Reverse(index As Integer, count As Integer)
+  overload: MapQuest.Coordinates.CoordinateList.Reverse*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">index</code>および<code class="paramref">count</code>が<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 内の要素の有効範囲を示していません。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <p>
+        <code class="paramref">index</code>が0未満</p>
+      <p>又は</p>
+
+      <p>
+        <code class="paramref">count</code>が0未満</p>
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> が読み取り専用
+  nameWithType.vb: CoordinateList.Reverse(Integer, Integer)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.Reverse(Integer, Integer)
+  name.vb: Reverse(Integer, Integer)
+- uid: MapQuest.Coordinates.CoordinateList.Sort
+  commentId: M:MapQuest.Coordinates.CoordinateList.Sort
+  id: Sort
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Sort()
+  nameWithType: CoordinateList.Sort()
+  fullName: MapQuest.Coordinates.CoordinateList.Sort()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 各要素の<xref href="System.IComparable?text=IComparable" data-throw-if-not-resolved="false"></xref>実装を使用して、<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 全体内の要素を並べ替えます。
+  remarks: 詳細は<xref href="System.Collections.ArrayList.Sort?text=ArrayList.Sort" data-throw-if-not-resolved="false"></xref>を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Sort()
+    content.vb: Public Overridable Sub Sort()
+  overload: MapQuest.Coordinates.CoordinateList.Sort*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> が読み取り専用
+- uid: MapQuest.Coordinates.CoordinateList.Sort(System.Collections.IComparer)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Sort(System.Collections.IComparer)
+  id: Sort(System.Collections.IComparer)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Sort(IComparer)
+  nameWithType: CoordinateList.Sort(IComparer)
+  fullName: MapQuest.Coordinates.CoordinateList.Sort(System.Collections.IComparer)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定した<xref href="System.Collections.IComparer?text=%e6%af%94%e8%bc%83%e6%bc%94%e7%ae%97%e5%ad%90" data-throw-if-not-resolved="false"></xref>を使用して、 <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 全体内の要素を並べ替えます。
+  remarks: 詳細は<xref href="System.Collections.ArrayList.Sort?text=ArrayList.Sort" data-throw-if-not-resolved="false"></xref>を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Sort(IComparer comparer)
+    parameters:
+    - id: comparer
+      type: System.Collections.IComparer
+      description: >-
+        <p>要素を比較する場合に使用する<xref href="System.Collections.IComparer?text=IComparer" data-throw-if-not-resolved="false"></xref>実装 </p>
+
+        <p>又は</p>
+
+        <p>各要素の<xref href="System.Collections.IComparer?text=IComparer" data-throw-if-not-resolved="false"></xref>実装を使用する場合は null 参照</p>
+    content.vb: Public Overridable Sub Sort(comparer As IComparer)
+  overload: MapQuest.Coordinates.CoordinateList.Sort*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> が読み取り専用
+- uid: MapQuest.Coordinates.CoordinateList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  commentId: M:MapQuest.Coordinates.CoordinateList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  id: Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Sort(int, int, IComparer)
+  nameWithType: CoordinateList.Sort(int, int, IComparer)
+  fullName: MapQuest.Coordinates.CoordinateList.Sort(int, int, System.Collections.IComparer)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定した比較演算子を使用して、<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> のセクション内の要素を並べ替えます。
+  remarks: 詳細は<xref href="System.Collections.ArrayList.Sort?text=ArrayList.Sort" data-throw-if-not-resolved="false"></xref>を参照してください。
+  example: []
+  syntax:
+    content: public virtual void Sort(int index, int count, IComparer comparer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 並べ替える範囲の開始位置を示す 0 から始まるインデックス。
+    - id: count
+      type: System.Int32
+      description: 並べ替える範囲の長さ。
+    - id: comparer
+      type: System.Collections.IComparer
+      description: >-
+        <p>要素を比較する場合に使用する <xref href="System.Collections.IComparer?text=IComparer" data-throw-if-not-resolved="false"></xref>実装。</p>
+
+        <p>又は</p>
+
+        <p>各要素の<xref href="System.IComparable?text=IComparable" data-throw-if-not-resolved="false"></xref>実装を使用する場合は null 参照</p>
+    content.vb: Public Overridable Sub Sort(index As Integer, count As Integer, comparer As IComparer)
+  overload: MapQuest.Coordinates.CoordinateList.Sort*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">index</code> および <code class="paramref">count</code>が<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 内の要素の有効範囲を示していません。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <p>
+        <code class="paramref">index</code>が0未満</p>
+      <p>又は</p>
+
+      <p>
+        <code class="paramref">count</code>が0未満</p>
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> が読み取り専用
+  nameWithType.vb: CoordinateList.Sort(Integer, Integer, IComparer)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.Sort(Integer, Integer, System.Collections.IComparer)
+  name.vb: Sort(Integer, Integer, IComparer)
+- uid: MapQuest.Coordinates.CoordinateList.ToString
+  commentId: M:MapQuest.Coordinates.CoordinateList.ToString
+  id: ToString
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: CoordinateList.ToString()
+  fullName: MapQuest.Coordinates.CoordinateList.ToString()
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の要素を文字列表現します。
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> の要素の文字列表現
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: MapQuest.Coordinates.CoordinateList.ToString*
+- uid: MapQuest.Coordinates.CoordinateList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)
+  commentId: M:MapQuest.Coordinates.CoordinateList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)
+  id: CopyTo(System.Int32,System.Array,System.Int32,System.Int32)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(int, Array, int, int)
+  nameWithType: CoordinateList.CopyTo(int, Array, int, int)
+  fullName: MapQuest.Coordinates.CoordinateList.CopyTo(int, System.Array, int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: >-
+    要素の範囲を <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> から互換性のある 1 次元の <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> にコピーします。
+
+
+    コピー操作は、コピー先の配列の指定したインデックスから始まります。
+  example: []
+  syntax:
+    content: public virtual void CopyTo(int index, Array array, int arrayIndex, int count)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: コピーを開始するコピー元の <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 内の、0 から始まるインデックス番号。
+    - id: array
+      type: System.Array
+      description: " <xref href=\"MapQuest.Coordinates.CoordinateList\" data-throw-if-not-resolved=\"false\"></xref> から要素がコピーされる 1 次元の <xref href=\"MapQuest.Coordinates.Coordinate\" data-throw-if-not-resolved=\"false\"></xref> 。 \r\n<B>Coordinate</B> には、0 から始まるインデックス番号が必要です。"
+    - id: arrayIndex
+      type: System.Int32
+      description: コピーの開始位置となる、<code class="paramref">array</code> の 0 から始まるインデックス番号。
+    - id: count
+      type: System.Int32
+      description: コピーする要素の数
+    content.vb: Public Overridable Sub CopyTo(index As Integer, array As Array, arrayIndex As Integer, count As Integer)
+  overload: MapQuest.Coordinates.CoordinateList.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">array</code> が null 参照 (Visual Basic では <b>Nothing</b>) です。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">arrayIndex</code> が 0 未満です。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: " <code class=\"paramref\">array</code> が多次元です。\r\n\r\n<p>または</p><code class=\"paramref\">index</code> が 、コピー元の <xref href=\"MapQuest.Coordinates.CoordinateList\" data-throw-if-not-resolved=\"false\"></xref> の \r\n<xref href=\"MapQuest.Coordinates.CoordinateList.Count\" data-throw-if-not-resolved=\"false\"></xref> 以上です。\r\n\r\n<p>または</p><code class=\"paramref\">arrayIndex</code> が <code class=\"paramref\">array</code> の長さ以上です。\r\n\r\n<p>または</p>\r\nコピー元の <xref href=\"MapQuest.Coordinates.CoordinateList\" data-throw-if-not-resolved=\"false\"></xref> \r\nの要素数が、 <code class=\"paramref\">arrayIndex</code> からコピー先の \r\n<code class=\"paramref\">array</code> の末尾までに格納できる数を超えています。"
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: >-
+      コピー元の <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 
+
+      の型が、コピー先の <code class="paramref">array</code> の型に自動的にキャストできません。
+  nameWithType.vb: CoordinateList.CopyTo(Integer, Array, Integer, Integer)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.CopyTo(Integer, System.Array, Integer, Integer)
+  name.vb: CopyTo(Integer, Array, Integer, Integer)
+- uid: MapQuest.Coordinates.CoordinateList.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Coordinates.CoordinateList.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: CoordinateList.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Coordinates.CoordinateList.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: オブジェクトをシリアル化します。
+  example: []
+  syntax:
+    content: public void GetObjectData(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: シリアル化する情報を格納するオブジェクト
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: ''
+    content.vb: Public Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+  overload: MapQuest.Coordinates.CoordinateList.GetObjectData*
+  implements:
+  - System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- uid: MapQuest.Coordinates.CoordinateList.Count
+  commentId: P:MapQuest.Coordinates.CoordinateList.Count
+  id: Count
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: CoordinateList.Count
+  fullName: MapQuest.Coordinates.CoordinateList.Count
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 中に実際に含まれている要素の数を取得します。
+  example: []
+  syntax:
+    content: public virtual int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> 中に実際に含まれている要素の数。
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+  overload: MapQuest.Coordinates.CoordinateList.Count*
+  implements:
+  - MapQuest.Coordinates.ICoordinateCollection.Count
+  - System.Collections.ICollection.Count
+- uid: MapQuest.Coordinates.CoordinateList.IsSynchronized
+  commentId: P:MapQuest.Coordinates.CoordinateList.IsSynchronized
+  id: IsSynchronized
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: IsSynchronized
+  nameWithType: CoordinateList.IsSynchronized
+  fullName: MapQuest.Coordinates.CoordinateList.IsSynchronized
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: コレクションが同期されている (スレッド セーフな)かどうかを取得します。
+  example: []
+  syntax:
+    content: public virtual bool IsSynchronized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <b>true</b> もし、<xref href="System.Collections.ICollection?text=ICollection" data-throw-if-not-resolved="false"></xref>に対するアクセスがスレッドセーフに同期されている場合; そうでない場合 <b>false</b>
+    content.vb: Public Overridable ReadOnly Property IsSynchronized As Boolean
+  overload: MapQuest.Coordinates.CoordinateList.IsSynchronized*
+  implements:
+  - MapQuest.Coordinates.ICoordinateCollection.IsSynchronized
+  - System.Collections.ICollection.IsSynchronized
+- uid: MapQuest.Coordinates.CoordinateList.SyncRoot
+  commentId: P:MapQuest.Coordinates.CoordinateList.SyncRoot
+  id: SyncRoot
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: SyncRoot
+  nameWithType: CoordinateList.SyncRoot
+  fullName: MapQuest.Coordinates.CoordinateList.SyncRoot
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: コレクションに対する同期アクセスに使用されるオブジェクトを取得します。
+  example: []
+  syntax:
+    content: public virtual object SyncRoot { get; }
+    parameters: []
+    return:
+      type: System.Object
+      description: コレクションに対する同期アクセスに使用されるオブジェクト
+    content.vb: Public Overridable ReadOnly Property SyncRoot As Object
+  overload: MapQuest.Coordinates.CoordinateList.SyncRoot*
+  implements:
+  - MapQuest.Coordinates.ICoordinateCollection.SyncRoot
+  - System.Collections.ICollection.SyncRoot
+- uid: MapQuest.Coordinates.CoordinateList.Item(System.Int32)
+  commentId: P:MapQuest.Coordinates.CoordinateList.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: CoordinateList.this[int]
+  fullName: MapQuest.Coordinates.CoordinateList.this[int]
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 指定されたインデックスの <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> を取得または設定します。
+  example: []
+  syntax:
+    content: public virtual Coordinate this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 要素の取得または設定を行いたい0から始まるインデックス
+    return:
+      type: MapQuest.Coordinates.Coordinate
+      description: 指定したインデックスにある <xref href="MapQuest.Coordinates.Coordinate" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Overridable Default Property this[](index As Integer) As Coordinate
+  overload: MapQuest.Coordinates.CoordinateList.Item*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <p>
+        <code class="paramref">index</code> が 0 未満です。</p>
+      <p>または</p>
+
+      <p>
+        <code class="paramref">index</code> が <xref href="MapQuest.Coordinates.CoordinateList.Count" data-throw-if-not-resolved="false"></xref> 以上です。</p>
+  implements:
+  - MapQuest.Coordinates.ICoordinateList.Item(System.Int32)
+  nameWithType.vb: CoordinateList.this[](Integer)
+  fullName.vb: MapQuest.Coordinates.CoordinateList.this[](Integer)
+  name.vb: this[](Integer)
+- uid: MapQuest.Coordinates.CoordinateList.IsFixedSize
+  commentId: P:MapQuest.Coordinates.CoordinateList.IsFixedSize
+  id: IsFixedSize
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: IsFixedSize
+  nameWithType: CoordinateList.IsFixedSize
+  fullName: MapQuest.Coordinates.CoordinateList.IsFixedSize
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> が固定のサイズかどうかを取得します。
+  example: []
+  syntax:
+    content: public virtual bool IsFixedSize { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        <b>true</b>  もし、<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> が固定のサイズの場合;
+            そうでなければ、 <b>false</b> 。既定値は <b>false</b> です。
+    content.vb: Public Overridable ReadOnly Property IsFixedSize As Boolean
+  overload: MapQuest.Coordinates.CoordinateList.IsFixedSize*
+  implements:
+  - MapQuest.Coordinates.ICoordinateList.IsFixedSize
+  - System.Collections.IList.IsFixedSize
+- uid: MapQuest.Coordinates.CoordinateList.IsReadOnly
+  commentId: P:MapQuest.Coordinates.CoordinateList.IsReadOnly
+  id: IsReadOnly
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: CoordinateList.IsReadOnly
+  fullName: MapQuest.Coordinates.CoordinateList.IsReadOnly
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> が固定のサイズかどうかを取得します。
+  example: []
+  syntax:
+    content: public virtual bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        <b>true</b>  もし、<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> が固定のサイズの場合;
+            そうでなければ、 <b>false</b> 。既定値は <b>false</b> です。
+    content.vb: Public Overridable ReadOnly Property IsReadOnly As Boolean
+  overload: MapQuest.Coordinates.CoordinateList.IsReadOnly*
+  implements:
+  - MapQuest.Coordinates.ICoordinateList.IsReadOnly
+  - System.Collections.IList.IsReadOnly
+- uid: MapQuest.Coordinates.CoordinateList.Capacity
+  commentId: P:MapQuest.Coordinates.CoordinateList.Capacity
+  id: Capacity
+  parent: MapQuest.Coordinates.CoordinateList
+  langs:
+  - csharp
+  - vb
+  name: Capacity
+  nameWithType: CoordinateList.Capacity
+  fullName: MapQuest.Coordinates.CoordinateList.Capacity
+  type: Property
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: この<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> オブジェクトに含むことのできる要素の数を取得または設定します。
+  example: []
+  syntax:
+    content: public virtual int Capacity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: この<xref href="MapQuest.Coordinates.CoordinateList" data-throw-if-not-resolved="false"></xref> オブジェクトに含むことのできる要素の数
+    content.vb: Public Overridable Property Capacity As Integer
+  overload: MapQuest.Coordinates.CoordinateList.Capacity*
+references:
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Coordinates.ICoordinateList
+  commentId: T:MapQuest.Coordinates.ICoordinateList
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateList.html
+  name: ICoordinateList
+  nameWithType: ICoordinateList
+  fullName: MapQuest.Coordinates.ICoordinateList
+- uid: MapQuest.Coordinates.ICoordinateCollection
+  commentId: T:MapQuest.Coordinates.ICoordinateCollection
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateCollection.html
+  name: ICoordinateCollection
+  nameWithType: ICoordinateCollection
+  fullName: MapQuest.Coordinates.ICoordinateCollection
+- uid: System.Collections.Generic.IEnumerable{MapQuest.Coordinates.Coordinate}
+  commentId: T:System.Collections.Generic.IEnumerable{MapQuest.Coordinates.Coordinate}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Coordinate>
+  nameWithType: IEnumerable<Coordinate>
+  fullName: System.Collections.Generic.IEnumerable<MapQuest.Coordinates.Coordinate>
+  nameWithType.vb: IEnumerable(Of Coordinate)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of MapQuest.Coordinates.Coordinate)
+  name.vb: IEnumerable(Of Coordinate)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: MapQuest.Coordinates.CoordinateList
+  commentId: T:MapQuest.Coordinates.CoordinateList
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html
+  name: CoordinateList
+  nameWithType: CoordinateList
+  fullName: MapQuest.Coordinates.CoordinateList
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: MapQuest.Coordinates.CoordinateList.Synchronized*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Synchronized
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Synchronized_MapQuest_Coordinates_CoordinateList_
+  name: Synchronized
+  nameWithType: CoordinateList.Synchronized
+  fullName: MapQuest.Coordinates.CoordinateList.Synchronized
+- uid: MapQuest.Coordinates.CoordinateList.ReadOnly*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.ReadOnly
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_ReadOnly_MapQuest_Coordinates_CoordinateList_
+  name: ReadOnly
+  nameWithType: CoordinateList.ReadOnly
+  fullName: MapQuest.Coordinates.CoordinateList.ReadOnly
+- uid: MapQuest.Coordinates.CoordinateList.#ctor*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.#ctor
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList__ctor
+  name: CoordinateList
+  nameWithType: CoordinateList.CoordinateList
+  fullName: MapQuest.Coordinates.CoordinateList.CoordinateList
+  nameWithType.vb: CoordinateList.New
+  fullName.vb: MapQuest.Coordinates.CoordinateList.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: MapQuest.Coordinates.Coordinate[]
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate[]
+  nameWithType: Coordinate[]
+  fullName: MapQuest.Coordinates.Coordinate[]
+  nameWithType.vb: Coordinate()
+  fullName.vb: MapQuest.Coordinates.Coordinate()
+  name.vb: Coordinate()
+  spec.csharp:
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.Equals*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Equals
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Equals_System_Object_
+  name: Equals
+  nameWithType: CoordinateList.Equals
+  fullName: MapQuest.Coordinates.CoordinateList.Equals
+- uid: System.InvalidCastException
+  commentId: T:System.InvalidCastException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+  name: InvalidCastException
+  nameWithType: InvalidCastException
+  fullName: System.InvalidCastException
+- uid: MapQuest.Coordinates.CoordinateList.CopyTo*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.CopyTo
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_CopyTo_MapQuest_Coordinates_Coordinate___
+  name: CopyTo
+  nameWithType: CoordinateList.CopyTo
+  fullName: MapQuest.Coordinates.CoordinateList.CopyTo
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: MapQuest.Coordinates.ICoordinateCollection.CopyTo(MapQuest.Coordinates.Coordinate[],System.Int32)
+  commentId: M:MapQuest.Coordinates.ICoordinateCollection.CopyTo(MapQuest.Coordinates.Coordinate[],System.Int32)
+  parent: MapQuest.Coordinates.ICoordinateCollection
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateCollection.html#MapQuest_Coordinates_ICoordinateCollection_CopyTo_MapQuest_Coordinates_Coordinate___System_Int32_
+  name: CopyTo(Coordinate[], int)
+  nameWithType: ICoordinateCollection.CopyTo(Coordinate[], int)
+  fullName: MapQuest.Coordinates.ICoordinateCollection.CopyTo(MapQuest.Coordinates.Coordinate[], int)
+  nameWithType.vb: ICoordinateCollection.CopyTo(Coordinate(), Integer)
+  fullName.vb: MapQuest.Coordinates.ICoordinateCollection.CopyTo(MapQuest.Coordinates.Coordinate(), Integer)
+  name.vb: CopyTo(Coordinate(), Integer)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinateCollection.CopyTo(MapQuest.Coordinates.Coordinate[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateCollection.html#MapQuest_Coordinates_ICoordinateCollection_CopyTo_MapQuest_Coordinates_Coordinate___System_Int32_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateCollection.CopyTo(MapQuest.Coordinates.Coordinate[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateCollection.html#MapQuest_Coordinates_ICoordinateCollection_CopyTo_MapQuest_Coordinates_Coordinate___System_Int32_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.Add*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Add
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Add_MapQuest_Coordinates_Coordinate_
+  name: Add
+  nameWithType: CoordinateList.Add
+  fullName: MapQuest.Coordinates.CoordinateList.Add
+- uid: MapQuest.Coordinates.ICoordinateList.Add(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.ICoordinateList.Add(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.ICoordinateList
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Add_MapQuest_Coordinates_Coordinate_
+  name: Add(Coordinate)
+  nameWithType: ICoordinateList.Add(Coordinate)
+  fullName: MapQuest.Coordinates.ICoordinateList.Add(MapQuest.Coordinates.Coordinate)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinateList.Add(MapQuest.Coordinates.Coordinate)
+    name: Add
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Add_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateList.Add(MapQuest.Coordinates.Coordinate)
+    name: Add
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Add_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.Clear*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Clear
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Clear
+  name: Clear
+  nameWithType: CoordinateList.Clear
+  fullName: MapQuest.Coordinates.CoordinateList.Clear
+- uid: MapQuest.Coordinates.ICoordinateList.Clear
+  commentId: M:MapQuest.Coordinates.ICoordinateList.Clear
+  parent: MapQuest.Coordinates.ICoordinateList
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Clear
+  name: Clear()
+  nameWithType: ICoordinateList.Clear()
+  fullName: MapQuest.Coordinates.ICoordinateList.Clear()
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinateList.Clear
+    name: Clear
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateList.Clear
+    name: Clear
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Clear
+  - name: (
+  - name: )
+- uid: System.Collections.IList.Clear
+  commentId: M:System.Collections.IList.Clear
+  parent: System.Collections.IList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.clear
+  name: Clear()
+  nameWithType: IList.Clear()
+  fullName: System.Collections.IList.Clear()
+  spec.csharp:
+  - uid: System.Collections.IList.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IList.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.clear
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.Clone*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Clone
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Clone
+  name: Clone
+  nameWithType: CoordinateList.Clone
+  fullName: MapQuest.Coordinates.CoordinateList.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.Contains*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Contains
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Contains_MapQuest_Coordinates_Coordinate_
+  name: Contains
+  nameWithType: CoordinateList.Contains
+  fullName: MapQuest.Coordinates.CoordinateList.Contains
+- uid: MapQuest.Coordinates.ICoordinateList.Contains(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.ICoordinateList.Contains(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.ICoordinateList
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Contains_MapQuest_Coordinates_Coordinate_
+  name: Contains(Coordinate)
+  nameWithType: ICoordinateList.Contains(Coordinate)
+  fullName: MapQuest.Coordinates.ICoordinateList.Contains(MapQuest.Coordinates.Coordinate)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinateList.Contains(MapQuest.Coordinates.Coordinate)
+    name: Contains
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Contains_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateList.Contains(MapQuest.Coordinates.Coordinate)
+    name: Contains
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Contains_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.IndexOf*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.IndexOf
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_IndexOf_MapQuest_Coordinates_Coordinate_
+  name: IndexOf
+  nameWithType: CoordinateList.IndexOf
+  fullName: MapQuest.Coordinates.CoordinateList.IndexOf
+- uid: MapQuest.Coordinates.ICoordinateList.IndexOf(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.ICoordinateList.IndexOf(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.ICoordinateList
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_IndexOf_MapQuest_Coordinates_Coordinate_
+  name: IndexOf(Coordinate)
+  nameWithType: ICoordinateList.IndexOf(Coordinate)
+  fullName: MapQuest.Coordinates.ICoordinateList.IndexOf(MapQuest.Coordinates.Coordinate)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinateList.IndexOf(MapQuest.Coordinates.Coordinate)
+    name: IndexOf
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_IndexOf_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateList.IndexOf(MapQuest.Coordinates.Coordinate)
+    name: IndexOf
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_IndexOf_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.Count
+  commentId: P:MapQuest.Coordinates.CoordinateList.Count
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Count
+  name: Count
+  nameWithType: CoordinateList.Count
+  fullName: MapQuest.Coordinates.CoordinateList.Count
+- uid: MapQuest.Coordinates.CoordinateList.Insert*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Insert
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Insert_System_Int32_MapQuest_Coordinates_Coordinate_
+  name: Insert
+  nameWithType: CoordinateList.Insert
+  fullName: MapQuest.Coordinates.CoordinateList.Insert
+- uid: MapQuest.Coordinates.ICoordinateList.Insert(System.Int32,MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.ICoordinateList.Insert(System.Int32,MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.ICoordinateList
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Insert_System_Int32_MapQuest_Coordinates_Coordinate_
+  name: Insert(int, Coordinate)
+  nameWithType: ICoordinateList.Insert(int, Coordinate)
+  fullName: MapQuest.Coordinates.ICoordinateList.Insert(int, MapQuest.Coordinates.Coordinate)
+  nameWithType.vb: ICoordinateList.Insert(Integer, Coordinate)
+  fullName.vb: MapQuest.Coordinates.ICoordinateList.Insert(Integer, MapQuest.Coordinates.Coordinate)
+  name.vb: Insert(Integer, Coordinate)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinateList.Insert(System.Int32,MapQuest.Coordinates.Coordinate)
+    name: Insert
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Insert_System_Int32_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateList.Insert(System.Int32,MapQuest.Coordinates.Coordinate)
+    name: Insert
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Insert_System_Int32_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.Remove*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Remove
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Remove_MapQuest_Coordinates_Coordinate_
+  name: Remove
+  nameWithType: CoordinateList.Remove
+  fullName: MapQuest.Coordinates.CoordinateList.Remove
+- uid: MapQuest.Coordinates.ICoordinateList.Remove(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.ICoordinateList.Remove(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.ICoordinateList
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Remove_MapQuest_Coordinates_Coordinate_
+  name: Remove(Coordinate)
+  nameWithType: ICoordinateList.Remove(Coordinate)
+  fullName: MapQuest.Coordinates.ICoordinateList.Remove(MapQuest.Coordinates.Coordinate)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinateList.Remove(MapQuest.Coordinates.Coordinate)
+    name: Remove
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Remove_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateList.Remove(MapQuest.Coordinates.Coordinate)
+    name: Remove
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Remove_MapQuest_Coordinates_Coordinate_
+  - name: (
+  - uid: MapQuest.Coordinates.Coordinate
+    name: Coordinate
+    isExternal: true
+    href: MapQuest.Coordinates.Coordinate.html
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.RemoveAt*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.RemoveAt
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_RemoveAt_System_Int32_
+  name: RemoveAt
+  nameWithType: CoordinateList.RemoveAt
+  fullName: MapQuest.Coordinates.CoordinateList.RemoveAt
+- uid: MapQuest.Coordinates.ICoordinateList.RemoveAt(System.Int32)
+  commentId: M:MapQuest.Coordinates.ICoordinateList.RemoveAt(System.Int32)
+  parent: MapQuest.Coordinates.ICoordinateList
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_RemoveAt_System_Int32_
+  name: RemoveAt(int)
+  nameWithType: ICoordinateList.RemoveAt(int)
+  fullName: MapQuest.Coordinates.ICoordinateList.RemoveAt(int)
+  nameWithType.vb: ICoordinateList.RemoveAt(Integer)
+  fullName.vb: MapQuest.Coordinates.ICoordinateList.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinateList.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_RemoveAt_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateList.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_RemoveAt_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList
+  commentId: T:System.Collections.ArrayList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist
+  name: ArrayList
+  nameWithType: ArrayList
+  fullName: System.Collections.ArrayList
+- uid: MapQuest.Coordinates.CoordinateList.AddAll*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.AddAll
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_AddAll_System_Collections_ArrayList_System_Boolean_
+  name: AddAll
+  nameWithType: CoordinateList.AddAll
+  fullName: MapQuest.Coordinates.CoordinateList.AddAll
+- uid: MapQuest.Coordinates.CoordinateList.CloseRing*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.CloseRing
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_CloseRing
+  name: CloseRing
+  nameWithType: CoordinateList.CloseRing
+  fullName: MapQuest.Coordinates.CoordinateList.CloseRing
+- uid: MapQuest.Coordinates.CoordinateList.HasNullElements*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.HasNullElements
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_HasNullElements_MapQuest_Coordinates_Coordinate___
+  name: HasNullElements
+  nameWithType: CoordinateList.HasNullElements
+  fullName: MapQuest.Coordinates.CoordinateList.HasNullElements
+- uid: MapQuest.Coordinates.CoordinateList.Scroll*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Scroll
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Scroll_MapQuest_Coordinates_Coordinate_
+  name: Scroll
+  nameWithType: CoordinateList.Scroll
+  fullName: MapQuest.Coordinates.CoordinateList.Scroll
+- uid: MapQuest.Coordinates.CoordinateList.Enumerator
+  commentId: T:MapQuest.Coordinates.CoordinateList.Enumerator
+  isExternal: true
+- uid: MapQuest.Coordinates.CoordinateList.GetEnumerator*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.GetEnumerator
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_GetEnumerator
+  name: GetEnumerator
+  nameWithType: CoordinateList.GetEnumerator
+  fullName: MapQuest.Coordinates.CoordinateList.GetEnumerator
+- uid: MapQuest.Coordinates.ICoordinateCollection.GetEnumerator
+  commentId: M:MapQuest.Coordinates.ICoordinateCollection.GetEnumerator
+  parent: MapQuest.Coordinates.ICoordinateCollection
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateCollection.html#MapQuest_Coordinates_ICoordinateCollection_GetEnumerator
+  name: GetEnumerator()
+  nameWithType: ICoordinateCollection.GetEnumerator()
+  fullName: MapQuest.Coordinates.ICoordinateCollection.GetEnumerator()
+  spec.csharp:
+  - uid: MapQuest.Coordinates.ICoordinateCollection.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateCollection.html#MapQuest_Coordinates_ICoordinateCollection_GetEnumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateCollection.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateCollection.html#MapQuest_Coordinates_ICoordinateCollection_GetEnumerator
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.ICoordinateEnumerator
+  commentId: T:MapQuest.Coordinates.ICoordinateEnumerator
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateEnumerator.html
+  name: ICoordinateEnumerator
+  nameWithType: ICoordinateEnumerator
+  fullName: MapQuest.Coordinates.ICoordinateEnumerator
+- uid: MapQuest.Coordinates.CoordinateList.AddRange*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.AddRange
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_AddRange_MapQuest_Coordinates_CoordinateList_
+  name: AddRange
+  nameWithType: CoordinateList.AddRange
+  fullName: MapQuest.Coordinates.CoordinateList.AddRange
+- uid: MapQuest.Coordinates.CoordinateList.Capacity
+  commentId: P:MapQuest.Coordinates.CoordinateList.Capacity
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Capacity
+  name: Capacity
+  nameWithType: CoordinateList.Capacity
+  fullName: MapQuest.Coordinates.CoordinateList.Capacity
+- uid: MapQuest.Coordinates.CoordinateList.TrimToSize*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.TrimToSize
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_TrimToSize
+  name: TrimToSize
+  nameWithType: CoordinateList.TrimToSize
+  fullName: MapQuest.Coordinates.CoordinateList.TrimToSize
+- uid: System.IComparable
+  commentId: T:System.IComparable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable
+  name: IComparable
+  nameWithType: IComparable
+  fullName: System.IComparable
+- uid: System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+  commentId: M:System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)
+  name: BinarySearch(int, int, object, IComparer)
+  nameWithType: ArrayList.BinarySearch(int, int, object, IComparer)
+  fullName: System.Collections.ArrayList.BinarySearch(int, int, object, System.Collections.IComparer)
+  nameWithType.vb: ArrayList.BinarySearch(Integer, Integer, Object, IComparer)
+  fullName.vb: System.Collections.ArrayList.BinarySearch(Integer, Integer, Object, System.Collections.IComparer)
+  name.vb: BinarySearch(Integer, Integer, Object, IComparer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+    name: BinarySearch
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+    name: BinarySearch
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: MapQuest.Coordinates.CoordinateList.BinarySearch*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.BinarySearch
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_BinarySearch_MapQuest_Coordinates_Coordinate_
+  name: BinarySearch
+  nameWithType: CoordinateList.BinarySearch
+  fullName: MapQuest.Coordinates.CoordinateList.BinarySearch
+- uid: System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+  commentId: M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange
+  name: RemoveRange(int, int)
+  nameWithType: ArrayList.RemoveRange(int, int)
+  fullName: System.Collections.ArrayList.RemoveRange(int, int)
+  nameWithType.vb: ArrayList.RemoveRange(Integer, Integer)
+  fullName.vb: System.Collections.ArrayList.RemoveRange(Integer, Integer)
+  name.vb: RemoveRange(Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+    name: RemoveRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+    name: RemoveRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: MapQuest.Coordinates.CoordinateList.RemoveRange*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.RemoveRange
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_RemoveRange_System_Int32_System_Int32_
+  name: RemoveRange
+  nameWithType: CoordinateList.RemoveRange
+  fullName: MapQuest.Coordinates.CoordinateList.RemoveRange
+- uid: System.Collections.ArrayList.Reverse
+  commentId: M:System.Collections.ArrayList.Reverse
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse
+  name: Reverse()
+  nameWithType: ArrayList.Reverse()
+  fullName: System.Collections.ArrayList.Reverse()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Reverse
+    name: Reverse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Reverse
+    name: Reverse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.Reverse*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Reverse
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Reverse
+  name: Reverse
+  nameWithType: CoordinateList.Reverse
+  fullName: MapQuest.Coordinates.CoordinateList.Reverse
+- uid: System.Collections.ArrayList.Sort
+  commentId: M:System.Collections.ArrayList.Sort
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort
+  name: Sort()
+  nameWithType: ArrayList.Sort()
+  fullName: System.Collections.ArrayList.Sort()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Sort
+    name: Sort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Sort
+    name: Sort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.Sort*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Sort
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Sort
+  name: Sort
+  nameWithType: CoordinateList.Sort
+  fullName: MapQuest.Coordinates.CoordinateList.Sort
+- uid: System.Collections.IComparer
+  commentId: T:System.Collections.IComparer
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  name: IComparer
+  nameWithType: IComparer
+  fullName: System.Collections.IComparer
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.ToString*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.ToString
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_ToString
+  name: ToString
+  nameWithType: CoordinateList.ToString
+  fullName: MapQuest.Coordinates.CoordinateList.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Array
+  commentId: T:System.Array
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.array
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: MapQuest.Coordinates.CoordinateList.GetObjectData*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.GetObjectData
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  name: GetObjectData
+  nameWithType: CoordinateList.GetObjectData
+  fullName: MapQuest.Coordinates.CoordinateList.GetObjectData
+- uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Runtime.Serialization.ISerializable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: ISerializable.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.Count*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Count
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Count
+  name: Count
+  nameWithType: CoordinateList.Count
+  fullName: MapQuest.Coordinates.CoordinateList.Count
+- uid: MapQuest.Coordinates.ICoordinateCollection.Count
+  commentId: P:MapQuest.Coordinates.ICoordinateCollection.Count
+  parent: MapQuest.Coordinates.ICoordinateCollection
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateCollection.html#MapQuest_Coordinates_ICoordinateCollection_Count
+  name: Count
+  nameWithType: ICoordinateCollection.Count
+  fullName: MapQuest.Coordinates.ICoordinateCollection.Count
+- uid: System.Collections.ICollection.Count
+  commentId: P:System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.count
+  name: Count
+  nameWithType: ICollection.Count
+  fullName: System.Collections.ICollection.Count
+- uid: MapQuest.Coordinates.CoordinateList.IsSynchronized*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.IsSynchronized
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_IsSynchronized
+  name: IsSynchronized
+  nameWithType: CoordinateList.IsSynchronized
+  fullName: MapQuest.Coordinates.CoordinateList.IsSynchronized
+- uid: MapQuest.Coordinates.ICoordinateCollection.IsSynchronized
+  commentId: P:MapQuest.Coordinates.ICoordinateCollection.IsSynchronized
+  parent: MapQuest.Coordinates.ICoordinateCollection
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateCollection.html#MapQuest_Coordinates_ICoordinateCollection_IsSynchronized
+  name: IsSynchronized
+  nameWithType: ICoordinateCollection.IsSynchronized
+  fullName: MapQuest.Coordinates.ICoordinateCollection.IsSynchronized
+- uid: System.Collections.ICollection.IsSynchronized
+  commentId: P:System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.issynchronized
+  name: IsSynchronized
+  nameWithType: ICollection.IsSynchronized
+  fullName: System.Collections.ICollection.IsSynchronized
+- uid: MapQuest.Coordinates.CoordinateList.SyncRoot*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.SyncRoot
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_SyncRoot
+  name: SyncRoot
+  nameWithType: CoordinateList.SyncRoot
+  fullName: MapQuest.Coordinates.CoordinateList.SyncRoot
+- uid: MapQuest.Coordinates.ICoordinateCollection.SyncRoot
+  commentId: P:MapQuest.Coordinates.ICoordinateCollection.SyncRoot
+  parent: MapQuest.Coordinates.ICoordinateCollection
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateCollection.html#MapQuest_Coordinates_ICoordinateCollection_SyncRoot
+  name: SyncRoot
+  nameWithType: ICoordinateCollection.SyncRoot
+  fullName: MapQuest.Coordinates.ICoordinateCollection.SyncRoot
+- uid: System.Collections.ICollection.SyncRoot
+  commentId: P:System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection.syncroot
+  name: SyncRoot
+  nameWithType: ICollection.SyncRoot
+  fullName: System.Collections.ICollection.SyncRoot
+- uid: MapQuest.Coordinates.CoordinateList.Item*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Item
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Item_System_Int32_
+  name: this
+  nameWithType: CoordinateList.this
+  fullName: MapQuest.Coordinates.CoordinateList.this
+  nameWithType.vb: CoordinateList.this[]
+  fullName.vb: MapQuest.Coordinates.CoordinateList.this[]
+  name.vb: this[]
+- uid: MapQuest.Coordinates.ICoordinateList.Item(System.Int32)
+  commentId: P:MapQuest.Coordinates.ICoordinateList.Item(System.Int32)
+  parent: MapQuest.Coordinates.ICoordinateList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: ICoordinateList.this[int]
+  fullName: MapQuest.Coordinates.ICoordinateList.this[int]
+  nameWithType.vb: ICoordinateList.this[](Integer)
+  fullName.vb: MapQuest.Coordinates.ICoordinateList.this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: MapQuest.Coordinates.ICoordinateList.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_Item_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Coordinates.CoordinateList.IsFixedSize*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.IsFixedSize
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_IsFixedSize
+  name: IsFixedSize
+  nameWithType: CoordinateList.IsFixedSize
+  fullName: MapQuest.Coordinates.CoordinateList.IsFixedSize
+- uid: MapQuest.Coordinates.ICoordinateList.IsFixedSize
+  commentId: P:MapQuest.Coordinates.ICoordinateList.IsFixedSize
+  parent: MapQuest.Coordinates.ICoordinateList
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_IsFixedSize
+  name: IsFixedSize
+  nameWithType: ICoordinateList.IsFixedSize
+  fullName: MapQuest.Coordinates.ICoordinateList.IsFixedSize
+- uid: System.Collections.IList.IsFixedSize
+  commentId: P:System.Collections.IList.IsFixedSize
+  parent: System.Collections.IList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.isfixedsize
+  name: IsFixedSize
+  nameWithType: IList.IsFixedSize
+  fullName: System.Collections.IList.IsFixedSize
+- uid: MapQuest.Coordinates.CoordinateList.IsReadOnly*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.IsReadOnly
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_IsReadOnly
+  name: IsReadOnly
+  nameWithType: CoordinateList.IsReadOnly
+  fullName: MapQuest.Coordinates.CoordinateList.IsReadOnly
+- uid: MapQuest.Coordinates.ICoordinateList.IsReadOnly
+  commentId: P:MapQuest.Coordinates.ICoordinateList.IsReadOnly
+  parent: MapQuest.Coordinates.ICoordinateList
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateList.html#MapQuest_Coordinates_ICoordinateList_IsReadOnly
+  name: IsReadOnly
+  nameWithType: ICoordinateList.IsReadOnly
+  fullName: MapQuest.Coordinates.ICoordinateList.IsReadOnly
+- uid: System.Collections.IList.IsReadOnly
+  commentId: P:System.Collections.IList.IsReadOnly
+  parent: System.Collections.IList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist.isreadonly
+  name: IsReadOnly
+  nameWithType: IList.IsReadOnly
+  fullName: System.Collections.IList.IsReadOnly
+- uid: MapQuest.Coordinates.CoordinateList.Capacity*
+  commentId: Overload:MapQuest.Coordinates.CoordinateList.Capacity
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateList.html#MapQuest_Coordinates_CoordinateList_Capacity
+  name: Capacity
+  nameWithType: CoordinateList.Capacity
+  fullName: MapQuest.Coordinates.CoordinateList.Capacity

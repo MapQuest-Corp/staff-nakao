@@ -1,0 +1,1316 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  commentId: T:MapQuest.Features.SpatialIndexers.SpatialIndexer
+  id: SpatialIndexer
+  parent: MapQuest.Features.SpatialIndexers
+  children:
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.#ctor
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.#ctor(MapQuest.Features.SpatialIndexers.PageFile)
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.Close
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.Contains(MapQuest.Features.SpatialIndexers.HyperBox)
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.Create(System.Int32,System.Int32)
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.Create(System.Int32,System.Int32,System.String)
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox)
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox,System.Int32)
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.Insert(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.Intersects(MapQuest.Features.SpatialIndexers.HyperBox)
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint,System.Double)
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.Open(System.String,System.Int32)
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.Search(MapQuest.Features.SpatialIndexers.HyperBox)
+  - MapQuest.Features.SpatialIndexers.SpatialIndexer.Within(MapQuest.Features.SpatialIndexers.HyperBox)
+  langs:
+  - csharp
+  - vb
+  name: SpatialIndexer
+  nameWithType: SpatialIndexer
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  type: Class
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: 'public sealed class SpatialIndexer : ISpatialIndexer'
+    content.vb: Public NotInheritable Class SpatialIndexer Implements ISpatialIndexer
+  inheritance:
+  - System.Object
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.#ctor
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.#ctor
+  id: '#ctor'
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: SpatialIndexer()
+  nameWithType: SpatialIndexer.SpatialIndexer()
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.SpatialIndexer()
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public SpatialIndexer()
+    content.vb: Public Sub New()
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.#ctor*
+  nameWithType.vb: SpatialIndexer.New()
+  fullName.vb: MapQuest.Features.SpatialIndexers.SpatialIndexer.New()
+  name.vb: New()
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.#ctor(MapQuest.Features.SpatialIndexers.PageFile)
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.#ctor(MapQuest.Features.SpatialIndexers.PageFile)
+  id: '#ctor(MapQuest.Features.SpatialIndexers.PageFile)'
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: SpatialIndexer(PageFile)
+  nameWithType: SpatialIndexer.SpatialIndexer(PageFile)
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.SpatialIndexer(MapQuest.Features.SpatialIndexers.PageFile)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public SpatialIndexer(PageFile pageFile)
+    parameters:
+    - id: pageFile
+      type: MapQuest.Features.SpatialIndexers.PageFile
+    content.vb: Public Sub New(pageFile As PageFile)
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.#ctor*
+  nameWithType.vb: SpatialIndexer.New(PageFile)
+  fullName.vb: MapQuest.Features.SpatialIndexers.SpatialIndexer.New(MapQuest.Features.SpatialIndexers.PageFile)
+  name.vb: New(PageFile)
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Open(System.String,System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Open(System.String,System.Int32)
+  id: Open(System.String,System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: Open(string, int)
+  nameWithType: SpatialIndexer.Open(string, int)
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Open(string, int)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public bool Open(string fileName, int capacity)
+    parameters:
+    - id: fileName
+      type: System.String
+    - id: capacity
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function Open(fileName As String, capacity As Integer) As Boolean
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.Open*
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer.Open(System.String,System.Int32)
+  nameWithType.vb: SpatialIndexer.Open(String, Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.SpatialIndexer.Open(String, Integer)
+  name.vb: Open(String, Integer)
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Create(System.Int32,System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Create(System.Int32,System.Int32)
+  id: Create(System.Int32,System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: Create(int, int)
+  nameWithType: SpatialIndexer.Create(int, int)
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Create(int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public bool Create(int dimension, int nodeCapacity)
+    parameters:
+    - id: dimension
+      type: System.Int32
+    - id: nodeCapacity
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function Create(dimension As Integer, nodeCapacity As Integer) As Boolean
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.Create*
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(System.Int32,System.Int32)
+  nameWithType.vb: SpatialIndexer.Create(Integer, Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.SpatialIndexer.Create(Integer, Integer)
+  name.vb: Create(Integer, Integer)
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Create(System.Int32,System.Int32,System.String)
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Create(System.Int32,System.Int32,System.String)
+  id: Create(System.Int32,System.Int32,System.String)
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: Create(int, int, string)
+  nameWithType: SpatialIndexer.Create(int, int, string)
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Create(int, int, string)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public bool Create(int dimension, int nodeCapacity, string fileName)
+    parameters:
+    - id: dimension
+      type: System.Int32
+    - id: nodeCapacity
+      type: System.Int32
+    - id: fileName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function Create(dimension As Integer, nodeCapacity As Integer, fileName As String) As Boolean
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.Create*
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(System.Int32,System.Int32,System.String)
+  nameWithType.vb: SpatialIndexer.Create(Integer, Integer, String)
+  fullName.vb: MapQuest.Features.SpatialIndexers.SpatialIndexer.Create(Integer, Integer, String)
+  name.vb: Create(Integer, Integer, String)
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Intersects(MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Intersects(MapQuest.Features.SpatialIndexers.HyperBox)
+  id: Intersects(MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: Intersects(HyperBox)
+  nameWithType: SpatialIndexer.Intersects(HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Intersects(MapQuest.Features.SpatialIndexers.HyperBox)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public object[] Intersects(HyperBox box)
+    parameters:
+    - id: box
+      type: MapQuest.Features.SpatialIndexers.HyperBox
+    return:
+      type: System.Object[]
+    content.vb: Public Function Intersects(box As HyperBox) As Object()
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.Intersects*
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer.Intersects(MapQuest.Features.SpatialIndexers.HyperBox)
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Contains(MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Contains(MapQuest.Features.SpatialIndexers.HyperBox)
+  id: Contains(MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: Contains(HyperBox)
+  nameWithType: SpatialIndexer.Contains(HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Contains(MapQuest.Features.SpatialIndexers.HyperBox)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public object[] Contains(HyperBox box)
+    parameters:
+    - id: box
+      type: MapQuest.Features.SpatialIndexers.HyperBox
+    return:
+      type: System.Object[]
+    content.vb: Public Function Contains(box As HyperBox) As Object()
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.Contains*
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer.Contains(MapQuest.Features.SpatialIndexers.HyperBox)
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Within(MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Within(MapQuest.Features.SpatialIndexers.HyperBox)
+  id: Within(MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: Within(HyperBox)
+  nameWithType: SpatialIndexer.Within(HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Within(MapQuest.Features.SpatialIndexers.HyperBox)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public object[] Within(HyperBox box)
+    parameters:
+    - id: box
+      type: MapQuest.Features.SpatialIndexers.HyperBox
+    return:
+      type: System.Object[]
+    content.vb: Public Function Within(box As HyperBox) As Object()
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.Within*
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer.Within(MapQuest.Features.SpatialIndexers.HyperBox)
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Insert(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Insert(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+  id: Insert(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: Insert(object, HyperBox)
+  nameWithType: SpatialIndexer.Insert(object, HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Insert(object, MapQuest.Features.SpatialIndexers.HyperBox)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public bool Insert(object obj, HyperBox box)
+    parameters:
+    - id: obj
+      type: System.Object
+    - id: box
+      type: MapQuest.Features.SpatialIndexers.HyperBox
+    return:
+      type: System.Boolean
+    content.vb: Public Function Insert(obj As Object, box As HyperBox) As Boolean
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.Insert*
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer.Insert(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+  nameWithType.vb: SpatialIndexer.Insert(Object, HyperBox)
+  fullName.vb: MapQuest.Features.SpatialIndexers.SpatialIndexer.Insert(Object, MapQuest.Features.SpatialIndexers.HyperBox)
+  name.vb: Insert(Object, HyperBox)
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint,System.Double)
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint,System.Double)
+  id: NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint,System.Double)
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: NearestNeighbor(HyperPoint, double)
+  nameWithType: SpatialIndexer.NearestNeighbor(HyperPoint, double)
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint, double)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public object[] NearestNeighbor(HyperPoint point, double distance)
+    parameters:
+    - id: point
+      type: MapQuest.Features.SpatialIndexers.HyperPoint
+    - id: distance
+      type: System.Double
+    return:
+      type: System.Object[]
+    content.vb: Public Function NearestNeighbor(point As HyperPoint, distance As Double) As Object()
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.NearestNeighbor*
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer.NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint,System.Double)
+  nameWithType.vb: SpatialIndexer.NearestNeighbor(HyperPoint, Double)
+  fullName.vb: MapQuest.Features.SpatialIndexers.SpatialIndexer.NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint, Double)
+  name.vb: NearestNeighbor(HyperPoint, Double)
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Close
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Close
+  id: Close
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: SpatialIndexer.Close()
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Close()
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: >-
+    Closes the rtree and frees the ressources.
+               @throws SpatialIndexerException if an error occures.
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.Close*
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer.Close
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox,System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox,System.Int32)
+  id: Delete(MapQuest.Features.SpatialIndexers.HyperBox,System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: Delete(HyperBox, int)
+  nameWithType: SpatialIndexer.Delete(HyperBox, int)
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox, int)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public bool Delete(HyperBox box, int objID)
+    parameters:
+    - id: box
+      type: MapQuest.Features.SpatialIndexers.HyperBox
+    - id: objID
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function Delete(box As HyperBox, objID As Integer) As Boolean
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete*
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox,System.Int32)
+  nameWithType.vb: SpatialIndexer.Delete(HyperBox, Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox, Integer)
+  name.vb: Delete(HyperBox, Integer)
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox)
+  id: Delete(MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: Delete(HyperBox)
+  nameWithType: SpatialIndexer.Delete(HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public bool Delete(HyperBox box)
+    parameters:
+    - id: box
+      type: MapQuest.Features.SpatialIndexers.HyperBox
+    return:
+      type: System.Boolean
+    content.vb: Public Function Delete(box As HyperBox) As Boolean
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete*
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox)
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Search(MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Search(MapQuest.Features.SpatialIndexers.HyperBox)
+  id: Search(MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.SpatialIndexer
+  langs:
+  - csharp
+  - vb
+  name: Search(HyperBox)
+  nameWithType: SpatialIndexer.Search(HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Search(MapQuest.Features.SpatialIndexers.HyperBox)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  example: []
+  syntax:
+    content: public object[] Search(HyperBox box)
+    parameters:
+    - id: box
+      type: MapQuest.Features.SpatialIndexers.HyperBox
+    return:
+      type: System.Object[]
+    content.vb: Public Function Search(box As HyperBox) As Object()
+  overload: MapQuest.Features.SpatialIndexers.SpatialIndexer.Search*
+  implements:
+  - MapQuest.Features.SpatialIndexers.ISpatialIndexer.Search(MapQuest.Features.SpatialIndexers.HyperBox)
+references:
+- uid: MapQuest.Features.SpatialIndexers
+  commentId: N:MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features.SpatialIndexers
+  nameWithType: MapQuest.Features.SpatialIndexers
+  fullName: MapQuest.Features.SpatialIndexers
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.SpatialIndexers
+    name: SpatialIndexers
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.SpatialIndexers
+    name: SpatialIndexers
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  commentId: T:MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html
+  name: ISpatialIndexer
+  nameWithType: ISpatialIndexer
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.#ctor*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.SpatialIndexer.#ctor
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexer.html#MapQuest_Features_SpatialIndexers_SpatialIndexer__ctor
+  name: SpatialIndexer
+  nameWithType: SpatialIndexer.SpatialIndexer
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.SpatialIndexer
+  nameWithType.vb: SpatialIndexer.New
+  fullName.vb: MapQuest.Features.SpatialIndexers.SpatialIndexer.New
+  name.vb: New
+- uid: MapQuest.Features.SpatialIndexers.PageFile
+  commentId: T:MapQuest.Features.SpatialIndexers.PageFile
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html
+  name: PageFile
+  nameWithType: PageFile
+  fullName: MapQuest.Features.SpatialIndexers.PageFile
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Open*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.SpatialIndexer.Open
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexer.html#MapQuest_Features_SpatialIndexers_SpatialIndexer_Open_System_String_System_Int32_
+  name: Open
+  nameWithType: SpatialIndexer.Open
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Open
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Open(System.String,System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.ISpatialIndexer.Open(System.String,System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Open_System_String_System_Int32_
+  name: Open(string, int)
+  nameWithType: ISpatialIndexer.Open(string, int)
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Open(string, int)
+  nameWithType.vb: ISpatialIndexer.Open(String, Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Open(String, Integer)
+  name.vb: Open(String, Integer)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Open(System.String,System.Int32)
+    name: Open
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Open_System_String_System_Int32_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Open(System.String,System.Int32)
+    name: Open
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Open_System_String_System_Int32_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Create*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.SpatialIndexer.Create
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexer.html#MapQuest_Features_SpatialIndexers_SpatialIndexer_Create_System_Int32_System_Int32_
+  name: Create
+  nameWithType: SpatialIndexer.Create
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Create
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(System.Int32,System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(System.Int32,System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Create_System_Int32_System_Int32_
+  name: Create(int, int)
+  nameWithType: ISpatialIndexer.Create(int, int)
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(int, int)
+  nameWithType.vb: ISpatialIndexer.Create(Integer, Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(Integer, Integer)
+  name.vb: Create(Integer, Integer)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(System.Int32,System.Int32)
+    name: Create
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Create_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(System.Int32,System.Int32)
+    name: Create
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Create_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(System.Int32,System.Int32,System.String)
+  commentId: M:MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(System.Int32,System.Int32,System.String)
+  parent: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Create_System_Int32_System_Int32_System_String_
+  name: Create(int, int, string)
+  nameWithType: ISpatialIndexer.Create(int, int, string)
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(int, int, string)
+  nameWithType.vb: ISpatialIndexer.Create(Integer, Integer, String)
+  fullName.vb: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(Integer, Integer, String)
+  name.vb: Create(Integer, Integer, String)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(System.Int32,System.Int32,System.String)
+    name: Create
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Create_System_Int32_System_Int32_System_String_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Create(System.Int32,System.Int32,System.String)
+    name: Create
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Create_System_Int32_System_Int32_System_String_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Intersects*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.SpatialIndexer.Intersects
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexer.html#MapQuest_Features_SpatialIndexers_SpatialIndexer_Intersects_MapQuest_Features_SpatialIndexers_HyperBox_
+  name: Intersects
+  nameWithType: SpatialIndexer.Intersects
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Intersects
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Intersects(MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.ISpatialIndexer.Intersects(MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Intersects_MapQuest_Features_SpatialIndexers_HyperBox_
+  name: Intersects(HyperBox)
+  nameWithType: ISpatialIndexer.Intersects(HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Intersects(MapQuest.Features.SpatialIndexers.HyperBox)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Intersects(MapQuest.Features.SpatialIndexers.HyperBox)
+    name: Intersects
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Intersects_MapQuest_Features_SpatialIndexers_HyperBox_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Intersects(MapQuest.Features.SpatialIndexers.HyperBox)
+    name: Intersects
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Intersects_MapQuest_Features_SpatialIndexers_HyperBox_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.HyperBox
+  commentId: T:MapQuest.Features.SpatialIndexers.HyperBox
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  name: HyperBox
+  nameWithType: HyperBox
+  fullName: MapQuest.Features.SpatialIndexers.HyperBox
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Contains*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.SpatialIndexer.Contains
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexer.html#MapQuest_Features_SpatialIndexers_SpatialIndexer_Contains_MapQuest_Features_SpatialIndexers_HyperBox_
+  name: Contains
+  nameWithType: SpatialIndexer.Contains
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Contains
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Contains(MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.ISpatialIndexer.Contains(MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Contains_MapQuest_Features_SpatialIndexers_HyperBox_
+  name: Contains(HyperBox)
+  nameWithType: ISpatialIndexer.Contains(HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Contains(MapQuest.Features.SpatialIndexers.HyperBox)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Contains(MapQuest.Features.SpatialIndexers.HyperBox)
+    name: Contains
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Contains_MapQuest_Features_SpatialIndexers_HyperBox_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Contains(MapQuest.Features.SpatialIndexers.HyperBox)
+    name: Contains
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Contains_MapQuest_Features_SpatialIndexers_HyperBox_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Within*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.SpatialIndexer.Within
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexer.html#MapQuest_Features_SpatialIndexers_SpatialIndexer_Within_MapQuest_Features_SpatialIndexers_HyperBox_
+  name: Within
+  nameWithType: SpatialIndexer.Within
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Within
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Within(MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.ISpatialIndexer.Within(MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Within_MapQuest_Features_SpatialIndexers_HyperBox_
+  name: Within(HyperBox)
+  nameWithType: ISpatialIndexer.Within(HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Within(MapQuest.Features.SpatialIndexers.HyperBox)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Within(MapQuest.Features.SpatialIndexers.HyperBox)
+    name: Within
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Within_MapQuest_Features_SpatialIndexers_HyperBox_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Within(MapQuest.Features.SpatialIndexers.HyperBox)
+    name: Within
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Within_MapQuest_Features_SpatialIndexers_HyperBox_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Insert*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.SpatialIndexer.Insert
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexer.html#MapQuest_Features_SpatialIndexers_SpatialIndexer_Insert_System_Object_MapQuest_Features_SpatialIndexers_HyperBox_
+  name: Insert
+  nameWithType: SpatialIndexer.Insert
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Insert
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Insert(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.ISpatialIndexer.Insert(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Insert_System_Object_MapQuest_Features_SpatialIndexers_HyperBox_
+  name: Insert(object, HyperBox)
+  nameWithType: ISpatialIndexer.Insert(object, HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Insert(object, MapQuest.Features.SpatialIndexers.HyperBox)
+  nameWithType.vb: ISpatialIndexer.Insert(Object, HyperBox)
+  fullName.vb: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Insert(Object, MapQuest.Features.SpatialIndexers.HyperBox)
+  name.vb: Insert(Object, HyperBox)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Insert(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+    name: Insert
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Insert_System_Object_MapQuest_Features_SpatialIndexers_HyperBox_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Insert(System.Object,MapQuest.Features.SpatialIndexers.HyperBox)
+    name: Insert
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Insert_System_Object_MapQuest_Features_SpatialIndexers_HyperBox_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.NearestNeighbor*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.SpatialIndexer.NearestNeighbor
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexer.html#MapQuest_Features_SpatialIndexers_SpatialIndexer_NearestNeighbor_MapQuest_Features_SpatialIndexers_HyperPoint_System_Double_
+  name: NearestNeighbor
+  nameWithType: SpatialIndexer.NearestNeighbor
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.NearestNeighbor
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint,System.Double)
+  commentId: M:MapQuest.Features.SpatialIndexers.ISpatialIndexer.NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint,System.Double)
+  parent: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_NearestNeighbor_MapQuest_Features_SpatialIndexers_HyperPoint_System_Double_
+  name: NearestNeighbor(HyperPoint, double)
+  nameWithType: ISpatialIndexer.NearestNeighbor(HyperPoint, double)
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer.NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint, double)
+  nameWithType.vb: ISpatialIndexer.NearestNeighbor(HyperPoint, Double)
+  fullName.vb: MapQuest.Features.SpatialIndexers.ISpatialIndexer.NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint, Double)
+  name.vb: NearestNeighbor(HyperPoint, Double)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint,System.Double)
+    name: NearestNeighbor
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_NearestNeighbor_MapQuest_Features_SpatialIndexers_HyperPoint_System_Double_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperPoint
+    name: HyperPoint
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperPoint.html
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.NearestNeighbor(MapQuest.Features.SpatialIndexers.HyperPoint,System.Double)
+    name: NearestNeighbor
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_NearestNeighbor_MapQuest_Features_SpatialIndexers_HyperPoint_System_Double_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperPoint
+    name: HyperPoint
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperPoint.html
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.HyperPoint
+  commentId: T:MapQuest.Features.SpatialIndexers.HyperPoint
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.HyperPoint.html
+  name: HyperPoint
+  nameWithType: HyperPoint
+  fullName: MapQuest.Features.SpatialIndexers.HyperPoint
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Close*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.SpatialIndexer.Close
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexer.html#MapQuest_Features_SpatialIndexers_SpatialIndexer_Close
+  name: Close
+  nameWithType: SpatialIndexer.Close
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Close
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Close
+  commentId: M:MapQuest.Features.SpatialIndexers.ISpatialIndexer.Close
+  parent: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Close
+  name: Close()
+  nameWithType: ISpatialIndexer.Close()
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Close()
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Close
+    name: Close
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Close
+    name: Close
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Close
+  - name: (
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexer.html#MapQuest_Features_SpatialIndexers_SpatialIndexer_Delete_MapQuest_Features_SpatialIndexers_HyperBox_System_Int32_
+  name: Delete
+  nameWithType: SpatialIndexer.Delete
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Delete
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox,System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox,System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Delete_MapQuest_Features_SpatialIndexers_HyperBox_System_Int32_
+  name: Delete(HyperBox, int)
+  nameWithType: ISpatialIndexer.Delete(HyperBox, int)
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox, int)
+  nameWithType.vb: ISpatialIndexer.Delete(HyperBox, Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox, Integer)
+  name.vb: Delete(HyperBox, Integer)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox,System.Int32)
+    name: Delete
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Delete_MapQuest_Features_SpatialIndexers_HyperBox_System_Int32_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox,System.Int32)
+    name: Delete
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Delete_MapQuest_Features_SpatialIndexers_HyperBox_System_Int32_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Delete_MapQuest_Features_SpatialIndexers_HyperBox_
+  name: Delete(HyperBox)
+  nameWithType: ISpatialIndexer.Delete(HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox)
+    name: Delete
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Delete_MapQuest_Features_SpatialIndexers_HyperBox_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Delete(MapQuest.Features.SpatialIndexers.HyperBox)
+    name: Delete
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Delete_MapQuest_Features_SpatialIndexers_HyperBox_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.SpatialIndexer.Search*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.SpatialIndexer.Search
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.SpatialIndexer.html#MapQuest_Features_SpatialIndexers_SpatialIndexer_Search_MapQuest_Features_SpatialIndexers_HyperBox_
+  name: Search
+  nameWithType: SpatialIndexer.Search
+  fullName: MapQuest.Features.SpatialIndexers.SpatialIndexer.Search
+- uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Search(MapQuest.Features.SpatialIndexers.HyperBox)
+  commentId: M:MapQuest.Features.SpatialIndexers.ISpatialIndexer.Search(MapQuest.Features.SpatialIndexers.HyperBox)
+  parent: MapQuest.Features.SpatialIndexers.ISpatialIndexer
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Search_MapQuest_Features_SpatialIndexers_HyperBox_
+  name: Search(HyperBox)
+  nameWithType: ISpatialIndexer.Search(HyperBox)
+  fullName: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Search(MapQuest.Features.SpatialIndexers.HyperBox)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Search(MapQuest.Features.SpatialIndexers.HyperBox)
+    name: Search
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Search_MapQuest_Features_SpatialIndexers_HyperBox_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.ISpatialIndexer.Search(MapQuest.Features.SpatialIndexers.HyperBox)
+    name: Search
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.ISpatialIndexer.html#MapQuest_Features_SpatialIndexers_ISpatialIndexer_Search_MapQuest_Features_SpatialIndexers_HyperBox_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.HyperBox
+    name: HyperBox
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.HyperBox.html
+  - name: )

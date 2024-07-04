@@ -1,0 +1,98 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.ICoordinateVisitor
+  commentId: T:MapQuest.Coordinates.ICoordinateVisitor
+  id: ICoordinateVisitor
+  parent: MapQuest.Coordinates
+  children:
+  - MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  langs:
+  - csharp
+  - vb
+  name: ICoordinateVisitor
+  nameWithType: ICoordinateVisitor
+  fullName: MapQuest.Coordinates.ICoordinateVisitor
+  type: Interface
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <b>Geometry</b>クラスは、Geometryのすべての<xref href=\"MapQuest.Coordinates.Coordinate?text=Coordinate\" data-throw-if-not-resolved=\"false\"></xref>にCoordinateフィルタを適用する概念をサポートします。\r\n\r\nCoordinateフィルタは、各々の<xref href=\"MapQuest.Coordinates.Coordinate?text=Coordinate\" data-throw-if-not-resolved=\"false\"></xref>に関する情報を記録するか、あるいは幾つかの方法で<xref href=\"MapQuest.Coordinates.Coordinate?text=Coordinate\" data-throw-if-not-resolved=\"false\"></xref>を変更することができます。\r\n\r\nCoordinateフィルタはICoordinateVisitorのインターフェースを実装します。(<xref href=\"MapQuest.Coordinates.ICoordinateVisitor?text=ICoordinateVisitor\" data-throw-if-not-resolved=\"false\"></xref>は四人の集団のビジター・パターンの例です。)\r\nCoordinateフィルタは<xref href=\"MapQuest.Coordinates.Coordinate?text=Coordinate\" data-throw-if-not-resolved=\"false\"></xref>の変換、セントロイドおよびエンベロープの計算、および他の多くの機能を実装するために使用することができます。"
+  example: []
+  syntax:
+    content: public interface ICoordinateVisitor
+    content.vb: Public Interface ICoordinateVisitor
+- uid: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  commentId: M:MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  id: Visit(MapQuest.Coordinates.Coordinate)
+  parent: MapQuest.Coordinates.ICoordinateVisitor
+  langs:
+  - csharp
+  - vb
+  name: Visit(Coordinate)
+  nameWithType: ICoordinateVisitor.Visit(Coordinate)
+  fullName: MapQuest.Coordinates.ICoordinateVisitor.Visit(MapQuest.Coordinates.Coordinate)
+  type: Method
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: <xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>を備えた、または<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>の操作を実行します。
+  example: []
+  syntax:
+    content: void Visit(Coordinate coord)
+    parameters:
+    - id: coord
+      type: MapQuest.Coordinates.Coordinate
+      description: フィルタを適用する対象の<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>
+    content.vb: Sub Visit(coord As Coordinate)
+  overload: MapQuest.Coordinates.ICoordinateVisitor.Visit*
+references:
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: MapQuest.Coordinates.ICoordinateVisitor
+  commentId: T:MapQuest.Coordinates.ICoordinateVisitor
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateVisitor.html
+  name: ICoordinateVisitor
+  nameWithType: ICoordinateVisitor
+  fullName: MapQuest.Coordinates.ICoordinateVisitor
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: MapQuest.Coordinates.ICoordinateVisitor.Visit*
+  commentId: Overload:MapQuest.Coordinates.ICoordinateVisitor.Visit
+  isExternal: true
+  href: MapQuest.Coordinates.ICoordinateVisitor.html#MapQuest_Coordinates_ICoordinateVisitor_Visit_MapQuest_Coordinates_Coordinate_
+  name: Visit
+  nameWithType: ICoordinateVisitor.Visit
+  fullName: MapQuest.Coordinates.ICoordinateVisitor.Visit

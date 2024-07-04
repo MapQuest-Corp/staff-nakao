@@ -1,0 +1,2089 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  commentId: T:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  id: IndexedFeatureCollection
+  parent: MapQuest.Features.SpatialIndexers
+  children:
+  - MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.FeatureCollection)
+  - MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.FeatureSchema)
+  - MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.Feature[])
+  - MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.Feature[],MapQuest.Features.FeatureSchema)
+  - MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(System.Int32,MapQuest.Features.FeatureSchema)
+  - MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.Query(MapQuest.Coordinates.Envelope)
+  langs:
+  - csharp
+  - vb
+  name: IndexedFeatureCollection
+  nameWithType: IndexedFeatureCollection
+  fullName: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  type: Class
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: Summary description for IndexedFeatureCollection.
+  example: []
+  syntax:
+    content: 'public class IndexedFeatureCollection : FeatureCollection, IFeatureList, IFeatureCollection, IEnumerable<Feature>, IList, ICollection, IEnumerable, ICloneable, ISerializable'
+    content.vb: Public Class IndexedFeatureCollection Inherits FeatureCollection Implements IFeatureList, IFeatureCollection, IEnumerable(Of Feature), IList, ICollection, IEnumerable, ICloneable, ISerializable
+  inheritance:
+  - System.Object
+  - MapQuest.Features.FeatureCollection
+  implements:
+  - MapQuest.Features.IFeatureList
+  - MapQuest.Features.IFeatureCollection
+  - System.Collections.Generic.IEnumerable{MapQuest.Features.Feature}
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  - System.ICloneable
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - MapQuest.Features.FeatureCollection.Equals(System.Object)
+  - MapQuest.Features.FeatureCollection.Add(MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.FeatureCollection)
+  - MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.Feature[])
+  - MapQuest.Features.FeatureCollection.BinarySearch(MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureCollection.Clear
+  - MapQuest.Features.FeatureCollection.Clone
+  - MapQuest.Features.FeatureCollection.Contains(MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[])
+  - MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[],System.Int32)
+  - MapQuest.Features.FeatureCollection.CreateIterator
+  - MapQuest.Features.FeatureCollection.GetEnumerator
+  - MapQuest.Features.FeatureCollection.IndexOf(MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureCollection.IndexOf(System.String)
+  - MapQuest.Features.FeatureCollection.Insert(System.Int32,MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.Feature)
+  - MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.IFeatureList)
+  - MapQuest.Features.FeatureCollection.RemoveAt(System.Int32)
+  - MapQuest.Features.FeatureCollection.RemoveRange(System.Int32,System.Int32)
+  - MapQuest.Features.FeatureCollection.Reverse
+  - MapQuest.Features.FeatureCollection.Reverse(System.Int32,System.Int32)
+  - MapQuest.Features.FeatureCollection.Sort
+  - MapQuest.Features.FeatureCollection.Sort(System.Collections.IComparer)
+  - MapQuest.Features.FeatureCollection.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  - MapQuest.Features.FeatureCollection.ToArray
+  - MapQuest.Features.FeatureCollection.TrimToSize
+  - MapQuest.Features.FeatureCollection.Remove(MapQuest.Coordinates.Envelope)
+  - MapQuest.Features.FeatureCollection.InvalidateEnvelope
+  - MapQuest.Features.FeatureCollection.UpdateEnvelope
+  - MapQuest.Features.FeatureCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - MapQuest.Features.FeatureCollection.Capacity
+  - MapQuest.Features.FeatureCollection.Count
+  - MapQuest.Features.FeatureCollection.IsFixedSize
+  - MapQuest.Features.FeatureCollection.IsReadOnly
+  - MapQuest.Features.FeatureCollection.IsSynchronized
+  - MapQuest.Features.FeatureCollection.IsUnique
+  - MapQuest.Features.FeatureCollection.Item(System.Int32)
+  - MapQuest.Features.FeatureCollection.SyncRoot
+  - MapQuest.Features.FeatureCollection.Envelope
+  - MapQuest.Features.FeatureCollection.Schema
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.FeatureCollection)
+  commentId: M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.FeatureCollection)
+  id: '#ctor(MapQuest.Features.FeatureCollection)'
+  parent: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: IndexedFeatureCollection(FeatureCollection)
+  nameWithType: IndexedFeatureCollection.IndexedFeatureCollection(FeatureCollection)
+  fullName: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.IndexedFeatureCollection(MapQuest.Features.FeatureCollection)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: >-
+    Initializes a new instance of the <xref href="MapQuest.Features.SpatialIndexers.IndexedFeatureCollection" data-throw-if-not-resolved="false"></xref> class
+
+    that contains elements copied from the specified collection and
+
+    that has the same initial capacity as the number of elements copied.
+  remarks: Please refer to <xref href="System.Collections.ArrayList.%23ctor(System.Collections.ICollection)" data-throw-if-not-resolved="false"></xref> for details.
+  example: []
+  syntax:
+    content: public IndexedFeatureCollection(FeatureCollection collection)
+    parameters:
+    - id: collection
+      type: MapQuest.Features.FeatureCollection
+      description: >-
+        The <xref href="MapQuest.Features.SpatialIndexers.IndexedFeatureCollection" data-throw-if-not-resolved="false"></xref>
+                    whose elements are copied to the new collection.
+    content.vb: Public Sub New(collection As FeatureCollection)
+  overload: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">collection</code> is a null reference.
+  nameWithType.vb: IndexedFeatureCollection.New(FeatureCollection)
+  fullName.vb: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.New(MapQuest.Features.FeatureCollection)
+  name.vb: New(FeatureCollection)
+- uid: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.Feature[])
+  commentId: M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.Feature[])
+  id: '#ctor(MapQuest.Features.Feature[])'
+  parent: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: IndexedFeatureCollection(Feature[])
+  nameWithType: IndexedFeatureCollection.IndexedFeatureCollection(Feature[])
+  fullName: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.IndexedFeatureCollection(MapQuest.Features.Feature[])
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: >-
+    Initializes a new instance of the <xref href="MapQuest.Features.SpatialIndexers.IndexedFeatureCollection" data-throw-if-not-resolved="false"></xref> class
+
+    that contains elements copied from the specified <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref>
+
+    array and that has the same initial capacity as the number of elements copied.
+  remarks: Please refer to <xref href="System.Collections.ArrayList.%23ctor(System.Collections.ICollection)" data-throw-if-not-resolved="false"></xref> for details.
+  example: []
+  syntax:
+    content: public IndexedFeatureCollection(Feature[] array)
+    parameters:
+    - id: array
+      type: MapQuest.Features.Feature[]
+      description: >-
+        An <xref href="System.Array" data-throw-if-not-resolved="false"></xref> of <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref>
+                    elements that are copied to the new collection.
+    content.vb: Public Sub New(array As Feature())
+  overload: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">array</code> is a null reference.
+  nameWithType.vb: IndexedFeatureCollection.New(Feature())
+  fullName.vb: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.New(MapQuest.Features.Feature())
+  name.vb: New(Feature())
+- uid: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.FeatureSchema)
+  commentId: M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.FeatureSchema)
+  id: '#ctor(MapQuest.Features.FeatureSchema)'
+  parent: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: IndexedFeatureCollection(FeatureSchema)
+  nameWithType: IndexedFeatureCollection.IndexedFeatureCollection(FeatureSchema)
+  fullName: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.IndexedFeatureCollection(MapQuest.Features.FeatureSchema)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: >-
+    Initializes a new instance of the <xref href="MapQuest.Features.FeatureCollection" data-throw-if-not-resolved="false"></xref> class
+
+    that is empty and has the default initial capacity.
+  remarks: Please refer to <xref href="System.Collections.ArrayList.%23ctor" data-throw-if-not-resolved="false"></xref> for details.
+  example: []
+  syntax:
+    content: public IndexedFeatureCollection(FeatureSchema schema)
+    parameters:
+    - id: schema
+      type: MapQuest.Features.FeatureSchema
+    content.vb: Public Sub New(schema As FeatureSchema)
+  overload: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor*
+  nameWithType.vb: IndexedFeatureCollection.New(FeatureSchema)
+  fullName.vb: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.New(MapQuest.Features.FeatureSchema)
+  name.vb: New(FeatureSchema)
+- uid: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(System.Int32,MapQuest.Features.FeatureSchema)
+  commentId: M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(System.Int32,MapQuest.Features.FeatureSchema)
+  id: '#ctor(System.Int32,MapQuest.Features.FeatureSchema)'
+  parent: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: IndexedFeatureCollection(int, FeatureSchema)
+  nameWithType: IndexedFeatureCollection.IndexedFeatureCollection(int, FeatureSchema)
+  fullName: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.IndexedFeatureCollection(int, MapQuest.Features.FeatureSchema)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: >-
+    Initializes a new instance of the <xref href="MapQuest.Features.FeatureCollection" data-throw-if-not-resolved="false"></xref> class
+
+    that is empty and has the specified initial capacity.
+  remarks: Please refer to <xref href="System.Collections.ArrayList.%23ctor(System.Int32)" data-throw-if-not-resolved="false"></xref> for details.
+  example: []
+  syntax:
+    content: public IndexedFeatureCollection(int capacity, FeatureSchema Schema)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: >-
+        The number of elements that the new
+                    <xref href="MapQuest.Features.FeatureCollection" data-throw-if-not-resolved="false"></xref> is initially capable of storing.
+    - id: Schema
+      type: MapQuest.Features.FeatureSchema
+    content.vb: Public Sub New(capacity As Integer, Schema As FeatureSchema)
+  overload: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">capacity</code> is less than zero.
+  nameWithType.vb: IndexedFeatureCollection.New(Integer, FeatureSchema)
+  fullName.vb: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.New(Integer, MapQuest.Features.FeatureSchema)
+  name.vb: New(Integer, FeatureSchema)
+- uid: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.Feature[],MapQuest.Features.FeatureSchema)
+  commentId: M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.Feature[],MapQuest.Features.FeatureSchema)
+  id: '#ctor(MapQuest.Features.Feature[],MapQuest.Features.FeatureSchema)'
+  parent: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: IndexedFeatureCollection(Feature[], FeatureSchema)
+  nameWithType: IndexedFeatureCollection.IndexedFeatureCollection(Feature[], FeatureSchema)
+  fullName: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.IndexedFeatureCollection(MapQuest.Features.Feature[], MapQuest.Features.FeatureSchema)
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: >-
+    Initializes a new instance of the <xref href="MapQuest.Features.FeatureCollection" data-throw-if-not-resolved="false"></xref> class
+
+    that contains elements copied from the specified <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref>
+
+    array and that has the same initial capacity as the number of elements copied.
+  remarks: Please refer to <xref href="System.Collections.ArrayList.%23ctor(System.Collections.ICollection)" data-throw-if-not-resolved="false"></xref> for details.
+  example: []
+  syntax:
+    content: public IndexedFeatureCollection(Feature[] array, FeatureSchema schema)
+    parameters:
+    - id: array
+      type: MapQuest.Features.Feature[]
+      description: >-
+        An <xref href="System.Array" data-throw-if-not-resolved="false"></xref> of <xref href="MapQuest.Features.Feature" data-throw-if-not-resolved="false"></xref>
+                    elements that are copied to the new collection.
+    - id: schema
+      type: MapQuest.Features.FeatureSchema
+    content.vb: Public Sub New(array As Feature(), schema As FeatureSchema)
+  overload: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">array</code> is a null reference.
+  nameWithType.vb: IndexedFeatureCollection.New(Feature(), FeatureSchema)
+  fullName.vb: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.New(MapQuest.Features.Feature(), MapQuest.Features.FeatureSchema)
+  name.vb: New(Feature(), FeatureSchema)
+- uid: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.Query(MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.Query(MapQuest.Coordinates.Envelope)
+  id: Query(MapQuest.Coordinates.Envelope)
+  parent: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  langs:
+  - csharp
+  - vb
+  name: Query(Envelope)
+  nameWithType: IndexedFeatureCollection.Query(Envelope)
+  fullName: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.Query(MapQuest.Coordinates.Envelope)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: 指定された範囲の地物を検索します。
+  example: []
+  syntax:
+    content: public override IFeatureList Query(Envelope area)
+    parameters:
+    - id: area
+      type: MapQuest.Coordinates.Envelope
+      description: 検索したい範囲。
+    return:
+      type: MapQuest.Features.IFeatureList
+      description: >-
+        検索されたインデックスによって個別にアクセスできる 
+
+        <xref href="MapQuest.Features.IFeatureList" data-throw-if-not-resolved="false"></xref> 
+
+        コレクション。
+    content.vb: Public Overrides Function Query(area As Envelope) As IFeatureList
+  overridden: MapQuest.Features.FeatureCollection.Query(MapQuest.Coordinates.Envelope)
+  overload: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.Query*
+references:
+- uid: MapQuest.Features.SpatialIndexers
+  commentId: N:MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features.SpatialIndexers
+  nameWithType: MapQuest.Features.SpatialIndexers
+  fullName: MapQuest.Features.SpatialIndexers
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.SpatialIndexers
+    name: SpatialIndexers
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.SpatialIndexers
+    name: SpatialIndexers
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.Features.FeatureCollection
+  commentId: T:MapQuest.Features.FeatureCollection
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html
+  name: FeatureCollection
+  nameWithType: FeatureCollection
+  fullName: MapQuest.Features.FeatureCollection
+- uid: MapQuest.Features.IFeatureList
+  commentId: T:MapQuest.Features.IFeatureList
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.IFeatureList.html
+  name: IFeatureList
+  nameWithType: IFeatureList
+  fullName: MapQuest.Features.IFeatureList
+- uid: MapQuest.Features.IFeatureCollection
+  commentId: T:MapQuest.Features.IFeatureCollection
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.IFeatureCollection.html
+  name: IFeatureCollection
+  nameWithType: IFeatureCollection
+  fullName: MapQuest.Features.IFeatureCollection
+- uid: System.Collections.Generic.IEnumerable{MapQuest.Features.Feature}
+  commentId: T:System.Collections.Generic.IEnumerable{MapQuest.Features.Feature}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Feature>
+  nameWithType: IEnumerable<Feature>
+  fullName: System.Collections.Generic.IEnumerable<MapQuest.Features.Feature>
+  nameWithType.vb: IEnumerable(Of Feature)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of MapQuest.Features.Feature)
+  name.vb: IEnumerable(Of Feature)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: MapQuest.Features.FeatureCollection.Equals(System.Object)
+  commentId: M:MapQuest.Features.FeatureCollection.Equals(System.Object)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: FeatureCollection.Equals(object)
+  fullName: MapQuest.Features.FeatureCollection.Equals(object)
+  nameWithType.vb: FeatureCollection.Equals(Object)
+  fullName.vb: MapQuest.Features.FeatureCollection.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Add(MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureCollection.Add(MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Add_MapQuest_Features_Feature_
+  name: Add(Feature)
+  nameWithType: FeatureCollection.Add(Feature)
+  fullName: MapQuest.Features.FeatureCollection.Add(MapQuest.Features.Feature)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Add(MapQuest.Features.Feature)
+    name: Add
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Add_MapQuest_Features_Feature_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Add(MapQuest.Features.Feature)
+    name: Add
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Add_MapQuest_Features_Feature_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.FeatureCollection)
+  commentId: M:MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.FeatureCollection)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_AddRange_MapQuest_Features_FeatureCollection_
+  name: AddRange(FeatureCollection)
+  nameWithType: FeatureCollection.AddRange(FeatureCollection)
+  fullName: MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.FeatureCollection)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.FeatureCollection)
+    name: AddRange
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_AddRange_MapQuest_Features_FeatureCollection_
+  - name: (
+  - uid: MapQuest.Features.FeatureCollection
+    name: FeatureCollection
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.FeatureCollection)
+    name: AddRange
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_AddRange_MapQuest_Features_FeatureCollection_
+  - name: (
+  - uid: MapQuest.Features.FeatureCollection
+    name: FeatureCollection
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.Feature[])
+  commentId: M:MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.Feature[])
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_AddRange_MapQuest_Features_Feature___
+  name: AddRange(Feature[])
+  nameWithType: FeatureCollection.AddRange(Feature[])
+  fullName: MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.Feature[])
+  nameWithType.vb: FeatureCollection.AddRange(Feature())
+  fullName.vb: MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.Feature())
+  name.vb: AddRange(Feature())
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.Feature[])
+    name: AddRange
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_AddRange_MapQuest_Features_Feature___
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.Feature[])
+    name: AddRange
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_AddRange_MapQuest_Features_Feature___
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: (
+  - name: )
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.BinarySearch(MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureCollection.BinarySearch(MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_BinarySearch_MapQuest_Features_Feature_
+  name: BinarySearch(Feature)
+  nameWithType: FeatureCollection.BinarySearch(Feature)
+  fullName: MapQuest.Features.FeatureCollection.BinarySearch(MapQuest.Features.Feature)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.BinarySearch(MapQuest.Features.Feature)
+    name: BinarySearch
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_BinarySearch_MapQuest_Features_Feature_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.BinarySearch(MapQuest.Features.Feature)
+    name: BinarySearch
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_BinarySearch_MapQuest_Features_Feature_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Clear
+  commentId: M:MapQuest.Features.FeatureCollection.Clear
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Clear
+  name: Clear()
+  nameWithType: FeatureCollection.Clear()
+  fullName: MapQuest.Features.FeatureCollection.Clear()
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Clear
+    name: Clear
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Clear
+    name: Clear
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Clear
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Clone
+  commentId: M:MapQuest.Features.FeatureCollection.Clone
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Clone
+  name: Clone()
+  nameWithType: FeatureCollection.Clone()
+  fullName: MapQuest.Features.FeatureCollection.Clone()
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Clone
+    name: Clone
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Clone
+    name: Clone
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Clone
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Contains(MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureCollection.Contains(MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Contains_MapQuest_Features_Feature_
+  name: Contains(Feature)
+  nameWithType: FeatureCollection.Contains(Feature)
+  fullName: MapQuest.Features.FeatureCollection.Contains(MapQuest.Features.Feature)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Contains(MapQuest.Features.Feature)
+    name: Contains
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Contains_MapQuest_Features_Feature_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Contains(MapQuest.Features.Feature)
+    name: Contains
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Contains_MapQuest_Features_Feature_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[])
+  commentId: M:MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[])
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_CopyTo_MapQuest_Features_Feature___
+  name: CopyTo(Feature[])
+  nameWithType: FeatureCollection.CopyTo(Feature[])
+  fullName: MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[])
+  nameWithType.vb: FeatureCollection.CopyTo(Feature())
+  fullName.vb: MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature())
+  name.vb: CopyTo(Feature())
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[])
+    name: CopyTo
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_CopyTo_MapQuest_Features_Feature___
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[])
+    name: CopyTo
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_CopyTo_MapQuest_Features_Feature___
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: (
+  - name: )
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[],System.Int32)
+  commentId: M:MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[],System.Int32)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_CopyTo_MapQuest_Features_Feature___System_Int32_
+  name: CopyTo(Feature[], int)
+  nameWithType: FeatureCollection.CopyTo(Feature[], int)
+  fullName: MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[], int)
+  nameWithType.vb: FeatureCollection.CopyTo(Feature(), Integer)
+  fullName.vb: MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature(), Integer)
+  name.vb: CopyTo(Feature(), Integer)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_CopyTo_MapQuest_Features_Feature___System_Int32_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_CopyTo_MapQuest_Features_Feature___System_Int32_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.CreateIterator
+  commentId: M:MapQuest.Features.FeatureCollection.CreateIterator
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_CreateIterator
+  name: CreateIterator()
+  nameWithType: FeatureCollection.CreateIterator()
+  fullName: MapQuest.Features.FeatureCollection.CreateIterator()
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.CreateIterator
+    name: CreateIterator
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_CreateIterator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.CreateIterator
+    name: CreateIterator
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_CreateIterator
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.GetEnumerator
+  commentId: M:MapQuest.Features.FeatureCollection.GetEnumerator
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_GetEnumerator
+  name: GetEnumerator()
+  nameWithType: FeatureCollection.GetEnumerator()
+  fullName: MapQuest.Features.FeatureCollection.GetEnumerator()
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_GetEnumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_GetEnumerator
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.IndexOf(MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureCollection.IndexOf(MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_IndexOf_MapQuest_Features_Feature_
+  name: IndexOf(Feature)
+  nameWithType: FeatureCollection.IndexOf(Feature)
+  fullName: MapQuest.Features.FeatureCollection.IndexOf(MapQuest.Features.Feature)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.IndexOf(MapQuest.Features.Feature)
+    name: IndexOf
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_IndexOf_MapQuest_Features_Feature_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.IndexOf(MapQuest.Features.Feature)
+    name: IndexOf
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_IndexOf_MapQuest_Features_Feature_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.IndexOf(System.String)
+  commentId: M:MapQuest.Features.FeatureCollection.IndexOf(System.String)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_IndexOf_System_String_
+  name: IndexOf(string)
+  nameWithType: FeatureCollection.IndexOf(string)
+  fullName: MapQuest.Features.FeatureCollection.IndexOf(string)
+  nameWithType.vb: FeatureCollection.IndexOf(String)
+  fullName.vb: MapQuest.Features.FeatureCollection.IndexOf(String)
+  name.vb: IndexOf(String)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.IndexOf(System.String)
+    name: IndexOf
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_IndexOf_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.IndexOf(System.String)
+    name: IndexOf
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_IndexOf_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Insert(System.Int32,MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureCollection.Insert(System.Int32,MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Insert_System_Int32_MapQuest_Features_Feature_
+  name: Insert(int, Feature)
+  nameWithType: FeatureCollection.Insert(int, Feature)
+  fullName: MapQuest.Features.FeatureCollection.Insert(int, MapQuest.Features.Feature)
+  nameWithType.vb: FeatureCollection.Insert(Integer, Feature)
+  fullName.vb: MapQuest.Features.FeatureCollection.Insert(Integer, MapQuest.Features.Feature)
+  name.vb: Insert(Integer, Feature)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Insert(System.Int32,MapQuest.Features.Feature)
+    name: Insert
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Insert_System_Int32_MapQuest_Features_Feature_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Insert(System.Int32,MapQuest.Features.Feature)
+    name: Insert
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Insert_System_Int32_MapQuest_Features_Feature_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.Feature)
+  commentId: M:MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.Feature)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Remove_MapQuest_Features_Feature_
+  name: Remove(Feature)
+  nameWithType: FeatureCollection.Remove(Feature)
+  fullName: MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.Feature)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.Feature)
+    name: Remove
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Remove_MapQuest_Features_Feature_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.Feature)
+    name: Remove
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Remove_MapQuest_Features_Feature_
+  - name: (
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.IFeatureList)
+  commentId: M:MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.IFeatureList)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Remove_MapQuest_Features_IFeatureList_
+  name: Remove(IFeatureList)
+  nameWithType: FeatureCollection.Remove(IFeatureList)
+  fullName: MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.IFeatureList)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.IFeatureList)
+    name: Remove
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Remove_MapQuest_Features_IFeatureList_
+  - name: (
+  - uid: MapQuest.Features.IFeatureList
+    name: IFeatureList
+    isExternal: true
+    href: MapQuest.Features.IFeatureList.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.IFeatureList)
+    name: Remove
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Remove_MapQuest_Features_IFeatureList_
+  - name: (
+  - uid: MapQuest.Features.IFeatureList
+    name: IFeatureList
+    isExternal: true
+    href: MapQuest.Features.IFeatureList.html
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.RemoveAt(System.Int32)
+  commentId: M:MapQuest.Features.FeatureCollection.RemoveAt(System.Int32)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_RemoveAt_System_Int32_
+  name: RemoveAt(int)
+  nameWithType: FeatureCollection.RemoveAt(int)
+  fullName: MapQuest.Features.FeatureCollection.RemoveAt(int)
+  nameWithType.vb: FeatureCollection.RemoveAt(Integer)
+  fullName.vb: MapQuest.Features.FeatureCollection.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_RemoveAt_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_RemoveAt_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.RemoveRange(System.Int32,System.Int32)
+  commentId: M:MapQuest.Features.FeatureCollection.RemoveRange(System.Int32,System.Int32)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_RemoveRange_System_Int32_System_Int32_
+  name: RemoveRange(int, int)
+  nameWithType: FeatureCollection.RemoveRange(int, int)
+  fullName: MapQuest.Features.FeatureCollection.RemoveRange(int, int)
+  nameWithType.vb: FeatureCollection.RemoveRange(Integer, Integer)
+  fullName.vb: MapQuest.Features.FeatureCollection.RemoveRange(Integer, Integer)
+  name.vb: RemoveRange(Integer, Integer)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.RemoveRange(System.Int32,System.Int32)
+    name: RemoveRange
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_RemoveRange_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.RemoveRange(System.Int32,System.Int32)
+    name: RemoveRange
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_RemoveRange_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Reverse
+  commentId: M:MapQuest.Features.FeatureCollection.Reverse
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Reverse
+  name: Reverse()
+  nameWithType: FeatureCollection.Reverse()
+  fullName: MapQuest.Features.FeatureCollection.Reverse()
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Reverse
+    name: Reverse
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Reverse
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Reverse
+    name: Reverse
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Reverse
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Reverse(System.Int32,System.Int32)
+  commentId: M:MapQuest.Features.FeatureCollection.Reverse(System.Int32,System.Int32)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Reverse_System_Int32_System_Int32_
+  name: Reverse(int, int)
+  nameWithType: FeatureCollection.Reverse(int, int)
+  fullName: MapQuest.Features.FeatureCollection.Reverse(int, int)
+  nameWithType.vb: FeatureCollection.Reverse(Integer, Integer)
+  fullName.vb: MapQuest.Features.FeatureCollection.Reverse(Integer, Integer)
+  name.vb: Reverse(Integer, Integer)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Reverse(System.Int32,System.Int32)
+    name: Reverse
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Reverse_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Reverse(System.Int32,System.Int32)
+    name: Reverse
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Reverse_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Sort
+  commentId: M:MapQuest.Features.FeatureCollection.Sort
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Sort
+  name: Sort()
+  nameWithType: FeatureCollection.Sort()
+  fullName: MapQuest.Features.FeatureCollection.Sort()
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Sort
+    name: Sort
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Sort
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Sort
+    name: Sort
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Sort
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Sort(System.Collections.IComparer)
+  commentId: M:MapQuest.Features.FeatureCollection.Sort(System.Collections.IComparer)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Sort_System_Collections_IComparer_
+  name: Sort(IComparer)
+  nameWithType: FeatureCollection.Sort(IComparer)
+  fullName: MapQuest.Features.FeatureCollection.Sort(System.Collections.IComparer)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Sort(System.Collections.IComparer)
+    name: Sort
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Sort_System_Collections_IComparer_
+  - name: (
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Sort(System.Collections.IComparer)
+    name: Sort
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Sort_System_Collections_IComparer_
+  - name: (
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  commentId: M:MapQuest.Features.FeatureCollection.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Sort_System_Int32_System_Int32_System_Collections_IComparer_
+  name: Sort(int, int, IComparer)
+  nameWithType: FeatureCollection.Sort(int, int, IComparer)
+  fullName: MapQuest.Features.FeatureCollection.Sort(int, int, System.Collections.IComparer)
+  nameWithType.vb: FeatureCollection.Sort(Integer, Integer, IComparer)
+  fullName.vb: MapQuest.Features.FeatureCollection.Sort(Integer, Integer, System.Collections.IComparer)
+  name.vb: Sort(Integer, Integer, IComparer)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+    name: Sort
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Sort_System_Int32_System_Int32_System_Collections_IComparer_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+    name: Sort
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Sort_System_Int32_System_Int32_System_Collections_IComparer_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.ToArray
+  commentId: M:MapQuest.Features.FeatureCollection.ToArray
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_ToArray
+  name: ToArray()
+  nameWithType: FeatureCollection.ToArray()
+  fullName: MapQuest.Features.FeatureCollection.ToArray()
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.ToArray
+    name: ToArray
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_ToArray
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.ToArray
+    name: ToArray
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_ToArray
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.TrimToSize
+  commentId: M:MapQuest.Features.FeatureCollection.TrimToSize
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_TrimToSize
+  name: TrimToSize()
+  nameWithType: FeatureCollection.TrimToSize()
+  fullName: MapQuest.Features.FeatureCollection.TrimToSize()
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.TrimToSize
+    name: TrimToSize
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_TrimToSize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.TrimToSize
+    name: TrimToSize
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_TrimToSize
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Remove(MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Features.FeatureCollection.Remove(MapQuest.Coordinates.Envelope)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Remove_MapQuest_Coordinates_Envelope_
+  name: Remove(Envelope)
+  nameWithType: FeatureCollection.Remove(Envelope)
+  fullName: MapQuest.Features.FeatureCollection.Remove(MapQuest.Coordinates.Envelope)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Remove(MapQuest.Coordinates.Envelope)
+    name: Remove
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Remove_MapQuest_Coordinates_Envelope_
+  - name: (
+  - uid: MapQuest.Coordinates.Envelope
+    name: Envelope
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Remove(MapQuest.Coordinates.Envelope)
+    name: Remove
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Remove_MapQuest_Coordinates_Envelope_
+  - name: (
+  - uid: MapQuest.Coordinates.Envelope
+    name: Envelope
+    isExternal: true
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.InvalidateEnvelope
+  commentId: M:MapQuest.Features.FeatureCollection.InvalidateEnvelope
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_InvalidateEnvelope
+  name: InvalidateEnvelope()
+  nameWithType: FeatureCollection.InvalidateEnvelope()
+  fullName: MapQuest.Features.FeatureCollection.InvalidateEnvelope()
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.InvalidateEnvelope
+    name: InvalidateEnvelope
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_InvalidateEnvelope
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.InvalidateEnvelope
+    name: InvalidateEnvelope
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_InvalidateEnvelope
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.UpdateEnvelope
+  commentId: M:MapQuest.Features.FeatureCollection.UpdateEnvelope
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_UpdateEnvelope
+  name: UpdateEnvelope()
+  nameWithType: FeatureCollection.UpdateEnvelope()
+  fullName: MapQuest.Features.FeatureCollection.UpdateEnvelope()
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.UpdateEnvelope
+    name: UpdateEnvelope
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_UpdateEnvelope
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.UpdateEnvelope
+    name: UpdateEnvelope
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_UpdateEnvelope
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:MapQuest.Features.FeatureCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: FeatureCollection.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: MapQuest.Features.FeatureCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.Capacity
+  commentId: P:MapQuest.Features.FeatureCollection.Capacity
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Capacity
+  name: Capacity
+  nameWithType: FeatureCollection.Capacity
+  fullName: MapQuest.Features.FeatureCollection.Capacity
+- uid: MapQuest.Features.FeatureCollection.Count
+  commentId: P:MapQuest.Features.FeatureCollection.Count
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Count
+  name: Count
+  nameWithType: FeatureCollection.Count
+  fullName: MapQuest.Features.FeatureCollection.Count
+- uid: MapQuest.Features.FeatureCollection.IsFixedSize
+  commentId: P:MapQuest.Features.FeatureCollection.IsFixedSize
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_IsFixedSize
+  name: IsFixedSize
+  nameWithType: FeatureCollection.IsFixedSize
+  fullName: MapQuest.Features.FeatureCollection.IsFixedSize
+- uid: MapQuest.Features.FeatureCollection.IsReadOnly
+  commentId: P:MapQuest.Features.FeatureCollection.IsReadOnly
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_IsReadOnly
+  name: IsReadOnly
+  nameWithType: FeatureCollection.IsReadOnly
+  fullName: MapQuest.Features.FeatureCollection.IsReadOnly
+- uid: MapQuest.Features.FeatureCollection.IsSynchronized
+  commentId: P:MapQuest.Features.FeatureCollection.IsSynchronized
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_IsSynchronized
+  name: IsSynchronized
+  nameWithType: FeatureCollection.IsSynchronized
+  fullName: MapQuest.Features.FeatureCollection.IsSynchronized
+- uid: MapQuest.Features.FeatureCollection.IsUnique
+  commentId: P:MapQuest.Features.FeatureCollection.IsUnique
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_IsUnique
+  name: IsUnique
+  nameWithType: FeatureCollection.IsUnique
+  fullName: MapQuest.Features.FeatureCollection.IsUnique
+- uid: MapQuest.Features.FeatureCollection.Item(System.Int32)
+  commentId: P:MapQuest.Features.FeatureCollection.Item(System.Int32)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: FeatureCollection.this[int]
+  fullName: MapQuest.Features.FeatureCollection.this[int]
+  nameWithType.vb: FeatureCollection.this[](Integer)
+  fullName.vb: MapQuest.Features.FeatureCollection.this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Item_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Features.FeatureCollection.SyncRoot
+  commentId: P:MapQuest.Features.FeatureCollection.SyncRoot
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_SyncRoot
+  name: SyncRoot
+  nameWithType: FeatureCollection.SyncRoot
+  fullName: MapQuest.Features.FeatureCollection.SyncRoot
+- uid: MapQuest.Features.FeatureCollection.Envelope
+  commentId: P:MapQuest.Features.FeatureCollection.Envelope
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Envelope
+  name: Envelope
+  nameWithType: FeatureCollection.Envelope
+  fullName: MapQuest.Features.FeatureCollection.Envelope
+- uid: MapQuest.Features.FeatureCollection.Schema
+  commentId: P:MapQuest.Features.FeatureCollection.Schema
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Schema
+  name: Schema
+  nameWithType: FeatureCollection.Schema
+  fullName: MapQuest.Features.FeatureCollection.Schema
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Features
+  commentId: N:MapQuest.Features
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features
+  nameWithType: MapQuest.Features
+  fullName: MapQuest.Features
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  commentId: T:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.html
+  name: IndexedFeatureCollection
+  nameWithType: IndexedFeatureCollection
+  fullName: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection
+- uid: System.Collections.ArrayList.#ctor(System.Collections.ICollection)
+  commentId: M:System.Collections.ArrayList.#ctor(System.Collections.ICollection)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-collections-icollection)
+  name: ArrayList(ICollection)
+  nameWithType: ArrayList.ArrayList(ICollection)
+  fullName: System.Collections.ArrayList.ArrayList(System.Collections.ICollection)
+  nameWithType.vb: ArrayList.New(ICollection)
+  fullName.vb: System.Collections.ArrayList.New(System.Collections.ICollection)
+  name.vb: New(ICollection)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.#ctor(System.Collections.ICollection)
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-collections-icollection)
+  - name: (
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.html#MapQuest_Features_SpatialIndexers_IndexedFeatureCollection__ctor_MapQuest_Features_FeatureCollection_
+  name: IndexedFeatureCollection
+  nameWithType: IndexedFeatureCollection.IndexedFeatureCollection
+  fullName: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.IndexedFeatureCollection
+  nameWithType.vb: IndexedFeatureCollection.New
+  fullName.vb: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.New
+  name.vb: New
+- uid: MapQuest.Features.Feature
+  commentId: T:MapQuest.Features.Feature
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.Feature.html
+  name: Feature
+  nameWithType: Feature
+  fullName: MapQuest.Features.Feature
+- uid: System.Array
+  commentId: T:System.Array
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.array
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: MapQuest.Features.Feature[]
+  isExternal: true
+  href: MapQuest.Features.Feature.html
+  name: Feature[]
+  nameWithType: Feature[]
+  fullName: MapQuest.Features.Feature[]
+  nameWithType.vb: Feature()
+  fullName.vb: MapQuest.Features.Feature()
+  name.vb: Feature()
+  spec.csharp:
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MapQuest.Features.Feature
+    name: Feature
+    isExternal: true
+    href: MapQuest.Features.Feature.html
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList.#ctor
+  commentId: M:System.Collections.ArrayList.#ctor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor
+  name: ArrayList()
+  nameWithType: ArrayList.ArrayList()
+  fullName: System.Collections.ArrayList.ArrayList()
+  nameWithType.vb: ArrayList.New()
+  fullName.vb: System.Collections.ArrayList.New()
+  name.vb: New()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.#ctor
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor
+  - name: (
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - name: )
+- uid: MapQuest.Features.FeatureSchema
+  commentId: T:MapQuest.Features.FeatureSchema
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.FeatureSchema.html
+  name: FeatureSchema
+  nameWithType: FeatureSchema
+  fullName: MapQuest.Features.FeatureSchema
+- uid: System.Collections.ArrayList.#ctor(System.Int32)
+  commentId: M:System.Collections.ArrayList.#ctor(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-int32)
+  name: ArrayList(int)
+  nameWithType: ArrayList.ArrayList(int)
+  fullName: System.Collections.ArrayList.ArrayList(int)
+  nameWithType.vb: ArrayList.New(Integer)
+  fullName.vb: System.Collections.ArrayList.New(Integer)
+  name.vb: New(Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.#ctor(System.Int32)
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MapQuest.Features.FeatureCollection.Query(MapQuest.Coordinates.Envelope)
+  commentId: M:MapQuest.Features.FeatureCollection.Query(MapQuest.Coordinates.Envelope)
+  parent: MapQuest.Features.FeatureCollection
+  isExternal: true
+  href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Query_MapQuest_Coordinates_Envelope_
+  name: Query(Envelope)
+  nameWithType: FeatureCollection.Query(Envelope)
+  fullName: MapQuest.Features.FeatureCollection.Query(MapQuest.Coordinates.Envelope)
+  spec.csharp:
+  - uid: MapQuest.Features.FeatureCollection.Query(MapQuest.Coordinates.Envelope)
+    name: Query
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Query_MapQuest_Coordinates_Envelope_
+  - name: (
+  - uid: MapQuest.Coordinates.Envelope
+    name: Envelope
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.FeatureCollection.Query(MapQuest.Coordinates.Envelope)
+    name: Query
+    isExternal: true
+    href: MapQuest.Features.FeatureCollection.html#MapQuest_Features_FeatureCollection_Query_MapQuest_Coordinates_Envelope_
+  - name: (
+  - uid: MapQuest.Coordinates.Envelope
+    name: Envelope
+    isExternal: true
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.Query*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.Query
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.html#MapQuest_Features_SpatialIndexers_IndexedFeatureCollection_Query_MapQuest_Coordinates_Envelope_
+  name: Query
+  nameWithType: IndexedFeatureCollection.Query
+  fullName: MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.Query
+- uid: MapQuest.Coordinates.Envelope
+  commentId: T:MapQuest.Coordinates.Envelope
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html
+  name: Envelope
+  nameWithType: Envelope
+  fullName: MapQuest.Coordinates.Envelope
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html

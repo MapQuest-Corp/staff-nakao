@@ -1,0 +1,455 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Serialization.SerializationBinderFactory
+  commentId: T:MapQuest.Serialization.SerializationBinderFactory
+  id: SerializationBinderFactory
+  parent: MapQuest.Serialization
+  children:
+  - MapQuest.Serialization.SerializationBinderFactory.#ctor
+  - MapQuest.Serialization.SerializationBinderFactory.CreateBinder
+  langs:
+  - csharp
+  - vb
+  name: SerializationBinderFactory
+  nameWithType: SerializationBinderFactory
+  fullName: MapQuest.Serialization.SerializationBinderFactory
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: >-
+    過去のバージョンのアセンブリでシリアライズされたデータを
+
+    最新のアセンブリでデシリアライズするための 
+
+    <xref href="System.Runtime.Serialization.SerializationBinder" data-throw-if-not-resolved="false"></xref> を生成するファクトリクラスです。
+  example: []
+  syntax:
+    content: public class SerializationBinderFactory
+    content.vb: Public Class SerializationBinderFactory
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.Serialization.SerializationBinderFactory.CreateBinder
+  commentId: M:MapQuest.Serialization.SerializationBinderFactory.CreateBinder
+  id: CreateBinder
+  parent: MapQuest.Serialization.SerializationBinderFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateBinder()
+  nameWithType: SerializationBinderFactory.CreateBinder()
+  fullName: MapQuest.Serialization.SerializationBinderFactory.CreateBinder()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  summary: シリアライズ／デシリアライズの際に使用されるバインダを生成します。
+  remarks: >-
+    .NET Framework のシリアライズは、
+
+    シリアライズされた時のアセンブリの情報を詳細に記録します。
+
+    そして、デシリアライズする時のアセンブリの情報と異なると、デシリアライズできません。
+
+    <p></p><xref href="System.Runtime.Serialization.SerializationBinder" data-throw-if-not-resolved="false"></xref> を使うと、
+
+    シリアライズされたデータをどのように復元させるかを制御できます。
+
+    <p></p>
+
+    このメソッドは、以前のバージョンで保存されたデータを、
+
+    現在のバージョンで復元できるよう実装された 
+
+    <xref href="System.Runtime.Serialization.SerializationBinder" data-throw-if-not-resolved="false"></xref> を生成します。
+
+    <p></p>
+
+    これを、<b>BinaryFormatter</b>, <b>SoapFormatter</b> などの 
+
+    <xref href="System.Runtime.Serialization.IFormatter" data-throw-if-not-resolved="false"></xref> に設定することで、
+
+    シリアライズされたデータのバージョン互換を保つ事が可能になります。
+  example:
+  - >-
+    <pre><code class="lang-csharp">// フォーマッタ(シリアライザ)を用意。
+
+    IFormatter formatter = new BinaryFormatter();
+
+    // Binder を設定。
+
+    formatter.Binder = MapQuest.Serialization.SerializationBinderFactory.CreateBinder();
+
+    // デシリアライズを実行
+
+    object obj = formatter.Deserialize(stream);</code></pre>
+  syntax:
+    content: public static SerializationBinder CreateBinder()
+    return:
+      type: System.Runtime.Serialization.SerializationBinder
+      description: シリアライズ／デシリアライズの際に使用されるバインダ。
+    content.vb: Public Shared Function CreateBinder() As SerializationBinder
+  overload: MapQuest.Serialization.SerializationBinderFactory.CreateBinder*
+- uid: MapQuest.Serialization.SerializationBinderFactory.#ctor
+  commentId: M:MapQuest.Serialization.SerializationBinderFactory.#ctor
+  id: '#ctor'
+  parent: MapQuest.Serialization.SerializationBinderFactory
+  langs:
+  - csharp
+  - vb
+  name: SerializationBinderFactory()
+  nameWithType: SerializationBinderFactory.SerializationBinderFactory()
+  fullName: MapQuest.Serialization.SerializationBinderFactory.SerializationBinderFactory()
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Serialization
+  syntax:
+    content: public SerializationBinderFactory()
+    content.vb: Public Sub New()
+  overload: MapQuest.Serialization.SerializationBinderFactory.#ctor*
+  nameWithType.vb: SerializationBinderFactory.New()
+  fullName.vb: MapQuest.Serialization.SerializationBinderFactory.New()
+  name.vb: New()
+references:
+- uid: System.Runtime.Serialization.SerializationBinder
+  commentId: T:System.Runtime.Serialization.SerializationBinder
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationbinder
+  name: SerializationBinder
+  nameWithType: SerializationBinder
+  fullName: System.Runtime.Serialization.SerializationBinder
+- uid: MapQuest.Serialization
+  commentId: N:MapQuest.Serialization
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Serialization
+  nameWithType: MapQuest.Serialization
+  fullName: MapQuest.Serialization
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Serialization
+    name: Serialization
+    isExternal: true
+    href: MapQuest.Serialization.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Serialization
+    name: Serialization
+    isExternal: true
+    href: MapQuest.Serialization.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization.IFormatter
+  commentId: T:System.Runtime.Serialization.IFormatter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iformatter
+  name: IFormatter
+  nameWithType: IFormatter
+  fullName: System.Runtime.Serialization.IFormatter
+- uid: MapQuest.Serialization.SerializationBinderFactory.CreateBinder*
+  commentId: Overload:MapQuest.Serialization.SerializationBinderFactory.CreateBinder
+  isExternal: true
+  href: MapQuest.Serialization.SerializationBinderFactory.html#MapQuest_Serialization_SerializationBinderFactory_CreateBinder
+  name: CreateBinder
+  nameWithType: SerializationBinderFactory.CreateBinder
+  fullName: MapQuest.Serialization.SerializationBinderFactory.CreateBinder
+- uid: MapQuest.Serialization.SerializationBinderFactory.#ctor*
+  commentId: Overload:MapQuest.Serialization.SerializationBinderFactory.#ctor
+  isExternal: true
+  href: MapQuest.Serialization.SerializationBinderFactory.html#MapQuest_Serialization_SerializationBinderFactory__ctor
+  name: SerializationBinderFactory
+  nameWithType: SerializationBinderFactory.SerializationBinderFactory
+  fullName: MapQuest.Serialization.SerializationBinderFactory.SerializationBinderFactory
+  nameWithType.vb: SerializationBinderFactory.New
+  fullName.vb: MapQuest.Serialization.SerializationBinderFactory.New
+  name.vb: New

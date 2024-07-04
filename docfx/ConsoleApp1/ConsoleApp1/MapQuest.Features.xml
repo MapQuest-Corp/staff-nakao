@@ -1,0 +1,4616 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MapQuest.Features</name>
+    </assembly>
+    <members>
+        <member name="T:MapQuest.Features.Comparers.BasicFeatureComparer">
+            <summary>
+            <see cref="T:MapQuest.Features.Feature"/> のある値が小さい順に
+            並び替えるための比較演算子の基本クラスです。
+            </summary>
+            <remarks>
+            比較する値(面積や長さなど)は派生クラスの実装によって異なります。
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.BasicFeatureComparer.#ctor">
+            <summary>
+             <see cref="T:MapQuest.Features.Comparers.BasicFeatureComparer"/> の新しいインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.BasicFeatureComparer.Compare(MapQuest.Features.IFeature,MapQuest.Features.IFeature)">
+            <summary>
+             2 つの <see cref="T:MapQuest.Features.IFeature"/> それぞれのある値を比較し、
+             値が小さい Feature を示す値を返します。
+            </summary>
+            <param name="feature1">比較対象の第 1 地物。</param>
+            <param name="feature2">比較対象の第 2 地物。</param>
+            <returns>
+             <list type="table">
+              <listheader>
+               <term>値</term>
+               <description>説明</description>
+              </listheader>
+              <item>
+               <term>0 より小さい値</term>
+               <description><paramref name="feature1"/> の値の方が、
+               <paramref name="feature2"/> の値より小さい。</description>
+              </item>
+              <item>
+               <term>0</term>
+               <description><paramref name="feature1"/> の値と、
+               <paramref name="feature2"/> の値は等しい。</description>
+              </item>
+              <item>
+               <term>0 より大きい値</term>
+               <description><paramref name="feature1"/> の値の方が、
+               <paramref name="feature2"/> の値より大きい。</description>
+              </item>
+             </list>
+            </returns>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.BasicFeatureComparer.GetValue(MapQuest.Features.IFeature)">
+            <summary>
+            Feature のある値を算出します。
+            </summary>
+            <param name="feature"> のある値を算出する Feature 。</param>
+            <returns>feature のある値。<br/>
+            feature、 feature.Geometry のいずれかが null 
+            の場合は double.NaN を返す。
+            </returns>
+            <remarks>
+            比較する値(面積や長さなど)は派生クラスの実装によって異なります。
+            </remarks>
+        </member>
+        <member name="T:MapQuest.Features.Comparers.FeatureAreaComparer">
+            <summary>
+            <see cref="T:MapQuest.Features.Feature"/> の面積が小さい順に
+            並び替えるための比較演算子です。
+            </summary>
+            <remarks>
+             <note type="caution">
+              図形が <see cref="T:MapQuest.Topology.Geometries.Point"/> , <see cref="T:MapQuest.Topology.Geometries.LineString"/>, <see cref="T:MapQuest.Topology.Geometries.Text"/> 
+              など「面」を持たないものは、面積 0 として扱われます。
+             </note>
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureAreaComparer.#ctor">
+            <summary>
+             <see cref="T:MapQuest.Features.Comparers.FeatureAreaComparer"/> の新しいインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureAreaComparer.GetValue(MapQuest.Features.IFeature)">
+            <summary>
+            Feature の面積を算出します。
+            </summary>
+            <param name="feature">面積を算出する Feature 。</param>
+            <returns>feature の面積。<br/>
+            feature、 feature.Geometry のいずれかが null 
+            の場合は double.NaN を返す。
+            </returns>
+        </member>
+        <member name="T:MapQuest.Features.Comparers.FeatureComparer">
+            <summary>
+            <see cref="T:MapQuest.Features.Feature"/> と <see cref="T:MapQuest.Features.Feature"/> を比較するための比較演算子です。
+            </summary>
+            <remarks>
+             比較演算子(Comparer) は、分かりやすく言えば、「並び替えのルール」です。<para/>
+             比較演算子の実装によって、並び替えの順序を変更することができます。
+             言い換えれば、ソートの処理を変更することなく、比較演算子を差し替えるだけで
+             並び替え順を変更することができます。
+             .NET Framework では、<see cref="T:System.Collections.IComparer"/> を実装したクラスを、
+             <see cref="M:System.Array.Sort(System.Array)"/> の引数に渡すことで、「自分の」並び替えを行う事ができます。
+             <para/>
+             具体的に、Feature の検索結果を並び替えるには、次の手順を取ります。
+             <list type="number">
+              <item><see cref="T:MapQuest.Features.FeatureCollection"/> のインスタンスを生成します。</item>
+              <item>
+               <see cref="!:FeatureReader"/> で <see cref="T:MapQuest.Features.Feature"/> を検索し、
+               見つかった <see cref="T:MapQuest.Features.Feature"/> を <see cref="T:MapQuest.Features.FeatureCollection"/> に追加していきます。
+              </item>
+              <item>
+               並び替えのルールを示す <see cref="T:MapQuest.Features.Comparers.FeatureComparer"/> の派生クラスを生成します。
+               ここでは、指定した位置から近い順に並び替えたいので 
+               <see cref="T:MapQuest.Features.Comparers.FeatureDistanceComparer"/> を生成します。
+              </item>
+              <item>
+               <see cref="T:MapQuest.Features.FeatureCollection"/> の 
+               <see cref="M:MapQuest.Features.FeatureCollection.Sort"/> メソッドを 
+               <see cref="T:MapQuest.Features.Comparers.FeatureDistanceComparer"/> を渡して実行します。
+              </item>
+             </list>
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureComparer.Compare(MapQuest.Features.IFeature,MapQuest.Features.IFeature)">
+            <summary>
+            2 つの <see cref="T:MapQuest.Features.IFeature"/> を比較し、
+            一方が他方より小さいか、等しいか、大きいかを示す値を返します。
+            </summary>
+            <param name="feature1">比較対象の第 1 地物。</param>
+            <param name="feature2">比較対象の第 2 地物。</param>
+            <returns>
+            <list type="table">
+            <listheader>
+            <term>値</term>
+            <description>説明</description>
+            </listheader>
+            <item>
+            <term>0 より小さい値</term>
+            <description>feature1 が feature2 より小さい。</description>
+            </item>
+            <item>
+            <term>0</term>
+            <description>feature1 と feature2 は等しい。</description>
+            </item>
+            <item>
+            <term>0 より大きい値</term>
+            <description>feature1 が feature2 より大きい。</description>
+            </item>
+            </list>
+            </returns>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureComparer.System#Collections#IComparer#Compare(System.Object,System.Object)">
+            <summary>
+            2 つの <see cref="T:MapQuest.Features.IFeature"/> を比較し、
+            一方が他方より小さいか、等しいか、大きいかを示す値を返します。
+            </summary>
+            <param name="x">比較対象の第 1 オブジェクト。</param>
+            <param name="y">比較対象の第 2 オブジェクト。</param>
+            <returns>
+            <list type="table">
+            <listheader>
+            <term>値</term>
+            <description>説明</description>
+            </listheader>
+            <item>
+            <term>0 より小さい値</term>
+            <description>x が y より小さい。</description>
+            </item>
+            <item>
+            <term>0</term>
+            <description>x と y は等しい。</description>
+            </item>
+            <item>
+            <term>0 より大きい値</term>
+            <description>x が y より大きい。</description>
+            </item>
+            </list>
+            </returns>
+            <exception cref="T:System.ArgumentException">
+            x と y の型のいずれかが <see cref="T:MapQuest.Features.IFeature"/> ではなく、両者を比較できません。
+            </exception>
+            <remarks>
+            このメソッドは、 this.Comparer(IFeature, IFeature) を呼び出します。
+            </remarks>
+        </member>
+        <member name="T:MapQuest.Features.Comparers.FeatureDistanceComparer">
+            <summary>
+            指定した位置から <see cref="T:MapQuest.Features.Feature"/> までの最短距離の短い順に
+            並び替えるための比較演算子です。
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureDistanceComparer.#ctor(MapQuest.Topology.Geometries.GeometryFactory,MapQuest.Coordinates.Coordinate)">
+            <overloads>
+            距離を計算する基点と、並び替えの順序を指定して、
+            インスタンスを初期化します。
+            </overloads>
+            <summary>
+            <see cref="T:MapQuest.Topology.Geometries.GeometryFactory"/> , 距離を計算する基点の座標、
+            並び替えの順序を指定して、
+            インスタンスを初期化します。
+            </summary>
+            <param name="geomFactory">coord から <see cref="T:MapQuest.Topology.Geometries.Point"/> を生成するための
+             <see cref="T:MapQuest.Topology.Geometries.GeometryFactory"/> 。</param>
+            <param name="coord">距離を計算する基点の座標。</param>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureDistanceComparer.#ctor(MapQuest.Topology.Geometries.Point)">
+            <summary>
+            距離を計算する基点の <see cref="T:MapQuest.Topology.Geometries.Point"/> 、並び替えの順序を指定して、
+            インスタンスを初期化します。
+            </summary>
+            <param name="basePoint">距離を計算する基点の <see cref="T:MapQuest.Topology.Geometries.Point"/> 。</param>
+        </member>
+        <member name="P:MapQuest.Features.Comparers.FeatureDistanceComparer.BasePoint">
+            <summary>
+            距離を算出する基点となる <see cref="T:MapQuest.Topology.Geometries.Point"/> を取得します。
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureDistanceComparer.Compare(MapQuest.Features.IFeature,MapQuest.Features.IFeature)">
+            <summary>
+            2 つの <see cref="T:MapQuest.Features.IFeature"/> それぞれの
+            <see cref="P:MapQuest.Features.Comparers.FeatureDistanceComparer.BasePoint"/> との最短距離を比較し、どちらが短いかを示す値を返します。
+            </summary>
+            <param name="feature1">比較対象の第 1 地物。</param>
+            <param name="feature2">比較対象の第 2 地物。</param>
+            <returns>
+            <list type="table">
+            <listheader>
+            <term>値</term>
+            <description>説明</description>
+            </listheader>
+            <item>
+            <term>0 より小さい値</term>
+            <description><see cref="P:MapQuest.Features.Comparers.FeatureDistanceComparer.BasePoint"/> - feature1 間の最短距離の方が、
+            <see cref="P:MapQuest.Features.Comparers.FeatureDistanceComparer.BasePoint"/> - feature2 間の最短距離より短い。</description>
+            </item>
+            <item>
+            <term>0</term>
+            <description><see cref="P:MapQuest.Features.Comparers.FeatureDistanceComparer.BasePoint"/> - feature1 間の最短距離と、
+            <see cref="P:MapQuest.Features.Comparers.FeatureDistanceComparer.BasePoint"/> - feature2 間の最短距離は等しい。</description>
+            </item>
+            <item>
+            <term>0 より大きい値</term>
+            <description><see cref="P:MapQuest.Features.Comparers.FeatureDistanceComparer.BasePoint"/> - feature1 間の最短距離の方が、
+            <see cref="P:MapQuest.Features.Comparers.FeatureDistanceComparer.BasePoint"/> - feature2 間の最短距離より長い。</description>
+            </item>
+            </list>
+            </returns>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureDistanceComparer.GetDistance(MapQuest.Features.IFeature)">
+            <summary>
+            Feature と BasePoint との最短距離を算出します。
+            </summary>
+            <param name="feature">距離を算出する Feature 。</param>
+            <returns>feature と BasePoint との最短距離。<br/>
+            feature、 feature.Geometry、 BasePoint のいずれかが null 
+            の場合は double.NaN を返す。
+            </returns>
+        </member>
+        <member name="T:MapQuest.Features.Comparers.FeatureLengthComparer">
+            <summary>
+            <see cref="T:MapQuest.Features.Feature"/> の長さが短い順に
+            並び替えるための比較演算子です。
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureLengthComparer.#ctor">
+            <summary>
+             <see cref="T:MapQuest.Features.Comparers.FeatureLengthComparer"/> の新しいインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureLengthComparer.GetValue(MapQuest.Features.IFeature)">
+            <summary>
+            Feature の長さを算出します。
+            </summary>
+            <param name="feature">長さを算出する Feature 。</param>
+            <returns>feature の長さ。<br/>
+            feature、 feature.Geometry のいずれかが null 
+            の場合は double.NaN を返す。
+            </returns>
+        </member>
+        <member name="T:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer">
+            <summary>
+            指定した位置から <see cref="T:MapQuest.Features.Feature"/> までの最短距離の短い順に
+            並び替えるための比較演算子です。
+            面を持つ <see cref="T:MapQuest.Features.Feature"/> の場合は、そのアウトラインからの距離を用います。
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.#ctor(MapQuest.Topology.Geometries.GeometryFactory,MapQuest.Coordinates.Coordinate)">
+            <overloads>
+            距離を計算する基点と、並び替えの順序を指定して、
+            インスタンスを初期化します。
+            </overloads>
+            <summary>
+            <see cref="T:MapQuest.Topology.Geometries.GeometryFactory"/> , 距離を計算する基点の座標、
+            並び替えの順序を指定して、
+            インスタンスを初期化します。
+            </summary>
+            <param name="geomFactory">coord から <see cref="T:MapQuest.Topology.Geometries.Point"/> を生成するための
+             <see cref="T:MapQuest.Topology.Geometries.GeometryFactory"/> 。</param>
+            <param name="coord">距離を計算する基点の座標。</param>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.#ctor(MapQuest.Topology.Geometries.Point)">
+            <summary>
+            距離を計算する基点の <see cref="T:MapQuest.Topology.Geometries.Point"/> 、並び替えの順序を指定して、
+            インスタンスを初期化します。
+            </summary>
+            <param name="basePoint">距離を計算する基点の <see cref="T:MapQuest.Topology.Geometries.Point"/> 。</param>
+        </member>
+        <member name="P:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.BasePoint">
+            <summary>
+            距離を算出する基点となる <see cref="T:MapQuest.Topology.Geometries.Point"/> を取得します。
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.Compare(MapQuest.Features.IFeature,MapQuest.Features.IFeature)">
+            <summary>
+            2 つの <see cref="T:MapQuest.Features.IFeature"/> それぞれの
+            <see cref="P:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.BasePoint"/> との最短距離を比較し、どちらが短いかを示す値を返します。
+            </summary>
+            <param name="feature1">比較対象の第 1 地物。</param>
+            <param name="feature2">比較対象の第 2 地物。</param>
+            <returns>
+            <list type="table">
+            <listheader>
+            <term>値</term>
+            <description>説明</description>
+            </listheader>
+            <item>
+            <term>0 より小さい値</term>
+            <description><see cref="P:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.BasePoint"/> - feature1 間の最短距離の方が、
+            <see cref="P:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.BasePoint"/> - feature2 間の最短距離より短い。</description>
+            </item>
+            <item>
+            <term>0</term>
+            <description><see cref="P:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.BasePoint"/> - feature1 間の最短距離と、
+            <see cref="P:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.BasePoint"/> - feature2 間の最短距離は等しい。</description>
+            </item>
+            <item>
+            <term>0 より大きい値</term>
+            <description><see cref="P:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.BasePoint"/> - feature1 間の最短距離の方が、
+            <see cref="P:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.BasePoint"/> - feature2 間の最短距離より長い。</description>
+            </item>
+            </list>
+            </returns>
+        </member>
+        <member name="M:MapQuest.Features.Comparers.FeatureOutlineDistanceComparer.GetDistance(MapQuest.Features.IFeature)">
+            <summary>
+            Feature と BasePoint との最短距離を算出します。
+            </summary>
+            <param name="feature">距離を算出する Feature 。</param>
+            <returns>feature と BasePoint との最短距離。<br/>
+            feature、 feature.Geometry、 BasePoint のいずれかが null 
+            の場合は double.NaN を返す。
+            </returns>
+        </member>
+        <member name="T:MapQuest.Features.Feature">
+            <summary>
+			実世界の現象の抽出概念である地物を表現するためのクラスです。
+
+		</summary><remarks>
+			<see cref="T:MapQuest.Features.Feature" /> は、図形形状(<see cref="P:MapQuest.Features.Feature.Geometry" />) ＋ それに付加する情報(属性情報など) で構成されます。<br />
+			基本的には、 <see cref="T:MapQuest.Features.Feature" /> は <see cref="P:MapQuest.Features.Feature.Properties" /> という「キー文字列と <see cref="T:System.Object" /> の集まり」を持ちます。<br />
+			例えば、図形情報は、<see cref="P:MapQuest.Features.Feature.Properties" /> に キー "#Geometry" で格納されています。
+			<see cref="P:MapQuest.Features.Feature.Geometry">Feature.Geometry</see> は、この <see cref="P:MapQuest.Features.Feature.Properties" /> のキー "#Geometry" の項目を参照しているに過ぎません。<br />
+			同様に、<see cref="P:MapQuest.Features.Feature.ID">Feature.ID</see> は、<see cref="P:MapQuest.Features.Feature.Properties" /> のキー "#ID" の項目を参照します。<br />
+			属性情報だけは少々特別で、<see cref="P:MapQuest.Features.Feature.Properties" /> のキーが属性テーブル名となり、項目は、<see cref="T:MapQuest.Database.AttributesList" /> 型
+			となります。
+			例えば、"住所録"テーブルの属性情報は C# の場合、
+			<code>
+			Feature.GetProperty("住所録") as AttributesList
+			</code>
+			で取得できます。
+			<note>
+			あらかじめ規定されているキー文字列は、属性情報を除いて、"#" を先頭に付加します。
+			ユーザー独自の情報のキー名には "#" を先頭につけないようにしてください。
+			</note>
+			<para />
+			現時点で、規定されているプロパティには下記のものがあります。
+			<para />
+			全てのプロバイダで共通な項目。
+			<list type="table">
+			<listheader>
+				<term>キー</term>
+				<description>値</description>
+			</listheader>
+			<item><term>#ID</term><description><see cref="P:MapQuest.Features.Feature.ID">Feature.ID</see> にマップされます。</description></item>
+			<item><term>#Geometry</term><description><see cref="P:MapQuest.Features.Feature.Geometry">Feature.Geometry</see> にマップされます。</description></item>
+			<item><term>{属性テーブル名}</term><description><see cref="T:MapQuest.Features.Feature" /> が持つ属性情報を示す <see cref="T:MapQuest.Database.AttributesList" /> です。</description></item>
+			<item><term>#Style</term><description><see cref="T:MapQuest.Features.Feature" /> の個別のスタイルを示す <see cref="T:MapQuest.Styles.StyleList" /> です。
+			この要素は、 階層の <see cref="!:Layer.Styles">Layer.Styles</see> よりも優先的に使用されます。</description></item>
+			<item><term>#FixedID</term><description>フィーチャーを追加、更新する際のフィーチャーIDを明示的に指定する場合に、 <see cref="P:MapQuest.Features.Feature.ID">Feature.ID</see> を示す <see cref="T:System.String" /> 値を設定します。通常は使用しないでください。</description></item>
+			</list>
+			MqxProvider で規定されている項目。
+			<list type="table">
+			<listheader>
+				<term>キー</term>
+				<description>値</description>
+			</listheader>
+			<item><term>#Data1</term><description>MQX の Color 領域に格納されている <see cref="T:System.Int32" /> 値です。</description></item>
+			<item><term>#TextType</term><description>文字列の種類を示す <see cref="T:System.Int16" /> 値。内容は <see cref="T:MapQuest.Styles.TextType">MapQuest.Styles.TextType</see> です。</description></item>
+			<item><term>#IsVerticalText</term><description>縦文字列かを示す <see cref="T:System.Boolean" /> 値。縦文字の場合 true になります。</description></item>
+			<item><term>#Unit</term><description>文字やシンボルのサイズの単位を示す <see cref="T:MapQuest.Styles.StyleUnitType" /> 値。</description></item>
+			<item><term>#IsScalable</term><description>文字やシンボルのサイズが縮尺に依存するかを示す <see cref="T:System.Boolean" /> 値。縮尺に依存する場合 true になります。</description></item>
+			<item><term>#Scale</term><description>#IsScalable が false である時、<see cref="!:Geometries.Text">Geometries.Text</see> の <see cref="P:MapQuest.Topology.Geometries.Text.Width" /> と <see cref="P:MapQuest.Topology.Geometries.Text.Height" /> を計算した縮尺値を示す <see cref="T:System.Double" /> 値。</description></item>
+			<item><term>#SymbolType</term><description>シンボルの種類を示す <see cref="T:System.Int16" /> 値。内容は <see cref="T:MapQuest.Styles.SymbolType">MapQuest.Styles.SymbolType</see> です。</description></item>
+			<item><term>#SymbolWidth</term><description>シンボルの幅を示す <see cref="T:System.Single" /> 値。</description></item>
+			<item><term>#SymbolHeight</term><description>シンボルの高さを示す <see cref="T:System.Single" /> 値。</description></item>
+			<item><term>#Angle</term><description>シンボルの角度を示す <see cref="T:System.Int16" /> 値。</description></item>
+			<item><term>#SymbolNumber</term><description>シンボルの番号を示す <see cref="T:System.Int16" /> 値。</description></item>
+			<item><term>#SymbolLabel</term><description>シンボルに付加されている文字列を示す <see cref="T:System.String" /> 値。文字付きストロークシンボルで使用されます。</description></item>
+			<item><term>#HasHiddenPoints</term><description>ラインまたはポリゴンが、隠線を持っているかどうかを示す <see cref="T:System.Boolean" /> 値。隠線を１つ以上持っている場合 true になります。</description></item>
+			<item><term>#ImageFile</term><description>矩形(<see cref="T:MapQuest.Topology.Geometries.Rectangle" />)に付与される画像ファイル名を示す <see cref="T:System.String" /> 値。この項目がある場合 MQX のラスタプリミティブとなります。</description></item>
+			</list>
+		</remarks>
+        </member>
+        <member name="F:MapQuest.Features.Feature.m_strID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.Feature.m_objFeatureType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.Feature.m_objGeometry">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.Feature.m_objProperties">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.Feature.#ctor(System.String)">
+            <overloads>
+			<see cref="T:MapQuest.Features.Feature" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</overloads><summary>
+			指定した識別子を備えた、 <see cref="T:MapQuest.Features.Feature" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="id">
+			地物の識別子。
+
+		</param>
+        </member>
+        <member name="M:MapQuest.Features.Feature.#ctor(System.String,MapQuest.Topology.Geometries.Geometry)">
+            <summary>
+			指定した識別子と形状を備えた、 <see cref="T:MapQuest.Features.Feature" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="id">
+			地物の識別子。
+
+		</param><param name="geometry">
+			地物として扱う形状を表す 
+			<see cref="T:MapQuest.Topology.Geometries.Geometry" /> 。
+
+		</param>
+        </member>
+        <member name="M:MapQuest.Features.Feature.#ctor(System.String,MapQuest.Features.IFeatureType)">
+            <summary>
+			<see cref="T:MapQuest.Features.Feature" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このコンストラクタは、現在サポートしていません。
+
+		</para>
+		</summary><param name="id">
+			地物の識別子。
+
+		</param><param name="featureType">
+			{}
+		</param>
+        </member>
+        <member name="M:MapQuest.Features.Feature.#ctor(System.String,MapQuest.Features.IFeatureType,MapQuest.Features.IFeatureProperty[])">
+            <summary>
+			<see cref="T:MapQuest.Features.Feature" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このコンストラクタは、現在サポートしていません。
+
+		</para>
+		</summary><param name="id">
+			地物の識別子。
+
+		</param><param name="geometry">
+			地物として扱う形状を表す 
+			<see cref="T:MapQuest.Topology.Geometries.Geometry" /> 。
+
+		</param><param name="featureType">
+			{}
+		</param>
+        </member>
+        <member name="M:MapQuest.Features.Feature.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+			<see cref="T:MapQuest.Features.Feature" /> 
+			クラスの新しいインスタンスを初期化します。
+
+			Initializes a new instance of the <see cref="T:MapQuest.Features.Feature" /> class 
+			with serialized data.
+        <para>
+			<!-- Non Support 2005/01/20 -->
+			このコンストラクタは、現在サポートしていません。
+
+		</para>
+		</summary><param name="id">
+			地物の識別子。
+
+		</param><param name="featureType">
+			{}
+		</param><param name="properties[]">
+			{}
+		</param>
+        </member>
+        <member name="M:MapQuest.Features.Feature.Equals(System.Object)">
+            <summary>
+            オブジェクトの内容が等しい場合に真を返します。
+            </summary>
+            <param name="obj">比較する<see cref="T:MapQuest.Features.Feature"/></param>
+            <returns>等価であるか</returns>
+        </member>
+        <member name="M:MapQuest.Features.Feature.CopyAttributesList(MapQuest.Features.Feature)">
+            <summary>
+            この <see cref="T:MapQuest.Features.Feature"/> の <paramref name="Properties"/> のアイテムのうち、
+            属性を示すアイテムを、<param name="feature"/> で指定された <see cref="T:MapQuest.Features.Feature"/> の
+            <paramref name="Properties"/> に参照コピーします。
+            </summary>
+            <param name="feature">属性を示すアイテムをコピーする先の <see cref="T:MapQuest.Features.Feature"/>。</param>
+        </member>
+        <member name="P:MapQuest.Features.Feature.ID">
+            <summary>
+		地物の識別子を取得します。
+    </summary><value>
+		地物を識別する一意の文字列。
+
+    </value><remarks>
+		このプロパティの値は、各プロバイダが管理してください。
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.Feature.Item(System.String)">
+            <summary>
+		指定されたインデックスの属性を取得または設定します。
+    </summary><param name="name">
+		取得する属性のインデックス名。
+
+    </param><value>
+		指定されたインデックスの属性の値。
+
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.Feature.Geometry">
+            <summary>
+		地物の形状を取得します。
+    </summary><value>
+        地物として定義された 
+        <see cref="T:MapQuest.Topology.Geometries.Geometry">Geometry</see> 
+        オブジェクト。それ以外の場合は null 。
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.Feature.Envelope">
+            <summary>
+		地物の範囲を取得します。
+    </summary><value>
+		地物が管理される範囲の 
+		<see cref="T:MapQuest.Coordinates.Envelope">Envelope</see> 
+		オブジェクト。それ以外の場合は null 。
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.Feature.Properties">
+            <summary>
+		地物の属性を取得します。
+    </summary><value>
+		定義されている地物の属性を定義した 
+		<see cref="T:System.Collections.IDictionary" /> 
+		オブジェクト。それ以外の場合は null 。
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.Feature.PropertyCount">
+            <summary>
+		地物の属性の数を取得します。
+    </summary><value>
+		設定されている地物の属性の数。
+
+    </value>
+        </member>
+        <member name="M:MapQuest.Features.Feature.HasProperty(System.String)">
+            <summary>
+            地物の属性の有無を確認します。
+            </summary>
+            <param name="key">取得する属性のインデックス名。</param>
+            <returns>指定された項目の属性がある場合は <see langword="true"/>。それ以外の場合は <see langword="false"/> 。</returns>
+        </member>
+        <member name="M:MapQuest.Features.Feature.GetProperty(System.String)">
+            <summary>
+            地物の属性を取得します。
+            </summary>
+            <param name="key">取得する属性のインデックス名。</param>
+            <returns>指定された項目の属性の値。</returns>
+        </member>
+        <member name="M:MapQuest.Features.Feature.SetProperty(System.String,System.Object)">
+            <summary>
+            地物の属性を設定します。
+            </summary>
+            <param name="name">設定する属性の項目名。</param>
+            <param name="value">設定する属性の値。</param>
+        </member>
+        <member name="M:MapQuest.Features.Feature.CompareTo(System.Object)">
+            <summary>
+		<see cref="T:MapQuest.Features.Feature">Feature</see> オブジェクトを比較します。
+
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このメソッドは、現在サポートしていません。
+
+		</para>
+    </summary>
+        </member>
+        <member name="M:MapQuest.Features.Feature.Clone">
+            <summary>
+		現在のインスタンスのコピーである新しいオブジェクトを作成します。
+
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このメソッドは、現在サポートしていません。
+
+		</para>
+    </summary><returns>
+		コピーされた新しい <see cref="T:MapQuest.Features.Feature" /> オブジェクト。
+
+    </returns>
+        </member>
+        <member name="T:MapQuest.Features.FeatureCollection">
+            <summary>
+			地物用に最適化されたコレクションの実装です。
+
+		</summary><remarks>
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			は、地物用に最適化された <see cref="T:System.Collections.ICollection" /> 
+			コレクションを提供します。
+
+		</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.#ctor">
+            <overloads>
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</overloads><summary>
+			空で、デフォルトの初期量を備えた、 <see cref="T:MapQuest.Features.FeatureCollection" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><remarks>
+			詳細については <see cref="M:System.Collections.ArrayList.#ctor" /> を参照してください。
+
+	    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.#ctor(System.Int32)">
+            <summary>
+			空で、指定した初期量を備えた、 <see cref="T:MapQuest.Features.FeatureCollection" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="capacity">
+			初期状態の新しいリストに格納できる地物の数。
+
+	    </param><exception cref="T:System.ArgumentOutOfRangeException">
+			<paramref name="capacity" /> が 0 未満です。
+
+		</exception><remarks>
+			詳細については <see cref="M:System.Collections.ArrayList.#ctor(System.Int32)" /> を参照してください。
+
+	    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.#ctor(MapQuest.Features.FeatureCollection)">
+            <summary>
+			指定したコレクションからコピーした地物を格納し、
+
+			コピーされる地物の数と同じ初期量を備えた、 
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="collection">
+			新しいリストに要素が追加された <see cref="T:MapQuest.Features.FeatureCollection" /> 。
+
+	    </param><exception cref="T:System.ArgumentNullException">
+			<paramref name="collection" /> が 
+			null 参照 (Visual Basic では <b>Nothing</b>) です。
+
+		</exception><remarks>
+			詳細については <see cref="M:System.Collections.ArrayList.#ctor(System.Collections.ICollection)" /> を参照してください。
+
+	    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.#ctor(MapQuest.Features.Feature[])">
+            <summary>
+			指定した配列からコピーした地物を格納し、
+
+			コピーされる地物の数と同じ初期量を備えた、 
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="array">
+			コレクションに追加するオブジェクトを格納する
+
+			<see cref="T:MapQuest.Features.Feature" /> 型の配列。
+
+	    </param><exception cref="T:System.ArgumentNullException">
+			<para>
+				<paramref name="array" /> が 
+				null 参照 (Visual Basic では <b>Nothing</b>) です。
+
+			</para>
+		</exception><remarks>
+			詳細については <see cref="M:System.Collections.ArrayList.#ctor(System.Collections.ICollection)" /> を参照してください。
+
+	    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.#ctor(MapQuest.Features.FeatureSchema)">
+            <summary>
+            この <see cref="T:MapQuest.Features.FeatureCollection"/> についての情報を示す<see cref="T:MapQuest.Features.FeatureSchema"/> を指定して空で、デフォルトの初期量を備えた、 <see cref="T:MapQuest.Features.FeatureCollection"/> クラスの新しいインスタンスを初期化します。 
+            </summary>
+            <param name="schema">この <see cref="T:MapQuest.Features.FeatureCollection"/> についての情報を示す<see cref="T:MapQuest.Features.FeatureSchema"/> 。</param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.#ctor(System.Int32,MapQuest.Features.FeatureSchema)">
+            <summary>
+            コレクションのサイズと、この <see cref="T:MapQuest.Features.FeatureCollection"/> についての情報を示す<see cref="T:MapQuest.Features.FeatureSchema"/> を指定して空で、デフォルトの初期量を備えた、 <see cref="T:MapQuest.Features.FeatureCollection"/> クラスの新しいインスタンスを初期化します。 
+            </summary>
+            <param name="capacity">初期状態の新しいリストに格納できる地物の数。</param>
+            <param name="schema">この <see cref="T:MapQuest.Features.FeatureCollection"/> についての情報を示す<see cref="T:MapQuest.Features.FeatureSchema"/> 。</param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.#ctor(MapQuest.Features.Feature[],MapQuest.Features.FeatureSchema)">
+            <summary>
+            コレクションに追加する <see cref="T:MapQuest.Features.Feature"/> の配列と、この <see cref="T:MapQuest.Features.FeatureCollection"/> についての情報を示す<see cref="T:MapQuest.Features.FeatureSchema"/> を指定して空で、デフォルトの初期量を備えた、 <see cref="T:MapQuest.Features.FeatureCollection"/> クラスの新しいインスタンスを初期化します。 
+            </summary>
+            <param name="array">コレクションに追加するオブジェクトを格納する Feature 型の配列。</param>
+            <param name="schema">この <see cref="T:MapQuest.Features.FeatureCollection"/> についての情報を示す<see cref="T:MapQuest.Features.FeatureSchema"/> 。</param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            シリアル化された情報から<see cref="T:MapQuest.Features.FeatureCollection"/>を作成します。
+            </summary>
+            <param name="info">シリアル化する情報を格納するオブジェクト</param>
+            <param name="context"></param>
+        </member>
+        <member name="P:MapQuest.Features.FeatureCollection.InnerArray">
+            <summary>
+            Gets the list of elements contained in the <see cref="T:MapQuest.Features.FeatureCollection"/> instance.
+            </summary>
+            <value>
+            A one-dimensional <see cref="T:System.Array"/> with zero-based indexing that contains all 
+            <see cref="T:MapQuest.Features.Feature"/> elements in the <see cref="T:MapQuest.Features.FeatureCollection"/>.
+            </value>
+            <remarks>
+            Use <b>InnerArray</b> to access the element array of a <see cref="T:MapQuest.Features.FeatureCollection"/>
+            instance that might be a read-only or synchronized wrapper. This is necessary because
+            the element array field of wrapper classes is always a null reference.
+            </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureCollection.Capacity">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に格納できる要素の数を取得または設定します。
+
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に格納できる要素の数。
+
+		 0 が指定された場合は規定値を設定します。
+
+		現在設定されている数より小さい場合は例外を発行します。
+
+    </value><exception cref="T:System.ArgumentOutOfRangeException">
+		<see cref="P:MapQuest.Features.FeatureCollection.Capacity" /> が <see cref="P:MapQuest.Features.FeatureCollection.Count" /> 
+		より小さい値に設定されています。
+
+    </exception><remarks>
+		詳細については <see cref="P:System.Collections.ArrayList.Capacity" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureCollection.Count">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に実際に格納されている地物の数を取得します。
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に実際に格納されている地物の数。
+    </value><remarks>
+		詳細については 
+		<see cref="P:System.Collections.ICollection.Count" /> 
+		を参照してください。
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureCollection.IsFixedSize">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		が固定サイズかどうかを示す値を取得します。
+
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このプロパティは、現在サポートしていません。
+		</para>
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		が固定サイズの場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+		既定値は <b>false</b> です。
+
+    </value><remarks>
+		詳細については <see cref="P:System.Collections.ArrayList.IsFixedSize" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureCollection.IsReadOnly">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		が読み取り専用かどうかを示す値を取得します。
+
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このプロパティは、現在サポートしていません。
+		</para>
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		が読み取り専用の場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+		既定値は <b>false</b> です。
+
+    </value><remarks>
+		詳細については <see cref="P:System.Collections.ArrayList.IsReadOnly" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureCollection.IsSynchronized">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		へのアクセスが同期されている (スレッド セーフである) かどうかを示す値を取得します。
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このプロパティは、現在サポートしていません。
+		</para>
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		へのアクセスが同期されている (スレッド セーフである) 場合は <b>true</b> 。
+
+		それ以外の場合は <b>false</b> 。
+
+    </value><remarks>
+		詳細については 
+		<see cref="P:System.Collections.ICollection.IsSynchronized" /> 
+		を参照してください。
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureCollection.IsUnique">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		内の地物が全てユニークであるかどうかを示す値を取得します。
+
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このプロパティは、現在サポートしていません。
+		</para>
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		内の地物が全てユニークである場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+		既定値は <b>false</b> です。
+
+    </value><remarks>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が、ユニークなラッパーを使用している場合、 
+		<see cref="P:MapQuest.Features.FeatureCollection.IsUnique" /> は <b>true</b> を返します。
+
+		詳細については <see cref="!:Unique" /> を参照してください。
+
+		<!--
+		IsUnique returns <c>true</c> exactly if the <see cref="FeatureCollection"/> 
+		is exposed through a <see cref="Unique"/> wrapper. 
+		Please refer to <see cref="Unique"/> for details.
+		-->
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureCollection.Item(System.Int32)">
+            <summary>
+		指定されたインデックスの地物を取得または設定します。
+
+	</summary><param name="index">
+		取得または設定する要素の、0 から始まるインデックス番号。
+
+    </param><value>
+		指定したインデックスにある地物  <see cref="T:MapQuest.Features.IFeature" /> 。
+
+    </value><exception cref="T:System.ArgumentOutOfRangeException">
+		<para><paramref name="index" /> が 0 未満です。</para>
+		<para>または</para>
+		<para><paramref name="index" /> が <see cref="P:MapQuest.Features.FeatureCollection.Count" /> 以上です。</para>
+	</exception><exception cref="T:System.NotSupportedException">
+		<para>
+			このプロパティが設定されていますが、 
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			が読み取り専用です。
+
+		</para>
+		<para>または</para>
+		<para>
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			は既に異なるインデックスで指定された要素を含んでいます。
+
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			は含まれる要素が全てユニークであることを保障します。
+
+		</para>
+	</exception><remarks>
+		詳細については <see cref="P:System.Collections.ArrayList.Item(System.Int32)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureCollection.System#Collections#IList#Item(System.Int32)">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		指定したインデックスにある地物を取得または設定します。
+
+    </summary><param name="index">
+		取得または設定する要素の、0 から始まるインデックス番号。
+
+    </param><value>
+		指定したインデックスにある地物  <see cref="T:MapQuest.Features.IFeature" /> 。
+
+    </value><exception cref="T:System.ArgumentOutOfRangeException">
+		<para>
+			<paramref name="index" /> が 
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			の有効なインデックスではありません。
+
+		</para>
+	</exception><exception cref="T:System.NotSupportedException">
+		<para>
+			このプロパティが設定されていますが、 
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			が読み取り専用です。
+
+		</para>
+	</exception><remarks>
+		詳細については <see cref="P:System.Collections.ArrayList.Item(System.Int32)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureCollection.SyncRoot">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		へのアクセスを同期するために使用できるオブジェクトを取得します。
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このプロパティは、現在サポートしていません。
+		</para>
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		へのアクセスを同期するために使用できるオブジェクト。
+
+    </value><remarks>
+		詳細については 
+		<see cref="P:System.Collections.ICollection.SyncRoot" /> 
+		を参照してください。
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Equals(System.Object)">
+            <summary>
+            オブジェクトの内容が等しい場合に真を返します。
+            </summary>
+            <param name="obj">比較する<see cref="T:MapQuest.Features.FeatureCollection"/></param>
+            <returns>等価であるか</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Add(MapQuest.Features.Feature)">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		の末尾に <see cref="T:MapQuest.Features.Feature" /> を追加します。
+
+    </summary><param name="value">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		の末尾に追加する 
+		<see cref="T:MapQuest.Features.Feature" /> 。
+
+		値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+
+    </param><returns>
+		<paramref name="value" /> が追加された位置の 
+		<see cref="T:MapQuest.Features.FeatureCollection" /> インデックス。
+
+    </returns><exception cref="T:System.NotSupportedException">
+		<para>
+			<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+		</para>
+		<para>または</para>
+		<para>
+			<see cref="T:MapQuest.Features.FeatureCollection" /> が固定サイズです。
+
+		</para>
+		<para>または</para>
+		<para>
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			は既に指定された要素を含んでいます。また、
+
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			は含まれる要素が全てユニークであることを保障します。
+
+		</para>
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Add(System.Object)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.System#Collections#IList#Add(System.Object)">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		の末尾に <see cref="T:MapQuest.Features.Feature" /> を追加します。
+
+    </summary><param name="value">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		の末尾に追加する 
+		<see cref="T:MapQuest.Features.Feature" /> 。
+
+		値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+
+    </param><returns>
+		<paramref name="value" /> が追加された位置の 
+		<see cref="T:MapQuest.Features.FeatureCollection" /> インデックス。
+
+    </returns><exception cref="T:System.NotSupportedException">
+		<para>
+			<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+		</para>
+		<para>または</para>
+		<para>
+			<see cref="T:MapQuest.Features.FeatureCollection" /> が固定サイズです。
+
+		</para>
+		<para>または</para>
+		<para>
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			は既に指定された要素を含んでいます。また、
+
+			<see cref="T:MapQuest.Features.FeatureCollection" /> 
+			は含まれる要素が全てユニークであることを保障します。
+
+		</para>
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Add(System.Object)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.FeatureCollection)">
+            <overloads>
+		指定したコレクションまたは配列の要素を 
+		<see cref="T:MapQuest.Features.FeatureCollection" /> コレクションの末尾に追加します。
+
+	</overloads><summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> の要素を <see cref="T:MapQuest.Features.FeatureCollection" /> の末尾に追加します。
+
+    </summary><param name="collection">
+		コレクションに追加するオブジェクトを格納する
+
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 。
+
+    </param><exception cref="T:System.ArgumentNullException">
+		<paramref name="collection" /> が 
+		null 参照 (Visual Basic では <b>Nothing</b>) です。
+
+	</exception><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+		<para>または</para>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が固定サイズです。
+
+		<para>または</para>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> は既に指定された要素を含んでいます。また、
+
+		<see cref="T:MapQuest.Features.FeatureCollection" /> は含まれる要素が全てユニークであることを保障します。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.AddRange(System.Collections.ICollection)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.AddRange(MapQuest.Features.Feature[])">
+            <summary>
+		<see cref="T:MapQuest.Features.Feature" /> 配列の要素を <see cref="T:MapQuest.Features.FeatureCollection" /> の末尾に追加します。
+
+    </summary><param name="array">
+		コレクションに追加するオブジェクトを格納する
+
+		<see cref="T:MapQuest.Features.Feature" /> 型の配列。
+
+    </param><exception cref="T:System.ArgumentNullException">
+		<paramref name="array" /> が 
+		null 参照 (Visual Basic では <b>Nothing</b>) です。
+
+	</exception><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+		<para>または</para>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が固定サイズです。
+
+		<para>または</para>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> は既に指定された要素を含んでいます。また、
+
+		<see cref="T:MapQuest.Features.FeatureCollection" /> は含まれる要素が全てユニークであることを保障します。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.AddRange(System.Collections.ICollection)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.BinarySearch(MapQuest.Features.Feature)">
+            <summary>
+		バイナリ サーチ アルゴリズムを使用して、並べ替えられた 
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 内の特定の地物を検索します。
+
+    </summary><param name="value">
+		検索する <see cref="T:MapQuest.Features.Feature" /> 。
+
+		値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+
+    </param><returns>
+		0 から始まるインデックス番号。 
+		<paramref name="value" /> が見つかった場合は、並べ替えられた 
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		内の value の 0 から始まるインデックス。
+
+		見つからなかった場合は、負の値。これは、 <paramref name="value" /> 
+		の次に大きい要素のインデックスのビットごとの補数です。
+
+		ただし、大きい要素が存在しない場合は、<see cref="P:MapQuest.Features.FeatureCollection.Count" /> 
+		のビットごとの補数です。
+
+    </returns><exception cref="T:System.InvalidOperationException">
+		value が、 <see cref="T:MapQuest.Features.FeatureCollection" /> の要素と同じ型ではありません。
+
+		<para>
+			<see cref="T:System.IComparable" /> 
+			インターフェースがインプリメントされていません。
+
+		</para>
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Clear">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> からすべての地物を削除します。
+
+    </summary><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+		<para>または</para>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が固定サイズです。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Clear" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Clone">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> の簡易コピーを作成します。
+
+    </summary><returns>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> の簡易コピー。
+
+    </returns><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Clone" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Contains(MapQuest.Features.Feature)">
+            <summary>
+		ある地物が <see cref="T:MapQuest.Features.FeatureCollection" /> 内に存在するかどうかを判断します。
+
+    </summary><param name="value">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 内で検索される <see cref="T:MapQuest.Features.Feature" /> 。
+
+		値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+
+	</param><returns>
+		<paramref name="value" /> が <see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に存在する場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+    </returns><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Contains(System.Object)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.System#Collections#IList#Contains(System.Object)">
+            <summary>
+            Determines whether the <see cref="T:MapQuest.Features.FeatureCollection"/> contains the specified element.
+            </summary>
+            <param name="value">The object to locate in the <see cref="T:MapQuest.Features.FeatureCollection"/>.
+            This argument must be compatible with <see cref="T:MapQuest.Features.Feature"/>.
+            This argument can be a null reference.
+            </param>
+            <returns><c>true</c> if <paramref name="value"/> is found in the
+            <see cref="T:MapQuest.Features.FeatureCollection"/>; otherwise, <c>false</c>.</returns>
+            <exception cref="T:System.InvalidCastException"><paramref name="value"/>
+            is not compatible with <see cref="T:MapQuest.Features.Feature"/>.</exception>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.Contains(System.Object)"/> for details.</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[])">
+            <overloads>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		全体を互換性のある 1 次元の <see cref="T:MapQuest.Features.Feature" /> にコピーします。
+
+	</overloads><summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		全体を互換性のある 1 次元の <see cref="T:MapQuest.Features.Feature" /> にコピーします。
+
+		コピー操作は、コピー先の配列の先頭から始まります。
+
+    </summary><param name="array">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		から要素がコピーされる <see cref="T:MapQuest.Features.Feature" /> 
+		の 1 次元配列。この配列には、0 から始まるインデックス番号が必要です。
+
+    </param><exception cref="T:System.ArgumentNullException">
+		<paramref name="array" /> が 
+		null 参照 (Visual Basic では <b>Nothing</b>) です。
+
+	</exception><exception cref="T:System.ArgumentException">
+		<paramref name="array" /> が多次元です。
+
+		<para>または</para>
+		コピー元の <see cref="T:MapQuest.Features.FeatureCollection" /> 
+		の地物数が、コピー先の <paramref name="array" /> に格納できる要素の数を超えています。
+
+	</exception><exception cref="T:System.InvalidCastException">
+		コピー元の <see cref="T:MapQuest.Features.FeatureCollection" /> 
+		の型が、コピー先の <paramref name="array" /> の型に自動的にキャストできません。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.CopyTo(System.Array)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.CopyTo(MapQuest.Features.Feature[],System.Int32)">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		全体を互換性のある 1 次元の <see cref="T:MapQuest.Features.Feature" /> 
+		にコピーします。コピー操作は、コピー先の配列の指定したインデックスから始まります。
+
+    </summary><param name="array">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		から要素がコピーされる <see cref="T:MapQuest.Features.Feature" /> 
+		の 1 次元配列。この配列には、0 から始まるインデックス番号が必要です。
+
+    </param><param name="arrayIndex">
+		コピーの開始位置となる、 0 から始まるインデックス番号。
+
+    </param><exception cref="T:System.ArgumentNullException">
+		<paramref name="array" /> が 
+		null 参照 (Visual Basic では <b>Nothing</b>) です。
+
+	</exception><exception cref="T:System.ArgumentOutOfRangeException">
+		<paramref name="arrayIndex" /> 
+		が 0 未満です。
+
+	</exception><exception cref="T:System.ArgumentException">
+		<paramref name="array" /> が多次元です。
+
+		<para>または</para>
+		<paramref name="arrayIndex" /> が <paramref name="array" /> の長さ以上です。
+
+		<para>または</para>
+		コピー元の <see cref="T:MapQuest.Features.FeatureCollection" /> 
+		の地物数が、 <paramref name="arrayIndex" /> からコピー先の 
+		<paramref name="array" /> の末尾までに格納できる数を超えています。
+
+	</exception><exception cref="T:System.InvalidCastException">
+		コピー元の <see cref="T:MapQuest.Features.FeatureCollection" /> 
+		の型が、コピー先の <paramref name="array" /> の型に自動的にキャストできません。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.CopyTo(System.Array)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the entire <see cref="T:MapQuest.Features.FeatureCollection"/> to a one-dimensional <see cref="T:System.Array"/>,
+            starting at the specified index of the target array.
+            </summary>
+            <param name="array">The one-dimensional <see cref="T:System.Array"/> that is the destination of the
+            <see cref="T:MapQuest.Features.Feature"/> elements copied from the <see cref="T:MapQuest.Features.FeatureCollection"/>.
+            The <b>Array</b> must have zero-based indexing.</param>
+            <param name="arrayIndex">The zero-based index in <paramref name="array"/>
+            at which copying begins.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="array"/> is a null reference.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            <paramref name="arrayIndex"/> is less than zero.</exception>
+            <exception cref="T:System.ArgumentException"><para>
+            <paramref name="array"/> is multidimensional.
+            </para><para>-or-</para><para>
+            <paramref name="arrayIndex"/> is equal to or greater than the length of <paramref name="array"/>.
+            </para><para>-or-</para><para>
+            The number of elements in the source <see cref="T:MapQuest.Features.FeatureCollection"/> is greater than the
+            available space from <paramref name="arrayIndex"/> to the end of the destination
+            <paramref name="array"/>.</para></exception>
+            <exception cref="T:System.InvalidCastException">
+            The <see cref="T:MapQuest.Features.Feature"/> type cannot be cast automatically
+            to the type of the destination <paramref name="array"/>.</exception>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.CopyTo(System.Array)"/> for details.</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.CreateIterator">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		内の <see cref="T:MapQuest.Features.Feature" /> を走査する 
+		<see cref="T:MapQuest.Features.IFeatureIterator" /> を返します。
+
+    </summary><returns>
+		<see cref="T:MapQuest.Features.Feature" /> を走査する 
+		<see cref="T:MapQuest.Features.IFeatureIterator" /> 。
+
+    </returns><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.GetEnumerator" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an <see cref="T:System.Collections.IEnumerator"/> that can
+            iterate through the <see cref="T:MapQuest.Features.FeatureCollection"/>.
+            </summary>
+            <returns>An <see cref="T:System.Collections.IEnumerator"/>
+            for the entire <see cref="T:MapQuest.Features.FeatureCollection"/>.</returns>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.GetEnumerator"/> for details.</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.IndexOf(MapQuest.Features.Feature)">
+            <summary>
+		指定した <see cref="T:MapQuest.Features.Feature" /> を検索し、 <see cref="T:MapQuest.Features.FeatureCollection" /> 
+		内で最初に見つかった位置の 0 から始まるインデックスを返します。
+
+    </summary><param name="value">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 内で検索される <see cref="T:MapQuest.Features.Feature" /> 。
+
+		値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+
+    </param><returns>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 内で <paramref name="value" /> 
+		が見つかった場合は、最初に見つかった位置の 0 から始まるインデックス番号。
+
+		それ以外の場合は -1。
+
+    </returns><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.IndexOf(System.Object)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.IndexOf(System.String)">
+            <summary>
+            FeatureCollection から id を持つ Feature のインデクスを返します。
+            </summary>
+            <param name="id">Feature の id。</param>
+            <returns>Feature の id に該当する FeatureCollection のインデクス。存在しない場合は -1。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.System#Collections#IList#IndexOf(System.Object)">
+            <summary>
+            Returns the zero-based index of the first occurrence of the specified
+            <see cref="T:System.Object"/> in the <see cref="T:MapQuest.Features.FeatureCollection"/>.
+            </summary>
+            <param name="value">The object to locate in the <see cref="T:MapQuest.Features.FeatureCollection"/>.
+            This argument must be compatible with <see cref="T:MapQuest.Features.Feature"/>.
+            This argument can be a null reference.
+            </param>
+            <returns>
+            The zero-based index of the first occurrence of <paramref name="value"/>
+            in the <see cref="T:MapQuest.Features.FeatureCollection"/>, if found; otherwise, -1.
+            </returns>
+            <exception cref="T:System.InvalidCastException"><paramref name="value"/>
+            is not compatible with <see cref="T:MapQuest.Features.Feature"/>.</exception>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.IndexOf(System.Object)"/> for details.</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Insert(System.Int32,MapQuest.Features.Feature)">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		内の指定したインデックスの位置に要素を挿入します。
+
+    </summary><param name="index">
+		<paramref name="value" /> を挿入する位置の、0 から始まるインデックス番号。
+
+    </param><param name="value">
+		挿入する <see cref="T:MapQuest.Features.Feature" /> 。
+
+		値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+
+    </param><exception cref="T:System.ArgumentOutOfRangeException">
+		<paramref name="index" /> が 0 未満です。
+
+		<para>または</para>
+		<paramref name="index" /> が <see cref="P:MapQuest.Features.FeatureCollection.Count" /> より大きい値です。
+
+	</exception><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+		<para>または</para>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が固定サイズです。
+
+		<para>または</para>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> は既に指定された要素を含んでいます。また、
+
+		<see cref="T:MapQuest.Features.FeatureCollection" /> は含まれる要素が全てユニークであることを保障します。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Insert(System.Int32,System.Object)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.System#Collections#IList#Insert(System.Int32,System.Object)">
+            <summary>
+            Inserts an element into the <see cref="T:MapQuest.Features.FeatureCollection"/> at the specified index.
+            </summary>
+            <param name="index">The zero-based index at which <paramref name="value"/>
+            should be inserted.</param>
+            <param name="value">The object to insert into the <see cref="T:MapQuest.Features.FeatureCollection"/>.
+            This argument must be compatible with <see cref="T:MapQuest.Features.Feature"/>.
+            This argument can be a null reference.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            <para><paramref name="index"/> is less than zero.</para>
+            <para>-or-</para>
+            <para><paramref name="index"/> is greater than <see cref="P:MapQuest.Features.FeatureCollection.Count"/>.</para>
+            </exception>
+            <exception cref="T:System.InvalidCastException"><paramref name="value"/>
+            is not compatible with <see cref="T:MapQuest.Features.Feature"/>.</exception>
+            <exception cref="T:System.NotSupportedException">
+            <para>The <see cref="T:MapQuest.Features.FeatureCollection"/> is read-only.</para>
+            <para>-or-</para>
+            <para>The <b>FeatureCollection</b> has a fixed size.</para>
+            <para>-or-</para>
+            <para>The <b>FeatureCollection</b> already contains the specified
+            <paramref name="value"/>, and the <b>FeatureCollection</b>
+            ensures that all elements are unique.</para></exception>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.Insert(System.Int32,System.Object)"/> for details.</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.Feature)">
+            <overloads>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		内から指定された <see cref="T:MapQuest.Features.Feature" /> を削除します。
+
+	</overloads><summary>
+		指定された <see cref="T:MapQuest.Features.Feature" /> を削除します。
+
+    </summary><param name="value">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> から削除する <see cref="T:MapQuest.Features.Feature" /> 。
+
+		値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+
+    </param><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+		<para>または</para>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が固定サイズです。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Remove(System.Object)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Remove(MapQuest.Features.IFeatureList)">
+            <summary>
+		指定された複数の <see cref="T:MapQuest.Features.Feature" /> を削除します。
+
+    </summary><param name="collection">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> から削除したい 
+		1 つ以上の <see cref="T:MapQuest.Features.Feature" /> を持つ <see cref="T:MapQuest.Features.IFeatureList" /> 。
+
+    </param><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Remove(System.Object)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.System#Collections#IList#Remove(System.Object)">
+            <summary>
+            Removes the first occurrence of the specified <see cref="T:System.Object"/>
+            from the <see cref="T:MapQuest.Features.FeatureCollection"/>.
+            </summary>
+            <param name="value">The object to remove from the <see cref="T:MapQuest.Features.FeatureCollection"/>.
+            This argument must be compatible with <see cref="T:MapQuest.Features.Feature"/>.
+            This argument can be a null reference.
+            </param>
+            <exception cref="T:System.InvalidCastException"><paramref name="value"/>
+            is not compatible with <see cref="T:MapQuest.Features.Feature"/>.</exception>
+            <exception cref="T:System.NotSupportedException">
+            <para>The <see cref="T:MapQuest.Features.FeatureCollection"/> is read-only.</para>
+            <para>-or-</para>
+            <para>The <b>FeatureCollection</b> has a fixed size.</para></exception>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.Remove(System.Object)"/> for details.</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.RemoveAt(System.Int32)">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		の指定したインデックスにある地物を削除します。
+
+    </summary><param name="index">
+		削除する地物の、0 から始まるインデックス番号。
+
+    </param><exception cref="T:System.ArgumentOutOfRangeException">
+		<paramref name="index" /> が 0 未満です。
+
+		<para>または</para>
+		<paramref name="index" /> が <see cref="P:MapQuest.Features.FeatureCollection.Count" /> 以上です。
+
+	</exception><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+		<para>または</para>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が固定サイズです。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.RemoveAt(System.Int32)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.RemoveRange(System.Int32,System.Int32)">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		から指定された範囲の地物を削除します。
+
+    </summary><param name="index">
+		削除する地物の範囲の開始位置を示す 0 から始まるインデックス。
+
+    </param><param name="count">
+		削除する地物の数。
+
+    </param><exception cref="T:System.ArgumentOutOfRangeException">
+		<paramref name="index" /> が 0 未満です。
+
+		<para>または</para>
+		<paramref name="Count" /> が 0 未満です。
+
+	</exception><exception cref="T:System.ArgumentException">
+		<paramref name="index" /> および <paramref name="count" /> が 
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 内の有効な範囲を指定していません。
+
+	</exception><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+		<para>または</para>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が固定サイズです。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Reverse">
+            <overloads>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 内およびその一部の要素の順序を反転させます。
+
+	</overloads><summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> の全体の要素の順序を反転させます。
+
+    </summary><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Reverse" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Reverse(System.Int32,System.Int32)">
+            <summary>
+		指定した範囲の要素の順序を反転させます。
+
+    </summary><param name="index">
+		反転させる範囲の開始位置を示す 0 から始まるインデックス。 
+    </param><param name="count">
+		反転させる範囲内にある地物の数。
+
+    </param><exception cref="T:System.ArgumentOutOfRangeException">
+		<paramref name="index" /> が 0 未満です。
+
+		<para>または</para>
+		<paramref name="Count" /> が 0 未満です。
+
+	</exception><exception cref="T:System.ArgumentException">
+		<paramref name="index" /> および <paramref name="count" /> が 
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 内の有効な範囲を指定していません。
+
+	</exception><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Reverse" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Sort">
+            <overloads>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 内およびその一部の要素を並べ替えます。
+
+	</overloads><summary>
+		各要素の <see cref="T:System.IComparable" /> 実装を使用して、 
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 内の地物を並べ替えます。
+
+    </summary><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Sort" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Sort(System.Collections.IComparer)">
+            <summary>
+		指定した比較演算子を使用して、 <see cref="T:MapQuest.Features.FeatureCollection" /> 
+		内の地物を並べ替えます。
+
+    </summary><param name="comparer">
+		要素を比較する場合に使用する <see cref="T:System.Collections.IComparer" /> 実装。 
+		<para>または</para>
+		各要素の <see cref="T:System.Collections.IComparer" /> 
+		実装を使用する場合は null 参照 (Visual Basic では <b>Nothing</b>) 。
+
+    </param><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Sort" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Sort(System.Int32,System.Int32,System.Collections.IComparer)">
+            <summary>
+		指定した比較演算子を使用して、 <see cref="T:MapQuest.Features.FeatureCollection" /> 
+		のセクション内の要素を並べ替えます。
+
+    </summary><param name="index">
+		並べ替える範囲の開始位置を示す 0 から始まるインデックス。 
+    </param><param name="count">
+		並べ替える範囲の長さ。
+
+    </param><param name="comparer">
+		要素を比較する場合に使用する <see cref="T:System.Collections.IComparer" /> 実装。 
+		<para>または</para>
+		各要素の <see cref="T:System.Collections.IComparer" /> 
+		実装を使用する場合は null 参照 (Visual Basic では <b>Nothing</b>) 。
+
+    </param><exception cref="T:System.ArgumentOutOfRangeException">
+		<paramref name="index" /> が 0 未満です。
+
+		<para>または</para>
+		<paramref name="Count" /> が 0 未満です。
+
+	</exception><exception cref="T:System.ArgumentException">
+		<paramref name="index" /> および <paramref name="count" /> が 
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 内の有効な範囲を指定していません。
+
+	</exception><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.Sort" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.ToArray">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> の地物を新しい配列にコピーします。
+
+    </summary><returns>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		の要素のコピーを格納する <see cref="T:MapQuest.Features.Feature" /> 型の配列。
+
+    </returns><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.ToArray" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.TrimToSize">
+            <summary>
+		容量を <see cref="T:MapQuest.Features.FeatureCollection" /> 
+		内にある実際の地物数に設定します。
+
+    </summary><exception cref="T:System.NotSupportedException">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が読み取り専用です。
+
+		<para>または</para>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> が固定サイズです。
+
+	</exception><remarks>
+		詳細については <see cref="M:System.Collections.ArrayList.TrimToSize" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureCollection.Envelope">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に格納されている地物の範囲を取得します。
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に格納されている要素全てを包括する範囲。
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.FeatureCollection.Schema">
+            <summary>
+		この <see cref="T:MapQuest.Features.FeatureCollection" /> 
+		についての情報を取得します。
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		についての情報。
+    </value><remarks>
+		Schema は、<see cref="T:MapQuest.Features.Feature" /> が持つ地物に関する定義情報です。
+		<see cref="!:MapQuest.FeatureProviders.FeatureClass" /> 
+		が管理します。
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Query(MapQuest.Coordinates.Envelope)">
+            <summary>
+		指定された範囲の地物を検索します。
+    </summary><param name="area">
+		検索したい範囲。
+
+    </param><returns>
+		検索されたインデックスによって個別にアクセスできる 
+		<see cref="T:MapQuest.Features.IFeatureList" /> 
+		コレクション。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.Remove(MapQuest.Coordinates.Envelope)">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		内から指定された範囲に含まれる <see cref="T:MapQuest.Features.Feature" /> 
+		オブジェクトを削除します。
+
+    </summary><param name="area">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> から削除したい範囲を示す 
+		<see cref="T:MapQuest.Coordinates.Envelope" /> 。
+
+    </param><returns>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> から削除した 
+		<see cref="T:MapQuest.Features.Feature" /> を持つ 
+		<see cref="T:MapQuest.Features.IFeatureList" /> オブジェクト。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.InvalidateEnvelope">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		にキャッシュされている領域を無効にします。
+
+    </summary><remarks>
+		<see cref="!:Geometry" /> 
+		を変更される場合は、このメソッドを呼び出してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.UpdateEnvelope">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		にキャッシュされている領域を更新します。
+
+    </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            オブジェクトをシリアル化します。
+            </summary>
+            <param name="info">シリアル化する情報を格納するオブジェクト</param>
+            <param name="context"></param>
+        </member>
+        <member name="T:MapQuest.Features.FeatureDataType">
+            <summary>
+			データタイプのフィールド、
+
+			または <see cref="T:MapQuest.Features.FeatureType" /> のパラメータを定義します。
+
+			<!--
+			Specifies the data type of a field, a property, or a parameter object 
+			of <see cref="FeatureType"/>.
+			-->
+		</summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Unknown">
+            <summary>
+		未知のオブジェクト タイプ。
+
+		<!--
+		An unknown or unspecified object type.
+		-->
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.AnsiString">
+            <summary>
+		1 から 8,000 文字の範囲内の非 Unicode 文字の可変長ストリーム。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Binary">
+            <summary>
+		1 から 8,000 バイトの範囲内のバイナリ データの可変長ストリーム。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Byte">
+            <summary>
+		値が 0 から 255 までの範囲内の 8 ビット符号なし整数。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Boolean">
+            <summary>
+		<b>true</b> または <b>false</b> のブール値を表す単純型。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Currency">
+            <summary>
+		精度が通貨単位の 1/10,000 の、-2<SUP>63</SUP> 
+		(-922,337,203,685,477.5808) から 2 <SUP>63</SUP> 
+		-1 (+922,337,203,685,477.5807) までの範囲内の通貨値。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Date">
+            <summary>
+		1753 年 1 月 1 日から 9999 年 12 月 31 日までの範囲で、
+
+		精度 3.33 ミリ秒の日付と時刻のデータ。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.DateTime">
+            <summary>
+		1753 年 1 月 1 日から 9999 年 12 月 31 日までの範囲で、
+
+		精度 3.33 ミリ秒の日付と時刻のデータ。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Decimal">
+            <summary>
+		1.0 x 10<SUP>-28</SUP> から概数 7.9 x 10<SUP>28</SUP> 
+		までの範囲で、有効桁数が 28 または 29 の値を表す単純型。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Double">
+            <summary>
+		概数 5.0 x 10<SUP>-324</SUP> から 1.7 x 10<SUP>308</SUP> 
+		までの範囲で、有効桁数が 15 または 16 の値を表す浮動小数点型。 
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Guid">
+            <summary>
+		グローバル一意識別子 (GUID)。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Short">
+            <summary>
+		32768 から 32767 までの値を保持する符号付き 16 ビット整数を表す整数型。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Integer">
+            <summary>
+		-2147483648 から 2147483647 までの値を保持する符号付き 32 ビット整数を表す整数型。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Long">
+            <summary>
+		-9223372036854775808 から 9223372036854775807 までの値を保持する
+		符号付き 64 ビット整数を表す整数型。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Object">
+            <summary>
+		別の <B>DbType</B> 値で明示的に表されていない参照型または値型を表す汎用型。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.SByte">
+            <summary>
+		-128 から 127 までの値を保持する符号付き 8 ビット整数を表す整数型。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Single">
+            <summary>
+		概数 1.5 x 10<SUP>-45</SUP> から 3.4 x 10<SUP>38</SUP> 
+		までの範囲で、有効桁数が 7 の値を表す浮動小数点型。 
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.String">
+            <summary>
+		Unicode 文字列を表す型。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Time">
+            <summary>
+		1753 年 1 月 1 日から 9999 年 12 月 31 日までの範囲で、
+
+		精度 3.33 ミリ秒の日付と時刻のデータ。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.UShort">
+            <summary>
+		0 から 65535 までの値を保持する符号なし 16 ビット整数を表す整数型。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.UInteger">
+            <summary>
+		0 から 4294967295 までの値を保持する符号なし 32 ビット整数を表す整数型。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.ULong">
+            <summary>
+		0 から 18446744073709551615 までの値を保持する符号なし 64 ビット整数を表す整数型。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.VarNumeric">
+            <summary>
+		可変長数値。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.AnsiStringFixedLength">
+            <summary>
+		非 Unicode 文字の固定長ストリーム。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.StringFixedLength">
+            <summary>
+		Unicode 文字の固定長ストリーム。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Geometry">
+            <summary>
+		<see cref="T:MapQuest.Topology.Geometries.Geometry" /> オブジェクト タイプ。
+
+    </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureDataType.Image">
+            <summary>
+		イメージ オブジェクト タイプ。
+
+    </summary>
+        </member>
+        <member name="T:MapQuest.Features.FeatureException">
+            <summary>
+			MapQuest.Features パッケージ内で実行中に発生した場合にスローされる例外。
+
+		</summary><remarks>
+			詳細については 
+			<see cref="T:MapQuest.ExceptionManagement.DefaultException" /> 
+			を参照してください。
+
+	    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureException.#ctor">
+            <overloads>
+			<see cref="T:MapQuest.Features.FeatureException" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</overloads><summary>
+			<see cref="T:MapQuest.Features.FeatureException" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureException.#ctor(System.String)">
+            <summary>
+			指定したエラー メッセージを使用して、 
+			<see cref="T:MapQuest.Features.FeatureException" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="message">
+			エラーを説明するメッセージ。
+
+	    </param><remarks>
+			詳細については 
+			<see cref="T:MapQuest.ExceptionManagement.DefaultException" /> 
+			を参照してください。
+
+		</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureException.#ctor(System.String,System.Exception)">
+            <summary>
+			エラー メッセージ、およびこの例外の原因である内部例外への参照を指定して、 
+			<see cref="T:MapQuest.Features.FeatureException" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="message">
+			例外の原因を説明するエラー メッセージ。
+
+	    </param><param name="inner">
+			現在の例外の原因である例外。 
+			<paramref name="inner" /> 
+			パラメータが null 参照でない場合は、内部例外を処理する catch 
+			ブロックで現在の例外が発生します。 
+	    </param><remarks>
+			詳細については 
+			<see cref="T:MapQuest.ExceptionManagement.DefaultException" /> 
+			を参照してください。
+
+		</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Protected constructor to de-serialize data.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureException.#ctor(System.Int32,System.Object[])">
+            <summary>
+			エラー番号、および{}を指定して、 
+			<see cref="T:MapQuest.Features.FeatureException" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="exceptionID">
+			エラー メッセージを識別するエラー番号。
+
+	    </param><param name="args">
+			<!-- Non Support 2005/02/07 -->
+			このパラメータは、現在サポートしていません。
+
+	    </param><remarks>
+			詳細については 
+			<see cref="T:MapQuest.ExceptionManagement.DefaultException" /> 
+			を参照してください。
+
+		</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureException.#ctor(System.Int32,System.Exception,System.Object[])">
+            <summary>
+			エラー番号、およびこの例外の原因である内部例外への参照を指定して、 
+			<see cref="T:MapQuest.Features.FeatureException" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="exceptionID">
+			エラー メッセージを識別するエラー番号。
+
+	    </param><param name="inner">
+			現在の例外の原因である例外。 
+			<paramref name="inner" /> 
+			パラメータが null 参照でない場合は、内部例外を処理する catch 
+			ブロックで現在の例外が発生します。 
+	    </param><param name="args">
+			<!-- Non Support 2005/02/07 -->
+			このパラメータは、現在サポートしていません。
+
+	    </param><remarks>
+			詳細については 
+			<see cref="T:MapQuest.ExceptionManagement.DefaultException" /> 
+			を参照してください。
+
+		</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureException.#ctor(System.String,System.Int32)">
+            <summary>
+            Constructor allowing the Message property to be set through the exception ID.
+            </summary>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureException.#ctor(System.String,System.Int32,System.Exception)">
+            <summary>
+            Constructor allowing the Message resource ID and InnerException 
+            property to be set.
+            </summary>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+            <param name="inner">Sets a reference to the InnerException.</param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureException.#ctor(System.String,System.Int32,System.Object[])">
+            <summary>
+            Constructor allowing the Message property to be set through the exception ID.
+            </summary>
+            <param name="prefix"></param>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+            <param name="args"></param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureException.#ctor(System.String,System.Int32,System.Exception,System.Object[])">
+            <summary>
+            Constructor allowing the Message resource ID and InnerException 
+            property to be set.
+            </summary>
+            <param name="prefix"></param>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+            <param name="inner">Sets a reference to the InnerException.</param>
+            <param name="args"></param>
+        </member>
+        <member name="T:MapQuest.Features.FeatureFactory">
+            <summary>
+			指定された情報を元に、 
+			<see cref="T:MapQuest.Features.Feature" /> 
+			オブジェクトを生成するためのクラスです。
+
+		</summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureFactory.m_strSource">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureFactory.m_strPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureFactory.m_objGeometryFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureFactory.m_objDefaultGeometryFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.#ctor">
+            <overloads>
+			デフォルトの <see cref="T:MapQuest.Topology.Geometries.GeometryFactory" /> 
+			を備えた、 <see cref="T:MapQuest.Features.FeatureFactory" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</overloads><summary>
+			<see cref="T:MapQuest.Features.FeatureFactory" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.#ctor(System.String,System.String)">
+            <summary>
+			<see cref="T:MapQuest.Features.FeatureFactory" /> 
+			クラスの新しいインスタンスを初期化します。
+
+			<para>
+				<!-- Non Support 2005/01/20 -->
+				このコンストラクタは、現在サポートしていません。
+
+			</para>
+		</summary><param name="source">
+			<!-- Non Support 2005/01/20 -->
+			この引数は、現在サポートしていません。""(空文字)を指定してください。
+
+		</param><param name="path">
+			<!-- Non Support 2005/01/20 -->
+			この引数は、現在サポートしていません。""(空文字)を指定してください。
+
+		</param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.#ctor(MapQuest.Topology.Geometries.GeometryFactory,System.String,System.String)">
+            <summary>
+			指定した <see cref="T:MapQuest.Topology.Geometries.GeometryFactory" /> 
+			を備えた、 <see cref="T:MapQuest.Features.FeatureFactory" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="factory">
+			地物形状を生成する 
+			<see cref="T:MapQuest.Topology.Geometries.GeometryFactory" /> 
+			オブジェクト。
+
+		</param><param name="source">
+			<!-- Non Support 2005/01/20 -->
+			この引数は、現在サポートしていません。""(空文字)を指定してください。
+
+		</param><param name="path">
+			<!-- Non Support 2005/01/20 -->
+			この引数は、現在サポートしていません。""(空文字)を指定してください。
+
+		</param>
+        </member>
+        <member name="P:MapQuest.Features.FeatureFactory.GeometryFactory">
+            <summary>
+            各種 <see cref="T:MapQuest.Topology.Geometries.Geometry"/> を生成するための <see cref="P:MapQuest.Features.FeatureFactory.GeometryFactory"/> を取得します。
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.Create(System.String,System.Byte[])">
+            <summary>
+            指定した識別子（文字）と地物形状を備えた <see cref="T:MapQuest.Features.Feature"/> インスタンスを生成します。
+            </summary>
+            <param name="id"><see cref="T:MapQuest.Features.Feature"/> を区別するための識別文字列。</param>
+            <param name="wkbGeometry">地物形状を表す WKB(Well-known binary)形式で表したバイト列。</param>
+            <returns>生成された <see cref="T:MapQuest.Features.Feature"/> オブジェクト。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.Create(System.String,System.IO.Stream)">
+            <summary>
+            指定した識別子（文字）と地物形状を備えた <see cref="T:MapQuest.Features.Feature"/> インスタンスを生成します。
+            </summary>
+            <param name="id"><see cref="T:MapQuest.Features.Feature"/> を区別するための識別文字列。</param>
+            <param name="wkbStream">WKB(Well-known binary)形式のストリーム</param>
+            <returns>生成された <see cref="T:MapQuest.Features.Feature"/> オブジェクト。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.Create(System.Int32,System.String)">
+            <summary>
+            指定した識別子（数値）と地物形状を備えた <see cref="T:MapQuest.Features.Feature"/> インスタンスを生成します。
+            </summary>
+            <param name="id"><see cref="T:MapQuest.Features.Feature"/> を区別するための識別番号。</param>
+            <param name="wktGeometry">地物形状を表す Well-known Text ( WKT ) 。</param>
+            <returns>生成された <see cref="T:MapQuest.Features.Feature"/> オブジェクト。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.Create(System.String,System.String)">
+            <summary>
+            指定した識別子（文字）と地物形状を備えた <see cref="T:MapQuest.Features.Feature"/> インスタンスを生成します。
+            </summary>
+            <param name="id"><see cref="T:MapQuest.Features.Feature"/> を区別するための識別文字列。</param>
+            <param name="wktGeometry">地物形状を表す Well-known Text ( WKT ) 。</param>
+            <returns>生成された <see cref="T:MapQuest.Features.Feature"/> オブジェクト。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.Create(System.Int32,MapQuest.Topology.Geometries.Geometry)">
+            <summary>
+            指定した識別子（数値）と地物形状を備えた <see cref="T:MapQuest.Features.Feature"/> インスタンスを生成します。
+            </summary>
+            <param name="id"><see cref="T:MapQuest.Features.Feature"/> を区別するための識別番号。</param>
+            <param name="geometry">地物形状として登録する <see cref="T:MapQuest.Topology.Geometries.Geometry"/> オブジェクト。</param>
+            <returns>生成された <see cref="T:MapQuest.Features.Feature"/> オブジェクト。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.Create(System.String,MapQuest.Topology.Geometries.Geometry)">
+            <summary>
+            指定した識別子（文字）と地物形状を備えた <see cref="T:MapQuest.Features.Feature"/> インスタンスを生成します。
+            </summary>
+            <param name="id"><see cref="T:MapQuest.Features.Feature"/> を区別するための識別文字列。</param>
+            <param name="geometry">地物形状として登録する <see cref="T:MapQuest.Topology.Geometries.Geometry"/> オブジェクト。</param>
+            <returns>生成された <see cref="T:MapQuest.Features.Feature"/> オブジェクト。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.Create(System.Int32,MapQuest.Features.IFeatureType)">
+            <summary>
+            指定した識別子（数値）と <see cref="T:MapQuest.Features.Feature"/> の種類を示す <see cref="T:MapQuest.Features.IFeatureType"/> を備えた <see cref="T:MapQuest.Features.Feature"/> インスタンスを生成します。
+            </summary>
+            <param name="id"><see cref="T:MapQuest.Features.Feature"/> を区別するための識別番号。</param>
+            <param name="featureType"><see cref="T:MapQuest.Features.Feature"/> の種類を示す <see cref="T:MapQuest.Features.IFeatureType"/> オブジェクト。</param>
+            <returns>生成された <see cref="T:MapQuest.Features.Feature"/> オブジェクト。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.Create(System.String,MapQuest.Features.IFeatureType)">
+            <summary>
+            指定した識別子（文字）と <see cref="T:MapQuest.Features.Feature"/> の種類を示す <see cref="T:MapQuest.Features.IFeatureType"/> を備えた <see cref="T:MapQuest.Features.Feature"/> インスタンスを生成します。
+            </summary>
+            <param name="id"><see cref="T:MapQuest.Features.Feature"/> を区別するための識別文字列。</param>
+            <param name="featureType"><see cref="T:MapQuest.Features.Feature"/> の種類を示す <see cref="T:MapQuest.Features.IFeatureType"/> オブジェクト。</param>
+            <returns>生成された <see cref="T:MapQuest.Features.Feature"/> オブジェクト。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.Create(System.Int32,MapQuest.Features.IFeatureType,MapQuest.Features.IFeatureProperty[])">
+            <summary>
+            指定した識別子（数値）と <see cref="T:MapQuest.Features.Feature"/> の種類を示す <see cref="T:MapQuest.Features.IFeatureType"/> を備えた <see cref="T:MapQuest.Features.Feature"/> インスタンスを生成します。
+            また、指定した <see cref="T:MapQuest.Features.IFeatureProperty"/> の配列は、<see cref="T:MapQuest.Features.Feature"/> の <see cref="!:Properties"/>に設定されます。
+            </summary>
+            <param name="id"><see cref="T:MapQuest.Features.Feature"/> を区別するための識別番号。</param>
+            <param name="featureType"><see cref="T:MapQuest.Features.Feature"/> の種類を示す <see cref="T:MapQuest.Features.IFeatureType"/> オブジェクト。</param>
+            <param name="properties"><see cref="T:MapQuest.Features.Feature"/> の付加情報を示す <see cref="T:MapQuest.Features.IFeatureProperty"/> の配列。</param>
+            <returns>生成された <see cref="T:MapQuest.Features.Feature"/> オブジェクト。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.Create(System.String,MapQuest.Features.IFeatureType,MapQuest.Features.IFeatureProperty[])">
+            <summary>
+            指定した識別子（文字）と <see cref="T:MapQuest.Features.Feature"/> の種類を示す <see cref="T:MapQuest.Features.IFeatureType"/> を備えた <see cref="T:MapQuest.Features.Feature"/> インスタンスを生成します。
+            また、指定した <see cref="T:MapQuest.Features.IFeatureProperty"/> の配列は、<see cref="T:MapQuest.Features.Feature"/> の <see cref="!:Properties"/>に設定されます。
+            </summary>
+            <param name="id"><see cref="T:MapQuest.Features.Feature"/> を区別するための識別文字列。</param>
+            <param name="featureType"><see cref="T:MapQuest.Features.Feature"/> の種類を示す <see cref="T:MapQuest.Features.IFeatureType"/> オブジェクト。</param>
+            <param name="properties"><see cref="T:MapQuest.Features.Feature"/> の付加情報を示す <see cref="T:MapQuest.Features.IFeatureProperty"/> の配列。</param>
+            <returns>生成された <see cref="T:MapQuest.Features.Feature"/> オブジェクト。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.CreateFeatureTypeProperty(System.String,System.String,System.Boolean)">
+            <summary>creates an instance of a IFeatureTypeProperty from its name and the data
+            type it describes
+            </summary>
+            <param name="name">name of the feature type property
+            </param>
+            <param name="type">type represented by the feature type property
+            </param>
+            <param name="nullable">true if the feature type property is allowed to be null
+            </param>
+            <returns> instance of a IFeatureTypeProperty
+            </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.CreateFeatureType(System.String,MapQuest.Features.IFeatureType[],MapQuest.Features.IFeatureType[],MapQuest.Features.IFeatureTypeProperty[])">
+            <summary>
+            creates an instance of a IFeatureType from an array of FeatureTypeProperties,
+            its parents and childs and its name.
+            </summary>
+            <param name="name">name of the IFeatureType
+            </param>
+            <param name="parents">parents of the IFeatureType
+            </param>
+            <param name="children">known children of the IFeatureType
+            </param>
+            <param name="properties">properties containing the IFeatureTypes content
+            </param>
+            <returns> instance of a IFeatureType
+            </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.CreateFeatureType(System.Data.IDbConnection,System.String)">
+            <summary>
+            creates an instance of a IFeatureType from an array of FeatureTypeProperties,
+            its parents and childs and its name.
+            </summary>
+            <param name="parents">parents of the IFeatureType
+            </param>
+            <param name="children">known children of the IFeatureType
+            </param>
+            <param name="name">name of the IFeatureType
+            </param>
+            <param name="properties">properties containing the IFeatureTypes content
+            </param>
+            <returns> instance of a IFeatureType
+            </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.CreateFeatureType(System.Data.IDbConnection,System.String,MapQuest.Features.IFeatureType[],MapQuest.Features.IFeatureType[])">
+            <summary>
+            creates an instance of a IFeatureType from an array of FeatureTypeProperties,
+            its parents and childs and its name.
+            </summary>
+            <param name="parents">parents of the IFeatureType
+            </param>
+            <param name="children">known children of the IFeatureType
+            </param>
+            <param name="name">name of the IFeatureType
+            </param>
+            <param name="properties">properties containing the IFeatureTypes content
+            </param>
+            <returns> instance of a IFeatureType
+            </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.CreateFeatureProperty(System.String,System.Object)">
+            <summary>
+		<see cref="T:MapQuest.Features.Feature" /> インスタンスを生成します。
+
+    </summary><param name="name">
+		<see cref="T:MapQuest.Features.Feature" /> を区別するための識別文字列。
+
+    </param><param name="value">
+		地物形状として登録する 
+		<see cref="T:MapQuest.Topology.Geometries.Geometry" /> オブジェクト。
+
+    </param><returns>
+		生成された <see cref="T:MapQuest.Features.FeatureProperty" /> オブジェクト。
+
+    </returns>
+            <summary>
+            creates an instance of a IFeatureProperty from its name and the 
+            data (value) it contains
+            </summary>
+            <param name="name">name of the IFeatureProperty
+            </param>
+            <returns> an instance of a IFeatureProperty
+            </returns>
+            <param name="value">value of the IFeatureProperty
+            </param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.CreateFeatureID(MapQuest.Topology.Geometries.Geometry)">
+            <summary>
+            新しい <see cref="T:MapQuest.Features.Feature"/> に付与する ID を生成します。
+            </summary>
+            <param name="geometry">付与する ID 生成のための情報となる <see cref="T:MapQuest.Topology.Geometries.Geometry"/> 。</param>
+            <returns>新しい <see cref="T:MapQuest.Features.Feature"/> に付与する ID 。</returns>
+            <remarks>
+            このメソッドは、Feature の新規追加などで、生成した新しい 
+            <see cref="T:MapQuest.Features.Feature"/> に付ける ID を提供します。<para/>
+            引数 <paramref name="geometry"/> は、ID 生成の
+            アルゴリズムに使われる場合があります。
+            <para/>
+            例えば、派生クラスである 
+            <see cref="!:MqxFeatureFactory.CreateFeatureID">MqxFeatureFactory.CreateFeatureID</see> 
+            では、<paramref name="geometry"/> の中心位置を ID とするルールがあります。
+            <para/>
+            しかし、既定の実装では <paramref name="geometry"/> は使用していません。
+            既定の実装では ID には、新しい GUID(<see cref="M:System.Guid.NewGuid">Guid.NewGuid</see>) 
+            が使用されます。
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureFactory.GenerateFeatureID(System.String,System.String,System.String)">
+            <summary>
+            キーとなるID、ソース文字列、パス文字列からフィーチャーIDを生成します。
+            </summary>
+            <param name="id">フィーチャーIDのキーとなる ID 。</param>
+            <param name="source">ソース文字列。</param>
+            <param name="path">パス文字列。</param>
+            <returns>セミコロンを除いた ID 、ソース文字列、パス文字列を連結してフィーチャーID。</returns>
+        </member>
+        <member name="T:MapQuest.Features.FeatureIterator">
+            <summary>
+			<see cref="T:MapQuest.Features.Feature" /> のコレクションを順番に走査するためのクラスです。 
+		</summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureIterator.m_objCollection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureIterator.m_nVersion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureIterator.m_nIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureIterator.#ctor(MapQuest.Features.FeatureCollection)">
+            <summary>
+            
+            </summary>
+            <param name="collection"></param>
+        </member>
+        <member name="P:MapQuest.Features.FeatureIterator.Count">
+            <summary>
+		コレクションに格納されている地物の数を取得します。
+
+    </summary><value>
+		コレクションに格納されている地物の数。
+		<note type="caution">
+		結果の総数が判らない場合は「-1」を返します。
+		</note>
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.FeatureIterator.Current">
+            <summary>
+		コレクション内の現在の <see cref="T:MapQuest.Features.Feature" /> を取得します。
+
+    </summary><value>
+		コレクション内の現在の <see cref="T:MapQuest.Features.Feature" /> 。
+
+    </value><exception cref="T:System.InvalidOperationException">
+		<para>
+			列挙子が、コレクションの最初の要素の前、
+
+			または最後の要素の後に位置しています。
+
+		</para>
+	</exception><remarks>
+		詳細については 
+		<see cref="P:System.Collections.IEnumerator.Current" /> 
+		を参照してください。
+
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureIterator.System#Collections#IEnumerator#Current">
+            <!-- 次のインクルード タグで一致する要素が見つかりませんでした --><include file="Docs\xml\IFeatureIterator.xml" path="docs/doc[@name=&quot;IEnumerator.Current&quot;]/*" />
+        </member>
+        <member name="M:MapQuest.Features.FeatureIterator.MoveNext">
+            <summary>
+		列挙子をコレクションの次の <see cref="T:MapQuest.Features.Feature" /> に進めます。
+
+	</summary><returns>
+		列挙子が次の <see cref="T:MapQuest.Features.Feature" /> に正常に進んだ場合は <b>true</b> 。
+
+		列挙子がコレクションの末尾を越えた場合は <b>false</b> 。
+
+    </returns><exception cref="T:System.InvalidOperationException">
+		<para>
+			列挙子が作成された後に、コレクションが変更されました。
+
+		</para>
+	</exception><remarks>
+		詳細については 
+		<see cref="M:System.Collections.IEnumerator.MoveNext" /> 
+		を参照してください。
+
+	</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureIterator.Reset">
+            <summary>
+		列挙子を初期位置、つまりコレクションの最初の <see cref="T:MapQuest.Features.Feature" /> の前に設定します。
+
+	</summary><exception cref="T:System.InvalidOperationException">
+		<para>
+			列挙子が作成された後に、コレクションが変更されました。
+
+		</para>
+	</exception><remarks>
+		詳細については 
+		<see cref="M:System.Collections.IEnumerator.Reset" /> 
+		を参照してください。
+
+	</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureIterator.Close">
+            <summary>
+		コレクションの内容を解放します。
+
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このメソッドは、現在サポートしていません。
+		</para>
+	</summary>
+        </member>
+        <member name="T:MapQuest.Features.FeatureOperator">
+            <summary>
+			空間解析や空間演算を処理するためのクラスです。
+
+			<newpara>
+				<see cref="T:MapQuest.Features.Feature" /> から 
+				<see cref="T:MapQuest.Topology.Geometries.Geometry" /> 
+				を取得しなくても解析や演算処理を行うことができます。
+
+			</newpara>
+		</summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.#ctor(MapQuest.Features.FeatureFactory)">
+            <overloads>
+			<see cref="T:MapQuest.Features.FeatureOperator" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</overloads><summary>
+			指定した Factory を備えた、 
+			<see cref="T:MapQuest.Features.FeatureOperator" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="factory">
+			空間演算により <see cref="T:MapQuest.Features.Feature" /> を生成するための 
+			<see cref="T:MapQuest.Features.FeatureFactory" /> 
+			オブジェクト。
+
+	    </param><remarks>
+			バッファ処理のキャップ スタイルには、
+
+			全て <see cref="F:MapQuest.Topology.Operation.BufferEndCapStyle.Round" /> が指定されます。
+
+		</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.#ctor(MapQuest.Features.FeatureFactory,MapQuest.Topology.Operation.BufferEndCapStyle)">
+            <summary>
+			指定した Factory 、キャップ スタイルを備えた、 
+			<see cref="T:MapQuest.Features.FeatureOperator" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="factory">
+			空間演算により <see cref="T:MapQuest.Features.Feature" /> を生成するための 
+			<see cref="T:MapQuest.Features.FeatureFactory" /> 
+			オブジェクト。
+
+	    </param><param name="bufferStyle">
+			バッファ処理で使用されるキャップ スタイル。
+
+	    </param>
+        </member>
+        <member name="P:MapQuest.Features.FeatureOperator.Factory">
+            <summary>
+		空間演算処理において <see cref="T:MapQuest.Features.Feature" /> の生成に使用される 
+		<see cref="T:MapQuest.Features.FeatureFactory" /> を取得または設定します。
+
+    </summary><value>
+		<see cref="T:MapQuest.Features.Feature" /> の生成に使用される 
+		<see cref="T:MapQuest.Features.FeatureFactory" /> オブジェクト。
+
+    </value><exception cref="T:System.ArgumentNullException">
+		<para>
+			指定された <see cref="T:MapQuest.Features.FeatureFactory" /> が 
+			null 参照 (Visual Basic では <b>Nothing</b>) です。
+
+		</para>
+	</exception>
+        </member>
+        <member name="P:MapQuest.Features.FeatureOperator.BufferStyle">
+            <summary>
+		バッファ処理で使用されるキャップ スタイルを取得または設定します。
+
+    </summary><value>
+		バッファ処理で使用されるキャップ スタイル。
+
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.FeatureOperator.Error">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureOperator" /> 
+		内の直前の処理で発生したエラー情報を取得します。
+
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureOperator" /> 
+		内の直前の処理で発生したエラー情報。
+
+    </value>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Relate(MapQuest.Features.Feature,MapQuest.Features.Feature)">
+            <summary>
+		指定された地物間の位置関係（リレーションシップ）を計算します。
+
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このメソッドは、現在サポートしていません。
+		</para>
+    </summary><param name="feature1">
+		比較する <see cref="T:MapQuest.Features.Feature" /> オブジェクト１。
+
+    </param><param name="feature2">
+		比較する <see cref="T:MapQuest.Features.Feature" /> オブジェクト２。
+
+    </param><returns>
+		二つの地物のリレーションシップが定義された 
+		<see cref="T:MapQuest.Topology.Geometries.IntersectionMatrix" /> オブジェクト。
+
+		それ以外の場合は null 。
+
+    </returns><remarks>
+		<see cref="T:MapQuest.Topology.Geometries.IntersectionMatrix" /> は、 
+		<see cref="!:http://www.opengis.org">OpenGIS コンソーシアム （OGC）</see> 
+		に定義されている交差マトリックス
+		「 Dimensionally-Extended 9 Intersection Matrix 」 ( DE-9IM ) に準拠しています。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.ConvexHull(MapQuest.Features.Feature)">
+            <summary>
+		指定された地物の全てのポイントを含む、
+
+		最も小さな凸面を持つ地物を計算します。
+
+    </summary><param name="feature">
+		計算対象となるポイントを持つ <see cref="T:MapQuest.Features.Feature" /> 。
+
+    </param><returns>
+		凸面を計算した <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Difference(MapQuest.Features.Feature,MapQuest.Features.Feature)">
+            <summary>
+		二つの地物形状の論理差を計算します。
+
+    </summary><param name="feature1">
+		論理差を求める <see cref="T:MapQuest.Features.Feature" /> オブジェクト。
+
+    </param><param name="feature2">
+		差分となる <see cref="T:MapQuest.Features.Feature" /> オブジェクト。
+
+    </param><returns>
+		論理差を計算した <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.SymmetricDifference(MapQuest.Features.Feature,MapQuest.Features.Feature)">
+            <summary>
+		二つの地物形状の排他的論理和を計算します。
+
+    </summary><param name="feature1">
+		排他的論理和を求める <see cref="T:MapQuest.Features.Feature" /> オブジェクト１。
+
+    </param><param name="feature2">
+		排他的論理和を求める <see cref="T:MapQuest.Features.Feature" /> オブジェクト２。
+
+    </param><returns>
+		排他的論理和を計算した <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double)">
+            <overloads>
+		地物からの一定幅のエリアを計算します。（バッファリング）
+
+	</overloads><summary>
+		指定された距離から、一定幅のエリアを計算します。
+
+    </summary><param name="feature">
+		バッファリングする <see cref="T:MapQuest.Features.Feature" /> オブジェクト。
+
+    </param><param name="distance">
+		バッファリングする距離。
+
+    </param><remarks>
+		通常、バッファリングで得られるアウトラインには、カーブが含まれます。
+
+		MapQuest.NET では、ラインのジオメトリを用いて、その形状にに近づけます。
+
+		このとき、近似の程度はユーザーによってコントロールすることができます。
+
+		MapQuest.NET では、4 分割した円を基準としたセグメント数（分割数）。
+
+		このセグメント数を多く指定すると、より実際の形状に近づくことになります。
+
+		セグメント数の既定値は 8 です。
+
+    </remarks><returns>
+		バッファリングした <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double,System.Int32)">
+            <summary>
+		指定された距離とセグメント数から、一定幅のエリアを計算します。
+
+    </summary><param name="feature">
+		バッファリングする <see cref="T:MapQuest.Features.Feature" /> オブジェクト。
+
+    </param><param name="distance">
+		バッファリングする距離。
+
+    </param><param name="quadrantSegments">
+		カーブのセグメント数。
+
+    </param><remarks>
+		セグメント数については <see cref="M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double)" /> の解説を参照してください。
+
+    </remarks><returns>
+		バッファリングした <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator,System.Double)">
+            <summary>
+		指定された距離と複数の地物から、一定幅のエリアを計算します。
+
+    </summary><param name="iterator">
+		バッファリングする 1 つ以上の地物を含む <see cref="T:MapQuest.Features.IFeatureIterator" /> 。
+
+    </param><param name="distance">
+		バッファリングする距離。
+
+    </param><returns>
+		バッファリングした <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureIterator,System.Double,System.Int32)">
+            <summary>
+		指定された距離と複数の地物とセグメント数から、一定幅のエリアを計算します。
+
+    </summary><param name="iterator">
+		バッファリングする 1 つ以上の地物を含む <see cref="T:MapQuest.Features.IFeatureIterator" /> 。
+
+    </param><param name="distance">
+		バッファリングする距離。
+
+    </param><param name="quadrantSegments">
+		カーブのセグメント数。
+
+    </param><remarks>
+		セグメント数については <see cref="M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double)" /> の解説を参照してください。
+
+    </remarks><returns>
+		バッファリングした <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList,System.Double)">
+            <summary>
+		指定された距離と複数の地物から、一定幅のエリアを計算します。
+
+    </summary><param name="features">
+		バッファリングする 1 つ以上の地物を含む <see cref="T:MapQuest.Features.IFeatureList" /> 。
+
+    </param><param name="distance">
+		バッファリングする距離。
+
+    </param><returns>
+		バッファリングした <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.IFeatureList,System.Double,System.Int32)">
+            <summary>
+		指定された距離と複数の地物とセグメント数から、一定幅のエリアを計算します。
+
+    </summary><param name="features">
+		バッファリングする 1 つ以上の地物を含む <see cref="T:MapQuest.Features.IFeatureList" /> 。
+
+    </param><param name="distance">
+		バッファリングする距離。
+
+    </param><param name="quadrantSegments">
+		カーブのセグメント数。
+
+    </param><remarks>
+		セグメント数については <see cref="M:MapQuest.Features.FeatureOperator.Buffer(MapQuest.Features.Feature,System.Double)" /> の解説を参照してください。
+
+    </remarks><returns>
+		バッファリングした <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.Feature,MapQuest.Features.Feature)">
+            <overloads>
+		二つの地物形状の交差を計算します。
+
+	</overloads><summary>
+		二つの地物形状の交差を計算します。
+
+    </summary><param name="feature1">
+		交差する <see cref="T:MapQuest.Features.Feature" /> オブジェクト１。
+
+    </param><param name="feature2">
+		交差する <see cref="T:MapQuest.Features.Feature" /> オブジェクト２。
+
+    </param><returns>
+		交差した <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.IFeatureIterator)">
+            <summary>
+		複数の地物形状の交差を計算します。
+
+    </summary><param name="iterator">
+		計算対象となる 1 つ以上の地物を含む <see cref="T:MapQuest.Features.IFeatureIterator" /> 。
+
+    </param><returns>
+		交差した <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Intersection(MapQuest.Features.IFeatureList)">
+            <summary>
+		複数の地物形状の交差を計算します。
+
+    </summary><param name="features">
+		交差する 1 つ以上の地物を含む <see cref="T:MapQuest.Features.IFeatureList" /> 。
+
+    </param><returns>
+		交差した <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Union(MapQuest.Features.Feature,MapQuest.Features.Feature)">
+            <overloads>
+		二つの地物形状の結合を計算します。
+
+	</overloads><summary>
+		二つの地物形状の結合を計算します。
+
+    </summary><param name="feature1">
+		結合する <see cref="T:MapQuest.Features.Feature" /> オブジェクト１。
+
+    </param><param name="feature2">
+		結合する <see cref="T:MapQuest.Features.Feature" /> オブジェクト２。
+
+    </param><returns>
+		結合した <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Union(MapQuest.Features.IFeatureIterator)">
+            <summary>
+		複数の地物形状の結合を計算します。
+
+    </summary><param name="iterator">
+		結合する 1 つ以上の地物を含む <see cref="T:MapQuest.Features.IFeatureIterator" /> 。
+
+    </param><returns>
+		結合した <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureOperator.Union(MapQuest.Features.IFeatureList)">
+            <summary>
+		複数の地物形状の結合を計算します。
+
+    </summary><param name="features">
+		結合する 1 つ以上の地物を含む <see cref="T:MapQuest.Features.IFeatureList" /> 。
+
+    </param><returns>
+		結合した <see cref="T:MapQuest.Features.Feature" /> 。
+
+		それ以外の場合は null 。
+
+    </returns>
+        </member>
+        <member name="T:MapQuest.Features.FeatureProperty">
+            <summary>
+            Summary description for FeatureProperty.
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureProperty.m_strName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureProperty.m_objValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MapQuest.Features.FeatureReprojection">
+            <summary>
+            <see cref="T:MapQuest.Features.Feature"/> の座標系を変換するためのクラスです。
+            </summary>
+            <remarks>
+            このクラスは、<see cref="P:MapQuest.Features.Feature.Geometry">Feature.Geometry</see> 
+            の座標系を変換します。
+            </remarks>
+        </member>
+        <member name="F:MapQuest.Features.FeatureReprojection.m_theFeature">
+            <summary>
+            Reprojected(Feature) が呼ばれた時の Feature を保持しておくもの。
+            シンボルの変換で角度を変換するために使用される。
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureReprojection.m_fixAngleByReprojection">
+            <summary>
+            投影変換によるシンボル、及びテキストを回転しない
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureReprojection.#ctor(MapQuest.CoordinateTransformations.ICoordinateTransformation)">
+            <summary>
+            変換に使用する <see cref="T:MapQuest.CoordinateTransformations.ICoordinateTransformation"/> を指定して、
+            新しいインスタンスを初期化します。
+            </summary>
+            <param name="transformation">変換の際に使用する 
+            <see cref="T:MapQuest.CoordinateTransformations.ICoordinateTransformation"/> 。</param>
+        </member>
+        <member name="P:MapQuest.Features.FeatureReprojection.Transformation">
+            <summary>
+            現在の <see cref="T:MapQuest.CoordinateTransformations.ICoordinateTransformation"/> を取得します。
+            </summary>
+            <value>現在の <see cref="T:MapQuest.CoordinateTransformations.ICoordinateTransformation"/></value>
+        </member>
+        <member name="P:MapQuest.Features.FeatureReprojection.LastException">
+            <summary>
+            最後に発生した例外を取得します。
+            </summary>
+            <value>最後に発生した <see cref="T:System.Exception"/> 。</value>
+        </member>
+        <member name="P:MapQuest.Features.FeatureReprojection.FixAngleByReprojection">
+            <summary>
+            投影変換によるシンボル、及びテキストを回転しない
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureReprojection.Reprojected(MapQuest.Features.Feature)">
+            <summary>
+            指定した <see cref="T:MapQuest.Features.Feature"/> の座標を変換します。
+            </summary>
+            <param name="feature">座標を変換する <see cref="T:MapQuest.Features.Feature"/> 。</param>
+            <returns>変換に成功したら true 、それ以外の場合は false を返します。</returns>
+            <remarks>
+            <b>Reprojected(feature.Geometry)</b> を呼び出します。
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureReprojection.Reprojected(MapQuest.Topology.Geometries.Geometry)">
+            <summary>
+            指定した <see cref="T:MapQuest.Topology.Geometries.Geometry"/> の座標を変換します。
+            </summary>
+            <param name="geometry">座標を変換する <see cref="T:MapQuest.Topology.Geometries.Geometry"/> 。</param>
+            <returns>変換に成功したら true 、それ以外の場合は false を返します。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureReprojection.MapQuest#Topology#GeometryVisitors#IGeometryComponentVisitor#Visit(MapQuest.Topology.Geometries.Geometry)">
+            <summary>
+            <see cref="T:MapQuest.Topology.Geometries.Geometry"/> の座標を変換します。
+            </summary>
+            <param name="geom">変換する <see cref="T:MapQuest.Topology.Geometries.Geometry"/> 。</param>
+            <remarks>これは GoF の Visitor パターンに基づいて実装されています。
+            このクラスが Visitor(訪問者) 、<see cref="T:MapQuest.Topology.Geometries.Geometry"/> が 
+            Acceptor(受け入れ側)となります。
+            <para/>
+            このメソッドは、この Visitor が、<see cref="T:MapQuest.Topology.Geometries.Geometry"/> を "訪問" し、
+            <see cref="T:MapQuest.Topology.Geometries.Geometry"/> 側でそれを "受け入れた" 時に実装される処理です。
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureReprojection.Visit(MapQuest.Topology.Geometries.MultiText)">
+            <summary>
+            MultiText の座標変換を行います。<para/>
+            IGeometryComponentVisitor.Visit から呼ばれます。
+            </summary>
+            <param name="multiText">変換する MultiText 。</param>
+            <remarks>
+            MultiText は角度を持っているので、通常の座標変換に加え、
+            角度の変換も行います。
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureReprojection.Visit(MapQuest.Topology.Geometries.Point)">
+            <summary>
+            Point の座標変換を行います。<para/>
+            IGeometryComponentVisitor.Visit から呼ばれます。
+            </summary>
+            <param name="multiText">変換する Point 。</param>
+            <remarks>
+            Point は Feature の属性として角度を持っているので、
+            通常の座標変換に加え、角度の変換も行います。
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureReprojection.Visit(MapQuest.Topology.Geometries.Ellipse)">
+            <summary>
+             Ellipse の座標変換を行います。
+            </summary>
+            <param name="ellipse">変換する Ellipse 。</param>
+            <remarks>
+             Ellipse は左下と右上の点を変換し、変換結果から中心点と幅、
+             高さを計算して再設定します。
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureReprojection.TransformAngle(System.Double,MapQuest.Coordinates.Coordinate,System.Double)">
+            <summary>
+            座標系変換による角度の変更を行います。
+            </summary>
+            <param name="angle">変換前の角度(度)。</param>
+            <param name="point">角度の基点。</param>
+            <param name="width">変換後角度の計算に使用する幅。</param>
+            <returns>変換が適用された新しい角度(度)。</returns>
+            <remarks>
+            このメソッドは、座標変換によって、どれくらいの角度の変化があるかを計算し、
+            基の角度に加算して座標変換の適用された新しい角度とします。
+            <para/>
+            point(from) と、point から X 座標を width 分ずらした点(to)の 
+            2 点をそれぞれ座標変換し、変換後の from と to の傾きが、座標変換によって
+            適用しなければならない角度の加算分です。それを基の角度に加算して返します。
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureReprojection.Clone">
+            <summary>
+            現在のインスタンスの簡易コピーを生成します。
+            </summary>
+            <returns>現在のインスタンスの簡易コピー</returns>
+            <remarks>
+            <see cref="P:MapQuest.Features.FeatureReprojection.Transformation"/> は、Clone されません。参照が渡されます。
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureReprojection.GetLineAngle(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)">
+            <summary>
+            3 つの座標で構成される線分の狭い領域の角度を取得します。
+            </summary>
+            <param name="p1">第 1 の座標。</param>
+            <param name="p2">第 2 の座標。</param>
+            <param name="p3">第 3 の座標。</param>
+            <returns>3 つの座標で構成される線分の狭い領域の角度。
+            必ず 0 ～ 180 の値になります。</returns>
+            <remarks>NSECOM32.DLL nse_GetLineAngle からの移植です。</remarks>
+            <devdoc>
+            本来このメソッドはこのクラスに所属すべきものでは無いと考えています。
+            </devdoc>
+        </member>
+        <member name="M:MapQuest.Features.FeatureReprojection.GetDistance(MapQuest.Coordinates.Coordinate,MapQuest.Coordinates.Coordinate)">
+            <summary>
+            指定された 2 点間の距離を取得します。
+            </summary>
+            <param name="p1">第 1 の座標。</param>
+            <param name="p2">第 2 の座標。</param>
+            <returns>2 点間の距離。</returns>
+            <remarks>NSECOM32.DLL nse_GetDistance からの移植です。</remarks>
+            <devdoc>
+            本来このメソッドはこのクラスに所属すべきものでは無いと考えています。
+            </devdoc>
+        </member>
+        <member name="T:MapQuest.Features.FeatureSchema">
+            <summary>
+			座標系や形状の種類など、 
+			<see cref="!:IFeatureClass" /> の定義情報を管理します。
+
+			<newpara>
+				このクラスが持つ情報は、「階層」として管理される情報と同じものです。
+
+			</newpara>
+		</summary><remarks>
+			<see cref="T:MapQuest.Features.FeatureSchema" /> は、<b>FeatureClass</b> の定義情報(メタ情報)です。
+			<para />
+			主に、<b>LayerManager</b> によって <b>FeatureLayer</b> が生成される際に使用されます。
+			例えば、階層の番号には、<see cref="P:MapQuest.Features.FeatureSchema.Number" /> が適用され、
+			階層の名称には、<see cref="P:MapQuest.Features.FeatureSchema.Name" /> が適用されます。
+			<para />
+			階層のスタイルには、<see cref="P:MapQuest.Features.FeatureSchema.Styling" /> で示されるスタイル名称を
+			キーにして、<see cref="!:FeatureStylesManager" /> から取得した <b>StyleList</b> が適用されます。
+		</remarks>
+        </member>
+        <member name="F:MapQuest.Features.FeatureSchema.m_objSpatialReference">
+            <summary>
+            An string containing the spatial reference or coordinate system 
+            for this data item. The format is the OpenGIS WKT for Coordinate System.
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureSchema.m_strStyling">
+            <summary>
+            A string containing the styles of the data set.
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.FeatureSchema.m_strName">
+            <summary>
+            The name of the data set.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureSchema.#ctor">
+            <overloads>
+			<see cref="T:MapQuest.Features.FeatureSchema" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</overloads><summary>
+			<see cref="T:MapQuest.Features.FeatureSchema" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><remarks>
+			文字列のメンバは、全て <see cref="F:System.String.Empty" /> が指定されます。
+
+		</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureSchema.#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Coordinates.Envelope)">
+            <summary>
+			指定した座標系、スタイル、名前、管理範囲を備えた、 
+			<see cref="T:MapQuest.Features.FeatureSchema" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="spatialRef">
+			空間参照を表す <see cref="P:MapQuest.Features.FeatureSchema.CoordinateSystem" /> 。
+
+	    </param><param name="styling">
+			スタイルへのインデックス名称。
+
+	    </param><param name="name">
+			地物が属しているグループの名前。
+
+	    </param><param name="bounds">
+			管理範囲を表す <see cref="T:MapQuest.Coordinates.Envelope" /> 。
+
+	    </param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureSchema.#ctor(MapQuest.Features.FeatureSchema)">
+            <summary>
+			<see cref="T:MapQuest.Features.FeatureSchema" /> を指定して、新しいインスタンスを初期化します。
+
+		</summary><param name="schema">
+			<see cref="T:MapQuest.Features.FeatureSchema" /> オブジェクト。
+
+	    </param><remarks>
+			<see cref="T:MapQuest.Features.FeatureSchema" /> をコピーするためのコピー コンストラクタです。
+
+		</remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureSchema.#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Topology.Geometries.GeometryType,MapQuest.Database.AttributesSchemaList[])">
+            <summary>
+			指定した座標系、スタイル、名前、地物形状の種類、属性定義を備えた、 
+			<see cref="T:MapQuest.Features.FeatureSchema" /> 
+			クラスの新しいインスタンスを初期化します。
+
+		</summary><param name="spatialRef">
+			空間参照を表す <see cref="P:MapQuest.Features.FeatureSchema.CoordinateSystem" /> 。
+
+	    </param><param name="styling">
+			スタイルへのインデックス名称。
+
+	    </param><param name="name">
+			地物が属しているグループの名前。
+
+	    </param><param name="geometryType">
+			地物形状の種類を表す <see cref="T:MapQuest.Topology.Geometries.GeometryType" /> 。
+
+	    </param><param name="attributesSchemaLists">
+			属性定義を表す <see cref="T:MapQuest.Database.AttributesSchemaList" /> の配列。
+
+	    </param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureSchema.#ctor(MapQuest.CoordinateSystems.ICoordinateSystem,System.String,System.String,MapQuest.Topology.Geometries.GeometryType,MapQuest.Database.AttributesSchemaList[],System.Int32,MapQuest.Coordinates.Envelope)">
+            <summary>
+			<see cref="T:MapQuest.Features.FeatureSchema" /> が管理する全ての項目を指定した、
+
+			新しいインスタンスを初期化します。
+
+		</summary><param name="spatialRef">
+			空間参照を定義した 
+			<see cref="P:MapQuest.Features.FeatureSchema.CoordinateSystem" /> 
+			オブジェクト。
+
+	    </param><param name="styling">
+			スタイルへのインデックス名称。
+
+	    </param><param name="name">
+			地物が属しているグループの名前。
+
+	    </param><param name="geometryType">
+			地物形状の種類を表す <see cref="T:MapQuest.Topology.Geometries.GeometryType" /> 。
+
+	    </param><param name="attributesSchemaLists">
+			属性定義を表す <see cref="T:MapQuest.Database.AttributesSchemaList" /> の配列。
+
+	    </param><param name="number">
+			地物が属しているデータセットの番号。
+
+	    </param><param name="bounds">
+			管理範囲を表す <see cref="T:MapQuest.Coordinates.Envelope" /> 。
+
+	    </param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureSchema.#ctor(System.String,System.Int32)">
+            <summary>
+            名前、番号を指定して、 
+            <see cref="T:MapQuest.Features.FeatureSchema"/> クラスの新しいインスタンスを初期化します。 
+            </summary>
+            <param name="name">地物が属しているクラスの名前。</param>
+            <param name="number">地物が属しているクラスの番号。</param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureSchema.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            シリアル化された情報から<see cref="T:MapQuest.Features.FeatureSchema"/>を作成します。
+            </summary>
+            <param name="info">シリアル化する情報を格納するオブジェクト</param>
+            <param name="context"></param>
+        </member>
+        <member name="P:MapQuest.Features.FeatureSchema.CoordinateSystem">
+            <summary>
+		地物が属しているグループの座標系を取得します。
+
+    </summary><value>
+		空間参照を表す <see cref="T:MapQuest.CoordinateSystems.ICoordinateSystem" /> 。
+
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.FeatureSchema.Styling">
+            <summary>
+		地物を表現するスタイルへのインデックス名称を取得します。
+
+    </summary><value>
+		スタイルへのインデックス名称。
+
+    </value><remarks>
+		通常、地物を表現するスタイルは、ユニークな名称と対で用意されます。
+
+		スタイルを要する機能は、このプロパティから名称を取得することで、
+
+		対応するスタイルを検索します。
+
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureSchema.Name">
+            <summary>
+		地物が属しているグループの名称を取得します。
+
+    </summary><value>
+		地物が属しているグループの名称。
+
+    </value><remarks>
+		通常、このプロパティの値は、階層名称として使用されます。
+
+		<!--
+		This value is normally the name of the data source, 
+		and should usually be set to the layer name where available.
+		-->
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureSchema.GeometryType">
+            <summary>
+		地物形状の種類を取得します。
+
+    </summary><value>
+		地物形状の種類を表す <see cref="T:MapQuest.Topology.Geometries.GeometryType" /> 。
+
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.FeatureSchema.AttributesSchemaLists">
+            <summary>
+            地物にリンクする属性の定義情報を取得します。
+            </summary>
+        </member>
+        <member name="P:MapQuest.Features.FeatureSchema.Number">
+            <summary>
+		地物が属しているグループの番号を取得します。
+
+    </summary><value>
+		地物が属しているグループの番号。
+
+    </value><remarks>
+		通常、このプロパティの値は、階層番号として使用されます。
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.FeatureSchema.Bounds">
+            <summary>
+		地物が属しているグループの管理範囲を取得します。
+
+    </summary><value>
+		管理範囲を表す <see cref="T:MapQuest.Coordinates.Envelope" /> 。
+
+    </value>
+        </member>
+        <member name="M:MapQuest.Features.FeatureSchema.GetHashCode">
+            <summary>
+            このメンバは <see cref="M:System.Object.GetHashCode">Object.GetHashCode</see> 
+            をオーバーライドします。
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureSchema.Equals(System.Object)">
+            <summary>
+            このインスタンスと他のインスタンスが等しいかを調べます。
+            </summary>
+            <param name="obj">等しいか調べる他の 
+            <see cref="T:MapQuest.Features.FeatureSchema"/> インスタンス。</param>
+            <returns>等しければ true を返します。
+            それ以外の場合は false を返します。</returns>
+            <remarks>
+            このメソッドは、<see cref="T:MapQuest.Features.FeatureSchema"/> の
+            全てのプロパティに対して <b>Equals</b> を行い、
+            全て true が返されれば一致しているとみなします。
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureSchema.Clone">
+            <summary>
+		現在のインスタンスのコピーである新しいオブジェクトを作成します。
+
+    </summary><returns>
+		コピーされた新しい <see cref="T:MapQuest.Features.FeatureSchema" /> オブジェクト。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureSchema.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            オブジェクトをシリアル化します。
+            </summary>
+            <param name="info">シリアル化する情報を格納するオブジェクト</param>
+            <param name="context"></param>
+        </member>
+        <member name="T:MapQuest.Features.FeatureType">
+            <summary> 
+            <see cref="T:MapQuest.Features.IFeatureType"/> インターフェースを実装した、
+            <see cref="T:MapQuest.Features.IFeature"/> のタイプの詳細を提供するクラスです。
+            </summary>
+            <remarks>
+            <see cref="T:MapQuest.Features.IFeature"/> は <see cref="T:MapQuest.Features.IFeatureType"/> を必要とします。
+            </remarks>
+        </member>
+        <member name="M:MapQuest.Features.FeatureType.#ctor">
+            <overloads>
+            FeatureType のインスタンスを生成します。
+            </overloads>
+            <summary>
+            インスタンスを生成します。
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureType.#ctor(MapQuest.Features.IFeatureType[],MapQuest.Features.IFeatureType[],System.String,MapQuest.Features.IFeatureTypeProperty[])">
+            <summary>
+            親、子、名前、プロパティを指定してインスタンスを生成します。
+            </summary>
+            <param name="parents"><see cref="P:MapQuest.Features.FeatureType.Parents"/> にマップされます。</param>
+            <param name="children"><see cref="P:MapQuest.Features.FeatureType.Children"/> にマップされます。</param>
+            <param name="name"><see cref="P:MapQuest.Features.FeatureType.Name"/> にマップされます。</param>
+            <param name="properties"><see cref="P:MapQuest.Features.FeatureType.Properties"/> にマップされます。</param>
+        </member>
+        <member name="M:MapQuest.Features.FeatureType.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            シリアル化された情報から<see cref="T:MapQuest.Features.FeatureType"/>を作成します。
+            </summary>
+            <param name="info">シリアル化する情報を格納するオブジェクト</param>
+            <param name="context"></param>
+        </member>
+        <member name="P:MapQuest.Features.FeatureType.Parents">
+            <summary>
+            親となる <see cref="T:MapQuest.Features.IFeatureType"/> の配列を返します。
+            </summary>
+            <value>
+            親となる <see cref="T:MapQuest.Features.IFeatureType"/> の配列。親が存在しない場合は null 。
+            読み取り専用です。
+            </value>
+        </member>
+        <member name="P:MapQuest.Features.FeatureType.Children">
+            <summary>
+            子となる <see cref="T:MapQuest.Features.IFeatureType"/> の配列を返します。
+            </summary>
+            <value>
+            子となる <see cref="T:MapQuest.Features.IFeatureType"/> の配列。子が存在しない場合は null 。
+            読み取り専用です。
+            </value>
+        </member>
+        <member name="P:MapQuest.Features.FeatureType.Name">
+            <summary>
+            この <see cref="T:MapQuest.Features.FeatureType"/> の名称を返します。
+            </summary>
+            <value>
+            <see cref="T:MapQuest.Features.FeatureType"/> の名称。読み取り専用です。
+            </value>
+        </member>
+        <member name="P:MapQuest.Features.FeatureType.Properties">
+            <summary>
+            この <see cref="T:MapQuest.Features.FeatureType"/> のプロパティを取得します。
+            </summary>
+            <value>
+            <see cref="T:MapQuest.Features.FeatureType"/> のプロパティを示す <see cref="T:MapQuest.Features.IFeatureTypeProperty"/> を配列。
+            </value>
+        </member>
+        <member name="M:MapQuest.Features.FeatureType.GetProperty(System.String)">
+            <summary>
+            指定した名称の <see cref="T:MapQuest.Features.IFeatureTypeProperty"/> を取得します。
+            </summary>
+            <param name="name">取得したい <see cref="T:MapQuest.Features.IFeatureTypeProperty"/> の名称。</param>
+            <returns>指定した名称の <see cref="T:MapQuest.Features.IFeatureTypeProperty"/> 。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureType.Equals(System.Object)">
+            <summary>
+            オブジェクトの内容が等しい場合に真を返します。
+            </summary>
+            <param name="obj">比較する<see cref="T:MapQuest.Features.FeatureType"/></param>
+            <returns>等価であるか</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureType.ToString">
+            <summary>
+            このインスタンスを文字列化します。
+            </summary>
+            <returns>この FeatureType を文字列化したもの。</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureType.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            オブジェクトをシリアル化します。
+            </summary>
+            <param name="info">シリアル化する情報を格納するオブジェクト</param>
+            <param name="context"></param>
+        </member>
+        <member name="T:MapQuest.Features.FeatureTypeProperty">
+            <summary> 
+            the interface describes a property entry of a feature type. the
+            name of the property must be equal to the name of the corresponding
+            feature property.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureTypeProperty.#ctor(System.String,System.String,System.Boolean)">
+            <summary> initializes a IFeatureTypeProperty with its name its associated type
+            and a boolean variable that says if the propetry maybe <tt>null</tt>
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureTypeProperty.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            シリアル化された情報から<see cref="T:MapQuest.Features.FeatureTypeProperty"/>を作成します。
+            </summary>
+            <param name="info">シリアル化する情報を格納するオブジェクト</param>
+            <param name="context"></param>
+        </member>
+        <member name="P:MapQuest.Features.FeatureTypeProperty.Name">
+            <summary> returns the name of the property</summary>
+        </member>
+        <member name="P:MapQuest.Features.FeatureTypeProperty.Type">
+            <summary> 
+            returns the name of the data type of the property.
+            </summary>
+        </member>
+        <member name="P:MapQuest.Features.FeatureTypeProperty.IsNullable">
+            <summary> 
+            returns true if the property value is allowed to be null
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.FeatureTypeProperty.Equals(System.Object)">
+            <summary>
+            オブジェクトの内容が等しい場合に真を返します。
+            </summary>
+            <param name="obj">比較する<see cref="T:MapQuest.Features.FeatureTypeProperty"/></param>
+            <returns>等価であるか</returns>
+        </member>
+        <member name="M:MapQuest.Features.FeatureTypeProperty.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            オブジェクトをシリアル化します。
+            </summary>
+            <param name="info">シリアル化する情報を格納するオブジェクト</param>
+            <param name="context"></param>
+        </member>
+        <member name="T:MapQuest.Features.IFeature">
+            <summary>
+			実世界の現象の抽出概念である地物を表現するためのインターフェースです。
+
+			<newpara>
+				道路や建物を現す形状とこれにリンクする属性などの情報を一つのまとまりとし、
+
+				地図を表現する最小単位として定義します。
+
+			</newpara>
+		</summary>
+        </member>
+        <member name="P:MapQuest.Features.IFeature.ID">
+            <summary>
+		地物の識別子を取得します。
+    </summary><value>
+		地物を識別する一意の文字列。
+
+    </value><remarks>
+		このプロパティの値は、各プロバイダが管理してください。
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.IFeature.Item(System.String)">
+            <summary>
+		指定されたインデックスの属性を取得または設定します。
+    </summary><param name="name">
+		取得する属性のインデックス名。
+
+    </param><value>
+		指定されたインデックスの属性の値。
+
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.IFeature.Geometry">
+            <summary>
+		地物の形状を取得します。
+    </summary><value>
+        地物として定義された 
+        <see cref="T:MapQuest.Topology.Geometries.Geometry">Geometry</see> 
+        オブジェクト。それ以外の場合は null 。
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.IFeature.Envelope">
+            <summary>
+		地物の範囲を取得します。
+    </summary><value>
+		地物が管理される範囲の 
+		<see cref="T:MapQuest.Coordinates.Envelope">Envelope</see> 
+		オブジェクト。それ以外の場合は null 。
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.IFeature.Properties">
+            <summary>
+		地物の属性を取得します。
+    </summary><value>
+		定義されている地物の属性を定義した 
+		<see cref="T:System.Collections.IDictionary" /> 
+		オブジェクト。それ以外の場合は null 。
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.IFeature.PropertyCount">
+            <summary>
+		地物の属性の数を取得します。
+    </summary><value>
+		設定されている地物の属性の数。
+
+    </value>
+        </member>
+        <member name="M:MapQuest.Features.IFeature.HasProperty(System.String)">
+            <summary>
+            地物の属性の有無を確認します。
+            </summary>
+            <param name="key">取得する属性のインデックス名。</param>
+            <returns>指定された項目の属性がある場合は <see langword="true"/>。それ以外の場合は <see langword="false"/> 。</returns>
+        </member>
+        <member name="M:MapQuest.Features.IFeature.GetProperty(System.String)">
+            <summary>
+            地物の属性の有無を確認します。
+            </summary>
+            <param name="key">取得する属性のインデックス名。</param>
+            <returns>指定された項目の属性がある場合は <see langword="true"/>。それ以外の場合は <see langword="false"/> 。</returns>
+        </member>
+        <member name="M:MapQuest.Features.IFeature.SetProperty(System.String,System.Object)">
+            <summary>
+            地物の属性を設定します。
+            </summary>
+            <param name="name">設定する属性の項目名。</param>
+            <param name="value">設定する属性の値。</param>
+        </member>
+        <member name="T:MapQuest.Features.IFeatureCollection">
+            <summary>
+			<see cref="T:MapQuest.Features.Feature" /> を収集するコレクションについて、
+
+			サイズ、列挙子、および同期メソッドを定義します。
+
+		</summary><remarks>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		は、地物用に最適化された <see cref="T:System.Collections.ICollection" /> 
+		コレクションを提供します。
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureCollection.Count">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に実際に格納されている地物の数を取得します。
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に実際に格納されている地物の数。
+    </value><remarks>
+		詳細については 
+		<see cref="P:System.Collections.ICollection.Count" /> 
+		を参照してください。
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureCollection.IsSynchronized">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		へのアクセスが同期されている (スレッド セーフである) かどうかを示す値を取得します。
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このプロパティは、現在サポートしていません。
+		</para>
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		へのアクセスが同期されている (スレッド セーフである) 場合は <b>true</b> 。
+
+		それ以外の場合は <b>false</b> 。
+
+    </value><remarks>
+		詳細については 
+		<see cref="P:System.Collections.ICollection.IsSynchronized" /> 
+		を参照してください。
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureCollection.SyncRoot">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		へのアクセスを同期するために使用できるオブジェクトを取得します。
+		<para>
+			<!-- Non Support 2005/01/20 -->
+			このプロパティは、現在サポートしていません。
+		</para>
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		へのアクセスを同期するために使用できるオブジェクト。
+
+    </value><remarks>
+		詳細については 
+		<see cref="P:System.Collections.ICollection.SyncRoot" /> 
+		を参照してください。
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureCollection.Envelope">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に格納されている地物の範囲を取得します。
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に格納されている要素全てを包括する範囲。
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureCollection.Schema">
+            <summary>
+		この <see cref="T:MapQuest.Features.FeatureCollection" /> 
+		についての情報を取得します。
+    </summary><value>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		についての情報。
+    </value><remarks>
+		Schema は、<see cref="T:MapQuest.Features.Feature" /> が持つ地物に関する定義情報です。
+		<see cref="!:MapQuest.FeatureProviders.FeatureClass" /> 
+		が管理します。
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureCollection.CopyTo(MapQuest.Features.Feature[],System.Int32)">
+            <summary>
+		指定のインデックスを開始位置として、 
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		の要素を 
+		<see cref="T:MapQuest.Features.Feature" /> 
+		の 1 次元配列にコピーします。
+    </summary><param name="array">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		から要素がコピーされる <see cref="T:MapQuest.Features.Feature" /> 
+		の 1 次元配列。この配列には、0 から始まるインデックス番号が必要です。
+
+    </param><param name="arrayIndex">
+		コピーの開始位置となる、 0 から始まるインデックス番号。
+
+    </param><remarks>
+		詳細については 
+		<see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" /> 
+		を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureCollection.CreateIterator">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に格納されている地物を順にアクセスする方法を提供する 
+		<see cref="T:MapQuest.Features.IFeatureIterator" /> 
+		を作成します。
+    </summary><returns>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		に格納されている地物を順にアクセスする方法を含んだ 
+		<see cref="T:MapQuest.Features.IFeatureIterator" /> 
+		オブジェクト。
+    </returns><remarks>
+		詳細については 
+		<see cref="M:System.Collections.IEnumerable.GetEnumerator" /> 
+		を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureCollection.Query(MapQuest.Coordinates.Envelope)">
+            <summary>
+		指定された範囲の地物を検索します。
+    </summary><param name="area">
+		検索したい範囲。
+
+    </param><returns>
+		検索されたインデックスによって個別にアクセスできる 
+		<see cref="T:MapQuest.Features.IFeatureList" /> 
+		コレクション。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureCollection.Remove(MapQuest.Coordinates.Envelope)">
+            <summary>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> 
+		内から指定された範囲に含まれる <see cref="T:MapQuest.Features.Feature" /> 
+		オブジェクトを削除します。
+
+    </summary><param name="area">
+		<see cref="T:MapQuest.Features.FeatureCollection" /> から削除したい範囲を示す 
+		<see cref="T:MapQuest.Coordinates.Envelope" /> 。
+
+    </param><returns>
+		<see cref="T:MapQuest.Features.FeatureCollection" /> から削除した 
+		<see cref="T:MapQuest.Features.Feature" /> を持つ 
+		<see cref="T:MapQuest.Features.IFeatureList" /> オブジェクト。
+
+    </returns>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureCollection.Sort">
+            <overloads>
+            <see cref="T:MapQuest.Features.IFeatureCollection"/> 内およびその一部の要素を並べ替えます。
+            </overloads>
+            <summary>
+            各要素の <see cref="T:System.IComparable"/> 実装を使用して、 
+            <see cref="T:MapQuest.Features.IFeatureCollection"/> 全体内の要素を並べ替えます。
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureCollection.Sort(System.Collections.IComparer)">
+            <summary>
+            指定した比較演算子を使用して、 
+            <see cref="T:MapQuest.Features.IFeatureCollection"/> 全体内の要素を並べ替えます。
+            </summary>
+            <param name="comparer">要素を比較する場合に使用する <see cref="T:System.Collections.IComparer"/> 実装。</param>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureCollection.Sort(System.Int32,System.Int32,System.Collections.IComparer)">
+            <summary>
+            指定した比較演算子を使用して、 
+            <see cref="T:MapQuest.Features.IFeatureCollection"/> の一部の要素を並べ替えます。
+            </summary>
+            <param name="index">並べ替える範囲の開始位置を示す 0 から始まるインデックス。</param>
+            <param name="count">並べ替える範囲の長さ。</param>
+            <param name="comparer">要素を比較する場合に使用する <see cref="T:System.Collections.IComparer"/> 実装。<br/>
+            または <br/>
+            各要素の <see cref="T:System.IComparable"/> 実装を使用する場合は null 。
+            </param>
+        </member>
+        <member name="T:MapQuest.Features.IFeatureIterator">
+            <summary>
+			<see cref="T:MapQuest.Features.Feature" /> のコレクションを順番に走査するためのインターフェースです。 
+		</summary><remarks>
+			<see cref="T:MapQuest.Features.IFeatureIterator" /> は、
+
+			<see cref="T:MapQuest.Features.Feature" /> に特化した <see cref="!:IEnumerator" /> 
+			インターフェースを提供します。
+
+		</remarks>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureIterator.Count">
+            <summary>
+		コレクションに格納されている地物の数を取得します。
+
+    </summary><value>
+		コレクションに格納されている地物の数。
+		<note type="caution">
+		結果の総数が判らない場合は「-1」を返します。
+		</note>
+    </value>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureIterator.Current">
+            <summary>
+		コレクション内の現在の <see cref="T:MapQuest.Features.Feature" /> を取得します。
+
+    </summary><value>
+		コレクション内の現在の <see cref="T:MapQuest.Features.Feature" /> 。
+
+    </value><exception cref="T:System.InvalidOperationException">
+		<para>
+			列挙子が、コレクションの最初の要素の前、
+
+			または最後の要素の後に位置しています。
+
+		</para>
+	</exception><remarks>
+		詳細については 
+		<see cref="!:IEnumerator.Current" /> 
+		を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureIterator.MoveNext">
+            <summary>
+		列挙子をコレクションの次の <see cref="T:MapQuest.Features.Feature" /> に進めます。
+
+	</summary><returns>
+		列挙子が次の <see cref="T:MapQuest.Features.Feature" /> に正常に進んだ場合は <b>true</b> 。
+
+		列挙子がコレクションの末尾を越えた場合は <b>false</b> 。
+
+    </returns><exception cref="T:System.InvalidOperationException">
+		<para>
+			列挙子が作成された後に、コレクションが変更されました。
+
+		</para>
+	</exception><remarks>
+		詳細については 
+		<see cref="!:IEnumerator.MoveNext" /> 
+		を参照してください。
+
+	</remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureIterator.Reset">
+            <summary>
+		列挙子を初期位置、つまりコレクションの最初の <see cref="T:MapQuest.Features.Feature" /> の前に設定します。
+
+	</summary><exception cref="T:System.InvalidOperationException">
+		<para>
+			列挙子が作成された後に、コレクションが変更されました。
+
+		</para>
+	</exception><remarks>
+		詳細については 
+		<see cref="!:IEnumerator.Reset" /> 
+		を参照してください。
+
+	</remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureIterator.Close">
+            <summary>
+		コレクションの内容を解放します。
+
+	</summary><remarks>
+		このインターフェースを実装する際は、
+
+		<see cref="T:System.IDisposable" /> インターフェースをサポートすることを
+
+		推奨します。
+
+	</remarks>
+        </member>
+        <member name="T:MapQuest.Features.IFeatureList">
+            <summary>
+			インデックスによって個別にアクセスできる地物のコレクションを表します。
+
+		</summary><remarks>
+			<see cref="T:MapQuest.Features.IFeatureList" /> 
+			は、地物用に最適化された <see cref="!:IList" /> 
+			コレクションを提供します。
+
+		</remarks>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureList.IsFixedSize">
+            <summary>
+		<see cref="T:MapQuest.Features.IFeatureList" /> 
+		が固定サイズかどうかを示す値を取得します。
+
+    </summary><value>
+		<see cref="T:MapQuest.Features.IFeatureList" /> 
+		が固定サイズの場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+    </value><remarks>
+		詳細については <see cref="!:IList.IsFixedSize" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureList.IsReadOnly">
+            <summary>
+		<see cref="T:MapQuest.Features.IFeatureList" /> 
+		が読み取り専用かどうかを示す値を取得します。
+
+    </summary><value>
+		<see cref="T:MapQuest.Features.IFeatureList" /> 
+		が読み取り専用の場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+		既定値は <b>false</b> です。
+
+    </value><remarks>
+		詳細については <see cref="!:IList.IsReadOnly" /> を参照してください。
+
+    </remarks>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureList.Item(System.Int32)">
+            <summary>
+		指定されたインデックスの地物を取得または設定します。
+
+	</summary><param name="index">
+		取得または設定する要素の、0 から始まるインデックス番号。
+
+    </param><value>
+		指定したインデックスにある地物  <see cref="T:MapQuest.Features.IFeature" /> 。
+
+    </value><exception cref="T:System.ArgumentOutOfRangeException">
+		<para>
+			<paramref name="index" /> が 0 未満です。
+
+		</para>
+		<para>または</para>
+		<para>
+			<paramref name="index" /> が <see cref="!:Count" /> 以上です。
+
+		</para>
+	</exception><exception cref="T:System.NotSupportedException">
+		<para>
+			このプロパティが設定されていますが、 
+			<see cref="T:MapQuest.Features.IFeatureList" /> 
+			が読み取り専用です。
+
+		</para>
+	</exception><remarks>
+		詳細については 
+		<see cref="!:IList.this" /> 
+		を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureList.Add(MapQuest.Features.Feature)">
+            <summary>
+		<see cref="!:IIFeatureList" /> 
+		に <see cref="T:MapQuest.Features.Feature" /> を追加します。
+
+    </summary><param name="value">
+		<see cref="!:IIFeatureList" /> 
+		に追加する 
+		<see cref="T:MapQuest.Features.Feature" /> 。
+
+		値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+
+    </param><returns>
+		新しい <see cref="T:MapQuest.Features.Feature" /> が挿入された位置。
+
+    </returns><exception cref="T:System.NotSupportedException">
+		<para>
+			<see cref="T:MapQuest.Features.IFeatureList" /> が読み取り専用です。
+
+		</para>
+		<para>または</para>
+		<para>
+			<see cref="T:MapQuest.Features.IFeatureList" /> が固定サイズです。
+
+		</para>
+	</exception><remarks>
+		詳細については 
+		<see cref="!:IList.Add" /> 
+		を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureList.Clear">
+            <summary>
+		<see cref="T:MapQuest.Features.IFeatureList" /> 
+		からすべての地物を削除します。
+
+    </summary><exception cref="T:System.NotSupportedException">
+		<para>
+			<see cref="T:MapQuest.Features.IFeatureList" /> が読み取り専用です。
+
+		</para>
+	</exception><remarks>
+		詳細については 
+		<see cref="!:IList.Clear" /> 
+		を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureList.Contains(MapQuest.Features.Feature)">
+            <summary>
+		ある地物が <see cref="T:MapQuest.Features.IFeatureList" /> 
+		内に存在するかどうかを判断します。
+
+    </summary><param name="value">
+		<see cref="T:MapQuest.Features.IFeatureList" /> 内で検索される 
+		<see cref="T:MapQuest.Features.Feature" /> 。
+
+		値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+
+	</param><returns>
+		<paramref name="value" /> が <see cref="T:MapQuest.Features.IFeatureList" /> 
+		に存在する場合は <b>true</b> 。それ以外の場合は <b>false</b> 。
+
+    </returns><remarks>
+		詳細については 
+		<see cref="!:IList.Contains" /> 
+		を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureList.IndexOf(MapQuest.Features.Feature)">
+            <summary>
+		指定した <see cref="T:MapQuest.Features.Feature" /> を検索し、 
+		<see cref="T:MapQuest.Features.IFeatureList" /> 
+		全体内で最初に見つかった位置の 0 から始まるインデックスを返します。
+
+    </summary><param name="value">
+		<see cref="T:MapQuest.Features.IFeatureList" /> 
+		内で検索される <see cref="T:MapQuest.Features.Feature" /> 。
+
+		値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+
+    </param><returns>
+		<see cref="T:MapQuest.Features.IFeatureList" /> 全体内で <paramref name="value" /> 
+		が見つかった場合は、最初に見つかった位置の 0 から始まるインデックス番号。
+
+		それ以外の場合は -1。
+
+    </returns><remarks>
+		詳細については 
+		<see cref="!:IList.IndexOf" /> 
+		を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureList.IndexOf(System.String)">
+            <summary>
+            IFeatureList から id を持つ Feature のインデクスを返します。
+            </summary>
+            <param name="id">Feature の id。</param>
+            <returns>Feature の id に該当する IFeatureList のインデクス。存在しない場合は -1。</returns>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureList.Insert(System.Int32,MapQuest.Features.Feature)">
+            <summary>
+		<see cref="T:MapQuest.Features.IFeatureList" /> 
+		内の指定したインデックスの位置に地物を挿入します。
+
+    </summary><param name="index">
+		<paramref name="value" /> を挿入する位置の、0 から始まるインデックス番号。
+
+    </param><param name="value">
+		挿入する <see cref="T:MapQuest.Features.Feature" /> 。
+
+		値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+
+    </param><exception cref="T:System.ArgumentOutOfRangeException">
+		<para>
+			<paramref name="index" /> が 0 未満です。
+
+		</para>
+		<para>または</para>
+		<para>
+			<paramref name="index" /> が <see cref="!:Count" /> より大きい値です。
+
+		</para>
+	</exception><exception cref="T:System.NotSupportedException">
+		<para>
+			<see cref="T:MapQuest.Features.IFeatureList" /> が読み取り専用です。
+
+		</para>
+		<para>または</para>
+		<para>
+			<see cref="T:MapQuest.Features.IFeatureList" /> が固定サイズです。
+
+		</para>
+	</exception><remarks>
+		詳細については 
+		<see cref="!:IList.Insert" /> 
+		を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureList.Remove(MapQuest.Features.Feature)">
+            <summary>
+		<see cref="T:MapQuest.Features.IFeatureList" /> 
+		内から指定された <see cref="T:MapQuest.Features.Feature" /> オブジェクトを削除します。
+
+    </summary><param name="value">
+		<see cref="T:MapQuest.Features.IFeatureList" /> から削除する <see cref="T:MapQuest.Features.Feature" /> 。
+
+		値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。
+
+    </param><exception cref="T:System.NotSupportedException">
+		<para>
+			<see cref="T:MapQuest.Features.IFeatureList" /> が読み取り専用です。
+
+		</para>
+		<para>または</para>
+		<para>
+			<see cref="T:MapQuest.Features.IFeatureList" /> が固定サイズです。
+
+		</para>
+	</exception><remarks>
+		詳細については 
+		<see cref="!:IList.Remove" /> 
+		を参照してください。
+
+    </remarks>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureList.RemoveAt(System.Int32)">
+            <summary>
+		<see cref="T:MapQuest.Features.IFeatureList" /> 
+		の指定したインデックスにある地物を削除します。
+
+    </summary><param name="index">
+		削除する地物の、0 から始まるインデックス番号。
+
+    </param><exception cref="T:System.ArgumentOutOfRangeException">
+		<para>
+			<paramref name="index" /> が 0 未満です。
+
+		</para>
+		<para>または</para>
+		<para>
+			<paramref name="index" /> が <see cref="!:Count" /> 以上です。
+
+		</para>
+	</exception><exception cref="T:System.NotSupportedException">
+		<para>
+			<see cref="T:MapQuest.Features.IFeatureList" /> が読み取り専用です。
+
+		</para>
+		<para>または</para>
+		<para>
+			<see cref="T:MapQuest.Features.IFeatureList" /> が固定サイズです。
+
+		</para>
+	</exception><remarks>
+		詳細については 
+		<see cref="!:IList.RemoveAt" /> 
+		を参照してください。
+
+    </remarks>
+        </member>
+        <member name="T:MapQuest.Features.IFeatureProperty">
+            <summary> 
+            the interface describes a property entry of a feature
+            </summary>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureProperty.Name">
+            <summary> returns the name of the property</summary>
+            <summary> sets the name of the property</summary>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureProperty.Value">
+            <summary> returns the value of the property</summary>
+            <summary> sets the value of the property</summary>
+        </member>
+        <member name="T:MapQuest.Features.IFeatureType">
+            <summary> 
+            <see cref="T:MapQuest.Features.IFeatureType"/> インターフェースは、<see cref="T:MapQuest.Features.IFeature"/> のタイプの詳細を提供します。
+            </summary>
+            <remarks>
+            <see cref="T:MapQuest.Features.IFeature"/> は <see cref="T:MapQuest.Features.IFeatureType"/> を必要とします。
+            </remarks>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureType.Parents">
+            <summary>
+            親となる <see cref="T:MapQuest.Features.IFeatureType"/> の配列を返します。
+            </summary>
+            <value>
+            親となる <see cref="T:MapQuest.Features.IFeatureType"/> の配列。親が存在しない場合は null 。
+            読み取り専用です。
+            </value>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureType.Children">
+            <summary>
+            子となる <see cref="T:MapQuest.Features.IFeatureType"/> の配列を返します。
+            </summary>
+            <value>
+            子となる <see cref="T:MapQuest.Features.IFeatureType"/> の配列。子が存在しない場合は null 。
+            読み取り専用です。
+            </value>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureType.Name">
+            <summary>
+            この <see cref="T:MapQuest.Features.FeatureType"/> の名称を返します。
+            </summary>
+            <value>
+            <see cref="T:MapQuest.Features.FeatureType"/> の名称。読み取り専用です。
+            </value>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureType.Properties">
+            <summary>
+            この <see cref="T:MapQuest.Features.FeatureType"/> のプロパティを取得します。
+            </summary>
+            <value>
+            <see cref="T:MapQuest.Features.FeatureType"/> のプロパティを示す <see cref="T:MapQuest.Features.IFeatureTypeProperty"/> を配列。
+            </value>
+        </member>
+        <member name="M:MapQuest.Features.IFeatureType.GetProperty(System.String)">
+            <summary>
+            指定した名称の <see cref="T:MapQuest.Features.IFeatureTypeProperty"/> を取得します。
+            </summary>
+            <param name="name">取得したい <see cref="T:MapQuest.Features.IFeatureTypeProperty"/> の名称。</param>
+            <returns>指定した名称の <see cref="T:MapQuest.Features.IFeatureTypeProperty"/> 。</returns>
+        </member>
+        <member name="T:MapQuest.Features.IFeatureTypeProperty">
+            <summary> 
+            the interface describes a property entry of a feature type. the
+            name of the property must be equal to the name of the corresponding
+            feature property.
+            </summary>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureTypeProperty.Name">
+            <summary> returns the name of the property</summary>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureTypeProperty.Type">
+            <summary> 
+            returns the name of the data type of the property
+            </summary>
+        </member>
+        <member name="P:MapQuest.Features.IFeatureTypeProperty.IsNullable">
+            <summary> 
+            returns true if the property value is allowed to be null
+            </summary>
+        </member>
+        <member name="T:MapQuest.Features.SpatialIndexers.HyperBox">
+            <summary> 
+            A HyperBox in the n-dimensional space. It is represented 
+            by two points of n dimensions each.
+            </summary>
+        </member>
+        <member name="T:MapQuest.Features.SpatialIndexers.HyperPoint">
+            <summary> 
+            A point in the n-dimensional space. All dimensions are 
+            stored in an array of double precision. 
+            </summary>
+        </member>
+        <member name="T:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection">
+            <summary>
+            Summary description for IndexedFeatureCollection.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor">
+            <overloads>
+            Initializes a new instance of the <see cref="T:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection"/> class.
+            </overloads>
+            <summary>
+            Initializes a new instance of the <see cref="T:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection"/> class
+            that is empty and has the default initial capacity.
+            </summary>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.#ctor"/> for details.</remarks>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection"/> class
+            that is empty and has the specified initial capacity.
+            </summary>
+            <param name="capacity">The number of elements that the new
+            <see cref="T:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection"/> is initially capable of storing.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            <paramref name="capacity"/> is less than zero.</exception>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.#ctor(System.Int32)"/> for details.</remarks>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.FeatureCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection"/> class
+            that contains elements copied from the specified collection and
+            that has the same initial capacity as the number of elements copied.
+            </summary>
+            <param name="collection">The <see cref="T:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection"/>
+            whose elements are copied to the new collection.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="collection"/> is a null reference.</exception>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.#ctor(System.Collections.ICollection)"/> for details.</remarks>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.Feature[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection"/> class
+            that contains elements copied from the specified <see cref="T:MapQuest.Features.Feature"/>
+            array and that has the same initial capacity as the number of elements copied.
+            </summary>
+            <param name="array">An <see cref="T:System.Array"/> of <see cref="T:MapQuest.Features.Feature"/>
+            elements that are copied to the new collection.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="array"/> is a null reference.</exception>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.#ctor(System.Collections.ICollection)"/> for details.</remarks>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.FeatureSchema)">
+            <overloads>
+            Initializes a new instance of the <see cref="T:MapQuest.Features.FeatureCollection"/> class.
+            </overloads>
+            <summary>
+            Initializes a new instance of the <see cref="T:MapQuest.Features.FeatureCollection"/> class
+            that is empty and has the default initial capacity.
+            </summary>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.#ctor"/> for details.</remarks>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(System.Int32,MapQuest.Features.FeatureSchema)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MapQuest.Features.FeatureCollection"/> class
+            that is empty and has the specified initial capacity.
+            </summary>
+            <param name="capacity">The number of elements that the new
+            <see cref="T:MapQuest.Features.FeatureCollection"/> is initially capable of storing.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            <paramref name="capacity"/> is less than zero.</exception>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.#ctor(System.Int32)"/> for details.</remarks>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.IndexedFeatureCollection.#ctor(MapQuest.Features.Feature[],MapQuest.Features.FeatureSchema)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MapQuest.Features.FeatureCollection"/> class
+            that contains elements copied from the specified <see cref="T:MapQuest.Features.Feature"/>
+            array and that has the same initial capacity as the number of elements copied.
+            </summary>
+            <param name="array">An <see cref="T:System.Array"/> of <see cref="T:MapQuest.Features.Feature"/>
+            elements that are copied to the new collection.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="array"/> is a null reference.</exception>
+            <remarks>Please refer to <see cref="M:System.Collections.ArrayList.#ctor(System.Collections.ICollection)"/> for details.</remarks>
+        </member>
+        <member name="T:MapQuest.Features.SpatialIndexers.ISpatialIndexer">
+            <summary>
+            Summary description for ISpatialIndexer.
+            </summary>
+        </member>
+        <member name="T:MapQuest.Features.SpatialIndexers.MemoryPageFile">
+            <summary> 
+            Implements a memory page file. Holds all pages into a 
+            Hashtable with keys equal to each object's page number.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.Node.UpdateNodeBoundingBox">
+            <summary> </summary>
+        </member>
+        <member name="T:MapQuest.Features.SpatialIndexers.PageFile">
+            <summary> 
+            Abstract class for all classes implementing a storage manager 
+            for the SpatialIndexer. Every node should be stored in
+            a unique page. The root node is always stored in page 0. 
+            The storage manager should have the control
+            over the page numbers where each node should be stored. 
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.SpatialIndexers.PageFile.m_nCapacity">
+            <summary>
+            Maximum node capacity. Each node will be able to hold 
+            at most nodeCapacity entries. 
+            </summary>
+        </member>
+        <member name="F:MapQuest.Features.SpatialIndexers.PageFile.m_nDimension">
+            <summary>Dimension of data inserted into the tree. </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFile.ReadNode(System.Int32)">
+            <summary> Returns the node stored in the requested page.</summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFile.WriteNode(MapQuest.Features.SpatialIndexers.Node)">
+            <summary> 
+            Writes the node into the first available page and returns that page.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFile.DeleteNode(System.Int32)">
+            <summary> Marks a specific page as empty.</summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFile.Close">
+            <summary> 
+            Closes the pagefile and frees the underlying recourses.
+            </summary>
+        </member>
+        <member name="T:MapQuest.Features.SpatialIndexers.PageFileException">
+            <summary>
+            Summary description for PageFileException.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor">
+            <overloads>Constructors</overloads>
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String)">
+            <summary>
+            Constructor with exception message.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor with message and inner exception.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Protected constructor to de-serialize data.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.Int32,System.Object[])">
+            <summary>
+            Constructor allowing the Message property to be set through the exception ID.
+            </summary>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.Int32,System.Exception,System.Object[])">
+            <summary>
+            Constructor allowing the Message resource ID and InnerException 
+            property to be set.
+            </summary>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+            <param name="inner">Sets a reference to the InnerException.</param>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32)">
+            <summary>
+            Constructor allowing the Message property to be set through the exception ID.
+            </summary>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32,System.Exception)">
+            <summary>
+            Constructor allowing the Message resource ID and InnerException 
+            property to be set.
+            </summary>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+            <param name="inner">Sets a reference to the InnerException.</param>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32,System.Object[])">
+            <summary>
+            Constructor allowing the Message property to be set through the exception ID.
+            </summary>
+            <param name="prefix"></param>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+            <param name="args"></param>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.PageFileException.#ctor(System.String,System.Int32,System.Exception,System.Object[])">
+            <summary>
+            Constructor allowing the Message resource ID and InnerException 
+            property to be set.
+            </summary>
+            <param name="prefix"></param>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+            <param name="inner">Sets a reference to the InnerException.</param>
+            <param name="args"></param>
+        </member>
+        <member name="T:MapQuest.Features.SpatialIndexers.PersistentPageFile">
+            <summary> 
+            A page file that stores all pages into Persistent storage. 
+            It uses a random access file stream to store node data.
+            </summary>
+            <remarks>
+            The format of the page file is as follows. 
+            First, a header is writen that stores important information
+            about the SpatialIndexer. The header format is as shown below:
+            <code>
+            ...
+            </code>
+            Deleted pages are stored into a Stack. If a new entry is 
+            inserted it is placed in the last deleted page.
+            That way the page file does not grow for ever.
+            </remarks>
+        </member>
+        <member name="F:MapQuest.Features.SpatialIndexers.PersistentPageFile.file">
+            <summary>Stores node data into Persistent storage. </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Close">
+            <summary> Closes the rtree and frees the ressources.
+            @throws SpatialIndexerException if an error occures.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Comparator.#ctor(MapQuest.Features.SpatialIndexers.SpatialIndexer,MapQuest.Features.SpatialIndexers.Node,System.Double)">
+            <summary> Creates a new Comparator object. </summary>
+            <param name="node">
+            </param>
+            <param name="minDist">
+            </param>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexer.Comparator.CompareTo(System.Object)">
+            <summary> 
+            
+            </summary>
+            <param name="obj">
+            
+            </param>
+            <returns> 
+            </returns>
+        </member>
+        <member name="T:MapQuest.Features.SpatialIndexers.SpatialIndexerException">
+            <summary>  
+            The common exception thrown by problems during the R-Tree methods.
+            Thats the exception a user of the package get if errors occure. 
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexerException.#ctor">
+            <overloads>Constructors</overloads>
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexerException.#ctor(System.String)">
+            <summary>
+            Constructor with exception message.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor with message and inner exception.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Protected constructor to de-serialize data.
+            </summary>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexerException.#ctor(System.Int32,System.Object[])">
+            <summary>
+            Constructor allowing the Message property to be set through the exception ID.
+            </summary>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexerException.#ctor(System.Int32,System.Exception,System.Object[])">
+            <summary>
+            Constructor allowing the Message resource ID and InnerException 
+            property to be set.
+            </summary>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+            <param name="inner">Sets a reference to the InnerException.</param>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexerException.#ctor(System.String,System.Int32)">
+            <summary>
+            Constructor allowing the Message property to be set through the exception ID.
+            </summary>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexerException.#ctor(System.String,System.Int32,System.Exception)">
+            <summary>
+            Constructor allowing the Message resource ID and InnerException 
+            property to be set.
+            </summary>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+            <param name="inner">Sets a reference to the InnerException.</param>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexerException.#ctor(System.String,System.Int32,System.Object[])">
+            <summary>
+            Constructor allowing the Message property to be set through the exception ID.
+            </summary>
+            <param name="prefix"></param>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+            <param name="args"></param>
+        </member>
+        <member name="M:MapQuest.Features.SpatialIndexers.SpatialIndexerException.#ctor(System.String,System.Int32,System.Exception,System.Object[])">
+            <summary>
+            Constructor allowing the Message resource ID and InnerException 
+            property to be set.
+            </summary>
+            <param name="prefix"></param>
+            <param name="exceptionID">
+            A number identifying the message of the exception in resource file.
+            </param>
+            <param name="inner">Sets a reference to the InnerException.</param>
+            <param name="args"></param>
+        </member>
+        <member name="T:MapQuest.Features.UnitUtil">
+            <summary>
+             単位に関する汎用的な関数を格納するクラスです。
+             メンバは、すべて static なメソッドで構成されます。
+            </summary>
+            <devdoc>
+             このクラスは本来このパッケージにあるべきではないのかもしれません。
+             しかし、良く使う「StyleUnit→IUnitの変換」を共通化すべきであり、
+             その処理は StyleUnitType が所属する Styles と、
+             IUnit が存在する CoodinateSystems の両者のパッケージを知っている必要があります。
+             Core などは、両パッケージを知らないのでふさわしくありません。
+             また、この処理をよく使うであろう FeatureProviders が知っているパッケージに
+             所属しなければなりません。
+             これらの条件をみたすパッケージとして、この Features にこのクラスを配置しました。
+            </devdoc>
+            <Author date="2007-04-25">H.Okuyama - 新規作成。</Author>
+        </member>
+        <member name="M:MapQuest.Features.UnitUtil.StyleUnitTypeToUnit(MapQuest.Styles.StyleUnitType)">
+            <summary>
+            <see cref="T:MapQuest.Styles.StyleUnitType"/> を <see cref="T:MapQuest.CoordinateSystems.IUnit"/> に変換します。
+            <paramref name="unitType"/>がPixelの場合はDPI値を96とした場合の
+            <see cref="T:MapQuest.CoordinateSystems.LinearUnit"/> に変換します。
+            </summary>
+            <param name="unitType">変換する <see cref="T:MapQuest.Styles.StyleUnitType"/> 。</param>
+            <returns>
+             変換された <see cref="T:MapQuest.CoordinateSystems.IUnit"/> 。
+             <paramref name="unitType"/> に対応する <see cref="T:MapQuest.CoordinateSystems.IUnit"/> 
+             が存在しない場合 <see langword="null"/> を返します。
+            </returns>
+        </member>
+        <member name="M:MapQuest.Features.UnitUtil.GetStyleUnitType(MapQuest.CoordinateSystems.ICoordinateSystem)">
+            <summary>
+            座標系の単位を取得
+            ※緯度経度系の座標系の場合Noneが返されます
+            </summary>
+            <param name="cs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MapQuest.Features.UnitUtil.GetStyleUnitType(System.Double)">
+            <summary>
+            メートル換算した値から単位を取得
+            </summary>
+            <param name="metersPerUnit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MapQuest.Features.UnitUtil.ConvertFeatureSizeToTarget(MapQuest.Features.Feature,MapQuest.CoordinateSystems.ICoordinateSystem,MapQuest.CoordinateSystems.ICoordinateSystem)">
+            <summary>
+            Featureのジオメトリがテキスト、またはポイントの場合にtargetCSの座標系の単位にサイズを変換する
+            </summary>
+            <param name="feature">サイズ変換を行う<see cref="T:MapQuest.Features.Feature"/></param>
+            <param name="sourceCS">変換元座標系</param>
+            <param name="targetCS">変換先座標系</param>
+        </member>
+    </members>
+</doc>

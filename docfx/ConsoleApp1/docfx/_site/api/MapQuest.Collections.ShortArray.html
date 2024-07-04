@@ -1,0 +1,1335 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ShortArray | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ShortArray | mysite ">
+      
+      <meta name="description" content="タイプセーフである  の配列を定義します。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Collections.ShortArray">
+
+
+
+  <h1 id="MapQuest_Collections_ShortArray" data-uid="MapQuest.Collections.ShortArray" class="text-break">
+Class ShortArray  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Collections.html">Collections</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>タイプセーフである <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Short</a> の配列を定義します。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ShortArray : ICloneable, IEnumerable&lt;short&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ShortArray</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Collections_ShortArray__ctor_" data-uid="MapQuest.Collections.ShortArray.#ctor*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray__ctor" data-uid="MapQuest.Collections.ShortArray.#ctor">
+  ShortArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>空で、デフォルトの初期量を備えた、 <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShortArray()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray__ctor_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor">System.Collections.ArrayList()</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_ShortArray__ctor_" data-uid="MapQuest.Collections.ShortArray.#ctor*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray__ctor_MapQuest_Collections_ShortArray_" data-uid="MapQuest.Collections.ShortArray.#ctor(MapQuest.Collections.ShortArray)">
+  ShortArray(ShortArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> からコピーした <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> を格納し、
+コピーされる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> の数と同じ初期量を備えた、
+<a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShortArray(ShortArray c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a></dt>
+    <dd><p>新しい配列に要素が追加された <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray__ctor_MapQuest_Collections_ShortArray__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-collections-icollection)">System.Collections.ArrayList(ICollection)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">c</code> が
+null 参照 (Visual Basic では Nothing) です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_ShortArray__ctor_" data-uid="MapQuest.Collections.ShortArray.#ctor*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray__ctor_System_Int16___" data-uid="MapQuest.Collections.ShortArray.#ctor(System.Int16[])">
+  ShortArray(short[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> の配列からコピーした <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> を格納し、</p>
+<p>コピーされる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> の数と同じ初期量を備えた、
+<a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShortArray(short[] a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd><p>新しい配列に要素が追加された <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray__ctor_System_Int16____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-collections-icollection)">System.Collections.ArrayList(ICollection)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">c</code> が
+null 参照 (Visual Basic では Nothing) です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_ShortArray__ctor_" data-uid="MapQuest.Collections.ShortArray.#ctor*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray__ctor_System_Int32_" data-uid="MapQuest.Collections.ShortArray.#ctor(System.Int32)">
+  ShortArray(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>空で、指定した初期量を備えた、 <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShortArray(int capacity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>初期状態の新しい配列に格納できる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray__ctor_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-int32)">System.Collections.ArrayList(Int32)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">capacity</code> が 0 未満です。</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Collections_ShortArray_Capacity_" data-uid="MapQuest.Collections.ShortArray.Capacity*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_Capacity" data-uid="MapQuest.Collections.ShortArray.Capacity">
+  Capacity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+に格納できる要素の数を取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Capacity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+に格納できる要素の数。</p>
+<pre><code>      0 が指定された場合は規定値を設定します。
+
+     現在設定されている数より小さい場合は例外を発行します。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_Capacity_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.capacity">System.Collections.ArrayList.Capacity</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html#MapQuest_Collections_ShortArray_Capacity">Capacity</a> が <a class="xref" href="MapQuest.Collections.ShortArray.html#MapQuest_Collections_ShortArray_Count">Count</a>
+より小さい値に設定されています。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_ShortArray_Count_" data-uid="MapQuest.Collections.ShortArray.Count*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_Count" data-uid="MapQuest.Collections.ShortArray.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+に格納されている <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> の数を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+に格納されている要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_Count_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.count">System.Collections.ArrayList.Count</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_ShortArray_IsFixedSize_" data-uid="MapQuest.Collections.ShortArray.IsFixedSize*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_IsFixedSize" data-uid="MapQuest.Collections.ShortArray.IsFixedSize">
+  IsFixedSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+が固定サイズかどうかを示す値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFixedSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>現在の実装では必ず false です。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_IsFixedSize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isfixedsize">System.Collections.ArrayList.IsFixedSize</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_ShortArray_IsReadOnly_" data-uid="MapQuest.Collections.ShortArray.IsReadOnly*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_IsReadOnly" data-uid="MapQuest.Collections.ShortArray.IsReadOnly">
+  IsReadOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+が読み取り専用かどうかを示す値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>現在の実装では必ず false です。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_IsReadOnly_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isreadonly">System.Collections.ArrayList.IsReadOnly</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_ShortArray_IsSynchronized_" data-uid="MapQuest.Collections.ShortArray.IsSynchronized*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_IsSynchronized" data-uid="MapQuest.Collections.ShortArray.IsSynchronized">
+  IsSynchronized
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+へのアクセスが同期されている (スレッド セーフである) かどうかを示す値を取得します。</p>
+<pre><code>     &lt;p&gt;&lt;!-- Non Support 2005/01/20 --&gt;
+     	このプロパティは、現在サポートしていません。
+
+     &lt;/p&gt;
+</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSynchronized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+へのアクセスが同期されている (スレッド セーフである) 場合は true 。</p>
+<pre><code>     それ以外の場合は false 。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_IsSynchronized_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.issynchronized">System.Collections.ArrayList.IsSynchronized</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_ShortArray_Item_" data-uid="MapQuest.Collections.ShortArray.Item*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_Item_System_Int32_" data-uid="MapQuest.Collections.ShortArray.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定された <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> を取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>取得または設定する要素の、0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>指定したインデックスにある <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_Item_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">System.Collections.IList.this</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>
+  <code class="paramref">index</code> が 0 未満です。</p>
+<p>または</p>
+<p>
+  <code class="paramref">index</code> が <a class="xref" href="MapQuest.Collections.ShortArray.html#MapQuest_Collections_ShortArray_Count">Count</a> 以上です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_ShortArray_SyncRoot_" data-uid="MapQuest.Collections.ShortArray.SyncRoot*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_SyncRoot" data-uid="MapQuest.Collections.ShortArray.SyncRoot">
+  SyncRoot
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+へのアクセスを同期するために使用できるオブジェクトを取得します。</p>
+<pre><code>     &lt;p&gt;&lt;!-- Non Support 2005/01/20 --&gt;
+     	このプロパティは、現在サポートしていません。
+
+     &lt;/p&gt;
+</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object SyncRoot { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+へのアクセスを同期するために使用できるオブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_SyncRoot_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.syncroot">System.Collections.ArrayList.SyncRoot</a> を参照してください。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Collections_ShortArray_Add_" data-uid="MapQuest.Collections.ShortArray.Add*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_Add_System_Int16_" data-uid="MapQuest.Collections.ShortArray.Add(System.Int16)">
+  Add(short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+の末尾に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Add(short item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> の末尾に追加する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><code class="paramref">item</code> が追加された位置の
+<a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> インデックス。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_Add_System_Int16__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add">System.Collections.ArrayList.Add</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_ShortArray_AddRange_" data-uid="MapQuest.Collections.ShortArray.AddRange*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_AddRange_MapQuest_Collections_ShortArray_" data-uid="MapQuest.Collections.ShortArray.AddRange(MapQuest.Collections.ShortArray)">
+  AddRange(ShortArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> の要素をコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddRange(ShortArray x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a></dt>
+    <dd><p>コレクションに追加するオブジェクトを格納する
+<a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> に格納されている要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_AddRange_MapQuest_Collections_ShortArray__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange">System.Collections.ArrayList.AddRange</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">x</code> が null 参照 (Visual Basic では Nothing) です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_ShortArray_AddRange_" data-uid="MapQuest.Collections.ShortArray.AddRange*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_AddRange_System_Int16___" data-uid="MapQuest.Collections.ShortArray.AddRange(System.Int16[])">
+  AddRange(short[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> 配列の要素をコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddRange(short[] x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd><p>コレクションに追加するオブジェクトを格納する
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> 型の配列。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> に格納されている要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_AddRange_System_Int16____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange">System.Collections.ArrayList.AddRange</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">x</code> が null 参照 (Visual Basic では Nothing) です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_ShortArray_Clear_" data-uid="MapQuest.Collections.ShortArray.Clear*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_Clear" data-uid="MapQuest.Collections.ShortArray.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+からすべての <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_Clear_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear">System.Collections.ArrayList.Clear</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_ShortArray_Clone_" data-uid="MapQuest.Collections.ShortArray.Clone*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_Clone" data-uid="MapQuest.Collections.ShortArray.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> の簡易コピーを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> の簡易コピーである新しいオブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Collections_ShortArray_Contains_" data-uid="MapQuest.Collections.ShortArray.Contains*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_Contains_System_Int16_" data-uid="MapQuest.Collections.ShortArray.Contains(System.Int16)">
+  Contains(short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ある <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> が <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+内に存在するかどうかを判断します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(short item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> 内で検索される
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code class="paramref">item</code> が <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+に存在する場合は true 。それ以外の場合は false 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_Contains_System_Int16__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains">System.Collections.ArrayList.Contains</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_ShortArray_CopyTo_" data-uid="MapQuest.Collections.ShortArray.CopyTo*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_CopyTo_System_Int16___" data-uid="MapQuest.Collections.ShortArray.CopyTo(System.Int16[])">
+  CopyTo(short[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+全体を互換性のある 1 次元の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a>
+にコピーします。コピー操作は、コピー先の配列の先頭から始まります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(short[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+から要素がコピーされる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a>
+の 1 次元配列。この配列には、0 から始まるインデックス番号が必要です。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_CopyTo_System_Int16____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)">System.Collections.ArrayList.CopyTo</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">array</code> が
+null 参照 (Visual Basic では Nothing) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>
+  <code class="paramref">array</code> が多次元です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+<p>または</p>
+<p>
+         コピー元の <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> 
+         の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> 数が、コピー先の <code class="paramref">array</code> に格納できる要素の数を超えています。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_ShortArray_CopyTo_" data-uid="MapQuest.Collections.ShortArray.CopyTo*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_CopyTo_System_Int16___System_Int32_" data-uid="MapQuest.Collections.ShortArray.CopyTo(System.Int16[],System.Int32)">
+  CopyTo(short[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+全体を互換性のある 1 次元の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a>
+にコピーします。コピー操作は、コピー先の配列の指定したインデックスから始まります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(short[] array, int start)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+から要素がコピーされる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a>
+の 1 次元配列。この配列には、0 から始まるインデックス番号が必要です。</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>コピーの開始位置となる、 0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_CopyTo_System_Int16___System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)">System.Collections.ArrayList.CopyTo</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">array</code> が
+null 参照 (Visual Basic では Nothing) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">start</code>
+が 0 未満です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>
+  <code class="paramref">array</code> が多次元です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+<p>または</p>
+<p>
+  <code class="paramref">start</code> が 
+         <code class="paramref">array</code> の長さ以上です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+<p>または</p>
+<p>
+         コピー元の <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> 
+         の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> 数が、 <code class="paramref">start</code> からコピー先の 
+         <code class="paramref">array</code> の末尾までに格納できる数を超えています。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_ShortArray_GetEnumerator_" data-uid="MapQuest.Collections.ShortArray.GetEnumerator*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_GetEnumerator" data-uid="MapQuest.Collections.ShortArray.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;short&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Collections_ShortArray_IndexOf_" data-uid="MapQuest.Collections.ShortArray.IndexOf*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_IndexOf_System_Int16_" data-uid="MapQuest.Collections.ShortArray.IndexOf(System.Int16)">
+  IndexOf(short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> を検索し、
+<a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+内で最初に見つかった位置の 0 から始まるインデックスを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(short item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+内で検索される <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> 内で <code class="paramref">item</code>
+が見つかった場合は、最初に見つかった位置の 0 から始まるインデックス番号。</p>
+<pre><code>     それ以外の場合は -1。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_IndexOf_System_Int16__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)">System.Collections.ArrayList.IndexOf</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_ShortArray_Insert_" data-uid="MapQuest.Collections.ShortArray.Insert*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_Insert_System_Int32_System_Int16_" data-uid="MapQuest.Collections.ShortArray.Insert(System.Int32,System.Int16)">
+  Insert(int, short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+内の指定したインデックスの位置に要素を挿入します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, short item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><code class="paramref">item</code> を挿入する位置の、0 から始まるインデックス番号。</p>
+</dd>
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>挿入する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_Insert_System_Int32_System_Int16__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert">System.Collections.ArrayList.Insert</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>
+  <code class="paramref">index</code> が 0 未満です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+<p>または</p>
+<p>
+  <code class="paramref">index</code> が <a class="xref" href="MapQuest.Collections.ShortArray.html#MapQuest_Collections_ShortArray_Count">Count</a> より大きい値です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_ShortArray_Remove_" data-uid="MapQuest.Collections.ShortArray.Remove*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_Remove_System_Int16_" data-uid="MapQuest.Collections.ShortArray.Remove(System.Int16)">
+  Remove(short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+内から指定された <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(short item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> から削除する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_Remove_System_Int16__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove">System.Collections.ArrayList.Remove</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">item</code> が配列内に見つかりません。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_ShortArray_RemoveAt_" data-uid="MapQuest.Collections.ShortArray.RemoveAt*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_RemoveAt_System_Int32_" data-uid="MapQuest.Collections.ShortArray.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+の指定したインデックスにある <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>削除する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> の、0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_RemoveAt_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat">System.Collections.ArrayList.RemoveAt</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>
+  <code class="paramref">index</code> が 0 未満です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+<p>または</p>
+<p>
+  <code class="paramref">index</code> が <a class="xref" href="MapQuest.Collections.ShortArray.html#MapQuest_Collections_ShortArray_Count">Count</a> 以上です。
+<pre><code>     &lt;/p&gt;
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_ShortArray_ToArray_" data-uid="MapQuest.Collections.ShortArray.ToArray*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_ToArray" data-uid="MapQuest.Collections.ShortArray.ToArray">
+  ToArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> の要素を <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> の配列として取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short[] ToArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a> の要素を格納する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> 配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Collections_ShortArray_TrimToSize_" data-uid="MapQuest.Collections.ShortArray.TrimToSize*"></a>
+
+  <h3 id="MapQuest_Collections_ShortArray_TrimToSize" data-uid="MapQuest.Collections.ShortArray.TrimToSize">
+  TrimToSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>容量を <a class="xref" href="MapQuest.Collections.ShortArray.html">ShortArray</a>
+内にある実際の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">System.Int16</a> 数に設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TrimToSize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_ShortArray_TrimToSize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize">System.Collections.ArrayList.TrimToSize</a> を参照してください。</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

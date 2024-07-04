@@ -1,0 +1,554 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.IO.FileLock
+  commentId: T:MapQuest.IO.FileLock
+  id: FileLock
+  parent: MapQuest.IO
+  children:
+  - MapQuest.IO.FileLock.#ctor(System.String)
+  - MapQuest.IO.FileLock.Dispose
+  - MapQuest.IO.FileLock.Source
+  langs:
+  - csharp
+  - vb
+  name: FileLock
+  nameWithType: FileLock
+  fullName: MapQuest.IO.FileLock
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: ファイルを「ロック」する手法を提供するクラスです。
+  remarks: >-
+    このクラスは、インスタンスの生成と同時にロックファイルを生成、
+
+    破棄と同時にロックファイルを削除します。
+
+    <p></p>
+
+    このクラスを using 句で使用することにより、using 句内の処理を排他にする事ができます。
+
+    必ず using 句でのみ使用するようにしてください。
+
+    <p></p>
+
+    他のユーザーやプロセスが同じロックファイルを既に生成している場合は、インスタンスの生成時に
+
+    <xref href="MapQuest.IO.FileLockException" data-throw-if-not-resolved="false"></xref> が発生します。
+
+    <p></p>
+
+    他の理由でロックファイルが生成、または削除できなかった場合は 
+
+    <xref href="MapQuest.IO.FileLockFatalException" data-throw-if-not-resolved="false"></xref> が発生します。
+  example:
+  - >-
+    次の例は、このクラスの一般的な使用方法を示します。
+
+    <pre><code class="lang-csharp">string filename     = @"C:\Data.dat";
+
+    string lockFilename = @"C:\Data.dat.lock";
+
+
+    try
+
+    {
+    	using (IFileLock locking = new FileLock(lockFilename))
+    	{
+    	    // ↓↓↓ using 内の処理は排他制御されます。
+    		StreamWriter writer = new StreamWriter(filename);
+
+    		writer.WriteLine("My Data...");
+
+    		writer.Close();
+    		// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    	}
+    }
+
+    catch (FileLockException exp)
+
+    {
+    	Debug.WriteLine(exp.SourceFile + " は、他のユーザーによって占有されています。");
+    }</code></pre>
+  syntax:
+    content: 'public class FileLock : IFileLock, IDisposable'
+    content.vb: Public Class FileLock Implements IFileLock, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - MapQuest.IO.IFileLock
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.IO.FileLock.#ctor(System.String)
+  commentId: M:MapQuest.IO.FileLock.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: MapQuest.IO.FileLock
+  langs:
+  - csharp
+  - vb
+  name: FileLock(string)
+  nameWithType: FileLock.FileLock(string)
+  fullName: MapQuest.IO.FileLock.FileLock(string)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: ロックファイルを指定して、インスタンスを初期化します。
+  remarks: >-
+    ロックファイルを作成し、ロックを開始します。
+
+    <p></p>
+
+    既にファイルが存在しているなどの理由で、ファイルが作成出来ない場合は、
+
+    <xref href="MapQuest.IO.FileLockException" data-throw-if-not-resolved="false"></xref> をスローします。
+
+    <p></p>
+
+    それ以外の原因で、ファイルが作成出来ない場合は、
+
+    <xref href="MapQuest.IO.FileLockFatalException" data-throw-if-not-resolved="false"></xref> をスローします。
+  example: []
+  syntax:
+    content: public FileLock(string filePath)
+    parameters:
+    - id: filePath
+      type: System.String
+      description: ロックファイル名。
+    content.vb: Public Sub New(filePath As String)
+  overload: MapQuest.IO.FileLock.#ctor*
+  exceptions:
+  - type: MapQuest.IO.FileLockException
+    commentId: T:MapQuest.IO.FileLockException
+    description: >-
+      他のユーザーによって、
+                  既にファイルロック・オブジェクトが生成されています。
+  - type: MapQuest.IO.FileLockFatalException
+    commentId: T:MapQuest.IO.FileLockFatalException
+    description: >-
+      ディスク書き込み不可などの
+                  理由で、ロックファイルが生成できません。。
+  nameWithType.vb: FileLock.New(String)
+  fullName.vb: MapQuest.IO.FileLock.New(String)
+  name.vb: New(String)
+- uid: MapQuest.IO.FileLock.Dispose
+  commentId: M:MapQuest.IO.FileLock.Dispose
+  id: Dispose
+  parent: MapQuest.IO.FileLock
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: FileLock.Dispose()
+  fullName: MapQuest.IO.FileLock.Dispose()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: このインスタンスによるファイルロックを解除します。
+  remarks: ロックファイルを削除し、ロックを解除します。
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: MapQuest.IO.FileLock.Dispose*
+  exceptions:
+  - type: MapQuest.IO.FileLockFatalException
+    commentId: T:MapQuest.IO.FileLockFatalException
+    description: ロックファイルが削除できない場合に発生します。
+  implements:
+  - System.IDisposable.Dispose
+- uid: MapQuest.IO.FileLock.Source
+  commentId: P:MapQuest.IO.FileLock.Source
+  id: Source
+  parent: MapQuest.IO.FileLock
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: FileLock.Source
+  fullName: MapQuest.IO.FileLock.Source
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 現在のロックファイル名を取得します。
+  example: []
+  syntax:
+    content: public string Source { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: 現在のロックファイル名。
+    content.vb: Public ReadOnly Property Source As String
+  overload: MapQuest.IO.FileLock.Source*
+  implements:
+  - MapQuest.IO.IFileLock.Source
+references:
+- uid: MapQuest.IO.FileLockException
+  commentId: T:MapQuest.IO.FileLockException
+  parent: MapQuest.IO
+  isExternal: true
+  href: MapQuest.IO.FileLockException.html
+  name: FileLockException
+  nameWithType: FileLockException
+  fullName: MapQuest.IO.FileLockException
+- uid: MapQuest.IO.FileLockFatalException
+  commentId: T:MapQuest.IO.FileLockFatalException
+  isExternal: true
+  href: MapQuest.IO.FileLockFatalException.html
+  name: FileLockFatalException
+  nameWithType: FileLockFatalException
+  fullName: MapQuest.IO.FileLockFatalException
+- uid: MapQuest.IO
+  commentId: N:MapQuest.IO
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.IO
+  nameWithType: MapQuest.IO
+  fullName: MapQuest.IO
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.IO.IFileLock
+  commentId: T:MapQuest.IO.IFileLock
+  parent: MapQuest.IO
+  isExternal: true
+  href: MapQuest.IO.IFileLock.html
+  name: IFileLock
+  nameWithType: IFileLock
+  fullName: MapQuest.IO.IFileLock
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.IO.FileLock.#ctor*
+  commentId: Overload:MapQuest.IO.FileLock.#ctor
+  isExternal: true
+  href: MapQuest.IO.FileLock.html#MapQuest_IO_FileLock__ctor_System_String_
+  name: FileLock
+  nameWithType: FileLock.FileLock
+  fullName: MapQuest.IO.FileLock.FileLock
+  nameWithType.vb: FileLock.New
+  fullName.vb: MapQuest.IO.FileLock.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.IO.FileLock.Dispose*
+  commentId: Overload:MapQuest.IO.FileLock.Dispose
+  isExternal: true
+  href: MapQuest.IO.FileLock.html#MapQuest_IO_FileLock_Dispose
+  name: Dispose
+  nameWithType: FileLock.Dispose
+  fullName: MapQuest.IO.FileLock.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: MapQuest.IO.FileLock.Source*
+  commentId: Overload:MapQuest.IO.FileLock.Source
+  isExternal: true
+  href: MapQuest.IO.FileLock.html#MapQuest_IO_FileLock_Source
+  name: Source
+  nameWithType: FileLock.Source
+  fullName: MapQuest.IO.FileLock.Source
+- uid: MapQuest.IO.IFileLock.Source
+  commentId: P:MapQuest.IO.IFileLock.Source
+  parent: MapQuest.IO.IFileLock
+  isExternal: true
+  href: MapQuest.IO.IFileLock.html#MapQuest_IO_IFileLock_Source
+  name: Source
+  nameWithType: IFileLock.Source
+  fullName: MapQuest.IO.IFileLock.Source

@@ -1,0 +1,689 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.FeatureDataType
+  commentId: T:MapQuest.Features.FeatureDataType
+  id: FeatureDataType
+  parent: MapQuest.Features
+  children:
+  - MapQuest.Features.FeatureDataType.AnsiString
+  - MapQuest.Features.FeatureDataType.AnsiStringFixedLength
+  - MapQuest.Features.FeatureDataType.Binary
+  - MapQuest.Features.FeatureDataType.Boolean
+  - MapQuest.Features.FeatureDataType.Byte
+  - MapQuest.Features.FeatureDataType.Currency
+  - MapQuest.Features.FeatureDataType.Date
+  - MapQuest.Features.FeatureDataType.DateTime
+  - MapQuest.Features.FeatureDataType.Decimal
+  - MapQuest.Features.FeatureDataType.Double
+  - MapQuest.Features.FeatureDataType.Geometry
+  - MapQuest.Features.FeatureDataType.Guid
+  - MapQuest.Features.FeatureDataType.Image
+  - MapQuest.Features.FeatureDataType.Integer
+  - MapQuest.Features.FeatureDataType.Long
+  - MapQuest.Features.FeatureDataType.Object
+  - MapQuest.Features.FeatureDataType.SByte
+  - MapQuest.Features.FeatureDataType.Short
+  - MapQuest.Features.FeatureDataType.Single
+  - MapQuest.Features.FeatureDataType.String
+  - MapQuest.Features.FeatureDataType.StringFixedLength
+  - MapQuest.Features.FeatureDataType.Time
+  - MapQuest.Features.FeatureDataType.UInteger
+  - MapQuest.Features.FeatureDataType.ULong
+  - MapQuest.Features.FeatureDataType.UShort
+  - MapQuest.Features.FeatureDataType.Unknown
+  - MapQuest.Features.FeatureDataType.VarNumeric
+  langs:
+  - csharp
+  - vb
+  name: FeatureDataType
+  nameWithType: FeatureDataType
+  fullName: MapQuest.Features.FeatureDataType
+  type: Enum
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    データタイプのフィールド、
+
+
+    または <xref href="MapQuest.Features.FeatureType" data-throw-if-not-resolved="false"></xref> のパラメータを定義します。
+
+
+    <!--
+
+    Specifies the data type of a field, a property, or a parameter object 
+
+    of <see cref="FeatureType"/>.
+
+    -->
+  example: []
+  syntax:
+    content: 'public enum FeatureDataType : short'
+    content.vb: Public Enum FeatureDataType As Short
+- uid: MapQuest.Features.FeatureDataType.Unknown
+  commentId: F:MapQuest.Features.FeatureDataType.Unknown
+  id: Unknown
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: FeatureDataType.Unknown
+  fullName: MapQuest.Features.FeatureDataType.Unknown
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    未知のオブジェクト タイプ。
+
+
+    <!--
+
+    An unknown or unspecified object type.
+
+    -->
+  example: []
+  syntax:
+    content: Unknown = -1
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.AnsiString
+  commentId: F:MapQuest.Features.FeatureDataType.AnsiString
+  id: AnsiString
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: AnsiString
+  nameWithType: FeatureDataType.AnsiString
+  fullName: MapQuest.Features.FeatureDataType.AnsiString
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 1 から 8,000 文字の範囲内の非 Unicode 文字の可変長ストリーム。
+  example: []
+  syntax:
+    content: AnsiString = 0
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Binary
+  commentId: F:MapQuest.Features.FeatureDataType.Binary
+  id: Binary
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Binary
+  nameWithType: FeatureDataType.Binary
+  fullName: MapQuest.Features.FeatureDataType.Binary
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 1 から 8,000 バイトの範囲内のバイナリ データの可変長ストリーム。
+  example: []
+  syntax:
+    content: Binary = 1
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Byte
+  commentId: F:MapQuest.Features.FeatureDataType.Byte
+  id: Byte
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Byte
+  nameWithType: FeatureDataType.Byte
+  fullName: MapQuest.Features.FeatureDataType.Byte
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 値が 0 から 255 までの範囲内の 8 ビット符号なし整数。
+  example: []
+  syntax:
+    content: Byte = 2
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Boolean
+  commentId: F:MapQuest.Features.FeatureDataType.Boolean
+  id: Boolean
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Boolean
+  nameWithType: FeatureDataType.Boolean
+  fullName: MapQuest.Features.FeatureDataType.Boolean
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: <b>true</b> または <b>false</b> のブール値を表す単純型。
+  example: []
+  syntax:
+    content: Boolean = 3
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Currency
+  commentId: F:MapQuest.Features.FeatureDataType.Currency
+  id: Currency
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Currency
+  nameWithType: FeatureDataType.Currency
+  fullName: MapQuest.Features.FeatureDataType.Currency
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    精度が通貨単位の 1/10,000 の、-2<SUP>63</SUP> 
+
+    (-922,337,203,685,477.5808) から 2 <SUP>63</SUP> 
+
+    -1 (+922,337,203,685,477.5807) までの範囲内の通貨値。
+  example: []
+  syntax:
+    content: Currency = 4
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Date
+  commentId: F:MapQuest.Features.FeatureDataType.Date
+  id: Date
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Date
+  nameWithType: FeatureDataType.Date
+  fullName: MapQuest.Features.FeatureDataType.Date
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    1753 年 1 月 1 日から 9999 年 12 月 31 日までの範囲で、
+
+
+    精度 3.33 ミリ秒の日付と時刻のデータ。
+  example: []
+  syntax:
+    content: Date = 5
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.DateTime
+  commentId: F:MapQuest.Features.FeatureDataType.DateTime
+  id: DateTime
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: DateTime
+  nameWithType: FeatureDataType.DateTime
+  fullName: MapQuest.Features.FeatureDataType.DateTime
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    1753 年 1 月 1 日から 9999 年 12 月 31 日までの範囲で、
+
+
+    精度 3.33 ミリ秒の日付と時刻のデータ。
+  example: []
+  syntax:
+    content: DateTime = 6
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Decimal
+  commentId: F:MapQuest.Features.FeatureDataType.Decimal
+  id: Decimal
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Decimal
+  nameWithType: FeatureDataType.Decimal
+  fullName: MapQuest.Features.FeatureDataType.Decimal
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    1.0 x 10<SUP>-28</SUP> から概数 7.9 x 10<SUP>28</SUP> 
+
+    までの範囲で、有効桁数が 28 または 29 の値を表す単純型。
+  example: []
+  syntax:
+    content: Decimal = 7
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Double
+  commentId: F:MapQuest.Features.FeatureDataType.Double
+  id: Double
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Double
+  nameWithType: FeatureDataType.Double
+  fullName: MapQuest.Features.FeatureDataType.Double
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    概数 5.0 x 10<SUP>-324</SUP> から 1.7 x 10<SUP>308</SUP> 
+
+    までの範囲で、有効桁数が 15 または 16 の値を表す浮動小数点型。
+  example: []
+  syntax:
+    content: Double = 8
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Guid
+  commentId: F:MapQuest.Features.FeatureDataType.Guid
+  id: Guid
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Guid
+  nameWithType: FeatureDataType.Guid
+  fullName: MapQuest.Features.FeatureDataType.Guid
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: グローバル一意識別子 (GUID)。
+  example: []
+  syntax:
+    content: Guid = 9
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Short
+  commentId: F:MapQuest.Features.FeatureDataType.Short
+  id: Short
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Short
+  nameWithType: FeatureDataType.Short
+  fullName: MapQuest.Features.FeatureDataType.Short
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 32768 から 32767 までの値を保持する符号付き 16 ビット整数を表す整数型。
+  example: []
+  syntax:
+    content: Short = 10
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Integer
+  commentId: F:MapQuest.Features.FeatureDataType.Integer
+  id: Integer
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Integer
+  nameWithType: FeatureDataType.Integer
+  fullName: MapQuest.Features.FeatureDataType.Integer
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: -2147483648 から 2147483647 までの値を保持する符号付き 32 ビット整数を表す整数型。
+  example: []
+  syntax:
+    content: Integer = 11
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Long
+  commentId: F:MapQuest.Features.FeatureDataType.Long
+  id: Long
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Long
+  nameWithType: FeatureDataType.Long
+  fullName: MapQuest.Features.FeatureDataType.Long
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    -9223372036854775808 から 9223372036854775807 までの値を保持する
+
+    符号付き 64 ビット整数を表す整数型。
+  example: []
+  syntax:
+    content: Long = 12
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Object
+  commentId: F:MapQuest.Features.FeatureDataType.Object
+  id: Object
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Object
+  nameWithType: FeatureDataType.Object
+  fullName: MapQuest.Features.FeatureDataType.Object
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 別の <B>DbType</B> 値で明示的に表されていない参照型または値型を表す汎用型。
+  example: []
+  syntax:
+    content: Object = 13
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.SByte
+  commentId: F:MapQuest.Features.FeatureDataType.SByte
+  id: SByte
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: SByte
+  nameWithType: FeatureDataType.SByte
+  fullName: MapQuest.Features.FeatureDataType.SByte
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: -128 から 127 までの値を保持する符号付き 8 ビット整数を表す整数型。
+  example: []
+  syntax:
+    content: SByte = 14
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Single
+  commentId: F:MapQuest.Features.FeatureDataType.Single
+  id: Single
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Single
+  nameWithType: FeatureDataType.Single
+  fullName: MapQuest.Features.FeatureDataType.Single
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    概数 1.5 x 10<SUP>-45</SUP> から 3.4 x 10<SUP>38</SUP> 
+
+    までの範囲で、有効桁数が 7 の値を表す浮動小数点型。
+  example: []
+  syntax:
+    content: Single = 15
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.String
+  commentId: F:MapQuest.Features.FeatureDataType.String
+  id: String
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: FeatureDataType.String
+  fullName: MapQuest.Features.FeatureDataType.String
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: Unicode 文字列を表す型。
+  example: []
+  syntax:
+    content: String = 16
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Time
+  commentId: F:MapQuest.Features.FeatureDataType.Time
+  id: Time
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: FeatureDataType.Time
+  fullName: MapQuest.Features.FeatureDataType.Time
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: >-
+    1753 年 1 月 1 日から 9999 年 12 月 31 日までの範囲で、
+
+
+    精度 3.33 ミリ秒の日付と時刻のデータ。
+  example: []
+  syntax:
+    content: Time = 17
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.UShort
+  commentId: F:MapQuest.Features.FeatureDataType.UShort
+  id: UShort
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: UShort
+  nameWithType: FeatureDataType.UShort
+  fullName: MapQuest.Features.FeatureDataType.UShort
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 0 から 65535 までの値を保持する符号なし 16 ビット整数を表す整数型。
+  example: []
+  syntax:
+    content: UShort = 18
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.UInteger
+  commentId: F:MapQuest.Features.FeatureDataType.UInteger
+  id: UInteger
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: UInteger
+  nameWithType: FeatureDataType.UInteger
+  fullName: MapQuest.Features.FeatureDataType.UInteger
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 0 から 4294967295 までの値を保持する符号なし 32 ビット整数を表す整数型。
+  example: []
+  syntax:
+    content: UInteger = 19
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.ULong
+  commentId: F:MapQuest.Features.FeatureDataType.ULong
+  id: ULong
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: ULong
+  nameWithType: FeatureDataType.ULong
+  fullName: MapQuest.Features.FeatureDataType.ULong
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 0 から 18446744073709551615 までの値を保持する符号なし 64 ビット整数を表す整数型。
+  example: []
+  syntax:
+    content: ULong = 20
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.VarNumeric
+  commentId: F:MapQuest.Features.FeatureDataType.VarNumeric
+  id: VarNumeric
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: VarNumeric
+  nameWithType: FeatureDataType.VarNumeric
+  fullName: MapQuest.Features.FeatureDataType.VarNumeric
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 可変長数値。
+  example: []
+  syntax:
+    content: VarNumeric = 21
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.AnsiStringFixedLength
+  commentId: F:MapQuest.Features.FeatureDataType.AnsiStringFixedLength
+  id: AnsiStringFixedLength
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: AnsiStringFixedLength
+  nameWithType: FeatureDataType.AnsiStringFixedLength
+  fullName: MapQuest.Features.FeatureDataType.AnsiStringFixedLength
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: 非 Unicode 文字の固定長ストリーム。
+  example: []
+  syntax:
+    content: AnsiStringFixedLength = 22
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.StringFixedLength
+  commentId: F:MapQuest.Features.FeatureDataType.StringFixedLength
+  id: StringFixedLength
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: StringFixedLength
+  nameWithType: FeatureDataType.StringFixedLength
+  fullName: MapQuest.Features.FeatureDataType.StringFixedLength
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: Unicode 文字の固定長ストリーム。
+  example: []
+  syntax:
+    content: StringFixedLength = 23
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Geometry
+  commentId: F:MapQuest.Features.FeatureDataType.Geometry
+  id: Geometry
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Geometry
+  nameWithType: FeatureDataType.Geometry
+  fullName: MapQuest.Features.FeatureDataType.Geometry
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: <xref href="MapQuest.Topology.Geometries.Geometry" data-throw-if-not-resolved="false"></xref> オブジェクト タイプ。
+  example: []
+  syntax:
+    content: Geometry = 24
+    return:
+      type: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Features.FeatureDataType.Image
+  commentId: F:MapQuest.Features.FeatureDataType.Image
+  id: Image
+  parent: MapQuest.Features.FeatureDataType
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: FeatureDataType.Image
+  fullName: MapQuest.Features.FeatureDataType.Image
+  type: Field
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features
+  summary: イメージ オブジェクト タイプ。
+  example: []
+  syntax:
+    content: Image = 25
+    return:
+      type: MapQuest.Features.FeatureDataType
+references:
+- uid: MapQuest.Features.FeatureType
+  commentId: T:MapQuest.Features.FeatureType
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.FeatureType.html
+  name: FeatureType
+  nameWithType: FeatureType
+  fullName: MapQuest.Features.FeatureType
+- uid: MapQuest.Features
+  commentId: N:MapQuest.Features
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features
+  nameWithType: MapQuest.Features
+  fullName: MapQuest.Features
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+- uid: MapQuest.Features.FeatureDataType
+  commentId: T:MapQuest.Features.FeatureDataType
+  parent: MapQuest.Features
+  isExternal: true
+  href: MapQuest.Features.FeatureDataType.html
+  name: FeatureDataType
+  nameWithType: FeatureDataType
+  fullName: MapQuest.Features.FeatureDataType
+- uid: MapQuest.Topology.Geometries.Geometry
+  commentId: T:MapQuest.Topology.Geometries.Geometry
+  isExternal: true
+  name: Geometry
+  nameWithType: Geometry
+  fullName: MapQuest.Topology.Geometries.Geometry

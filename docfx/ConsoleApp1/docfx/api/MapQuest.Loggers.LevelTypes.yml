@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Loggers.LevelTypes
+  commentId: T:MapQuest.Loggers.LevelTypes
+  id: LevelTypes
+  parent: MapQuest.Loggers
+  children:
+  - MapQuest.Loggers.LevelTypes.Debug
+  - MapQuest.Loggers.LevelTypes.Error
+  - MapQuest.Loggers.LevelTypes.Fatal
+  - MapQuest.Loggers.LevelTypes.Info
+  - MapQuest.Loggers.LevelTypes.None
+  - MapQuest.Loggers.LevelTypes.Warn
+  langs:
+  - csharp
+  - vb
+  name: LevelTypes
+  nameWithType: LevelTypes
+  fullName: MapQuest.Loggers.LevelTypes
+  type: Enum
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Loggers
+  summary: デバッグレベルを定義します。
+  example: []
+  syntax:
+    content: 'public enum LevelTypes : short'
+    content.vb: Public Enum LevelTypes As Short
+- uid: MapQuest.Loggers.LevelTypes.Debug
+  commentId: F:MapQuest.Loggers.LevelTypes.Debug
+  id: Debug
+  parent: MapQuest.Loggers.LevelTypes
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  nameWithType: LevelTypes.Debug
+  fullName: MapQuest.Loggers.LevelTypes.Debug
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Loggers
+  syntax:
+    content: Debug = 1
+    return:
+      type: MapQuest.Loggers.LevelTypes
+- uid: MapQuest.Loggers.LevelTypes.Info
+  commentId: F:MapQuest.Loggers.LevelTypes.Info
+  id: Info
+  parent: MapQuest.Loggers.LevelTypes
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: LevelTypes.Info
+  fullName: MapQuest.Loggers.LevelTypes.Info
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Loggers
+  syntax:
+    content: Info = 2
+    return:
+      type: MapQuest.Loggers.LevelTypes
+- uid: MapQuest.Loggers.LevelTypes.Warn
+  commentId: F:MapQuest.Loggers.LevelTypes.Warn
+  id: Warn
+  parent: MapQuest.Loggers.LevelTypes
+  langs:
+  - csharp
+  - vb
+  name: Warn
+  nameWithType: LevelTypes.Warn
+  fullName: MapQuest.Loggers.LevelTypes.Warn
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Loggers
+  syntax:
+    content: Warn = 4
+    return:
+      type: MapQuest.Loggers.LevelTypes
+- uid: MapQuest.Loggers.LevelTypes.Error
+  commentId: F:MapQuest.Loggers.LevelTypes.Error
+  id: Error
+  parent: MapQuest.Loggers.LevelTypes
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: LevelTypes.Error
+  fullName: MapQuest.Loggers.LevelTypes.Error
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Loggers
+  syntax:
+    content: Error = 8
+    return:
+      type: MapQuest.Loggers.LevelTypes
+- uid: MapQuest.Loggers.LevelTypes.Fatal
+  commentId: F:MapQuest.Loggers.LevelTypes.Fatal
+  id: Fatal
+  parent: MapQuest.Loggers.LevelTypes
+  langs:
+  - csharp
+  - vb
+  name: Fatal
+  nameWithType: LevelTypes.Fatal
+  fullName: MapQuest.Loggers.LevelTypes.Fatal
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Loggers
+  syntax:
+    content: Fatal = 16
+    return:
+      type: MapQuest.Loggers.LevelTypes
+- uid: MapQuest.Loggers.LevelTypes.None
+  commentId: F:MapQuest.Loggers.LevelTypes.None
+  id: None
+  parent: MapQuest.Loggers.LevelTypes
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: LevelTypes.None
+  fullName: MapQuest.Loggers.LevelTypes.None
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Loggers
+  syntax:
+    content: None = 128
+    return:
+      type: MapQuest.Loggers.LevelTypes
+references:
+- uid: MapQuest.Loggers
+  commentId: N:MapQuest.Loggers
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Loggers
+  nameWithType: MapQuest.Loggers
+  fullName: MapQuest.Loggers
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Loggers
+    name: Loggers
+    isExternal: true
+    href: MapQuest.Loggers.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Loggers
+    name: Loggers
+    isExternal: true
+    href: MapQuest.Loggers.html
+- uid: MapQuest.Loggers.LevelTypes
+  commentId: T:MapQuest.Loggers.LevelTypes
+  parent: MapQuest.Loggers
+  isExternal: true
+  href: MapQuest.Loggers.LevelTypes.html
+  name: LevelTypes
+  nameWithType: LevelTypes
+  fullName: MapQuest.Loggers.LevelTypes

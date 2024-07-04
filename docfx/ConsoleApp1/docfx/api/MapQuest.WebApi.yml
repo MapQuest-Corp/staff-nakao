@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.WebApi
+  commentId: N:MapQuest.WebApi
+  id: MapQuest.WebApi
+  children:
+  - MapQuest.WebApi.IAuthManager
+  - MapQuest.WebApi.WebApiClient
+  - MapQuest.WebApi.WebApiResponse`1
+  langs:
+  - csharp
+  - vb
+  name: MapQuest.WebApi
+  nameWithType: MapQuest.WebApi
+  fullName: MapQuest.WebApi
+  type: Namespace
+  assemblies:
+  - MapQuest.Core
+references:
+- uid: MapQuest.WebApi.WebApiResponse`1
+  commentId: T:MapQuest.WebApi.WebApiResponse`1
+  isExternal: true
+  href: MapQuest.WebApi.WebApiResponse-1.html
+  name: WebApiResponse<T>
+  nameWithType: WebApiResponse<T>
+  fullName: MapQuest.WebApi.WebApiResponse<T>
+  nameWithType.vb: WebApiResponse(Of T)
+  fullName.vb: MapQuest.WebApi.WebApiResponse(Of T)
+  name.vb: WebApiResponse(Of T)
+  spec.csharp:
+  - uid: MapQuest.WebApi.WebApiResponse`1
+    name: WebApiResponse
+    isExternal: true
+    href: MapQuest.WebApi.WebApiResponse-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MapQuest.WebApi.WebApiResponse`1
+    name: WebApiResponse
+    isExternal: true
+    href: MapQuest.WebApi.WebApiResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MapQuest.WebApi.IAuthManager
+  commentId: T:MapQuest.WebApi.IAuthManager
+  isExternal: true
+  href: MapQuest.WebApi.IAuthManager.html
+  name: IAuthManager
+  nameWithType: IAuthManager
+  fullName: MapQuest.WebApi.IAuthManager
+- uid: MapQuest.WebApi.WebApiClient
+  commentId: T:MapQuest.WebApi.WebApiClient
+  isExternal: true
+  href: MapQuest.WebApi.WebApiClient.html
+  name: WebApiClient
+  nameWithType: WebApiClient
+  fullName: MapQuest.WebApi.WebApiClient

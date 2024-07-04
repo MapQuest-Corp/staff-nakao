@@ -1,0 +1,105 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Geocoding.IReverseGeocoder
+  commentId: T:MapQuest.Geocoding.IReverseGeocoder
+  id: IReverseGeocoder
+  parent: MapQuest.Geocoding
+  children:
+  - MapQuest.Geocoding.IReverseGeocoder.Search``1
+  langs:
+  - csharp
+  - vb
+  name: IReverseGeocoder
+  nameWithType: IReverseGeocoder
+  fullName: MapQuest.Geocoding.IReverseGeocoder
+  type: Interface
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Geocoding
+  summary: 地理的な場所の座標または範囲から住所文字列を検索するためのインターフェースです。
+  remarks: >-
+    リバースジオコーディングは、地理的な座標（緯度と経度）を人間が読み取り可能な住所に変換するプロセスです。
+
+    このインターフェースを利用することで、地点の座標からその地点の住所や地名を特定することが可能になります。
+  example: []
+  syntax:
+    content: public interface IReverseGeocoder
+    content.vb: Public Interface IReverseGeocoder
+- uid: MapQuest.Geocoding.IReverseGeocoder.Search``1
+  commentId: M:MapQuest.Geocoding.IReverseGeocoder.Search``1
+  id: Search``1
+  parent: MapQuest.Geocoding.IReverseGeocoder
+  langs:
+  - csharp
+  - vb
+  name: Search<T>()
+  nameWithType: IReverseGeocoder.Search<T>()
+  fullName: MapQuest.Geocoding.IReverseGeocoder.Search<T>()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Geocoding
+  summary: 指定した地理的な場所の座標または範囲に基づいて住所文字列を検索します。
+  remarks: >-
+    リバースジオコーディングは、地理的な座標（緯度と経度）を人間が読み取り可能な住所に変換するプロセスです。
+
+    このメソッドは、地点の座標からその地点の住所や地名を特定するために使用されます。
+  example: []
+  syntax:
+    content: T Search<T>()
+    typeParameters:
+    - id: T
+      description: 住所情報のクラス
+    return:
+      type: '{T}'
+      description: 指定した座標にマッチした住所文字列を含むオブジェクトを返します。
+    content.vb: Function Search(Of T)() As T
+  overload: MapQuest.Geocoding.IReverseGeocoder.Search*
+  nameWithType.vb: IReverseGeocoder.Search(Of T)()
+  fullName.vb: MapQuest.Geocoding.IReverseGeocoder.Search(Of T)()
+  name.vb: Search(Of T)()
+references:
+- uid: MapQuest.Geocoding
+  commentId: N:MapQuest.Geocoding
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Geocoding
+  nameWithType: MapQuest.Geocoding
+  fullName: MapQuest.Geocoding
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Geocoding
+    name: Geocoding
+    isExternal: true
+    href: MapQuest.Geocoding.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Geocoding
+    name: Geocoding
+    isExternal: true
+    href: MapQuest.Geocoding.html
+- uid: MapQuest.Geocoding.IReverseGeocoder.Search*
+  commentId: Overload:MapQuest.Geocoding.IReverseGeocoder.Search
+  isExternal: true
+  href: MapQuest.Geocoding.IReverseGeocoder.html#MapQuest_Geocoding_IReverseGeocoder_Search__1
+  name: Search
+  nameWithType: IReverseGeocoder.Search
+  fullName: MapQuest.Geocoding.IReverseGeocoder.Search
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

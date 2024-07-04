@@ -1,0 +1,1066 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.ParameterList
+  commentId: T:MapQuest.CoordinateSystems.ParameterList
+  id: ParameterList
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.ParameterList.#ctor
+  - MapQuest.CoordinateSystems.ParameterList.#ctor(System.Collections.IComparer)
+  - MapQuest.CoordinateSystems.ParameterList.GetDouble(System.String)
+  - MapQuest.CoordinateSystems.ParameterList.GetDouble(System.String,System.Double)
+  - MapQuest.CoordinateSystems.ParameterList.GetString(System.String)
+  - MapQuest.CoordinateSystems.ParameterList.GetString(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ParameterList
+  nameWithType: ParameterList
+  fullName: MapQuest.CoordinateSystems.ParameterList
+  type: Class
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    <xref href="System.Collections.IDictionary" data-throw-if-not-resolved="false"></xref> を実装したリンクリストです。
+             10 未満の項目でパフォーマンスが最適化されます。
+  remarks: >-
+    座標系に必要なパラメータは、通常、10 未満です。
+
+    そのような状況下で最も速いパフォーマンスが得られるよう、
+
+    このクラスは <xref href="System.Collections.Specialized.ListDictionary" data-throw-if-not-resolved="false"></xref> から派生して作成されています。
+  example:
+  - >-
+    このクラスの使用方法を示します。
+
+    <pre><code class="lang-csharp">using System;
+
+    using System.Collections;
+
+
+    using MapQuest.CoordinateSystems;
+
+
+    public class SamplesParameterList  
+
+    {
+
+        public static void Main()  
+        {
+            // Creates and initializes a new ParameterList.
+            ParameterList listParameters = new ParameterList();
+            listParameters.Add("Braeburn Apples", "1.49" );
+            listParameters.Add("Fuji Apples", "1.29" );
+            listParameters.Add("Gala Apples", "1.49" );
+            listParameters.Add("Golden Delicious Apples", "1.29");
+            listParameters.Add("Granny Smith Apples", "0.89");
+            listParameters.Add("Red Delicious Apples", "0.99");
+
+            // Displays the values in the ParameterList.
+            Console.WriteLine("Displays the elements using the IEnumerator:");
+            PrintKeysAndValues(listParameters);
+
+            // Copies the ParameterList to an array with DictionaryEntry elements.
+            DictionaryEntry[] myArr = new DictionaryEntry[listParameters.Count];
+            listParameters.CopyTo( myArr, 0 );
+
+            // Displays the values in the array.
+            Console.WriteLine( "Displays the elements in the array:" );
+            Console.WriteLine( "   KEY                       VALUE" );
+            for ( int i = 0; i &lt; myArr.Length; i++ )
+                Console.WriteLine("   {0,-25} {1}", myArr[i].Key, myArr[i].Value );
+            Console.WriteLine();
+
+            // Searches for a key.
+            if (listParameters.Contains("Kiwis"))
+                Console.WriteLine("The collection contains the key \"Kiwis\".");
+            else
+                Console.WriteLine("The collection does not contain the key \"Kiwis\".");
+            Console.WriteLine();
+
+            // Deletes a key.
+            listParameters.Remove("Plums");
+            Console.WriteLine("The collection contains the following elements after removing \"Plums\":" );
+            PrintKeysAndValues(listParameters);
+
+            // Clears the entire collection.
+            listParameters.Clear();
+            Console.WriteLine("The collection contains the following elements after it is cleared:" );
+            PrintKeysAndValues(listParameters);
+        }
+
+        public static void PrintKeysAndValues(IEnumerable listParameters)  
+        {
+            IEnumerator myEnumerator = listParameters.GetEnumerator();
+            Console.WriteLine("   KEY                       VALUE");
+            foreach (DictionaryEntry de in listParameters)
+                Console.WriteLine("   {0,-25} {1}", de.Key, de.Value);
+            Console.WriteLine();
+        }
+    }</code></pre>
+  syntax:
+    content: 'public class ParameterList : ListDictionary, IDictionary, ICollection, IEnumerable'
+    content.vb: Public Class ParameterList Inherits ListDictionary Implements IDictionary, ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  - System.Collections.Specialized.ListDictionary
+  implements:
+  - System.Collections.IDictionary
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Collections.Specialized.ListDictionary.Add(System.Object,System.Object)
+  - System.Collections.Specialized.ListDictionary.Clear
+  - System.Collections.Specialized.ListDictionary.Contains(System.Object)
+  - System.Collections.Specialized.ListDictionary.CopyTo(System.Array,System.Int32)
+  - System.Collections.Specialized.ListDictionary.GetEnumerator
+  - System.Collections.Specialized.ListDictionary.Remove(System.Object)
+  - System.Collections.Specialized.ListDictionary.Item(System.Object)
+  - System.Collections.Specialized.ListDictionary.Count
+  - System.Collections.Specialized.ListDictionary.Keys
+  - System.Collections.Specialized.ListDictionary.IsReadOnly
+  - System.Collections.Specialized.ListDictionary.IsFixedSize
+  - System.Collections.Specialized.ListDictionary.IsSynchronized
+  - System.Collections.Specialized.ListDictionary.SyncRoot
+  - System.Collections.Specialized.ListDictionary.Values
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.CoordinateSystems.ParameterList.#ctor
+  commentId: M:MapQuest.CoordinateSystems.ParameterList.#ctor
+  id: '#ctor'
+  parent: MapQuest.CoordinateSystems.ParameterList
+  langs:
+  - csharp
+  - vb
+  name: ParameterList()
+  nameWithType: ParameterList.ParameterList()
+  fullName: MapQuest.CoordinateSystems.ParameterList.ParameterList()
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 空の <xref href="MapQuest.CoordinateSystems.ParameterList" data-throw-if-not-resolved="false"></xref> を生成・初期化します。
+  example: []
+  syntax:
+    content: public ParameterList()
+    content.vb: Public Sub New()
+  overload: MapQuest.CoordinateSystems.ParameterList.#ctor*
+  nameWithType.vb: ParameterList.New()
+  fullName.vb: MapQuest.CoordinateSystems.ParameterList.New()
+  name.vb: New()
+- uid: MapQuest.CoordinateSystems.ParameterList.#ctor(System.Collections.IComparer)
+  commentId: M:MapQuest.CoordinateSystems.ParameterList.#ctor(System.Collections.IComparer)
+  id: '#ctor(System.Collections.IComparer)'
+  parent: MapQuest.CoordinateSystems.ParameterList
+  langs:
+  - csharp
+  - vb
+  name: ParameterList(IComparer)
+  nameWithType: ParameterList.ParameterList(IComparer)
+  fullName: MapQuest.CoordinateSystems.ParameterList.ParameterList(System.Collections.IComparer)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 指定した Comparer を持つ、空の <xref href="MapQuest.CoordinateSystems.ParameterList" data-throw-if-not-resolved="false"></xref> を生成・初期化します。
+  example: []
+  syntax:
+    content: public ParameterList(IComparer comparer)
+    parameters:
+    - id: comparer
+      type: System.Collections.IComparer
+      description: >-
+        要素の並び替えに使われる IComparer 。
+
+        <p>
+
+        または
+
+        </p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> を指定すると既定の Comparer が使用されます。
+    content.vb: Public Sub New(comparer As IComparer)
+  overload: MapQuest.CoordinateSystems.ParameterList.#ctor*
+  nameWithType.vb: ParameterList.New(IComparer)
+  fullName.vb: MapQuest.CoordinateSystems.ParameterList.New(System.Collections.IComparer)
+  name.vb: New(IComparer)
+- uid: MapQuest.CoordinateSystems.ParameterList.GetDouble(System.String,System.Double)
+  commentId: M:MapQuest.CoordinateSystems.ParameterList.GetDouble(System.String,System.Double)
+  id: GetDouble(System.String,System.Double)
+  parent: MapQuest.CoordinateSystems.ParameterList
+  langs:
+  - csharp
+  - vb
+  name: GetDouble(string, double)
+  nameWithType: ParameterList.GetDouble(string, double)
+  fullName: MapQuest.CoordinateSystems.ParameterList.GetDouble(string, double)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 指定したキーの要素の値を <xref href="System.Double" data-throw-if-not-resolved="false"></xref> 型で取得します。
+  example: []
+  syntax:
+    content: public double GetDouble(string key, double defaultValue)
+    parameters:
+    - id: key
+      type: System.String
+      description: 取得する要素のキー。
+    - id: defaultValue
+      type: System.Double
+      description: キーが存在しなかった時に返される値。
+    return:
+      type: System.Double
+      description: 指定したキーの要素を <xref href="System.Double" data-throw-if-not-resolved="false"></xref> にキャストした値。
+    content.vb: Public Function GetDouble(key As String, defaultValue As Double) As Double
+  overload: MapQuest.CoordinateSystems.ParameterList.GetDouble*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: 値を double 型に変換できませんでした。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: key が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  nameWithType.vb: ParameterList.GetDouble(String, Double)
+  fullName.vb: MapQuest.CoordinateSystems.ParameterList.GetDouble(String, Double)
+  name.vb: GetDouble(String, Double)
+- uid: MapQuest.CoordinateSystems.ParameterList.GetDouble(System.String)
+  commentId: M:MapQuest.CoordinateSystems.ParameterList.GetDouble(System.String)
+  id: GetDouble(System.String)
+  parent: MapQuest.CoordinateSystems.ParameterList
+  langs:
+  - csharp
+  - vb
+  name: GetDouble(string)
+  nameWithType: ParameterList.GetDouble(string)
+  fullName: MapQuest.CoordinateSystems.ParameterList.GetDouble(string)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 指定したキーの要素の値を <xref href="System.Double" data-throw-if-not-resolved="false"></xref> 型で取得します。
+  example: []
+  syntax:
+    content: public double GetDouble(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: 取得する要素のキー。
+    return:
+      type: System.Double
+      description: 指定したキーの要素を <xref href="System.Double" data-throw-if-not-resolved="false"></xref> にキャストした値。
+    content.vb: Public Function GetDouble(key As String) As Double
+  overload: MapQuest.CoordinateSystems.ParameterList.GetDouble*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: 値を double 型に変換できませんでした。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: key が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  nameWithType.vb: ParameterList.GetDouble(String)
+  fullName.vb: MapQuest.CoordinateSystems.ParameterList.GetDouble(String)
+  name.vb: GetDouble(String)
+- uid: MapQuest.CoordinateSystems.ParameterList.GetString(System.String,System.String)
+  commentId: M:MapQuest.CoordinateSystems.ParameterList.GetString(System.String,System.String)
+  id: GetString(System.String,System.String)
+  parent: MapQuest.CoordinateSystems.ParameterList
+  langs:
+  - csharp
+  - vb
+  name: GetString(string, string)
+  nameWithType: ParameterList.GetString(string, string)
+  fullName: MapQuest.CoordinateSystems.ParameterList.GetString(string, string)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 指定したキーの要素の値を <xref href="System.String" data-throw-if-not-resolved="false"></xref> 型で取得します。
+  example: []
+  syntax:
+    content: public string GetString(string key, string defaultValue)
+    parameters:
+    - id: key
+      type: System.String
+      description: 取得する要素のキー。
+    - id: defaultValue
+      type: System.String
+      description: キーが存在しなかった時に返される値。
+    return:
+      type: System.String
+      description: 指定したキーの要素を <xref href="System.String" data-throw-if-not-resolved="false"></xref> にキャストした値。
+    content.vb: Public Function GetString(key As String, defaultValue As String) As String
+  overload: MapQuest.CoordinateSystems.ParameterList.GetString*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: 値を string 型に変換できませんでした。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: key が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  nameWithType.vb: ParameterList.GetString(String, String)
+  fullName.vb: MapQuest.CoordinateSystems.ParameterList.GetString(String, String)
+  name.vb: GetString(String, String)
+- uid: MapQuest.CoordinateSystems.ParameterList.GetString(System.String)
+  commentId: M:MapQuest.CoordinateSystems.ParameterList.GetString(System.String)
+  id: GetString(System.String)
+  parent: MapQuest.CoordinateSystems.ParameterList
+  langs:
+  - csharp
+  - vb
+  name: GetString(string)
+  nameWithType: ParameterList.GetString(string)
+  fullName: MapQuest.CoordinateSystems.ParameterList.GetString(string)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 指定したキーの要素の値を <xref href="System.String" data-throw-if-not-resolved="false"></xref> 型で取得します。
+  example: []
+  syntax:
+    content: public string GetString(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: 取得する要素のキー。
+    return:
+      type: System.String
+      description: 指定したキーの要素を <xref href="System.String" data-throw-if-not-resolved="false"></xref> にキャストした値。
+    content.vb: Public Function GetString(key As String) As String
+  overload: MapQuest.CoordinateSystems.ParameterList.GetString*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: 値を string 型に変換できませんでした。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: key が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  nameWithType.vb: ParameterList.GetString(String)
+  fullName.vb: MapQuest.CoordinateSystems.ParameterList.GetString(String)
+  name.vb: GetString(String)
+references:
+- uid: System.Collections.IDictionary
+  commentId: T:System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: System.Collections.Specialized.ListDictionary
+  commentId: T:System.Collections.Specialized.ListDictionary
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary
+  name: ListDictionary
+  nameWithType: ListDictionary
+  fullName: System.Collections.Specialized.ListDictionary
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Collections.Specialized.ListDictionary.Add(System.Object,System.Object)
+  commentId: M:System.Collections.Specialized.ListDictionary.Add(System.Object,System.Object)
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.add
+  name: Add(object, object)
+  nameWithType: ListDictionary.Add(object, object)
+  fullName: System.Collections.Specialized.ListDictionary.Add(object, object)
+  nameWithType.vb: ListDictionary.Add(Object, Object)
+  fullName.vb: System.Collections.Specialized.ListDictionary.Add(Object, Object)
+  name.vb: Add(Object, Object)
+  spec.csharp:
+  - uid: System.Collections.Specialized.ListDictionary.Add(System.Object,System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.add
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Specialized.ListDictionary.Add(System.Object,System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.add
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Specialized.ListDictionary.Clear
+  commentId: M:System.Collections.Specialized.ListDictionary.Clear
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.clear
+  name: Clear()
+  nameWithType: ListDictionary.Clear()
+  fullName: System.Collections.Specialized.ListDictionary.Clear()
+  spec.csharp:
+  - uid: System.Collections.Specialized.ListDictionary.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Specialized.ListDictionary.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.clear
+  - name: (
+  - name: )
+- uid: System.Collections.Specialized.ListDictionary.Contains(System.Object)
+  commentId: M:System.Collections.Specialized.ListDictionary.Contains(System.Object)
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.contains
+  name: Contains(object)
+  nameWithType: ListDictionary.Contains(object)
+  fullName: System.Collections.Specialized.ListDictionary.Contains(object)
+  nameWithType.vb: ListDictionary.Contains(Object)
+  fullName.vb: System.Collections.Specialized.ListDictionary.Contains(Object)
+  name.vb: Contains(Object)
+  spec.csharp:
+  - uid: System.Collections.Specialized.ListDictionary.Contains(System.Object)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.contains
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Specialized.ListDictionary.Contains(System.Object)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.contains
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Specialized.ListDictionary.CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.Specialized.ListDictionary.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.copyto
+  name: CopyTo(Array, int)
+  nameWithType: ListDictionary.CopyTo(Array, int)
+  fullName: System.Collections.Specialized.ListDictionary.CopyTo(System.Array, int)
+  nameWithType.vb: ListDictionary.CopyTo(Array, Integer)
+  fullName.vb: System.Collections.Specialized.ListDictionary.CopyTo(System.Array, Integer)
+  name.vb: CopyTo(Array, Integer)
+  spec.csharp:
+  - uid: System.Collections.Specialized.ListDictionary.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.copyto
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Specialized.ListDictionary.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.copyto
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Specialized.ListDictionary.GetEnumerator
+  commentId: M:System.Collections.Specialized.ListDictionary.GetEnumerator
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.getenumerator
+  name: GetEnumerator()
+  nameWithType: ListDictionary.GetEnumerator()
+  fullName: System.Collections.Specialized.ListDictionary.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Specialized.ListDictionary.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Specialized.ListDictionary.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Specialized.ListDictionary.Remove(System.Object)
+  commentId: M:System.Collections.Specialized.ListDictionary.Remove(System.Object)
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.remove
+  name: Remove(object)
+  nameWithType: ListDictionary.Remove(object)
+  fullName: System.Collections.Specialized.ListDictionary.Remove(object)
+  nameWithType.vb: ListDictionary.Remove(Object)
+  fullName.vb: System.Collections.Specialized.ListDictionary.Remove(Object)
+  name.vb: Remove(Object)
+  spec.csharp:
+  - uid: System.Collections.Specialized.ListDictionary.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.remove
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Specialized.ListDictionary.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.remove
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Specialized.ListDictionary.Item(System.Object)
+  commentId: P:System.Collections.Specialized.ListDictionary.Item(System.Object)
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: this[object]
+  nameWithType: ListDictionary.this[object]
+  fullName: System.Collections.Specialized.ListDictionary.this[object]
+  nameWithType.vb: ListDictionary.this[](Object)
+  fullName.vb: System.Collections.Specialized.ListDictionary.this[](Object)
+  name.vb: this[](Object)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Specialized.ListDictionary.Item(System.Object)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.item
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Specialized.ListDictionary.Count
+  commentId: P:System.Collections.Specialized.ListDictionary.Count
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.count
+  name: Count
+  nameWithType: ListDictionary.Count
+  fullName: System.Collections.Specialized.ListDictionary.Count
+- uid: System.Collections.Specialized.ListDictionary.Keys
+  commentId: P:System.Collections.Specialized.ListDictionary.Keys
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.keys
+  name: Keys
+  nameWithType: ListDictionary.Keys
+  fullName: System.Collections.Specialized.ListDictionary.Keys
+- uid: System.Collections.Specialized.ListDictionary.IsReadOnly
+  commentId: P:System.Collections.Specialized.ListDictionary.IsReadOnly
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.isreadonly
+  name: IsReadOnly
+  nameWithType: ListDictionary.IsReadOnly
+  fullName: System.Collections.Specialized.ListDictionary.IsReadOnly
+- uid: System.Collections.Specialized.ListDictionary.IsFixedSize
+  commentId: P:System.Collections.Specialized.ListDictionary.IsFixedSize
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.isfixedsize
+  name: IsFixedSize
+  nameWithType: ListDictionary.IsFixedSize
+  fullName: System.Collections.Specialized.ListDictionary.IsFixedSize
+- uid: System.Collections.Specialized.ListDictionary.IsSynchronized
+  commentId: P:System.Collections.Specialized.ListDictionary.IsSynchronized
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.issynchronized
+  name: IsSynchronized
+  nameWithType: ListDictionary.IsSynchronized
+  fullName: System.Collections.Specialized.ListDictionary.IsSynchronized
+- uid: System.Collections.Specialized.ListDictionary.SyncRoot
+  commentId: P:System.Collections.Specialized.ListDictionary.SyncRoot
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.syncroot
+  name: SyncRoot
+  nameWithType: ListDictionary.SyncRoot
+  fullName: System.Collections.Specialized.ListDictionary.SyncRoot
+- uid: System.Collections.Specialized.ListDictionary.Values
+  commentId: P:System.Collections.Specialized.ListDictionary.Values
+  parent: System.Collections.Specialized.ListDictionary
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.listdictionary.values
+  name: Values
+  nameWithType: ListDictionary.Values
+  fullName: System.Collections.Specialized.ListDictionary.Values
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateSystems.ParameterList
+  commentId: T:MapQuest.CoordinateSystems.ParameterList
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ParameterList.html
+  name: ParameterList
+  nameWithType: ParameterList
+  fullName: MapQuest.CoordinateSystems.ParameterList
+- uid: MapQuest.CoordinateSystems.ParameterList.#ctor*
+  commentId: Overload:MapQuest.CoordinateSystems.ParameterList.#ctor
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ParameterList.html#MapQuest_CoordinateSystems_ParameterList__ctor
+  name: ParameterList
+  nameWithType: ParameterList.ParameterList
+  fullName: MapQuest.CoordinateSystems.ParameterList.ParameterList
+  nameWithType.vb: ParameterList.New
+  fullName.vb: MapQuest.CoordinateSystems.ParameterList.New
+  name.vb: New
+- uid: System.Collections.IComparer
+  commentId: T:System.Collections.IComparer
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  name: IComparer
+  nameWithType: IComparer
+  fullName: System.Collections.IComparer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.InvalidCastException
+  commentId: T:System.InvalidCastException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+  name: InvalidCastException
+  nameWithType: InvalidCastException
+  fullName: System.InvalidCastException
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: MapQuest.CoordinateSystems.ParameterList.GetDouble*
+  commentId: Overload:MapQuest.CoordinateSystems.ParameterList.GetDouble
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ParameterList.html#MapQuest_CoordinateSystems_ParameterList_GetDouble_System_String_System_Double_
+  name: GetDouble
+  nameWithType: ParameterList.GetDouble
+  fullName: MapQuest.CoordinateSystems.ParameterList.GetDouble
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.CoordinateSystems.ParameterList.GetString*
+  commentId: Overload:MapQuest.CoordinateSystems.ParameterList.GetString
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ParameterList.html#MapQuest_CoordinateSystems_ParameterList_GetString_System_String_System_String_
+  name: GetString
+  nameWithType: ParameterList.GetString
+  fullName: MapQuest.CoordinateSystems.ParameterList.GetString

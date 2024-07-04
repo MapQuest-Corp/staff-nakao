@@ -1,0 +1,774 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Info | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Info | mysite ">
+      
+      <meta name="description" content="座標系オブジェクトのメタデータに、基礎的な実装を供給する abstract クラスです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.CoordinateSystems.Info">
+
+
+
+  <h1 id="MapQuest_CoordinateSystems_Info" data-uid="MapQuest.CoordinateSystems.Info" class="text-break">
+Class Info  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.CoordinateSystems.html">CoordinateSystems</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.CoordinateSystems.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>座標系オブジェクトのメタデータに、基礎的な実装を供給する
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/abstract">abstract</a> クラスです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Info : IInfo, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Info</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.IInfo.html">IInfo</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystem.html">CoordinateSystem</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.Datum.html">Datum</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.Ellipsoid.html">Ellipsoid</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.PrimeMeridian.html">PrimeMeridian</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.Projection.html">Projection</a></div>
+      <div><a class="xref" href="MapQuest.CoordinateSystems.Unit.html">Unit</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MapQuest_CoordinateSystems_Info_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>メタデータ <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation">Abbreviation</a>, <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias">Alias</a>,
+<a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a>, <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">AuthorityCode</a>,
+<a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> , <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Remarks">Remarks</a> は、
+「OpenGIS Simple Features interfaces specifications」で定義されています。
+そのため、これらの項目は、このクラスにより保持することができます。
+仕様では、これらの項目の内容は何でなければならないかは厳密に定められていません。
+しかし、次のガイドラインが用意されています。</p>
+<ul><li><b>ICoordinateSystemAuthorityFactory</b> により座標系を作成する場合、
+<a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> は、
+ファクトリオブジェクトの生成者によって Authority 名に設定されるべきです。
+また、<a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">AuthorityCode</a> は、
+ファクトリオブジェクトの使用者によって供給されます。
+(Authority が EPSG ならば、ファクトリの開発者は、
+「EPSG」テーブルの中から対応する情報を取り出し使用する事が考えられます。)
+</li><li><b>ICoordinateSystemFactory</b> が <a class="xref" href="MapQuest.CoordinateSystems.CoordinateSystem.html">CoordinateSystem</a> 
+オブジェクトを作成する場合、
+名前はクライアントによって供給された値に設定されるべきです。
+他の項目はすべて空にすることが望ましいです。
+</li></ul>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_Info__ctor_" data-uid="MapQuest.CoordinateSystems.Info.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info__ctor" data-uid="MapQuest.CoordinateSystems.Info.#ctor">
+  Info()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Info()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Info__ctor_" data-uid="MapQuest.CoordinateSystems.Info.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info__ctor_MapQuest_CoordinateSystems_Info_" data-uid="MapQuest.CoordinateSystems.Info.#ctor(MapQuest.CoordinateSystems.Info)">
+  Info(Info)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>インスタンスを複製します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Info(Info info)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="MapQuest.CoordinateSystems.Info.html">Info</a></dt>
+    <dd><p>複製元の <a class="xref" href="MapQuest.CoordinateSystems.Info.html">Info</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Info__ctor_MapQuest_CoordinateSystems_Info__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このコンストラクタは拡張クラスが
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> インターフェースを実装するのを支援します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Info__ctor_" data-uid="MapQuest.CoordinateSystems.Info.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info__ctor_System_String_" data-uid="MapQuest.CoordinateSystems.Info.#ctor(System.String)">
+  Info(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>名称を指定して、新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Info(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>このオブジェクトの名称。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Info__ctor_" data-uid="MapQuest.CoordinateSystems.Info.#ctor*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info__ctor_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="MapQuest.CoordinateSystems.Info.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+  Info(string, string, string, string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>必要なパラメータを指定して、インスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Info(string remarks, string authority, string authorityCode, string name, string alias, string abbreviation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>remarks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>このオブジェクトの説明。</p>
+</dd>
+    <dt><code>authority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>このオブジェクトを策定した機関や団体の名称。</p>
+</dd>
+    <dt><code>authorityCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>authority によって策定された、このオブジェクトの ID 。</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>このオブジェクトの名称。</p>
+</dd>
+    <dt><code>alias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>name の別名。</p>
+</dd>
+    <dt><code>abbreviation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>name の省略名。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_Info_Abbreviation_" data-uid="MapQuest.CoordinateSystems.Info.Abbreviation*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info_Abbreviation" data-uid="MapQuest.CoordinateSystems.Info.Abbreviation">
+  Abbreviation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>このオブジェクトの省略名を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Abbreviation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> の省略名。存在しない場合は空文字を返します。読み取り専用です。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Info_Alias_" data-uid="MapQuest.CoordinateSystems.Info.Alias*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info_Alias" data-uid="MapQuest.CoordinateSystems.Info.Alias">
+  Alias
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> の別名を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Alias { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> の別名。
+<a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> に対して別の呼び方、別の名称があれば返します。
+存在しない場合は空文字を返します。読み取り専用です。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Info_Authority_" data-uid="MapQuest.CoordinateSystems.Info.Authority*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info_Authority" data-uid="MapQuest.CoordinateSystems.Info.Authority">
+  Authority
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>このオブジェクトを策定した機関や団体の名称を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Authority { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>機関や団体の名称。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Info_Authority_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> は、 <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">AuthorityCode</a>
+を策定した機関・組織・団体の名称です。
+例えば、ヨーロッパの石油調査グループである
+&quot;European Petroleum Survey Group (EPSG)&quot; では、座標系やその他の空間に
+関する定義情報をコード付けして策定しています。
+<p></p>
+例えば、「WGS84 緯度経度座標系」の EPSG コードは '4326' です。
+<p></p>
+この場合、<a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> は &quot;EPSG&quot; 、
+<a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">AuthorityCode</a> は &quot;4326&quot; になります。
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Info_AuthorityCode_" data-uid="MapQuest.CoordinateSystems.Info.AuthorityCode*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info_AuthorityCode" data-uid="MapQuest.CoordinateSystems.Info.AuthorityCode">
+  AuthorityCode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> によって策定されたこのクラスを識別する ID を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AuthorityCode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> によって策定されたこのクラスを識別する ID となる文字列。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Info_AuthorityCode_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> は、 <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">AuthorityCode</a>
+を策定した機関・組織・団体の名称です。
+例えば、ヨーロッパの石油調査グループである
+&quot;European Petroleum Survey Group (EPSG)&quot; では、座標系やその他の空間に
+関する定義情報をコード付けして策定しています。
+<p></p>
+例えば、「WGS84 緯度経度座標系」の EPSG コードは '4326' です。
+<p></p>
+この場合、<a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> は &quot;EPSG&quot; 、
+<a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">AuthorityCode</a> は &quot;4326&quot; になります。
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Info_Name_" data-uid="MapQuest.CoordinateSystems.Info.Name*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info_Name" data-uid="MapQuest.CoordinateSystems.Info.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>このオブジェクトの名称を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>このオブジェクトの名称。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Info_Remarks_" data-uid="MapQuest.CoordinateSystems.Info.Remarks*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info_Remarks" data-uid="MapQuest.CoordinateSystems.Info.Remarks">
+  Remarks
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>このオブジェクトの説明を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Remarks { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>このオブジェクトの説明。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Info_WKT_" data-uid="MapQuest.CoordinateSystems.Info.WKT*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info_WKT" data-uid="MapQuest.CoordinateSystems.Info.WKT">
+  WKT
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>このオブジェクトを <b>WKT(Well-Known Text)</b> 化した文字列を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string WKT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>このオブジェクトを <b>WKT(Well-Known Text)</b> 化した文字列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Info_XML_" data-uid="MapQuest.CoordinateSystems.Info.XML*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info_XML" data-uid="MapQuest.CoordinateSystems.Info.XML">
+  XML
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>このオブジェクトを XML 化した文字列を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string XML { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>このオブジェクトを XML 化した文字列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_CoordinateSystems_Info_Clone_" data-uid="MapQuest.CoordinateSystems.Info.Clone*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info_Clone" data-uid="MapQuest.CoordinateSystems.Info.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在のインスタンスの詳細コピーを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>複製した <a class="xref" href="MapQuest.CoordinateSystems.Info.html">Info</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Info_Equals_" data-uid="MapQuest.CoordinateSystems.Info.Equals*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info_Equals_System_Object_" data-uid="MapQuest.CoordinateSystems.Info.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>対象のインスタンスが、
+指定したオブジェクトに等しいかどうかを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>このインスタンスと比較するオブジェクト。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>o が、このインスタンスと同じ値である場合は true 。
+それ以外の場合は false 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_CoordinateSystems_Info_Equals_System_Object__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このクラスの <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_">Equals(object)</a> メソッドは、
+<a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority">Authority</a> 、 <a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode">AuthorityCode</a> 、
+<a class="xref" href="MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name">Name</a> を比較し、その全てが等しければ true を返します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_CoordinateSystems_Info_GetHashCode_" data-uid="MapQuest.CoordinateSystems.Info.GetHashCode*"></a>
+
+  <h3 id="MapQuest_CoordinateSystems_Info_GetHashCode" data-uid="MapQuest.CoordinateSystems.Info.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.CoordinateSystems.Info.html">Info</a> クラスのハッシュ コードを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.CoordinateSystems.Info.html">Info</a> クラスのハッシュ コードを指定する整数値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><span><a href="http://www.epsg.org">European Petroleum Survey Group (EPSG)</a></span></div>
+      <div><span><a href="http://www.opengis.org/docs/01-009.pdf">OpenGIS Coordinate Transformation Services</a></span></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

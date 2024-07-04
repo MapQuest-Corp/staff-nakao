@@ -1,0 +1,301 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile
+  commentId: T:MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile
+  id: EpsgParameterFile.OpenParameterFile
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.#ctor(System.Object,System.IntPtr)
+  - MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.BeginInvoke(System.String,System.String,System.AsyncCallback,System.Object)
+  - MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.EndInvoke(System.IAsyncResult)
+  - MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.Invoke(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: EpsgParameterFile.OpenParameterFile
+  nameWithType: EpsgParameterFile.OpenParameterFile
+  fullName: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile
+  type: Delegate
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    EPSG の座標変換に必要なパラメータファイルを読み込むためのデリゲートです。
+
+    指定されたメソッド名およびパラメータファイル名に対応するストリームリーダーを返す必要があります。
+  remarks: >-
+    引数には例として次のような値が渡されます。
+
+    変換メソッド名："NTv2"
+
+    ファイル名："tky2jgd.gsb"
+  example: []
+  syntax:
+    content: public delegate StreamReader EpsgParameterFile.OpenParameterFile(string methodName, string fileName)
+    parameters:
+    - id: methodName
+      type: System.String
+      description: 変換メソッド名
+    - id: fileName
+      type: System.String
+      description: パラメータファイル名
+    return:
+      type: System.IO.StreamReader
+      description: パラメータファイルのリーダー
+    content.vb: Public Delegate Function EpsgParameterFile.OpenParameterFile(methodName As String, fileName As String) As StreamReader
+- uid: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.#ctor(System.Object,System.IntPtr)
+  commentId: M:MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile
+  langs:
+  - csharp
+  - vb
+  name: OpenParameterFile(object, IntPtr)
+  nameWithType: EpsgParameterFile.OpenParameterFile.OpenParameterFile(object, IntPtr)
+  fullName: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.OpenParameterFile(object, System.IntPtr)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  syntax:
+    content: public OpenParameterFile(object @object, IntPtr method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.#ctor*
+  nameWithType.vb: EpsgParameterFile.OpenParameterFile.New(Object, IntPtr)
+  fullName.vb: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.Invoke(System.String,System.String)
+  commentId: M:MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.Invoke(System.String,System.String)
+  id: Invoke(System.String,System.String)
+  parent: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile
+  langs:
+  - csharp
+  - vb
+  name: Invoke(string, string)
+  nameWithType: EpsgParameterFile.OpenParameterFile.Invoke(string, string)
+  fullName: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.Invoke(string, string)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  syntax:
+    content: public virtual StreamReader Invoke(string methodName, string fileName)
+    parameters:
+    - id: methodName
+      type: System.String
+    - id: fileName
+      type: System.String
+    return:
+      type: System.IO.StreamReader
+    content.vb: Public Overridable Function Invoke(methodName As String, fileName As String) As StreamReader
+  overload: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.Invoke*
+  nameWithType.vb: EpsgParameterFile.OpenParameterFile.Invoke(String, String)
+  fullName.vb: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.Invoke(String, String)
+  name.vb: Invoke(String, String)
+- uid: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.BeginInvoke(System.String,System.String,System.AsyncCallback,System.Object)
+  commentId: M:MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.BeginInvoke(System.String,System.String,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.String,System.String,System.AsyncCallback,System.Object)
+  parent: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(string, string, AsyncCallback, object)
+  nameWithType: EpsgParameterFile.OpenParameterFile.BeginInvoke(string, string, AsyncCallback, object)
+  fullName: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.BeginInvoke(string, string, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(string methodName, string fileName, AsyncCallback callback, object @object)
+    parameters:
+    - id: methodName
+      type: System.String
+    - id: fileName
+      type: System.String
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(methodName As String, fileName As String, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.BeginInvoke*
+  nameWithType.vb: EpsgParameterFile.OpenParameterFile.BeginInvoke(String, String, AsyncCallback, Object)
+  fullName.vb: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.BeginInvoke(String, String, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(String, String, AsyncCallback, Object)
+- uid: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.EndInvoke(System.IAsyncResult)
+  commentId: M:MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: EpsgParameterFile.OpenParameterFile.EndInvoke(IAsyncResult)
+  fullName: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  syntax:
+    content: public virtual StreamReader EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    return:
+      type: System.IO.StreamReader
+    content.vb: Public Overridable Function EndInvoke(result As IAsyncResult) As StreamReader
+  overload: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.EndInvoke*
+references:
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.StreamReader
+  commentId: T:System.IO.StreamReader
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.streamreader
+  name: StreamReader
+  nameWithType: StreamReader
+  fullName: System.IO.StreamReader
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.#ctor*
+  commentId: Overload:MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.#ctor
+  isExternal: true
+  href: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.html#MapQuest_CoordinateSystems_EpsgParameterFile_OpenParameterFile__ctor_System_Object_System_IntPtr_
+  name: OpenParameterFile
+  nameWithType: EpsgParameterFile.OpenParameterFile.OpenParameterFile
+  fullName: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.OpenParameterFile
+  nameWithType.vb: EpsgParameterFile.OpenParameterFile.New
+  fullName.vb: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.Invoke*
+  commentId: Overload:MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.Invoke
+  isExternal: true
+  href: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.html#MapQuest_CoordinateSystems_EpsgParameterFile_OpenParameterFile_Invoke_System_String_System_String_
+  name: Invoke
+  nameWithType: EpsgParameterFile.OpenParameterFile.Invoke
+  fullName: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.Invoke
+- uid: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.BeginInvoke*
+  commentId: Overload:MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.BeginInvoke
+  isExternal: true
+  href: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.html#MapQuest_CoordinateSystems_EpsgParameterFile_OpenParameterFile_BeginInvoke_System_String_System_String_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: EpsgParameterFile.OpenParameterFile.BeginInvoke
+  fullName: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.EndInvoke*
+  commentId: Overload:MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.EndInvoke
+  isExternal: true
+  href: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.html#MapQuest_CoordinateSystems_EpsgParameterFile_OpenParameterFile_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: EpsgParameterFile.OpenParameterFile.EndInvoke
+  fullName: MapQuest.CoordinateSystems.EpsgParameterFile.OpenParameterFile.EndInvoke

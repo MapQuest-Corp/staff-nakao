@@ -1,0 +1,856 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PrecisionModel | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PrecisionModel | mysite ">
+      
+      <meta name="description" content="Geometry における  の  の仕様を定めます。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Coordinates.PrecisionModel">
+
+
+
+  <h1 id="MapQuest_Coordinates_PrecisionModel" data-uid="MapQuest.Coordinates.PrecisionModel" class="text-break">
+Class PrecisionModel  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Coordinates.html">Coordinates</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Coordinates.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><b>Geometry</b> における <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> の <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> の仕様を定めます。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PrecisionModel : IComparable, ICloneable, ISerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PrecisionModel</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MapQuest_Coordinates_PrecisionModel_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><pre><code>言いかえれば、 &lt;xref href=&quot;MapQuest.Coordinates.PrecisionModel&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は、どのような &lt;b&gt;Geometry&lt;/b&gt; のインスタンスにおいても、全ての正当なポイントのグリッドを指定します。
+</code></pre>
+<p><a class="xref" href="MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_MakePrecise_System_Double_">PrecisionModel.MakePrecise</a>メソッドは <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を高精度に切り上げます。;その精度が正確に知られています。
+</p><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> は <b>Geometry</b> において厳格であると仮定されます。
+<p>すなわち、 <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> は、 <b>Geometry</b> のために与えられた PrecisionModel に切り上げられると仮定されます。</p>
+<p>OTSは、 <b>Geometry</b> を作成する前に PrecisionModel に対して、自動的に <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を切り上げるルーチンを入力します。</p>
+<p>
+内部オペレーションはすべて、 <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> が <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> に切り上げられると仮定します。
+<p>コンストラクタメソッド(ブール型のオペレーションのような)は、常に適切な <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> への座標を計算し、切り上げます。</p>
+<p>
+現在、３つの型を PrecisionModel ではサポートしています:
+<ol><li>
+Floating[浮動小数点] - 倍精度浮動小数点を表わします。これはOTSの中で使用される初期値の <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> です。
+</li><li>
+Floating-single[単精度浮動小数点] - 単精度浮動小数点を表わします。
+</li><li>
+Fixed[固定小数点] - 小数位の定数を備えたモデルを表わします。
+<p>固定小数点モデルの小数位は、<a class="xref" href="MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_Scale">scale factor</a>によって指定されます。</p>
+</li></ol><a class="xref" href="MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_Scale">scale factor</a>は、数が切り上げされるグリッドを指定します。
+<p>入力座標は、次の方程式による固定座標へ写像されます:</p>
+<ul><li>
+MqPt.x = round( (inputPt.x * scale ) / scale
+</li><li>
+MqPt.y = round( (inputPt.y * scale ) / scale
+</li></ul>
+座標は、.NET倍精度価値として内部に表わされます。
+<p>.NETがIEEE-394浮動小数点標準を使用し、この精度は53ビットで提供されます。(したがって正確に表現可能な最大の整数は9,007,199,254,740,992です。)。</p>
+<p>
+現在、OTSメソッドは異なった <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> 間における入力ハンドラを扱いません。
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel__ctor_" data-uid="MapQuest.Coordinates.PrecisionModel.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel__ctor" data-uid="MapQuest.Coordinates.PrecisionModel.#ctor">
+  PrecisionModel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の指定がない場合、初期設定の精度では浮動小数点で <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrecisionModel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel__ctor_" data-uid="MapQuest.Coordinates.PrecisionModel.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel__ctor_MapQuest_Coordinates_PrecisionModel_" data-uid="MapQuest.Coordinates.PrecisionModel.#ctor(MapQuest.Coordinates.PrecisionModel)">
+  PrecisionModel(PrecisionModel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の既存の <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> をコピーして、 <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrecisionModel(PrecisionModel pm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pm</code> <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a></dt>
+    <dd><p>このPrecisionModelにコピーしたい既存の <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel__ctor_" data-uid="MapQuest.Coordinates.PrecisionModel.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel__ctor_MapQuest_Coordinates_PrecisionModelType_" data-uid="MapQuest.Coordinates.PrecisionModel.#ctor(MapQuest.Coordinates.PrecisionModelType)">
+  PrecisionModel(PrecisionModelType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数で指定された型で <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> クラスの新しいインスタンスを初期化します。</p>
+<p>指定された型が固定小数点の場合、初期設定では<a class="xref" href="MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_Scale">scale factor</a>は1に設定されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrecisionModel(PrecisionModelType modelType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelType</code> <a class="xref" href="MapQuest.Coordinates.PrecisionModelType.html">PrecisionModelType</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> を作成したい精度の型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel__ctor_" data-uid="MapQuest.Coordinates.PrecisionModel.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel__ctor_System_Double_" data-uid="MapQuest.Coordinates.PrecisionModel.#ctor(System.Double)">
+  PrecisionModel(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>固定小数点の小数位を指定して <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> クラスの新しいインスタンスを初期化します。</p>
+<p>固定小数点の座標は、正確な内部座標(それらは、<a class="xref" href="MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_Scale">scale factor</a>により定義されたグリッドに切り上げされる)として表わされます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrecisionModel(double scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>正確な <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を得るためにオフセットを引いた後の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> に掛ける値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel__ctor_" data-uid="MapQuest.Coordinates.PrecisionModel.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="MapQuest.Coordinates.PrecisionModel.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+  PrecisionModel(SerializationInfo, StreamingContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>シリアル化された情報から<a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a>を作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrecisionModel(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd><p>シリアル化する情報を格納するオブジェクト</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_maximumPreciseValue" data-uid="MapQuest.Coordinates.PrecisionModel.maximumPreciseValue">
+  maximumPreciseValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Double型において表現可能な最大の正確な値。</p>
+<p>IEE754によればDouble型の仮数に53ビット許可するので、値は2＾53-1と等しい。</p>
+<p>これは、ほとんどの小数点以下16桁の数字を正確に提供します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double maximumPreciseValue = 9007199254740992</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel_IsFloating_" data-uid="MapQuest.Coordinates.PrecisionModel.IsFloating*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_IsFloating" data-uid="MapQuest.Coordinates.PrecisionModel.IsFloating">
+  IsFloating
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> オブジェクトが浮動小数点をサポートしているかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsFloating { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> オブジェクトが浮動小数点をサポートしているかどうかの値</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_PrecisionModel_IsFloating_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> オブジェクトが浮動小数点をサポートしていれば<code>true</code>，そうでなければ<code>false</code>を返します。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel_MaximumSignificantDigits_" data-uid="MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_MaximumSignificantDigits" data-uid="MapQuest.Coordinates.PrecisionModel.MaximumSignificantDigits">
+  MaximumSignificantDigits
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> オブジェクトによって提供される有効数字の最大の数を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int MaximumSignificantDigits { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> オブジェクトによって提供される有効数字の最大の数</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_PrecisionModel_MaximumSignificantDigits_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> によって提供される有効数字の最大の数を返します。</p>
+<pre><code>			正確な値を印刷する必要のあるルーチンによる使用を意図しています。
+</code></pre>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel_ModelType_" data-uid="MapQuest.Coordinates.PrecisionModel.ModelType*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_ModelType" data-uid="MapQuest.Coordinates.PrecisionModel.ModelType">
+  ModelType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> オブジェクトの型を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual PrecisionModelType ModelType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.PrecisionModelType.html">PrecisionModelType</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> の型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel_Scale_" data-uid="MapQuest.Coordinates.PrecisionModel.Scale*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_Scale" data-uid="MapQuest.Coordinates.PrecisionModel.Scale">
+  Scale
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>正確な <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を得るためにオフセットを引いた後の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> に掛ける値を取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Scale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>正確な <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を得るためにオフセットを引いた後の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> に掛ける値</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_PrecisionModel_Scale_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> の型は不変であるように意図されるので、このメソッドはprivateです。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel_Clone_" data-uid="MapQuest.Coordinates.PrecisionModel.Clone*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_Clone" data-uid="MapQuest.Coordinates.PrecisionModel.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在のインスタンスの簡易コピーを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>複製された <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel_CompareTo_" data-uid="MapQuest.Coordinates.PrecisionModel.CompareTo*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_CompareTo_System_Object_" data-uid="MapQuest.Coordinates.PrecisionModel.CompareTo(System.Object)">
+  CompareTo(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数で指定されたオブジェクトと、この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> オブジェクトを比較します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CompareTo(object o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> と比較したい <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> の方が小さかった場合、負の整数を返します。</p>
+<pre><code>			同じだった場合、ゼロを返します。
+
+			引数の &lt;xref href=&quot;MapQuest.Coordinates.PrecisionModel&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; の方が大きかった場合正の整数を返します。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_PrecisionModel_CompareTo_System_Object__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> の有効桁の方が多く、より厳密に正確である場合、この <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> がより大きいということを示します。</p>
+<p>その比較は、<a class="xref" href="MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_MaximumSignificantDigits">MaximumSignificantDigits</a>を取得し、その返り値に基づいて評価されます。</p>
+<p>固定小数点モデルと浮動小数点モデルを比較する場合、この比較は厳密に正確ではありません;
+しかしながら、両方のモデルが浮動小数点モデルか固定小数点モデルのどちらかに統一された場合、この比較は正確です。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel_Equals_" data-uid="MapQuest.Coordinates.PrecisionModel.Equals*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_Equals_System_Object_" data-uid="MapQuest.Coordinates.PrecisionModel.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> とこの <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> が等しいかどうか調べます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>PrecisionModelの型と<a class="xref" href="MapQuest.Coordinates.PrecisionModel.html#MapQuest_Coordinates_PrecisionModel_Scale">scale</a>が共に等しければ<code>true</code>を、そうでなければ<code>false</code>を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel_GetHashCode_" data-uid="MapQuest.Coordinates.PrecisionModel.GetHashCode*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_GetHashCode" data-uid="MapQuest.Coordinates.PrecisionModel.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>特定の型のハッシュ関数として機能します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel_GetObjectData_" data-uid="MapQuest.Coordinates.PrecisionModel.GetObjectData*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="MapQuest.Coordinates.PrecisionModel.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+  GetObjectData(SerializationInfo, StreamingContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オブジェクトをシリアル化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd><p>シリアル化する情報を格納するオブジェクト</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel_MakePrecise_" data-uid="MapQuest.Coordinates.PrecisionModel.MakePrecise*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_MakePrecise_MapQuest_Coordinates_Coordinate_" data-uid="MapQuest.Coordinates.PrecisionModel.MakePrecise(MapQuest.Coordinates.Coordinate)">
+  MakePrecise(Coordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> を、この高精度グリッド <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> に切り上げます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MakePrecise(Coordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></dt>
+    <dd><p>切り上げる元の <a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel_MakePrecise_" data-uid="MapQuest.Coordinates.PrecisionModel.MakePrecise*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_MakePrecise_System_Double_" data-uid="MapQuest.Coordinates.PrecisionModel.MakePrecise(System.Double)">
+  MakePrecise(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>引数の数値を、この高精度グリッド <a class="xref" href="MapQuest.Coordinates.PrecisionModel.html">PrecisionModel</a> に切り上げます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double MakePrecise(double val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>切り上げる元の数値</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>切り上げた数値。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_PrecisionModel_ToString_" data-uid="MapQuest.Coordinates.PrecisionModel.ToString*"></a>
+
+  <h3 id="MapQuest_Coordinates_PrecisionModel_ToString" data-uid="MapQuest.Coordinates.PrecisionModel.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[ModelType]の形式で文字列を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_PrecisionModel_ToString_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>ModelTypeが<a class="xref" href="MapQuest.Coordinates.PrecisionModelType.html#MapQuest_Coordinates_PrecisionModelType_Fixed">Fixed</a>の場合[Fixed Scale]の形式で文字列を返します。</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

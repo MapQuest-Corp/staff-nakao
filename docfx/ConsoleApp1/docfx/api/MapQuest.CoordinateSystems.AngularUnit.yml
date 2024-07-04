@@ -1,0 +1,1371 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.AngularUnit
+  commentId: T:MapQuest.CoordinateSystems.AngularUnit
+  id: AngularUnit
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.AngularUnit.#ctor(MapQuest.CoordinateSystems.AngularUnit)
+  - MapQuest.CoordinateSystems.AngularUnit.#ctor(System.Double)
+  - MapQuest.CoordinateSystems.AngularUnit.#ctor(System.Double,System.String)
+  - MapQuest.CoordinateSystems.AngularUnit.#ctor(System.Double,System.String,System.String,System.String,System.String,System.String,System.String)
+  - MapQuest.CoordinateSystems.AngularUnit.Clone
+  - MapQuest.CoordinateSystems.AngularUnit.DegreeAdd(System.Double,System.Double)
+  - MapQuest.CoordinateSystems.AngularUnit.GetDegree(System.Double)
+  - MapQuest.CoordinateSystems.AngularUnit.GetMinute(System.Double)
+  - MapQuest.CoordinateSystems.AngularUnit.GetSecond(System.Double)
+  - MapQuest.CoordinateSystems.AngularUnit.GetTotalDegree(System.Int16,System.Int16,System.Double)
+  - MapQuest.CoordinateSystems.AngularUnit.IsLinear
+  - MapQuest.CoordinateSystems.AngularUnit.NormalizeDegree(System.Double@)
+  - MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit
+  langs:
+  - csharp
+  - vb
+  name: AngularUnit
+  nameWithType: AngularUnit
+  fullName: MapQuest.CoordinateSystems.AngularUnit
+  type: Class
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    角度の単位を表すクラスです。
+
+    例えば、「度(Degree)」や「ラジアン(Radian)」などです。
+  example: []
+  syntax:
+    content: 'public class AngularUnit : Unit, IAngularUnit, IUnit, IInfo, ICloneable'
+    content.vb: Public Class AngularUnit Inherits Unit Implements IAngularUnit, IUnit, IInfo, ICloneable
+  inheritance:
+  - System.Object
+  - MapQuest.CoordinateSystems.Info
+  - MapQuest.CoordinateSystems.Unit
+  implements:
+  - MapQuest.CoordinateSystems.IAngularUnit
+  - MapQuest.CoordinateSystems.IUnit
+  - MapQuest.CoordinateSystems.IInfo
+  - System.ICloneable
+  inheritedMembers:
+  - MapQuest.CoordinateSystems.Unit.Millimetre
+  - MapQuest.CoordinateSystems.Unit.Centimetre
+  - MapQuest.CoordinateSystems.Unit.Metre
+  - MapQuest.CoordinateSystems.Unit.Kilometre
+  - MapQuest.CoordinateSystems.Unit.Inch
+  - MapQuest.CoordinateSystems.Unit.Point
+  - MapQuest.CoordinateSystems.Unit.Radian
+  - MapQuest.CoordinateSystems.Unit.Degree
+  - MapQuest.CoordinateSystems.Unit.Minute
+  - MapQuest.CoordinateSystems.Unit.Second
+  - MapQuest.CoordinateSystems.Unit.Millisecond
+  - MapQuest.CoordinateSystems.Unit.Gon
+  - MapQuest.CoordinateSystems.Unit.Grad
+  - MapQuest.CoordinateSystems.Unit.Pixel
+  - MapQuest.CoordinateSystems.Info.GetHashCode
+  - MapQuest.CoordinateSystems.Info.Equals(System.Object)
+  - MapQuest.CoordinateSystems.Info.Remarks
+  - MapQuest.CoordinateSystems.Info.AuthorityCode
+  - MapQuest.CoordinateSystems.Info.Authority
+  - MapQuest.CoordinateSystems.Info.Name
+  - MapQuest.CoordinateSystems.Info.Alias
+  - MapQuest.CoordinateSystems.Info.Abbreviation
+  - MapQuest.CoordinateSystems.Info.WKT
+  - MapQuest.CoordinateSystems.Info.XML
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.CoordinateSystems.AngularUnit.#ctor(System.Double)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.#ctor(System.Double)
+  id: '#ctor(System.Double)'
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: AngularUnit(double)
+  nameWithType: AngularUnit.AngularUnit(double)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.AngularUnit(double)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    <xref href="MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit" data-throw-if-not-resolved="false"></xref> を指定して、
+            新しいインスタンスを初期化します。
+  remarks: radiansPerUnit には 0 を指定する事はできません。
+  example: []
+  syntax:
+    content: public AngularUnit(double radiansPerUnit)
+    parameters:
+    - id: radiansPerUnit
+      type: System.Double
+      description: <xref href="MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit" data-throw-if-not-resolved="false"></xref> の値。
+    content.vb: Public Sub New(radiansPerUnit As Double)
+  overload: MapQuest.CoordinateSystems.AngularUnit.#ctor*
+  exceptions:
+  - type: MapQuest.CoordinateSystems.CoordinateSystemException
+    commentId: T:MapQuest.CoordinateSystems.CoordinateSystemException
+    description: radiansPerUnit に 0 を指定しました。
+  nameWithType.vb: AngularUnit.New(Double)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.New(Double)
+  name.vb: New(Double)
+- uid: MapQuest.CoordinateSystems.AngularUnit.#ctor(System.Double,System.String)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.#ctor(System.Double,System.String)
+  id: '#ctor(System.Double,System.String)'
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: AngularUnit(double, string)
+  nameWithType: AngularUnit.AngularUnit(double, string)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.AngularUnit(double, string)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    <xref href="MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit" data-throw-if-not-resolved="false"></xref> と単位の名称を指定して、
+            新しいインスタンスを初期化します。
+  remarks: >-
+    <param name="name" />
+            radiansPerUnit には 0 を指定する事はできません。
+  example: []
+  syntax:
+    content: public AngularUnit(double radiansPerUnit, string name)
+    parameters:
+    - id: radiansPerUnit
+      type: System.Double
+      description: <xref href="MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit" data-throw-if-not-resolved="false"></xref> の値。
+    - id: name
+      type: System.String
+      description: 単位の名称。
+    content.vb: Public Sub New(radiansPerUnit As Double, name As String)
+  overload: MapQuest.CoordinateSystems.AngularUnit.#ctor*
+  exceptions:
+  - type: MapQuest.CoordinateSystems.CoordinateSystemException
+    commentId: T:MapQuest.CoordinateSystems.CoordinateSystemException
+    description: radiansPerUnit に 0 を指定しました。
+  nameWithType.vb: AngularUnit.New(Double, String)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.New(Double, String)
+  name.vb: New(Double, String)
+- uid: MapQuest.CoordinateSystems.AngularUnit.#ctor(System.Double,System.String,System.String,System.String,System.String,System.String,System.String)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.#ctor(System.Double,System.String,System.String,System.String,System.String,System.String,System.String)
+  id: '#ctor(System.Double,System.String,System.String,System.String,System.String,System.String,System.String)'
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: AngularUnit(double, string, string, string, string, string, string)
+  nameWithType: AngularUnit.AngularUnit(double, string, string, string, string, string, string)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.AngularUnit(double, string, string, string, string, string, string)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 必要なパラメータを指定して、新しいインスタンスを初期化します。
+  remarks: radiansPerUnit には 0 を指定する事はできません。
+  example: []
+  syntax:
+    content: public AngularUnit(double radiansPerUnit, string remarks, string authority, string authorityCode, string name, string alias, string abbreviation)
+    parameters:
+    - id: radiansPerUnit
+      type: System.Double
+      description: <xref href="MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit" data-throw-if-not-resolved="false"></xref> の値。
+    - id: remarks
+      type: System.String
+      description: 単位の説明。
+    - id: authority
+      type: System.String
+      description: 単位の策定元団体・機関名。
+    - id: authorityCode
+      type: System.String
+      description: authority が策定したこの単位の ID 。
+    - id: name
+      type: System.String
+      description: 単位の名称。
+    - id: alias
+      type: System.String
+      description: 単位の別名。
+    - id: abbreviation
+      type: System.String
+      description: 単位の省略名。
+    content.vb: Public Sub New(radiansPerUnit As Double, remarks As String, authority As String, authorityCode As String, name As String, [alias] As String, abbreviation As String)
+  overload: MapQuest.CoordinateSystems.AngularUnit.#ctor*
+  exceptions:
+  - type: MapQuest.CoordinateSystems.CoordinateSystemException
+    commentId: T:MapQuest.CoordinateSystems.CoordinateSystemException
+    description: radiansPerUnit に 0 を指定しました。
+  nameWithType.vb: AngularUnit.New(Double, String, String, String, String, String, String)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.New(Double, String, String, String, String, String, String)
+  name.vb: New(Double, String, String, String, String, String, String)
+- uid: MapQuest.CoordinateSystems.AngularUnit.#ctor(MapQuest.CoordinateSystems.AngularUnit)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.#ctor(MapQuest.CoordinateSystems.AngularUnit)
+  id: '#ctor(MapQuest.CoordinateSystems.AngularUnit)'
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: AngularUnit(AngularUnit)
+  nameWithType: AngularUnit.AngularUnit(AngularUnit)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.AngularUnit(MapQuest.CoordinateSystems.AngularUnit)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在のインスタンスの詳細コピーを生成します。
+  example: []
+  syntax:
+    content: public AngularUnit(AngularUnit angularUnit)
+    parameters:
+    - id: angularUnit
+      type: MapQuest.CoordinateSystems.AngularUnit
+      description: 複製元の <xref href="MapQuest.CoordinateSystems.AngularUnit" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Sub New(angularUnit As AngularUnit)
+  overload: MapQuest.CoordinateSystems.AngularUnit.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: angularUnit が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  nameWithType.vb: AngularUnit.New(AngularUnit)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.New(MapQuest.CoordinateSystems.AngularUnit)
+  name.vb: New(AngularUnit)
+- uid: MapQuest.CoordinateSystems.AngularUnit.GetDegree(System.Double)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.GetDegree(System.Double)
+  id: GetDegree(System.Double)
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: GetDegree(double)
+  nameWithType: AngularUnit.GetDegree(double)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.GetDegree(double)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    「トータル度」から「度」の値を抽出します。
+
+    <xref href="MapQuest.CoordinateSystems.AngularUnit.GetMinute(System.Double)" data-throw-if-not-resolved="false"></xref><xref href="MapQuest.CoordinateSystems.AngularUnit.GetSecond(System.Double)" data-throw-if-not-resolved="false"></xref>
+  remarks: >-
+    「トータル度」とは、度分秒の値を全て「度」の少数点形式で表したものを指します。<br />
+
+    例えば、136度30分00秒は、トータル度では、「136.5度」と表します。
+
+    <p></p>
+
+    このメソッドは、トータル度から、「度」の成分だけを抽出します。
+  example: []
+  syntax:
+    content: public static short GetDegree(double value)
+    parameters:
+    - id: value
+      type: System.Double
+      description: 「トータル度」の値。
+    return:
+      type: System.Int16
+      description: トータル度から抽出した「度」だけの値。
+    content.vb: Public Shared Function GetDegree(value As Double) As Short
+  overload: MapQuest.CoordinateSystems.AngularUnit.GetDegree*
+  nameWithType.vb: AngularUnit.GetDegree(Double)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.GetDegree(Double)
+  name.vb: GetDegree(Double)
+- uid: MapQuest.CoordinateSystems.AngularUnit.GetMinute(System.Double)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.GetMinute(System.Double)
+  id: GetMinute(System.Double)
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: GetMinute(double)
+  nameWithType: AngularUnit.GetMinute(double)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.GetMinute(double)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    「トータル度」から「分」の値を抽出します。
+
+    <xref href="MapQuest.CoordinateSystems.AngularUnit.GetDegree(System.Double)" data-throw-if-not-resolved="false"></xref><xref href="MapQuest.CoordinateSystems.AngularUnit.GetSecond(System.Double)" data-throw-if-not-resolved="false"></xref>
+  remarks: >-
+    「トータル度」とは、度分秒の値を全て「度」の少数点形式で表したものを指します。<br />
+
+    例えば、136度30分00秒は、トータル度では、「136.5度」と表します。
+
+    <p></p>
+
+    このメソッドは、トータル度から、「分」の成分だけを抽出します。
+  example: []
+  syntax:
+    content: public static short GetMinute(double value)
+    parameters:
+    - id: value
+      type: System.Double
+      description: 「トータル度」の値。
+    return:
+      type: System.Int16
+      description: トータル度から抽出した「分」だけの値。
+    content.vb: Public Shared Function GetMinute(value As Double) As Short
+  overload: MapQuest.CoordinateSystems.AngularUnit.GetMinute*
+  nameWithType.vb: AngularUnit.GetMinute(Double)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.GetMinute(Double)
+  name.vb: GetMinute(Double)
+- uid: MapQuest.CoordinateSystems.AngularUnit.GetSecond(System.Double)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.GetSecond(System.Double)
+  id: GetSecond(System.Double)
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: GetSecond(double)
+  nameWithType: AngularUnit.GetSecond(double)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.GetSecond(double)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    「トータル度」から「秒」の値を抽出します。
+
+    <xref href="MapQuest.CoordinateSystems.AngularUnit.GetDegree(System.Double)" data-throw-if-not-resolved="false"></xref><xref href="MapQuest.CoordinateSystems.AngularUnit.GetMinute(System.Double)" data-throw-if-not-resolved="false"></xref>
+  remarks: >-
+    「トータル度」とは、度分秒の値を全て「度」の少数点形式で表したものを指します。<br />
+
+    例えば、136度30分00秒は、トータル度では、「136.5度」と表します。
+
+    <p></p>
+
+    このメソッドは、トータル度から、「秒」の成分だけを抽出します。
+  example: []
+  syntax:
+    content: public static double GetSecond(double value)
+    parameters:
+    - id: value
+      type: System.Double
+      description: 「トータル度」の値。
+    return:
+      type: System.Double
+      description: トータル度から抽出した「秒」だけの値。
+    content.vb: Public Shared Function GetSecond(value As Double) As Double
+  overload: MapQuest.CoordinateSystems.AngularUnit.GetSecond*
+  nameWithType.vb: AngularUnit.GetSecond(Double)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.GetSecond(Double)
+  name.vb: GetSecond(Double)
+- uid: MapQuest.CoordinateSystems.AngularUnit.DegreeAdd(System.Double,System.Double)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.DegreeAdd(System.Double,System.Double)
+  id: DegreeAdd(System.Double,System.Double)
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: DegreeAdd(double, double)
+  nameWithType: AngularUnit.DegreeAdd(double, double)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.DegreeAdd(double, double)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 角度の足し算を行います。
+  remarks: >-
+    このメソッドは、角度値は 0 ～ 360 の範囲である事を考慮して加算を行います。
+
+    <p></p>
+
+    例えば、<code>340 + 30</code> は、通常は <code>370</code> ですが、このメソッドの結果は、
+
+    <code>10</code> になります。
+  example: []
+  syntax:
+    content: public static double DegreeAdd(double degree, double add)
+    parameters:
+    - id: degree
+      type: System.Double
+      description: 足される基となる角度(度)。
+    - id: add
+      type: System.Double
+      description: 足す値(度)。
+    return:
+      type: System.Double
+      description: 足し算の結果。必ず 0 ～ 360 の範囲の値になります。
+    content.vb: Public Shared Function DegreeAdd(degree As Double, add As Double) As Double
+  overload: MapQuest.CoordinateSystems.AngularUnit.DegreeAdd*
+  nameWithType.vb: AngularUnit.DegreeAdd(Double, Double)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.DegreeAdd(Double, Double)
+  name.vb: DegreeAdd(Double, Double)
+- uid: MapQuest.CoordinateSystems.AngularUnit.NormalizeDegree(System.Double@)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.NormalizeDegree(System.Double@)
+  id: NormalizeDegree(System.Double@)
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: NormalizeDegree(ref double)
+  nameWithType: AngularUnit.NormalizeDegree(ref double)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.NormalizeDegree(ref double)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 角度の値を正規化します。
+  remarks: >-
+    角度の値（度）がマイナスの値、0～360の範囲外の値を、正しく 0～360 の範囲
+
+    に納めるようにします。<p></p>
+
+    例)<br />
+
+    ・390 → 30<br />
+
+    ・-30 → 330<br />
+  example: []
+  syntax:
+    content: public static void NormalizeDegree(ref double degree)
+    parameters:
+    - id: degree
+      type: System.Double
+      description: '[IN/OUT]角度値。'
+    content.vb: Public Shared Sub NormalizeDegree(degree As Double)
+  overload: MapQuest.CoordinateSystems.AngularUnit.NormalizeDegree*
+  nameWithType.vb: AngularUnit.NormalizeDegree(Double)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.NormalizeDegree(Double)
+  name.vb: NormalizeDegree(Double)
+- uid: MapQuest.CoordinateSystems.AngularUnit.GetTotalDegree(System.Int16,System.Int16,System.Double)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.GetTotalDegree(System.Int16,System.Int16,System.Double)
+  id: GetTotalDegree(System.Int16,System.Int16,System.Double)
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: GetTotalDegree(short, short, double)
+  nameWithType: AngularUnit.GetTotalDegree(short, short, double)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.GetTotalDegree(short, short, double)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: "\"度\" \"分\" \"秒\" の値から「トータル度」の値を求めます。"
+  example: []
+  syntax:
+    content: public static double GetTotalDegree(short degree, short minute, double second)
+    parameters:
+    - id: degree
+      type: System.Int16
+      description: 度
+    - id: minute
+      type: System.Int16
+      description: 分
+    - id: second
+      type: System.Double
+      description: 秒
+    return:
+      type: System.Double
+      description: トータル度。
+    content.vb: Public Shared Function GetTotalDegree(degree As Short, minute As Short, second As Double) As Double
+  overload: MapQuest.CoordinateSystems.AngularUnit.GetTotalDegree*
+  nameWithType.vb: AngularUnit.GetTotalDegree(Short, Short, Double)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.GetTotalDegree(Short, Short, Double)
+  name.vb: GetTotalDegree(Short, Short, Double)
+- uid: MapQuest.CoordinateSystems.AngularUnit.Clone
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.Clone
+  id: Clone
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: AngularUnit.Clone()
+  fullName: MapQuest.CoordinateSystems.AngularUnit.Clone()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在のインスタンスの詳細コピーを生成します。
+  example: []
+  syntax:
+    content: public override object Clone()
+    return:
+      type: System.Object
+      description: 複製した <xref href="MapQuest.CoordinateSystems.AngularUnit" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Overrides Function Clone() As Object
+  overridden: MapQuest.CoordinateSystems.Info.Clone
+  overload: MapQuest.CoordinateSystems.AngularUnit.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: MapQuest.CoordinateSystems.AngularUnit.IsLinear
+  commentId: P:MapQuest.CoordinateSystems.AngularUnit.IsLinear
+  id: IsLinear
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: IsLinear
+  nameWithType: AngularUnit.IsLinear
+  fullName: MapQuest.CoordinateSystems.AngularUnit.IsLinear
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    この単位が、<xref href="MapQuest.CoordinateSystems.LinearUnit" data-throw-if-not-resolved="false"></xref> であるかどうかを返します。
+
+    false を返します。
+  example: []
+  syntax:
+    content: public override bool IsLinear { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: false を返します。
+    content.vb: Public Overrides ReadOnly Property IsLinear As Boolean
+  overridden: MapQuest.CoordinateSystems.Unit.IsLinear
+  overload: MapQuest.CoordinateSystems.AngularUnit.IsLinear*
+  implements:
+  - MapQuest.CoordinateSystems.IUnit.IsLinear
+- uid: MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit
+  commentId: P:MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit
+  id: RadiansPerUnit
+  parent: MapQuest.CoordinateSystems.AngularUnit
+  langs:
+  - csharp
+  - vb
+  name: RadiansPerUnit
+  nameWithType: AngularUnit.RadiansPerUnit
+  fullName: MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: この単位のラジアンに対する比率を取得します。
+  remarks: >-
+    全ての <xref href="MapQuest.CoordinateSystems.AngularUnit" data-throw-if-not-resolved="false"></xref> は、ラジアンをベースに考えます。
+
+    <p></p>
+
+    「その単位は、ラジアンに対してどの位の比率か？」を、
+
+    コンストラクタのパラメータで設定します。
+
+    <p></p>
+
+    例えば、「度」は、「π÷１８０」であるので、「度」を表す 
+
+    <xref href="MapQuest.CoordinateSystems.AngularUnit" data-throw-if-not-resolved="false"></xref> の <xref href="MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit" data-throw-if-not-resolved="false"></xref> には、
+
+    「π÷１８０」、つまり 0.01745... を設定します。
+  example: []
+  syntax:
+    content: public double RadiansPerUnit { get; }
+    parameters: []
+    return:
+      type: System.Double
+      description: この単位のラジアンに対する比率。読み取り専用です。
+    content.vb: Public ReadOnly Property RadiansPerUnit As Double
+  overload: MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit*
+  implements:
+  - MapQuest.CoordinateSystems.IAngularUnit.RadiansPerUnit
+references:
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.CoordinateSystems.Info
+  commentId: T:MapQuest.CoordinateSystems.Info
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html
+  name: Info
+  nameWithType: Info
+  fullName: MapQuest.CoordinateSystems.Info
+- uid: MapQuest.CoordinateSystems.Unit
+  commentId: T:MapQuest.CoordinateSystems.Unit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html
+  name: Unit
+  nameWithType: Unit
+  fullName: MapQuest.CoordinateSystems.Unit
+- uid: MapQuest.CoordinateSystems.IAngularUnit
+  commentId: T:MapQuest.CoordinateSystems.IAngularUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAngularUnit.html
+  name: IAngularUnit
+  nameWithType: IAngularUnit
+  fullName: MapQuest.CoordinateSystems.IAngularUnit
+- uid: MapQuest.CoordinateSystems.IUnit
+  commentId: T:MapQuest.CoordinateSystems.IUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnit.html
+  name: IUnit
+  nameWithType: IUnit
+  fullName: MapQuest.CoordinateSystems.IUnit
+- uid: MapQuest.CoordinateSystems.IInfo
+  commentId: T:MapQuest.CoordinateSystems.IInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html
+  name: IInfo
+  nameWithType: IInfo
+  fullName: MapQuest.CoordinateSystems.IInfo
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: MapQuest.CoordinateSystems.Unit.Millimetre
+  commentId: P:MapQuest.CoordinateSystems.Unit.Millimetre
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Millimetre
+  name: Millimetre
+  nameWithType: Unit.Millimetre
+  fullName: MapQuest.CoordinateSystems.Unit.Millimetre
+- uid: MapQuest.CoordinateSystems.Unit.Centimetre
+  commentId: P:MapQuest.CoordinateSystems.Unit.Centimetre
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Centimetre
+  name: Centimetre
+  nameWithType: Unit.Centimetre
+  fullName: MapQuest.CoordinateSystems.Unit.Centimetre
+- uid: MapQuest.CoordinateSystems.Unit.Metre
+  commentId: P:MapQuest.CoordinateSystems.Unit.Metre
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Metre
+  name: Metre
+  nameWithType: Unit.Metre
+  fullName: MapQuest.CoordinateSystems.Unit.Metre
+- uid: MapQuest.CoordinateSystems.Unit.Kilometre
+  commentId: P:MapQuest.CoordinateSystems.Unit.Kilometre
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Kilometre
+  name: Kilometre
+  nameWithType: Unit.Kilometre
+  fullName: MapQuest.CoordinateSystems.Unit.Kilometre
+- uid: MapQuest.CoordinateSystems.Unit.Inch
+  commentId: P:MapQuest.CoordinateSystems.Unit.Inch
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Inch
+  name: Inch
+  nameWithType: Unit.Inch
+  fullName: MapQuest.CoordinateSystems.Unit.Inch
+- uid: MapQuest.CoordinateSystems.Unit.Point
+  commentId: P:MapQuest.CoordinateSystems.Unit.Point
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Point
+  name: Point
+  nameWithType: Unit.Point
+  fullName: MapQuest.CoordinateSystems.Unit.Point
+- uid: MapQuest.CoordinateSystems.Unit.Radian
+  commentId: P:MapQuest.CoordinateSystems.Unit.Radian
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Radian
+  name: Radian
+  nameWithType: Unit.Radian
+  fullName: MapQuest.CoordinateSystems.Unit.Radian
+- uid: MapQuest.CoordinateSystems.Unit.Degree
+  commentId: P:MapQuest.CoordinateSystems.Unit.Degree
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Degree
+  name: Degree
+  nameWithType: Unit.Degree
+  fullName: MapQuest.CoordinateSystems.Unit.Degree
+- uid: MapQuest.CoordinateSystems.Unit.Minute
+  commentId: P:MapQuest.CoordinateSystems.Unit.Minute
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Minute
+  name: Minute
+  nameWithType: Unit.Minute
+  fullName: MapQuest.CoordinateSystems.Unit.Minute
+- uid: MapQuest.CoordinateSystems.Unit.Second
+  commentId: P:MapQuest.CoordinateSystems.Unit.Second
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Second
+  name: Second
+  nameWithType: Unit.Second
+  fullName: MapQuest.CoordinateSystems.Unit.Second
+- uid: MapQuest.CoordinateSystems.Unit.Millisecond
+  commentId: P:MapQuest.CoordinateSystems.Unit.Millisecond
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Millisecond
+  name: Millisecond
+  nameWithType: Unit.Millisecond
+  fullName: MapQuest.CoordinateSystems.Unit.Millisecond
+- uid: MapQuest.CoordinateSystems.Unit.Gon
+  commentId: P:MapQuest.CoordinateSystems.Unit.Gon
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Gon
+  name: Gon
+  nameWithType: Unit.Gon
+  fullName: MapQuest.CoordinateSystems.Unit.Gon
+- uid: MapQuest.CoordinateSystems.Unit.Grad
+  commentId: P:MapQuest.CoordinateSystems.Unit.Grad
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Grad
+  name: Grad
+  nameWithType: Unit.Grad
+  fullName: MapQuest.CoordinateSystems.Unit.Grad
+- uid: MapQuest.CoordinateSystems.Unit.Pixel
+  commentId: P:MapQuest.CoordinateSystems.Unit.Pixel
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_Pixel
+  name: Pixel
+  nameWithType: Unit.Pixel
+  fullName: MapQuest.CoordinateSystems.Unit.Pixel
+- uid: MapQuest.CoordinateSystems.Info.GetHashCode
+  commentId: M:MapQuest.CoordinateSystems.Info.GetHashCode
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode
+  name: GetHashCode()
+  nameWithType: Info.GetHashCode()
+  fullName: MapQuest.CoordinateSystems.Info.GetHashCode()
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.Info.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.Info.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.Info.Equals(System.Object)
+  commentId: M:MapQuest.CoordinateSystems.Info.Equals(System.Object)
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: Info.Equals(object)
+  fullName: MapQuest.CoordinateSystems.Info.Equals(object)
+  nameWithType.vb: Info.Equals(Object)
+  fullName.vb: MapQuest.CoordinateSystems.Info.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.Info.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.Info.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.CoordinateSystems.Info.Remarks
+  commentId: P:MapQuest.CoordinateSystems.Info.Remarks
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Remarks
+  name: Remarks
+  nameWithType: Info.Remarks
+  fullName: MapQuest.CoordinateSystems.Info.Remarks
+- uid: MapQuest.CoordinateSystems.Info.AuthorityCode
+  commentId: P:MapQuest.CoordinateSystems.Info.AuthorityCode
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode
+  name: AuthorityCode
+  nameWithType: Info.AuthorityCode
+  fullName: MapQuest.CoordinateSystems.Info.AuthorityCode
+- uid: MapQuest.CoordinateSystems.Info.Authority
+  commentId: P:MapQuest.CoordinateSystems.Info.Authority
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority
+  name: Authority
+  nameWithType: Info.Authority
+  fullName: MapQuest.CoordinateSystems.Info.Authority
+- uid: MapQuest.CoordinateSystems.Info.Name
+  commentId: P:MapQuest.CoordinateSystems.Info.Name
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name
+  name: Name
+  nameWithType: Info.Name
+  fullName: MapQuest.CoordinateSystems.Info.Name
+- uid: MapQuest.CoordinateSystems.Info.Alias
+  commentId: P:MapQuest.CoordinateSystems.Info.Alias
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias
+  name: Alias
+  nameWithType: Info.Alias
+  fullName: MapQuest.CoordinateSystems.Info.Alias
+- uid: MapQuest.CoordinateSystems.Info.Abbreviation
+  commentId: P:MapQuest.CoordinateSystems.Info.Abbreviation
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation
+  name: Abbreviation
+  nameWithType: Info.Abbreviation
+  fullName: MapQuest.CoordinateSystems.Info.Abbreviation
+- uid: MapQuest.CoordinateSystems.Info.WKT
+  commentId: P:MapQuest.CoordinateSystems.Info.WKT
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_WKT
+  name: WKT
+  nameWithType: Info.WKT
+  fullName: MapQuest.CoordinateSystems.Info.WKT
+- uid: MapQuest.CoordinateSystems.Info.XML
+  commentId: P:MapQuest.CoordinateSystems.Info.XML
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_XML
+  name: XML
+  nameWithType: Info.XML
+  fullName: MapQuest.CoordinateSystems.Info.XML
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit
+  commentId: P:MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_RadiansPerUnit
+  name: RadiansPerUnit
+  nameWithType: AngularUnit.RadiansPerUnit
+  fullName: MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit
+- uid: MapQuest.CoordinateSystems.CoordinateSystemException
+  commentId: T:MapQuest.CoordinateSystems.CoordinateSystemException
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystemException.html
+  name: CoordinateSystemException
+  nameWithType: CoordinateSystemException
+  fullName: MapQuest.CoordinateSystems.CoordinateSystemException
+- uid: MapQuest.CoordinateSystems.AngularUnit.#ctor*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularUnit.#ctor
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit__ctor_System_Double_
+  name: AngularUnit
+  nameWithType: AngularUnit.AngularUnit
+  fullName: MapQuest.CoordinateSystems.AngularUnit.AngularUnit
+  nameWithType.vb: AngularUnit.New
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.CoordinateSystems.AngularUnit
+  commentId: T:MapQuest.CoordinateSystems.AngularUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html
+  name: AngularUnit
+  nameWithType: AngularUnit
+  fullName: MapQuest.CoordinateSystems.AngularUnit
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: MapQuest.CoordinateSystems.AngularUnit.GetMinute(System.Double)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.GetMinute(System.Double)
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetMinute_System_Double_
+  name: GetMinute(double)
+  nameWithType: AngularUnit.GetMinute(double)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.GetMinute(double)
+  nameWithType.vb: AngularUnit.GetMinute(Double)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.GetMinute(Double)
+  name.vb: GetMinute(Double)
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.AngularUnit.GetMinute(System.Double)
+    name: GetMinute
+    isExternal: true
+    href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetMinute_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.AngularUnit.GetMinute(System.Double)
+    name: GetMinute
+    isExternal: true
+    href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetMinute_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: MapQuest.CoordinateSystems.AngularUnit.GetSecond(System.Double)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.GetSecond(System.Double)
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetSecond_System_Double_
+  name: GetSecond(double)
+  nameWithType: AngularUnit.GetSecond(double)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.GetSecond(double)
+  nameWithType.vb: AngularUnit.GetSecond(Double)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.GetSecond(Double)
+  name.vb: GetSecond(Double)
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.AngularUnit.GetSecond(System.Double)
+    name: GetSecond
+    isExternal: true
+    href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetSecond_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.AngularUnit.GetSecond(System.Double)
+    name: GetSecond
+    isExternal: true
+    href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetSecond_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: MapQuest.CoordinateSystems.AngularUnit.GetDegree*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularUnit.GetDegree
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetDegree_System_Double_
+  name: GetDegree
+  nameWithType: AngularUnit.GetDegree
+  fullName: MapQuest.CoordinateSystems.AngularUnit.GetDegree
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: MapQuest.CoordinateSystems.AngularUnit.GetDegree(System.Double)
+  commentId: M:MapQuest.CoordinateSystems.AngularUnit.GetDegree(System.Double)
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetDegree_System_Double_
+  name: GetDegree(double)
+  nameWithType: AngularUnit.GetDegree(double)
+  fullName: MapQuest.CoordinateSystems.AngularUnit.GetDegree(double)
+  nameWithType.vb: AngularUnit.GetDegree(Double)
+  fullName.vb: MapQuest.CoordinateSystems.AngularUnit.GetDegree(Double)
+  name.vb: GetDegree(Double)
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.AngularUnit.GetDegree(System.Double)
+    name: GetDegree
+    isExternal: true
+    href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetDegree_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.AngularUnit.GetDegree(System.Double)
+    name: GetDegree
+    isExternal: true
+    href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetDegree_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: MapQuest.CoordinateSystems.AngularUnit.GetMinute*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularUnit.GetMinute
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetMinute_System_Double_
+  name: GetMinute
+  nameWithType: AngularUnit.GetMinute
+  fullName: MapQuest.CoordinateSystems.AngularUnit.GetMinute
+- uid: MapQuest.CoordinateSystems.AngularUnit.GetSecond*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularUnit.GetSecond
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetSecond_System_Double_
+  name: GetSecond
+  nameWithType: AngularUnit.GetSecond
+  fullName: MapQuest.CoordinateSystems.AngularUnit.GetSecond
+- uid: MapQuest.CoordinateSystems.AngularUnit.DegreeAdd*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularUnit.DegreeAdd
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_DegreeAdd_System_Double_System_Double_
+  name: DegreeAdd
+  nameWithType: AngularUnit.DegreeAdd
+  fullName: MapQuest.CoordinateSystems.AngularUnit.DegreeAdd
+- uid: MapQuest.CoordinateSystems.AngularUnit.NormalizeDegree*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularUnit.NormalizeDegree
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_NormalizeDegree_System_Double__
+  name: NormalizeDegree
+  nameWithType: AngularUnit.NormalizeDegree
+  fullName: MapQuest.CoordinateSystems.AngularUnit.NormalizeDegree
+- uid: MapQuest.CoordinateSystems.AngularUnit.GetTotalDegree*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularUnit.GetTotalDegree
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_GetTotalDegree_System_Int16_System_Int16_System_Double_
+  name: GetTotalDegree
+  nameWithType: AngularUnit.GetTotalDegree
+  fullName: MapQuest.CoordinateSystems.AngularUnit.GetTotalDegree
+- uid: MapQuest.CoordinateSystems.Info.Clone
+  commentId: M:MapQuest.CoordinateSystems.Info.Clone
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Clone
+  name: Clone()
+  nameWithType: Info.Clone()
+  fullName: MapQuest.CoordinateSystems.Info.Clone()
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.Info.Clone
+    name: Clone
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.Info.Clone
+    name: Clone
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.AngularUnit.Clone*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularUnit.Clone
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_Clone
+  name: Clone
+  nameWithType: AngularUnit.Clone
+  fullName: MapQuest.CoordinateSystems.AngularUnit.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.LinearUnit
+  commentId: T:MapQuest.CoordinateSystems.LinearUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.LinearUnit.html
+  name: LinearUnit
+  nameWithType: LinearUnit
+  fullName: MapQuest.CoordinateSystems.LinearUnit
+- uid: MapQuest.CoordinateSystems.Unit.IsLinear
+  commentId: P:MapQuest.CoordinateSystems.Unit.IsLinear
+  parent: MapQuest.CoordinateSystems.Unit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Unit.html#MapQuest_CoordinateSystems_Unit_IsLinear
+  name: IsLinear
+  nameWithType: Unit.IsLinear
+  fullName: MapQuest.CoordinateSystems.Unit.IsLinear
+- uid: MapQuest.CoordinateSystems.AngularUnit.IsLinear*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularUnit.IsLinear
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_IsLinear
+  name: IsLinear
+  nameWithType: AngularUnit.IsLinear
+  fullName: MapQuest.CoordinateSystems.AngularUnit.IsLinear
+- uid: MapQuest.CoordinateSystems.IUnit.IsLinear
+  commentId: P:MapQuest.CoordinateSystems.IUnit.IsLinear
+  parent: MapQuest.CoordinateSystems.IUnit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnit.html#MapQuest_CoordinateSystems_IUnit_IsLinear
+  name: IsLinear
+  nameWithType: IUnit.IsLinear
+  fullName: MapQuest.CoordinateSystems.IUnit.IsLinear
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit*
+  commentId: Overload:MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.AngularUnit.html#MapQuest_CoordinateSystems_AngularUnit_RadiansPerUnit
+  name: RadiansPerUnit
+  nameWithType: AngularUnit.RadiansPerUnit
+  fullName: MapQuest.CoordinateSystems.AngularUnit.RadiansPerUnit
+- uid: MapQuest.CoordinateSystems.IAngularUnit.RadiansPerUnit
+  commentId: P:MapQuest.CoordinateSystems.IAngularUnit.RadiansPerUnit
+  parent: MapQuest.CoordinateSystems.IAngularUnit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAngularUnit.html#MapQuest_CoordinateSystems_IAngularUnit_RadiansPerUnit
+  name: RadiansPerUnit
+  nameWithType: IAngularUnit.RadiansPerUnit
+  fullName: MapQuest.CoordinateSystems.IAngularUnit.RadiansPerUnit

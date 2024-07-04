@@ -1,0 +1,802 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.ProjectionParameter
+  commentId: T:MapQuest.CoordinateSystems.ProjectionParameter
+  id: ProjectionParameter
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.ProjectionParameter.#ctor(System.String,System.Double)
+  - MapQuest.CoordinateSystems.ProjectionParameter.CompareTo(System.Object)
+  - MapQuest.CoordinateSystems.ProjectionParameter.Empty
+  - MapQuest.CoordinateSystems.ProjectionParameter.Equals(MapQuest.CoordinateSystems.ProjectionParameter)
+  - MapQuest.CoordinateSystems.ProjectionParameter.Equals(System.Object)
+  - MapQuest.CoordinateSystems.ProjectionParameter.GetHashCode
+  - MapQuest.CoordinateSystems.ProjectionParameter.Name
+  - MapQuest.CoordinateSystems.ProjectionParameter.ToString
+  - MapQuest.CoordinateSystems.ProjectionParameter.Value
+  - MapQuest.CoordinateSystems.ProjectionParameter.op_Equality(MapQuest.CoordinateSystems.ProjectionParameter,MapQuest.CoordinateSystems.ProjectionParameter)
+  - MapQuest.CoordinateSystems.ProjectionParameter.op_Inequality(MapQuest.CoordinateSystems.ProjectionParameter,MapQuest.CoordinateSystems.ProjectionParameter)
+  langs:
+  - csharp
+  - vb
+  name: ProjectionParameter
+  nameWithType: ProjectionParameter
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter
+  type: Struct
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 投影法のパラメータを示す名前と値のセットです。
+  example: []
+  syntax:
+    content: 'public struct ProjectionParameter : IComparable'
+    content.vb: Public Structure ProjectionParameter Implements IComparable
+  implements:
+  - System.IComparable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.Empty
+  commentId: F:MapQuest.CoordinateSystems.ProjectionParameter.Empty
+  id: Empty
+  parent: MapQuest.CoordinateSystems.ProjectionParameter
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: ProjectionParameter.Empty
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.Empty
+  type: Field
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 空の <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: public static readonly ProjectionParameter Empty
+    return:
+      type: MapQuest.CoordinateSystems.ProjectionParameter
+    content.vb: Public Shared ReadOnly Empty As ProjectionParameter
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.#ctor(System.String,System.Double)
+  commentId: M:MapQuest.CoordinateSystems.ProjectionParameter.#ctor(System.String,System.Double)
+  id: '#ctor(System.String,System.Double)'
+  parent: MapQuest.CoordinateSystems.ProjectionParameter
+  langs:
+  - csharp
+  - vb
+  name: ProjectionParameter(string, double)
+  nameWithType: ProjectionParameter.ProjectionParameter(string, double)
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.ProjectionParameter(string, double)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 名前と値を指定して、新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: public ProjectionParameter(string name, double value)
+    parameters:
+    - id: name
+      type: System.String
+      description: パラメータの名前。
+    - id: value
+      type: System.Double
+      description: パラメータの値。
+    content.vb: Public Sub New(name As String, value As Double)
+  overload: MapQuest.CoordinateSystems.ProjectionParameter.#ctor*
+  nameWithType.vb: ProjectionParameter.New(String, Double)
+  fullName.vb: MapQuest.CoordinateSystems.ProjectionParameter.New(String, Double)
+  name.vb: New(String, Double)
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.Equals(MapQuest.CoordinateSystems.ProjectionParameter)
+  commentId: M:MapQuest.CoordinateSystems.ProjectionParameter.Equals(MapQuest.CoordinateSystems.ProjectionParameter)
+  id: Equals(MapQuest.CoordinateSystems.ProjectionParameter)
+  parent: MapQuest.CoordinateSystems.ProjectionParameter
+  langs:
+  - csharp
+  - vb
+  name: Equals(ProjectionParameter)
+  nameWithType: ProjectionParameter.Equals(ProjectionParameter)
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.Equals(MapQuest.CoordinateSystems.ProjectionParameter)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 指定した <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> が、このインスタンスと同じかどうかを返します。
+  example: []
+  syntax:
+    content: public bool Equals(ProjectionParameter obj)
+    parameters:
+    - id: obj
+      type: MapQuest.CoordinateSystems.ProjectionParameter
+      description: 比較する <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: 同じであれば true 、異なっていたら false 。
+    content.vb: Public Function Equals(obj As ProjectionParameter) As Boolean
+  overload: MapQuest.CoordinateSystems.ProjectionParameter.Equals*
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.Equals(System.Object)
+  commentId: M:MapQuest.CoordinateSystems.ProjectionParameter.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.CoordinateSystems.ProjectionParameter
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: ProjectionParameter.Equals(object)
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 指定した <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> が、このインスタンスと同じかどうかを返します。
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: 比較する <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: 同じであれば true 、異なっていたら false 。
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: MapQuest.CoordinateSystems.ProjectionParameter.Equals*
+  nameWithType.vb: ProjectionParameter.Equals(Object)
+  fullName.vb: MapQuest.CoordinateSystems.ProjectionParameter.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.ToString
+  commentId: M:MapQuest.CoordinateSystems.ProjectionParameter.ToString
+  id: ToString
+  parent: MapQuest.CoordinateSystems.ProjectionParameter
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ProjectionParameter.ToString()
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.ToString()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    この <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> を
+
+    Well-Known Text (WKT) 形式で表します。
+  remarks: >-
+    WKT は OpenGIS' により策定されている、下記のような形式です。
+
+    <pre><code class="lang-csharp">PARAMETER["Name",Value]</code></pre>.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: MapQuest.CoordinateSystems.ProjectionParameter.ToString*
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.GetHashCode
+  commentId: M:MapQuest.CoordinateSystems.ProjectionParameter.GetHashCode
+  id: GetHashCode
+  parent: MapQuest.CoordinateSystems.ProjectionParameter
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ProjectionParameter.GetHashCode()
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.GetHashCode()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: この <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> のハッシュ コードを返します。
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: この <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> のハッシュ コード。
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: MapQuest.CoordinateSystems.ProjectionParameter.GetHashCode*
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.op_Equality(MapQuest.CoordinateSystems.ProjectionParameter,MapQuest.CoordinateSystems.ProjectionParameter)
+  commentId: M:MapQuest.CoordinateSystems.ProjectionParameter.op_Equality(MapQuest.CoordinateSystems.ProjectionParameter,MapQuest.CoordinateSystems.ProjectionParameter)
+  id: op_Equality(MapQuest.CoordinateSystems.ProjectionParameter,MapQuest.CoordinateSystems.ProjectionParameter)
+  parent: MapQuest.CoordinateSystems.ProjectionParameter
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ProjectionParameter, ProjectionParameter)
+  nameWithType: ProjectionParameter.operator ==(ProjectionParameter, ProjectionParameter)
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.operator ==(MapQuest.CoordinateSystems.ProjectionParameter, MapQuest.CoordinateSystems.ProjectionParameter)
+  type: Operator
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 二つの <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> が等しいかどうかを調べます。
+  remarks: left.Equals(right) を実行した結果を返します。
+  example: []
+  syntax:
+    content: public static bool operator ==(ProjectionParameter left, ProjectionParameter right)
+    parameters:
+    - id: left
+      type: MapQuest.CoordinateSystems.ProjectionParameter
+      description: 1 つ目の <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> 。
+    - id: right
+      type: MapQuest.CoordinateSystems.ProjectionParameter
+      description: 2 つ目の <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: >-
+        二つの <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> が等しければ true 、
+                    等しくなければ false を返します。
+    content.vb: Public Shared Operator =(left As ProjectionParameter, right As ProjectionParameter) As Boolean
+  overload: MapQuest.CoordinateSystems.ProjectionParameter.op_Equality*
+  nameWithType.vb: ProjectionParameter.=(ProjectionParameter, ProjectionParameter)
+  fullName.vb: MapQuest.CoordinateSystems.ProjectionParameter.=(MapQuest.CoordinateSystems.ProjectionParameter, MapQuest.CoordinateSystems.ProjectionParameter)
+  name.vb: =(ProjectionParameter, ProjectionParameter)
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.op_Inequality(MapQuest.CoordinateSystems.ProjectionParameter,MapQuest.CoordinateSystems.ProjectionParameter)
+  commentId: M:MapQuest.CoordinateSystems.ProjectionParameter.op_Inequality(MapQuest.CoordinateSystems.ProjectionParameter,MapQuest.CoordinateSystems.ProjectionParameter)
+  id: op_Inequality(MapQuest.CoordinateSystems.ProjectionParameter,MapQuest.CoordinateSystems.ProjectionParameter)
+  parent: MapQuest.CoordinateSystems.ProjectionParameter
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ProjectionParameter, ProjectionParameter)
+  nameWithType: ProjectionParameter.operator !=(ProjectionParameter, ProjectionParameter)
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.operator !=(MapQuest.CoordinateSystems.ProjectionParameter, MapQuest.CoordinateSystems.ProjectionParameter)
+  type: Operator
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 二つの <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> が等しくないかどうかを調べます。
+  remarks: '!left.Equals(right) を実行した結果を返します。'
+  example: []
+  syntax:
+    content: public static bool operator !=(ProjectionParameter left, ProjectionParameter right)
+    parameters:
+    - id: left
+      type: MapQuest.CoordinateSystems.ProjectionParameter
+      description: 1 つ目の <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> 。
+    - id: right
+      type: MapQuest.CoordinateSystems.ProjectionParameter
+      description: 2 つ目の <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> 。
+    return:
+      type: System.Boolean
+      description: >-
+        二つの <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> が等しくなければ true 、
+                    等しければ false を返します。
+    content.vb: Public Shared Operator <>(left As ProjectionParameter, right As ProjectionParameter) As Boolean
+  overload: MapQuest.CoordinateSystems.ProjectionParameter.op_Inequality*
+  nameWithType.vb: ProjectionParameter.<>(ProjectionParameter, ProjectionParameter)
+  fullName.vb: MapQuest.CoordinateSystems.ProjectionParameter.<>(MapQuest.CoordinateSystems.ProjectionParameter, MapQuest.CoordinateSystems.ProjectionParameter)
+  name.vb: <>(ProjectionParameter, ProjectionParameter)
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.CompareTo(System.Object)
+  commentId: M:MapQuest.CoordinateSystems.ProjectionParameter.CompareTo(System.Object)
+  id: CompareTo(System.Object)
+  parent: MapQuest.CoordinateSystems.ProjectionParameter
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(object)
+  nameWithType: ProjectionParameter.CompareTo(object)
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.CompareTo(object)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在のオブジェクトと、渡されたオブジェクトの大小関係を比較します。
+  remarks: >-
+    パラメータの値(<xref href="MapQuest.CoordinateSystems.ProjectionParameter.Value" data-throw-if-not-resolved="false"></xref>)だけが比較対象です。
+
+    名称は使われません。
+  example: []
+  syntax:
+    content: public int CompareTo(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: >-
+        比較するオブジェクト。
+                    <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> である必要があります。
+    return:
+      type: System.Int32
+      description: <table><thead><tr><th class="term">値</th><th class="description">内容</th></tr></thead><tbody><tr><td class="term">0 より小さい値</td><td class="description">現在のオブジェクトは obj より小さいです。</td></tr><tr><td class="term">0</td><td class="description">現在のオブジェクトは obj と等しいです。</td></tr><tr><td class="term">0 より大きい値</td><td class="description">現在のオブジェクトは obj より大きいです。</td></tr></tbody></table>
+    content.vb: Public Function CompareTo(obj As Object) As Integer
+  overload: MapQuest.CoordinateSystems.ProjectionParameter.CompareTo*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: obj が <xref href="MapQuest.CoordinateSystems.ProjectionParameter" data-throw-if-not-resolved="false"></xref> ではありません。
+  implements:
+  - System.IComparable.CompareTo(System.Object)
+  nameWithType.vb: ProjectionParameter.CompareTo(Object)
+  fullName.vb: MapQuest.CoordinateSystems.ProjectionParameter.CompareTo(Object)
+  name.vb: CompareTo(Object)
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.Name
+  commentId: P:MapQuest.CoordinateSystems.ProjectionParameter.Name
+  id: Name
+  parent: MapQuest.CoordinateSystems.ProjectionParameter
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ProjectionParameter.Name
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.Name
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: パラメータの名前を設定・取得します。
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: パラメータの名前。
+    content.vb: Public Property Name As String
+  overload: MapQuest.CoordinateSystems.ProjectionParameter.Name*
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.Value
+  commentId: P:MapQuest.CoordinateSystems.ProjectionParameter.Value
+  id: Value
+  parent: MapQuest.CoordinateSystems.ProjectionParameter
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ProjectionParameter.Value
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.Value
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: パラメータの値を設定・取得します。
+  example: []
+  syntax:
+    content: public double Value { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+      description: パラメータの値
+    content.vb: Public Property Value As Double
+  overload: MapQuest.CoordinateSystems.ProjectionParameter.Value*
+references:
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: System.IComparable
+  commentId: T:System.IComparable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable
+  name: IComparable
+  nameWithType: IComparable
+  fullName: System.IComparable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.CoordinateSystems.ProjectionParameter
+  commentId: T:MapQuest.CoordinateSystems.ProjectionParameter
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ProjectionParameter.html
+  name: ProjectionParameter
+  nameWithType: ProjectionParameter
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.#ctor*
+  commentId: Overload:MapQuest.CoordinateSystems.ProjectionParameter.#ctor
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ProjectionParameter.html#MapQuest_CoordinateSystems_ProjectionParameter__ctor_System_String_System_Double_
+  name: ProjectionParameter
+  nameWithType: ProjectionParameter.ProjectionParameter
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.ProjectionParameter
+  nameWithType.vb: ProjectionParameter.New
+  fullName.vb: MapQuest.CoordinateSystems.ProjectionParameter.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.Equals*
+  commentId: Overload:MapQuest.CoordinateSystems.ProjectionParameter.Equals
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ProjectionParameter.html#MapQuest_CoordinateSystems_ProjectionParameter_Equals_MapQuest_CoordinateSystems_ProjectionParameter_
+  name: Equals
+  nameWithType: ProjectionParameter.Equals
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.ToString*
+  commentId: Overload:MapQuest.CoordinateSystems.ProjectionParameter.ToString
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ProjectionParameter.html#MapQuest_CoordinateSystems_ProjectionParameter_ToString
+  name: ToString
+  nameWithType: ProjectionParameter.ToString
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.ToString
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.GetHashCode*
+  commentId: Overload:MapQuest.CoordinateSystems.ProjectionParameter.GetHashCode
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ProjectionParameter.html#MapQuest_CoordinateSystems_ProjectionParameter_GetHashCode
+  name: GetHashCode
+  nameWithType: ProjectionParameter.GetHashCode
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.op_Equality*
+  commentId: Overload:MapQuest.CoordinateSystems.ProjectionParameter.op_Equality
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ProjectionParameter.html#MapQuest_CoordinateSystems_ProjectionParameter_op_Equality_MapQuest_CoordinateSystems_ProjectionParameter_MapQuest_CoordinateSystems_ProjectionParameter_
+  name: operator ==
+  nameWithType: ProjectionParameter.operator ==
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.operator ==
+  nameWithType.vb: ProjectionParameter.=
+  fullName.vb: MapQuest.CoordinateSystems.ProjectionParameter.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.CoordinateSystems.ProjectionParameter.op_Equality*
+    name: ==
+    isExternal: true
+    href: MapQuest.CoordinateSystems.ProjectionParameter.html#MapQuest_CoordinateSystems_ProjectionParameter_op_Equality_MapQuest_CoordinateSystems_ProjectionParameter_MapQuest_CoordinateSystems_ProjectionParameter_
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.op_Inequality*
+  commentId: Overload:MapQuest.CoordinateSystems.ProjectionParameter.op_Inequality
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ProjectionParameter.html#MapQuest_CoordinateSystems_ProjectionParameter_op_Inequality_MapQuest_CoordinateSystems_ProjectionParameter_MapQuest_CoordinateSystems_ProjectionParameter_
+  name: operator !=
+  nameWithType: ProjectionParameter.operator !=
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.operator !=
+  nameWithType.vb: ProjectionParameter.<>
+  fullName.vb: MapQuest.CoordinateSystems.ProjectionParameter.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: MapQuest.CoordinateSystems.ProjectionParameter.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: MapQuest.CoordinateSystems.ProjectionParameter.html#MapQuest_CoordinateSystems_ProjectionParameter_op_Inequality_MapQuest_CoordinateSystems_ProjectionParameter_MapQuest_CoordinateSystems_ProjectionParameter_
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.Value
+  commentId: P:MapQuest.CoordinateSystems.ProjectionParameter.Value
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ProjectionParameter.html#MapQuest_CoordinateSystems_ProjectionParameter_Value
+  name: Value
+  nameWithType: ProjectionParameter.Value
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.Value
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.CompareTo*
+  commentId: Overload:MapQuest.CoordinateSystems.ProjectionParameter.CompareTo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ProjectionParameter.html#MapQuest_CoordinateSystems_ProjectionParameter_CompareTo_System_Object_
+  name: CompareTo
+  nameWithType: ProjectionParameter.CompareTo
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.CompareTo
+- uid: System.IComparable.CompareTo(System.Object)
+  commentId: M:System.IComparable.CompareTo(System.Object)
+  parent: System.IComparable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
+  name: CompareTo(object)
+  nameWithType: IComparable.CompareTo(object)
+  fullName: System.IComparable.CompareTo(object)
+  nameWithType.vb: IComparable.CompareTo(Object)
+  fullName.vb: System.IComparable.CompareTo(Object)
+  name.vb: CompareTo(Object)
+  spec.csharp:
+  - uid: System.IComparable.CompareTo(System.Object)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.IComparable.CompareTo(System.Object)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.Name*
+  commentId: Overload:MapQuest.CoordinateSystems.ProjectionParameter.Name
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ProjectionParameter.html#MapQuest_CoordinateSystems_ProjectionParameter_Name
+  name: Name
+  nameWithType: ProjectionParameter.Name
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.Name
+- uid: MapQuest.CoordinateSystems.ProjectionParameter.Value*
+  commentId: Overload:MapQuest.CoordinateSystems.ProjectionParameter.Value
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ProjectionParameter.html#MapQuest_CoordinateSystems_ProjectionParameter_Value
+  name: Value
+  nameWithType: ProjectionParameter.Value
+  fullName: MapQuest.CoordinateSystems.ProjectionParameter.Value

@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Collections.PropertyChangedEventHandler
+  commentId: T:MapQuest.Collections.PropertyChangedEventHandler
+  id: PropertyChangedEventHandler
+  parent: MapQuest.Collections
+  children:
+  - MapQuest.Collections.PropertyChangedEventHandler.#ctor(System.Object,System.IntPtr)
+  - MapQuest.Collections.PropertyChangedEventHandler.BeginInvoke(System.Object,MapQuest.Collections.PropertyChangedEventArgs,System.AsyncCallback,System.Object)
+  - MapQuest.Collections.PropertyChangedEventHandler.EndInvoke(System.IAsyncResult)
+  - MapQuest.Collections.PropertyChangedEventHandler.Invoke(System.Object,MapQuest.Collections.PropertyChangedEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: PropertyChangedEventHandler
+  nameWithType: PropertyChangedEventHandler
+  fullName: MapQuest.Collections.PropertyChangedEventHandler
+  type: Delegate
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    コレクションで要素が変更されたときに発生する <xref href="MapQuest.Collections.IPropertyChange.PropertyChanged" data-throw-if-not-resolved="false"></xref> 
+
+    イベントを処理するメソッドを表します。
+  remarks: >-
+    <B>PropertyChangedEventHandler</B> は、 <xref href="MapQuest.Collections.IPropertyChange.PropertyChanged" data-throw-if-not-resolved="false"></xref> 
+            イベントへの応答として呼び出されるメソッドを指定するために使用します。 
+            <B>PropertyChangedEventHandler</B> のインスタンスをイベントに関連付けるには、
+
+            そのインスタンスをそのイベントに追加します。イベントから 
+            <B>PropertyChangedEventHandler</B> を削除するまでは、アセンブリが読み込まれるたびに、 
+            <B>PropertyChangedEventHandler</B> が参照しているメソッドが呼び出されます。
+  example: []
+  syntax:
+    content: public delegate void PropertyChangedEventHandler(object sender, PropertyChangedEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: イベントのソース。
+    - id: e
+      type: MapQuest.Collections.PropertyChangedEventArgs
+      description: イベント データを格納している <xref href="MapQuest.Collections.PropertyChangedEventArgs" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Delegate Sub PropertyChangedEventHandler(sender As Object, e As PropertyChangedEventArgs)
+- uid: MapQuest.Collections.PropertyChangedEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:MapQuest.Collections.PropertyChangedEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: MapQuest.Collections.PropertyChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: PropertyChangedEventHandler(object, IntPtr)
+  nameWithType: PropertyChangedEventHandler.PropertyChangedEventHandler(object, IntPtr)
+  fullName: MapQuest.Collections.PropertyChangedEventHandler.PropertyChangedEventHandler(object, System.IntPtr)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  syntax:
+    content: public PropertyChangedEventHandler(object @object, IntPtr method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: MapQuest.Collections.PropertyChangedEventHandler.#ctor*
+  nameWithType.vb: PropertyChangedEventHandler.New(Object, IntPtr)
+  fullName.vb: MapQuest.Collections.PropertyChangedEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: MapQuest.Collections.PropertyChangedEventHandler.Invoke(System.Object,MapQuest.Collections.PropertyChangedEventArgs)
+  commentId: M:MapQuest.Collections.PropertyChangedEventHandler.Invoke(System.Object,MapQuest.Collections.PropertyChangedEventArgs)
+  id: Invoke(System.Object,MapQuest.Collections.PropertyChangedEventArgs)
+  parent: MapQuest.Collections.PropertyChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(object, PropertyChangedEventArgs)
+  nameWithType: PropertyChangedEventHandler.Invoke(object, PropertyChangedEventArgs)
+  fullName: MapQuest.Collections.PropertyChangedEventHandler.Invoke(object, MapQuest.Collections.PropertyChangedEventArgs)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  syntax:
+    content: public virtual void Invoke(object sender, PropertyChangedEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: MapQuest.Collections.PropertyChangedEventArgs
+    content.vb: Public Overridable Sub Invoke(sender As Object, e As PropertyChangedEventArgs)
+  overload: MapQuest.Collections.PropertyChangedEventHandler.Invoke*
+  nameWithType.vb: PropertyChangedEventHandler.Invoke(Object, PropertyChangedEventArgs)
+  fullName.vb: MapQuest.Collections.PropertyChangedEventHandler.Invoke(Object, MapQuest.Collections.PropertyChangedEventArgs)
+  name.vb: Invoke(Object, PropertyChangedEventArgs)
+- uid: MapQuest.Collections.PropertyChangedEventHandler.BeginInvoke(System.Object,MapQuest.Collections.PropertyChangedEventArgs,System.AsyncCallback,System.Object)
+  commentId: M:MapQuest.Collections.PropertyChangedEventHandler.BeginInvoke(System.Object,MapQuest.Collections.PropertyChangedEventArgs,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.Object,MapQuest.Collections.PropertyChangedEventArgs,System.AsyncCallback,System.Object)
+  parent: MapQuest.Collections.PropertyChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(object, PropertyChangedEventArgs, AsyncCallback, object)
+  nameWithType: PropertyChangedEventHandler.BeginInvoke(object, PropertyChangedEventArgs, AsyncCallback, object)
+  fullName: MapQuest.Collections.PropertyChangedEventHandler.BeginInvoke(object, MapQuest.Collections.PropertyChangedEventArgs, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(object sender, PropertyChangedEventArgs e, AsyncCallback callback, object @object)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: MapQuest.Collections.PropertyChangedEventArgs
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(sender As Object, e As PropertyChangedEventArgs, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: MapQuest.Collections.PropertyChangedEventHandler.BeginInvoke*
+  nameWithType.vb: PropertyChangedEventHandler.BeginInvoke(Object, PropertyChangedEventArgs, AsyncCallback, Object)
+  fullName.vb: MapQuest.Collections.PropertyChangedEventHandler.BeginInvoke(Object, MapQuest.Collections.PropertyChangedEventArgs, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(Object, PropertyChangedEventArgs, AsyncCallback, Object)
+- uid: MapQuest.Collections.PropertyChangedEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:MapQuest.Collections.PropertyChangedEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: MapQuest.Collections.PropertyChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: PropertyChangedEventHandler.EndInvoke(IAsyncResult)
+  fullName: MapQuest.Collections.PropertyChangedEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: MapQuest.Collections.PropertyChangedEventHandler.EndInvoke*
+references:
+- uid: MapQuest.Collections.IPropertyChange.PropertyChanged
+  commentId: E:MapQuest.Collections.IPropertyChange.PropertyChanged
+  isExternal: true
+  href: MapQuest.Collections.IPropertyChange.html#MapQuest_Collections_IPropertyChange_PropertyChanged
+  name: PropertyChanged
+  nameWithType: IPropertyChange.PropertyChanged
+  fullName: MapQuest.Collections.IPropertyChange.PropertyChanged
+- uid: MapQuest.Collections.PropertyChangedEventArgs
+  commentId: T:MapQuest.Collections.PropertyChangedEventArgs
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.PropertyChangedEventArgs.html
+  name: PropertyChangedEventArgs
+  nameWithType: PropertyChangedEventArgs
+  fullName: MapQuest.Collections.PropertyChangedEventArgs
+- uid: MapQuest.Collections
+  commentId: N:MapQuest.Collections
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Collections
+  nameWithType: MapQuest.Collections
+  fullName: MapQuest.Collections
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Collections.PropertyChangedEventHandler.#ctor*
+  commentId: Overload:MapQuest.Collections.PropertyChangedEventHandler.#ctor
+  isExternal: true
+  href: MapQuest.Collections.PropertyChangedEventHandler.html#MapQuest_Collections_PropertyChangedEventHandler__ctor_System_Object_System_IntPtr_
+  name: PropertyChangedEventHandler
+  nameWithType: PropertyChangedEventHandler.PropertyChangedEventHandler
+  fullName: MapQuest.Collections.PropertyChangedEventHandler.PropertyChangedEventHandler
+  nameWithType.vb: PropertyChangedEventHandler.New
+  fullName.vb: MapQuest.Collections.PropertyChangedEventHandler.New
+  name.vb: New
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: MapQuest.Collections.PropertyChangedEventHandler.Invoke*
+  commentId: Overload:MapQuest.Collections.PropertyChangedEventHandler.Invoke
+  isExternal: true
+  href: MapQuest.Collections.PropertyChangedEventHandler.html#MapQuest_Collections_PropertyChangedEventHandler_Invoke_System_Object_MapQuest_Collections_PropertyChangedEventArgs_
+  name: Invoke
+  nameWithType: PropertyChangedEventHandler.Invoke
+  fullName: MapQuest.Collections.PropertyChangedEventHandler.Invoke
+- uid: MapQuest.Collections.PropertyChangedEventHandler.BeginInvoke*
+  commentId: Overload:MapQuest.Collections.PropertyChangedEventHandler.BeginInvoke
+  isExternal: true
+  href: MapQuest.Collections.PropertyChangedEventHandler.html#MapQuest_Collections_PropertyChangedEventHandler_BeginInvoke_System_Object_MapQuest_Collections_PropertyChangedEventArgs_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: PropertyChangedEventHandler.BeginInvoke
+  fullName: MapQuest.Collections.PropertyChangedEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: MapQuest.Collections.PropertyChangedEventHandler.EndInvoke*
+  commentId: Overload:MapQuest.Collections.PropertyChangedEventHandler.EndInvoke
+  isExternal: true
+  href: MapQuest.Collections.PropertyChangedEventHandler.html#MapQuest_Collections_PropertyChangedEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: PropertyChangedEventHandler.EndInvoke
+  fullName: MapQuest.Collections.PropertyChangedEventHandler.EndInvoke

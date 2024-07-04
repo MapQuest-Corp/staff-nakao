@@ -1,0 +1,111 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Collections.IPropertyChange
+  commentId: T:MapQuest.Collections.IPropertyChange
+  id: IPropertyChange
+  parent: MapQuest.Collections
+  children:
+  - MapQuest.Collections.IPropertyChange.PropertyChanged
+  langs:
+  - csharp
+  - vb
+  name: IPropertyChange
+  nameWithType: IPropertyChange
+  fullName: MapQuest.Collections.IPropertyChange
+  type: Interface
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    コレクションの内容が変化したことを 
+
+    <xref href="MapQuest.Collections.IPropertyChange.PropertyChanged" data-throw-if-not-resolved="false"></xref> イベントとして通知を可能にする
+
+    共通インターフェースです。
+
+
+    <!--
+
+    Enables notifications that items within a collection have changed: 
+
+    an item has been added, removed, or the entire collection has been refreshed.
+
+    -->
+  example: []
+  syntax:
+    content: public interface IPropertyChange
+    content.vb: Public Interface IPropertyChange
+- uid: MapQuest.Collections.IPropertyChange.PropertyChanged
+  commentId: E:MapQuest.Collections.IPropertyChange.PropertyChanged
+  id: PropertyChanged
+  parent: MapQuest.Collections.IPropertyChange
+  langs:
+  - csharp
+  - vb
+  name: PropertyChanged
+  nameWithType: IPropertyChange.PropertyChanged
+  fullName: MapQuest.Collections.IPropertyChange.PropertyChanged
+  type: Event
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.Collections
+  summary: >-
+    コレクションの内容が変更されたことを通知するイベントです。
+
+
+    <!--
+
+    Occurs if the list has changed its content. 
+
+    Arguments of the event specify the change that has taken place.
+
+    -->
+  example: []
+  syntax:
+    content: event PropertyChangedEventHandler PropertyChanged
+    return:
+      type: MapQuest.Collections.PropertyChangedEventHandler
+    content.vb: Event PropertyChanged As PropertyChangedEventHandler
+references:
+- uid: MapQuest.Collections.IPropertyChange.PropertyChanged
+  commentId: E:MapQuest.Collections.IPropertyChange.PropertyChanged
+  isExternal: true
+  href: MapQuest.Collections.IPropertyChange.html#MapQuest_Collections_IPropertyChange_PropertyChanged
+  name: PropertyChanged
+  nameWithType: IPropertyChange.PropertyChanged
+  fullName: MapQuest.Collections.IPropertyChange.PropertyChanged
+- uid: MapQuest.Collections
+  commentId: N:MapQuest.Collections
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Collections
+  nameWithType: MapQuest.Collections
+  fullName: MapQuest.Collections
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Collections
+    name: Collections
+    isExternal: true
+    href: MapQuest.Collections.html
+- uid: MapQuest.Collections.PropertyChangedEventHandler
+  commentId: T:MapQuest.Collections.PropertyChangedEventHandler
+  parent: MapQuest.Collections
+  isExternal: true
+  href: MapQuest.Collections.PropertyChangedEventHandler.html
+  name: PropertyChangedEventHandler
+  nameWithType: PropertyChangedEventHandler
+  fullName: MapQuest.Collections.PropertyChangedEventHandler

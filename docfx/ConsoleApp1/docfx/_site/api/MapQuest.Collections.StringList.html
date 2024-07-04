@@ -1,0 +1,2572 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StringList | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StringList | mysite ">
+      
+      <meta name="description" content="必要に応じてサイズが動的に増加する配列を使用して、   インターフェイスを実装します。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Collections.StringList">
+
+
+
+  <h1 id="MapQuest_Collections_StringList" data-uid="MapQuest.Collections.StringList" class="text-break">
+Class StringList  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Collections.html">Collections</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>必要に応じてサイズが動的に増加する配列を使用して、
+<a class="xref" href="MapQuest.Collections.IStringList.html">IStringList</a>  インターフェイスを実装します。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StringList : IStringList, IStringCollection, IEnumerable&lt;string&gt;, IList, ICollection, IEnumerable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">StringList</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.Collections.IStringList.html">IStringList</a></div>
+      <div><a class="xref" href="MapQuest.Collections.IStringCollection.html">IStringCollection</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MapQuest_Collections_StringList_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+は、 <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 用に最適化された <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a> を提供します。</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Collections_StringList__ctor_" data-uid="MapQuest.Collections.StringList.#ctor*"></a>
+
+  <h3 id="MapQuest_Collections_StringList__ctor" data-uid="MapQuest.Collections.StringList.#ctor">
+  StringList()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>空で、デフォルトの初期量を備えた、 <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringList()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList__ctor_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor">ArrayList()</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList__ctor_" data-uid="MapQuest.Collections.StringList.#ctor*"></a>
+
+  <h3 id="MapQuest_Collections_StringList__ctor_MapQuest_Collections_StringList_" data-uid="MapQuest.Collections.StringList.#ctor(MapQuest.Collections.StringList)">
+  StringList(StringList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定したコレクションからコピーした要素を格納し、</p>
+<p>コピーされる要素の数と同じ初期量を備えた、
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringList(StringList collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a></dt>
+    <dd><p>新しいリストに要素が追加された <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList__ctor_MapQuest_Collections_StringList__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-collections-icollection)">ArrayList(ICollection)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">collection</code> が
+null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList__ctor_" data-uid="MapQuest.Collections.StringList.#ctor*"></a>
+
+  <h3 id="MapQuest_Collections_StringList__ctor_System_Int32_" data-uid="MapQuest.Collections.StringList.#ctor(System.Int32)">
+  StringList(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>空で、指定した初期量を備えた、 <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringList(int capacity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>初期状態の新しいリストに格納できる要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList__ctor_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-int32)">ArrayList(int)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">capacity</code> が 0 未満です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList__ctor_" data-uid="MapQuest.Collections.StringList.#ctor*"></a>
+
+  <h3 id="MapQuest_Collections_StringList__ctor_System_String___" data-uid="MapQuest.Collections.StringList.#ctor(System.String[])">
+  StringList(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した配列からコピーした要素を格納し、</p>
+<p>コピーされる要素の数と同じ初期量を備えた、
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+クラスの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringList(string[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>コレクションに追加するオブジェクトを格納する</p>
+<p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 型の配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList__ctor_System_String____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.-ctor#system-collections-arraylist-ctor(system-collections-icollection)">ArrayList(ICollection)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">array</code> が
+null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Collections_StringList_Capacity_" data-uid="MapQuest.Collections.StringList.Capacity*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Capacity" data-uid="MapQuest.Collections.StringList.Capacity">
+  Capacity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+に格納できる要素の数を取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Capacity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+に格納できる要素の数。</p>
+<pre><code>     0 が指定された場合は規定値を設定します。
+
+     現在設定されている数より小さい場合は例外を発行します。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Capacity_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.capacity">Capacity</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Capacity">Capacity</a> が <a class="xref" href="MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Count">Count</a>
+より小さい値に設定されています。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_Count_" data-uid="MapQuest.Collections.StringList.Count*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Count" data-uid="MapQuest.Collections.StringList.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> に実際に格納されている要素の数を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> に実際に格納されている要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Count_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.count">Count</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_InnerArray_" data-uid="MapQuest.Collections.StringList.InnerArray*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_InnerArray" data-uid="MapQuest.Collections.StringList.InnerArray">
+  InnerArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内にある要素のリストを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string[] InnerArray { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a> 全ての要素を含んだ
+0 から始まるインデックス番号で始まる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> elements in the <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Collections_StringList_IsFixedSize_" data-uid="MapQuest.Collections.StringList.IsFixedSize*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_IsFixedSize" data-uid="MapQuest.Collections.StringList.IsFixedSize">
+  IsFixedSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が固定サイズかどうかを示す値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsFixedSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+が固定サイズの場合は <b>true</b> 。それ以外の場合は <b>false</b> 。</p>
+<pre><code>    既定値は &lt;b&gt;false&lt;/b&gt; です。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_IsFixedSize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isfixedsize">ArrayList.IsFixedSize</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_IsMovable_" data-uid="MapQuest.Collections.StringList.IsMovable*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_IsMovable" data-uid="MapQuest.Collections.StringList.IsMovable">
+  IsMovable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内の要素が移動可能かどうかを示す値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMovable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+内の要素が移動可能な場合は <b>true</b> 。それ以外の場合は <b>false</b> 。</p>
+<pre><code>    既定値は &lt;b&gt;true&lt;/b&gt; です。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveTo_System_Int32_System_Int32_">MoveTo(int, int)</a></div>
+    <div><a class="xref" href="MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveToTop_System_Int32_">MoveToTop(int)</a></div>
+    <div><a class="xref" href="MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveToBottom_System_Int32_">MoveToBottom(int)</a></div>
+    <div><a class="xref" href="MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveUp_System_Int32_">MoveUp(int)</a></div>
+    <div><a class="xref" href="MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_MoveDown_System_Int32_">MoveDown(int)</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MapQuest_Collections_StringList_IsReadOnly_" data-uid="MapQuest.Collections.StringList.IsReadOnly*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_IsReadOnly" data-uid="MapQuest.Collections.StringList.IsReadOnly">
+  IsReadOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用かどうかを示す値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+が読み取り専用の場合は <b>true</b> 。それ以外の場合は <b>false</b> 。</p>
+<pre><code>    既定値は &lt;b&gt;false&lt;/b&gt; です。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_IsReadOnly_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isreadonly">IsReadOnly</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_IsSynchronized_" data-uid="MapQuest.Collections.StringList.IsSynchronized*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_IsSynchronized" data-uid="MapQuest.Collections.StringList.IsSynchronized">
+  IsSynchronized
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+へのアクセスが同期されている (スレッド セーフである) かどうかを示す値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsSynchronized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>リストへのアクセスが同期されている (スレッド セーフである) 場合は <b>true</b> 。</p>
+<p>それ以外の場合は <b>false</b> 。既定値は <b>false</b> です。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_IsSynchronized_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.issynchronized">IsSynchronized</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_IsUnique_" data-uid="MapQuest.Collections.StringList.IsUnique*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_IsUnique" data-uid="MapQuest.Collections.StringList.IsUnique">
+  IsUnique
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+内の要素が全てユニークであるかどうかを示す値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsUnique { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+内の要素が全てユニークである場合は <b>true</b> 。それ以外の場合は <b>false</b> 。</p>
+<pre><code>    既定値は &lt;b&gt;false&lt;/b&gt; です。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_IsUnique_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が、ユニークなラッパーを使用している場合、
+<a class="xref" href="MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_IsUnique">IsUnique</a> は <b>true</b> を返します。</p>
+<pre><code>    詳細については &lt;xref href=&quot;MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; を参照してください。
+
+    &lt;!--
+    IsUnique returns &lt;c&gt;true&lt;/c&gt; exactly if the &lt;see cref=&quot;StringList&quot;/&gt; 
+    is exposed through a &lt;see cref=&quot;Unique&quot;/&gt; wrapper. 
+    Please refer to &lt;see cref=&quot;Unique&quot;/&gt; for details.
+    --&gt;
+</code></pre>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_Item_" data-uid="MapQuest.Collections.StringList.Item*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Item_System_Int32_" data-uid="MapQuest.Collections.StringList.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定されたインデックスの要素を取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>取得または設定する要素の、0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>指定したインデックスにある要素。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Item_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">this[int]</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">index</code> が 0 未満です。</p>
+<pre><code>     &lt;p&gt;または&lt;/p&gt;&lt;code class=&quot;paramref&quot;&gt;index&lt;/code&gt; が &lt;xref href=&quot;MapQuest.Collections.StringList.Count&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; 以上です。
+</code></pre>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>このプロパティが設定されていますが、 <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<p>または</p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> は既に異なるインデックスで指定された要素を含んでいます。また、
+<p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> は含まれる要素が全てユニークであることを保障します。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_SyncRoot_" data-uid="MapQuest.Collections.StringList.SyncRoot*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_SyncRoot" data-uid="MapQuest.Collections.StringList.SyncRoot">
+  SyncRoot
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+へのアクセスを同期するために使用できるオブジェクトを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object SyncRoot { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+へのアクセスを同期するために使用できるオブジェクト。</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_SyncRoot_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.syncroot">SyncRoot</a> を参照してください。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Collections_StringList_Add_" data-uid="MapQuest.Collections.StringList.Add*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Add_System_String_" data-uid="MapQuest.Collections.StringList.Add(System.String)">
+  Add(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の末尾に <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Add(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の末尾に追加する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 。</p>
+<pre><code>    値は null 参照 (Visual Basic では &lt;b&gt;Nothing&lt;/b&gt;) に設定できます。
+</code></pre>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><code class="paramref">value</code> が追加された位置の
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> インデックス。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Add_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add">Add(object)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; が固定サイズです。
+
+    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は既に指定された要素を含んでいます。また、
+
+    &lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は含まれる要素が全てユニークであることを保障します。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_AddAll_" data-uid="MapQuest.Collections.StringList.AddAll*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_AddAll_System_Collections_ArrayList_" data-uid="MapQuest.Collections.StringList.AddAll(System.Collections.ArrayList)">
+  AddAll(ArrayList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a> の要素を <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の末尾に追加します。</p>
+<pre><code>    &lt;!-- Adds all the elements contained in the specified support class collection. --&gt;
+</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddAll(ArrayList collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a></dt>
+    <dd><p>コレクションに追加するオブジェクトを格納する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>追加する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a> の要素が <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> と互換性がありません。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">collection</code> が
+null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; が固定サイズです。
+
+    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は既に指定された要素を含んでいます。また、
+
+    &lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は含まれる要素が全てユニークであることを保障します。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_AddAll_" data-uid="MapQuest.Collections.StringList.AddAll*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_AddAll_System_Collections_ICollection_" data-uid="MapQuest.Collections.StringList.AddAll(System.Collections.ICollection)">
+  AddAll(ICollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a> の要素を <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の末尾に追加します。</p>
+<pre><code>    &lt;!-- Adds all the elements contained in the specified collection. --&gt;
+</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddAll(ICollection collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></dt>
+    <dd><p>コレクションに追加するオブジェクトを格納する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>追加する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a> の要素が	<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> と互換性がありません。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">collection</code> が
+null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; が固定サイズです。
+
+    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は既に指定された要素を含んでいます。また、
+
+    &lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は含まれる要素が全てユニークであることを保障します。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_AddRange_" data-uid="MapQuest.Collections.StringList.AddRange*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_AddRange_MapQuest_Collections_StringList_" data-uid="MapQuest.Collections.StringList.AddRange(MapQuest.Collections.StringList)">
+  AddRange(StringList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の要素を <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の末尾に追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddRange(StringList collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a></dt>
+    <dd><p>コレクションに追加するオブジェクトを格納する <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_AddRange_MapQuest_Collections_StringList__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange">AddRange(ICollection)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">collection</code> が
+null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<pre><code>     &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; が固定サイズです。
+
+     &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は既に指定された要素を含んでいます。また、
+
+    &lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は含まれる要素が全てユニークであることを保障します。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_AddRange_" data-uid="MapQuest.Collections.StringList.AddRange*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_AddRange_System_String___" data-uid="MapQuest.Collections.StringList.AddRange(System.String[])">
+  AddRange(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 配列の要素を <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の末尾に追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddRange(string[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>コレクションに追加するオブジェクトを格納する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 型の配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_AddRange_System_String____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange">AddRange(ICollection)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">array</code> が
+null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; が固定サイズです。
+
+    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は既に指定された要素を含んでいます。また、
+
+    &lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は含まれる要素が全てユニークであることを保障します。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_BinarySearch_" data-uid="MapQuest.Collections.StringList.BinarySearch*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_BinarySearch_System_String_" data-uid="MapQuest.Collections.StringList.BinarySearch(System.String)">
+  BinarySearch(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>バイナリ サーチ アルゴリズムを使用して、並べ替えられた
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内の特定の要素を検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int BinarySearch(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>検索する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 。</p>
+<p>値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>0 から始まるインデックス番号。
+<code class="paramref">value</code> が見つかった場合は、並べ替えられた
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+内の value の 0 から始まるインデックス。</p>
+<p>見つからなかった場合は、負の値。これは、 <code class="paramref">value</code>
+の次に大きい要素のインデックスのビットごとの補数です。</p>
+<p>ただし、大きい要素が存在しない場合は、<a class="xref" href="MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Count">Count</a>
+のビットごとの補数です。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_BinarySearch_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)">BinarySearch(int, int, object, IComparer)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>value が、 <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の要素と同じ型ではありません。</p>
+<p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a> 
+インターフェースがインプリメントされていません。
+</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_Clear_" data-uid="MapQuest.Collections.StringList.Clear*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Clear" data-uid="MapQuest.Collections.StringList.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> からすべての要素を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Clear_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear">Clear()</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; が固定サイズです。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_Clone_" data-uid="MapQuest.Collections.StringList.Clone*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Clone" data-uid="MapQuest.Collections.StringList.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の簡易コピーを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>A shallow copy of the <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Clone_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clone">Clone()</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_Contains_" data-uid="MapQuest.Collections.StringList.Contains*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Contains_System_String_" data-uid="MapQuest.Collections.StringList.Contains(System.String)">
+  Contains(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ある要素が <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内に存在するかどうかを判断します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内で検索される <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 。</p>
+<pre><code>    値は null 参照 (Visual Basic では &lt;b&gt;Nothing&lt;/b&gt;) に設定できます。
+</code></pre>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code class="paramref">value</code> が <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+に存在する場合は <b>true</b> 。それ以外の場合は <b>false</b> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Contains_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains">Contains(object)</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_Contains_" data-uid="MapQuest.Collections.StringList.Contains*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Contains_System_String_System_Boolean_" data-uid="MapQuest.Collections.StringList.Contains(System.String,System.Boolean)">
+  Contains(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ある要素が <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内に存在するかどうかを判断します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(string value, bool ignoreCase)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内で検索される <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 。
+値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。</p>
+</dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>大文字と小文字を区別して比較するか、区別せずに比較するかを示す値。(true は、大文字と小文字を区別せずに比較することを示します。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code class="paramref">value</code> が <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+に存在する場合は <b>true</b> 。それ以外の場合は <b>false</b> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Contains_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains">Contains(object)</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_CopyTo_" data-uid="MapQuest.Collections.StringList.CopyTo*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_CopyTo_System_String___" data-uid="MapQuest.Collections.StringList.CopyTo(System.String[])">
+  CopyTo(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+全体を互換性のある 1 次元の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> にコピーします。</p>
+<pre><code>    コピー操作は、コピー先の配列の先頭から始まります。
+</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyTo(string[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+から要素がコピーされる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> の 1 次元配列。</p>
+<pre><code>    この配列には、0 から始まるインデックス番号が必要です。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_CopyTo_System_String____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)">CopyTo(Array)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">array</code> が
+null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">array</code> が多次元です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;
+    コピー元の &lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; 
+    の要素数が、コピー先の &lt;code class=&quot;paramref&quot;&gt;array&lt;/code&gt; に格納できる要素の数を超えています。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_CopyTo_" data-uid="MapQuest.Collections.StringList.CopyTo*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_CopyTo_System_String___System_Int32_" data-uid="MapQuest.Collections.StringList.CopyTo(System.String[],System.Int32)">
+  CopyTo(string[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+全体を互換性のある 1 次元の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> にコピーします。</p>
+<pre><code>    コピー操作は、コピー先の配列の指定したインデックスから始まります。
+</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyTo(string[] array, int arrayIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+から要素がコピーされる <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> の 1 次元配列。</p>
+<pre><code>    この配列には、0 から始まるインデックス番号が必要です。
+</code></pre>
+</dd>
+    <dt><code>arrayIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>コピーの開始位置となる、 0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_CopyTo_System_String___System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)">CopyTo(Array)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">array</code> が
+null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">arrayIndex</code>
+が 0 未満です。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">array</code> が多次元です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;code class=&quot;paramref&quot;&gt;arrayIndex&lt;/code&gt; が &lt;code class=&quot;paramref&quot;&gt;array&lt;/code&gt; の長さ以上です。
+
+    &lt;p&gt;または&lt;/p&gt;
+    コピー元の &lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; 
+    の要素数が、 &lt;code class=&quot;paramref&quot;&gt;arrayIndex&lt;/code&gt; からコピー先の 
+    &lt;code class=&quot;paramref&quot;&gt;array&lt;/code&gt; の末尾までに格納できる数を超えています。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_GetEnumerator_" data-uid="MapQuest.Collections.StringList.GetEnumerator*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_GetEnumerator" data-uid="MapQuest.Collections.StringList.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の列挙子を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IStringEnumerator GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Collections.IStringEnumerator.html">IStringEnumerator</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 全体の <a class="xref" href="MapQuest.Collections.IStringEnumerator.html">IStringEnumerator</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_GetEnumerator_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator">GetEnumerator()</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_IndexOf_" data-uid="MapQuest.Collections.StringList.IndexOf*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_IndexOf_System_String_" data-uid="MapQuest.Collections.StringList.IndexOf(System.String)">
+  IndexOf(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> を検索し、 <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+内で最初に見つかった位置の 0 から始まるインデックスを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int IndexOf(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内で検索される <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 。</p>
+<pre><code>    値は null 参照 (Visual Basic では &lt;b&gt;Nothing&lt;/b&gt;) に設定できます。
+</code></pre>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内で <code class="paramref">value</code>
+が見つかった場合は、最初に見つかった位置の 0 から始まるインデックス番号。</p>
+<pre><code>    それ以外の場合は -1。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_IndexOf_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)">IndexOf(object)</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_IndexOf_" data-uid="MapQuest.Collections.StringList.IndexOf*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_IndexOf_System_String_System_Boolean_" data-uid="MapQuest.Collections.StringList.IndexOf(System.String,System.Boolean)">
+  IndexOf(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> を検索し、 <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+内で最初に見つかった位置の 0 から始まるインデックスを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int IndexOf(string value, bool ignoreCase)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内で検索される <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 。
+値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。</p>
+</dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>大文字と小文字を区別して比較するか、区別せずに比較するかを示す値。(true は、大文字と小文字を区別せずに比較することを示します。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内で <code class="paramref">value</code>
+が見つかった場合は、最初に見つかった位置の 0 から始まるインデックス番号。
+それ以外の場合は -1。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_IndexOf_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains">Contains(object)</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_Insert_" data-uid="MapQuest.Collections.StringList.Insert*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Insert_System_Int32_System_String_" data-uid="MapQuest.Collections.StringList.Insert(System.Int32,System.String)">
+  Insert(int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内の指定したインデックスの位置に要素を挿入します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Insert(int index, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><code class="paramref">value</code> を挿入する位置の、0 から始まるインデックス番号。</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>挿入する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 。</p>
+<p>値は null 参照 (Visual Basic では <b>Nothing</b>) に設定できます。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Insert_System_Int32_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert">Insert(int, object)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">index</code> が 0 未満です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;code class=&quot;paramref&quot;&gt;index&lt;/code&gt; が &lt;xref href=&quot;MapQuest.Collections.StringList.Count&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; より大きい値です。
+</code></pre>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; が固定サイズです。
+
+    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は既に指定された要素を含んでいます。また、
+
+    &lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は含まれる要素が全てユニークであることを保障します。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_MoveDown_" data-uid="MapQuest.Collections.StringList.MoveDown*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_MoveDown_System_Int32_" data-uid="MapQuest.Collections.StringList.MoveDown(System.Int32)">
+  MoveDown(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内の指定したインデックスの要素を 1 つ後ろに移動します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MoveDown(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>移動する要素の位置を表す、0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Collections_StringList_MoveTo_" data-uid="MapQuest.Collections.StringList.MoveTo*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_MoveTo_System_Int32_System_Int32_" data-uid="MapQuest.Collections.StringList.MoveTo(System.Int32,System.Int32)">
+  MoveTo(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内の指定したインデックスの要素を、</p>
+<pre><code>    指定したインデックスへ移動します。
+</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MoveTo(int indexFrom, int indexTo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>indexFrom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>移動する要素の位置を表す、0 から始まるインデックス番号。</p>
+</dd>
+    <dt><code>indexTo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>移動先の位置を表す、0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_MoveTo_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>移動元と移動先のインデックスが同じ場合は何もしません。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">indexTo</code> が 0 未満です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;code class=&quot;paramref&quot;&gt;indexTo&lt;/code&gt; が &lt;xref href=&quot;MapQuest.Collections.StringList.Count&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; より大きい値です。
+</code></pre>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; が固定サイズです。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_MoveToBottom_" data-uid="MapQuest.Collections.StringList.MoveToBottom*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_MoveToBottom_System_Int32_" data-uid="MapQuest.Collections.StringList.MoveToBottom(System.Int32)">
+  MoveToBottom(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内の指定したインデックスの要素を末尾に移動します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MoveToBottom(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>移動する要素の位置を表す、0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_MoveToBottom_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>移動元のインデックスが既に末尾になる場合は何もしません。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_MoveToTop_" data-uid="MapQuest.Collections.StringList.MoveToTop*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_MoveToTop_System_Int32_" data-uid="MapQuest.Collections.StringList.MoveToTop(System.Int32)">
+  MoveToTop(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内の指定したインデックスの要素を先頭に移動します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MoveToTop(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>移動する要素の位置を表す、0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_MoveToTop_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>移動元のインデックスが既に先頭になる場合は何もしません。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_MoveUp_" data-uid="MapQuest.Collections.StringList.MoveUp*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_MoveUp_System_Int32_" data-uid="MapQuest.Collections.StringList.MoveUp(System.Int32)">
+  MoveUp(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内の指定したインデックスの要素を 1 つ前に移動します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MoveUp(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>移動する要素の位置を表す、0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Collections_StringList_OnMove_" data-uid="MapQuest.Collections.StringList.OnMove*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_OnMove_System_String_System_Int32_System_Int32_" data-uid="MapQuest.Collections.StringList.OnMove(System.String,System.Int32,System.Int32)">
+  OnMove(string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>リスト内の要素が移動された時に実行される内部関数です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnMove(string item, int indexFrom, int indexTo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>移動した要素。</p>
+</dd>
+    <dt><code>indexFrom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>移動元のインデックス。</p>
+</dd>
+    <dt><code>indexTo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>移動先のインデックス。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Collections_StringList_ReadOnly_" data-uid="MapQuest.Collections.StringList.ReadOnly*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_ReadOnly_MapQuest_Collections_StringList_" data-uid="MapQuest.Collections.StringList.ReadOnly(MapQuest.Collections.StringList)">
+  ReadOnly(StringList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>読み取り専用にラップした <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringList ReadOnly(StringList collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a></dt>
+    <dd><p>ラップする <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a></dt>
+    <dd><p><code class="paramref">collection</code> をラップした読み取り専用の
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> ラッパー。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_ReadOnly_MapQuest_Collections_StringList__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-ilist)">ReadOnly(IList)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">collection</code> が
+null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_Remove_" data-uid="MapQuest.Collections.StringList.Remove*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Remove_System_String_" data-uid="MapQuest.Collections.StringList.Remove(System.String)">
+  Remove(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内で最初に見つかった特定のオブジェクトを削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Remove(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> から削除する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 。</p>
+<pre><code>    値は null 参照 (Visual Basic では &lt;b&gt;Nothing&lt;/b&gt;) に設定できます。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Remove_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove">Remove(object)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; が固定サイズです。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_RemoveAll_" data-uid="MapQuest.Collections.StringList.RemoveAll*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_RemoveAll_System_Collections_ArrayList_" data-uid="MapQuest.Collections.StringList.RemoveAll(System.Collections.ArrayList)">
+  RemoveAll(ArrayList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a> の要素を <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> から削除します</p>
+<pre><code>    &lt;!-- Removes all the elements contained into the specified collection. --&gt;
+</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool RemoveAll(ArrayList collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a></dt>
+    <dd><p>コレクションから削除するオブジェクトを格納する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a> 。</p>
+<!-- The collection used to extract the elements that will be removed. -->
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>全ての要素を削除できた場合は <b>true</b> 。</p>
+<p>それ以外の場合は <b>false</b> 。</p>
+<!-- Returns true if all the elements were successfuly removed. Otherwise returns false. -->
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Collections_StringList_RemoveAll_" data-uid="MapQuest.Collections.StringList.RemoveAll*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_RemoveAll_System_Collections_ICollection_" data-uid="MapQuest.Collections.StringList.RemoveAll(System.Collections.ICollection)">
+  RemoveAll(ICollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a> の要素を <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> から削除します。</p>
+<pre><code>    &lt;!-- Removes all the elements contained into the specified collection. --&gt;
+</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool RemoveAll(ICollection collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></dt>
+    <dd><p>コレクションから削除するオブジェクトを格納する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a> 。</p>
+<!-- The collection used to extract the elements that will be removed. -->
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>全ての要素を削除できた場合は <b>true</b> 。</p>
+<p>それ以外の場合は <b>false</b> 。</p>
+<!-- Returns true if all the elements were successfuly removed. Otherwise returns false. -->
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Collections_StringList_RemoveAt_" data-uid="MapQuest.Collections.StringList.RemoveAt*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_RemoveAt_System_Int32_" data-uid="MapQuest.Collections.StringList.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+の指定したインデックスにある要素を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>削除する要素の、0 から始まるインデックス番号。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_RemoveAt_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat">RemoveAt(int)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">index</code> が 0 未満です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;code class=&quot;paramref&quot;&gt;index&lt;/code&gt; が &lt;xref href=&quot;MapQuest.Collections.StringList.Count&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; 以上です。
+</code></pre>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; が固定サイズです。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_RemoveRange_" data-uid="MapQuest.Collections.StringList.RemoveRange*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_RemoveRange_System_Int32_System_Int32_" data-uid="MapQuest.Collections.StringList.RemoveRange(System.Int32,System.Int32)">
+  RemoveRange(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> から指定された範囲の要素を削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveRange(int index, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>削除する要素の範囲の開始位置を示す 0 から始まるインデックス。</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>削除する要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_RemoveRange_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange">RemoveRange(int, int)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">index</code> が 0 未満です。</p>
+<pre><code>     &lt;p&gt;または&lt;/p&gt;&lt;code class=&quot;paramref&quot;&gt;Count&lt;/code&gt; が 0 未満です。
+</code></pre>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">index</code> および <code class="paramref">count</code> が
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内の有効な範囲を指定していません。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<pre><code>     &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; が固定サイズです。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_Reverse_" data-uid="MapQuest.Collections.StringList.Reverse*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Reverse" data-uid="MapQuest.Collections.StringList.Reverse">
+  Reverse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の全体の要素の順序を反転させます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Reverse()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Reverse_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse">Reverse()</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_Reverse_" data-uid="MapQuest.Collections.StringList.Reverse*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Reverse_System_Int32_System_Int32_" data-uid="MapQuest.Collections.StringList.Reverse(System.Int32,System.Int32)">
+  Reverse(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した範囲の要素の順序を反転させます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Reverse(int index, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>反転させる範囲の開始位置を示す 0 から始まるインデックス。</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>反転させる範囲内にある要素の数。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Reverse_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse">Reverse()</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">index</code> が 0 未満です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;code class=&quot;paramref&quot;&gt;Count&lt;/code&gt; が 0 未満です。
+</code></pre>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">index</code> および <code class="paramref">count</code> が
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内の有効な範囲を指定していません。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_Sort_" data-uid="MapQuest.Collections.StringList.Sort*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Sort" data-uid="MapQuest.Collections.StringList.Sort">
+  Sort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>各要素の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a> 実装を使用して、
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内の要素を並べ替えます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Sort()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Sort_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort">Sort()</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_Sort_" data-uid="MapQuest.Collections.StringList.Sort*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Sort_System_Collections_IComparer_" data-uid="MapQuest.Collections.StringList.Sort(System.Collections.IComparer)">
+  Sort(IComparer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した比較演算子を使用して、 <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+内の要素を並べ替えます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Sort(IComparer comparer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icomparer">IComparer</a></dt>
+    <dd><p>要素を比較する場合に使用する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icomparer">IComparer</a> 実装。</p>
+<p>または</p>
+各要素の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icomparer">IComparer</a> 
+実装を使用する場合は null 参照 (Visual Basic では <b>Nothing</b>) 。
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Sort_System_Collections_IComparer__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort">Sort()</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_Sort_" data-uid="MapQuest.Collections.StringList.Sort*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Sort_System_Int32_System_Int32_System_Collections_IComparer_" data-uid="MapQuest.Collections.StringList.Sort(System.Int32,System.Int32,System.Collections.IComparer)">
+  Sort(int, int, IComparer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した比較演算子を使用して、 <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+のセクション内の要素を並べ替えます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Sort(int index, int count, IComparer comparer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>並べ替える範囲の開始位置を示す 0 から始まるインデックス。</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>並べ替える範囲の長さ。</p>
+</dd>
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icomparer">IComparer</a></dt>
+    <dd><p>要素を比較する場合に使用する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icomparer">IComparer</a> 実装。</p>
+<p>または</p>
+各要素の <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icomparer">IComparer</a> 
+実装を使用する場合は null 参照 (Visual Basic では <b>Nothing</b>) 。
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Sort_System_Int32_System_Int32_System_Collections_IComparer__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort">Sort()</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">index</code> が 0 未満です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;code class=&quot;paramref&quot;&gt;Count&lt;/code&gt; が 0 未満です。
+</code></pre>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">index</code> および <code class="paramref">count</code> が
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内の有効な範囲を指定していません。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_Synchronized_" data-uid="MapQuest.Collections.StringList.Synchronized*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Synchronized_MapQuest_Collections_StringList_" data-uid="MapQuest.Collections.StringList.Synchronized(MapQuest.Collections.StringList)">
+  Synchronized(StringList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 用の同期された (スレッド セーフな) ラッパーを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringList Synchronized(StringList collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a></dt>
+    <dd><p>同期する <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 用の同期された (スレッド セーフな) ラッパー。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Synchronized_MapQuest_Collections_StringList__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-ilist)">Synchronized(IList)</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">collection</code> が null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_ToArray_" data-uid="MapQuest.Collections.StringList.ToArray*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_ToArray" data-uid="MapQuest.Collections.StringList.ToArray">
+  ToArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> の要素を新しい配列にコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] ToArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+の要素のコピーを格納する <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> 型の配列。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_ToArray_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray">ToArray()</a> を参照してください。</p>
+</div>
+
+
+
+
+  <a id="MapQuest_Collections_StringList_TrimToSize_" data-uid="MapQuest.Collections.StringList.TrimToSize*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_TrimToSize" data-uid="MapQuest.Collections.StringList.TrimToSize">
+  TrimToSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>容量を <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 内にある実際の要素数に設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TrimToSize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_TrimToSize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>詳細については <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize">TrimToSize()</a> を参照してください。</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> が読み取り専用です。</p>
+<pre><code>    &lt;p&gt;または&lt;/p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; が固定サイズです。
+</code></pre>
+</dd>
+  </dl>
+
+
+
+  <a id="MapQuest_Collections_StringList_Unique_" data-uid="MapQuest.Collections.StringList.Unique*"></a>
+
+  <h3 id="MapQuest_Collections_StringList_Unique_MapQuest_Collections_StringList_" data-uid="MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)">
+  Unique(StringList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>要素がすべてユニークであることを保証する
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> ラッパーを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringList Unique(StringList collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a></dt>
+    <dd><p>ラップする <a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> 。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Collections.StringList.html">StringList</a></dt>
+    <dd><p><code class="paramref">collection</code> をラップする要素がすべてユニークであることを保障する
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a> ラッパー。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MapQuest_Collections_StringList_Unique_MapQuest_Collections_StringList__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="MapQuest.Collections.StringList.html#MapQuest_Collections_StringList_Unique_MapQuest_Collections_StringList_">Unique(StringList)</a> は、
+<a class="xref" href="MapQuest.Collections.StringList.html">StringList</a>
+に含まれる要素が全てユニークであることを保障する
+コレクションのラッパーを提供します。</p>
+<pre><code>    &lt;!--
+    The &lt;see cref=&quot;StringList.Unique&quot;/&gt; 
+    wrapper provides a set-like collection by ensuring
+    that all elements in the &lt;see cref=&quot;StringList&quot;/&gt; are unique.
+    --&gt;&lt;p&gt;&lt;xref href=&quot;MapQuest.Collections.StringList.Unique(MapQuest.Collections.StringList)&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; は、 
+    &lt;code class=&quot;paramref&quot;&gt;collection&lt;/code&gt; の内容が重複している場合 
+    &lt;xref href=&quot;System.ArgumentException&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; を呼び出します。
+
+    また、&lt;xref href=&quot;MapQuest.Collections.StringList&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; に、既に含まれている要素を追加した場合は、 
+    &lt;xref href=&quot;System.NotSupportedException&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; を呼び出します。
+
+    &lt;!--
+    &lt;see cref=&quot;StringList.Unique&quot;/&gt; raises an 
+    &lt;see cref=&quot;ArgumentException&quot;/&gt; if the specified 
+    &lt;paramref name=&quot;collection&quot;/&gt; contains any duplicate elements. The returned
+    wrapper raises a &lt;see cref=&quot;NotSupportedException&quot;/&gt; whenever the user attempts 
+    to add an element that is already contained in the &lt;see cref=&quot;NotSupportedException&quot;/&gt;.
+    --&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; 
+    ラッパーは、重複する要素の生成も含む、
+
+    内部のコレクションへどのような変更も反映します。
+
+    この内部のコレクションが直接編集された場合は、
+
+    すべての要素がユニークであることを保障できません。
+
+    &lt;!--
+    &lt;strong&gt;Note:&lt;/strong&gt; 
+    The &lt;see cref=&quot;StringList.Unique&quot;/&gt; 
+    wrapper reflects any changes made
+    to the underlying &lt;paramref name=&quot;collection&quot;/&gt;, including the possible
+    creation of duplicate elements. The uniqueness of all elements is therefore
+    no longer assured if the underlying collection is manipulated directly.
+    --&gt;&lt;/p&gt;
+</code></pre>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">collection</code> が重複する要素を含んでいます。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">collection</code> が
+null 参照 (Visual Basic では <b>Nothing</b>) です。</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

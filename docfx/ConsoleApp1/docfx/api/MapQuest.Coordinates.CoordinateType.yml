@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Coordinates.CoordinateType
+  commentId: T:MapQuest.Coordinates.CoordinateType
+  id: CoordinateType
+  parent: MapQuest.Coordinates
+  children:
+  - MapQuest.Coordinates.CoordinateType.Custom
+  - MapQuest.Coordinates.CoordinateType.Default
+  - MapQuest.Coordinates.CoordinateType.Flagged
+  - MapQuest.Coordinates.CoordinateType.Measured
+  - MapQuest.Coordinates.CoordinateType.Tagged
+  langs:
+  - csharp
+  - vb
+  name: CoordinateType
+  nameWithType: CoordinateType
+  fullName: MapQuest.Coordinates.CoordinateType
+  type: Enum
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: " <p>\r\n	このライブラリで表現される<xref href=\"MapQuest.Coordinates.Coordinate?text=Coordinate\" data-throw-if-not-resolved=\"false\"></xref>の種類を表します。\r\n\r\n</p>"
+  example: []
+  syntax:
+    content: 'public enum CoordinateType : short'
+    content.vb: Public Enum CoordinateType As Short
+- uid: MapQuest.Coordinates.CoordinateType.Default
+  commentId: F:MapQuest.Coordinates.CoordinateType.Default
+  id: Default
+  parent: MapQuest.Coordinates.CoordinateType
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: CoordinateType.Default
+  fullName: MapQuest.Coordinates.CoordinateType.Default
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 特別な情報を含まない通常の<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>です。
+  example: []
+  syntax:
+    content: Default = 1
+    return:
+      type: MapQuest.Coordinates.CoordinateType
+- uid: MapQuest.Coordinates.CoordinateType.Measured
+  commentId: F:MapQuest.Coordinates.CoordinateType.Measured
+  id: Measured
+  parent: MapQuest.Coordinates.CoordinateType
+  langs:
+  - csharp
+  - vb
+  name: Measured
+  nameWithType: CoordinateType.Measured
+  fullName: MapQuest.Coordinates.CoordinateType.Measured
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: Shapefileフォーマットで使用されるのと同様な、任意の計算結果を含む<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>です。
+  example: []
+  syntax:
+    content: Measured = 2
+    return:
+      type: MapQuest.Coordinates.CoordinateType
+- uid: MapQuest.Coordinates.CoordinateType.Flagged
+  commentId: F:MapQuest.Coordinates.CoordinateType.Flagged
+  id: Flagged
+  parent: MapQuest.Coordinates.CoordinateType
+  langs:
+  - csharp
+  - vb
+  name: Flagged
+  nameWithType: CoordinateType.Flagged
+  fullName: MapQuest.Coordinates.CoordinateType.Flagged
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: あるポイントが可視可能かどうかを判断するプロパティの情報を含む<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>です。
+  example: []
+  syntax:
+    content: Flagged = 3
+    return:
+      type: MapQuest.Coordinates.CoordinateType
+- uid: MapQuest.Coordinates.CoordinateType.Tagged
+  commentId: F:MapQuest.Coordinates.CoordinateType.Tagged
+  id: Tagged
+  parent: MapQuest.Coordinates.CoordinateType
+  langs:
+  - csharp
+  - vb
+  name: Tagged
+  nameWithType: CoordinateType.Tagged
+  fullName: MapQuest.Coordinates.CoordinateType.Tagged
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: 特別なタグの情報を含むタグ付きの<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>です。
+  example: []
+  syntax:
+    content: Tagged = 4
+    return:
+      type: MapQuest.Coordinates.CoordinateType
+- uid: MapQuest.Coordinates.CoordinateType.Custom
+  commentId: F:MapQuest.Coordinates.CoordinateType.Custom
+  id: Custom
+  parent: MapQuest.Coordinates.CoordinateType
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: CoordinateType.Custom
+  fullName: MapQuest.Coordinates.CoordinateType.Custom
+  type: Field
+  assemblies:
+  - MapQuest.Coordinates
+  namespace: MapQuest.Coordinates
+  summary: ユーザーが定義，またはカスタマイズできる<xref href="MapQuest.Coordinates.Coordinate?text=Coordinate" data-throw-if-not-resolved="false"></xref>です。
+  example: []
+  syntax:
+    content: Custom = 10
+    return:
+      type: MapQuest.Coordinates.CoordinateType
+references:
+- uid: MapQuest.Coordinates.Coordinate
+  commentId: T:MapQuest.Coordinates.Coordinate
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: MapQuest.Coordinates.Coordinate
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: MapQuest.Coordinates.CoordinateType
+  commentId: T:MapQuest.Coordinates.CoordinateType
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.CoordinateType.html
+  name: CoordinateType
+  nameWithType: CoordinateType
+  fullName: MapQuest.Coordinates.CoordinateType

@@ -1,0 +1,370 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.IO.IFileCache
+  commentId: T:MapQuest.IO.IFileCache
+  id: IFileCache
+  parent: MapQuest.IO
+  children:
+  - MapQuest.IO.IFileCache.CacheFolder
+  - MapQuest.IO.IFileCache.Clear
+  - MapQuest.IO.IFileCache.Contains(System.String)
+  - MapQuest.IO.IFileCache.DownloadHeader
+  - MapQuest.IO.IFileCache.GetFile(System.String,System.String)
+  - MapQuest.IO.IFileCache.LocalCacheSize
+  - MapQuest.IO.IFileCache.MemoryCacheSize
+  langs:
+  - csharp
+  - vb
+  name: IFileCache
+  nameWithType: IFileCache
+  fullName: MapQuest.IO.IFileCache
+  type: Interface
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  syntax:
+    content: public interface IFileCache
+    content.vb: Public Interface IFileCache
+- uid: MapQuest.IO.IFileCache.Clear
+  commentId: M:MapQuest.IO.IFileCache.Clear
+  id: Clear
+  parent: MapQuest.IO.IFileCache
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: IFileCache.Clear()
+  fullName: MapQuest.IO.IFileCache.Clear()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  syntax:
+    content: void Clear()
+    content.vb: Sub Clear()
+  overload: MapQuest.IO.IFileCache.Clear*
+- uid: MapQuest.IO.IFileCache.Contains(System.String)
+  commentId: M:MapQuest.IO.IFileCache.Contains(System.String)
+  id: Contains(System.String)
+  parent: MapQuest.IO.IFileCache
+  langs:
+  - csharp
+  - vb
+  name: Contains(string)
+  nameWithType: IFileCache.Contains(string)
+  fullName: MapQuest.IO.IFileCache.Contains(string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  syntax:
+    content: bool Contains(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function Contains(key As String) As Boolean
+  overload: MapQuest.IO.IFileCache.Contains*
+  nameWithType.vb: IFileCache.Contains(String)
+  fullName.vb: MapQuest.IO.IFileCache.Contains(String)
+  name.vb: Contains(String)
+- uid: MapQuest.IO.IFileCache.GetFile(System.String,System.String)
+  commentId: M:MapQuest.IO.IFileCache.GetFile(System.String,System.String)
+  id: GetFile(System.String,System.String)
+  parent: MapQuest.IO.IFileCache
+  langs:
+  - csharp
+  - vb
+  name: GetFile(string, string)
+  nameWithType: IFileCache.GetFile(string, string)
+  fullName: MapQuest.IO.IFileCache.GetFile(string, string)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  syntax:
+    content: Stream GetFile(string path, string cacheFileName)
+    parameters:
+    - id: path
+      type: System.String
+    - id: cacheFileName
+      type: System.String
+    return:
+      type: System.IO.Stream
+    content.vb: Function GetFile(path As String, cacheFileName As String) As Stream
+  overload: MapQuest.IO.IFileCache.GetFile*
+  nameWithType.vb: IFileCache.GetFile(String, String)
+  fullName.vb: MapQuest.IO.IFileCache.GetFile(String, String)
+  name.vb: GetFile(String, String)
+- uid: MapQuest.IO.IFileCache.CacheFolder
+  commentId: P:MapQuest.IO.IFileCache.CacheFolder
+  id: CacheFolder
+  parent: MapQuest.IO.IFileCache
+  langs:
+  - csharp
+  - vb
+  name: CacheFolder
+  nameWithType: IFileCache.CacheFolder
+  fullName: MapQuest.IO.IFileCache.CacheFolder
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  syntax:
+    content: string CacheFolder { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property CacheFolder As String
+  overload: MapQuest.IO.IFileCache.CacheFolder*
+- uid: MapQuest.IO.IFileCache.DownloadHeader
+  commentId: P:MapQuest.IO.IFileCache.DownloadHeader
+  id: DownloadHeader
+  parent: MapQuest.IO.IFileCache
+  langs:
+  - csharp
+  - vb
+  name: DownloadHeader
+  nameWithType: IFileCache.DownloadHeader
+  fullName: MapQuest.IO.IFileCache.DownloadHeader
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  syntax:
+    content: WebHeaderCollection DownloadHeader { get; set; }
+    parameters: []
+    return:
+      type: System.Net.WebHeaderCollection
+    content.vb: Property DownloadHeader As WebHeaderCollection
+  overload: MapQuest.IO.IFileCache.DownloadHeader*
+- uid: MapQuest.IO.IFileCache.LocalCacheSize
+  commentId: P:MapQuest.IO.IFileCache.LocalCacheSize
+  id: LocalCacheSize
+  parent: MapQuest.IO.IFileCache
+  langs:
+  - csharp
+  - vb
+  name: LocalCacheSize
+  nameWithType: IFileCache.LocalCacheSize
+  fullName: MapQuest.IO.IFileCache.LocalCacheSize
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  syntax:
+    content: int LocalCacheSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property LocalCacheSize As Integer
+  overload: MapQuest.IO.IFileCache.LocalCacheSize*
+- uid: MapQuest.IO.IFileCache.MemoryCacheSize
+  commentId: P:MapQuest.IO.IFileCache.MemoryCacheSize
+  id: MemoryCacheSize
+  parent: MapQuest.IO.IFileCache
+  langs:
+  - csharp
+  - vb
+  name: MemoryCacheSize
+  nameWithType: IFileCache.MemoryCacheSize
+  fullName: MapQuest.IO.IFileCache.MemoryCacheSize
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  syntax:
+    content: int MemoryCacheSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property MemoryCacheSize As Integer
+  overload: MapQuest.IO.IFileCache.MemoryCacheSize*
+references:
+- uid: MapQuest.IO
+  commentId: N:MapQuest.IO
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.IO
+  nameWithType: MapQuest.IO
+  fullName: MapQuest.IO
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+- uid: MapQuest.IO.IFileCache.Clear*
+  commentId: Overload:MapQuest.IO.IFileCache.Clear
+  isExternal: true
+  href: MapQuest.IO.IFileCache.html#MapQuest_IO_IFileCache_Clear
+  name: Clear
+  nameWithType: IFileCache.Clear
+  fullName: MapQuest.IO.IFileCache.Clear
+- uid: MapQuest.IO.IFileCache.Contains*
+  commentId: Overload:MapQuest.IO.IFileCache.Contains
+  isExternal: true
+  href: MapQuest.IO.IFileCache.html#MapQuest_IO_IFileCache_Contains_System_String_
+  name: Contains
+  nameWithType: IFileCache.Contains
+  fullName: MapQuest.IO.IFileCache.Contains
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.IO.IFileCache.GetFile*
+  commentId: Overload:MapQuest.IO.IFileCache.GetFile
+  isExternal: true
+  href: MapQuest.IO.IFileCache.html#MapQuest_IO_IFileCache_GetFile_System_String_System_String_
+  name: GetFile
+  nameWithType: IFileCache.GetFile
+  fullName: MapQuest.IO.IFileCache.GetFile
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: MapQuest.IO.IFileCache.CacheFolder*
+  commentId: Overload:MapQuest.IO.IFileCache.CacheFolder
+  isExternal: true
+  href: MapQuest.IO.IFileCache.html#MapQuest_IO_IFileCache_CacheFolder
+  name: CacheFolder
+  nameWithType: IFileCache.CacheFolder
+  fullName: MapQuest.IO.IFileCache.CacheFolder
+- uid: MapQuest.IO.IFileCache.DownloadHeader*
+  commentId: Overload:MapQuest.IO.IFileCache.DownloadHeader
+  isExternal: true
+  href: MapQuest.IO.IFileCache.html#MapQuest_IO_IFileCache_DownloadHeader
+  name: DownloadHeader
+  nameWithType: IFileCache.DownloadHeader
+  fullName: MapQuest.IO.IFileCache.DownloadHeader
+- uid: System.Net.WebHeaderCollection
+  commentId: T:System.Net.WebHeaderCollection
+  parent: System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.webheadercollection
+  name: WebHeaderCollection
+  nameWithType: WebHeaderCollection
+  fullName: System.Net.WebHeaderCollection
+- uid: System.Net
+  commentId: N:System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+- uid: MapQuest.IO.IFileCache.LocalCacheSize*
+  commentId: Overload:MapQuest.IO.IFileCache.LocalCacheSize
+  isExternal: true
+  href: MapQuest.IO.IFileCache.html#MapQuest_IO_IFileCache_LocalCacheSize
+  name: LocalCacheSize
+  nameWithType: IFileCache.LocalCacheSize
+  fullName: MapQuest.IO.IFileCache.LocalCacheSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MapQuest.IO.IFileCache.MemoryCacheSize*
+  commentId: Overload:MapQuest.IO.IFileCache.MemoryCacheSize
+  isExternal: true
+  href: MapQuest.IO.IFileCache.html#MapQuest_IO_IFileCache_MemoryCacheSize
+  name: MemoryCacheSize
+  nameWithType: IFileCache.MemoryCacheSize
+  fullName: MapQuest.IO.IFileCache.MemoryCacheSize

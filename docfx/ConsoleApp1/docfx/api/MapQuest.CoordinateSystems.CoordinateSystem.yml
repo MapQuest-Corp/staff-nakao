@@ -1,0 +1,1075 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.CoordinateSystem
+  commentId: T:MapQuest.CoordinateSystems.CoordinateSystem
+  id: CoordinateSystem
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.CoordinateSystem.#ctor(MapQuest.CoordinateSystems.CoordinateSystem)
+  - MapQuest.CoordinateSystems.CoordinateSystem.#ctor(System.String)
+  - MapQuest.CoordinateSystems.CoordinateSystem.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)
+  - MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType
+  - MapQuest.CoordinateSystems.CoordinateSystem.DefaultEnvelope
+  - MapQuest.CoordinateSystems.CoordinateSystem.Dimension
+  - MapQuest.CoordinateSystems.CoordinateSystem.Equals(System.Object)
+  - MapQuest.CoordinateSystems.CoordinateSystem.GetAxis(System.Int32)
+  - MapQuest.CoordinateSystems.CoordinateSystem.GetHashCode
+  - MapQuest.CoordinateSystems.CoordinateSystem.GetUnits(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: CoordinateSystem
+  nameWithType: CoordinateSystem
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem
+  type: Class
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    「地図座標系(Coordinate Reference System)」をモデル化するすべてのクラスのベースクラスです。
+
+    「地図座標系」は、1 つの座標系(Coordinate System) と 1 つの測地系(Datum)から成ります。
+  remarks: >-
+    これは、座標系をさらに拡張あるいは継承するための抽象的なクラスです。
+
+    <p></p>
+
+    座標系とは、数学的な空間(ここで空間の要素は位置と呼ばれる)です。
+
+    <p></p>
+
+    各位置は数のリストによって記述されます。リストの長さは座標系の次元に相当します。
+
+    したがって、2 次元の座標系では、各位置は 2 つの数値を含んでいるリストによって記述されます。
+
+    <p></p>
+
+    しかし、座標系では、数のすべてのリストは位置に相当するとは限りません。
+
+    <p></p>
+
+    いくつかのリストは座標系の領域の外にあるかもしれません。
+
+    例えば、2次元の緯度/経度座標系では、緯度:91度・経度:91度 という値は位置に相当しません。
+
+    いくつかの座標系は、さらに実際の世界の位置への数学的なスペースからのマッピングを持っています。
+
+    したがって、緯度/経度座標系では、数学的な位置(緯度、経度)は、地球の表面上の位置に相当します。
+
+    実際の世界の位置の中への数学的なスペースからのこのマッピングは測地系(Datum, データム)と呼ばれます。
+  example: []
+  syntax:
+    content: 'public abstract class CoordinateSystem : Info, ICoordinateSystem, IInfo, ICloneable'
+    content.vb: Public MustInherit Class CoordinateSystem Inherits Info Implements ICoordinateSystem, IInfo, ICloneable
+  seealso:
+  - linkId: MapQuest.CoordinateSystems.ICoordinateSystem
+    commentId: T:MapQuest.CoordinateSystems.ICoordinateSystem
+  inheritance:
+  - System.Object
+  - MapQuest.CoordinateSystems.Info
+  derivedClasses:
+  - MapQuest.CoordinateSystems.HorizontalCoordinateSystem
+  implements:
+  - MapQuest.CoordinateSystems.ICoordinateSystem
+  - MapQuest.CoordinateSystems.IInfo
+  - System.ICloneable
+  inheritedMembers:
+  - MapQuest.CoordinateSystems.Info.Clone
+  - MapQuest.CoordinateSystems.Info.Remarks
+  - MapQuest.CoordinateSystems.Info.AuthorityCode
+  - MapQuest.CoordinateSystems.Info.Authority
+  - MapQuest.CoordinateSystems.Info.Name
+  - MapQuest.CoordinateSystems.Info.Alias
+  - MapQuest.CoordinateSystems.Info.Abbreviation
+  - MapQuest.CoordinateSystems.Info.WKT
+  - MapQuest.CoordinateSystems.Info.XML
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.#ctor(System.String)
+  commentId: M:MapQuest.CoordinateSystems.CoordinateSystem.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: MapQuest.CoordinateSystems.CoordinateSystem
+  langs:
+  - csharp
+  - vb
+  name: CoordinateSystem(string)
+  nameWithType: CoordinateSystem.CoordinateSystem(string)
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystem(string)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 座標系の名称を指定して、新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: protected CoordinateSystem(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: 座標系の名称。
+    content.vb: Protected Sub New(name As String)
+  overload: MapQuest.CoordinateSystems.CoordinateSystem.#ctor*
+  nameWithType.vb: CoordinateSystem.New(String)
+  fullName.vb: MapQuest.CoordinateSystems.CoordinateSystem.New(String)
+  name.vb: New(String)
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)
+  commentId: M:MapQuest.CoordinateSystems.CoordinateSystem.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String,System.String,System.String,System.String)'
+  parent: MapQuest.CoordinateSystems.CoordinateSystem
+  langs:
+  - csharp
+  - vb
+  name: CoordinateSystem(string, string, string, string, string, string)
+  nameWithType: CoordinateSystem.CoordinateSystem(string, string, string, string, string, string)
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystem(string, string, string, string, string, string)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 必要なパラメータを指定して、新しいインスタンスを初期化します。
+  example: []
+  syntax:
+    content: protected CoordinateSystem(string remarks, string authority, string authorityCode, string name, string alias, string abbreviation)
+    parameters:
+    - id: remarks
+      type: System.String
+      description: 座標系の説明。
+    - id: authority
+      type: System.String
+      description: 座標系の策定元団体・機関の名称。
+    - id: authorityCode
+      type: System.String
+      description: authority が策定した座標系の ID 。
+    - id: name
+      type: System.String
+      description: 座標系の名称。
+    - id: alias
+      type: System.String
+      description: 座標系の別名。
+    - id: abbreviation
+      type: System.String
+      description: 座標系の省略名。
+    content.vb: Protected Sub New(remarks As String, authority As String, authorityCode As String, name As String, [alias] As String, abbreviation As String)
+  overload: MapQuest.CoordinateSystems.CoordinateSystem.#ctor*
+  nameWithType.vb: CoordinateSystem.New(String, String, String, String, String, String)
+  fullName.vb: MapQuest.CoordinateSystems.CoordinateSystem.New(String, String, String, String, String, String)
+  name.vb: New(String, String, String, String, String, String)
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.#ctor(MapQuest.CoordinateSystems.CoordinateSystem)
+  commentId: M:MapQuest.CoordinateSystems.CoordinateSystem.#ctor(MapQuest.CoordinateSystems.CoordinateSystem)
+  id: '#ctor(MapQuest.CoordinateSystems.CoordinateSystem)'
+  parent: MapQuest.CoordinateSystems.CoordinateSystem
+  langs:
+  - csharp
+  - vb
+  name: CoordinateSystem(CoordinateSystem)
+  nameWithType: CoordinateSystem.CoordinateSystem(CoordinateSystem)
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystem(MapQuest.CoordinateSystems.CoordinateSystem)
+  type: Constructor
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 現在のインスタンスの簡易コピーを生成します。
+  example: []
+  syntax:
+    content: protected CoordinateSystem(CoordinateSystem sourceCS)
+    parameters:
+    - id: sourceCS
+      type: MapQuest.CoordinateSystems.CoordinateSystem
+      description: 複製元の <xref href="MapQuest.CoordinateSystems.CoordinateSystem" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Protected Sub New(sourceCS As CoordinateSystem)
+  overload: MapQuest.CoordinateSystems.CoordinateSystem.#ctor*
+  nameWithType.vb: CoordinateSystem.New(CoordinateSystem)
+  fullName.vb: MapQuest.CoordinateSystems.CoordinateSystem.New(MapQuest.CoordinateSystems.CoordinateSystem)
+  name.vb: New(CoordinateSystem)
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.GetAxis(System.Int32)
+  commentId: M:MapQuest.CoordinateSystems.CoordinateSystem.GetAxis(System.Int32)
+  id: GetAxis(System.Int32)
+  parent: MapQuest.CoordinateSystems.CoordinateSystem
+  langs:
+  - csharp
+  - vb
+  name: GetAxis(int)
+  nameWithType: CoordinateSystem.GetAxis(int)
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.GetAxis(int)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 座標系の、指定した次元の「軸」の情報を取得します。
+  remarks: 座標系中の各次元は対応する軸を持っています。
+  example: []
+  syntax:
+    content: public abstract IAxisInfo GetAxis(int Dimension)
+    parameters:
+    - id: Dimension
+      type: System.Int32
+      description: 次元を示す 0 から始まるインデックス。
+    return:
+      type: MapQuest.CoordinateSystems.IAxisInfo
+      description: >-
+        指定した次元の軸情報を定義する <xref href="MapQuest.CoordinateSystems.IAxisInfo" data-throw-if-not-resolved="false"></xref> 
+
+        オブジェクトを返します。
+    content.vb: Public MustOverride Function GetAxis(Dimension As Integer) As IAxisInfo
+  overload: MapQuest.CoordinateSystems.CoordinateSystem.GetAxis*
+  implements:
+  - MapQuest.CoordinateSystems.ICoordinateSystem.GetAxis(System.Int32)
+  nameWithType.vb: CoordinateSystem.GetAxis(Integer)
+  fullName.vb: MapQuest.CoordinateSystems.CoordinateSystem.GetAxis(Integer)
+  name.vb: GetAxis(Integer)
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.GetUnits(System.Int32)
+  commentId: M:MapQuest.CoordinateSystems.CoordinateSystem.GetUnits(System.Int32)
+  id: GetUnits(System.Int32)
+  parent: MapQuest.CoordinateSystems.CoordinateSystem
+  langs:
+  - csharp
+  - vb
+  name: GetUnits(int)
+  nameWithType: CoordinateSystem.GetUnits(int)
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.GetUnits(int)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 座標系の、指定した次元の「単位」の情報を取得します。
+  remarks: 座標系中の各次元は対応する「単位」を持っています。
+  example: []
+  syntax:
+    content: public abstract IUnit GetUnits(int dimension)
+    parameters:
+    - id: dimension
+      type: System.Int32
+      description: 次元を示す 0 から始まるインデックス。
+    return:
+      type: MapQuest.CoordinateSystems.IUnit
+      description: 座標系の軸の単位を示す <xref href="MapQuest.CoordinateSystems.IUnit" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public MustOverride Function GetUnits(dimension As Integer) As IUnit
+  overload: MapQuest.CoordinateSystems.CoordinateSystem.GetUnits*
+  implements:
+  - MapQuest.CoordinateSystems.ICoordinateSystem.GetUnits(System.Int32)
+  nameWithType.vb: CoordinateSystem.GetUnits(Integer)
+  fullName.vb: MapQuest.CoordinateSystems.CoordinateSystem.GetUnits(Integer)
+  name.vb: GetUnits(Integer)
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.Equals(System.Object)
+  commentId: M:MapQuest.CoordinateSystems.CoordinateSystem.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: MapQuest.CoordinateSystems.CoordinateSystem
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: CoordinateSystem.Equals(object)
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.Equals(object)
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    対象のインスタンスが、
+
+    指定したオブジェクトに等しいかどうかを返します。
+  remarks: >-
+    このクラスの <xref href="MapQuest.CoordinateSystems.CoordinateSystem.Equals(System.Object)" data-throw-if-not-resolved="false"></xref> メソッドは、
+
+    Authority 、 AuthorityCode 、 
+
+    Name を比較し、その全てが等しければ true を返します。
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: このインスタンスと比較するオブジェクト。
+    return:
+      type: System.Boolean
+      description: >-
+        obj が、このインスタンスと同じ値である場合は true 。
+                    それ以外の場合は false 。
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: MapQuest.CoordinateSystems.Info.Equals(System.Object)
+  overload: MapQuest.CoordinateSystems.CoordinateSystem.Equals*
+  nameWithType.vb: CoordinateSystem.Equals(Object)
+  fullName.vb: MapQuest.CoordinateSystems.CoordinateSystem.Equals(Object)
+  name.vb: Equals(Object)
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.GetHashCode
+  commentId: M:MapQuest.CoordinateSystems.CoordinateSystem.GetHashCode
+  id: GetHashCode
+  parent: MapQuest.CoordinateSystems.CoordinateSystem
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: CoordinateSystem.GetHashCode()
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.GetHashCode()
+  type: Method
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: このインスタンスのハッシュ コードを返します。
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: <code>base.GetHashCode()</code> の結果を返します。
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: MapQuest.CoordinateSystems.Info.GetHashCode
+  overload: MapQuest.CoordinateSystems.CoordinateSystem.GetHashCode*
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.DefaultEnvelope
+  commentId: P:MapQuest.CoordinateSystems.CoordinateSystem.DefaultEnvelope
+  id: DefaultEnvelope
+  parent: MapQuest.CoordinateSystems.CoordinateSystem
+  langs:
+  - csharp
+  - vb
+  name: DefaultEnvelope
+  nameWithType: CoordinateSystem.DefaultEnvelope
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.DefaultEnvelope
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 座標系の既定の範囲を取得します。
+  remarks: >-
+    領域に制限のある座標系は、その領域を返します。
+
+    領域に制限のない座標系は、使用が考えられる領域を返す事が望ましいです。
+  example: []
+  syntax:
+    content: public virtual Envelope DefaultEnvelope { get; }
+    parameters: []
+    return:
+      type: MapQuest.Coordinates.Envelope
+      description: この座標系で定義されている範囲をしめす <xref href="MapQuest.Coordinates.Envelope" data-throw-if-not-resolved="false"></xref> 。
+    content.vb: Public Overridable ReadOnly Property DefaultEnvelope As Envelope
+  overload: MapQuest.CoordinateSystems.CoordinateSystem.DefaultEnvelope*
+  implements:
+  - MapQuest.CoordinateSystems.ICoordinateSystem.DefaultEnvelope
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.Dimension
+  commentId: P:MapQuest.CoordinateSystems.CoordinateSystem.Dimension
+  id: Dimension
+  parent: MapQuest.CoordinateSystems.CoordinateSystem
+  langs:
+  - csharp
+  - vb
+  name: Dimension
+  nameWithType: CoordinateSystem.Dimension
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.Dimension
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: 座標系の次元の数を取得します。
+  remarks: 座標系中の各次元は対応する軸を持っています。
+  example: []
+  syntax:
+    content: public abstract int Dimension { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: 座標系の次元の数。
+    content.vb: Public MustOverride ReadOnly Property Dimension As Integer
+  overload: MapQuest.CoordinateSystems.CoordinateSystem.Dimension*
+  implements:
+  - MapQuest.CoordinateSystems.ICoordinateSystem.Dimension
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType
+  commentId: P:MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType
+  id: CoordinateSystemType
+  parent: MapQuest.CoordinateSystems.CoordinateSystem
+  langs:
+  - csharp
+  - vb
+  name: CoordinateSystemType
+  nameWithType: CoordinateSystem.CoordinateSystemType
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: このインスタンスの座標系の種類を取得します。
+  example: []
+  syntax:
+    content: public abstract CoordinateSystemType CoordinateSystemType { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.CoordinateSystemType
+      description: 座標系の種類を示す <xref href="MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType" data-throw-if-not-resolved="false"></xref> 値。
+    content.vb: Public MustOverride ReadOnly Property CoordinateSystemType As CoordinateSystemType
+  overload: MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType*
+  implements:
+  - MapQuest.CoordinateSystems.ICoordinateSystem.CoordinateSystemType
+references:
+- uid: MapQuest.CoordinateSystems.ICoordinateSystem
+  commentId: T:MapQuest.CoordinateSystems.ICoordinateSystem
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ICoordinateSystem.html
+  name: ICoordinateSystem
+  nameWithType: ICoordinateSystem
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystem
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MapQuest.CoordinateSystems.Info
+  commentId: T:MapQuest.CoordinateSystems.Info
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html
+  name: Info
+  nameWithType: Info
+  fullName: MapQuest.CoordinateSystems.Info
+- uid: MapQuest.CoordinateSystems.IInfo
+  commentId: T:MapQuest.CoordinateSystems.IInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html
+  name: IInfo
+  nameWithType: IInfo
+  fullName: MapQuest.CoordinateSystems.IInfo
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: MapQuest.CoordinateSystems.Info.Clone
+  commentId: M:MapQuest.CoordinateSystems.Info.Clone
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Clone
+  name: Clone()
+  nameWithType: Info.Clone()
+  fullName: MapQuest.CoordinateSystems.Info.Clone()
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.Info.Clone
+    name: Clone
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.Info.Clone
+    name: Clone
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.Info.Remarks
+  commentId: P:MapQuest.CoordinateSystems.Info.Remarks
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Remarks
+  name: Remarks
+  nameWithType: Info.Remarks
+  fullName: MapQuest.CoordinateSystems.Info.Remarks
+- uid: MapQuest.CoordinateSystems.Info.AuthorityCode
+  commentId: P:MapQuest.CoordinateSystems.Info.AuthorityCode
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_AuthorityCode
+  name: AuthorityCode
+  nameWithType: Info.AuthorityCode
+  fullName: MapQuest.CoordinateSystems.Info.AuthorityCode
+- uid: MapQuest.CoordinateSystems.Info.Authority
+  commentId: P:MapQuest.CoordinateSystems.Info.Authority
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Authority
+  name: Authority
+  nameWithType: Info.Authority
+  fullName: MapQuest.CoordinateSystems.Info.Authority
+- uid: MapQuest.CoordinateSystems.Info.Name
+  commentId: P:MapQuest.CoordinateSystems.Info.Name
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Name
+  name: Name
+  nameWithType: Info.Name
+  fullName: MapQuest.CoordinateSystems.Info.Name
+- uid: MapQuest.CoordinateSystems.Info.Alias
+  commentId: P:MapQuest.CoordinateSystems.Info.Alias
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Alias
+  name: Alias
+  nameWithType: Info.Alias
+  fullName: MapQuest.CoordinateSystems.Info.Alias
+- uid: MapQuest.CoordinateSystems.Info.Abbreviation
+  commentId: P:MapQuest.CoordinateSystems.Info.Abbreviation
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Abbreviation
+  name: Abbreviation
+  nameWithType: Info.Abbreviation
+  fullName: MapQuest.CoordinateSystems.Info.Abbreviation
+- uid: MapQuest.CoordinateSystems.Info.WKT
+  commentId: P:MapQuest.CoordinateSystems.Info.WKT
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_WKT
+  name: WKT
+  nameWithType: Info.WKT
+  fullName: MapQuest.CoordinateSystems.Info.WKT
+- uid: MapQuest.CoordinateSystems.Info.XML
+  commentId: P:MapQuest.CoordinateSystems.Info.XML
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_XML
+  name: XML
+  nameWithType: Info.XML
+  fullName: MapQuest.CoordinateSystems.Info.XML
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.#ctor*
+  commentId: Overload:MapQuest.CoordinateSystems.CoordinateSystem.#ctor
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem__ctor_System_String_
+  name: CoordinateSystem
+  nameWithType: CoordinateSystem.CoordinateSystem
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystem
+  nameWithType.vb: CoordinateSystem.New
+  fullName.vb: MapQuest.CoordinateSystems.CoordinateSystem.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MapQuest.CoordinateSystems.CoordinateSystem
+  commentId: T:MapQuest.CoordinateSystems.CoordinateSystem
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html
+  name: CoordinateSystem
+  nameWithType: CoordinateSystem
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem
+- uid: MapQuest.CoordinateSystems.IAxisInfo
+  commentId: T:MapQuest.CoordinateSystems.IAxisInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IAxisInfo.html
+  name: IAxisInfo
+  nameWithType: IAxisInfo
+  fullName: MapQuest.CoordinateSystems.IAxisInfo
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.GetAxis*
+  commentId: Overload:MapQuest.CoordinateSystems.CoordinateSystem.GetAxis
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_GetAxis_System_Int32_
+  name: GetAxis
+  nameWithType: CoordinateSystem.GetAxis
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.GetAxis
+- uid: MapQuest.CoordinateSystems.ICoordinateSystem.GetAxis(System.Int32)
+  commentId: M:MapQuest.CoordinateSystems.ICoordinateSystem.GetAxis(System.Int32)
+  parent: MapQuest.CoordinateSystems.ICoordinateSystem
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ICoordinateSystem.html#MapQuest_CoordinateSystems_ICoordinateSystem_GetAxis_System_Int32_
+  name: GetAxis(int)
+  nameWithType: ICoordinateSystem.GetAxis(int)
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystem.GetAxis(int)
+  nameWithType.vb: ICoordinateSystem.GetAxis(Integer)
+  fullName.vb: MapQuest.CoordinateSystems.ICoordinateSystem.GetAxis(Integer)
+  name.vb: GetAxis(Integer)
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.ICoordinateSystem.GetAxis(System.Int32)
+    name: GetAxis
+    isExternal: true
+    href: MapQuest.CoordinateSystems.ICoordinateSystem.html#MapQuest_CoordinateSystems_ICoordinateSystem_GetAxis_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.ICoordinateSystem.GetAxis(System.Int32)
+    name: GetAxis
+    isExternal: true
+    href: MapQuest.CoordinateSystems.ICoordinateSystem.html#MapQuest_CoordinateSystems_ICoordinateSystem_GetAxis_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MapQuest.CoordinateSystems.IUnit
+  commentId: T:MapQuest.CoordinateSystems.IUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnit.html
+  name: IUnit
+  nameWithType: IUnit
+  fullName: MapQuest.CoordinateSystems.IUnit
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.GetUnits*
+  commentId: Overload:MapQuest.CoordinateSystems.CoordinateSystem.GetUnits
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_GetUnits_System_Int32_
+  name: GetUnits
+  nameWithType: CoordinateSystem.GetUnits
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.GetUnits
+- uid: MapQuest.CoordinateSystems.ICoordinateSystem.GetUnits(System.Int32)
+  commentId: M:MapQuest.CoordinateSystems.ICoordinateSystem.GetUnits(System.Int32)
+  parent: MapQuest.CoordinateSystems.ICoordinateSystem
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ICoordinateSystem.html#MapQuest_CoordinateSystems_ICoordinateSystem_GetUnits_System_Int32_
+  name: GetUnits(int)
+  nameWithType: ICoordinateSystem.GetUnits(int)
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystem.GetUnits(int)
+  nameWithType.vb: ICoordinateSystem.GetUnits(Integer)
+  fullName.vb: MapQuest.CoordinateSystems.ICoordinateSystem.GetUnits(Integer)
+  name.vb: GetUnits(Integer)
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.ICoordinateSystem.GetUnits(System.Int32)
+    name: GetUnits
+    isExternal: true
+    href: MapQuest.CoordinateSystems.ICoordinateSystem.html#MapQuest_CoordinateSystems_ICoordinateSystem_GetUnits_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.ICoordinateSystem.GetUnits(System.Int32)
+    name: GetUnits
+    isExternal: true
+    href: MapQuest.CoordinateSystems.ICoordinateSystem.html#MapQuest_CoordinateSystems_ICoordinateSystem_GetUnits_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.Equals(System.Object)
+  commentId: M:MapQuest.CoordinateSystems.CoordinateSystem.Equals(System.Object)
+  parent: MapQuest.CoordinateSystems.CoordinateSystem
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: CoordinateSystem.Equals(object)
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.Equals(object)
+  nameWithType.vb: CoordinateSystem.Equals(Object)
+  fullName.vb: MapQuest.CoordinateSystems.CoordinateSystem.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.CoordinateSystem.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.CoordinateSystem.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.CoordinateSystems.Info.Equals(System.Object)
+  commentId: M:MapQuest.CoordinateSystems.Info.Equals(System.Object)
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: Info.Equals(object)
+  fullName: MapQuest.CoordinateSystems.Info.Equals(object)
+  nameWithType.vb: Info.Equals(Object)
+  fullName.vb: MapQuest.CoordinateSystems.Info.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.Info.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.Info.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.Equals*
+  commentId: Overload:MapQuest.CoordinateSystems.CoordinateSystem.Equals
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_Equals_System_Object_
+  name: Equals
+  nameWithType: CoordinateSystem.Equals
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.CoordinateSystems.Info.GetHashCode
+  commentId: M:MapQuest.CoordinateSystems.Info.GetHashCode
+  parent: MapQuest.CoordinateSystems.Info
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode
+  name: GetHashCode()
+  nameWithType: Info.GetHashCode()
+  fullName: MapQuest.CoordinateSystems.Info.GetHashCode()
+  spec.csharp:
+  - uid: MapQuest.CoordinateSystems.Info.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.CoordinateSystems.Info.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: MapQuest.CoordinateSystems.Info.html#MapQuest_CoordinateSystems_Info_GetHashCode
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.GetHashCode*
+  commentId: Overload:MapQuest.CoordinateSystems.CoordinateSystem.GetHashCode
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_GetHashCode
+  name: GetHashCode
+  nameWithType: CoordinateSystem.GetHashCode
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.GetHashCode
+- uid: MapQuest.Coordinates.Envelope
+  commentId: T:MapQuest.Coordinates.Envelope
+  parent: MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.Coordinates.Envelope.html
+  name: Envelope
+  nameWithType: Envelope
+  fullName: MapQuest.Coordinates.Envelope
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.DefaultEnvelope*
+  commentId: Overload:MapQuest.CoordinateSystems.CoordinateSystem.DefaultEnvelope
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_DefaultEnvelope
+  name: DefaultEnvelope
+  nameWithType: CoordinateSystem.DefaultEnvelope
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.DefaultEnvelope
+- uid: MapQuest.CoordinateSystems.ICoordinateSystem.DefaultEnvelope
+  commentId: P:MapQuest.CoordinateSystems.ICoordinateSystem.DefaultEnvelope
+  parent: MapQuest.CoordinateSystems.ICoordinateSystem
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ICoordinateSystem.html#MapQuest_CoordinateSystems_ICoordinateSystem_DefaultEnvelope
+  name: DefaultEnvelope
+  nameWithType: ICoordinateSystem.DefaultEnvelope
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystem.DefaultEnvelope
+- uid: MapQuest.Coordinates
+  commentId: N:MapQuest.Coordinates
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Coordinates
+  nameWithType: MapQuest.Coordinates
+  fullName: MapQuest.Coordinates
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Coordinates
+    name: Coordinates
+    isExternal: true
+    href: MapQuest.Coordinates.html
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.Dimension*
+  commentId: Overload:MapQuest.CoordinateSystems.CoordinateSystem.Dimension
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_Dimension
+  name: Dimension
+  nameWithType: CoordinateSystem.Dimension
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.Dimension
+- uid: MapQuest.CoordinateSystems.ICoordinateSystem.Dimension
+  commentId: P:MapQuest.CoordinateSystems.ICoordinateSystem.Dimension
+  parent: MapQuest.CoordinateSystems.ICoordinateSystem
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ICoordinateSystem.html#MapQuest_CoordinateSystems_ICoordinateSystem_Dimension
+  name: Dimension
+  nameWithType: ICoordinateSystem.Dimension
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystem.Dimension
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType
+  commentId: P:MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType
+  parent: MapQuest.CoordinateSystems.CoordinateSystem
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_CoordinateSystemType
+  name: CoordinateSystemType
+  nameWithType: CoordinateSystem.CoordinateSystemType
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType
+- uid: MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType*
+  commentId: Overload:MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystem.html#MapQuest_CoordinateSystems_CoordinateSystem_CoordinateSystemType
+  name: CoordinateSystemType
+  nameWithType: CoordinateSystem.CoordinateSystemType
+  fullName: MapQuest.CoordinateSystems.CoordinateSystem.CoordinateSystemType
+- uid: MapQuest.CoordinateSystems.ICoordinateSystem.CoordinateSystemType
+  commentId: P:MapQuest.CoordinateSystems.ICoordinateSystem.CoordinateSystemType
+  parent: MapQuest.CoordinateSystems.ICoordinateSystem
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ICoordinateSystem.html#MapQuest_CoordinateSystems_ICoordinateSystem_CoordinateSystemType
+  name: CoordinateSystemType
+  nameWithType: ICoordinateSystem.CoordinateSystemType
+  fullName: MapQuest.CoordinateSystems.ICoordinateSystem.CoordinateSystemType
+- uid: MapQuest.CoordinateSystems.CoordinateSystemType
+  commentId: T:MapQuest.CoordinateSystems.CoordinateSystemType
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.CoordinateSystemType.html
+  name: CoordinateSystemType
+  nameWithType: CoordinateSystemType
+  fullName: MapQuest.CoordinateSystems.CoordinateSystemType

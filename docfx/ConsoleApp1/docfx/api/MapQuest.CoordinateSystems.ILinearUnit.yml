@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.ILinearUnit
+  commentId: T:MapQuest.CoordinateSystems.ILinearUnit
+  id: ILinearUnit
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.ILinearUnit.MetersPerUnit
+  langs:
+  - csharp
+  - vb
+  name: ILinearUnit
+  nameWithType: ILinearUnit
+  fullName: MapQuest.CoordinateSystems.ILinearUnit
+  type: Interface
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: <xref href="MapQuest.CoordinateSystems.LinearUnit" data-throw-if-not-resolved="false"></xref> のインターフェースを定義します。
+  example: []
+  syntax:
+    content: 'public interface ILinearUnit : IUnit, IInfo, ICloneable'
+    content.vb: Public Interface ILinearUnit Inherits IUnit, IInfo, ICloneable
+  inheritedMembers:
+  - MapQuest.CoordinateSystems.IUnit.IsLinear
+  - MapQuest.CoordinateSystems.IInfo.Abbreviation
+  - MapQuest.CoordinateSystems.IInfo.Alias
+  - MapQuest.CoordinateSystems.IInfo.Authority
+  - MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  - MapQuest.CoordinateSystems.IInfo.Name
+  - MapQuest.CoordinateSystems.IInfo.Remarks
+  - MapQuest.CoordinateSystems.IInfo.WKT
+  - MapQuest.CoordinateSystems.IInfo.XML
+  - System.ICloneable.Clone
+- uid: MapQuest.CoordinateSystems.ILinearUnit.MetersPerUnit
+  commentId: P:MapQuest.CoordinateSystems.ILinearUnit.MetersPerUnit
+  id: MetersPerUnit
+  parent: MapQuest.CoordinateSystems.ILinearUnit
+  langs:
+  - csharp
+  - vb
+  name: MetersPerUnit
+  nameWithType: ILinearUnit.MetersPerUnit
+  fullName: MapQuest.CoordinateSystems.ILinearUnit.MetersPerUnit
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: この単位のメートルに対する比率を取得します。
+  remarks: >-
+    全ての <xref href="MapQuest.CoordinateSystems.LinearUnit" data-throw-if-not-resolved="false"></xref> は、メートルをベースに考えます。 
+
+    「その単位は、メートルに対してどの位の比率か？」を、 
+
+    コンストラクタのパラメータで設定します。 
+
+    例えば、「キロメートル」は、「1000 メートル」であるので、
+
+    「キロメートル」を表す <xref href="MapQuest.CoordinateSystems.LinearUnit" data-throw-if-not-resolved="false"></xref> の 
+
+    <xref href="MapQuest.CoordinateSystems.ILinearUnit.MetersPerUnit" data-throw-if-not-resolved="false"></xref> には、 1000 を設定します。
+  example: []
+  syntax:
+    content: double MetersPerUnit { get; }
+    parameters: []
+    return:
+      type: System.Double
+      description: この単位のメートルに対する比率。読み取り専用です。
+    content.vb: ReadOnly Property MetersPerUnit As Double
+  overload: MapQuest.CoordinateSystems.ILinearUnit.MetersPerUnit*
+references:
+- uid: MapQuest.CoordinateSystems.LinearUnit
+  commentId: T:MapQuest.CoordinateSystems.LinearUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.LinearUnit.html
+  name: LinearUnit
+  nameWithType: LinearUnit
+  fullName: MapQuest.CoordinateSystems.LinearUnit
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: MapQuest.CoordinateSystems.IUnit.IsLinear
+  commentId: P:MapQuest.CoordinateSystems.IUnit.IsLinear
+  parent: MapQuest.CoordinateSystems.IUnit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnit.html#MapQuest_CoordinateSystems_IUnit_IsLinear
+  name: IsLinear
+  nameWithType: IUnit.IsLinear
+  fullName: MapQuest.CoordinateSystems.IUnit.IsLinear
+- uid: MapQuest.CoordinateSystems.IInfo.Abbreviation
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Abbreviation
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Abbreviation
+  name: Abbreviation
+  nameWithType: IInfo.Abbreviation
+  fullName: MapQuest.CoordinateSystems.IInfo.Abbreviation
+- uid: MapQuest.CoordinateSystems.IInfo.Alias
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Alias
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Alias
+  name: Alias
+  nameWithType: IInfo.Alias
+  fullName: MapQuest.CoordinateSystems.IInfo.Alias
+- uid: MapQuest.CoordinateSystems.IInfo.Authority
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Authority
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Authority
+  name: Authority
+  nameWithType: IInfo.Authority
+  fullName: MapQuest.CoordinateSystems.IInfo.Authority
+- uid: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  commentId: P:MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_AuthorityCode
+  name: AuthorityCode
+  nameWithType: IInfo.AuthorityCode
+  fullName: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+- uid: MapQuest.CoordinateSystems.IInfo.Name
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Name
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Name
+  name: Name
+  nameWithType: IInfo.Name
+  fullName: MapQuest.CoordinateSystems.IInfo.Name
+- uid: MapQuest.CoordinateSystems.IInfo.Remarks
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Remarks
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Remarks
+  name: Remarks
+  nameWithType: IInfo.Remarks
+  fullName: MapQuest.CoordinateSystems.IInfo.Remarks
+- uid: MapQuest.CoordinateSystems.IInfo.WKT
+  commentId: P:MapQuest.CoordinateSystems.IInfo.WKT
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_WKT
+  name: WKT
+  nameWithType: IInfo.WKT
+  fullName: MapQuest.CoordinateSystems.IInfo.WKT
+- uid: MapQuest.CoordinateSystems.IInfo.XML
+  commentId: P:MapQuest.CoordinateSystems.IInfo.XML
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_XML
+  name: XML
+  nameWithType: IInfo.XML
+  fullName: MapQuest.CoordinateSystems.IInfo.XML
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.IUnit
+  commentId: T:MapQuest.CoordinateSystems.IUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IUnit.html
+  name: IUnit
+  nameWithType: IUnit
+  fullName: MapQuest.CoordinateSystems.IUnit
+- uid: MapQuest.CoordinateSystems.IInfo
+  commentId: T:MapQuest.CoordinateSystems.IInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html
+  name: IInfo
+  nameWithType: IInfo
+  fullName: MapQuest.CoordinateSystems.IInfo
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateSystems.ILinearUnit.MetersPerUnit
+  commentId: P:MapQuest.CoordinateSystems.ILinearUnit.MetersPerUnit
+  parent: MapQuest.CoordinateSystems.ILinearUnit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ILinearUnit.html#MapQuest_CoordinateSystems_ILinearUnit_MetersPerUnit
+  name: MetersPerUnit
+  nameWithType: ILinearUnit.MetersPerUnit
+  fullName: MapQuest.CoordinateSystems.ILinearUnit.MetersPerUnit
+- uid: MapQuest.CoordinateSystems.ILinearUnit.MetersPerUnit*
+  commentId: Overload:MapQuest.CoordinateSystems.ILinearUnit.MetersPerUnit
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ILinearUnit.html#MapQuest_CoordinateSystems_ILinearUnit_MetersPerUnit
+  name: MetersPerUnit
+  nameWithType: ILinearUnit.MetersPerUnit
+  fullName: MapQuest.CoordinateSystems.ILinearUnit.MetersPerUnit
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.CoordinateSystems.ILinearUnit
+  commentId: T:MapQuest.CoordinateSystems.ILinearUnit
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.ILinearUnit.html
+  name: ILinearUnit
+  nameWithType: ILinearUnit
+  fullName: MapQuest.CoordinateSystems.ILinearUnit

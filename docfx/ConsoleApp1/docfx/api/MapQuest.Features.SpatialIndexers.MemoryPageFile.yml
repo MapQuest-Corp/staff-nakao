@@ -1,0 +1,798 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.Features.SpatialIndexers.MemoryPageFile
+  commentId: T:MapQuest.Features.SpatialIndexers.MemoryPageFile
+  id: MemoryPageFile
+  parent: MapQuest.Features.SpatialIndexers
+  children:
+  - MapQuest.Features.SpatialIndexers.MemoryPageFile.#ctor
+  - MapQuest.Features.SpatialIndexers.MemoryPageFile.DeleteNode(System.Int32)
+  - MapQuest.Features.SpatialIndexers.MemoryPageFile.ReadNode(System.Int32)
+  - MapQuest.Features.SpatialIndexers.MemoryPageFile.WriteNode(MapQuest.Features.SpatialIndexers.Node)
+  langs:
+  - csharp
+  - vb
+  name: MemoryPageFile
+  nameWithType: MemoryPageFile
+  fullName: MapQuest.Features.SpatialIndexers.MemoryPageFile
+  type: Class
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: >-
+    Implements a memory page file. Holds all pages into a 
+
+    Hashtable with keys equal to each object's page number.
+  example: []
+  syntax:
+    content: 'public sealed class MemoryPageFile : PageFile, IDisposable'
+    content.vb: Public NotInheritable Class MemoryPageFile Inherits PageFile Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - MapQuest.Features.SpatialIndexers.PageFile
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - MapQuest.Features.SpatialIndexers.PageFile.Close
+  - MapQuest.Features.SpatialIndexers.PageFile.Initialize(System.Int32,System.Int32)
+  - MapQuest.Features.SpatialIndexers.PageFile.Dispose
+  - MapQuest.Features.SpatialIndexers.PageFile.Dispose(System.Boolean)
+  - MapQuest.Features.SpatialIndexers.PageFile.Dimension
+  - MapQuest.Features.SpatialIndexers.PageFile.Minimum
+  - MapQuest.Features.SpatialIndexers.PageFile.Capacity
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.CreateObjRef(System.Type)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: MapQuest.Features.SpatialIndexers.MemoryPageFile.#ctor
+  commentId: M:MapQuest.Features.SpatialIndexers.MemoryPageFile.#ctor
+  id: '#ctor'
+  parent: MapQuest.Features.SpatialIndexers.MemoryPageFile
+  langs:
+  - csharp
+  - vb
+  name: MemoryPageFile()
+  nameWithType: MemoryPageFile.MemoryPageFile()
+  fullName: MapQuest.Features.SpatialIndexers.MemoryPageFile.MemoryPageFile()
+  type: Constructor
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  syntax:
+    content: public MemoryPageFile()
+    content.vb: Public Sub New()
+  overload: MapQuest.Features.SpatialIndexers.MemoryPageFile.#ctor*
+  nameWithType.vb: MemoryPageFile.New()
+  fullName.vb: MapQuest.Features.SpatialIndexers.MemoryPageFile.New()
+  name.vb: New()
+- uid: MapQuest.Features.SpatialIndexers.MemoryPageFile.ReadNode(System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.MemoryPageFile.ReadNode(System.Int32)
+  id: ReadNode(System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.MemoryPageFile
+  langs:
+  - csharp
+  - vb
+  name: ReadNode(int)
+  nameWithType: MemoryPageFile.ReadNode(int)
+  fullName: MapQuest.Features.SpatialIndexers.MemoryPageFile.ReadNode(int)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: Returns the node stored in the requested page.
+  example: []
+  syntax:
+    content: public override Node ReadNode(int pageFile)
+    parameters:
+    - id: pageFile
+      type: System.Int32
+    return:
+      type: MapQuest.Features.SpatialIndexers.Node
+    content.vb: Public Overrides Function ReadNode(pageFile As Integer) As Node
+  overridden: MapQuest.Features.SpatialIndexers.PageFile.ReadNode(System.Int32)
+  overload: MapQuest.Features.SpatialIndexers.MemoryPageFile.ReadNode*
+  nameWithType.vb: MemoryPageFile.ReadNode(Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.MemoryPageFile.ReadNode(Integer)
+  name.vb: ReadNode(Integer)
+- uid: MapQuest.Features.SpatialIndexers.MemoryPageFile.WriteNode(MapQuest.Features.SpatialIndexers.Node)
+  commentId: M:MapQuest.Features.SpatialIndexers.MemoryPageFile.WriteNode(MapQuest.Features.SpatialIndexers.Node)
+  id: WriteNode(MapQuest.Features.SpatialIndexers.Node)
+  parent: MapQuest.Features.SpatialIndexers.MemoryPageFile
+  langs:
+  - csharp
+  - vb
+  name: WriteNode(Node)
+  nameWithType: MemoryPageFile.WriteNode(Node)
+  fullName: MapQuest.Features.SpatialIndexers.MemoryPageFile.WriteNode(MapQuest.Features.SpatialIndexers.Node)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: Writes the node into the first available page and returns that page.
+  example: []
+  syntax:
+    content: public override int WriteNode(Node node)
+    parameters:
+    - id: node
+      type: MapQuest.Features.SpatialIndexers.Node
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function WriteNode(node As Node) As Integer
+  overridden: MapQuest.Features.SpatialIndexers.PageFile.WriteNode(MapQuest.Features.SpatialIndexers.Node)
+  overload: MapQuest.Features.SpatialIndexers.MemoryPageFile.WriteNode*
+- uid: MapQuest.Features.SpatialIndexers.MemoryPageFile.DeleteNode(System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.MemoryPageFile.DeleteNode(System.Int32)
+  id: DeleteNode(System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.MemoryPageFile
+  langs:
+  - csharp
+  - vb
+  name: DeleteNode(int)
+  nameWithType: MemoryPageFile.DeleteNode(int)
+  fullName: MapQuest.Features.SpatialIndexers.MemoryPageFile.DeleteNode(int)
+  type: Method
+  assemblies:
+  - MapQuest.Features
+  namespace: MapQuest.Features.SpatialIndexers
+  summary: Marks a specific page as empty.
+  example: []
+  syntax:
+    content: public override Node DeleteNode(int pageNumber)
+    parameters:
+    - id: pageNumber
+      type: System.Int32
+    return:
+      type: MapQuest.Features.SpatialIndexers.Node
+    content.vb: Public Overrides Function DeleteNode(pageNumber As Integer) As Node
+  overridden: MapQuest.Features.SpatialIndexers.PageFile.DeleteNode(System.Int32)
+  overload: MapQuest.Features.SpatialIndexers.MemoryPageFile.DeleteNode*
+  nameWithType.vb: MemoryPageFile.DeleteNode(Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.MemoryPageFile.DeleteNode(Integer)
+  name.vb: DeleteNode(Integer)
+references:
+- uid: MapQuest.Features.SpatialIndexers
+  commentId: N:MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.Features.SpatialIndexers
+  nameWithType: MapQuest.Features.SpatialIndexers
+  fullName: MapQuest.Features.SpatialIndexers
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.SpatialIndexers
+    name: SpatialIndexers
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.Features
+    name: Features
+    isExternal: true
+    href: MapQuest.Features.html
+  - name: .
+  - uid: MapQuest.Features.SpatialIndexers
+    name: SpatialIndexers
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: MapQuest.Features.SpatialIndexers.PageFile
+  commentId: T:MapQuest.Features.SpatialIndexers.PageFile
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html
+  name: PageFile
+  nameWithType: PageFile
+  fullName: MapQuest.Features.SpatialIndexers.PageFile
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: MapQuest.Features.SpatialIndexers.PageFile.Close
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFile.Close
+  parent: MapQuest.Features.SpatialIndexers.PageFile
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Close
+  name: Close()
+  nameWithType: PageFile.Close()
+  fullName: MapQuest.Features.SpatialIndexers.PageFile.Close()
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.Close
+    name: Close
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.Close
+    name: Close
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Close
+  - name: (
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.PageFile.Initialize(System.Int32,System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFile.Initialize(System.Int32,System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.PageFile
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Initialize_System_Int32_System_Int32_
+  name: Initialize(int, int)
+  nameWithType: PageFile.Initialize(int, int)
+  fullName: MapQuest.Features.SpatialIndexers.PageFile.Initialize(int, int)
+  nameWithType.vb: PageFile.Initialize(Integer, Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFile.Initialize(Integer, Integer)
+  name.vb: Initialize(Integer, Integer)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.Initialize(System.Int32,System.Int32)
+    name: Initialize
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Initialize_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.Initialize(System.Int32,System.Int32)
+    name: Initialize
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Initialize_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.PageFile.Dispose
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFile.Dispose
+  parent: MapQuest.Features.SpatialIndexers.PageFile
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Dispose
+  name: Dispose()
+  nameWithType: PageFile.Dispose()
+  fullName: MapQuest.Features.SpatialIndexers.PageFile.Dispose()
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.Dispose
+    name: Dispose
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.Dispose
+    name: Dispose
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Dispose
+  - name: (
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.PageFile.Dispose(System.Boolean)
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFile.Dispose(System.Boolean)
+  parent: MapQuest.Features.SpatialIndexers.PageFile
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: PageFile.Dispose(bool)
+  fullName: MapQuest.Features.SpatialIndexers.PageFile.Dispose(bool)
+  nameWithType.vb: PageFile.Dispose(Boolean)
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFile.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.PageFile.Dimension
+  commentId: P:MapQuest.Features.SpatialIndexers.PageFile.Dimension
+  parent: MapQuest.Features.SpatialIndexers.PageFile
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Dimension
+  name: Dimension
+  nameWithType: PageFile.Dimension
+  fullName: MapQuest.Features.SpatialIndexers.PageFile.Dimension
+- uid: MapQuest.Features.SpatialIndexers.PageFile.Minimum
+  commentId: P:MapQuest.Features.SpatialIndexers.PageFile.Minimum
+  parent: MapQuest.Features.SpatialIndexers.PageFile
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Minimum
+  name: Minimum
+  nameWithType: PageFile.Minimum
+  fullName: MapQuest.Features.SpatialIndexers.PageFile.Minimum
+- uid: MapQuest.Features.SpatialIndexers.PageFile.Capacity
+  commentId: P:MapQuest.Features.SpatialIndexers.PageFile.Capacity
+  parent: MapQuest.Features.SpatialIndexers.PageFile
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_Capacity
+  name: Capacity
+  nameWithType: PageFile.Capacity
+  fullName: MapQuest.Features.SpatialIndexers.PageFile.Capacity
+- uid: System.MarshalByRefObject.GetLifetimeService
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  name: GetLifetimeService()
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  name: InitializeLifetimeService()
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+  commentId: M:System.MarshalByRefObject.CreateObjRef(System.Type)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref
+  name: CreateObjRef(Type)
+  nameWithType: MarshalByRefObject.CreateObjRef(Type)
+  fullName: System.MarshalByRefObject.CreateObjRef(System.Type)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.Features.SpatialIndexers.MemoryPageFile.#ctor*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.MemoryPageFile.#ctor
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.MemoryPageFile.html#MapQuest_Features_SpatialIndexers_MemoryPageFile__ctor
+  name: MemoryPageFile
+  nameWithType: MemoryPageFile.MemoryPageFile
+  fullName: MapQuest.Features.SpatialIndexers.MemoryPageFile.MemoryPageFile
+  nameWithType.vb: MemoryPageFile.New
+  fullName.vb: MapQuest.Features.SpatialIndexers.MemoryPageFile.New
+  name.vb: New
+- uid: MapQuest.Features.SpatialIndexers.PageFile.ReadNode(System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFile.ReadNode(System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.PageFile
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_ReadNode_System_Int32_
+  name: ReadNode(int)
+  nameWithType: PageFile.ReadNode(int)
+  fullName: MapQuest.Features.SpatialIndexers.PageFile.ReadNode(int)
+  nameWithType.vb: PageFile.ReadNode(Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFile.ReadNode(Integer)
+  name.vb: ReadNode(Integer)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.ReadNode(System.Int32)
+    name: ReadNode
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_ReadNode_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.ReadNode(System.Int32)
+    name: ReadNode
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_ReadNode_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.MemoryPageFile.ReadNode*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.MemoryPageFile.ReadNode
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.MemoryPageFile.html#MapQuest_Features_SpatialIndexers_MemoryPageFile_ReadNode_System_Int32_
+  name: ReadNode
+  nameWithType: MemoryPageFile.ReadNode
+  fullName: MapQuest.Features.SpatialIndexers.MemoryPageFile.ReadNode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MapQuest.Features.SpatialIndexers.Node
+  commentId: T:MapQuest.Features.SpatialIndexers.Node
+  parent: MapQuest.Features.SpatialIndexers
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.Node.html
+  name: Node
+  nameWithType: Node
+  fullName: MapQuest.Features.SpatialIndexers.Node
+- uid: MapQuest.Features.SpatialIndexers.PageFile.WriteNode(MapQuest.Features.SpatialIndexers.Node)
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFile.WriteNode(MapQuest.Features.SpatialIndexers.Node)
+  parent: MapQuest.Features.SpatialIndexers.PageFile
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_WriteNode_MapQuest_Features_SpatialIndexers_Node_
+  name: WriteNode(Node)
+  nameWithType: PageFile.WriteNode(Node)
+  fullName: MapQuest.Features.SpatialIndexers.PageFile.WriteNode(MapQuest.Features.SpatialIndexers.Node)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.WriteNode(MapQuest.Features.SpatialIndexers.Node)
+    name: WriteNode
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_WriteNode_MapQuest_Features_SpatialIndexers_Node_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.Node
+    name: Node
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.Node.html
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.WriteNode(MapQuest.Features.SpatialIndexers.Node)
+    name: WriteNode
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_WriteNode_MapQuest_Features_SpatialIndexers_Node_
+  - name: (
+  - uid: MapQuest.Features.SpatialIndexers.Node
+    name: Node
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.Node.html
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.MemoryPageFile.WriteNode*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.MemoryPageFile.WriteNode
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.MemoryPageFile.html#MapQuest_Features_SpatialIndexers_MemoryPageFile_WriteNode_MapQuest_Features_SpatialIndexers_Node_
+  name: WriteNode
+  nameWithType: MemoryPageFile.WriteNode
+  fullName: MapQuest.Features.SpatialIndexers.MemoryPageFile.WriteNode
+- uid: MapQuest.Features.SpatialIndexers.PageFile.DeleteNode(System.Int32)
+  commentId: M:MapQuest.Features.SpatialIndexers.PageFile.DeleteNode(System.Int32)
+  parent: MapQuest.Features.SpatialIndexers.PageFile
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_DeleteNode_System_Int32_
+  name: DeleteNode(int)
+  nameWithType: PageFile.DeleteNode(int)
+  fullName: MapQuest.Features.SpatialIndexers.PageFile.DeleteNode(int)
+  nameWithType.vb: PageFile.DeleteNode(Integer)
+  fullName.vb: MapQuest.Features.SpatialIndexers.PageFile.DeleteNode(Integer)
+  name.vb: DeleteNode(Integer)
+  spec.csharp:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.DeleteNode(System.Int32)
+    name: DeleteNode
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_DeleteNode_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MapQuest.Features.SpatialIndexers.PageFile.DeleteNode(System.Int32)
+    name: DeleteNode
+    isExternal: true
+    href: MapQuest.Features.SpatialIndexers.PageFile.html#MapQuest_Features_SpatialIndexers_PageFile_DeleteNode_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MapQuest.Features.SpatialIndexers.MemoryPageFile.DeleteNode*
+  commentId: Overload:MapQuest.Features.SpatialIndexers.MemoryPageFile.DeleteNode
+  isExternal: true
+  href: MapQuest.Features.SpatialIndexers.MemoryPageFile.html#MapQuest_Features_SpatialIndexers_MemoryPageFile_DeleteNode_System_Int32_
+  name: DeleteNode
+  nameWithType: MemoryPageFile.DeleteNode
+  fullName: MapQuest.Features.SpatialIndexers.MemoryPageFile.DeleteNode

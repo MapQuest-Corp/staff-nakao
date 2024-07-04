@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: DocFXSample
+  commentId: N:DocFXSample
+  id: DocFXSample
+  children:
+  - DocFXSample.BaseClass
+  - DocFXSample.DerivedClass
+  - DocFXSample.EnumTest
+  - DocFXSample.EnumTestExt
+  - DocFXSample.Program
+  langs:
+  - csharp
+  - vb
+  name: DocFXSample
+  nameWithType: DocFXSample
+  fullName: DocFXSample
+  type: Namespace
+  assemblies:
+  - ConsoleApp1
+references:
+- uid: DocFXSample.BaseClass
+  commentId: T:DocFXSample.BaseClass
+  parent: DocFXSample
+  href: DocFXSample.BaseClass.html
+  name: BaseClass
+  nameWithType: BaseClass
+  fullName: DocFXSample.BaseClass
+- uid: DocFXSample.DerivedClass
+  commentId: T:DocFXSample.DerivedClass
+  href: DocFXSample.DerivedClass.html
+  name: DerivedClass
+  nameWithType: DerivedClass
+  fullName: DocFXSample.DerivedClass
+- uid: DocFXSample.EnumTest
+  commentId: T:DocFXSample.EnumTest
+  parent: DocFXSample
+  href: DocFXSample.EnumTest.html
+  name: EnumTest
+  nameWithType: EnumTest
+  fullName: DocFXSample.EnumTest
+- uid: DocFXSample.EnumTestExt
+  commentId: T:DocFXSample.EnumTestExt
+  parent: DocFXSample
+  href: DocFXSample.EnumTestExt.html
+  name: EnumTestExt
+  nameWithType: EnumTestExt
+  fullName: DocFXSample.EnumTestExt
+- uid: DocFXSample.Program
+  commentId: T:DocFXSample.Program
+  href: DocFXSample.Program.html
+  name: Program
+  nameWithType: Program
+  fullName: DocFXSample.Program
+- uid: DocFXSample
+  commentId: N:DocFXSample
+  href: DocFXSample.html
+  name: DocFXSample
+  nameWithType: DocFXSample
+  fullName: DocFXSample

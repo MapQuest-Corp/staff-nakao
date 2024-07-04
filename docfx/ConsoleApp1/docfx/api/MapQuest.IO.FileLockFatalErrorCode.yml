@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.IO.FileLockFatalErrorCode
+  commentId: T:MapQuest.IO.FileLockFatalErrorCode
+  id: FileLockFatalErrorCode
+  parent: MapQuest.IO
+  children:
+  - MapQuest.IO.FileLockFatalErrorCode.Create
+  - MapQuest.IO.FileLockFatalErrorCode.Delete
+  - MapQuest.IO.FileLockFatalErrorCode.None
+  langs:
+  - csharp
+  - vb
+  name: FileLockFatalErrorCode
+  nameWithType: FileLockFatalErrorCode
+  fullName: MapQuest.IO.FileLockFatalErrorCode
+  type: Enum
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: <xref href="MapQuest.IO.FileLockFatalException" data-throw-if-not-resolved="false"></xref> のエラーコードを示します。
+  example: []
+  syntax:
+    content: public enum FileLockFatalErrorCode
+    content.vb: Public Enum FileLockFatalErrorCode
+- uid: MapQuest.IO.FileLockFatalErrorCode.None
+  commentId: F:MapQuest.IO.FileLockFatalErrorCode.None
+  id: None
+  parent: MapQuest.IO.FileLockFatalErrorCode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: FileLockFatalErrorCode.None
+  fullName: MapQuest.IO.FileLockFatalErrorCode.None
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: エラー無し
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: MapQuest.IO.FileLockFatalErrorCode
+- uid: MapQuest.IO.FileLockFatalErrorCode.Create
+  commentId: F:MapQuest.IO.FileLockFatalErrorCode.Create
+  id: Create
+  parent: MapQuest.IO.FileLockFatalErrorCode
+  langs:
+  - csharp
+  - vb
+  name: Create
+  nameWithType: FileLockFatalErrorCode.Create
+  fullName: MapQuest.IO.FileLockFatalErrorCode.Create
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: ロックファイル生成時にエラーが発生したことを示します。
+  example: []
+  syntax:
+    content: Create = 1
+    return:
+      type: MapQuest.IO.FileLockFatalErrorCode
+- uid: MapQuest.IO.FileLockFatalErrorCode.Delete
+  commentId: F:MapQuest.IO.FileLockFatalErrorCode.Delete
+  id: Delete
+  parent: MapQuest.IO.FileLockFatalErrorCode
+  langs:
+  - csharp
+  - vb
+  name: Delete
+  nameWithType: FileLockFatalErrorCode.Delete
+  fullName: MapQuest.IO.FileLockFatalErrorCode.Delete
+  type: Field
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: ロックファイル削除時にエラーが発生したことを示します。
+  example: []
+  syntax:
+    content: Delete = 2
+    return:
+      type: MapQuest.IO.FileLockFatalErrorCode
+references:
+- uid: MapQuest.IO.FileLockFatalException
+  commentId: T:MapQuest.IO.FileLockFatalException
+  isExternal: true
+  href: MapQuest.IO.FileLockFatalException.html
+  name: FileLockFatalException
+  nameWithType: FileLockFatalException
+  fullName: MapQuest.IO.FileLockFatalException
+- uid: MapQuest.IO
+  commentId: N:MapQuest.IO
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.IO
+  nameWithType: MapQuest.IO
+  fullName: MapQuest.IO
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+- uid: MapQuest.IO.FileLockFatalErrorCode
+  commentId: T:MapQuest.IO.FileLockFatalErrorCode
+  parent: MapQuest.IO
+  isExternal: true
+  href: MapQuest.IO.FileLockFatalErrorCode.html
+  name: FileLockFatalErrorCode
+  nameWithType: FileLockFatalErrorCode
+  fullName: MapQuest.IO.FileLockFatalErrorCode

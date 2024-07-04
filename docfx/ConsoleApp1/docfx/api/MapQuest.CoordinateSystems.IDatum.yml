@@ -1,0 +1,262 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.CoordinateSystems.IDatum
+  commentId: T:MapQuest.CoordinateSystems.IDatum
+  id: IDatum
+  parent: MapQuest.CoordinateSystems
+  children:
+  - MapQuest.CoordinateSystems.IDatum.DatumType
+  langs:
+  - csharp
+  - vb
+  name: IDatum
+  nameWithType: IDatum
+  fullName: MapQuest.CoordinateSystems.IDatum
+  type: Interface
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: ある座標を地球上の実際の位置として定義するための「測地系」を表すクラスです。
+  remarks: >-
+    測地系(Datum) は、ある座標を地球上の実際の位置として定義するためのものです。
+
+    <p></p>
+
+    座標系の、地球に対しての位置および方向を定義するパラメーターとも言えます。
+
+    <p></p>
+
+    ここでは、あらかじめ定められた物理的な位置、
+
+    また、物理的な指示(回転の軸など)と、
+
+    座標系との関係について記述するパラメーター群を指します。
+
+    <p></p>
+
+    測地系の定義はさらに、一時的な振る舞い
+
+    (軸の方向の変化率など)を含んでいる場合もあります。
+  example: []
+  syntax:
+    content: 'public interface IDatum : IInfo, ICloneable'
+    content.vb: Public Interface IDatum Inherits IInfo, ICloneable
+  seealso:
+  - linkId: MapQuest.CoordinateSystems.Datum
+    commentId: T:MapQuest.CoordinateSystems.Datum
+  inheritedMembers:
+  - MapQuest.CoordinateSystems.IInfo.Abbreviation
+  - MapQuest.CoordinateSystems.IInfo.Alias
+  - MapQuest.CoordinateSystems.IInfo.Authority
+  - MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  - MapQuest.CoordinateSystems.IInfo.Name
+  - MapQuest.CoordinateSystems.IInfo.Remarks
+  - MapQuest.CoordinateSystems.IInfo.WKT
+  - MapQuest.CoordinateSystems.IInfo.XML
+  - System.ICloneable.Clone
+- uid: MapQuest.CoordinateSystems.IDatum.DatumType
+  commentId: P:MapQuest.CoordinateSystems.IDatum.DatumType
+  id: DatumType
+  parent: MapQuest.CoordinateSystems.IDatum
+  langs:
+  - csharp
+  - vb
+  name: DatumType
+  nameWithType: IDatum.DatumType
+  fullName: MapQuest.CoordinateSystems.IDatum.DatumType
+  type: Property
+  assemblies:
+  - MapQuest.CoordinateSystems
+  namespace: MapQuest.CoordinateSystems
+  summary: >-
+    測地系の種類を取得します。
+
+    <xref href="MapQuest.CoordinateSystems.IDatum.DatumType" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: DatumType DatumType { get; }
+    parameters: []
+    return:
+      type: MapQuest.CoordinateSystems.DatumType
+      description: >-
+        座標系の種類を示す <xref href="MapQuest.CoordinateSystems.IDatum.DatumType" data-throw-if-not-resolved="false"></xref> 値。
+
+        読み取り専用です。
+    content.vb: ReadOnly Property DatumType As DatumType
+  overload: MapQuest.CoordinateSystems.IDatum.DatumType*
+references:
+- uid: MapQuest.CoordinateSystems.Datum
+  commentId: T:MapQuest.CoordinateSystems.Datum
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.Datum.html
+  name: Datum
+  nameWithType: Datum
+  fullName: MapQuest.CoordinateSystems.Datum
+- uid: MapQuest.CoordinateSystems
+  commentId: N:MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.CoordinateSystems
+  nameWithType: MapQuest.CoordinateSystems
+  fullName: MapQuest.CoordinateSystems
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.CoordinateSystems
+    name: CoordinateSystems
+    isExternal: true
+    href: MapQuest.CoordinateSystems.html
+- uid: MapQuest.CoordinateSystems.IInfo.Abbreviation
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Abbreviation
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Abbreviation
+  name: Abbreviation
+  nameWithType: IInfo.Abbreviation
+  fullName: MapQuest.CoordinateSystems.IInfo.Abbreviation
+- uid: MapQuest.CoordinateSystems.IInfo.Alias
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Alias
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Alias
+  name: Alias
+  nameWithType: IInfo.Alias
+  fullName: MapQuest.CoordinateSystems.IInfo.Alias
+- uid: MapQuest.CoordinateSystems.IInfo.Authority
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Authority
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Authority
+  name: Authority
+  nameWithType: IInfo.Authority
+  fullName: MapQuest.CoordinateSystems.IInfo.Authority
+- uid: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  commentId: P:MapQuest.CoordinateSystems.IInfo.AuthorityCode
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_AuthorityCode
+  name: AuthorityCode
+  nameWithType: IInfo.AuthorityCode
+  fullName: MapQuest.CoordinateSystems.IInfo.AuthorityCode
+- uid: MapQuest.CoordinateSystems.IInfo.Name
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Name
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Name
+  name: Name
+  nameWithType: IInfo.Name
+  fullName: MapQuest.CoordinateSystems.IInfo.Name
+- uid: MapQuest.CoordinateSystems.IInfo.Remarks
+  commentId: P:MapQuest.CoordinateSystems.IInfo.Remarks
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_Remarks
+  name: Remarks
+  nameWithType: IInfo.Remarks
+  fullName: MapQuest.CoordinateSystems.IInfo.Remarks
+- uid: MapQuest.CoordinateSystems.IInfo.WKT
+  commentId: P:MapQuest.CoordinateSystems.IInfo.WKT
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_WKT
+  name: WKT
+  nameWithType: IInfo.WKT
+  fullName: MapQuest.CoordinateSystems.IInfo.WKT
+- uid: MapQuest.CoordinateSystems.IInfo.XML
+  commentId: P:MapQuest.CoordinateSystems.IInfo.XML
+  parent: MapQuest.CoordinateSystems.IInfo
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html#MapQuest_CoordinateSystems_IInfo_XML
+  name: XML
+  nameWithType: IInfo.XML
+  fullName: MapQuest.CoordinateSystems.IInfo.XML
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: MapQuest.CoordinateSystems.IInfo
+  commentId: T:MapQuest.CoordinateSystems.IInfo
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IInfo.html
+  name: IInfo
+  nameWithType: IInfo
+  fullName: MapQuest.CoordinateSystems.IInfo
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.CoordinateSystems.IDatum.DatumType
+  commentId: P:MapQuest.CoordinateSystems.IDatum.DatumType
+  parent: MapQuest.CoordinateSystems.IDatum
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IDatum.html#MapQuest_CoordinateSystems_IDatum_DatumType
+  name: DatumType
+  nameWithType: IDatum.DatumType
+  fullName: MapQuest.CoordinateSystems.IDatum.DatumType
+- uid: MapQuest.CoordinateSystems.IDatum.DatumType*
+  commentId: Overload:MapQuest.CoordinateSystems.IDatum.DatumType
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IDatum.html#MapQuest_CoordinateSystems_IDatum_DatumType
+  name: DatumType
+  nameWithType: IDatum.DatumType
+  fullName: MapQuest.CoordinateSystems.IDatum.DatumType
+- uid: MapQuest.CoordinateSystems.DatumType
+  commentId: T:MapQuest.CoordinateSystems.DatumType
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.DatumType.html
+  name: DatumType
+  nameWithType: DatumType
+  fullName: MapQuest.CoordinateSystems.DatumType
+- uid: MapQuest.CoordinateSystems.IDatum
+  commentId: T:MapQuest.CoordinateSystems.IDatum
+  parent: MapQuest.CoordinateSystems
+  isExternal: true
+  href: MapQuest.CoordinateSystems.IDatum.html
+  name: IDatum
+  nameWithType: IDatum
+  fullName: MapQuest.CoordinateSystems.IDatum

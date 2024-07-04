@@ -1,0 +1,616 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FlaggedCoordinate3D | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FlaggedCoordinate3D | mysite ">
+      
+      <meta name="description" content="あるポイントが可視状態かどうかの情報が付与された 3 次元座標管理をカプセル化したインターフェースを提供します。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MapQuest.Coordinates.FlaggedCoordinate3D">
+
+
+
+  <h1 id="MapQuest_Coordinates_FlaggedCoordinate3D" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D" class="text-break">
+Class FlaggedCoordinate3D  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MapQuest.html">MapQuest</a>.<a class="xref" href="MapQuest.Coordinates.html">Coordinates</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MapQuest.Coordinates.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"> <p>
+	あるポイントが可視状態かどうかの情報が付与された 3 次元座標管理をカプセル化したインターフェースを提供します。
+</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FlaggedCoordinate3D : Coordinate3D, ICoordinatePoint, ICloneable, IComparable, ISerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a></div>
+      <div><a class="xref" href="MapQuest.Coordinates.Coordinate3D.html">Coordinate3D</a></div>
+      <div><span class="xref">FlaggedCoordinate3D</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MapQuest.Coordinates.ICoordinatePoint.html">ICoordinatePoint</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_SetCoordinate_MapQuest_Coordinates_Coordinate_">Coordinate3D.SetCoordinate(Coordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_CompareTo_System_Object_">Coordinate3D.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_ToString">Coordinate3D.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_MakePrecise_MapQuest_Coordinates_PrecisionModel_">Coordinate3D.MakePrecise(PrecisionModel)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Distance_MapQuest_Coordinates_Coordinate3D_">Coordinate3D.Distance(Coordinate3D)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_GetHashCode">Coordinate3D.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_GetOrdinate_System_Int32_">Coordinate3D.GetOrdinate(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_SetOrdinate_System_Int32_System_Double_">Coordinate3D.SetOrdinate(int, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Z">Coordinate3D.Z</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate3D.html#MapQuest_Coordinates_Coordinate3D_Dimension">Coordinate3D.Dimension</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_SetCoordinate_System_Single_System_Single_">Coordinate.SetCoordinate(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_SetCoordinate_System_Double_System_Double_">Coordinate.SetCoordinate(double, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Distance_MapQuest_Coordinates_Coordinate_">Coordinate.Distance(Coordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Rotate_System_Double_MapQuest_Coordinates_Coordinate_">Coordinate.Rotate(double, Coordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Rotate_System_Double_System_Double_System_Double_">Coordinate.Rotate(double, double, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_SetLocation_MapQuest_Coordinates_ICoordinatePoint_">Coordinate.SetLocation(ICoordinatePoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_X">Coordinate.X</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Y">Coordinate.Y</a>
+    </div>
+    <div>
+      <a class="xref" href="MapQuest.Coordinates.Coordinate.html#MapQuest_Coordinates_Coordinate_Ordinate">Coordinate.Ordinate</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MapQuest_Coordinates_FlaggedCoordinate3D_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>このインターフェースにはあるポイントが可視状態かどうかを判定するプロパティが用意されています。</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MapQuest_Coordinates_FlaggedCoordinate3D__ctor_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_FlaggedCoordinate3D__ctor" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.#ctor">
+  FlaggedCoordinate3D()
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数の指定がない場合X座標、Y座標，Z座標を(0.0 , 0.0 , 0.0)として<a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a>クラスの新しいインスタンスを初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlaggedCoordinate3D()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_FlaggedCoordinate3D__ctor_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_FlaggedCoordinate3D__ctor_MapQuest_Coordinates_Coordinate3D_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(MapQuest.Coordinates.Coordinate3D)">
+  FlaggedCoordinate3D(Coordinate3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数の<a class="xref" href="MapQuest.Coordinates.Coordinate3D.html">Coordinate3D</a>と同じX座標,Y座標,Z座標を持った<a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a>クラスの新しいインスタンスを初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlaggedCoordinate3D(Coordinate3D c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="MapQuest.Coordinates.Coordinate3D.html">Coordinate3D</a></dt>
+    <dd><p>コピー元の<a class="xref" href="MapQuest.Coordinates.Coordinate3D.html">Coordinate3D</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_FlaggedCoordinate3D__ctor_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_FlaggedCoordinate3D__ctor_MapQuest_Coordinates_FlaggedCoordinate3D_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(MapQuest.Coordinates.FlaggedCoordinate3D)">
+  FlaggedCoordinate3D(FlaggedCoordinate3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数の<a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a>と同じX座標,Y座標,Z座標を持った<a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a>クラスの新しいインスタンスを初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlaggedCoordinate3D(FlaggedCoordinate3D c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a></dt>
+    <dd><p>コピー元の<a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_FlaggedCoordinate3D__ctor_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_FlaggedCoordinate3D__ctor_System_Double_System_Double_System_Double_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(System.Double,System.Double,System.Double)">
+  FlaggedCoordinate3D(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	引数を(x,y,z)として<a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a>クラスの新しいインスタンスを初期化します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlaggedCoordinate3D(double x, double y, double z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>X座標</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Y座標</p>
+</dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Z座標</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_FlaggedCoordinate3D__ctor_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.#ctor*"></a>
+
+  <h3 id="MapQuest_Coordinates_FlaggedCoordinate3D__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+  FlaggedCoordinate3D(SerializationInfo, StreamingContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>シリアル化された情報から<a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a>を作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlaggedCoordinate3D(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd><p>シリアル化する情報を格納するオブジェクト</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MapQuest_Coordinates_FlaggedCoordinate3D_CoordinateType_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.CoordinateType*"></a>
+
+  <h3 id="MapQuest_Coordinates_FlaggedCoordinate3D_CoordinateType" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.CoordinateType">
+  CoordinateType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>この <a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a> オブジェクトの
+<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> の種類を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override CoordinateType CoordinateType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MapQuest.Coordinates.CoordinateType.html">CoordinateType</a></dt>
+    <dd><p>この <a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a> オブジェクトの
+<a class="xref" href="MapQuest.Coordinates.Coordinate.html">Coordinate</a> の種類</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_FlaggedCoordinate3D_CoordinateType_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a> の CoordinateType は <b>Flagged</b> です。</p>
+</div>
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MapQuest.Coordinates.CoordinateType.html#MapQuest_Coordinates_CoordinateType_Flagged">Flagged</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MapQuest_Coordinates_FlaggedCoordinate3D_Visible_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.Visible*"></a>
+
+  <h3 id="MapQuest_Coordinates_FlaggedCoordinate3D_Visible" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.Visible">
+  Visible
+  
+  </h3>
+
+  <div class="markdown level1 summary"> <p>
+	この<a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a>オブジェクトが可視可能かどうかを取得、設定します。
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Visible { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>この<a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a>オブジェクトが可視可能かどうかの値</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MapQuest_Coordinates_FlaggedCoordinate3D_Visible_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a>オブジェクトが可視可能ならば<code>true</code>、そうでなければ<code>false</code>を示します。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MapQuest_Coordinates_FlaggedCoordinate3D_Clone_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.Clone*"></a>
+
+  <h3 id="MapQuest_Coordinates_FlaggedCoordinate3D_Clone" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在のインスタンスを複製します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>複製された <a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a> 。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_FlaggedCoordinate3D_Equals_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.Equals*"></a>
+
+  <h3 id="MapQuest_Coordinates_FlaggedCoordinate3D_Equals_System_Object_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オブジェクトの内容が等しい場合に真を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>比較する<a class="xref" href="MapQuest.Coordinates.FlaggedCoordinate3D.html">FlaggedCoordinate3D</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>等価であるか</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MapQuest_Coordinates_FlaggedCoordinate3D_GetObjectData_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.GetObjectData*"></a>
+
+  <h3 id="MapQuest_Coordinates_FlaggedCoordinate3D_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="MapQuest.Coordinates.FlaggedCoordinate3D.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+  GetObjectData(SerializationInfo, StreamingContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オブジェクトをシリアル化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd><p>シリアル化する情報を格納するオブジェクト</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

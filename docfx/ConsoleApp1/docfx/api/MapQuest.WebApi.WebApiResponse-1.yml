@@ -1,0 +1,529 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.WebApi.WebApiResponse`1
+  commentId: T:MapQuest.WebApi.WebApiResponse`1
+  id: WebApiResponse`1
+  parent: MapQuest.WebApi
+  children:
+  - MapQuest.WebApi.WebApiResponse`1.#ctor(System.Int32,System.String,System.DateTime,`0)
+  - MapQuest.WebApi.WebApiResponse`1.Content
+  - MapQuest.WebApi.WebApiResponse`1.Message
+  - MapQuest.WebApi.WebApiResponse`1.StatusCode
+  - MapQuest.WebApi.WebApiResponse`1.TimeStamp
+  langs:
+  - csharp
+  - vb
+  name: WebApiResponse<T>
+  nameWithType: WebApiResponse<T>
+  fullName: MapQuest.WebApi.WebApiResponse<T>
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.WebApi
+  summary: Web API の応答を表すジェネリック基底クラスです。
+  remarks: 応答のステータスコード、メッセージ、タイムスタンプ、および内容を保持します。
+  example: []
+  syntax:
+    content: public class WebApiResponse<T>
+    typeParameters:
+    - id: T
+      description: 応答の内容の型クラス。
+    content.vb: Public Class WebApiResponse(Of T)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  nameWithType.vb: WebApiResponse(Of T)
+  fullName.vb: MapQuest.WebApi.WebApiResponse(Of T)
+  name.vb: WebApiResponse(Of T)
+- uid: MapQuest.WebApi.WebApiResponse`1.#ctor(System.Int32,System.String,System.DateTime,`0)
+  commentId: M:MapQuest.WebApi.WebApiResponse`1.#ctor(System.Int32,System.String,System.DateTime,`0)
+  id: '#ctor(System.Int32,System.String,System.DateTime,`0)'
+  parent: MapQuest.WebApi.WebApiResponse`1
+  langs:
+  - csharp
+  - vb
+  name: WebApiResponse(int, string, DateTime, T)
+  nameWithType: WebApiResponse<T>.WebApiResponse(int, string, DateTime, T)
+  fullName: MapQuest.WebApi.WebApiResponse<T>.WebApiResponse(int, string, System.DateTime, T)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.WebApi
+  syntax:
+    content: public WebApiResponse(int statusCode, string message, DateTime timeStamp, T content)
+    parameters:
+    - id: statusCode
+      type: System.Int32
+    - id: message
+      type: System.String
+    - id: timeStamp
+      type: System.DateTime
+    - id: content
+      type: '{T}'
+    content.vb: Public Sub New(statusCode As Integer, message As String, timeStamp As Date, content As T)
+  overload: MapQuest.WebApi.WebApiResponse`1.#ctor*
+  nameWithType.vb: WebApiResponse(Of T).New(Integer, String, Date, T)
+  fullName.vb: MapQuest.WebApi.WebApiResponse(Of T).New(Integer, String, Date, T)
+  name.vb: New(Integer, String, Date, T)
+- uid: MapQuest.WebApi.WebApiResponse`1.StatusCode
+  commentId: P:MapQuest.WebApi.WebApiResponse`1.StatusCode
+  id: StatusCode
+  parent: MapQuest.WebApi.WebApiResponse`1
+  langs:
+  - csharp
+  - vb
+  name: StatusCode
+  nameWithType: WebApiResponse<T>.StatusCode
+  fullName: MapQuest.WebApi.WebApiResponse<T>.StatusCode
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.WebApi
+  summary: HTTP リクエストのステータスコードを取得または設定します。
+  example: []
+  syntax:
+    content: public int StatusCode { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StatusCode As Integer
+  overload: MapQuest.WebApi.WebApiResponse`1.StatusCode*
+  nameWithType.vb: WebApiResponse(Of T).StatusCode
+  fullName.vb: MapQuest.WebApi.WebApiResponse(Of T).StatusCode
+- uid: MapQuest.WebApi.WebApiResponse`1.Message
+  commentId: P:MapQuest.WebApi.WebApiResponse`1.Message
+  id: Message
+  parent: MapQuest.WebApi.WebApiResponse`1
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: WebApiResponse<T>.Message
+  fullName: MapQuest.WebApi.WebApiResponse<T>.Message
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.WebApi
+  summary: HTTP リクエストの結果に関するメッセージを取得または設定します。
+  example: []
+  syntax:
+    content: public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: MapQuest.WebApi.WebApiResponse`1.Message*
+  nameWithType.vb: WebApiResponse(Of T).Message
+  fullName.vb: MapQuest.WebApi.WebApiResponse(Of T).Message
+- uid: MapQuest.WebApi.WebApiResponse`1.TimeStamp
+  commentId: P:MapQuest.WebApi.WebApiResponse`1.TimeStamp
+  id: TimeStamp
+  parent: MapQuest.WebApi.WebApiResponse`1
+  langs:
+  - csharp
+  - vb
+  name: TimeStamp
+  nameWithType: WebApiResponse<T>.TimeStamp
+  fullName: MapQuest.WebApi.WebApiResponse<T>.TimeStamp
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.WebApi
+  summary: HTTP リクエストが実行された時刻を取得または設定します。
+  example: []
+  syntax:
+    content: public DateTime TimeStamp { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property TimeStamp As Date
+  overload: MapQuest.WebApi.WebApiResponse`1.TimeStamp*
+  nameWithType.vb: WebApiResponse(Of T).TimeStamp
+  fullName.vb: MapQuest.WebApi.WebApiResponse(Of T).TimeStamp
+- uid: MapQuest.WebApi.WebApiResponse`1.Content
+  commentId: P:MapQuest.WebApi.WebApiResponse`1.Content
+  id: Content
+  parent: MapQuest.WebApi.WebApiResponse`1
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: WebApiResponse<T>.Content
+  fullName: MapQuest.WebApi.WebApiResponse<T>.Content
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.WebApi
+  summary: HTTP リクエストのレスポンス内容を取得または設定します。
+  remarks: 型 T はレスポンスの内容に応じて異なります。
+  example: []
+  syntax:
+    content: public T Content { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property Content As T
+  overload: MapQuest.WebApi.WebApiResponse`1.Content*
+  nameWithType.vb: WebApiResponse(Of T).Content
+  fullName.vb: MapQuest.WebApi.WebApiResponse(Of T).Content
+references:
+- uid: MapQuest.WebApi
+  commentId: N:MapQuest.WebApi
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.WebApi
+  nameWithType: MapQuest.WebApi
+  fullName: MapQuest.WebApi
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.WebApi
+    name: WebApi
+    isExternal: true
+    href: MapQuest.WebApi.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.WebApi
+    name: WebApi
+    isExternal: true
+    href: MapQuest.WebApi.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MapQuest.WebApi.WebApiResponse`1.#ctor*
+  commentId: Overload:MapQuest.WebApi.WebApiResponse`1.#ctor
+  isExternal: true
+  href: MapQuest.WebApi.WebApiResponse-1.html#MapQuest_WebApi_WebApiResponse_1__ctor_System_Int32_System_String_System_DateTime__0_
+  name: WebApiResponse
+  nameWithType: WebApiResponse<T>.WebApiResponse
+  fullName: MapQuest.WebApi.WebApiResponse<T>.WebApiResponse
+  nameWithType.vb: WebApiResponse(Of T).New
+  fullName.vb: MapQuest.WebApi.WebApiResponse(Of T).New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MapQuest.WebApi.WebApiResponse`1.StatusCode*
+  commentId: Overload:MapQuest.WebApi.WebApiResponse`1.StatusCode
+  isExternal: true
+  href: MapQuest.WebApi.WebApiResponse-1.html#MapQuest_WebApi_WebApiResponse_1_StatusCode
+  name: StatusCode
+  nameWithType: WebApiResponse<T>.StatusCode
+  fullName: MapQuest.WebApi.WebApiResponse<T>.StatusCode
+  nameWithType.vb: WebApiResponse(Of T).StatusCode
+  fullName.vb: MapQuest.WebApi.WebApiResponse(Of T).StatusCode
+- uid: MapQuest.WebApi.WebApiResponse`1.Message*
+  commentId: Overload:MapQuest.WebApi.WebApiResponse`1.Message
+  isExternal: true
+  href: MapQuest.WebApi.WebApiResponse-1.html#MapQuest_WebApi_WebApiResponse_1_Message
+  name: Message
+  nameWithType: WebApiResponse<T>.Message
+  fullName: MapQuest.WebApi.WebApiResponse<T>.Message
+  nameWithType.vb: WebApiResponse(Of T).Message
+  fullName.vb: MapQuest.WebApi.WebApiResponse(Of T).Message
+- uid: MapQuest.WebApi.WebApiResponse`1.TimeStamp*
+  commentId: Overload:MapQuest.WebApi.WebApiResponse`1.TimeStamp
+  isExternal: true
+  href: MapQuest.WebApi.WebApiResponse-1.html#MapQuest_WebApi_WebApiResponse_1_TimeStamp
+  name: TimeStamp
+  nameWithType: WebApiResponse<T>.TimeStamp
+  fullName: MapQuest.WebApi.WebApiResponse<T>.TimeStamp
+  nameWithType.vb: WebApiResponse(Of T).TimeStamp
+  fullName.vb: MapQuest.WebApi.WebApiResponse(Of T).TimeStamp
+- uid: MapQuest.WebApi.WebApiResponse`1.Content*
+  commentId: Overload:MapQuest.WebApi.WebApiResponse`1.Content
+  isExternal: true
+  href: MapQuest.WebApi.WebApiResponse-1.html#MapQuest_WebApi_WebApiResponse_1_Content
+  name: Content
+  nameWithType: WebApiResponse<T>.Content
+  fullName: MapQuest.WebApi.WebApiResponse<T>.Content
+  nameWithType.vb: WebApiResponse(Of T).Content
+  fullName.vb: MapQuest.WebApi.WebApiResponse(Of T).Content

@@ -1,0 +1,2116 @@
+### YamlMime:ManagedReference
+items:
+- uid: MapQuest.IO.BinaryFormatReader
+  commentId: T:MapQuest.IO.BinaryFormatReader
+  id: BinaryFormatReader
+  parent: MapQuest.IO
+  children:
+  - MapQuest.IO.BinaryFormatReader.#ctor(System.IO.Stream)
+  - MapQuest.IO.BinaryFormatReader.#ctor(System.IO.Stream,System.Text.Encoding)
+  - MapQuest.IO.BinaryFormatReader.BaseStream
+  - MapQuest.IO.BinaryFormatReader.Close
+  - MapQuest.IO.BinaryFormatReader.Dispose(System.Boolean)
+  - MapQuest.IO.BinaryFormatReader.FillBuffer(System.Int32)
+  - MapQuest.IO.BinaryFormatReader.InternalBuffer
+  - MapQuest.IO.BinaryFormatReader.InternalCharBuffer
+  - MapQuest.IO.BinaryFormatReader.InternalDecoder
+  - MapQuest.IO.BinaryFormatReader.InternalSingleChar
+  - MapQuest.IO.BinaryFormatReader.IsLittleEndian
+  - MapQuest.IO.BinaryFormatReader.PeekChar
+  - MapQuest.IO.BinaryFormatReader.Read
+  - MapQuest.IO.BinaryFormatReader.Read(System.Byte[],System.Int32,System.Int32)
+  - MapQuest.IO.BinaryFormatReader.Read(System.Char[],System.Int32,System.Int32)
+  - MapQuest.IO.BinaryFormatReader.Read7BitEncodedInt
+  - MapQuest.IO.BinaryFormatReader.ReadBoolean
+  - MapQuest.IO.BinaryFormatReader.ReadByte
+  - MapQuest.IO.BinaryFormatReader.ReadBytes(System.Int32)
+  - MapQuest.IO.BinaryFormatReader.ReadChar
+  - MapQuest.IO.BinaryFormatReader.ReadChars(System.Int32)
+  - MapQuest.IO.BinaryFormatReader.ReadDecimal
+  - MapQuest.IO.BinaryFormatReader.ReadDouble
+  - MapQuest.IO.BinaryFormatReader.ReadInt16
+  - MapQuest.IO.BinaryFormatReader.ReadInt32
+  - MapQuest.IO.BinaryFormatReader.ReadInt64
+  - MapQuest.IO.BinaryFormatReader.ReadSByte
+  - MapQuest.IO.BinaryFormatReader.ReadSingle
+  - MapQuest.IO.BinaryFormatReader.ReadString
+  - MapQuest.IO.BinaryFormatReader.ReadUInt16
+  - MapQuest.IO.BinaryFormatReader.ReadUInt32
+  - MapQuest.IO.BinaryFormatReader.ReadUInt64
+  langs:
+  - csharp
+  - vb
+  name: BinaryFormatReader
+  nameWithType: BinaryFormatReader
+  fullName: MapQuest.IO.BinaryFormatReader
+  type: Class
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            プリミティブ データ型を特定のエンコーディングのバイナリ値として読み取ります。
+            </p>
+  remarks: >-
+    <xref href="MapQuest.IO.BinaryFormatReader" data-throw-if-not-resolved="false"></xref> は、リトルエンディアン／ビッグエンディアン両方に対応した 
+            <xref href="System.IO.BinaryReader" data-throw-if-not-resolved="false"></xref> です。
+  example: []
+  syntax:
+    content: 'public class BinaryFormatReader : IDisposable'
+    content.vb: Public Class BinaryFormatReader Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MapQuest.IO.BinaryFormatReader.#ctor(System.IO.Stream)
+  commentId: M:MapQuest.IO.BinaryFormatReader.#ctor(System.IO.Stream)
+  id: '#ctor(System.IO.Stream)'
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: BinaryFormatReader(Stream)
+  nameWithType: BinaryFormatReader.BinaryFormatReader(Stream)
+  fullName: MapQuest.IO.BinaryFormatReader.BinaryFormatReader(System.IO.Stream)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            指定したストリームを基にし、<xref href="System.Text.UTF8Encoding" data-throw-if-not-resolved="false"></xref> を使用して、<xref href="MapQuest.IO.BinaryFormatReader" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+            </p>
+  example: []
+  syntax:
+    content: public BinaryFormatReader(Stream input)
+    parameters:
+    - id: input
+      type: System.IO.Stream
+      description: ''
+    content.vb: Public Sub New(input As Stream)
+  overload: MapQuest.IO.BinaryFormatReader.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ストリームが読み取りをサポートしていないか、<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> であるか、または既に閉じています。
+  nameWithType.vb: BinaryFormatReader.New(Stream)
+  fullName.vb: MapQuest.IO.BinaryFormatReader.New(System.IO.Stream)
+  name.vb: New(Stream)
+- uid: MapQuest.IO.BinaryFormatReader.#ctor(System.IO.Stream,System.Text.Encoding)
+  commentId: M:MapQuest.IO.BinaryFormatReader.#ctor(System.IO.Stream,System.Text.Encoding)
+  id: '#ctor(System.IO.Stream,System.Text.Encoding)'
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: BinaryFormatReader(Stream, Encoding)
+  nameWithType: BinaryFormatReader.BinaryFormatReader(Stream, Encoding)
+  fullName: MapQuest.IO.BinaryFormatReader.BinaryFormatReader(System.IO.Stream, System.Text.Encoding)
+  type: Constructor
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            供給されたストリームと特定の文字エンコーディングに基づいて、<xref href="MapQuest.IO.BinaryFormatReader" data-throw-if-not-resolved="false"></xref> クラスの新しいインスタンスを初期化します。
+            </p>
+  example: []
+  syntax:
+    content: public BinaryFormatReader(Stream input, Encoding encoding)
+    parameters:
+    - id: input
+      type: System.IO.Stream
+      description: 供給するストリーム。
+    - id: encoding
+      type: System.Text.Encoding
+      description: 文字エンコーディング。
+    content.vb: Public Sub New(input As Stream, encoding As Encoding)
+  overload: MapQuest.IO.BinaryFormatReader.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ストリームが読み取りをサポートしていないか、<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> であるか、または既に閉じています。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">encoding</code> が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  nameWithType.vb: BinaryFormatReader.New(Stream, Encoding)
+  fullName.vb: MapQuest.IO.BinaryFormatReader.New(System.IO.Stream, System.Text.Encoding)
+  name.vb: New(Stream, Encoding)
+- uid: MapQuest.IO.BinaryFormatReader.Close
+  commentId: M:MapQuest.IO.BinaryFormatReader.Close
+  id: Close
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: BinaryFormatReader.Close()
+  fullName: MapQuest.IO.BinaryFormatReader.Close()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 現在のリーダーと基になるストリームをクローズします。
+  example: []
+  syntax:
+    content: public virtual void Close()
+    content.vb: Public Overridable Sub Close()
+  overload: MapQuest.IO.BinaryFormatReader.Close*
+- uid: MapQuest.IO.BinaryFormatReader.PeekChar
+  commentId: M:MapQuest.IO.BinaryFormatReader.PeekChar
+  id: PeekChar
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: PeekChar()
+  nameWithType: BinaryFormatReader.PeekChar()
+  fullName: MapQuest.IO.BinaryFormatReader.PeekChar()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            読み取り可能な次の文字を返します。バイトの位置または文字の位置は変化しません。
+            </p>
+  example: []
+  syntax:
+    content: public virtual int PeekChar()
+    return:
+      type: System.Int32
+      description: >-
+        <p>
+                使用できる次の文字。使用できる文字がないか、ストリームがシークをサポートしていない場合は -1。
+                </p>
+    content.vb: Public Overridable Function PeekChar() As Integer
+  overload: MapQuest.IO.BinaryFormatReader.PeekChar*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+- uid: MapQuest.IO.BinaryFormatReader.Read
+  commentId: M:MapQuest.IO.BinaryFormatReader.Read
+  id: Read
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: Read()
+  nameWithType: BinaryFormatReader.Read()
+  fullName: MapQuest.IO.BinaryFormatReader.Read()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            基になるストリームから文字を読み取り、使用した <code>Encoding</code> とストリームから読み取った特定の文字に従ってストリームの現在位置を進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual int Read()
+    return:
+      type: System.Int32
+      description: >-
+        <p>
+                入力ストリームの次の文字。現在取り可能な文字がない場合は -1。
+                </p>
+    content.vb: Public Overridable Function Read() As Integer
+  overload: MapQuest.IO.BinaryFormatReader.Read*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+- uid: MapQuest.IO.BinaryFormatReader.ReadBoolean
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadBoolean
+  id: ReadBoolean
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadBoolean()
+  nameWithType: BinaryFormatReader.ReadBoolean()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadBoolean()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから <code>Boolean</code> 値を読み取り、ストリームの現在位置を 1 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual bool ReadBoolean()
+    return:
+      type: System.Boolean
+      description: >-
+        <p>
+                読み取ったバイトが 0 以外の場合は <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。0 の場合は <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。
+                </p>
+    content.vb: Public Overridable Function ReadBoolean() As Boolean
+  overload: MapQuest.IO.BinaryFormatReader.ReadBoolean*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+- uid: MapQuest.IO.BinaryFormatReader.ReadByte
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadByte
+  id: ReadByte
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadByte()
+  nameWithType: BinaryFormatReader.ReadByte()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadByte()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから次のバイトを読み取り、ストリームの現在位置を 1 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual byte ReadByte()
+    return:
+      type: System.Byte
+      description: >-
+        <p>
+                現在のストリームから読み取った次のバイト。
+                </p>
+    content.vb: Public Overridable Function ReadByte() As Byte
+  overload: MapQuest.IO.BinaryFormatReader.ReadByte*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+- uid: MapQuest.IO.BinaryFormatReader.ReadSByte
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadSByte
+  id: ReadSByte
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadSByte()
+  nameWithType: BinaryFormatReader.ReadSByte()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadSByte()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから符号付きバイトを読み取り、ストリームの現在位置を 1 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public virtual sbyte ReadSByte()
+    return:
+      type: System.SByte
+      description: >-
+        <p>
+                現在のストリームから読み取った符号付きバイト。
+                </p>
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Overridable Function ReadSByte() As SByte
+  overload: MapQuest.IO.BinaryFormatReader.ReadSByte*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: MapQuest.IO.BinaryFormatReader.ReadChar
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadChar
+  id: ReadChar
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadChar()
+  nameWithType: BinaryFormatReader.ReadChar()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadChar()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームの次の文字を読み取り、使用した <code>Encoding</code> とストリームから読み取った特定の文字に従ってストリームの現在位置を進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual char ReadChar()
+    return:
+      type: System.Char
+      description: >-
+        <p>
+                現在のストリームから読み取った文字。
+                </p>
+    content.vb: Public Overridable Function ReadChar() As Char
+  overload: MapQuest.IO.BinaryFormatReader.ReadChar*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+- uid: MapQuest.IO.BinaryFormatReader.ReadInt16
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadInt16
+  id: ReadInt16
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadInt16()
+  nameWithType: BinaryFormatReader.ReadInt16()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadInt16()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから 2 バイト符号付き整数を読み取り、ストリームの現在位置を 2 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual short ReadInt16()
+    return:
+      type: System.Int16
+      description: >-
+        <p>
+                現在のストリームから読み取った 2 バイト符号付き整数。
+                </p>
+    content.vb: Public Overridable Function ReadInt16() As Short
+  overload: MapQuest.IO.BinaryFormatReader.ReadInt16*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+- uid: MapQuest.IO.BinaryFormatReader.ReadUInt16
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadUInt16
+  id: ReadUInt16
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadUInt16()
+  nameWithType: BinaryFormatReader.ReadUInt16()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadUInt16()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから 2 バイト符号なし整数を読み取り、ストリームの位置を 2 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public virtual ushort ReadUInt16()
+    return:
+      type: System.UInt16
+      description: >-
+        <p>
+                現在のストリームから読み取った 2 バイト符号なし整数。
+                </p>
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Overridable Function ReadUInt16() As UShort
+  overload: MapQuest.IO.BinaryFormatReader.ReadUInt16*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: MapQuest.IO.BinaryFormatReader.ReadInt32
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadInt32
+  id: ReadInt32
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadInt32()
+  nameWithType: BinaryFormatReader.ReadInt32()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadInt32()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから 4 バイト符号付き整数を読み取り、ストリームの現在位置を 4 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual int ReadInt32()
+    return:
+      type: System.Int32
+      description: >-
+        <p>
+                現在のストリームから読み取った 4 バイト符号付き整数。
+                </p>
+    content.vb: Public Overridable Function ReadInt32() As Integer
+  overload: MapQuest.IO.BinaryFormatReader.ReadInt32*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+- uid: MapQuest.IO.BinaryFormatReader.ReadUInt32
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadUInt32
+  id: ReadUInt32
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadUInt32()
+  nameWithType: BinaryFormatReader.ReadUInt32()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadUInt32()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから 4 バイト符号なし整数を読み取り、ストリームの位置を 4 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public virtual uint ReadUInt32()
+    return:
+      type: System.UInt32
+      description: >-
+        <p>
+                現在のストリームから読み取った 4 バイト符号なし整数。
+                </p>
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Overridable Function ReadUInt32() As UInteger
+  overload: MapQuest.IO.BinaryFormatReader.ReadUInt32*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: MapQuest.IO.BinaryFormatReader.ReadInt64
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadInt64
+  id: ReadInt64
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadInt64()
+  nameWithType: BinaryFormatReader.ReadInt64()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadInt64()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから 8 バイト符号付き整数を読み取り、ストリームの現在位置を 8 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual long ReadInt64()
+    return:
+      type: System.Int64
+      description: >-
+        <p>
+                現在のストリームから読み取った 8 バイト符号付き整数。
+                </p>
+    content.vb: Public Overridable Function ReadInt64() As Long
+  overload: MapQuest.IO.BinaryFormatReader.ReadInt64*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+- uid: MapQuest.IO.BinaryFormatReader.ReadUInt64
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadUInt64
+  id: ReadUInt64
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadUInt64()
+  nameWithType: BinaryFormatReader.ReadUInt64()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadUInt64()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから 8 バイト符号なし整数を読み取り、ストリームの位置を 8 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public virtual ulong ReadUInt64()
+    return:
+      type: System.UInt64
+      description: >-
+        <p>
+                現在のストリームから読み取った 8 バイト符号なし整数。
+                </p>
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Overridable Function ReadUInt64() As ULong
+  overload: MapQuest.IO.BinaryFormatReader.ReadUInt64*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: MapQuest.IO.BinaryFormatReader.ReadSingle
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadSingle
+  id: ReadSingle
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadSingle()
+  nameWithType: BinaryFormatReader.ReadSingle()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadSingle()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから 4 バイト浮動小数点値を読み取り、ストリームの現在位置を 4 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual float ReadSingle()
+    return:
+      type: System.Single
+      description: >-
+        <p>
+                現在のストリームから読み取った 4 バイト浮動小数点値。
+                </p>
+    content.vb: Public Overridable Function ReadSingle() As Single
+  overload: MapQuest.IO.BinaryFormatReader.ReadSingle*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+- uid: MapQuest.IO.BinaryFormatReader.ReadDouble
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadDouble
+  id: ReadDouble
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadDouble()
+  nameWithType: BinaryFormatReader.ReadDouble()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadDouble()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから 8 バイト浮動小数点値を読み取り、ストリームの現在位置を 8 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual double ReadDouble()
+    return:
+      type: System.Double
+      description: >-
+        <p>
+                現在のストリームから読み取った 8 バイト浮動小数点値。
+                </p>
+    content.vb: Public Overridable Function ReadDouble() As Double
+  overload: MapQuest.IO.BinaryFormatReader.ReadDouble*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+- uid: MapQuest.IO.BinaryFormatReader.ReadDecimal
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadDecimal
+  id: ReadDecimal
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadDecimal()
+  nameWithType: BinaryFormatReader.ReadDecimal()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadDecimal()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから 10 進数値を読み取り、ストリームの現在位置を 16 バイトだけ進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual decimal ReadDecimal()
+    return:
+      type: System.Decimal
+      description: >-
+        <p>
+                現在のストリームから読み取った 10 進数値。
+                </p>
+    content.vb: Public Overridable Function ReadDecimal() As Decimal
+  overload: MapQuest.IO.BinaryFormatReader.ReadDecimal*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+- uid: MapQuest.IO.BinaryFormatReader.ReadString
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadString
+  id: ReadString
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadString()
+  nameWithType: BinaryFormatReader.ReadString()
+  fullName: MapQuest.IO.BinaryFormatReader.ReadString()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから文字列を読み取ります。文字列の先頭に長さを付け、7 ビットの整数としてまとめてエンコードします。
+            </p>
+  example: []
+  syntax:
+    content: public virtual string ReadString()
+    return:
+      type: System.String
+      description: >-
+        <p>
+                読み取った文字列。
+                </p>
+    content.vb: Public Overridable Function ReadString() As String
+  overload: MapQuest.IO.BinaryFormatReader.ReadString*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+- uid: MapQuest.IO.BinaryFormatReader.Read(System.Char[],System.Int32,System.Int32)
+  commentId: M:MapQuest.IO.BinaryFormatReader.Read(System.Char[],System.Int32,System.Int32)
+  id: Read(System.Char[],System.Int32,System.Int32)
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: Read(char[], int, int)
+  nameWithType: BinaryFormatReader.Read(char[], int, int)
+  fullName: MapQuest.IO.BinaryFormatReader.Read(char[], int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+      <code class="paramref">index</code> を文字配列内の開始点として、ストリームから <code class="paramref">count</code> で指定した文字数分だけ文字を読み取ります。
+            </p>
+  example: []
+  syntax:
+    content: public virtual int Read(char[] buffer, int index, int count)
+    parameters:
+    - id: buffer
+      type: System.Char[]
+    - id: index
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+      description: >-
+        <p>
+                バッファに読み取られた合計文字数。要求した文字数分の文字を読み取れなかった場合、この値は要求した文字数より小さくなります。また、ストリームの末尾に到達した場合は 0 になることがあります。
+                </p>
+    content.vb: Public Overridable Function Read(buffer As Char(), index As Integer, count As Integer) As Integer
+  overload: MapQuest.IO.BinaryFormatReader.Read*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: バッファ長から <code class="paramref">index</code> を差し引いた値が <code class="paramref">count</code> より小さい値です。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">buffer</code> が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> または <code class="paramref">count</code> が負の値です。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  nameWithType.vb: BinaryFormatReader.Read(Char(), Integer, Integer)
+  fullName.vb: MapQuest.IO.BinaryFormatReader.Read(Char(), Integer, Integer)
+  name.vb: Read(Char(), Integer, Integer)
+- uid: MapQuest.IO.BinaryFormatReader.ReadChars(System.Int32)
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadChars(System.Int32)
+  id: ReadChars(System.Int32)
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadChars(int)
+  nameWithType: BinaryFormatReader.ReadChars(int)
+  fullName: MapQuest.IO.BinaryFormatReader.ReadChars(int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームから <code class="paramref">count</code> で指定した文字数分の文字を読み取り、そのデータを文字配列として返します。使用した <code>Encoding</code> とストリームから読み取った特定の文字に従って現在位置を進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual char[] ReadChars(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: 読み取る文字数。
+    return:
+      type: System.Char[]
+      description: >-
+        <p>
+                基になるストリームから読み取ったデータが格納されている文字配列。ストリームの末尾に到達した場合は、要求された文字数より小さくなることがあります。
+                </p>
+    content.vb: Public Overridable Function ReadChars(count As Integer) As Char()
+  overload: MapQuest.IO.BinaryFormatReader.ReadChars*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">count</code> が負の値です。
+  nameWithType.vb: BinaryFormatReader.ReadChars(Integer)
+  fullName.vb: MapQuest.IO.BinaryFormatReader.ReadChars(Integer)
+  name.vb: ReadChars(Integer)
+- uid: MapQuest.IO.BinaryFormatReader.Read(System.Byte[],System.Int32,System.Int32)
+  commentId: M:MapQuest.IO.BinaryFormatReader.Read(System.Byte[],System.Int32,System.Int32)
+  id: Read(System.Byte[],System.Int32,System.Int32)
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: Read(byte[], int, int)
+  nameWithType: BinaryFormatReader.Read(byte[], int, int)
+  fullName: MapQuest.IO.BinaryFormatReader.Read(byte[], int, int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+      <code class="paramref">index</code> をバイト配列内の開始点として、ストリームから <code class="paramref">count</code> で指定したバイト数分のバイトを読み取ります。
+            </p>
+  example: []
+  syntax:
+    content: public virtual int Read(byte[] buffer, int index, int count)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: データを読み取るバッファ。
+    - id: index
+      type: System.Int32
+      description: バッファ内の、バッファへの読み取り開始点。
+    - id: count
+      type: System.Int32
+      description: 読み取る文字数。
+    return:
+      type: System.Int32
+      description: >-
+        <p>
+          <code class="paramref">buffer</code> に読み取った文字数。要求したバイト数分のバイトを読み取れなかった場合、この値は要求したバイト数より小さくなります。ストリームの末尾に到達した場合は 0 になることがあります。
+                </p>
+    content.vb: Public Overridable Function Read(buffer As Byte(), index As Integer, count As Integer) As Integer
+  overload: MapQuest.IO.BinaryFormatReader.Read*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: バッファ長から <code class="paramref">index</code> を差し引いた値が <code class="paramref">count</code> より小さい値です。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">buffer</code> が <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> です。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> または <code class="paramref">count</code> が負の値です。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  nameWithType.vb: BinaryFormatReader.Read(Byte(), Integer, Integer)
+  fullName.vb: MapQuest.IO.BinaryFormatReader.Read(Byte(), Integer, Integer)
+  name.vb: Read(Byte(), Integer, Integer)
+- uid: MapQuest.IO.BinaryFormatReader.ReadBytes(System.Int32)
+  commentId: M:MapQuest.IO.BinaryFormatReader.ReadBytes(System.Int32)
+  id: ReadBytes(System.Int32)
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: ReadBytes(int)
+  nameWithType: BinaryFormatReader.ReadBytes(int)
+  fullName: MapQuest.IO.BinaryFormatReader.ReadBytes(int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            現在のストリームからバイト配列に <code class="paramref">count</code> で指定したバイト数分のバイトを読み取り、<code class="paramref">count</code> で指定したバイト数だけ現在位置を進めます。
+            </p>
+  example: []
+  syntax:
+    content: public virtual byte[] ReadBytes(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: 読み取るバイト数。
+    return:
+      type: System.Byte[]
+      description: >-
+        <p>
+                基になるストリームから読み取ったデータが格納されているバイト配列。ストリームの末尾に到達した場合は要求したバイト数より小さくなることがあります。
+                </p>
+    content.vb: Public Overridable Function ReadBytes(count As Integer) As Byte()
+  overload: MapQuest.IO.BinaryFormatReader.ReadBytes*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">count</code> が負の値です。
+  nameWithType.vb: BinaryFormatReader.ReadBytes(Integer)
+  fullName.vb: MapQuest.IO.BinaryFormatReader.ReadBytes(Integer)
+  name.vb: ReadBytes(Integer)
+- uid: MapQuest.IO.BinaryFormatReader.FillBuffer(System.Int32)
+  commentId: M:MapQuest.IO.BinaryFormatReader.FillBuffer(System.Int32)
+  id: FillBuffer(System.Int32)
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: FillBuffer(int)
+  nameWithType: BinaryFormatReader.FillBuffer(int)
+  fullName: MapQuest.IO.BinaryFormatReader.FillBuffer(int)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            指定したバイト数分だけストリームから読み取ったバイトを内部バッファに格納します。
+            </p>
+  example: []
+  syntax:
+    content: protected virtual void FillBuffer(int numBytes)
+    parameters:
+    - id: numBytes
+      type: System.Int32
+      description: 読み取るバイト数。
+    content.vb: Protected Overridable Sub FillBuffer(numBytes As Integer)
+  overload: MapQuest.IO.BinaryFormatReader.FillBuffer*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: <code class="paramref">numBytes</code> 分のバイトを読み取る前にストリームの末尾に到達しました。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+  nameWithType.vb: BinaryFormatReader.FillBuffer(Integer)
+  fullName.vb: MapQuest.IO.BinaryFormatReader.FillBuffer(Integer)
+  name.vb: FillBuffer(Integer)
+- uid: MapQuest.IO.BinaryFormatReader.Read7BitEncodedInt
+  commentId: M:MapQuest.IO.BinaryFormatReader.Read7BitEncodedInt
+  id: Read7BitEncodedInt
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: Read7BitEncodedInt()
+  nameWithType: BinaryFormatReader.Read7BitEncodedInt()
+  fullName: MapQuest.IO.BinaryFormatReader.Read7BitEncodedInt()
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+            32 ビット整数を圧縮形式で読み取ります。
+            </p>
+  example: []
+  syntax:
+    content: protected int Read7BitEncodedInt()
+    return:
+      type: System.Int32
+      description: >-
+        <p>
+                圧縮形式の 32 ビット整数。
+                </p>
+    content.vb: Protected Function Read7BitEncodedInt() As Integer
+  overload: MapQuest.IO.BinaryFormatReader.Read7BitEncodedInt*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: ストリームの末尾に到達しました。
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ストリームが閉じています。
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: I/O エラーが発生しました。
+- uid: MapQuest.IO.BinaryFormatReader.Dispose(System.Boolean)
+  commentId: M:MapQuest.IO.BinaryFormatReader.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: BinaryFormatReader.Dispose(bool)
+  fullName: MapQuest.IO.BinaryFormatReader.Dispose(bool)
+  type: Method
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <xref href="MapQuest.IO.BinaryFormatReader" data-throw-if-not-resolved="false"></xref> によって使用されている
+            アンマネージ リソースを解放し、オプションでマネージ リソースも解放します。
+  example: []
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: >-
+        マネージ リソースとアンマネージ リソースの両方を解放する場合は 
+                    <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。アンマネージ リソースだけを解放する場合は <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: MapQuest.IO.BinaryFormatReader.Dispose*
+  nameWithType.vb: BinaryFormatReader.Dispose(Boolean)
+  fullName.vb: MapQuest.IO.BinaryFormatReader.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: MapQuest.IO.BinaryFormatReader.BaseStream
+  commentId: P:MapQuest.IO.BinaryFormatReader.BaseStream
+  id: BaseStream
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: BaseStream
+  nameWithType: BinaryFormatReader.BaseStream
+  fullName: MapQuest.IO.BinaryFormatReader.BaseStream
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: >-
+    <p>
+      <xref href="MapQuest.IO.BinaryFormatReader" data-throw-if-not-resolved="false"></xref> の基になるストリームへのアクセスを公開します。
+            </p>
+  example: []
+  syntax:
+    content: public virtual Stream BaseStream { get; }
+    parameters: []
+    return:
+      type: System.IO.Stream
+    content.vb: Public Overridable ReadOnly Property BaseStream As Stream
+  overload: MapQuest.IO.BinaryFormatReader.BaseStream*
+- uid: MapQuest.IO.BinaryFormatReader.IsLittleEndian
+  commentId: P:MapQuest.IO.BinaryFormatReader.IsLittleEndian
+  id: IsLittleEndian
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: IsLittleEndian
+  nameWithType: BinaryFormatReader.IsLittleEndian
+  fullName: MapQuest.IO.BinaryFormatReader.IsLittleEndian
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 読み取る <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> がリトルエンディアンかどうかを取得します。
+  example: []
+  syntax:
+    content: public bool IsLittleEndian { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> がリトルエンディアンである場合は true 、
+                ビッグエンディアンである場合は false を返します。
+                既定値は <xref href="System.BitConverter.IsLittleEndian?text=BitConverter.IsLittleEndian" data-throw-if-not-resolved="false"></xref> に依存します。
+    content.vb: Public Property IsLittleEndian As Boolean
+  overload: MapQuest.IO.BinaryFormatReader.IsLittleEndian*
+- uid: MapQuest.IO.BinaryFormatReader.InternalBuffer
+  commentId: P:MapQuest.IO.BinaryFormatReader.InternalBuffer
+  id: InternalBuffer
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: InternalBuffer
+  nameWithType: BinaryFormatReader.InternalBuffer
+  fullName: MapQuest.IO.BinaryFormatReader.InternalBuffer
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 内部で使用しているバッファを取得します。
+  example: []
+  syntax:
+    content: protected virtual byte[] InternalBuffer { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Protected Overridable ReadOnly Property InternalBuffer As Byte()
+  overload: MapQuest.IO.BinaryFormatReader.InternalBuffer*
+- uid: MapQuest.IO.BinaryFormatReader.InternalSingleChar
+  commentId: P:MapQuest.IO.BinaryFormatReader.InternalSingleChar
+  id: InternalSingleChar
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: InternalSingleChar
+  nameWithType: BinaryFormatReader.InternalSingleChar
+  fullName: MapQuest.IO.BinaryFormatReader.InternalSingleChar
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 内部で使用している文字の配列を取得します。
+  example: []
+  syntax:
+    content: protected char[] InternalSingleChar { get; }
+    parameters: []
+    return:
+      type: System.Char[]
+    content.vb: Protected ReadOnly Property InternalSingleChar As Char()
+  overload: MapQuest.IO.BinaryFormatReader.InternalSingleChar*
+- uid: MapQuest.IO.BinaryFormatReader.InternalCharBuffer
+  commentId: P:MapQuest.IO.BinaryFormatReader.InternalCharBuffer
+  id: InternalCharBuffer
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: InternalCharBuffer
+  nameWithType: BinaryFormatReader.InternalCharBuffer
+  fullName: MapQuest.IO.BinaryFormatReader.InternalCharBuffer
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 内部で使用している文字のバッファを取得します。
+  example: []
+  syntax:
+    content: protected char[] InternalCharBuffer { get; }
+    parameters: []
+    return:
+      type: System.Char[]
+    content.vb: Protected ReadOnly Property InternalCharBuffer As Char()
+  overload: MapQuest.IO.BinaryFormatReader.InternalCharBuffer*
+- uid: MapQuest.IO.BinaryFormatReader.InternalDecoder
+  commentId: P:MapQuest.IO.BinaryFormatReader.InternalDecoder
+  id: InternalDecoder
+  parent: MapQuest.IO.BinaryFormatReader
+  langs:
+  - csharp
+  - vb
+  name: InternalDecoder
+  nameWithType: BinaryFormatReader.InternalDecoder
+  fullName: MapQuest.IO.BinaryFormatReader.InternalDecoder
+  type: Property
+  assemblies:
+  - MapQuest.Core
+  namespace: MapQuest.IO
+  summary: 内部で使用している <xref href="System.Text.Decoder" data-throw-if-not-resolved="false"></xref> を取得します。
+  example: []
+  syntax:
+    content: protected Decoder InternalDecoder { get; }
+    parameters: []
+    return:
+      type: System.Text.Decoder
+    content.vb: Protected ReadOnly Property InternalDecoder As Decoder
+  overload: MapQuest.IO.BinaryFormatReader.InternalDecoder*
+references:
+- uid: MapQuest.IO.BinaryFormatReader
+  commentId: T:MapQuest.IO.BinaryFormatReader
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html
+  name: BinaryFormatReader
+  nameWithType: BinaryFormatReader
+  fullName: MapQuest.IO.BinaryFormatReader
+- uid: System.IO.BinaryReader
+  commentId: T:System.IO.BinaryReader
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.binaryreader
+  name: BinaryReader
+  nameWithType: BinaryReader
+  fullName: System.IO.BinaryReader
+- uid: MapQuest.IO
+  commentId: N:MapQuest.IO
+  isExternal: true
+  href: MapQuest.html
+  name: MapQuest.IO
+  nameWithType: MapQuest.IO
+  fullName: MapQuest.IO
+  spec.csharp:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+  spec.vb:
+  - uid: MapQuest
+    name: MapQuest
+    isExternal: true
+    href: MapQuest.html
+  - name: .
+  - uid: MapQuest.IO
+    name: IO
+    isExternal: true
+    href: MapQuest.IO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.UTF8Encoding
+  commentId: T:System.Text.UTF8Encoding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.utf8encoding
+  name: UTF8Encoding
+  nameWithType: UTF8Encoding
+  fullName: System.Text.UTF8Encoding
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: MapQuest.IO.BinaryFormatReader.#ctor*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.#ctor
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader__ctor_System_IO_Stream_
+  name: BinaryFormatReader
+  nameWithType: BinaryFormatReader.BinaryFormatReader
+  fullName: MapQuest.IO.BinaryFormatReader.BinaryFormatReader
+  nameWithType.vb: BinaryFormatReader.New
+  fullName.vb: MapQuest.IO.BinaryFormatReader.New
+  name.vb: New
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.encoding
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: MapQuest.IO.BinaryFormatReader.Close*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.Close
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_Close
+  name: Close
+  nameWithType: BinaryFormatReader.Close
+  fullName: MapQuest.IO.BinaryFormatReader.Close
+- uid: System.IO.IOException
+  commentId: T:System.IO.IOException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.ioexception
+  name: IOException
+  nameWithType: IOException
+  fullName: System.IO.IOException
+- uid: MapQuest.IO.BinaryFormatReader.PeekChar*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.PeekChar
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_PeekChar
+  name: PeekChar
+  nameWithType: BinaryFormatReader.PeekChar
+  fullName: MapQuest.IO.BinaryFormatReader.PeekChar
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.objectdisposedexception
+  name: ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+- uid: MapQuest.IO.BinaryFormatReader.Read*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.Read
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_Read
+  name: Read
+  nameWithType: BinaryFormatReader.Read
+  fullName: MapQuest.IO.BinaryFormatReader.Read
+- uid: System.IO.EndOfStreamException
+  commentId: T:System.IO.EndOfStreamException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception
+  name: EndOfStreamException
+  nameWithType: EndOfStreamException
+  fullName: System.IO.EndOfStreamException
+- uid: MapQuest.IO.BinaryFormatReader.ReadBoolean*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadBoolean
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadBoolean
+  name: ReadBoolean
+  nameWithType: BinaryFormatReader.ReadBoolean
+  fullName: MapQuest.IO.BinaryFormatReader.ReadBoolean
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MapQuest.IO.BinaryFormatReader.ReadByte*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadByte
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadByte
+  name: ReadByte
+  nameWithType: BinaryFormatReader.ReadByte
+  fullName: MapQuest.IO.BinaryFormatReader.ReadByte
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: MapQuest.IO.BinaryFormatReader.ReadSByte*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadSByte
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadSByte
+  name: ReadSByte
+  nameWithType: BinaryFormatReader.ReadSByte
+  fullName: MapQuest.IO.BinaryFormatReader.ReadSByte
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: MapQuest.IO.BinaryFormatReader.ReadChar*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadChar
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadChar
+  name: ReadChar
+  nameWithType: BinaryFormatReader.ReadChar
+  fullName: MapQuest.IO.BinaryFormatReader.ReadChar
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: MapQuest.IO.BinaryFormatReader.ReadInt16*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadInt16
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadInt16
+  name: ReadInt16
+  nameWithType: BinaryFormatReader.ReadInt16
+  fullName: MapQuest.IO.BinaryFormatReader.ReadInt16
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: MapQuest.IO.BinaryFormatReader.ReadUInt16*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadUInt16
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadUInt16
+  name: ReadUInt16
+  nameWithType: BinaryFormatReader.ReadUInt16
+  fullName: MapQuest.IO.BinaryFormatReader.ReadUInt16
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: MapQuest.IO.BinaryFormatReader.ReadInt32*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadInt32
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadInt32
+  name: ReadInt32
+  nameWithType: BinaryFormatReader.ReadInt32
+  fullName: MapQuest.IO.BinaryFormatReader.ReadInt32
+- uid: MapQuest.IO.BinaryFormatReader.ReadUInt32*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadUInt32
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadUInt32
+  name: ReadUInt32
+  nameWithType: BinaryFormatReader.ReadUInt32
+  fullName: MapQuest.IO.BinaryFormatReader.ReadUInt32
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: MapQuest.IO.BinaryFormatReader.ReadInt64*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadInt64
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadInt64
+  name: ReadInt64
+  nameWithType: BinaryFormatReader.ReadInt64
+  fullName: MapQuest.IO.BinaryFormatReader.ReadInt64
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MapQuest.IO.BinaryFormatReader.ReadUInt64*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadUInt64
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadUInt64
+  name: ReadUInt64
+  nameWithType: BinaryFormatReader.ReadUInt64
+  fullName: MapQuest.IO.BinaryFormatReader.ReadUInt64
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: MapQuest.IO.BinaryFormatReader.ReadSingle*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadSingle
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadSingle
+  name: ReadSingle
+  nameWithType: BinaryFormatReader.ReadSingle
+  fullName: MapQuest.IO.BinaryFormatReader.ReadSingle
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MapQuest.IO.BinaryFormatReader.ReadDouble*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadDouble
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadDouble
+  name: ReadDouble
+  nameWithType: BinaryFormatReader.ReadDouble
+  fullName: MapQuest.IO.BinaryFormatReader.ReadDouble
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MapQuest.IO.BinaryFormatReader.ReadDecimal*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadDecimal
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadDecimal
+  name: ReadDecimal
+  nameWithType: BinaryFormatReader.ReadDecimal
+  fullName: MapQuest.IO.BinaryFormatReader.ReadDecimal
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: MapQuest.IO.BinaryFormatReader.ReadString*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadString
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadString
+  name: ReadString
+  nameWithType: BinaryFormatReader.ReadString
+  fullName: MapQuest.IO.BinaryFormatReader.ReadString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.Char[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char[]
+  nameWithType: char[]
+  fullName: char[]
+  nameWithType.vb: Char()
+  fullName.vb: Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: (
+  - name: )
+- uid: MapQuest.IO.BinaryFormatReader.ReadChars*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadChars
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadChars_System_Int32_
+  name: ReadChars
+  nameWithType: BinaryFormatReader.ReadChars
+  fullName: MapQuest.IO.BinaryFormatReader.ReadChars
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: MapQuest.IO.BinaryFormatReader.ReadBytes*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.ReadBytes
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_ReadBytes_System_Int32_
+  name: ReadBytes
+  nameWithType: BinaryFormatReader.ReadBytes
+  fullName: MapQuest.IO.BinaryFormatReader.ReadBytes
+- uid: MapQuest.IO.BinaryFormatReader.FillBuffer*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.FillBuffer
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_FillBuffer_System_Int32_
+  name: FillBuffer
+  nameWithType: BinaryFormatReader.FillBuffer
+  fullName: MapQuest.IO.BinaryFormatReader.FillBuffer
+- uid: MapQuest.IO.BinaryFormatReader.Read7BitEncodedInt*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.Read7BitEncodedInt
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_Read7BitEncodedInt
+  name: Read7BitEncodedInt
+  nameWithType: BinaryFormatReader.Read7BitEncodedInt
+  fullName: MapQuest.IO.BinaryFormatReader.Read7BitEncodedInt
+- uid: MapQuest.IO.BinaryFormatReader.Dispose*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.Dispose
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: BinaryFormatReader.Dispose
+  fullName: MapQuest.IO.BinaryFormatReader.Dispose
+- uid: MapQuest.IO.BinaryFormatReader.BaseStream*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.BaseStream
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_BaseStream
+  name: BaseStream
+  nameWithType: BinaryFormatReader.BaseStream
+  fullName: MapQuest.IO.BinaryFormatReader.BaseStream
+- uid: System.BitConverter.IsLittleEndian
+  commentId: F:System.BitConverter.IsLittleEndian
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.bitconverter.islittleendian
+  name: IsLittleEndian
+  nameWithType: BitConverter.IsLittleEndian
+  fullName: System.BitConverter.IsLittleEndian
+- uid: MapQuest.IO.BinaryFormatReader.IsLittleEndian*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.IsLittleEndian
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_IsLittleEndian
+  name: IsLittleEndian
+  nameWithType: BinaryFormatReader.IsLittleEndian
+  fullName: MapQuest.IO.BinaryFormatReader.IsLittleEndian
+- uid: MapQuest.IO.BinaryFormatReader.InternalBuffer*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.InternalBuffer
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_InternalBuffer
+  name: InternalBuffer
+  nameWithType: BinaryFormatReader.InternalBuffer
+  fullName: MapQuest.IO.BinaryFormatReader.InternalBuffer
+- uid: MapQuest.IO.BinaryFormatReader.InternalSingleChar*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.InternalSingleChar
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_InternalSingleChar
+  name: InternalSingleChar
+  nameWithType: BinaryFormatReader.InternalSingleChar
+  fullName: MapQuest.IO.BinaryFormatReader.InternalSingleChar
+- uid: MapQuest.IO.BinaryFormatReader.InternalCharBuffer*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.InternalCharBuffer
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_InternalCharBuffer
+  name: InternalCharBuffer
+  nameWithType: BinaryFormatReader.InternalCharBuffer
+  fullName: MapQuest.IO.BinaryFormatReader.InternalCharBuffer
+- uid: System.Text.Decoder
+  commentId: T:System.Text.Decoder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.decoder
+  name: Decoder
+  nameWithType: Decoder
+  fullName: System.Text.Decoder
+- uid: MapQuest.IO.BinaryFormatReader.InternalDecoder*
+  commentId: Overload:MapQuest.IO.BinaryFormatReader.InternalDecoder
+  isExternal: true
+  href: MapQuest.IO.BinaryFormatReader.html#MapQuest_IO_BinaryFormatReader_InternalDecoder
+  name: InternalDecoder
+  nameWithType: BinaryFormatReader.InternalDecoder
+  fullName: MapQuest.IO.BinaryFormatReader.InternalDecoder
