@@ -65,7 +65,7 @@ items:
   assemblies:
   - ConsoleApp1
   namespace: DocFXSample
-  summary: 基底クラスのメンバ。
+  summary: 基底クラスのメンバ。@tes_tag
   example: []
   syntax:
     content: public int sum
@@ -97,7 +97,7 @@ items:
   summary: >-
     基底クラスの仮想メソッド。
 
-    sumを+1して返す。
+    sumを+1して返す。[link test](~/docs/case1.md)
   example: []
   syntax:
     content: public virtual int func()

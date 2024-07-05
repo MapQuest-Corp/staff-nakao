@@ -2,7 +2,7 @@
   "api/DocFXSample.BaseClass.html": {
     "href": "api/DocFXSample.BaseClass.html",
     "title": "Class BaseClass | mysite",
-    "keywords": "Class BaseClass Namespace DocFXSample Assembly ConsoleApp1.dll 基底クラス。 public class BaseClass Inheritance object BaseClass Derived DerivedClass Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors BaseClass() public BaseClass() Fields sum 基底クラスのメンバ。 public int sum Field Value int Methods func() 基底クラスの仮想メソッド。 sumを+1して返す。 public virtual int func() Returns int sumの値"
+    "keywords": "Class BaseClass Namespace DocFXSample Assembly ConsoleApp1.dll 基底クラス。 public class BaseClass Inheritance object BaseClass Derived DerivedClass Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors BaseClass() public BaseClass() Fields sum 基底クラスのメンバ。@tes_tag public int sum Field Value int Methods func() 基底クラスの仮想メソッド。 sumを+1して返す。link test public virtual int func() Returns int sumの値"
   },
   "api/DocFXSample.DerivedClass.html": {
     "href": "api/DocFXSample.DerivedClass.html",
@@ -1012,7 +1012,7 @@
   "docs/case1.html": {
     "href": "docs/case1.html",
     "title": "case1 | mysite",
-    "keywords": "case1"
+    "keywords": "case1 link test a see @tes_tag"
   },
   "docs/case2.html": {
     "href": "docs/case2.html",

@@ -25347,3 +25347,6 @@ references:
   fullName.vb: MapQuest.WebApi.WebApiResponse(Of T).TimeStamp
   nameWithType: WebApiResponse<T>.TimeStamp
   nameWithType.vb: WebApiResponse(Of T).TimeStamp
+- uid: test1_tag
+  name: case2
+  href: docs/case2.html

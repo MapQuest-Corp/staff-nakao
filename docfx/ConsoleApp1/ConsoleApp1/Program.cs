@@ -8,13 +8,13 @@ namespace DocFXSample
     public class BaseClass
     {
         /// <summary>
-        /// 基底クラスのメンバ。
+        /// 基底クラスのメンバ。@test1_tag
         /// </summary>
         public int sum;
 
         /// <summary>
         /// 基底クラスの仮想メソッド。
-        /// sumを+1して返す。
+        /// sumを+1して返す。[link test](~/docs/case1.md)
         /// </summary>
         /// <returns>sumの値</returns>
         public virtual int func()

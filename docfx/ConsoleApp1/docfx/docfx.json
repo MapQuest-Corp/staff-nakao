@@ -7,6 +7,8 @@
           "files": [
             "**/*.csproj",
             "**/*.dll"
+          ],
+          "exclude": [
           ]
         }
       ],
@@ -20,8 +22,7 @@
           "**/*.{md,yml}"
         ],
         "exclude": [
-          "_site/**",
-          "**/toc2.yml"
+          "_site/**"
         ]
       }
     ],
