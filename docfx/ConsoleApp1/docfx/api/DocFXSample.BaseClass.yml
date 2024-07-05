@@ -65,7 +65,7 @@ items:
   assemblies:
   - ConsoleApp1
   namespace: DocFXSample
-  summary: 基底クラスのメンバ。@tes_tag
+  summary: 基底クラスのメンバ。@test1_tag
   example: []
   syntax:
     content: public int sum
